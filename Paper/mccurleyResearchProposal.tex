@@ -1,4 +1,4 @@
-\documentclass{article}[12 pt]
+\documentclass{article}[10 pt]
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{amsmath}
@@ -64,6 +64,8 @@
 
 \maketitle
 
+\tableofcontents
+
 
 % \blindtext
 \begin{abstract}
@@ -73,38 +75,81 @@ Wide-band
 %===================================================
 %=================== Introduction ==================
 %===================================================
-\section*{Introduction}
+\section{Introduction}
 
 %===================================================
 %==================== Background ===================
 %===================================================
-\section*{Background/ Lit Review}
+\section{Background}
 
 %===================================================
 %=============== Problem Description ===============
 %===================================================
-\section*{Problem Description/ Conceptual Approach}
+\section{Problem Description}
+
+%===================================================
+%=============== conceptual Approach ===============
+%===================================================
+\section{Conceptual Approach}
 
 %===================================================
 %=============== Experimental Design ===============
 %===================================================
-\section*{Specific Tasks/ Experimental Design}
+\section{Experimental Design}
 
 %===================================================
 %================ Preliminary Results ==============
 %===================================================
-\section*{Preliminary Work}
+\section{Preliminary Work}
 
 %===================================================
 %================== Future tasks ===================
 %===================================================
-\section*{Future Tasks}
+\section{Future Tasks}
 
 %===================================================
 %=================== References=====================
 %===================================================
-\section*{References}
+\section{References}
 \bibliography{proposalBib}
+
+
+%===================================================
+%=============== Research Questions ================
+%===================================================
+\newpage
+\section*{Research Questions}
+
+\textbf{Goal:} \textbf{Time-adaptive Multiple-Instance Manifold Learning} 
+
+\begin{enumerate}
+\item \textbf{Manifold learning from imprecise data}
+	\begin{itemize}
+		\item Multiple instance learning for manifold construction
+		\item Extend supervised manifold learning methods to MIL framework
+		\item Best way to construct the manifold (AE, SOM, classical methods, graph-based)
+		\item Outlier/ adversarial robustness
+		\item Time series embedding
+	\end{itemize}
+
+\item \textbf{Multi-sensor fusion using manifolds}
+\begin{itemize}
+		\item Can we intelligently combine manifolds for classifier/ sensor fusion?
+		\item Incorporation of context-dependent information
+		\item Fusion using manifolds
+		\item General fusion approaches (HME, Choquet integral, HMM)
+		\item Dissimilarity metrics (Measure similarity of manifolds/ How to determine placement of sample in test)
+	\end{itemize}
+
+\item \textbf{Time-adaptive fusion}
+\begin{itemize}
+		\item Merging/ stitching (How to merge/when to merge)
+		\item System growing/ pruning
+		\item Model manifolds as Markov states? (Combination of states/ state estimation/ prediction)
+		\item Reinforcement learning for parameter adaptation
+	\end{itemize}
+
+\end{enumerate}
 
 
 % \begin{center}
