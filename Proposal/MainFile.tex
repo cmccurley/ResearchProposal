@@ -1,0 +1,60 @@
+\documentclass[12pt,final,CPage]{Misc/ufthesis}
+
+\include{Misc/Packages}
+
+\include{Misc/NewCommands}
+
+%define font to use
+\def\UrlFont{\sffamily}
+
+
+\SetFullName{Connor H. McCurley}
+\SetThesisType{Oral Qualifying Exam Proposal}
+\SetDegreeType{Doctor of Philosophy}
+\SetGradMonth{XXX}
+\SetGradYear{2019}
+\SetDepartment{Electrical and Computer Engineering}%
+\SetChair{Alina Zare}
+\SetTitle{Manifold Learning for Multi-sensor, Multi-resolution Fusion with Imprecise Data}
+
+
+\begin{document}
+  \bibliographystyle{BibFiles/IEEEtran}
+  
+  \maketitle
+  \makecopyright
+  
+  %Optional Section: Dedication
+  %\dedication{\input{Chapters/dedication}}
+  
+  %Required Section: Acknowledgements
+  \include{Chapters/acknowledgements}
+  
+  %Required Section: Table of Contents
+  \include{Chapters/TOC}
+  
+  %Required Section: Abstract
+  \include{Chapters/abstract}
+  
+  %Main Body of Dissertation
+  \include{Chapters/ch1_Introduction}
+  \include{Chapters/ch2_LitReview}
+  \include{Chapters/ch3_TechApproach}
+  \include{Chapters/ch4_Results}
+  \include{Chapters/ch5_Conclusion}
+  
+  %Appendices
+  \appendix
+  \addtocontents{toc}{\protect\addvspace{10pt}\noindent{APPENDIX} \protect\hfill\par}{}
+  
+  \input{Chapters/apA}
+  \input{Chapters/apB}
+  
+  %Required Section: Bibliography
+  \bibliography {BibFiles/references}
+  
+  %Required Section: Personal bio
+  \input{Chapters/bio}
+  
+  
+\end{document}
