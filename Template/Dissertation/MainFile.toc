@@ -1,4 +1,0 @@
-\contentsline {extrachapter}{LIST OF TABLES}{4}{chapter*.2}
-\contentsline {extrachapter}{LIST OF FIGURES}{5}{chapter*.3}
-\addvspace {10pt}\noindent {APPENDIX} \hfill \par 
-\contentsline {extrachapter}{REFERENCES}{6}{appendix*.5}
