@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}Army}{2}{section.1}
+\contentsline {section}{\numberline {2}Manifold/ Representation Learning}{2}{section.2}
+\contentsline {section}{\numberline {3}Multiple Instance Learning}{2}{section.3}
+\contentsline {section}{\numberline {4}Fusion}{2}{section.4}
+\contentsline {section}{\numberline {5}Outlier/ Adversarial Detection}{2}{section.5}

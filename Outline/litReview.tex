@@ -1,0 +1,160 @@
+\documentclass{article}[10 pt]
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{appendix}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{url}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{shortvrb}
+\usepackage{mathtools}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{commath}
+\usepackage{bm}
+\usepackage{dsfont}
+\usepackage{blindtext}
+
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\geometry{margin=1 in}
+
+\newcommand{\smallvskip}{\vspace{5 pt}}
+\newcommand{\medvskip}{\vspace{30 pt}}
+\newcommand{\bigvskip}{\vspace{100 pt}}
+\newcommand{\tR}{\mathtt{R}}
+
+\graphicspath{{"C:/Users/Conma/Documents/ResearchProposal/Paper/Images/"}}
+
+\begin{document}
+
+
+\title{Literature Review}
+\date{August, 2019}
+\author{Connor H. McCurley\\ Electrical and Computer Engineering\\ University of Florida, Gainesville\\FL 32611, USA}
+\maketitle
+
+
+%===================================================
+%==================== Background ===================
+%===================================================
+\section{Manifold / Representation Learning}
+    \begin{itemize}
+        \item Supervised manifold learning
+        \item Classic approaches
+        \item Graphs
+        \item Neural nets
+        \item Time series embedding
+    \end{itemize}
+
+\section{Multiple Instance Learning}
+    \begin{itemize}
+        \item General approaches
+        \item Manifold construction with data imprecision
+    \end{itemize}
+
+\section{Outlier/ Adversarial Detection}
+    \begin{itemize}
+        \item Robustness measures
+        \item Outlier detection on manifolds
+    \end{itemize}
+
+\section{Classifier Fusion/ Selection}
+    \begin{itemize}
+        \item Fusion using manifolds
+        \item HME, Choquet integral, HMM, and related context-dependent approaches
+        \item Dissimilarity metrics
+    \end{itemize}
+
+\section{Time Series Adaptation}
+    \begin{itemize}
+        \item Merging/ stitching
+        \item System growing/ pruning
+        \item HMM modeling 
+        \item Continual learning
+    \end{itemize}
+
+
+
+
+
+%===================================================
+%=================== References=====================
+%===================================================
+% \section*{References}
+% \bibliography{proposalBib}
+
+
+% \begin{center}
+% 	\begin{figure}[h!]
+% 		\centering
+% 		\includegraphics[width=0.65\textwidth]{"transDiagram"}
+% 		\caption{State transition diagram modeled by $P$.}
+% 		\label{fig:transDiagram}
+% 	\end{figure}
+% \end{center}
+
+
+
+% \begin{center}
+%     \begin{figure}[H]
+%         \centering
+%         \includegraphics[width=0.65\textwidth]{"HW04Q13"}
+%         \caption{State probability histograms for 1000 simulations after a burn-in time of $n=25$.  It can be observed that each distribution is centered around the expected equilibrium value of 0.33.}
+%         \label{fig:stateHists}
+%     \end{figure}
+% \end{center}
+
+
+
+% \begin{center}
+% 	\begin{figure}[h!]
+% 		\centering
+% 		\includegraphics[width=0.65\textwidth]{"hw02_q2_partb"}
+% 		\caption{Conditional mean for X given Y (red) and quadratic estimator for X given Y (blue).}
+% 		\label{fig:estimators}
+% 	\end{figure}
+% \end{center}
+
+%  \begin{figure}[H]
+%    \centering
+%    \subfloat[][]{\includegraphics[width=.4\textwidth]{"hw02_q7_hist_point6"}}\quad
+%    \subfloat[][]{\includegraphics[width=.4\textwidth]{"hw02_q7_hist_1"}}\\
+%    \subfloat[][]{\includegraphics[width=.4\textwidth]{"hw02_q7_hist_2"}}\quad
+%    \subfloat[][]{\includegraphics[width=.4\textwidth]{"hw02_q7_hist_5"}}
+%    \caption{Histograms of scaled mean estimates for learning parameters a) $g=0.6$, b) $g=1$, c) $g=2$, and d) $g=5$.}
+%    \label{fig:q7Hists}
+% \end{figure}
+
+
+
+\end{document}

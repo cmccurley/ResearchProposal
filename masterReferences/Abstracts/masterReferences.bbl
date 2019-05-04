@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Hall et~al.(2018)Hall, Dayoub, Skinner, Corke, Carneiro, and
+  S{\"{u}}nderhauf]{Hall2019ProbabilisticObjectDetection}
+D.~Hall, F.~Dayoub, J.~Skinner, P.~Corke, G.~Carneiro, and N.~S{\"{u}}nderhauf.
+\newblock Probability-based detection quality {(PDQ):} {A} probabilistic
+  approach to detection evaluation.
+\newblock \emph{CoRR}, abs/1811.10800, 2018.
+\newblock URL \url{http://arxiv.org/abs/1811.10800}.
+
+\end{thebibliography}

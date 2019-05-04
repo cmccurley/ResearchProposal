@@ -1,0 +1,39 @@
+\BOOKMARK [0][-]{chapter*.1}{ACKNOWLEDGMENTS}{}% 1
+\BOOKMARK [0][-]{tableofcontents.0}{TABLE OF CONTENTS}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{LIST OF TABLES}{}% 3
+\BOOKMARK [0][-]{chapter*.4}{LIST OF FIGURES}{}% 4
+\BOOKMARK [0][-]{section*.5}{ABSTRACT}{}% 5
+\BOOKMARK [0][-]{chapter.1}{1 INTRODUCTION and opening remarks}{}% 6
+\BOOKMARK [1][-]{section.1.1}{1.1 The Section Command Text Should Be in Title Case}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Subsection Commands Are Also in Title Case}{section.1.1}% 8
+\BOOKMARK [3][-]{subsubsection.1.1.1.1}{1.1.1.1 Subsubsections are in sentence case}{subsection.1.1.1}% 9
+\BOOKMARK [3][-]{subsubsection.1.1.1.2}{1.1.1.2 If you divide a section, you must divide it into two, or more, parts}{subsection.1.1.1}% 10
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 I Need Another Second Level Heading in This Section}{section.1.1}% 11
+\BOOKMARK [1][-]{section.1.2}{1.2 Image Handling in XeLaTeX}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 The Traditional EPS Format}{section.1.2}% 13
+\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 Bitmapped Images Work As Well}{section.1.2}% 14
+\BOOKMARK [2][-]{subsection.1.2.3}{1.2.3 Not to Mention PDF}{section.1.2}% 15
+\BOOKMARK [2][-]{subsection.1.2.4}{1.2.4 JPG Is Absolutely Necessary}{section.1.2}% 16
+\BOOKMARK [2][-]{subsection.1.2.5}{1.2.5 PNGs Will Help Make Files Smaller}{section.1.2}% 17
+\BOOKMARK [1][-]{section.1.3}{1.3 GIF, TIF, and Others}{chapter.1}% 18
+\BOOKMARK [0][-]{chapter.2}{2 LITERATURE REVIEW}{}% 19
+\BOOKMARK [1][-]{section.2.1}{2.1 Dolor Sit Amet}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Platea Dictumst}{section.2.1}% 21
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Long \(and/or Wide\) Tables}{section.2.1}% 22
+\BOOKMARK [1][-]{section.2.2}{2.2 Ex id ullamcorper commodo}{chapter.2}% 23
+\BOOKMARK [0][-]{chapter.3}{3 MATERIALS ANS METHODS}{}% 24
+\BOOKMARK [1][-]{section.3.1}{3.1 Consectetur Adipiscing Elit}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 This Is an Isolated Heading}{section.3.1}% 26
+\BOOKMARK [1][-]{section.3.2}{3.2 Augue sapien mattis leo}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter.4}{4 RESULTS}{}% 28
+\BOOKMARK [1][-]{section.4.1}{4.1 Fusce Eget Tempus Lectus, }{chapter.4}% 29
+\BOOKMARK [0][-]{chapter.5}{5 SUMMARY AND CONCLUSIONS}{}% 30
+\BOOKMARK [1][-]{section.5.1}{5.1 Non Porttitor Tellus}{chapter.5}% 31
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Nam Arcu Magna}{section.5.1}% 32
+\BOOKMARK [3][-]{subsubsection.5.1.1.1}{5.1.1.1 Ut pellentesque velit sede}{subsection.5.1.1}% 33
+\BOOKMARK [0][-]{appendix.A}{A THIS IS THE FIRST APPENDIX}{}% 34
+\BOOKMARK [0][-]{appendix.B}{B AN EXAMPLE OF A HALF TITLE PAGE}{}% 35
+\BOOKMARK [0][-]{appendix.C}{C DERIVATION OF THE \040FUNCTION}{}% 36
+\BOOKMARK [0][-]{appendix.D}{D DERIVATION OF THE \040FUNCTION}{}% 37
+\BOOKMARK [0][-]{appendix*.6}{REFERENCES}{}% 38
+\BOOKMARK [0][-]{appendix*.7}{BIOGRAPHICAL SKETCH}{}% 39
