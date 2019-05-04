@@ -51,7 +51,17 @@
       \paperentry{Hall2019ProbabilisticObjectDetection}
       {Probabilistic Object Detection: Definition and Evaluation}
       {Army/Hall2019ProbabilisticObjectDetection.pdf}
-      {Trust me there is text in the pdf...} 
+      {...} 
+      
+      \paperentry{Mahalanobis2019DSIACCharacterization}
+      {A comparison of target detection algorithms using DSIAC ATR algorithm development data set}
+      {Army/Mahalanobis2019DSIACCharacterization.pdf}
+      {The authors provided an initial characterization of detection performance on the DSIAC dataset using the \textit{Faster R-CNN} algorithm and \textit{Quadratic Correlation Filter (QCF)}.  Performance was evaluated on two datasets, ``easy'' and ``difficult'', where the difficulty was determined by number of pixels on target and local contrast.  Under difficult conditions, the Faster R-CNN algorithm achieved noteworthy performance, detecting as much as 80\% of the targets at a low false alarm rate of 0.01 FA/Square degree.  The dataset was limited by a lack of background diversity. }
+      
+      \paperentry{Tanner2019DSIACNeuralNet}
+      {Fundamentals of Target Classification Using Deep Learning}
+      {Army/Tanner2019DSIACNeuralNet.pdf}
+      {A shallow CNN was utilized for ATR on the DSIAC MWIR dataset.  The goal of the study was to determine the range of optimal thresholds which would optimally separate the target and clutter class distributions defined by the CNN predictions (output of softmax), as well as determine an upper bound on the number of training images required for optimizing performance.  The shallow CNN (5 layers) and a Difference of Gaussians (DoG), which finds regions of high intensity on dark backgrounds were used to detect and classify targets.  The CNN could correctly classify 96\% of targets as targets and as few as 4\% of clutter as targets.  It was found that the DoG detector failed when the targets were small (long range) or if the overall image was bright (infrared taken during the daytime).  It was also determined that guessing the bright pixels were at the center of the targets was a bad assumption. (The brightest part of a target is not necessarily at its center.)}
       
 \section{Manifold/ Representation Learning}
 
