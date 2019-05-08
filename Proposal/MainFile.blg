@@ -3,11 +3,14 @@ The style file: BibFiles/IEEEtran.bst
 A level-1 auxiliary file: Chapters/acknowledgements.aux
 A level-1 auxiliary file: Chapters/TOC.aux
 A level-1 auxiliary file: Chapters/abstract.aux
-A level-1 auxiliary file: Chapters/ch1_Introduction.aux
-A level-1 auxiliary file: Chapters/ch2_LitReview.aux
-A level-1 auxiliary file: Chapters/ch3_TechApproach.aux
-A level-1 auxiliary file: Chapters/ch4_Results.aux
-A level-1 auxiliary file: Chapters/ch5_Conclusion.aux
+A level-1 auxiliary file: Chapters/ch_Introduction.aux
+A level-1 auxiliary file: Chapters/ch_LitReview.aux
+A level-1 auxiliary file: Chapters/ch_ProblemDescription.aux
+A level-1 auxiliary file: Chapters/ch_TechApproach.aux
+A level-1 auxiliary file: Chapters/ch_ExperimentalDesign.aux
+A level-1 auxiliary file: Chapters/ch_PreliminaryWork.aux
+A level-1 auxiliary file: Chapters/ch_FutureTasks.aux
+A level-1 auxiliary file: Chapters/ch_Conclusion.aux
 I found no \citation commands---while reading file MainFile.aux
 Database file #1: BibFiles/references.bib
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
