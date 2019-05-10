@@ -2,12 +2,12 @@
 \contentsline {extrachapter}{LIST OF FIGURES}{5}{chapter*.3}
 \addvspace {10pt}\noindent {CHAPTER}\hfill \par 
 \contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{6}{chapter.1}
-\contentsline {chapter}{\numberline {2}\uppercase {Background}}{9}{chapter.2}
-\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{10}{chapter.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Technical Approach}}{11}{chapter.4}
-\contentsline {chapter}{\numberline {5}\uppercase {Experimental Design}}{12}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Preliminary Work}}{13}{chapter.6}
-\contentsline {chapter}{\numberline {7}\uppercase {Future Tasks}}{14}{chapter.7}
-\contentsline {chapter}{\numberline {8}\uppercase {Conclusions}}{15}{chapter.8}
+\contentsline {chapter}{\numberline {2}\uppercase {Background}}{8}{chapter.2}
+\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{9}{chapter.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Technical Approach}}{10}{chapter.4}
+\contentsline {chapter}{\numberline {5}\uppercase {Experimental Design}}{11}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Preliminary Work}}{12}{chapter.6}
+\contentsline {chapter}{\numberline {7}\uppercase {Future Tasks}}{13}{chapter.7}
+\contentsline {chapter}{\numberline {8}\uppercase {Conclusions}}{14}{chapter.8}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 
-\contentsline {extrachapter}{REFERENCES}{16}{appendix*.5}
+\contentsline {extrachapter}{REFERENCES}{15}{appendix*.5}
