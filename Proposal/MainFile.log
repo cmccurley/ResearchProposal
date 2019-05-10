@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  10 MAY 2019 12:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  10 MAY 2019 13:05
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -529,17 +529,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ]
+Underfull \hbox (badness 10000) detected at line 16
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 17
 [][][]
  []
 
 
 Underfull \hbox (badness 10000) detected at line 18
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 19
 [][][]
  []
 
@@ -678,16 +678,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
 Here is how much of TeX's memory you used:
  7677 strings out of 493323
  113982 string characters out of 3139067
- 199361 words of memory out of 3000000
+ 200361 words of memory out of 3000000
  10990 multiletter control sequences out of 15000+200000
  12366 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,5n,42p,1329b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,5n,42p,1508b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on MainFile.pdf (16 pages, 64309 bytes).
+Output written on MainFile.pdf (16 pages, 64199 bytes).
 PDF statistics:
  161 PDF objects out of 1000 (max. 8388607)
  34 named destinations out of 1000 (max. 500000)
