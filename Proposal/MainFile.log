@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  10 MAY 2019 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  10 MAY 2019 12:05
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -528,7 +528,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-]) [7]
+]
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 19
+[][][]
+ []
+
+) [7] [8]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -539,7 +554,7 @@ CHAPTER 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [8
+) [9
 
 
 
@@ -554,7 +569,7 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [9
+) [10
 
 
 
@@ -569,7 +584,7 @@ CHAPTER 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [10
+) [11
 
 
 
@@ -584,7 +599,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [11
+) [12
 
 
 
@@ -599,7 +614,7 @@ CHAPTER 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [12
+) [13
 
 
 
@@ -614,7 +629,7 @@ CHAPTER 7.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [13
+) [14
 
 
 
@@ -629,7 +644,7 @@ CHAPTER 8.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [14
+) [15
 
 
 
@@ -637,7 +652,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
-[15
+[16
 
 
 
@@ -661,9 +676,9 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
  ) 
 Here is how much of TeX's memory you used:
- 7673 strings out of 493323
- 113957 string characters out of 3139067
- 198360 words of memory out of 3000000
+ 7677 strings out of 493323
+ 113982 string characters out of 3139067
+ 199361 words of memory out of 3000000
  10990 multiletter control sequences out of 15000+200000
  12366 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -672,9 +687,9 @@ Here is how much of TeX's memory you used:
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on MainFile.pdf (15 pages, 64172 bytes).
+Output written on MainFile.pdf (16 pages, 64309 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
