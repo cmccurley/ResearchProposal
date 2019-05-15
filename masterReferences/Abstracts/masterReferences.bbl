@@ -1,9 +1,27 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{\'Alvarez} et~al.(2010){\'Alvarez}, {Baumela}, {Henr\'iquez}, and
+  {M\'arquez-Neila}]{Alvarez2010MorphologicalSnakes}
+L.~{\'Alvarez}, L.~{Baumela}, P.~{Henr\'iquez}, and P.~{M\'arquez-Neila}.
+\newblock Morphological snakes.
+\newblock In \emph{2010 IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition}, pages 2197--2202, June 2010.
+\newblock \doi{10.1109/CVPR.2010.5539900}.
+
+\bibitem[Caselles et~al.(1997)Caselles, Kimmel, and
+  Sapiro]{Caselles1997GeodesicActiveContours}
+V.~Caselles, R.~Kimmel, and G.~Sapiro.
+\newblock Geodesic active contours.
+\newblock \emph{International Journal of Computer Vision}, 22\penalty0
+  (1):\penalty0 61--79, Feb 1997.
+\newblock ISSN 1573-1405.
+\newblock \doi{10.1023/A:1007979827043}.
+\newblock URL \url{https://doi.org/10.1023/A:1007979827043}.
 
 \bibitem[Hall et~al.(2018)Hall, Dayoub, Skinner, Corke, Carneiro, and
   S{\"{u}}nderhauf]{Hall2019ProbabilisticObjectDetection}
