@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -36,6 +36,15 @@ A.~Mahalanobis and B.~McIntosh.
 \newblock A comparison of target detection algorithms using dsiac atr algorithm
   development data set.
 \newblock Proc.SPIE, Apr. 2019.
+
+\bibitem[{M\'arquez-Neila} et~al.(2014){M\'arquez-Neila}, {Baumela}, and
+  {\'Alvarez}]{Marquez_Neila2014MorphologicalCurveBasedEvolution}
+P.~{M\'arquez-Neila}, L.~{Baumela}, and L.~{\'Alvarez}.
+\newblock A morphological approach to curvature-based evolution of curves and
+  surfaces.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 36\penalty0 (1):\penalty0 2--17, Jan 2014.
+\newblock ISSN 0162-8828.
 
 \bibitem[Tanner and Mahalanobis(2019)]{Tanner2019DSIACNeuralNet}
 I.~L. Tanner and A.~Mahalanobis.

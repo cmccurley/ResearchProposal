@@ -1,11 +1,16 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: masterReferences.aux
 The style file: plainnat.bst
 Database file #1: references.bib
-I was expecting a `,' or a `}'---line 335 of file references.bib
+You're missing a field name---line 211 of file references.bib
+ : 
+ : %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 346 of file references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty booktitle in Mahalanobis2019DSIACCharacterization
 Warning--empty booktitle in Tanner2019DSIACNeuralNet
-(There was 1 error message)
+(There were 2 error messages)
