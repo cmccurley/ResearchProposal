@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -31,6 +31,11 @@ D.~Hall, F.~Dayoub, J.~Skinner, P.~Corke, G.~Carneiro, and N.~S{\"{u}}nderhauf.
 \newblock \emph{CoRR}, abs/1811.10800, 2018.
 \newblock URL \url{http://arxiv.org/abs/1811.10800}.
 
+\bibitem[Jindal and Kumar(2017)]{Jindal2017ReviewDRTechniques}
+P.~Jindal and D.~Kumar.
+\newblock A review on dimensionality reduction techniques.
+\newblock \emph{International Journal of Computer Applications}, 173, 09 2017.
+
 \bibitem[Mahalanobis and McIntosh(2019)]{Mahalanobis2019DSIACCharacterization}
 A.~Mahalanobis and B.~McIntosh.
 \newblock A comparison of target detection algorithms using dsiac atr algorithm
@@ -50,5 +55,11 @@ P.~{M\'arquez-Neila}, L.~{Baumela}, and L.~{\'Alvarez}.
 I.~L. Tanner and A.~Mahalanobis.
 \newblock Fundamentals of target classification using deep learning.
 \newblock Proc.SPIE, Apr. 2019.
+
+\bibitem[van~der Maaten et~al.(2007)van~der Maaten, Postma, and
+  Herik]{VanDerMaaten2009DRReview}
+L.~van~der Maaten, E.~Postma, and H.~Herik.
+\newblock Dimensionality reduction: A comparative review.
+\newblock \emph{Journal of Machine Learning Research - JMLR}, 10, 01 2007.
 
 \end{thebibliography}
