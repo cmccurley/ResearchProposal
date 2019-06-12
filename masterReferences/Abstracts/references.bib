@@ -102,6 +102,47 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PCA (Kernel/PPCA) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+@incollection{Theodoris2008PCA,
+	author = {S. Theodoridis and K. Koutroumbas},
+	title = {The Karhunen-Loeve Transform},
+	booktitle = {Pattern Recognition, Fourth Edition},
+	year = {2008},
+	isbn = {1597492728, 9781597492720},
+	edition = {4th},
+	publisher = {Academic Press, Inc.},
+	address = {Orlando, FL, USA},
+	chapter = {6},
+	pages = {326-334},
+} 
+
+@incollection{Theodoris2008KPCA,
+	author = {S. Theodoridis and K. Koutroumbas},
+	title = {Kernel PCA},
+	booktitle = {Pattern Recognition, Fourth Edition},
+	year = {2008},
+	isbn = {1597492728, 9781597492720},
+	edition = {4th},
+	publisher = {Academic Press, Inc.},
+	address = {Orlando, FL, USA},
+	chapter = {6},
+	pages = {351-353},
+} 
+
+
+@Article{Tipping1999PPCA,
+	author = {M. E. Tipping and C. Bishop},
+	title = {Probabilistic Principal Component Analysis},
+	year = {1999},
+	month = {January},
+	url = {https://www.microsoft.com/en-us/research/publication/probabilistic-principal-component-analysis/},
+	pages = {611-622},
+	journal = {Journal of the Royal Statistical Society, Series B},
+	volume = {21},
+	number = {3},
+}
+
+%ICA
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Classical Methods %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Isomap
@@ -158,6 +199,7 @@
 	doi = {10.1162/089976603321780317},
 }
 
+%GTM
 @article{Bishop1998GTM,
 	author = {C. Bishop and M. Svensén and C. K. I. Williams},
 	title = {GTM: The Generative Topographic Mapping},
@@ -169,19 +211,87 @@
 	edition = {Neural Computation},
 }
 
+%Diffusion Maps
 @article{Delaporte2008DiffusionMaps,
 	title={An introduction to diffusion maps},
 	author={J. Delaporte and B. M. Herbst and W. Hereman and S. Van der Walt},
 	year={2008}
 	journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 }
+
+%GPLVM
+@inproceedings{Lawrence2003GPLVM,
+	author = {N. D. Lawrence},
+	title = {Gaussian Process Latent Variable Models for Visualisation of High Dimensional Data},
+	booktitle = {Proceedings of the 16th International Conference on Neural Information Processing Systems},
+	series = {NIPS'03},
+	year = {2003},
+	location = {Whistler, British Columbia, Canada},
+	pages = {329--336},
+	numpages = {8},
+	url = {http://dl.acm.org/citation.cfm?id=2981345.2981387},
+	acmid = {2981387},
+	publisher = {MIT Press},
+	address = {Cambridge, MA, USA},
+} 
+
+%PPCA GPLVM
+@article{Lawrence2005PPCAGPLVModels,
+	author = {N. Lawrence},
+	title = {Probabilistic Non-linear Principal Component Analysis with Gaussian Process Latent Variable Models},
+	journal = {J. Mach. Learn. Res.},
+	issue_date = {12/1/2005},
+	volume = {6},
+	month = {dec},
+	year = {2005},
+	issn = {1532-4435},
+	pages = {1783--1816},
+	numpages = {34},
+	url = {http://dl.acm.org/citation.cfm?id=1046920.1194904},
+	acmid = {1194904},
+	publisher = {JMLR.org},
+} 
+
+%Elastic Maps
+@InProceedings{Gorban2007ElasticMaps,
+	author={A. N. Gorban and A. Y. Zinovyev},
+	editor={A. N. Gorban and B. K{\'e}gl and D. C. Wunsch and A. Y. Zinovyev},
+	title={Elastic Maps and Nets for Approximating Principal Manifolds and Their Application to Microarray Data Visualization},
+	booktitle={Principal Manifolds for Data Visualization and Dimension Reduction},
+	year={2008},
+	publisher={Springer Berlin Heidelberg},
+	address={Berlin, Heidelberg},
+	pages={96--130},
+	isbn={978-3-540-73750-6},
+}
+
+
+@article{Lee2015MultipleManifolds,
+	author = {C. Lee and A. Elgammal and M. Torki},
+	title = {Learning Representations from Multiple Manifolds},
+	journal = {Pattern Recogn.},
+	issue_date = {February 2016},
+	volume = {50},
+	number = {C},
+	month = feb,
+	year = {2016},
+	issn = {0031-3203},
+	pages = {74--87},
+	numpages = {14},
+	url = {http://dx.doi.org/10.1016/j.patcog.2015.08.024},
+	doi = {10.1016/j.patcog.2015.08.024},
+	acmid = {2843338},
+	publisher = {Elsevier Science Inc.},
+	address = {New York, NY, USA},
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Graphs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Self Organizing Maps/ Neural Gas %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-@ARTICLE{Rauber2002, 
+@ARTICLE{Rauber2002GHSOM, 
 	author={A. Rauber and D. Merkl and M. Dittenbach}, 
 	journal={IEEE Transactions on Neural Networks}, 
 	title={The growing hierarchical self-organizing map: exploratory analysis of high-dimensional data}, 
@@ -194,7 +304,7 @@
 	month={Nov},
 }
 
-@ARTICLE{Chiang1997, 
+@ARTICLE{Chiang1997HandWrittenWords, 
 	author={J. Chiang and P. D. Gader}, 
 	journal={IEEE Transactions on Fuzzy Systems}, 
 	title={Hybrid fuzzy-neural systems in handwritten word recognition}, 
@@ -207,7 +317,7 @@
 	month={Nov},
 }
 
-@ARTICLE{Frigui2009, 
+@ARTICLE{Frigui2009LandmineSOM, 
 	author={H. Frigui and P. Gader}, 
 	journal={IEEE Transactions on Fuzzy Systems}, 
 	title={Detection and Discrimination of Land Mines in Ground-Penetrating Radar Based on Edge Histogram Descriptors and a Possibilistic $K$-Nearest Neighbor Classifier}, 
@@ -219,7 +329,7 @@
 	month={Feb},
 }
 
-@ARTICLE{Kohonen1990, 
+@ARTICLE{Kohonen1990SOM, 
 	author={T. Kohonen}, 
 	journal={Proceedings of the IEEE}, 
 	title={The self-organizing map}, 
@@ -230,6 +340,71 @@
 	doi={10.1109/5.58325}, 
 	ISSN={0018-9219}, 
 	month={Sep.},}
+
+@inproceedings{Fritzke1995GrowingNeuralGas,
+	author = {B. Fritzke},
+	title = {A Growing Neural Gas Network Learns Topologies},
+	booktitle = {Proceedings of the 7th International Conference on Neural Information Processing Systems},
+	series = {NIPS'94},
+	year = {1994},
+	location = {Denver, Colorado},
+	pages = {625--632},
+	numpages = {8},
+	url = {http://dl.acm.org/citation.cfm?id=2998687.2998765},
+	acmid = {2998765},
+	publisher = {MIT Press},
+	address = {Cambridge, MA, USA},
+}
+
+@ARTICLE{LopezRubio2011GHPGraphs, 
+	author={E. {Lopez-Rubio} and E. J. {Palomo}}, 
+	journal={IEEE Transactions on Neural Networks}, 
+	title={Growing Hierarchical Probabilistic Self-Organizing Graphs}, 
+	year={2011}, 
+	volume={22}, 
+	number={7}, 
+	pages={997-1008}, 
+	doi={10.1109/TNN.2011.2138159}, 
+	ISSN={1045-9227}, 
+	month={July},}
+
+@article{Palomo2016GrowingNeuralForest,
+	author = {E. J. Palomo and E. López-Rubio},
+	title = {Learning Topologies with the Growing Neural Forest},
+	journal = {International Journal of Neural Systems},
+	volume = {26},
+	number = {04},
+	pages = {1650019},
+	year = {2016},
+	doi = {10.1142/S0129065716500192},
+	note ={PMID: 27121995},
+	URL = {https://doi.org/10.1142/S0129065716500192},
+	eprint = {https://doi.org/10.1142/S0129065716500192},
+}
+
+@ARTICLE{Palomo2017GHNG, 
+	author={E. J. {Palomo} and E. {López-Rubio}}, 
+	journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+	title={The Growing Hierarchical Neural Gas Self-Organizing Neural Network}, 
+	year={2017}, 
+	volume={28}, 
+	number={9}, 
+	pages={2000-2009}, 
+	doi={10.1109/TNNLS.2016.2570124}, 
+	ISSN={2162-237X}, 
+	month={Sep.},}
+
+@article{Sun2016GNGMotionDetection,
+	title = {Online growing neural gas for anomaly detection in changing surveillance scenes},
+	journal = {Pattern Recognition},
+	volume = {64},
+	pages = {187 - 201},
+	year = {2017},
+	issn = {0031-3203},
+	doi = {https://doi.org/10.1016/j.patcog.2016.09.016},
+	url = {http://www.sciencedirect.com/science/article/pii/S0031320316302771},
+	author = {Q. Sun and H. Liu and T. Harada},
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Autoencoder %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -256,6 +431,8 @@
 
 %FDA
 
+%Supervised PCA (Murphy)
+
 %=========================================================================================
 %============================ Mulitple Instance Learning =================================
 %=========================================================================================
@@ -280,7 +457,9 @@
 %=========================================================================================
 
 
-
+%=========================================================================================
+%================================ Graph Neural Nets ======================================
+%=========================================================================================
 
 %=========================================================================================
 %===================================== Context ===========================================
@@ -330,6 +509,10 @@
 	ISSN={0162-8828}, 
 	month={Jan},
 }
+
+%=========================================================================================
+%================================== Gaussian Process =====================================
+%=========================================================================================
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -46,11 +46,46 @@ V.~Caselles, R.~Kimmel, and G.~Sapiro.
 \newblock \doi{10.1023/A:1007979827043}.
 \newblock URL \url{https://doi.org/10.1023/A:1007979827043}.
 
+\bibitem[Chiang and Gader(1997)]{Chiang1997HandWrittenWords}
+J.~Chiang and P.~D. Gader.
+\newblock Hybrid fuzzy-neural systems in handwritten word recognition.
+\newblock \emph{IEEE Transactions on Fuzzy Systems}, 5\penalty0 (4):\penalty0
+  497--510, Nov 1997.
+\newblock ISSN 1063-6706.
+\newblock \doi{10.1109/91.649901}.
+
 \bibitem[Delaporte et~al.(2008)Delaporte, Herbst, Hereman, and der
   Walt]{Delaporte2008DiffusionMaps}
 J.~Delaporte, B.~M. Herbst, W.~Hereman, and S.~Van der Walt.
 \newblock An introduction to diffusion maps.
 \newblock 2008.
+
+\bibitem[Frigui and Gader(2009)]{Frigui2009LandmineSOM}
+H.~Frigui and P.~Gader.
+\newblock Detection and discrimination of land mines in ground-penetrating
+  radar based on edge histogram descriptors and a possibilistic $k$-nearest
+  neighbor classifier.
+\newblock \emph{IEEE Transactions on Fuzzy Systems}, 17\penalty0 (1), Feb 2009.
+\newblock ISSN 1063-6706.
+\newblock \doi{10.1109/TFUZZ.2008.2005249}.
+
+\bibitem[Fritzke(1994)]{Fritzke1995GrowingNeuralGas}
+B.~Fritzke.
+\newblock A growing neural gas network learns topologies.
+\newblock In \emph{Proceedings of the 7th International Conference on Neural
+  Information Processing Systems}, NIPS'94, pages 625--632, Cambridge, MA, USA,
+  1994. MIT Press.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=2998687.2998765}.
+
+\bibitem[Gorban and Zinovyev(2008)]{Gorban2007ElasticMaps}
+A.~N. Gorban and A.~Y. Zinovyev.
+\newblock Elastic maps and nets for approximating principal manifolds and their
+  application to microarray data visualization.
+\newblock In A.~N. Gorban, B.~K{\'e}gl, D.~C. Wunsch, and A.~Y. Zinovyev,
+  editors, \emph{Principal Manifolds for Data Visualization and Dimension
+  Reduction}, pages 96--130, Berlin, Heidelberg, 2008. Springer Berlin
+  Heidelberg.
+\newblock ISBN 978-3-540-73750-6.
 
 \bibitem[Hall et~al.(2018)Hall, Dayoub, Skinner, Corke, Carneiro, and
   S{\"{u}}nderhauf]{Hall2019ProbabilisticObjectDetection}
@@ -64,6 +99,48 @@ D.~Hall, F.~Dayoub, J.~Skinner, P.~Corke, G.~Carneiro, and N.~S{\"{u}}nderhauf.
 P.~Jindal and D.~Kumar.
 \newblock A review on dimensionality reduction techniques.
 \newblock \emph{International Journal of Computer Applications}, 173, 09 2017.
+
+\bibitem[Kohonen(1990)]{Kohonen1990SOM}
+T.~Kohonen.
+\newblock The self-organizing map.
+\newblock \emph{Proceedings of the IEEE}, 78\penalty0 (9):\penalty0 1464--1480,
+  Sep. 1990.
+\newblock ISSN 0018-9219.
+\newblock \doi{10.1109/5.58325}.
+
+\bibitem[Lawrence(2005)]{Lawrence2005PPCAGPLVModels}
+N.~Lawrence.
+\newblock Probabilistic non-linear principal component analysis with gaussian
+  process latent variable models.
+\newblock \emph{J. Mach. Learn. Res.}, 6:\penalty0 1783--1816, dec 2005.
+\newblock ISSN 1532-4435.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=1046920.1194904}.
+
+\bibitem[Lawrence(2003)]{Lawrence2003GPLVM}
+N.~D. Lawrence.
+\newblock Gaussian process latent variable models for visualisation of high
+  dimensional data.
+\newblock In \emph{Proceedings of the 16th International Conference on Neural
+  Information Processing Systems}, NIPS'03, pages 329--336, Cambridge, MA, USA,
+  2003. MIT Press.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=2981345.2981387}.
+
+\bibitem[Lee et~al.(2016)Lee, Elgammal, and Torki]{Lee2015MultipleManifolds}
+C.~Lee, A.~Elgammal, and M.~Torki.
+\newblock Learning representations from multiple manifolds.
+\newblock \emph{Pattern Recogn.}, 50\penalty0 (C):\penalty0 74--87, February
+  2016.
+\newblock ISSN 0031-3203.
+\newblock \doi{10.1016/j.patcog.2015.08.024}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.patcog.2015.08.024}.
+
+\bibitem[{Lopez-Rubio} and {Palomo}(2011)]{LopezRubio2011GHPGraphs}
+E.~{Lopez-Rubio} and E.~J. {Palomo}.
+\newblock Growing hierarchical probabilistic self-organizing graphs.
+\newblock \emph{IEEE Transactions on Neural Networks}, 22\penalty0
+  (7):\penalty0 997--1008, July 2011.
+\newblock ISSN 1045-9227.
+\newblock \doi{10.1109/TNN.2011.2138159}.
 
 \bibitem[Mahalanobis and McIntosh(2019)]{Mahalanobis2019DSIACCharacterization}
 A.~Mahalanobis and B.~McIntosh.
@@ -80,6 +157,32 @@ P.~{M\'arquez-Neila}, L.~{Baumela}, and L.~{\'Alvarez}.
   Intelligence}, 36\penalty0 (1):\penalty0 2--17, Jan 2014.
 \newblock ISSN 0162-8828.
 
+\bibitem[Palomo and López-Rubio(2016)]{Palomo2016GrowingNeuralForest}
+E.~J. Palomo and E.~López-Rubio.
+\newblock Learning topologies with the growing neural forest.
+\newblock \emph{International Journal of Neural Systems}, 26\penalty0
+  (04):\penalty0 1650019, 2016.
+\newblock \doi{10.1142/S0129065716500192}.
+\newblock URL \url{https://doi.org/10.1142/S0129065716500192}.
+\newblock PMID: 27121995.
+
+\bibitem[{Palomo} and {López-Rubio}(2017)]{Palomo2017GHNG}
+E.~J. {Palomo} and E.~{López-Rubio}.
+\newblock The growing hierarchical neural gas self-organizing neural network.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  28\penalty0 (9):\penalty0 2000--2009, Sep. 2017.
+\newblock ISSN 2162-237X.
+\newblock \doi{10.1109/TNNLS.2016.2570124}.
+
+\bibitem[Rauber et~al.(2002)Rauber, Merkl, and Dittenbach]{Rauber2002GHSOM}
+A.~Rauber, D.~Merkl, and M.~Dittenbach.
+\newblock The growing hierarchical self-organizing map: exploratory analysis of
+  high-dimensional data.
+\newblock \emph{IEEE Transactions on Neural Networks}, 13\penalty0
+  (6):\penalty0 1331--1341, Nov 2002.
+\newblock ISSN 1045-9227.
+\newblock \doi{10.1109/TNN.2002.804221}.
+
 \bibitem[Roweis and Saul(2000)]{Roweis2000LLE}
 S.~T. Roweis and L.~K. Saul.
 \newblock Nonlinear dimensionality reduction by locally linear embedding.
@@ -92,6 +195,16 @@ S.~T. Roweis and L.~K. Saul.
 L.~K. Saul and S.~T. Roweis.
 \newblock An introduction to locally linear embedding.
 \newblock \emph{Journal of Machine Learning Research}, 7, 01 2001.
+
+\bibitem[Sun et~al.(2017)Sun, Liu, and Harada]{Sun2016GNGMotionDetection}
+Q.~Sun, H.~Liu, and T.~Harada.
+\newblock Online growing neural gas for anomaly detection in changing
+  surveillance scenes.
+\newblock \emph{Pattern Recognition}, 64:\penalty0 187 -- 201, 2017.
+\newblock ISSN 0031-3203.
+\newblock \doi{https://doi.org/10.1016/j.patcog.2016.09.016}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0031320316302771}.
 
 \bibitem[Tanner and Mahalanobis(2019)]{Tanner2019DSIACNeuralNet}
 I.~L. Tanner and A.~Mahalanobis.
@@ -106,6 +219,30 @@ J.~B. Tenenbaum, V.~Silva, and J.~C. Langford.
 \newblock ISSN 0036-8075.
 \newblock \doi{10.1126/science.290.5500.2319}.
 \newblock URL \url{https://science.sciencemag.org/content/290/5500/2319}.
+
+\bibitem[Theodoridis and Koutroumbas(2008{\natexlab{a}})]{Theodoris2008KPCA}
+S.~Theodoridis and K.~Koutroumbas.
+\newblock Kernel pca.
+\newblock In \emph{Pattern Recognition, Fourth Edition}, chapter~6, pages
+  351--353. Academic Press, Inc., Orlando, FL, USA, 4th edition,
+  2008{\natexlab{a}}.
+\newblock ISBN 1597492728, 9781597492720.
+
+\bibitem[Theodoridis and Koutroumbas(2008{\natexlab{b}})]{Theodoris2008PCA}
+S.~Theodoridis and K.~Koutroumbas.
+\newblock The karhunen-loeve transform.
+\newblock In \emph{Pattern Recognition, Fourth Edition}, chapter~6, pages
+  326--334. Academic Press, Inc., Orlando, FL, USA, 4th edition,
+  2008{\natexlab{b}}.
+\newblock ISBN 1597492728, 9781597492720.
+
+\bibitem[Tipping and Bishop(1999)]{Tipping1999PPCA}
+M.~E. Tipping and C.~Bishop.
+\newblock Probabilistic principal component analysis.
+\newblock \emph{Journal of the Royal Statistical Society, Series B},
+  21\penalty0 (3):\penalty0 611--622, January 1999.
+\newblock URL
+  \url{https://www.microsoft.com/en-us/research/publication/probabilistic-principal-component-analysis/}.
 
 \bibitem[van~der Maaten et~al.(2007)van~der Maaten, Postma, and
   Herik]{VanDerMaaten2009DRReview}
