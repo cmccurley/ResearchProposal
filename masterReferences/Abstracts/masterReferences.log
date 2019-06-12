@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  7 JUN 2019 11:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  7 JUN 2019 12:28
 entering extended mode
 **./masterReferences.tex
 (masterReferences.tex
@@ -305,22 +305,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 14.
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no © in font cmr10!
+
+Underfull \hbox (badness 3942) in paragraph at lines 33--38
+[]\OT1/cmr/m/n/10 C. Bishop, M. Svensn, and C. K. I. Williams.  Gtm: The gen-er
+-a-tive to-po-graphic map-
+ []
+
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
  (masterReferences.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
 Package rerunfilecheck Info: File `masterReferences.out' has not changed.
 (rerunfilecheck)             Checksum: 28D64CFE618E2075ADB8EDC4256457F6;327.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
- 6130 strings out of 493323
- 89421 string characters out of 3139067
- 190080 words of memory out of 3000000
- 9623 multiletter control sequences out of 15000+200000
+ 6158 strings out of 493323
+ 90192 string characters out of 3139067
+ 191454 words of memory out of 3000000
+ 9644 multiletter control sequences out of 15000+200000
  8102 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,6n,35p,1252b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -331,9 +339,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmtt10.pfb>
-Output written on masterReferences.pdf (4 pages, 128864 bytes).
+Output written on masterReferences.pdf (4 pages, 140691 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
+ 164 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

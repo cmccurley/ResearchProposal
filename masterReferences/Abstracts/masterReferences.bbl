@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -13,6 +13,29 @@ L.~{\'Alvarez}, L.~{Baumela}, P.~{Henr\'iquez}, and P.~{M\'arquez-Neila}.
   Pattern Recognition}, pages 2197--2202, June 2010.
 \newblock \doi{10.1109/CVPR.2010.5539900}.
 
+\bibitem[Belkin and Niyogi(2003)]{Belkin2003LaplacianEigenmaps}
+M.~Belkin and P.~Niyogi.
+\newblock Laplacian eigenmaps for dimensionality reduction and data
+  representation.
+\newblock \emph{Neural Computation}, 15\penalty0 (6):\penalty0 1373--1396,
+  2003.
+\newblock \doi{10.1162/089976603321780317}.
+
+\bibitem[Bengio et~al.(2012)Bengio, Courville, and
+  Vincent]{Bengio2014RepLearningReview}
+Y.~Bengio, A.~C. Courville, and P.~Vincent.
+\newblock Unsupervised feature learning and deep learning: {A} review and new
+  perspectives.
+\newblock \emph{CoRR}, abs/1206.5538, 2012.
+\newblock URL \url{http://arxiv.org/abs/1206.5538}.
+
+\bibitem[Bishop et~al.(1998)Bishop, Svensén, and Williams]{Bishop1998GTM}
+C.~Bishop, M.~Svensén, and C.~K.~I. Williams.
+\newblock Gtm: The generative topographic mapping.
+\newblock 10:\penalty0 215--234, January 1998.
+\newblock URL
+  \url{https://www.microsoft.com/en-us/research/publication/gtm-the-generative-topographic-mapping/}.
+
 \bibitem[Caselles et~al.(1997)Caselles, Kimmel, and
   Sapiro]{Caselles1997GeodesicActiveContours}
 V.~Caselles, R.~Kimmel, and G.~Sapiro.
@@ -22,6 +45,12 @@ V.~Caselles, R.~Kimmel, and G.~Sapiro.
 \newblock ISSN 1573-1405.
 \newblock \doi{10.1023/A:1007979827043}.
 \newblock URL \url{https://doi.org/10.1023/A:1007979827043}.
+
+\bibitem[Delaporte et~al.(2008)Delaporte, Herbst, Hereman, and der
+  Walt]{Delaporte2008DiffusionMaps}
+J.~Delaporte, B.~M. Herbst, W.~Hereman, and S.~Van der Walt.
+\newblock An introduction to diffusion maps.
+\newblock 2008.
 
 \bibitem[Hall et~al.(2018)Hall, Dayoub, Skinner, Corke, Carneiro, and
   S{\"{u}}nderhauf]{Hall2019ProbabilisticObjectDetection}
@@ -51,10 +80,32 @@ P.~{M\'arquez-Neila}, L.~{Baumela}, and L.~{\'Alvarez}.
   Intelligence}, 36\penalty0 (1):\penalty0 2--17, Jan 2014.
 \newblock ISSN 0162-8828.
 
+\bibitem[Roweis and Saul(2000)]{Roweis2000LLE}
+S.~T. Roweis and L.~K. Saul.
+\newblock Nonlinear dimensionality reduction by locally linear embedding.
+\newblock \emph{Science}, 290\penalty0 (5500):\penalty0 2323--2326, 2000.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.290.5500.2323}.
+\newblock URL \url{https://science.sciencemag.org/content/290/5500/2323}.
+
+\bibitem[Saul and Roweis(2001)]{Saul2001LLEIntro}
+L.~K. Saul and S.~T. Roweis.
+\newblock An introduction to locally linear embedding.
+\newblock \emph{Journal of Machine Learning Research}, 7, 01 2001.
+
 \bibitem[Tanner and Mahalanobis(2019)]{Tanner2019DSIACNeuralNet}
 I.~L. Tanner and A.~Mahalanobis.
 \newblock Fundamentals of target classification using deep learning.
 \newblock Proc.SPIE, Apr. 2019.
+
+\bibitem[Tenenbaum et~al.(2000)Tenenbaum, Silva, and
+  Langford]{Tenenbaum2000Isomap}
+J.~B. Tenenbaum, V.~Silva, and J.~C. Langford.
+\newblock A global geometric framework for nonlinear dimensionality reduction.
+\newblock \emph{Science}, 290\penalty0 (5500):\penalty0 2319--2323, 2000.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.290.5500.2319}.
+\newblock URL \url{https://science.sciencemag.org/content/290/5500/2319}.
 
 \bibitem[van~der Maaten et~al.(2007)van~der Maaten, Postma, and
   Herik]{VanDerMaaten2009DRReview}

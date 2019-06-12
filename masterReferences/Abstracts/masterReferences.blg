@@ -6,16 +6,19 @@ I was expecting a `,' or a `}'---line 82 of file references.bib
  :  number = {2}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 254 of file references.bib
- : 
- : %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+I was expecting a `,' or a `}'---line 176 of file references.bib
+ :  
+ :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 389 of file references.bib
+I was expecting a `,' or a `}'---line 470 of file references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
+Warning--empty journal in Bishop1998GTM
+Warning--empty journal in Delaporte2008DiffusionMaps
 Warning--empty booktitle in Mahalanobis2019DSIACCharacterization
 Warning--empty booktitle in Tanner2019DSIACNeuralNet
 (There were 3 error messages)
