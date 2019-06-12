@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,6 +20,14 @@ M.~Belkin and P.~Niyogi.
 \newblock \emph{Neural Computation}, 15\penalty0 (6):\penalty0 1373--1396,
   2003.
 \newblock \doi{10.1162/089976603321780317}.
+
+\bibitem[Belkin et~al.(2006)Belkin, Niyogi, and Sindhwani]{Belkin2006ManReg}
+M.~Belkin, P.~Niyogi, and V.~Sindhwani.
+\newblock Manifold regularization: A geometric framework for learning from
+  labeled and unlabeled examples.
+\newblock \emph{J. Mach. Learn. Res.}, 7:\penalty0 2399--2434, December 2006.
+\newblock ISSN 1532-4435.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=1248547.1248632}.
 
 \bibitem[Bengio et~al.(2012)Bengio, Courville, and
   Vincent]{Bengio2014RepLearningReview}
@@ -134,6 +142,14 @@ C.~Lee, A.~Elgammal, and M.~Torki.
 \newblock \doi{10.1016/j.patcog.2015.08.024}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.patcog.2015.08.024}.
 
+\bibitem[{Li} et~al.(2015){Li}, {Liu}, and
+  {Wang}]{Li2015ManRegReinforcementLearning}
+H.~{Li}, D.~{Liu}, and D.~{Wang}.
+\newblock Approximate policy iteration with unsupervised feature learning based
+  on manifold regularization.
+\newblock In \emph{2015 International Joint Conference on Neural Networks
+  (IJCNN)}, pages 1--6, July 2015.
+
 \bibitem[{Lopez-Rubio} and {Palomo}(2011)]{LopezRubio2011GHPGraphs}
 E.~{Lopez-Rubio} and E.~J. {Palomo}.
 \newblock Growing hierarchical probabilistic self-organizing graphs.
@@ -157,6 +173,15 @@ P.~{M\'arquez-Neila}, L.~{Baumela}, and L.~{\'Alvarez}.
   Intelligence}, 36\penalty0 (1):\penalty0 2--17, Jan 2014.
 \newblock ISSN 0162-8828.
 
+\bibitem[{Meng} and {Zhan}(2018)]{Meng2018ManRegZeroShot}
+M.~{Meng} and X.~{Zhan}.
+\newblock Zero-shot learning via low-rank-representation based manifold
+  regularization.
+\newblock \emph{IEEE Signal Processing Letters}, 25\penalty0 (9):\penalty0
+  1379--1383, Sep. 2018.
+\newblock ISSN 1070-9908.
+\newblock \doi{10.1109/LSP.2018.2857201}.
+
 \bibitem[Palomo and López-Rubio(2016)]{Palomo2016GrowingNeuralForest}
 E.~J. Palomo and E.~López-Rubio.
 \newblock Learning topologies with the growing neural forest.
@@ -174,6 +199,16 @@ E.~J. {Palomo} and E.~{López-Rubio}.
 \newblock ISSN 2162-237X.
 \newblock \doi{10.1109/TNNLS.2016.2570124}.
 
+\bibitem[{Ratle} et~al.(2010){Ratle}, {Camps-Valls}, and
+  {Weston}]{Ratle2010ManRegHSI}
+F.~{Ratle}, G.~{Camps-Valls}, and J.~{Weston}.
+\newblock Semisupervised neural networks for efficient hyperspectral image
+  classification.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  48\penalty0 (5):\penalty0 2271--2282, May 2010.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2009.2037898}.
+
 \bibitem[Rauber et~al.(2002)Rauber, Merkl, and Dittenbach]{Rauber2002GHSOM}
 A.~Rauber, D.~Merkl, and M.~Dittenbach.
 \newblock The growing hierarchical self-organizing map: exploratory analysis of
@@ -182,6 +217,15 @@ A.~Rauber, D.~Merkl, and M.~Dittenbach.
   (6):\penalty0 1331--1341, Nov 2002.
 \newblock ISSN 1045-9227.
 \newblock \doi{10.1109/TNN.2002.804221}.
+
+\bibitem[{Ren} et~al.(2017){Ren}, {Hou}, {Zhao}, and {Jiao}]{Ren2017ManRegSAR}
+B.~{Ren}, B.~{Hou}, J.~{Zhao}, and L.~{Jiao}.
+\newblock Unsupervised classification of polarimetirc sar image via improved
+  manifold regularized low-rank representation with multiple features.
+\newblock \emph{IEEE Journal of Selected Topics in Applied Earth Observations
+  and Remote Sensing}, 10\penalty0 (2):\penalty0 580--595, Feb 2017.
+\newblock ISSN 1939-1404.
+\newblock \doi{10.1109/JSTARS.2016.2573380}.
 
 \bibitem[Roweis and Saul(2000)]{Roweis2000LLE}
 S.~T. Roweis and L.~K. Saul.
@@ -243,6 +287,15 @@ M.~E. Tipping and C.~Bishop.
   21\penalty0 (3):\penalty0 611--622, January 1999.
 \newblock URL
   \url{https://www.microsoft.com/en-us/research/publication/probabilistic-principal-component-analysis/}.
+
+\bibitem[Tsang and Kwok(2007)]{Tsang2007ManifoldRegularization}
+I.~W. Tsang and J.~T. Kwok.
+\newblock Large-scale sparsified manifold regularization.
+\newblock In B.~Sch\"{o}lkopf, J.~C. Platt, and T.~Hoffman, editors,
+  \emph{Advances in Neural Information Processing Systems 19}, pages
+  1401--1408. MIT Press, 2007.
+\newblock URL
+  \url{http://papers.nips.cc/paper/3005-large-scale-sparsified-manifold-regularization.pdf}.
 
 \bibitem[van~der Maaten et~al.(2007)van~der Maaten, Postma, and
   Herik]{VanDerMaaten2009DRReview}
