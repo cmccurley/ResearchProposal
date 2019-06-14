@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -182,8 +182,8 @@ M.~{Meng} and X.~{Zhan}.
 \newblock ISSN 1070-9908.
 \newblock \doi{10.1109/LSP.2018.2857201}.
 
-\bibitem[Palomo and López-Rubio(2016)]{Palomo2016GrowingNeuralForest}
-E.~J. Palomo and E.~López-Rubio.
+\bibitem[Palomo and Lopez-Rubio(2016)]{Palomo2016GrowingNeuralForest}
+E.~J. Palomo and E.~Lopez-Rubio.
 \newblock Learning topologies with the growing neural forest.
 \newblock \emph{International Journal of Neural Systems}, 26\penalty0
   (04):\penalty0 1650019, 2016.
@@ -191,8 +191,8 @@ E.~J. Palomo and E.~López-Rubio.
 \newblock URL \url{https://doi.org/10.1142/S0129065716500192}.
 \newblock PMID: 27121995.
 
-\bibitem[{Palomo} and {López-Rubio}(2017)]{Palomo2017GHNG}
-E.~J. {Palomo} and E.~{López-Rubio}.
+\bibitem[{Palomo} and {Lopez-Rubio}(2017)]{Palomo2017GHNG}
+E.~J. {Palomo} and E.~{Lopez-Rubio}.
 \newblock The growing hierarchical neural gas self-organizing neural network.
 \newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
   28\penalty0 (9):\penalty0 2000--2009, Sep. 2017.
@@ -234,6 +234,14 @@ S.~T. Roweis and L.~K. Saul.
 \newblock ISSN 0036-8075.
 \newblock \doi{10.1126/science.290.5500.2323}.
 \newblock URL \url{https://science.sciencemag.org/content/290/5500/2323}.
+
+\bibitem[Rumelhart and Zipser(1985)]{Rumelhart1985CHL}
+D.~E. Rumelhart and D.~Zipser.
+\newblock Feature discovery by competitive learning.
+\newblock \emph{Cognitive Science}, 9\penalty0 (1):\penalty0 75--112, 1985.
+\newblock \doi{10.1207/s15516709cog0901\_5}.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog0901_5}.
 
 \bibitem[Saul and Roweis(2001)]{Saul2001LLEIntro}
 L.~K. Saul and S.~T. Roweis.

@@ -6,6 +6,28 @@
 \usepackage[hidelinks,pdfnewwindow=true]{hyperref}
 \usepackage[dvipsnames]{xcolor}
 
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{appendix}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{url}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{shortvrb}
+\usepackage{mathtools}
+\usepackage{multirow}
+\usepackage{commath}
+\usepackage{bm}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+
+
+%\graphicspath{{"C:/Users/Conma/Documents/2019_SPIE/Paper/Images/DSRF/"}{"C:/Users/Conma/Documents/2019_SPIE/Paper/Images/"}{"C:/Users/Conma/Documents/2019_SPIE/Paper/Images/png_figures_squished/"}}
+
+
 %the following allows 5 deep section headings (can be useful for dividing things up)
 %section
 %  subsection
@@ -46,6 +68,7 @@
 
 \newpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Army %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Army}
       
       \paperentry{Hall2019ProbabilisticObjectDetection}
@@ -64,7 +87,10 @@
       {Army/Tanner2019DSIACNeuralNet.pdf}
       {A shallow CNN was utilized for ATR on the DSIAC MWIR dataset.  The goal of the study was to determine the range of optimal thresholds which would optimally separate the target and clutter class distributions defined by the CNN predictions (output of softmax), as well as determine an upper bound on the number of training images required for optimizing performance.  The shallow CNN (5 layers) and a Difference of Gaussians (DoG), which finds regions of high intensity on dark backgrounds were used to detect and classify targets.  The CNN could correctly classify 96\% of targets as targets and as few as 4\% of clutter as targets.  It was found that the DoG detector failed when the targets were small (long range) or if the overall image was bright (infrared taken during the daytime).  It was also determined that guessing the bright pixels were at the center of the targets was a bad assumption. (The brightest part of a target is not necessarily at its center.)}
       
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manifold/ Representation Learning}
+
+	\subsection{Classic Methods}
 
 	\paperentry{VanDerMaaten2009DRReview}
 	{Dimensionality Reduction: A Comparative Review}
@@ -147,6 +173,69 @@
 	{Manifold_Representation_Learning/Manifold/Lee2015MultipleManifolds.pdf}
 	{}
 	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\subsection{Competitive Hebbian Learning}
+	
+	\paperentry
+	{Rumelhart1985CHL}
+	{Feature Discovery by Competitive Learning}
+	{Manifold_Representation_Learning/CHL/Rumelhart1985CHL.pdf}
+	{}
+	
+	\paperentry{Kohonen1990SOM}
+	{The self-organizing map}
+	{Manifold_Representation_Learning/CHL/Kohonen1990SOM.pdf}
+	{The self-organizing map (SOM) creates spatially organized intrinsic representations of features.  It belongs to the category of neural networks which use ``competitive learning", or ``self-organization".  It is a sheet-like artificial neural network in which the cells become tuned to various input patterns through an unsupervised learning process.  Only a neighborhood of cells give an active response to the current input sample.  The spatial location or coordinates of cells in the network correspond to different modes of the input distribution. The self-organizing map is also a form of vector quantization (VQ).  The purpose of VQ is to approximate a continuous probability density function $p(\bm{x})$ of input vectors $\bm{x}$ using a finite number of codebook vectors, $\bm{m}_i$, $i=1,2,\dots,k$.  After the ``codebook" is chosen, the approximation of $\bm{x}$ involves finding the reference vector, $\bm{m}_c$ closest to $\bm{x}$.  The ``winning" codebook vector for sample $\bm{x}$ satisfies the following:
+	\begin{align*}
+		|| \bm{x} - \bm{m}_c|| &= \min_{i}|| \bm{x} - \bm{m}_{i} ||
+	\end{align*}	
+	\noindent
+	
+	The algorithm operates by first initializing a spatial lattice of codebook elements (also called ``units"), where each unit's representative is in $\bm{m}_i \in \mathbb{R}^{D}$ where $D$ is the dimensionality of the input samples $\bm{x}$.  The training process proceeds as follows.  A random sample is selected and presented to the network and each unit determines its activation by computing dissimilarity.	 The unit who's codebook vector provides the smallest dissimilarity is referred to as the \textit{winner}.
+	
+	\begin{align*}
+		c(t) = \argmin_{i} d(\bm{x}(t),\bm{m}_{i}(t))
+	\end{align*}
+	\noindent
+	
+	Both the winning vector and all vectors within a neighborhood of the winner are updated toward the sample by 
+	
+	\begin{align*}
+		\bm{m}_{i}(t+1) = \bm{m}_{i}(t) + \alpha(t) \cdot h_{ci}(t) \cdot [ \bm{x}(t) - \bm{m}_{i}(t) ] 
+	\end{align*}
+	\noindent
+	where $\alpha(t)$ is a learning rate which decreases over time and $h_{ci}(t)$ is a neighborhood function which is typically unimodal and symmetric around the location of the winner which monotonically decreases with increasing distance from the winner.  A radial basis kernel is typically chosen for the neighborhood function as 
+	
+	\begin{align*}
+		 h_{ci}(t) = \exp{\left( -\frac{||\bm{r}_{c} - \bm{r}_i ||^{2}}{2 \sigma^{2}(t)} \right)}
+	\end{align*}
+	\noindent
+	where the top expression represents the Euclidean distance between units $c$ and $i$ with $\bm{r}_{i}$ representing the 2-D location of unit $i$ in the lattice.  The neighborhood kernel's bandwidth is typically initialized to a value which covers a majority of the input space and decreases over time such that solely the winner is adapted toward the end of the training procedure. \\
+	
+	\noindent
+	The SOM essentially performs density estimation of high-dimensional data and represents it in a 2 or 3-D representation.  At test time, the dissimilarity between each unit in the map and an input sample are computed.  This dissimilarity can be used to effectively detect outliers, thus making the SOM a robust method which can provide confidence values for it's representation abilities. \\
+	
+	In this paper, the SOM was applied to speech recognition, but made note of previous uses in robotics, control of diffusion processes, optimization problems, adaptive telecommunications, image compression, sentence understanding, and radar classification of sea-ice.
+	
+ 	}
+ 
+	 \paperentry{Rauber2002GHSOM}
+	 {The growing hierarchical self-organizing map: exploratory analysis of high-dimensional data}
+	 {Manifold_Representation_Learning/CHL/Rauber2002GHSOM.pdf}
+	 {The Growing Hierarchical Self-organizing Map (GHSOM) is an extension of the classical SOM.  It is an artificial neural network with a hierarchical architecture, composed of individually growing SOMs.  Layer 0 is composed of a single neuron representing the mean of the training data.  A global stopping criteria is developed as a fraction of the mean quantization error.  This means that all units must represent their respective subsets of data an a MQE smaller than a fraction of the 0 layer mean quantization error.  For all units not satisfying this criteria, more representation is required for that  area of the feature  space and additional units are added.  After a particular number of training iterations, the quantization errors are computed and the unit with the highest error is selected as the \textit{error unit}. The most dissimilar neighbor of the error unit is chosen is and a row/ column of nodes is injected between them.  The growth process continues until a second stopping criteria is met.  Any units still not satisfying the global criteria are deemed to need extra representation.  Child map are initialized below these units and trained with the subset of data mapped to its parent node.\\
+	 	
+ 	\noindent
+ 	In conclusion, the GHSOM is a growing self-organizing map architecture which has the ability to grow itself until the feature space  is adequately represented.  For areas of the space needing a more specific level of granularity, a hierarchical structure is imposed to ``fill-in" areas of high density. \\
+ 	
+ 	\noindent
+ 	The GHSOM has been applied to the areas of finance, computer network traffic analysis, manufacturing and image analysis (Palomo 2017).
+	}
+ 
+	 \paperentry{Chiang1997HandWrittenWords}
+	 {Hybrid fuzzy-neural systems in handwritten word recognition}
+	 {Manifold_Representation_Learning/CHL/Chiang1997HandWrittenWords.pdf}
+	 {}
 	
 	\paperentry{Frigui2009LandmineSOM}
 	{Detection and Discrimination of Land Mines in Ground-Penetrating Radar Based on Edge Histogram Descriptors and a Possibilistic $K$-Nearest Neighbor Classifier}
@@ -156,12 +245,54 @@
 	\paperentry{Fritzke1995GrowingNeuralGas}
 	{A Growing Neural Gas Network Learns Topologies}
 	{Manifold_Representation_Learning/CHL/Fritzke1995GrowingNeuralGas.pdf}
-	{}
+	{Abstract: An incremental network model is introduced which is able to learn the important topological relations in a given set of input vectors by means of a simple Hebb-like learning rule. In contrast to previous approaches like the "neural gas" method of Martinetz and Schulten (1991, 1994), this model has no parameters which change over time and is able to continue learning, adding units and connections, until a performance criterion has been met. Applications of the model include vector quantization, clustering, and interpolation. \\
+		
+	\noindent
+	In contrast to SOMs and ``growing cell structures", which can project data onto non-linear subspaces which are chosen \textit{a priori}, the GNG is able to adapt its topology to match that of the input data distribution.  The growing process continues until a pre-defined level of quantization error has been reached. \\
 	
+	\noindent
+	The base algorithm is outlined in Palomo (2017), \textit{Growing Hierarchical Neural Gas Self-Organizing Network}.		
+	}
 	
-	\paperentry{Kohonen1990SOM}
-	{The self-organizing map}
-	{Manifold_Representation_Learning/CHL/Kohonen1990SOM.pdf}
+	\paperentry{Palomo2017GHNG}
+	{The Growing Hierarchical Neural Gas Self-Organizing Neural Network}
+	{Manifold_Representation_Learning/CHL/Palomo2017GHNG.pdf}
+	{Abstract: The growing neural gas (GNG) self-organizing neural network stands as one of the most successful examples of unsupervised learning of a graph of processing units. Despite its success, little attention has been devoted to its extension to a hierarchical model, unlike other models such as the self-organizing	map, which has many hierarchical versions. Here, a hierarchical GNG is presented, which is designed to learn a tree of graphs.  Moreover, the original GNG algorithm is improved by a distinction between a growth phase where more units are added until no significant improvement in the quantization error is obtained, and a convergence phase where no unit creation is	allowed. This means that a principled mechanism is established	to control the growth of the structure. Experiments are reported, which demonstrate the self-organization and hierarchy learning abilities of our approach and its performance for vector quantization	applications.  Experiments were performed in structure learning, color quantization, and video sequence clustering. \\
+		
+	\noindent
+	The aim of this method was to improve the adaptation ability of the Growing Hierarchical Self-Organizing Map proposed by Rauber (2002).  This was to be done through the extension of the Growing Neural Gas, which disposes of the fixed lattice topology enforced by the SOM.  Addtionally, the GNG learns a dynamic graph with variable numbers of neurons and connections.  The graph represents the input data in a more plastic and flexible way than the fixed-topology map.  	\\
+	
+	\noindent
+	All clustering methods that learn a hierarchical structure have advantages even when used for non-hierarchical data. The learned hierarchical structure can be pruned at several levels, which yields alternative representations of the input data set at different levels of detail. This can be used to visualize a data set in coarser	or more detailed way. For vector quantization applications, the different pruning levels correspond to smaller or larger codebooks, so that a balance can be attained between the size of the codebook and the quantization error within the same hierarchical structure.\\
+	
+	\noindent
+	The growing hierarchical neural gas (GHNG) model is defined as a tree of self-organizing graphs.  Each graph is made of a variable number of neurons or processing units, so that its size can grow or shrink during learning. In addition, each graph is the child of a unit in the upper level, except for the top	level (root) graph.  The training procedure is described by the following: \\
+	
+	\noindent
+	Each graph begins with $H \geq 2$ units and one or more undirected connections between them.  Both the units and connections can be created and destroyed during the learning process. It is also not necessary that the graph is connected.  Let the training set be denoted as $\mathcal{S}$ with $\mathcal{S} \subset \mathbb{R}^{D}$, where $D$ is the dimensionality of the input space.  Each unit $i\in \{1, \dots, H \}$ has an associated prototype $\bm{w}_{i} \in \mathbb{R}^{D}$ and an error variable $e_i \in \mathbb{R}$, $e_i \geq 0$.  Each connection has an associated age, which is a nonnegative integer.  The set of connections will be notetd as $A \subseteq \{1, \dots,H \} \times \{1, \dots, H \}$.  The learning mechanism for the GHNG is based on the original GNG, but includes a novel procedure to control the growth of the graph.  First, a growth phase is performed where the graph is allowed to enlarge until a condition is met, which indicates that further growing would provide no significant improvement in the quantization error.  After that, a convergence phase is executed where no unit creation is allowed in order to carry out a fine tuning of the graph.  the leraning algorithm is provided in the following steps. \\
+	
+%	\begin{enumerate}
+%		\item Start with two units ($H=2$) joined by a connection.  Each prototype is initialized to a sample drawn at random from $\mathcal{S}$.  The error variables are initialized to zero.  The age of the connection is initialized to zero.
+%		\item Draw a training sample $\bm{x}_{t} \in \mathbb{R}^{D}$ at random from $\mathcal{S}$.
+%		\item Find the nearest unit $q$ and second nearest unit $s$ in terms of Euclidean distance
+%		\begin{align*}	
+%		q &= \argmin_{i\in \{1,\dots,H \}} ||\bm{w}_{i}(t) - \bm{x}(t)  || \\
+%		s &= \argmin_{i\in \{1,\dots,H \} - \{q\} } ||\bm{w}_{i}(t) - \bm{x}(t)  ||
+%		\end{align*}
+%		\item Increment the age of all edges departing from $q$
+%		\item  Update the winning unit's error variable, $e_{q}$
+%		\begin{align*}
+%		e_{q}(t+1) = e_{q}(t) + || \bm{w}_q(t) - \bm{x}_{t} ||
+%		\end{align*}
+%	\end{enumerate}
+	\noindent
+	I believe the author's experimental approach did not take advantage of the method's strengths.  The author's only demonstrated experiments in vector quantization, and used corresponding metrics.  This method could be used to represent manifold  topology of differing dimensionality. This could be useful in HSI imagery, for example where different environment patches require manifold representations of various dimensionality.  Additionally, this could potentially be used to handle the sensor fusion problem with sensor loss/ drop-out.
+	
+	}
+	
+	\paperentry{Sun2016GNGMotionDetection}
+	{Online growing neural gas for anomaly detection in changing surveillance scenes}
+	{Manifold_Representation_Learning/CHL/Sun2016GNGMotionDetection.pdf}
 	{}
 	
 	\paperentry{LopezRubio2011GHPGraphs}
@@ -175,27 +306,7 @@
 	{Manifold_Representation_Learning/CHL/Palomo2016GrowingNeuralForest.pdf}
 	{}
 	
-	\paperentry{Palomo2017GHNG}
-	{The Growing Hierarchical Neural Gas Self-Organizing Neural Network}
-	{Manifold_Representation_Learning/CHL/Palomo2017GHNG.pdf}
-	{}
-	
-	
-	\paperentry{Rauber2002GHSOM}
-	{The growing hierarchical self-organizing map: exploratory analysis of high-dimensional data}
-	{Manifold_Representation_Learning/CHL/Rauber2002GHSOM.pdf}
-	{}
-	
-	\paperentry{Sun2016GNGMotionDetection}
-	{Online growing neural gas for anomaly detection in changing surveillance scenes}
-	{Manifold_Representation_Learning/CHL/Sun2016GNGMotionDetection.pdf}
-	{}
-	
-	\paperentry{Chiang1997HandWrittenWords}
-	{Hybrid fuzzy-neural systems in handwritten word recognition}
-	{Manifold_Representation_Learning/CHL/Chiang1997HandWrittenWords.pdf}
-	{}
-	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Regularization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manifold Regularization}
 	\paperentry{Tsang2007ManifoldRegularization}
 	{Large-Scale Sparsified Manifold Regularization}
@@ -227,7 +338,7 @@
 	{Manifold_Representation_Learning/ManifoldRegularization/Meng2018ManRegZeroShot.pdf}
 	{}
 	
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Multiple Instance Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Multiple Instance Learning}
 
 	\paperentry{}
@@ -242,10 +353,10 @@
 
 \section{Fusion}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Outlier Detection %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Outlier/ Adversarial Detection}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Segmentation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Segmentation}
 	\paperentry{Caselles1997GeodesicActiveContours}
 	{Geodesic Active Contours}
