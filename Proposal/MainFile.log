@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  21 JUN 2019 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  21 JUN 2019 17:29
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -543,7 +543,7 @@ Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
 
-) [8] [9]
+[8]) [9]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -687,7 +687,7 @@ Here is how much of TeX's memory you used:
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on MainFile.pdf (17 pages, 67099 bytes).
+Output written on MainFile.pdf (17 pages, 67201 bytes).
 PDF statistics:
  165 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)
