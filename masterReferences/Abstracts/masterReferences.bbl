@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -182,6 +182,14 @@ M.~{Meng} and X.~{Zhan}.
 \newblock ISSN 1070-9908.
 \newblock \doi{10.1109/LSP.2018.2857201}.
 
+\bibitem[{Mohandes} et~al.(2018){Mohandes}, {Deriche}, and
+  {Aliyu}]{Mohandes2018ClassifierCombinationTechniquesReview}
+M.~{Mohandes}, M.~{Deriche}, and S.~O. {Aliyu}.
+\newblock Classifiers combination techniques: A comprehensive review.
+\newblock \emph{IEEE Access}, 6:\penalty0 19626--19639, 2018.
+\newblock ISSN 2169-3536.
+\newblock \doi{10.1109/ACCESS.2018.2813079}.
+
 \bibitem[Palomo and Lopez-Rubio(2016)]{Palomo2016GrowingNeuralForest}
 E.~J. Palomo and E.~Lopez-Rubio.
 \newblock Learning topologies with the growing neural forest.
@@ -242,6 +250,11 @@ D.~E. Rumelhart and D.~Zipser.
 \newblock \doi{10.1207/s15516709cog0901\_5}.
 \newblock URL
   \url{https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog0901_5}.
+
+\bibitem[Ruta and Gabrys(2000)]{Ruta2000OverviewClassifierFusionMethods}
+D.~Ruta and B.~Gabrys.
+\newblock An overview of classifier fusion methods.
+\newblock \emph{Computing and Information Systems}, 7:\penalty0 1--10, 01 2000.
 
 \bibitem[Saul and Roweis(2001)]{Saul2001LLEIntro}
 L.~K. Saul and S.~T. Roweis.
@@ -304,6 +317,15 @@ I.~W. Tsang and J.~T. Kwok.
   1401--1408. MIT Press, 2007.
 \newblock URL
   \url{http://papers.nips.cc/paper/3005-large-scale-sparsified-manifold-regularization.pdf}.
+
+\bibitem[Tulyakov et~al.(2008)Tulyakov, Jaeger, Govindaraju, and
+  Doermann]{Tulyakov2008ReviewClassifierCombinationMethods}
+S.~Tulyakov, S.~Jaeger, V.~Govindaraju, and D.~Doermann.
+\newblock \emph{Review of Classifier Combination Methods}, pages 361--386.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
+\newblock ISBN 978-3-540-76280-5.
+\newblock \doi{10.1007/978-3-540-76280-5_14}.
+\newblock URL \url{https://doi.org/10.1007/978-3-540-76280-5_14}.
 
 \bibitem[van~der Maaten et~al.(2007)van~der Maaten, Postma, and
   Herik]{VanDerMaaten2009DRReview}
