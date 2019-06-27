@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{52}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,6 +12,17 @@ L.~{\'Alvarez}, L.~{Baumela}, P.~{Henr\'iquez}, and P.~{M\'arquez-Neila}.
 \newblock In \emph{2010 IEEE Computer Society Conference on Computer Vision and
   Pattern Recognition}, pages 2197--2202, June 2010.
 \newblock \doi{10.1109/CVPR.2010.5539900}.
+
+\bibitem[{Anderson} et~al.(2017){Anderson}, {Islam}, {King}, {Younan},
+  {Fairley}, {Howington}, {Petry}, {Elmore}, and
+  {Zare}]{Anderson2017BinaryFuzzyMeasureChoquetIntegral}
+D.~T. {Anderson}, M.~A. {Islam}, R.~{King}, N.~H. {Younan}, J.~R. {Fairley},
+  S.~{Howington}, F.~{Petry}, P.~{Elmore}, and A.~{Zare}.
+\newblock Binary fuzzy measures and choquet integration for multi-source
+  fusion.
+\newblock In \emph{2017 International Conference on Military Technologies
+  (ICMT)}, pages 676--681, May 2017.
+\newblock \doi{10.1109/MILTECHS.2017.7988843}.
 
 \bibitem[Belkin and Niyogi(2003)]{Belkin2003LaplacianEigenmaps}
 M.~Belkin and P.~Niyogi.
@@ -36,6 +47,13 @@ Y.~Bengio, A.~C. Courville, and P.~Vincent.
   perspectives.
 \newblock \emph{CoRR}, abs/1206.5538, 2012.
 \newblock URL \url{http://arxiv.org/abs/1206.5538}.
+
+\bibitem[Beyer et~al.(2009)Beyer, Heesche, Hauptmann, and
+  Otte]{Beyer2009HeterogeneousMixtureOfExperts}
+J.~Beyer, K.~Heesche, W.~Hauptmann, and C.~Otte.
+\newblock Heterogeneous mixture-of-experts for fusion of locally valid
+  knowledge-based submodels.
+\newblock 01 2009.
 
 \bibitem[Bishop et~al.(1998)Bishop, Svensén, and Williams]{Bishop1998GTM}
 C.~Bishop, M.~Svensén, and C.~K.~I. Williams.
@@ -68,6 +86,28 @@ J.~Delaporte, B.~M. Herbst, W.~Hereman, and S.~Van der Walt.
 \newblock An introduction to diffusion maps.
 \newblock 2008.
 
+\bibitem[Du(2017)]{Du2017Thesis}
+X.~Du.
+\newblock \emph{Multiple Instance Choquet Integral For MultiResolution Sensor
+  Fusion}.
+\newblock PhD thesis, Univ. of Missouri, Columbia, MO, Dec. 2017.
+
+\bibitem[Du and Zare(2018)]{Du2018MultiResolutionSensorFusion}
+X.~Du and A.~Zare.
+\newblock Multi-resolution multi-modal sensor fusion for remote sensing data
+  with label uncertainty.
+\newblock \emph{CoRR}, abs/1805.00930, 2018.
+\newblock URL \url{http://arxiv.org/abs/1805.00930}.
+
+\bibitem[{Du} and {Zare}(2019)]{Du2019MIChoquetIntegral}
+X.~{Du} and A.~{Zare}.
+\newblock Multiple instance choquet integral classifier fusion and regression
+  for remote sensing applications.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  57\penalty0 (5):\penalty0 2741--2753, May 2019.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2018.2876687}.
+
 \bibitem[Frigui and Gader(2009)]{Frigui2009LandmineSOM}
 H.~Frigui and P.~Gader.
 \newblock Detection and discrimination of land mines in ground-penetrating
@@ -84,6 +124,15 @@ B.~Fritzke.
   Information Processing Systems}, NIPS'94, pages 625--632, Cambridge, MA, USA,
   1994. MIT Press.
 \newblock URL \url{http://dl.acm.org/citation.cfm?id=2998687.2998765}.
+
+\bibitem[{Gader} et~al.(2004){Gader}, {Mendez-Vasquez}, {Chamberlin}, {Bolton},
+  and {Zare}]{Gader2004ChoquetIntegralLandmine}
+P.~{Gader}, A.~{Mendez-Vasquez}, K.~{Chamberlin}, J.~{Bolton}, and A.~{Zare}.
+\newblock Multi-sensor and algorithm fusion with the choquet integral:
+  applications to landmine detection.
+\newblock In \emph{IGARSS 2004. 2004 IEEE International Geoscience and Remote
+  Sensing Symposium}, volume~3, pages 1605--1608 vol.3, Sep. 2004.
+\newblock \doi{10.1109/IGARSS.2004.1370635}.
 
 \bibitem[Gorban and Zinovyev(2008)]{Gorban2007ElasticMaps}
 A.~N. Gorban and A.~Y. Zinovyev.
@@ -107,6 +156,13 @@ D.~Hall, F.~Dayoub, J.~Skinner, P.~Corke, G.~Carneiro, and N.~S{\"{u}}nderhauf.
 P.~Jindal and D.~Kumar.
 \newblock A review on dimensionality reduction techniques.
 \newblock \emph{International Journal of Computer Applications}, 173, 09 2017.
+
+\bibitem[{Jordan} and {Jacobs}(1993)]{Jordan1993HME}
+M.~I. {Jordan} and R.~A. {Jacobs}.
+\newblock Hierarchical mixtures of experts and the em algorithm.
+\newblock In \emph{Proceedings of 1993 International Conference on Neural
+  Networks (IJCNN-93-Nagoya, Japan)}, volume~2, pages 1339--1344 vol.2, Oct
+  1993.
 
 \bibitem[Kohonen(1990)]{Kohonen1990SOM}
 T.~Kohonen.
@@ -256,10 +312,37 @@ D.~Ruta and B.~Gabrys.
 \newblock An overview of classifier fusion methods.
 \newblock \emph{Computing and Information Systems}, 7:\penalty0 1--10, 01 2000.
 
+\bibitem[Ryan E.~Smith(2017)]{Smith2017ChoquetIntegralLandmine}
+John E. Ball Alina Zare Brendan~Alvey Ryan E.~Smith, Derek T.~Anderson.
+\newblock Aggregation of choquet integrals in gpr and emi for handheld
+  platform-based explosive hazard detection.
+\newblock In \emph{Detection and Sensing of Mines, Explosive Objects, and
+  Obscured Targets XXII, 1018217}, volume 10182, May 2017.
+\newblock \doi{10.1117/12.2263005}.
+\newblock URL \url{https://doi.org/10.1117/12.2263005}.
+
 \bibitem[Saul and Roweis(2001)]{Saul2001LLEIntro}
 L.~K. Saul and S.~T. Roweis.
 \newblock An introduction to locally linear embedding.
 \newblock \emph{Journal of Machine Learning Research}, 7, 01 2001.
+
+\bibitem[Shazeer et~al.(2017)Shazeer, Mirhoseini, Maziarz, Davis, Le, Hinton,
+  and Dean]{Shazeer2017SparselyGatedMixtureOfExperts}
+N.~Shazeer, A.~Mirhoseini, K.~Maziarz, A.~Davis, Q.~V. Le, G.~E. Hinton, and
+  Jeff Dean.
+\newblock Outrageously large neural networks: The sparsely-gated
+  mixture-of-experts layer.
+\newblock \emph{CoRR}, abs/1701.06538, 2017.
+\newblock URL \url{http://arxiv.org/abs/1701.06538}.
+
+\bibitem[{Smith} et~al.(2017){Smith}, {Anderson}, {Zare}, {Ball}, {Smock},
+  {Fairley}, and {Howington}]{Smith2017GeneticProgrammingChoquetIntegral}
+R.~E. {Smith}, D.~T. {Anderson}, A.~{Zare}, J.~E. {Ball}, B.~{Smock}, J.~R.
+  {Fairley}, and S.~E. {Howington}.
+\newblock Genetic programming based choquet integral for multi-source fusion.
+\newblock In \emph{2017 IEEE International Conference on Fuzzy Systems
+  (FUZZ-IEEE)}, pages 1--8, July 2017.
+\newblock \doi{10.1109/FUZZ-IEEE.2017.8015481}.
 
 \bibitem[Sun et~al.(2017)Sun, Liu, and Harada]{Sun2016GNGMotionDetection}
 Q.~Sun, H.~Liu, and T.~Harada.
@@ -332,5 +415,14 @@ S.~Tulyakov, S.~Jaeger, V.~Govindaraju, and D.~Doermann.
 L.~van~der Maaten, E.~Postma, and H.~Herik.
 \newblock Dimensionality reduction: A comparative review.
 \newblock \emph{Journal of Machine Learning Research - JMLR}, 10, 01 2007.
+
+\bibitem[{Yuksel} et~al.(2012){Yuksel}, {Wilson}, and
+  {Gader}]{Yuksel2012TwentyYearsMixtureofExperts}
+S.~E. {Yuksel}, J.~N. {Wilson}, and P.~D. {Gader}.
+\newblock Twenty years of mixture of experts.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  23\penalty0 (8):\penalty0 1177--1193, Aug 2012.
+\newblock ISSN 2162-237X.
+\newblock \doi{10.1109/TNNLS.2012.2200299}.
 
 \end{thebibliography}
