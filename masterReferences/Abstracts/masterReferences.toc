@@ -14,6 +14,7 @@
 \contentsline {subsubsection}{\numberline {5.1.2}Hierarchical Mixture of Experts}{8}{subsubsection.5.1.2}
 \contentsline {subsubsection}{\numberline {5.1.3}Choquet Integral}{8}{subsubsection.5.1.3}
 \contentsline {subsubsection}{\numberline {5.1.4}Deep Learning}{9}{subsubsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.5}Graph-Based}{9}{subsubsection.5.1.5}
 \contentsline {subsection}{\numberline {5.2}Co-registration}{9}{subsection.5.2}
 \contentsline {subsubsection}{\numberline {5.2.1}Geocoding}{9}{subsubsection.5.2.1}
 \contentsline {subsubsection}{\numberline {5.2.2}Similarity Measures}{9}{subsubsection.5.2.2}
@@ -21,5 +22,6 @@
 \contentsline {subsubsection}{\numberline {5.2.4}Conflation}{9}{subsubsection.5.2.4}
 \contentsline {subsection}{\numberline {5.3}Multi-resolution Fusion}{9}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}Fusion of Mixed Data Types}{9}{subsection.5.4}
-\contentsline {section}{\numberline {6}Outlier/ Adversarial Detection}{9}{section.6}
-\contentsline {section}{\numberline {7}Segmentation}{9}{section.7}
+\contentsline {subsection}{\numberline {5.5}Unsorted}{9}{subsection.5.5}
+\contentsline {section}{\numberline {6}Outlier/ Adversarial Detection}{10}{section.6}
+\contentsline {section}{\numberline {7}Segmentation}{10}{section.7}

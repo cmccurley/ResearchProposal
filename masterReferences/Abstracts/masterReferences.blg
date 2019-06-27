@@ -11,12 +11,13 @@ I was expecting a `,' or a `}'---line 219 of file references.bib
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 921 of file references.bib
+I was expecting a `,' or a `}'---line 1048 of file references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "zhang2010multisourceremotingsensingfusion"
 Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
 while executing---line 1347 of file plainnat.bst
 Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
