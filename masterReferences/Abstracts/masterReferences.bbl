@@ -1,4 +1,4 @@
-\begin{thebibliography}{62}
+\begin{thebibliography}{71}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,6 +23,15 @@ D.~T. {Anderson}, M.~A. {Islam}, R.~{King}, N.~H. {Younan}, J.~R. {Fairley},
 \newblock In \emph{2017 International Conference on Military Technologies
   (ICMT)}, pages 676--681, May 2017.
 \newblock \doi{10.1109/MILTECHS.2017.7988843}.
+
+\bibitem[{Arandjelovic} et~al.(2005){Arandjelovic}, {Shakhnarovich}, {Fisher},
+  {Cipolla}, and {Darrell}]{Arandjelovic2005FaceRecManifoldDensityDivergence}
+O.~{Arandjelovic}, G.~{Shakhnarovich}, J.~{Fisher}, R.~{Cipolla}, and
+  T.~{Darrell}.
+\newblock Face recognition with image sets using manifold density divergence.
+\newblock In \emph{2005 IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition (CVPR'05)}, volume~1, pages 581--588 vol. 1, June 2005.
+\newblock \doi{10.1109/CVPR.2005.151}.
 
 \bibitem[Belkin and Niyogi(2003)]{Belkin2003LaplacianEigenmaps}
 M.~Belkin and P.~Niyogi.
@@ -98,6 +107,11 @@ J.~Chiang and P.~D. Gader.
 \newblock ISSN 1063-6706.
 \newblock \doi{10.1109/91.649901}.
 
+\bibitem[Dai et~al.(2017)Dai, Wang, Aston, Hua, and
+  Wipf]{Dai2017VariationalAutoencoder}
+B.~Dai, Y.~Wang, J.~Aston, G.~Hua, and D.~Wipf.
+\newblock Hidden talents of the variational autoencoder, 2017.
+
 \bibitem[Dawn et~al.(2010)Dawn, Saxena, and
   Sharma]{Dawn2010SurveyRemoteSensingImageRegistration}
 S.~Dawn, V.~Saxena, and B.~Sharma.
@@ -161,6 +175,13 @@ P.~{Gader}, A.~{Mendez-Vasquez}, K.~{Chamberlin}, J.~{Bolton}, and A.~{Zare}.
   Sensing Symposium}, volume~3, pages 1605--1608 vol.3, Sep. 2004.
 \newblock \doi{10.1109/IGARSS.2004.1370635}.
 
+\bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and
+  Courville]{Goodfellow2016DeepLearning}
+I.~Goodfellow, Y.~Bengio, and A.~Courville.
+\newblock \emph{Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
 \bibitem[Gorban and Zinovyev(2008)]{Gorban2007ElasticMaps}
 A.~N. Gorban and A.~Y. Zinovyev.
 \newblock Elastic maps and nets for approximating principal manifolds and their
@@ -192,6 +213,11 @@ D.~Hall, F.~Dayoub, J.~Skinner, P.~Corke, G.~Carneiro, and N.~S{\"{u}}nderhauf.
 \newblock \emph{CoRR}, abs/1811.10800, 2018.
 \newblock URL \url{http://arxiv.org/abs/1811.10800}.
 
+\bibitem[Haykin(2009)]{Haykin2009NeuralNetworks}
+S.~S. Haykin.
+\newblock \emph{Neural networks and learning machines}.
+\newblock Pearson Education, Upper Saddle River, NJ, third edition, 2009.
+
 \bibitem[Jindal and Kumar(2017)]{Jindal2017ReviewDRTechniques}
 P.~Jindal and D.~Kumar.
 \newblock A review on dimensionality reduction techniques.
@@ -211,6 +237,16 @@ T.~Kohonen.
   Sep. 1990.
 \newblock ISSN 0018-9219.
 \newblock \doi{10.1109/5.58325}.
+
+\bibitem[{Kokiopoulou} and
+  {Saad}(2007)]{Kokiopoulou2007OrthoNeighborhoodPreservingProjections}
+E.~{Kokiopoulou} and Y.~{Saad}.
+\newblock Orthogonal neighborhood preserving projections: A projection-based
+  dimensionality reduction technique.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 29\penalty0 (12):\penalty0 2143--2156, Dec 2007.
+\newblock ISSN 0162-8828.
+\newblock \doi{10.1109/TPAMI.2007.1131}.
 
 \bibitem[Lawrence(2005)]{Lawrence2005PPCAGPLVModels}
 N.~Lawrence.
@@ -293,6 +329,14 @@ M.~{Mohandes}, M.~{Deriche}, and S.~O. {Aliyu}.
 \newblock ISSN 2169-3536.
 \newblock \doi{10.1109/ACCESS.2018.2813079}.
 
+\bibitem[Nickel and Kiela(2017)]{Nickel2017PoincareEmbeddings}
+M.~Nickel and D.~Kiela.
+\newblock Poincar\'{e} embeddings for learning hierarchical representations.
+\newblock In I.~Guyon, U.~V. Luxburg, S.~Bengio, H.~Wallach, R.~Fergus,
+  S.~Vishwanathan, and R.~Garnett, editors, \emph{Advances in Neural
+  Information Processing Systems 30}, pages 6338--6347. Curran Associates,
+  Inc., 2017.
+
 \bibitem[Palomo and Lopez-Rubio(2016)]{Palomo2016GrowingNeuralForest}
 E.~J. Palomo and E.~Lopez-Rubio.
 \newblock Learning topologies with the growing neural forest.
@@ -337,6 +381,12 @@ B.~{Ren}, B.~{Hou}, J.~{Zhao}, and L.~{Jiao}.
   and Remote Sensing}, 10\penalty0 (2):\penalty0 580--595, Feb 2017.
 \newblock ISSN 1939-1404.
 \newblock \doi{10.1109/JSTARS.2016.2573380}.
+
+\bibitem[Rojas(1996)]{Rojas1996AssociativeNetworks}
+R.~Rojas.
+\newblock Associative networks.
+\newblock In \emph{Neural Networks - A Systematic Introduction}, chapter~12,
+  pages 311--336. Springer-Verlag, Berlin, New-York, 1st edition, 1996.
 
 \bibitem[Roweis and Saul(2000)]{Roweis2000LLE}
 S.~T. Roweis and L.~K. Saul.
@@ -411,6 +461,15 @@ Q.~Sun, H.~Liu, and T.~Harada.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/S0031320316302771}.
 
+\bibitem[{Talmon} et~al.(2015){Talmon}, {Mallat}, {Zaveri}, and
+  {Coifman}]{Talmon2015ManifoldLearningInDynamicalSystems}
+R.~{Talmon}, S.~{Mallat}, H.~{Zaveri}, and R.~R. {Coifman}.
+\newblock Manifold learning for latent variable inference in dynamical systems.
+\newblock \emph{IEEE Transactions on Signal Processing}, 63\penalty0
+  (15):\penalty0 3843--3856, Aug 2015.
+\newblock ISSN 1053-587X.
+\newblock \doi{10.1109/TSP.2015.2432731}.
+
 \bibitem[Tanner and Mahalanobis(2019)]{Tanner2019DSIACNeuralNet}
 I.~L. Tanner and A.~Mahalanobis.
 \newblock Fundamentals of target classification using deep learning.
@@ -480,6 +539,16 @@ G.~Vivar, H.~Burwinkel, A.~Kazi, A~Zwergal, N.~Navab, and S.~Ahmadi.
   incomplete datasets.
 \newblock \emph{CoRR}, abs/1905.03053, 2019.
 \newblock URL \url{http://arxiv.org/abs/1905.03053}.
+
+\bibitem[{Wang} et~al.(2012){Wang}, {Shan}, {Chen}, {Dai}, and
+  {Gao}]{Wang2008ManifoldManifoldDistance}
+R.~{Wang}, S.~{Shan}, X.~{Chen}, Q.~{Dai}, and W.~{Gao}.
+\newblock Manifold–manifold distance and its application to face recognition
+  with image sets.
+\newblock \emph{IEEE Transactions on Image Processing}, 21\penalty0
+  (10):\penalty0 4466--4479, Oct 2012.
+\newblock ISSN 1057-7149.
+\newblock \doi{10.1109/TIP.2012.2206039}.
 
 \bibitem[{Yuksel} et~al.(2012){Yuksel}, {Wilson}, and
   {Gader}]{Yuksel2012TwentyYearsMixtureofExperts}

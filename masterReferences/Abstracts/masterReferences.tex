@@ -68,24 +68,6 @@
 
 \newpage
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Army %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Army}
-      
-      \paperentry{Hall2019ProbabilisticObjectDetection}
-      {Probabilistic Object Detection: Definition and Evaluation}
-      {Army/Hall2019ProbabilisticObjectDetection.pdf}
-      {A probabilistic object detection metric (PDQ - Probability-based Detection Quality) was proposed, thus defining the new task of defining probabilistic object detection metrics.  The ability of deep CNNs to quantify both \textit{epistemic} and \textit{aleatoric uncertainty} is paramount for deployment safety-critical applications.  PDQ aims to measure the accuracy of an image object detector in terms of its label uncertainty and spatial quality.  This is achieved through two steps.  First, a detector must reliably quantify its \textit{semantic uncertainty} by providing full probability distributions over known classes for each detection.  Next, the detectors must quantify spatial uncertainty by reporting \textit{probabilistic bounding boxes}, where the box corners are modeled as normally distributed.  A loss function was constructed to consider both label and spatial quality when providing a final detection measure.  The primary benefit of this method is that it provides a measure for the level of uncertainty in a detection. \\ \\ Is it possible to replace the probabilistic metric with a possibilistic one?  Could this be more effective at handling outlying cases?} 
-      
-      
-      \paperentry{Mahalanobis2019DSIACCharacterization}
-      {A comparison of target detection algorithms using DSIAC ATR algorithm development data set}
-      {Army/Mahalanobis2019DSIACCharacterization.pdf}
-      {The authors provided an initial characterization of detection performance on the DSIAC dataset using the \textit{Faster R-CNN} algorithm and \textit{Quadratic Correlation Filter (QCF)}.  Performance was evaluated on two datasets, ``easy'' and ``difficult'', where the difficulty was determined by number of pixels on target and local contrast.  Under difficult conditions, the Faster R-CNN algorithm achieved noteworthy performance, detecting as much as 80\% of the targets at a low false alarm rate of 0.01 FA/Square degree.  The dataset was limited by a lack of background diversity. }
-      
-      \paperentry{Tanner2019DSIACNeuralNet}
-      {Fundamentals of Target Classification Using Deep Learning}
-      {Army/Tanner2019DSIACNeuralNet.pdf}
-      {A shallow CNN was utilized for ATR on the DSIAC MWIR dataset.  The goal of the study was to determine the range of optimal thresholds which would optimally separate the target and clutter class distributions defined by the CNN predictions (output of softmax), as well as determine an upper bound on the number of training images required for optimizing performance.  The shallow CNN (5 layers) and a Difference of Gaussians (DoG), which finds regions of high intensity on dark backgrounds were used to detect and classify targets.  The CNN could correctly classify 96\% of targets as targets and as few as 4\% of clutter as targets.  It was found that the DoG detector failed when the targets were small (long range) or if the overall image was bright (infrared taken during the daytime).  It was also determined that guessing the bright pixels were at the center of the targets was a bad assumption. (The brightest part of a target is not necessarily at its center.)}
       
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manifold/ Representation Learning}
@@ -172,6 +154,22 @@
 	{Learning Representations from Multiple Manifolds}
 	{Manifold_Representation_Learning/Manifold/Lee2015MultipleManifolds.pdf}
 	{}
+	
+	\paperentry{Kokiopoulou2007OrthoNeighborhoodPreservingProjections}
+	{Orthogonal Neighborhood Preserving Projections: A Projection-Based Dimensionality Reduction Technique}
+	{Manifold_Representation_Learning/Manifold/Kokiopoulou2007OrthoNeighborhoodPreservingProjections.pdf}
+	{}
+	
+	\paperentry{Talmon2015ManifoldLearningInDynamicalSystems}
+	{Manifold Learning for Latent Variable Inference in Dynamical Systems}
+	{Manifold_Representation_Learning/Manifold/Talmon2015ManifoldLearningInDynamicalSystems.pdf}
+	{}
+	
+	\paperentry{Nickel2017PoincareEmbeddings}
+	{Poincar\'{e} Embeddings for Learning Hierarchical Representations}
+	{Manifold_Representation_Learning/Manifold/Nickel2017PoincareEmbeddings.pdf}
+	{}
+	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
@@ -308,6 +306,41 @@
 	
 	\subsection{Deep Learning}
 	
+		\paperentry{Goodfellow2016DeepLearning}
+		{Deep Learning}
+		{Manifold_Representation_Learning/Autoencoders/Goodfellow2016DeepLearning.pdf}
+		{}
+		
+		\paperentry{Haykin2009NeuralNetworks}
+		{Neural networks and learning machines}
+		{Manifold_Representation_Learning/Autoencoders/Haykin2009NeuralNetworks.pdf}
+		{}
+		
+		\paperentry{Dai2017VariationalAutoencoder}
+		{dden Talents of the Variational Autoencoder}
+		{Manifold_Representation_Learning/Autoencoders/Dai2017VariationalAutoencoder.pdf}
+		{}
+		
+		\paperentry{Rojas1996AssociativeNetworks}
+		{Associative Networks}
+		{Manifold_Representation_Learning/Autoencoders/Rojas1996AssociativeNetworks.pdf}
+		{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Dissimilarities %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Information Measures}
+
+	\paperentry{Arandjelovic2005FaceRecManifoldDensityDivergence}
+	{Face recognition with image sets using manifold density divergence}
+	{Manifold_Representation_Learning/Information/Arandjelovic2005FaceRecManifoldDensityDivergence.pdf}
+	{}
+	
+	\paperentry{Wang2008ManifoldManifoldDistance}
+	{Manifold–Manifold Distance and its Application to Face Recognition With Image Sets}
+	{Manifold_Representation_Learning/Information/Wang2008ManifoldManifoldDistance.pdf}
+	{}
+	
+
+	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Regularization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manifold Regularization}
 	\paperentry{Tsang2007ManifoldRegularization}
@@ -389,17 +422,6 @@
 			{Multi-source remote sensing data fusion: Status and trends}
 			{Fusion/Reviews/zhang2010multisourceremotingsensingfusion.pdf}
 			{}
-			
-			\paperentry{}
-			{}
-			{}
-			{}
-			
-			\paperentry{}
-			{}
-			{}
-			{}
-			
 		
 	
 		\subsubsection{Hierarchical Mixture of Experts}
@@ -542,6 +564,25 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Outlier Detection %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Outlier/ Adversarial Detection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Army %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Army}
+
+\paperentry{Hall2019ProbabilisticObjectDetection}
+{Probabilistic Object Detection: Definition and Evaluation}
+{Army/Hall2019ProbabilisticObjectDetection.pdf}
+{A probabilistic object detection metric (PDQ - Probability-based Detection Quality) was proposed, thus defining the new task of defining probabilistic object detection metrics.  The ability of deep CNNs to quantify both \textit{epistemic} and \textit{aleatoric uncertainty} is paramount for deployment safety-critical applications.  PDQ aims to measure the accuracy of an image object detector in terms of its label uncertainty and spatial quality.  This is achieved through two steps.  First, a detector must reliably quantify its \textit{semantic uncertainty} by providing full probability distributions over known classes for each detection.  Next, the detectors must quantify spatial uncertainty by reporting \textit{probabilistic bounding boxes}, where the box corners are modeled as normally distributed.  A loss function was constructed to consider both label and spatial quality when providing a final detection measure.  The primary benefit of this method is that it provides a measure for the level of uncertainty in a detection. \\ \\ Is it possible to replace the probabilistic metric with a possibilistic one?  Could this be more effective at handling outlying cases?} 
+
+
+\paperentry{Mahalanobis2019DSIACCharacterization}
+{A comparison of target detection algorithms using DSIAC ATR algorithm development data set}
+{Army/Mahalanobis2019DSIACCharacterization.pdf}
+{The authors provided an initial characterization of detection performance on the DSIAC dataset using the \textit{Faster R-CNN} algorithm and \textit{Quadratic Correlation Filter (QCF)}.  Performance was evaluated on two datasets, ``easy'' and ``difficult'', where the difficulty was determined by number of pixels on target and local contrast.  Under difficult conditions, the Faster R-CNN algorithm achieved noteworthy performance, detecting as much as 80\% of the targets at a low false alarm rate of 0.01 FA/Square degree.  The dataset was limited by a lack of background diversity. }
+
+\paperentry{Tanner2019DSIACNeuralNet}
+{Fundamentals of Target Classification Using Deep Learning}
+{Army/Tanner2019DSIACNeuralNet.pdf}
+{A shallow CNN was utilized for ATR on the DSIAC MWIR dataset.  The goal of the study was to determine the range of optimal thresholds which would optimally separate the target and clutter class distributions defined by the CNN predictions (output of softmax), as well as determine an upper bound on the number of training images required for optimizing performance.  The shallow CNN (5 layers) and a Difference of Gaussians (DoG), which finds regions of high intensity on dark backgrounds were used to detect and classify targets.  The CNN could correctly classify 96\% of targets as targets and as few as 4\% of clutter as targets.  It was found that the DoG detector failed when the targets were small (long range) or if the overall image was bright (infrared taken during the daytime).  It was also determined that guessing the bright pixels were at the center of the targets was a bad assumption. (The brightest part of a target is not necessarily at its center.)}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Segmentation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Segmentation}
