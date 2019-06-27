@@ -1,9 +1,12 @@
-\begin{thebibliography}{71}
+\begin{thebibliography}{74}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Li2()]{Li2018CollaborativeSparsePriorsMultiViewATR}
+
 
 \bibitem[{\'Alvarez} et~al.(2010){\'Alvarez}, {Baumela}, {Henr\'iquez}, and
   {M\'arquez-Neila}]{Alvarez2010MorphologicalSnakes}
@@ -237,6 +240,15 @@ T.~Kohonen.
   Sep. 1990.
 \newblock ISSN 0018-9219.
 \newblock \doi{10.1109/5.58325}.
+
+\bibitem[Kokiopoulou and
+  Frossard(2010)]{Kokiopoulou2009GraphBasedClassificationMultipleObsSets}
+E.~Kokiopoulou and P.~Frossard.
+\newblock Graph-based classification of multiple observation sets.
+\newblock \emph{Pattern Recognition}, 43\penalty0 (12):\penalty0 3988 -- 3997,
+  2010.
+\newblock ISSN 0031-3203.
+\newblock \doi{https://doi.org/10.1016/j.patcog.2010.07.016}.
 
 \bibitem[{Kokiopoulou} and
   {Saad}(2007)]{Kokiopoulou2007OrthoNeighborhoodPreservingProjections}
@@ -565,6 +577,13 @@ G.~Zhang, P.~Ghamisi, and X.~Zhu.
 \newblock Fusion of heterogeneous earth observation data for the classification
   of local climate zones.
 \newblock \emph{ArXiv}, abs/1905.12305, 2019.
+
+\bibitem[Zhang(2010)]{zhang2010multisourceremotingsensingfusion}
+J.~Zhang.
+\newblock Multi-source remote sensing data fusion: Status and trends.
+\newblock \emph{International Journal of Image and Data Fusion}, 1:\penalty0
+  5--24, 03 2010.
+\newblock \doi{10.1080/19479830903561035}.
 
 \bibitem[Zitová and Flusser(2003)]{Zitova2003SurveyImageRegistrationMethods}
 B.~Zitová and J.~Flusser.
