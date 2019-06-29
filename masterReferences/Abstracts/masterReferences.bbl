@@ -1,4 +1,4 @@
-\begin{thebibliography}{98}
+\begin{thebibliography}{105}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -115,6 +115,14 @@ L.~Cao, F.~Luo, L.~Chen, S.~Yihan, H.~Wang, C.~Wang, and R.~Ji.
 \newblock \emph{Pattern Recognition}, 64, 12 2016.
 \newblock \doi{10.1016/j.patcog.2016.10.033}.
 
+\bibitem[Carbonneau et~al.(2016)Carbonneau, Cheplygina, Granger, and
+  Gagnon]{Carbonneau2016MILSurvey}
+M.~Carbonneau, V.~Cheplygina, E.~Granger, and G.~Gagnon.
+\newblock Multiple instance learning: {A} survey of problem characteristics and
+  applications.
+\newblock \emph{CoRR}, abs/1612.03365, 2016.
+\newblock URL \url{http://arxiv.org/abs/1612.03365}.
+
 \bibitem[Caselles et~al.(1997)Caselles, Kimmel, and
   Sapiro]{Caselles1997GeodesicActiveContours}
 V.~Caselles, R.~Kimmel, and G.~Sapiro.
@@ -184,6 +192,15 @@ S.~Dawn, V.~Saxena, and B.~Sharma.
 J.~Delaporte, B.~M. Herbst, W.~Hereman, and S.~Van der Walt.
 \newblock An introduction to diffusion maps.
 \newblock 2008.
+
+\bibitem[Dietterich et~al.(1997)Dietterich, Lathrop, and
+  Lozano-Pérez]{Dietterich1996AxisParallelRectangles}
+T.~G. Dietterich, R.~H. Lathrop, and T.~Lozano-Pérez.
+\newblock Solving the multiple instance problem with axis-parallel rectangles.
+\newblock \emph{Artificial Intelligence}, 89\penalty0 (1):\penalty0 31 -- 71,
+  1997.
+\newblock ISSN 0004-3702.
+\newblock \doi{https://doi.org/10.1016/S0004-3702(96)00034-3}.
 
 \bibitem[Du(2017)]{Du2017Thesis}
 X.~Du.
@@ -320,6 +337,17 @@ C.~Jiao and A.~Zare.
   (IGARSS)}, pages 988--991, July 2017.
 \newblock \doi{10.1109/IGARSS.2017.8127120}.
 
+\bibitem[Jiao et~al.(2018)Jiao, Chen, McGarvey, Bohlman, Jiao, and
+  Zare]{Jiao2018MIHE2}
+Changzhe Jiao, Chao Chen, Ronald~G. McGarvey, Stephanie Bohlman, Licheng Jiao,
+  and Alina Zare.
+\newblock Multiple instance hybrid estimator for hyperspectral target
+  characterization and sub-pixel target detection.
+\newblock \emph{ISPRS Journal of Photogrammetry and Remote Sensing},
+  146:\penalty0 235 -- 250, 2018.
+\newblock ISSN 0924-2716.
+\newblock \doi{https://doi.org/10.1016/j.isprsjprs.2018.08.012}.
+
 \bibitem[Jindal and Kumar(2017)]{Jindal2017ReviewDRTechniques}
 P.~Jindal and D.~Kumar.
 \newblock A review on dimensionality reduction techniques.
@@ -439,6 +467,22 @@ A.~Mahalanobis and B.~McIntosh.
 \newblock A comparison of target detection algorithms using dsiac atr algorithm
   development data set.
 \newblock Proc.SPIE, Apr. 2019.
+
+\bibitem[Maron and Lozano-P{\'e}rez(1998)]{Maron1998DiverseDensity}
+O.~Maron and T.~Lozano-P{\'e}rez.
+\newblock A framework for multiple-instance learning.
+\newblock In \emph{Proceedings of the 1997 Conference on Advances in Neural
+  Information Processing Systems 10}, NIPS '97, pages 570--576, Cambridge, MA,
+  USA, 1998. MIT Press.
+\newblock ISBN 0-262-10076-2.
+
+\bibitem[Maron and Ratan(1998)]{Maron1998MILSceneClassification}
+O.~Maron and A.~L. Ratan.
+\newblock Multiple-instance learning for natural scene classification.
+\newblock In \emph{Proceedings of the Fifteenth International Conference on
+  Machine Learning}, ICML '98, pages 341--349, San Francisco, CA, USA, 1998.
+  Morgan Kaufmann Publishers Inc.
+\newblock ISBN 1-55860-556-8.
 
 \bibitem[{M\'arquez-Neila} et~al.(2014){M\'arquez-Neila}, {Baumela}, and
   {\'Alvarez}]{Marquez_Neila2014MorphologicalCurveBasedEvolution}
@@ -746,6 +790,13 @@ S.~E. {Yuksel}, J.~N. {Wilson}, and P.~D. {Gader}.
 \newblock ISSN 2162-237X.
 \newblock \doi{10.1109/TNNLS.2012.2200299}.
 
+\bibitem[{Zare} and {Jiao}(2014)]{Zare2015eFUMI}
+A.~{Zare} and C.~{Jiao}.
+\newblock Extended functions of multiple instances for target characterization.
+\newblock In \emph{2014 6th Workshop on Hyperspectral Image and Signal
+  Processing: Evolution in Remote Sensing (WHISPERS)}, pages 1--4, June 2014.
+\newblock \doi{10.1109/WHISPERS.2014.8077525}.
+
 \bibitem[Zare et~al.(2015)Zare, Cook, Alvey, and Ho]{Zare2015MILLandmineEMI}
 A.~Zare, M.~Cook, B.~Alvey, and D.~K. Ho.
 \newblock Multiple instance dictionary learning for subsurface object detection
@@ -774,6 +825,13 @@ J.~Zhang.
 \newblock \emph{International Journal of Image and Data Fusion}, 1:\penalty0
   5--24, 03 2010.
 \newblock \doi{10.1080/19479830903561035}.
+
+\bibitem[Zhang and Goldman(2002)]{Zhang2002EMDD}
+Q.~Zhang and S.~A. Goldman.
+\newblock Em-dd: An improved multiple-instance learning technique.
+\newblock In T.~G. Dietterich, S.~Becker, and Z.~Ghahramani, editors,
+  \emph{Advances in Neural Information Processing Systems 14}, pages
+  1073--1080. MIT Press, 2002.
 
 \bibitem[Zitová and Flusser(2003)]{Zitova2003SurveyImageRegistrationMethods}
 B.~Zitová and J.~Flusser.

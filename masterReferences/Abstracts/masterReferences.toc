@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {4.1}Multiple Instance Concept Learning}{8}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Multiple Instance Classification}{9}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Multiple Instance Regression}{9}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Applications}{9}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.4}Applications}{10}{subsection.4.4}
 \contentsline {section}{\numberline {5}Fusion}{10}{section.5}
 \contentsline {subsection}{\numberline {5.1}Classical Approaches}{10}{subsection.5.1}
 \contentsline {subsubsection}{\numberline {5.1.1}General Approach}{10}{subsubsection.5.1.1}
@@ -23,7 +23,7 @@
 \contentsline {subsubsection}{\numberline {5.2.4}Conflation}{11}{subsubsection.5.2.4}
 \contentsline {subsection}{\numberline {5.3}Multi-resolution Fusion}{11}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}Fusion of Mixed Data Types}{11}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Unsorted}{11}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.5}Unsorted}{12}{subsection.5.5}
 \contentsline {section}{\numberline {6}Outlier/ Adversarial Detection}{12}{section.6}
 \contentsline {section}{\numberline {7}Army}{12}{section.7}
-\contentsline {section}{\numberline {8}Segmentation}{12}{section.8}
+\contentsline {section}{\numberline {8}Segmentation}{13}{section.8}
