@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  21 JUN 2019 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  30 JUN 2019 12:25
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -667,19 +667,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
 (Chapters/ch_Conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
-Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: AEA3E60FD3620A3C4250E5F2133E30E1;636.
 
+
+Package rerunfilecheck Warning: File `MainFile.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `MainFile.out':
+(rerunfilecheck)             Before: 2A99CDC07B6EC1A8A4762AE48103339E;930
+(rerunfilecheck)             After:  CF6612D577A876FB7233ECC6F44F3B31;2376.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 7678 strings out of 493323
- 113989 string characters out of 3139067
- 199362 words of memory out of 3000000
- 10990 multiletter control sequences out of 15000+200000
+ 7703 strings out of 493323
+ 114377 string characters out of 3139067
+ 199366 words of memory out of 3000000
+ 10994 multiletter control sequences out of 15000+200000
  12366 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,5n,42p,1765b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -687,9 +693,9 @@ Here is how much of TeX's memory you used:
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on MainFile.pdf (17 pages, 67205 bytes).
+Output written on MainFile.pdf (17 pages, 75322 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 208 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
