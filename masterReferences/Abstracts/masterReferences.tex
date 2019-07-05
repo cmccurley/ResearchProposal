@@ -629,11 +629,22 @@
 			\textbf{Data from different sensors must be put into equivalent forms to allow for fusion.  In order for data from multiple sources to be fused, there must be some method to relate data points from one sensor with corresponding data points from the other sensors.}  The \textit{registered} data points allow for easy gathering of sensor information about one particular point in the scene.  \\
 			\noindent
 			Fusion methods can be broadly classified into two categories, \textit{direct} and \textit{indirect}.  Direct fusion combines raw sensor measurements while indirect methods transform the sensor data to be fused. \\
+			\noindent
+			\textbf{Before sensor measurements can be combined, we must ensure that the measurements represent the same physical entity. Therefore, we need to check the consistency of sensor measurements.}  One such method for checking measurement consistency is the \textit{Mahalanobis} distance.\\
+			\noindent
+			\textbf{Since each sensor is sensitive to a different modality, multiple sensors not only can provide multiple views of objects, but they can also impose more constraints to reduce the search space during matching.}\\
 			
 			\paperentry{zhang2010multisourceremotingsensingfusion}
 			{Multi-source remote sensing data fusion: Status and trends}
 			{Fusion/Reviews/zhang2010multisourceremotingsensingfusion.pdf}
-			{}
+			{}\\
+			\textbf{Remote sensing data fusion, as one of the most commonly used techniques for fusion, aims to integrate the information acquired with different spatial and spectral resolutions from sensors mounted on satellites, aircraft and ground platforms to produce fused data that contains more detailed information than each of the sources, individually.}  \textbf{Fusing remotely sensed data, especially multi-source data, remains challenging due to reasons such as landscape complexity, temporal and spectral variations, and accurate data co-registration.} \textbf{\textit{Pixel level} fusion is the combination of raw data from multiple sources into single resolution data, which are expected to be more informative and synthetic than either of the input data or reveal the changes between data sets acquired at different times. \textit{Feature level} fusion extracts various features, e.g. edges, corners, lines, texture parameters, etc., from different data sources and then combines them into one or more feature maps that may be used instead of the original data for further processing. This is particularly important when the number of available spectral bands becomes so large that	it is impossible to analyze each band separately. Methods applied to extract features usually depend on the characteristics of the individual source data, and therefore may be different if the data sets used are heterogeneous. Typically, in image processing, such fusion requires a precise (pixel-level) registration of the available images. Feature maps thus obtained are then used as input to pre-processing for image segmentation or change detection. \textit{Decision level} fusion combines the results from multiple algorithms to yield a final fused decision. When the results from different algorithms are expressed as confidences	(or scores) rather than decisions, it is called soft fusion; otherwise, it is called hard fusion. Methods of decision fusion include voting methods, statistical methods and fuzzy logic basedmethods.} \textbf{PROVIDES A GREAT DESCRIPTION OF LiDAR USE DESCRIPTION FROM XIAOXIAO'S DISSERTATION.} \\
+			\noindent 
+			An undesirable property when applying pixel-level fusion techniques to the fusion of SAR and optical images is that either spectral features of the optical imageery or the microwave backscattering information is destroyed, or both simultaneously.  \\
+			\noindent
+			Applications: satellite Earth observations, computer vision, medical image processing, defense security, land use classification, Digital Surface Modeling (DSM), Digital Elevation Modeling (DEM), environmental monitoring, road mapping. archeology, building detection and reconstruction, etc. \\
+			\noindent
+			\textbf{For specific purposes, ancillary and terrestrial meta-data such as laser-scanners, GIS data, web-sensors, field survey data, economic consensus data, and meteorological data me be combined with remote sensing data to improve the performance of data fusion. }
 		
 	
 		\subsubsection{Hierarchical Mixture of Experts}
