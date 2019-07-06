@@ -24,6 +24,6 @@
 \contentsline {subsection}{\numberline {5.3}Multi-resolution Fusion}{14}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}Fusion of Mixed Data Types}{14}{subsection.5.4}
 \contentsline {subsection}{\numberline {5.5}Unsorted}{14}{subsection.5.5}
-\contentsline {section}{\numberline {6}Outlier/ Adversarial Detection}{14}{section.6}
-\contentsline {section}{\numberline {7}Army}{14}{section.7}
+\contentsline {section}{\numberline {6}Outlier/ Adversarial Detection}{15}{section.6}
+\contentsline {section}{\numberline {7}Army}{15}{section.7}
 \contentsline {section}{\numberline {8}Segmentation}{15}{section.8}
