@@ -643,8 +643,34 @@
 			Additionally, fusion methods can be classified based on their \textit{complexity}.  Simple combination rules such as sum, weighted sum, product, etc exhibit low complexity, while rank based methods such as the Borda count represent medium complexity.  An example of a high complexity combination type includes Behavior-knowledge spaces (BKS).\\
 			\textbf{While there is substantial research on classifier ensembles, there are very few theoretical results explaining why they work.}  Most explanations use bias and variance.  However, such approaches can only provide asymptotic explanations of observed performance improvements.  \textbf{Ideally, the theoretical foundation for classifier ensembles should use statistical learning theory.}  The following few sections analyze performance improvements due to ensemble methods. \\
 			\textbf{A good description of bagging a nd boosting is given.} \\
-			Compared to ensemble-based classifiers, non-ensemble based methods attempt to combine heterogeneous classifiers which complement each other.  \textbf{The advantage of complementary classifiers is that each classifier can concentrate on its own small subproblem instead of trying to cope with the classification problem as a whole, which may be too difficult for a single classifier.  Ideally, the expertise of the specialized classifiers do not overlap.} 
+			Compared to ensemble-based classifiers, non-ensemble based methods attempt to combine heterogeneous classifiers which complement each other.  \textbf{The advantage of complementary classifiers is that each classifier can concentrate on its own small subproblem instead of trying to cope with the classification problem as a whole, which may be too difficult for a single classifier.  Ideally, the expertise of the specialized classifiers do not overlap.} \\
+			Normalization methods are described and corresponding advantages/ dis-advantages are elucidated. \\
+			A classic approach to classifier combination is the \textbf{\textit{Dempster-Shafer theory of evidence} (DS)}.  It was originally adopted by researchers in AI in order to process probabilities in expert systems, but has recently been adopted to sensor fusion and classifier combination.   DS theory is a generalization of the Bayesian theory of probability and differs in several aspects. First, DS theory introduces \textit{degrees of belief} that do not necessarily meet the mathematical properties of probabilities.  Second, it assigns probabilities to sets of possible outcomes rather than single events only.  Third, it considers probability intervals that contains the precise probability for sets of possible outcomes.  The two main ideas of DS theory are to obtain degrees of belief for one question from subjective probabilities for a related question, and Dempster's rule for combining such degrees of belief when they are based on independent items of evidence.  Dempster's rule of combination is a generalization of Baye's rule.  Dempter's rule defines the joint mass $m_{1,2}(X)$ for an outcome set $X$ as follows:
 			
+			\begin{align*}
+				m_{1,2}(X) = 
+				\begin{cases}
+					0 \quad &\text{if} \quad X = \emptyset \\
+					\frac{1}{1-K} \sum_{A_{i} \cap B_{j} = X}m_{1}(A_{i})m_{2}(B_{j}) \quad &\text{if} \quad X \neq \emptyset
+				\end{cases}
+			\end{align*}
+			
+			\noindent
+			where
+			
+			\begin{align*}
+				K = \sum_{A_{i} \cap B_{j} = X}m_{1}(A_{i})m_{2}(B_{j})
+			\end{align*}
+			
+			\noindent
+			DS theory has produced good results in document processing and is still used today.  \\
+			Another complex, and popular, approach is the \textbf{\textit{Behavior-Knowledge Space (BKS)} method}.  BKS is a trainable combination scheme on the abstract level which requires neither measurements not ordered sets of candidate classes.  It tries to estimate the a posteriori probabilities by computing the frequency of each class for every possible set of classifier decisions, based on a given training set.  The result is a lookup table that associates the final classification result with each combination of classifier outputs, i.e. each combination of outputs in the lookup table is represented by its most often encountered class label.  Given a specific classifier decision $S_1, \dots, \S_M$ from $M$ individual classifiers, the a posteriori probability $\hat{P}(c_i|S_1, \dots, \S_M)$ of class $c_i$ is estimated as follows:
+			
+			\begin{align*}
+				\hat{P}(c_i|S_1, \dots, S_M) = \frac{N(c_i|S_1, \dots, S_M)}{\sum_{j}  N(c_j|S_1, \dots, S_M)}
+			\end{align*}
+			\noindent
+			where $N(c_i|S_1, \dots, S_M)$ counts the frequency of class $c_i$ for each possible combination of crisp classifier outputs. \\
 			
 			
 			\paperentry{hackett1990multisensorfusion}
