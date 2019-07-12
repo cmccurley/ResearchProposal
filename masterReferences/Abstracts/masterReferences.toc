@@ -12,18 +12,18 @@
 \contentsline {section}{\numberline {5}Fusion}{9}{section.5}
 \contentsline {subsection}{\numberline {5.1}Classical Approaches}{9}{subsection.5.1}
 \contentsline {subsubsection}{\numberline {5.1.1}General Approach}{9}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Hierarchical Mixture of Experts}{12}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Choquet Integral}{12}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.2}Hierarchical Mixture of Experts}{13}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Choquet Integral}{13}{subsubsection.5.1.3}
 \contentsline {subsubsection}{\numberline {5.1.4}Deep Learning}{13}{subsubsection.5.1.4}
 \contentsline {subsubsection}{\numberline {5.1.5}Graph-Based}{13}{subsubsection.5.1.5}
-\contentsline {subsection}{\numberline {5.2}Co-registration}{13}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Geocoding}{14}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Similarity Measures}{14}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Transformation, Interpolation, Re-sampling}{14}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}Conflation}{14}{subsubsection.5.2.4}
-\contentsline {subsection}{\numberline {5.3}Multi-resolution Fusion}{14}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Fusion of Mixed Data Types}{14}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Unsorted}{14}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.2}Co-registration}{14}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Geocoding}{15}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Similarity Measures}{15}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Transformation, Interpolation, Re-sampling}{15}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Conflation}{15}{subsubsection.5.2.4}
+\contentsline {subsection}{\numberline {5.3}Multi-resolution Fusion}{15}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Fusion of Mixed Data Types}{15}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Unsorted}{15}{subsection.5.5}
 \contentsline {section}{\numberline {6}Outlier/ Adversarial Detection}{15}{section.6}
 \contentsline {section}{\numberline {7}Army}{15}{section.7}
-\contentsline {section}{\numberline {8}Segmentation}{15}{section.8}
+\contentsline {section}{\numberline {8}Segmentation}{16}{section.8}
