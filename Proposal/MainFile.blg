@@ -11,11 +11,30 @@ A level-1 auxiliary file: Chapters/ch_ExperimentalDesign.aux
 A level-1 auxiliary file: Chapters/ch_PreliminaryWork.aux
 A level-1 auxiliary file: Chapters/ch_FutureTasks.aux
 A level-1 auxiliary file: Chapters/ch_Conclusion.aux
-I found no \citation commands---while reading file MainFile.aux
 Database file #1: BibFiles/references.bib
+I was expecting a `,' or a `}'---line 58 of file BibFiles/references.bib
+ :  
+ :  author = { X. Li and V. Monga},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 108 of file BibFiles/references.bib
+ :  
+ :  number = {2}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 245 of file BibFiles/references.bib
+ :  
+ :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1455 of file BibFiles/references.bib
+ :  
+ :  doi = {10.1117/12.778898},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-(There was 1 error message)
+(There were 4 error messages)

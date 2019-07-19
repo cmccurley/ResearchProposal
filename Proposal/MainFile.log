@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  12 JUL 2019 10:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  19 JUL 2019 19:09
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -529,11 +529,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ] [8]
-Underfull \hbox (badness 10000) detected at line 16
-[][][]
- []
-
-
 Underfull \hbox (badness 10000) detected at line 17
 [][][]
  []
@@ -543,7 +538,12 @@ Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
 
-[9]) [10]
+
+Underfull \hbox (badness 10000) detected at line 19
+[][][]
+ []
+
+) [9]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -554,7 +554,7 @@ CHAPTER 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [11
+) [10
 
 
 
@@ -569,7 +569,7 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [12
+) [11
 
 
 
@@ -584,7 +584,7 @@ CHAPTER 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [13
+) [12
 
 
 
@@ -599,7 +599,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [14
+) [13
 
 
 
@@ -614,7 +614,7 @@ CHAPTER 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [15
+) [14
 
 
 
@@ -629,7 +629,7 @@ CHAPTER 7.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [16
+) [15
 
 
 
@@ -644,15 +644,18 @@ CHAPTER 8.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [17
+) [16
 
 
 
 ] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl
 
-LaTeX Warning: Empty `thebibliography' environment on input line 24.
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 27.
 
-[18
+Missing character: There is no Ã in font cmss12!
+Missing character: There is no ¡ in font cmss12!
+[17
 
 
 
@@ -676,20 +679,21 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 7721 strings out of 493323
- 114710 string characters out of 3139067
- 203367 words of memory out of 3000000
- 11011 multiletter control sequences out of 15000+200000
- 12366 words of font info for 46 fonts, out of 3000000 for 9000
+ 7731 strings out of 493323
+ 115008 string characters out of 3139067
+ 203574 words of memory out of 3000000
+ 11017 multiletter control sequences out of 15000+200000
+ 12725 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,5n,42p,1765b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,5n,42p,1764b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on MainFile.pdf (18 pages, 84033 bytes).
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on MainFile.pdf (17 pages, 96835 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
  265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
