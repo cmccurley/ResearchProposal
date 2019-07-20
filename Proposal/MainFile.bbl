@@ -35,6 +35,15 @@ J.~Zhang, ``Multi-source remote sensing data fusion: Status and trends,''
 X.~Du, ``Multiple instance choquet integral for multiresolution sensor
   fusion,'' Ph.D. dissertation, Univ. of Missouri, Columbia, MO, Dec. 2017.
 
+\bibitem{Mohandes2018ClassifierCombinationTechniquesReview}
+M.~{Mohandes}, M.~{Deriche}, and S.~O. {Aliyu}, ``Classifiers combination
+  techniques: A comprehensive review,'' \emph{IEEE Access}, vol.~6, pp.
+  19\,626--19\,639, 2018.
+
+\bibitem{Zare2008Thesis}
+A.~Zare, ``Hyperspectral endmember detection and band selection using bayesian
+  methods,'' Ph.D. dissertation, Univ. of Florida, Gainesville, FL, 2008.
+
 \bibitem{Shen2016SpatioTemporalSpectralFusion}
 H.~{Shen}, X.~{Meng}, and L.~{Zhang}, ``An integrated framework for the
   spatio–temporal–spectral fusion of remote sensing images,'' \emph{IEEE
