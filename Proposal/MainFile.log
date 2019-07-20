@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  20 JUL 2019 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  20 JUL 2019 10:55
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -538,12 +538,12 @@ Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
 
-
+[9]
 Underfull \hbox (badness 10000) detected at line 21
 [][][]
  []
 
-[9]) [10]
+) [10]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -699,7 +699,7 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on MainFile.pdf (18 pages, 103771 bytes).
+Output written on MainFile.pdf (18 pages, 104055 bytes).
 PDF statistics:
  315 PDF objects out of 1000 (max. 8388607)
  69 named destinations out of 1000 (max. 500000)
