@@ -1,4 +1,4 @@
-\begin{thebibliography}{105}
+\begin{thebibliography}{128}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -43,6 +43,14 @@ M.~Belkin and P.~Niyogi.
 \newblock \emph{Neural Computation}, 15\penalty0 (6):\penalty0 1373--1396,
   2003.
 \newblock \doi{10.1162/089976603321780317}.
+
+\bibitem[Belkin and Niyogi(2004)]{Belkin2004SemiSupLearningRiemannianManifolds}
+M.~Belkin and P.~Niyogi.
+\newblock Semi-supervised learning on riemannian manifolds.
+\newblock \emph{Machine Learning}, 56\penalty0 (1):\penalty0 209--239, Jul
+  2004.
+\newblock ISSN 1573-0565.
+\newblock \doi{10.1023/B:MACH.0000033120.25363.1e}.
 
 \bibitem[Belkin et~al.(2006)Belkin, Niyogi, and Sindhwani]{Belkin2006ManReg}
 M.~Belkin, P.~Niyogi, and V.~Sindhwani.
@@ -89,6 +97,16 @@ J.~Bocinsky, C.~H. McCurley, D.~Shats, and A.~Zare.
   Obscured Targets XXIV, 110120N}, volume 11012 of \emph{Proc.SPIE}, May 2019.
 \newblock \doi{10.1117/12.2519463}.
 
+\bibitem[{Bouzas} et~al.(2015){Bouzas}, {Arvanitopoulos}, and
+  {Tefas}]{Bouzas2015GraphEmbeddedMutualInformationSupDimRed}
+D.~{Bouzas}, N.~{Arvanitopoulos}, and A.~{Tefas}.
+\newblock Graph embedded nonparametric mutual information for supervised
+  dimensionality reduction.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  26\penalty0 (5):\penalty0 951--963, May 2015.
+\newblock ISSN 2162-237X.
+\newblock \doi{10.1109/TNNLS.2014.2329240}.
+
 \bibitem[{Brigot} et~al.(2016){Brigot}, {Colin-Koeniguer}, {Plyer}, and
   {Janez}]{Brigot2016CoregistrationForestRemoteSensingImages}
 G.~{Brigot}, E.~{Colin-Koeniguer}, A.~{Plyer}, and F.~{Janez}.
@@ -132,6 +150,24 @@ V.~Caselles, R.~Kimmel, and G.~Sapiro.
 \newblock ISSN 1573-1405.
 \newblock \doi{10.1023/A:1007979827043}.
 \newblock URL \url{https://doi.org/10.1023/A:1007979827043}.
+
+\bibitem[Chao et~al.(2019)Chao, Luo, and
+  Ding]{Chao2019RecentAdvancesSupervisedDimRed}
+G.~Chao, Y.~Luo, and W.~Ding.
+\newblock Recent advances in supervised dimension reduction: A survey.
+\newblock \emph{Machine Learning and Knowledge Extraction}, 1\penalty0
+  (1):\penalty0 341--358, 2019.
+\newblock ISSN 2504-4990.
+\newblock \doi{10.3390/make1010020}.
+
+\bibitem[Chen et~al.(2018)Chen, Wang, Li, and
+  Sun]{Chen2018RobustSemiSupManifoldLearning}
+M.~Chen, J.~Wang, X.~Li, and X.~Sun.
+\newblock Robust semi-supervised manifold learning algorithm for
+  classification.
+\newblock \emph{Mathematical Problems in Engineering}, 2018:\penalty0 1--8, 02
+  2018.
+\newblock \doi{10.1155/2018/2382803}.
 
 \bibitem[{Cheplygina} et~al.(2016){Cheplygina}, {Tax}, and
   {Loog}]{Cheplygina2016DissimilarityEnsemblesMIL}
@@ -265,6 +301,24 @@ M.~Gao, A.~Li, R.~Yu, V.~I. Morariu, and L.~S. Davis.
 \newblock \emph{CoRR}, abs/1711.05282, 2017.
 \newblock URL \url{http://arxiv.org/abs/1711.05282}.
 
+\bibitem[{Gao} et~al.(2011){Gao}, {Wang}, {Tao}, and
+  {Li}]{Gao2011SupGPLVMDimRed}
+X.~{Gao}, X.~{Wang}, D.~{Tao}, and X.~{Li}.
+\newblock Supervised gaussian process latent variable model for dimensionality
+  reduction.
+\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part B
+  (Cybernetics)}, 41\penalty0 (2):\penalty0 425--434, April 2011.
+\newblock ISSN 1083-4419.
+\newblock \doi{10.1109/TSMCB.2010.2057422}.
+
+\bibitem[{Gönen}(2013)]{Gonen2013BayesianSupDimRed}
+M.~{Gönen}.
+\newblock Bayesian supervised dimensionality reduction.
+\newblock \emph{IEEE Transactions on Cybernetics}, 43\penalty0 (6):\penalty0
+  2179--2189, Dec 2013.
+\newblock ISSN 2168-2267.
+\newblock \doi{10.1109/TCYB.2013.2245321}.
+
 \bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and
   Courville]{Goodfellow2016DeepLearning}
 I.~Goodfellow, Y.~Bengio, and A.~Courville.
@@ -318,6 +372,23 @@ S.~S. Haykin.
 \newblock \emph{Neural networks and learning machines}.
 \newblock Pearson Education, Upper Saddle River, NJ, third edition, 2009.
 
+\bibitem[Hong et~al.(2018)Hong, Yokoya, Chanussot, and
+  Zhu]{Hong2018CommonSubspaceLearningHSI}
+D.~Hong, N.~Yokoya, J.~Chanussot, and X.~X. Zhu.
+\newblock Cospace: Common subspace learning from hyperspectral-multispectral
+  correspondences.
+\newblock \emph{CoRR}, abs/1812.11501, 2018.
+\newblock URL \url{http://arxiv.org/abs/1812.11501}.
+
+\bibitem[Hong et~al.(2019)Hong, Yokoya, Ge, Chanussot, and
+  Zhu]{Hong2019LearnableManifoldAlignment}
+D.~Hong, N.~Yokoya, N.~Ge, J.~Chanussot, and X.~X. Zhu.
+\newblock Learnable manifold alignment (lema): A semi-supervised cross-modality
+  learning framework for land cover and land use classification.
+\newblock \emph{ISPRS Journal of Photogrammetry and Remote Sensing},
+  147:\penalty0 193 -- 205, 2019.
+\newblock ISSN 0924-2716.
+
 \bibitem[Ilse et~al.(2018)Ilse, Tomczak, and
   Welling]{Ilse2018AttentionBasedDeepMIL}
 M.~Ilse, Jakub~M. Tomczak, and M.~Welling.
@@ -359,6 +430,13 @@ M.~I. {Jordan} and R.~A. {Jacobs}.
 \newblock In \emph{Proceedings of 1993 International Conference on Neural
   Networks (IJCNN-93-Nagoya, Japan)}, volume~2, pages 1339--1344 vol.2, Oct
   1993.
+
+\bibitem[Kang et~al.(2018)Kang, Pan, Hoi, and
+  Xu]{Kang2018ManifoldRegularizedPCA}
+Z.~Kang, H.~Pan, S.~C.~H. Hoi, and Z.~Xu.
+\newblock Robust graph learning from noisy data.
+\newblock \emph{CoRR}, abs/1812.06673, 2018.
+\newblock URL \url{http://arxiv.org/abs/1812.06673}.
 
 \bibitem[{Karem} and
   {Frigui}(2016)]{Karem2016MILMultiplePositiveAndNegativeConcepts}
@@ -446,6 +524,30 @@ H.~{Li}, D.~{Liu}, and D.~{Wang}.
   on manifold regularization.
 \newblock In \emph{2015 International Joint Conference on Neural Networks
   (IJCNN)}, pages 1--6, July 2015.
+
+\bibitem[Li et~al.(2009)Li, Shi, Shi, and Zhong]{Li2009SupManifoldLearning}
+Z.~Li, W.~Shi, X.~Shi, and Z.~Zhong.
+\newblock A supervised manifold learning method.
+\newblock \emph{Comput. Sci. Inf. Syst.}, 6:\penalty0 205--215, 12 2009.
+
+\bibitem[{Liang} et~al.(2014){Liang}, {Liu}, {Huang}, {Li}, {Wang}, and
+  {Wang}]{Liang2014ImageRegistrationMutualInformation}
+J.~{Liang}, X.~{Liu}, K.~{Huang}, X.~{Li}, D.~{Wang}, and X.~{Wang}.
+\newblock Automatic registration of multisensor images using an integrated
+  spatial and mutual information (smi) metric.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  52\penalty0 (1):\penalty0 603--615, Jan 2014.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2013.2242895}.
+
+\bibitem[{Liu} et~al.(2014){Liu}, {Liu}, {Chan}, and
+  {Hua}]{Liu2014HybridManifoldEmbedding}
+Y.~{Liu}, Y.~{Liu}, K.~C.~C. {Chan}, and K.~A. {Hua}.
+\newblock Hybrid manifold embedding.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  25\penalty0 (12):\penalty0 2295--2302, Dec 2014.
+\newblock ISSN 2162-237X.
+\newblock \doi{10.1109/TNNLS.2014.2305760}.
 
 \bibitem[L.Jian et~al.(2019)L.Jian, Yang, Liu, Jeon, Gao, and
   Chisholm]{Jian2019AEInfraredVisibleFusion}
@@ -543,6 +645,15 @@ E.~J. {Palomo} and E.~{Lopez-Rubio}.
 \newblock ISSN 2162-237X.
 \newblock \doi{10.1109/TNNLS.2016.2570124}.
 
+\bibitem[Raducanu and
+  Dornaika(2012)]{Raducanu2012SupervisedNonlinearDimReduction}
+B.~Raducanu and F.~Dornaika.
+\newblock A supervised non-linear dimensionality reduction approach for
+  manifold learning.
+\newblock \emph{Pattern Recognition}, 45\penalty0 (6):\penalty0 2432 -- 2444,
+  2012.
+\newblock ISSN 0031-3203.
+
 \bibitem[{Ratle} et~al.(2010){Ratle}, {Camps-Valls}, and
   {Weston}]{Ratle2010ManRegHSI}
 F.~{Ratle}, G.~{Camps-Valls}, and J.~{Weston}.
@@ -570,6 +681,14 @@ B.~{Ren}, B.~{Hou}, J.~{Zhao}, and L.~{Jiao}.
   and Remote Sensing}, 10\penalty0 (2):\penalty0 580--595, Feb 2017.
 \newblock ISSN 1939-1404.
 \newblock \doi{10.1109/JSTARS.2016.2573380}.
+
+\bibitem[Rish et~al.(2008)Rish, Grabarnik, Cecchi, Pereira, and
+  Gordon]{Rish2008SupDimRedGLM}
+I.~Rish, G.~Grabarnik, G.~A. Cecchi, F.~Pereira, and G.~J. Gordon.
+\newblock Closed-form supervised dimensionality reduction with generalized
+  linear models.
+\newblock pages 832--839, 01 2008.
+\newblock \doi{10.1145/1390156.1390261}.
 
 \bibitem[Rojas(1996)]{Rojas1996AssociativeNetworks}
 R.~Rojas.
@@ -649,6 +768,15 @@ R.~E. {Smith}, D.~T. {Anderson}, A.~{Zare}, J.~E. {Ball}, B.~{Smock}, J.~R.
 \newblock In \emph{2017 IEEE International Conference on Fuzzy Systems
   (FUZZ-IEEE)}, pages 1--8, July 2017.
 \newblock \doi{10.1109/FUZZ-IEEE.2017.8015481}.
+
+\bibitem[Sugiyama(2006)]{Sugiyama2006FDASupDimRed}
+M.~Sugiyama.
+\newblock Local fisher discriminant analysis for supervised dimensionality
+  reduction.
+\newblock In \emph{Proceedings of the 23rd International Conference on Machine
+  Learning}, ICML '06, pages 905--912, New York, NY, USA, 2006. ACM.
+\newblock ISBN 1-59593-383-2.
+\newblock \doi{10.1145/1143844.1143958}.
 
 \bibitem[Sun et~al.(2017)Sun, Liu, and Harada]{Sun2016GNGMotionDetection}
 Q.~Sun, H.~Liu, and T.~Harada.
@@ -738,6 +866,14 @@ L.~van~der Maaten, E.~Postma, and H.~Herik.
 \newblock Dimensionality reduction: A comparative review.
 \newblock \emph{Journal of Machine Learning Research - JMLR}, 10, 01 2007.
 
+\bibitem[Vepakomma et~al.(2016)Vepakomma, Tonde, and
+  Elgammal]{Vepakomma2016SupDimRedDistanceCorrelationMax}
+Praneeth Vepakomma, C.~Tonde, and A.~M. Elgammal.
+\newblock Supervised dimensionality reduction via distance correlation
+  maximization.
+\newblock \emph{CoRR}, abs/1601.00236, 2016.
+\newblock URL \url{http://arxiv.org/abs/1601.00236}.
+
 \bibitem[Vivar et~al.(2019)Vivar, Burwinkel, Kazi, Zwergal, Navab, and
   Ahmadi]{Vivar2019MultiModalGraphFusion}
 G.~Vivar, H.~Burwinkel, A.~Kazi, A~Zwergal, N.~Navab, and S.~Ahmadi.
@@ -745,6 +881,23 @@ G.~Vivar, H.~Burwinkel, A.~Kazi, A~Zwergal, N.~Navab, and S.~Ahmadi.
   incomplete datasets.
 \newblock \emph{CoRR}, abs/1905.03053, 2019.
 \newblock URL \url{http://arxiv.org/abs/1905.03053}.
+
+\bibitem[{Vural} and
+  {Guillemot}(2016)]{Vural2016OutOfSampleSupManifoldLearning}
+E.~{Vural} and C.~{Guillemot}.
+\newblock Out-of-sample generalizations for supervised manifold learning for
+  classification.
+\newblock \emph{IEEE Transactions on Image Processing}, 25\penalty0
+  (3):\penalty0 1410--1424, March 2016.
+\newblock ISSN 1057-7149.
+\newblock \doi{10.1109/TIP.2016.2520368}.
+
+\bibitem[Vural and Guillemot(2018)]{Vural2018StudySupervisedManifoldLearning}
+E.~Vural and C.~Guillemot.
+\newblock A study of the classification of low-dimensional data with supervised
+  manifold learning.
+\newblock \emph{CoRR}, abs/1507.05880, 2018.
+\newblock URL \url{http://arxiv.org/abs/1507.05880}.
 
 \bibitem[{Wang} et~al.(2012){Wang}, {Shan}, {Chen}, {Dai}, and
   {Gao}]{Wang2008ManifoldManifoldDistance}
@@ -766,6 +919,15 @@ R.~{Wang}, X.~{Wang}, S.~{Kwong}, and C.~{Xu}.
 \newblock ISSN 1063-6706.
 \newblock \doi{10.1109/TFUZZ.2017.2717803}.
 
+\bibitem[{X. Geng} et~al.(2005){X. Geng}, {D. Zhan}, and {Z.
+  Zhou}]{Geng2005SupNonlinearDimRed}
+{X. Geng}, {D. Zhan}, and {Z. Zhou}.
+\newblock Supervised nonlinear dimensionality reduction for visualization and
+  classification.
+\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part B
+  (Cybernetics)}, 35\penalty0 (6):\penalty0 1098--1107, Dec 2005.
+\newblock ISSN 1083-4419.
+
 \bibitem[Xiao et~al.(2017)Xiao, Liu, and Hao]{Xiao2017MIOrdinalRegression}
 Y.~Xiao, B.~Liu, and Z.~Hao.
 \newblock Multiple-instance ordinal regression.
@@ -781,6 +943,24 @@ Y.~{Xiao}, B.~{Liu}, and Z.~{Hao}.
 \newblock ISSN 0162-8828.
 \newblock \doi{10.1109/TPAMI.2016.2539952}.
 
+\bibitem[Xu et~al.(2017)Xu, Yu, Davenport, and
+  Zha]{Xu2017ActiveManifoldLearning}
+H.~Xu, L.~Yu, M.~A. Davenport, and H.~Zha.
+\newblock Active manifold learning via a unified framework for manifold
+  landmarking.
+\newblock \emph{CoRR}, abs/1710.09334, 2017.
+\newblock URL \url{http://arxiv.org/abs/1710.09334}.
+
+\bibitem[{Yang} and
+  {Crawford}(2016)]{Yang2016ManifoldAlignmentMultitemporalHSI}
+H.~L. {Yang} and M.~M. {Crawford}.
+\newblock Spectral and spatial proximity-based manifold alignment for
+  multitemporal hyperspectral image classification.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  54\penalty0 (1):\penalty0 51--64, Jan 2016.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2015.2449736}.
+
 \bibitem[{Yuksel} et~al.(2012){Yuksel}, {Wilson}, and
   {Gader}]{Yuksel2012TwentyYearsMixtureofExperts}
 S.~E. {Yuksel}, J.~N. {Wilson}, and P.~D. {Gader}.
@@ -789,6 +969,14 @@ S.~E. {Yuksel}, J.~N. {Wilson}, and P.~D. {Gader}.
   23\penalty0 (8):\penalty0 1177--1193, Aug 2012.
 \newblock ISSN 2162-237X.
 \newblock \doi{10.1109/TNNLS.2012.2200299}.
+
+\bibitem[{Z. Zhang} et~al.(2008){Z. Zhang}, {H. Zha}, and {M.
+  Zhang}]{Zhang2008SpectralSemiSupManifoldLearning}
+{Z. Zhang}, {H. Zha}, and {M. Zhang}.
+\newblock Spectral methods for semi-supervised manifold learning.
+\newblock In \emph{2008 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 1--6, June 2008.
+\newblock \doi{10.1109/CVPR.2008.4587381}.
 
 \bibitem[{Zare} and {Jiao}(2014)]{Zare2015eFUMI}
 A.~{Zare} and C.~{Jiao}.
@@ -832,6 +1020,16 @@ Q.~Zhang and S.~A. Goldman.
 \newblock In T.~G. Dietterich, S.~Becker, and Z.~Ghahramani, editors,
   \emph{Advances in Neural Information Processing Systems 14}, pages
   1073--1080. MIT Press, 2002.
+
+\bibitem[{Zhang} et~al.(2014){Zhang}, {Zheng}, {Liu}, {Sun}, {Wang}, and
+  {Fu}]{Zhang2014SemiSupManLearningFusion}
+Y.~{Zhang}, X.~{Zheng}, G.~{Liu}, X.~{Sun}, H.~{Wang}, and K.~{Fu}.
+\newblock Semi-supervised manifold learning based multigraph fusion for
+  high-resolution remote sensing image classification.
+\newblock \emph{IEEE Geoscience and Remote Sensing Letters}, 11\penalty0
+  (2):\penalty0 464--468, Feb 2014.
+\newblock ISSN 1545-598X.
+\newblock \doi{10.1109/LGRS.2013.2267091}.
 
 \bibitem[Zitová and Flusser(2003)]{Zitova2003SurveyImageRegistrationMethods}
 B.~Zitová and J.~Flusser.
