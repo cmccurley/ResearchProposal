@@ -271,6 +271,18 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Alignment %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\subsection{Manifold Alignment/Matching}
 	
+		\paperentry{Wang2011ManifoldAlignment}
+		{Manifold Alignment}
+		{Manifold_Representation_Learning/Alignment/Wang2011ManifoldAlignment.pdf}
+		{} \\ \textbf{\textit{Manifold alignment} is a simultaneous solution to the problem of alignment and a framework for discovering a unifying representation of multiple datasets.  The goal is  to ultimately map disparate datasets to a joint latent space, while preserving the qualities of each dataset and also highlighting the similarities between the datasets. The fundamental idea of manifold alignment is that all datasets included in the fusion lie on the same manifold.} \\ \\
+			
+		The problem of alignment is to identify a transformation of one dataset that ``matches it up" with a transformation of another dataset.  That is, given two datasets $X$ and $Y$, whose instances lie on the same manifold, $Z$, but who may be represented by different features, the problem of alignment is to find two functions $f$ and $g$, such that $f(x_i)$ is close to $g(y_j)$ in terms of Euclidean distance if $x_i$ and $y_j$ are close with respect to geodesic distance along $Z$.  Here, $X$ is an $n \times p$ matrix containing $n$ data instances in $p$-dimensional space, $Y$ is an n$m\times q$ matrix containing $m$ data instances in $q$-dimensional space, $f:\mathbb{R}^{p}\rightarrow\mathbb{R}^{k}$, and $g:\mathbb{R}^{q}\rightarrow\mathbb{R}^{k}$ for some $k$ called the latent dimensionality.  The instances $x_i$ and $y_j$ are in exact correspondence if and only if $f(x_i)=g(y_j)$.  On the other hand, prior correspondence information includes any information about the similarity of the instances in $X$ and $Y$, not just exact correspondence information. The union of the range of $f$ and $g$ is the joint latent space, and the concatenation of the new coordinates \[ \left( \begin{array}{cc}
+		f(X) \\
+		g(Y)  \end{array} \right)\] 
+		is the unified representation of $X$ and $Y$, where $f(X)$ is an $n\times k$ matrix containing the result $f$ applied to each row of $X$, and $g(Y)$ and $m \times k$ matrix containing the result of $g$ applied to each row of $Y$.  $f(X)$ and $g(Y)$ are the new coordinates of $X$ and $Y$ in the joint latent space.\\ \\
+			
+		This paper captures this idea mathematically by concatenating the graph Laplacians of each dataset, thus forming a joint Laplacian.  A within-dataset similarity function gives the edge weights of this joint Laplacian between the instances within each dataset, and correspondence information fills in the edge weights between the instances in separate datasets.  The manifold alignment algorithm then embeds this joint Laplacian in a new latent space.  The primary \textbf{challenges of manifold alignment} are identifying whether the datasets are actually sampled from a single underlying manifold, defining the similarity function that captures the appropriate structures of the datasets, inferring any reliable correspondence information, and finding the true dimensionality of this underlying manifold. Experiments were conducted on protein alignment, parallel corpora and aligning topic models. \\ \\Manifold alignment is essentially ta graph-based algorithm, but there is also a vast literature on graph-based methods for alignment that are unrelated to manifold learning, typically called \textit{graph matching} or \textit{graph isomorphism}. Researchers study the general problem of alignment under the names of \textit{information fusion} or \textit{data fusion}. \\
+	
 		\paperentry{Hong2019LearnableManifoldAlignment}
 		{Learnable manifold alignment (LeMA): A semi-supervised cross-modality learning framework for land cover and land use classification}
 		{Manifold_Representation_Learning/Alignment/Hong2019LearnableManifoldAlignment.pdf}
@@ -311,10 +323,6 @@
 		{Manifold_Representation_Learning/Alignment/Wang2011HeteroDomainAdaptationManAlignment.pdf}
 		{arg4}
 		
-		\paperentry{Wang2011ManifoldAlignment}
-		{Manifold Alignment}
-		{Manifold_Representation_Learning/Alignment/Wang2011ManifoldAlignment.pdf}
-		{arg4}
 		
 		\paperentry{Cui2014GenUnsupManifoldAlignment}
 		{Generalized Unsupervised Manifold Alignment}
