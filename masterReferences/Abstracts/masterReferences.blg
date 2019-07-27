@@ -16,7 +16,7 @@ I was expecting a `,' or a `}'---line 245 of file references.bib
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1736 of file references.bib
+I was expecting a `,' or a `}'---line 1881 of file references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
@@ -38,6 +38,7 @@ Warning--empty year in Li2018CollaborativeSparsePriorsMultiViewATR
 Warning--empty year in Li2018CollaborativeSparsePriorsMultiViewATR
 Warning--empty booktitle in Beyer2009HeterogeneousMixtureOfExperts
 Warning--empty journal in Bishop1998GTM
+Warning--empty journal in Damianou2017ManifoldAlignmentDifferentDataView
 Warning--empty journal in Delaporte2008DiffusionMaps
 Warning--empty booktitle in Li2017SmoothMIL
 Warning--empty booktitle in Mahalanobis2019DSIACCharacterization
@@ -52,5 +53,8 @@ Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina
 while executing---line 1429 of file plainnat.bst
 Warning--empty booktitle in Tanner2019DSIACNeuralNet
 Warning--empty booktitle in Trabelsi2018FuzzyClusteringMILRegression
+Warning--empty journal in Tuia2015KernelManifoldAlignment
 Warning--can't use both author and editor fields in Tulyakov2008ReviewClassifierCombinationMethods
+Warning--empty journal in Wang2010mMultiscaleManAlignment
+Warning--empty journal in Wang2011ManifoldAlignment
 (There were 12 error messages)

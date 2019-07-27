@@ -1,4 +1,4 @@
-\begin{thebibliography}{128}
+\begin{thebibliography}{141}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -195,6 +195,13 @@ J.~Chiang and P.~D. Gader.
 \newblock ISSN 1063-6706.
 \newblock \doi{10.1109/91.649901}.
 
+\bibitem[Choo et~al.(2012)Choo, Bohn, Nakamura, White, and
+  Park]{Choo2012HeterogeneousDataFusionGraphs}
+J.~Choo, S.~Bohn, G.~Nakamura, A.~M. White, and H.~Park.
+\newblock Heterogeneous data fusion via space alignment using nonmetric
+  multidimensional scaling.
+\newblock In \emph{SDM}, 2012.
+
 \bibitem[Cook(2015)]{Cook2015Thesis}
 M.~Cook.
 \newblock Task driven extended functions of multiple instances (td-efumi).
@@ -209,10 +216,36 @@ M.~Cook, A.~Zare, and D.~K.~C. Ho.
   pages 9823 -- 9823 -- 9, Apr. 2016.
 \newblock \doi{10.1117/12.2223349}.
 
+\bibitem[Cui et~al.(2014)Cui, Chang, Shan, and
+  Chen]{Cui2014GenUnsupManifoldAlignment}
+Z.~Cui, H.~Chang, S.~Shan, and X.~Chen.
+\newblock Generalized unsupervised manifold alignment.
+\newblock In Z.~Ghahramani, M.~Welling, C.~Cortes, N.~D. Lawrence, and K.~Q.
+  Weinberger, editors, \emph{Advances in Neural Information Processing Systems
+  27}, pages 2429--2437. Curran Associates, Inc., 2014.
+\newblock URL
+  \url{http://papers.nips.cc/paper/5620-generalized-unsupervised-manifold-alignment.pdf}.
+
 \bibitem[Dai et~al.(2017)Dai, Wang, Aston, Hua, and
   Wipf]{Dai2017VariationalAutoencoder}
 B.~Dai, Y.~Wang, J.~Aston, G.~Hua, and D.~Wipf.
 \newblock Hidden talents of the variational autoencoder, 2017.
+
+\bibitem[Damianou et~al.(2017)Damianou, D.~Lawrence, and
+  Ek]{Damianou2017ManifoldAlignmentDifferentDataView}
+Andreas Damianou, Neil D.~Lawrence, and Carl~Henrik Ek.
+\newblock Manifold alignment determination: finding correspondences across
+  different data views.
+\newblock 01 2017.
+
+\bibitem[{Davenport} et~al.(2010){Davenport}, {Hegde}, {Duarte}, and
+  {Baraniuk}]{Davenport2010JointManifoldsDataFusion}
+M.~A. {Davenport}, C.~{Hegde}, M.~F. {Duarte}, and R.~G. {Baraniuk}.
+\newblock Joint manifolds for data fusion.
+\newblock \emph{IEEE Transactions on Image Processing}, 19\penalty0
+  (10):\penalty0 2580--2594, Oct 2010.
+\newblock ISSN 1057-7149.
+\newblock \doi{10.1109/TIP.2010.2052821}.
 
 \bibitem[Dawn et~al.(2010)Dawn, Saxena, and
   Sharma]{Dawn2010SurveyRemoteSensingImageRegistration}
@@ -372,6 +405,17 @@ S.~S. Haykin.
 \newblock \emph{Neural networks and learning machines}.
 \newblock Pearson Education, Upper Saddle River, NJ, third edition, 2009.
 
+\bibitem[Hertzberg et~al.(2013)Hertzberg, Wagner, Frese, and
+  Schröder]{Hertzberg2013SensorFusionStateRepManifolds}
+C.~Hertzberg, R.~Wagner, U.~Frese, and L.~Schröder.
+\newblock Integrating generic sensor fusion algorithms with sound state
+  representations through encapsulation of manifolds.
+\newblock \emph{Information Fusion}, 14\penalty0 (1):\penalty0 57 -- 77, 2013.
+\newblock ISSN 1566-2535.
+\newblock \doi{https://doi.org/10.1016/j.inffus.2011.08.003}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S1566253511000571}.
+
 \bibitem[Hong et~al.(2018)Hong, Yokoya, Chanussot, and
   Zhu]{Hong2018CommonSubspaceLearningHSI}
 D.~Hong, N.~Yokoya, J.~Chanussot, and X.~X. Zhu.
@@ -388,6 +432,13 @@ D.~Hong, N.~Yokoya, N.~Ge, J.~Chanussot, and X.~X. Zhu.
 \newblock \emph{ISPRS Journal of Photogrammetry and Remote Sensing},
   147:\penalty0 193 -- 205, 2019.
 \newblock ISSN 0924-2716.
+
+\bibitem[III et~al.(2018)III, Wolf, and
+  Krishnaswamy]{Stanley2019ManAlignmentFeatureCorrespondence}
+J.~S.~Stanley III, G.~Wolf, and S.~Krishnaswamy.
+\newblock Manifold alignment with feature correspondence.
+\newblock \emph{CoRR}, abs/1810.00386, 2018.
+\newblock URL \url{http://arxiv.org/abs/1810.00386}.
 
 \bibitem[Ilse et~al.(2018)Ilse, Tomczak, and
   Welling]{Ilse2018AttentionBasedDeepMIL}
@@ -540,6 +591,16 @@ J.~{Liang}, X.~{Liu}, K.~{Huang}, X.~{Li}, D.~{Wang}, and X.~{Wang}.
 \newblock ISSN 0196-2892.
 \newblock \doi{10.1109/TGRS.2013.2242895}.
 
+\bibitem[{Liao} et~al.(2016){Liao}, {Qian}, {Zhou}, and
+  {Tang}]{Liao2016ManAlignmentHSI}
+D.~{Liao}, Y.~{Qian}, J.~{Zhou}, and Y.~Y. {Tang}.
+\newblock A manifold alignment approach for hyperspectral image visualization
+  with natural color.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  54\penalty0 (6):\penalty0 3151--3162, June 2016.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2015.2512659}.
+
 \bibitem[{Liu} et~al.(2014){Liu}, {Liu}, {Chan}, and
   {Hua}]{Liu2014HybridManifoldEmbedding}
 Y.~{Liu}, Y.~{Liu}, K.~C.~C. {Chan}, and K.~A. {Hua}.
@@ -619,6 +680,14 @@ M.~{Mohandes}, M.~{Deriche}, and S.~O. {Aliyu}.
 \newblock \emph{IEEE Access}, 6:\penalty0 19626--19639, 2018.
 \newblock ISSN 2169-3536.
 \newblock \doi{10.1109/ACCESS.2018.2813079}.
+
+\bibitem[{Navaratnam} et~al.(2007){Navaratnam}, {Fitzgibbon}, and
+  {Cipolla}]{Navaratnam2007JointManifoldSemiSupRegression}
+R.~{Navaratnam}, A.~W. {Fitzgibbon}, and R.~{Cipolla}.
+\newblock The joint manifold model for semi-supervised multi-valued regression.
+\newblock In \emph{2007 IEEE 11th International Conference on Computer Vision},
+  pages 1--8, Oct 2007.
+\newblock \doi{10.1109/ICCV.2007.4408976}.
 
 \bibitem[Nickel and Kiela(2017)]{Nickel2017PoincareEmbeddings}
 M.~Nickel and D.~Kiela.
@@ -750,6 +819,15 @@ N.~Shazeer, A.~Mirhoseini, K.~Maziarz, A.~Davis, Q.~V. Le, G.~E. Hinton, and
 \newblock \emph{CoRR}, abs/1701.06538, 2017.
 \newblock URL \url{http://arxiv.org/abs/1701.06538}.
 
+\bibitem[{Shen} et~al.(2018){Shen}, {Zulch}, {Disasio}, {Blasch}, {Chen},
+  {Wang}, {Lu}, and {Niu}]{Shen2018ManifoldSensorFusionImageData}
+D.~{Shen}, P.~{Zulch}, M.~{Disasio}, E.~{Blasch}, G.~{Chen}, Z.~{Wang},
+  J.~{Lu}, and R.~{Niu}.
+\newblock Manifold learning algorithms for sensor fusion of image and
+  radio-frequency data.
+\newblock In \emph{2018 IEEE Aerospace Conference}, pages 1--9, March 2018.
+\newblock \doi{10.1109/AERO.2018.8396395}.
+
 \bibitem[{Shen} et~al.(2016){Shen}, {Meng}, and
   {Zhang}]{Shen2016SpatioTemporalSpectralFusion}
 H.~{Shen}, X.~{Meng}, and L.~{Zhang}.
@@ -851,6 +929,11 @@ I.~W. Tsang and J.~T. Kwok.
 \newblock URL
   \url{http://papers.nips.cc/paper/3005-large-scale-sparsified-manifold-regularization.pdf}.
 
+\bibitem[Tuia and Camps-Valls(2015)]{Tuia2015KernelManifoldAlignment}
+D.~Tuia and G.~Camps-Valls.
+\newblock Kernel manifold alignment.
+\newblock 04 2015.
+
 \bibitem[Tulyakov et~al.(2008)Tulyakov, Jaeger, Govindaraju, and
   Doermann]{Tulyakov2008ReviewClassifierCombinationMethods}
 S.~Tulyakov, S.~Jaeger, V.~Govindaraju, and D.~Doermann.
@@ -898,6 +981,28 @@ E.~Vural and C.~Guillemot.
   manifold learning.
 \newblock \emph{CoRR}, abs/1507.05880, 2018.
 \newblock URL \url{http://arxiv.org/abs/1507.05880}.
+
+\bibitem[Wang and Mahadevan(2010)]{Wang2010mMultiscaleManAlignment}
+C.~Wang and S.~Mahadevan.
+\newblock Multiscale manifold alignment.
+\newblock 09 2010.
+
+\bibitem[Wang and Mahadevan(2011)]{Wang2011HeteroDomainAdaptationManAlignment}
+C.~Wang and S.~Mahadevan.
+\newblock Heterogeneous domain adaptation using manifold alignment.
+\newblock In \emph{Proceedings of the Twenty-Second International Joint
+  Conference on Artificial Intelligence - Volume Volume Two}, IJCAI'11, pages
+  1541--1546. AAAI Press, 2011.
+\newblock ISBN 978-1-57735-514-4.
+\newblock \doi{10.5591/978-1-57735-516-8/IJCAI11-259}.
+\newblock URL \url{http://dx.doi.org/10.5591/978-1-57735-516-8/IJCAI11-259}.
+
+\bibitem[Wang et~al.(2011)Wang, Krafft, and
+  Mahadevan]{Wang2011ManifoldAlignment}
+C.~Wang, P.~Krafft, and S.~Mahadevan.
+\newblock Manifold alignment.
+\newblock 12 2011.
+\newblock \doi{10.1201/b11431-6}.
 
 \bibitem[{Wang} et~al.(2012){Wang}, {Shan}, {Chen}, {Dai}, and
   {Gao}]{Wang2008ManifoldManifoldDistance}

@@ -2,25 +2,25 @@
 \contentsline {subsection}{\numberline {1.1}Classic Methods}{2}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Supervised and Semi-Supervised}{3}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Manifold Alignment/Matching}{4}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Competitive Hebbian Learning}{4}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}Deep Learning}{7}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.4}Competitive Hebbian Learning}{5}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Deep Learning}{8}{subsection.1.5}
 \contentsline {section}{\numberline {2}Information Measures}{8}{section.2}
 \contentsline {section}{\numberline {3}Manifold Regularization}{8}{section.3}
-\contentsline {section}{\numberline {4}Multiple Instance Learning}{8}{section.4}
-\contentsline {subsection}{\numberline {4.1}Multiple Instance Concept Learning}{8}{subsection.4.1}
+\contentsline {section}{\numberline {4}Multiple Instance Learning}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Multiple Instance Concept Learning}{9}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Multiple Instance Classification}{10}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Multiple Instance Regression}{10}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Applications}{10}{subsection.4.4}
-\contentsline {section}{\numberline {5}Fusion}{10}{section.5}
-\contentsline {subsection}{\numberline {5.1}Classical Approaches}{10}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}General Approach}{10}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Hierarchical Mixture of Experts}{15}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Choquet Integral}{15}{subsubsection.5.1.3}
+\contentsline {subsection}{\numberline {4.4}Applications}{11}{subsection.4.4}
+\contentsline {section}{\numberline {5}Fusion}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}Classical Approaches}{11}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}General Approach}{11}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Hierarchical Mixture of Experts}{16}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Choquet Integral}{16}{subsubsection.5.1.3}
 \contentsline {subsubsection}{\numberline {5.1.4}Deep Learning}{16}{subsubsection.5.1.4}
-\contentsline {subsubsection}{\numberline {5.1.5}Graph-Based}{16}{subsubsection.5.1.5}
-\contentsline {subsection}{\numberline {5.2}Subspace Learning}{16}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Fusion Metrics}{16}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Co-registration}{16}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.1.5}Graph-Based}{17}{subsubsection.5.1.5}
+\contentsline {subsection}{\numberline {5.2}Subspace Learning}{17}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Fusion Metrics}{17}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Co-registration}{17}{subsection.5.4}
 \contentsline {subsubsection}{\numberline {5.4.1}Geocoding}{18}{subsubsection.5.4.1}
 \contentsline {subsubsection}{\numberline {5.4.2}Similarity Measures}{18}{subsubsection.5.4.2}
 \contentsline {subsubsection}{\numberline {5.4.3}Transformation, Interpolation, Re-sampling}{18}{subsubsection.5.4.3}
@@ -28,6 +28,6 @@
 \contentsline {subsection}{\numberline {5.5}Multi-resolution Fusion}{18}{subsection.5.5}
 \contentsline {subsection}{\numberline {5.6}Fusion of Mixed Data Types}{18}{subsection.5.6}
 \contentsline {subsection}{\numberline {5.7}Unsorted}{18}{subsection.5.7}
-\contentsline {section}{\numberline {6}Outlier/ Adversarial Detection}{18}{section.6}
-\contentsline {section}{\numberline {7}Army}{18}{section.7}
+\contentsline {section}{\numberline {6}Outlier/ Adversarial Detection}{19}{section.6}
+\contentsline {section}{\numberline {7}Army}{19}{section.7}
 \contentsline {section}{\numberline {8}Segmentation}{19}{section.8}
