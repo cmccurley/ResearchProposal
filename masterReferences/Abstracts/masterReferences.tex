@@ -321,7 +321,16 @@
 		\paperentry{Wang2011HeteroDomainAdaptationManAlignment}
 		{Heterogeneous Domain Adaptation Using Manifold Alignment}
 		{Manifold_Representation_Learning/Alignment/Wang2011HeteroDomainAdaptationManAlignment.pdf}
-		{arg4}
+		{} \\
+		This paper proposed a manifold alignment based approach for heterogeneous domain adaptation.  A key aspect of this approach is to construct mappings to link different feature spaces in order to transfer knowledge across domains.  The new approach can reuse labeled data from multiple source domains in a target domain even in the case that the input domains do not share any common features or instances.  This paper extended existing manifold alignment approaches by making use of labels, rather than correspondences, to align the manifolds.  This was a significant extension to the scope of manifold alignment, as correspondence relationships required by previous methods is often difficult to obtain. \\ \\
+		One limitation of domain adaptation is that most existing approaches assume that the sources and target domains are defined by the same features, and the differences between them primarily stem from their distributions.  However, this assumption is not valid in most cross-domain applications such as multimodal datasets.
+		\\ \\
+		A key difficulty in applying manifold alignment to domain adaptation is that alignment methods require specifying a small amount of cross-domain correspondence relationships in order to learn mapping functions.  However, this correspondence information is often difficult to obtain.
+		\\ \\
+		The contributions of this paper are two-fold.  From the perspective of domain adaptation, the new approach addresses the problem of transfer even when the source and target domains do not share any common features or instances.  From the perspective of manifold alignment, the new  approach uses labels rather than correspondences to learn alignment.
+		\\ \\
+		Here the authors treat each input dataset as a manifold.  The goal is to construct $K$ mapping functions to project the input domains to a new latent space while preserving the topology of each domain, matching instances with the same labels and separating instances with different labels.  Each domain is represented by its graph Laplacian (which is built by instance similarity, label similarity, and label dissimilarity).  A cost function is constructed such that trade-offs between the three objectives can be met.  This function is optimized to learn the set of mapping functions. By representing each domain by it's graph Laplacian, the issue of varying feature sizes is nullified. \\
+		
 		
 		
 		\paperentry{Cui2014GenUnsupManifoldAlignment}
@@ -347,7 +356,22 @@
 		\paperentry{Choo2012HeterogeneousDataFusionGraphs}
 		{Heterogeneous Data Fusion via Space Alignment Using Nonmetric Multidimensional Scaling}
 		{Manifold_Representation_Learning/Alignment/Choo2012HeterogeneousDataFusionGraphs.pdf}
-		{arg4}
+		{}\\
+		Heterogeneous data sets are typically represented in feature spaces, making it difficult to analyze relationships spanning different data sets even when they are semantically related. Data fusion via space alignment can remedy this task by integrating multiple data sets lying in different spaces into one common space. Given a set of reference correspondence data that share the same semantic meaning across different spaces, space alignment attempts to place the corresponding reference data as close together as possible, and accordingly, the entire data are aligned in a common space. Space alignment involves optimizing two	potentially conflicting criteria: minimum deformation of the
+		original relationships and maximum alignment between the different spaces. To solve this problem, we provide a novel	graph embedding framework for space alignment, which converts each data set into a graph and assigns zero distance between reference correspondence pairs resulting in a single graph. We propose a graph embedding method for fusion based on nonmetric multidimensional scaling (MDS). 
+		\\ \\
+		The goal of data fusion via space alignment is, given data sets and their reference correspondence pairs (some pairs of data items that share the same semantic meaning between different feature spaces), to provide the new representation of the data in a common space, which enables distance-based comparison across different data sets.   The idea is to attain the best alignment between different spaces while allowing a minimum deformation within each space.  The authors introduce a novel graph embedding based off of nonmetric MDS, which unlike metric MDS which aims to preserve given pairwise similarities, preserves only the rank ordering of the dissimilarities.
+		\\ \\
+		Graph embedding takes as input a graph in which the vertices are data items and the edge weights are their pairwise dissimilarities.  As output, graph embedding produces the coordinates of the data in a given dimensional space, which best preserves the relationships described in the graph.  It is typically performed in four steps: 1.) forming distance graphs from feature vectors, normalizing the graphs to account for distance scales individual to each dataset, assigning edges between the graphs, and running a graph embedding algorithm to produce the optimal coordinates in the new feature space.
+		\\ \\
+		Dimensionality reduction methods such as MDS, kernel PCA, manifold learning methods such as Laplacian Eigenmaps, Isomap, maximum variance unfolding and Sammon's mapping have all been applied as graph embedding procedures for space alignment.  However, not all methods are directly applicable since they usually assume a complete graph as input, which is not always available.  Additionally, there is no guarantee that the datasets have a similar intrinsic manifold structure.  Therefore, the primary purpose of this paper is neither dimensionality reduction nor intrinsic manifold discover, but finding a common space that reveals the relationships between different data sets by filling out the ``unknown" parts.
+		\\ \\
+		Another approach to space alignment is to seek linear transformations that map each space into a single space.  The advantage of linear methods is that out-of-sample  extension is straightforward. In other words, unseen data that are not involved in the alignment process can be directly mapped into the aligned space.  Additionally, linear methods generally give an idea about the feature-level relationships between different spaces from an analysis of the linear transformation coefficients.
+		\\ \\
+		A few approaches to space alignment (which were compared in this paper) are Constrained Laplacian Eigenmaps (which preserves locality), Orthogonal Procrustes Analysis (which gives an optimal linear transformation represented as an orthogonal matrix which best maps one data set to another that has been used widely in image registration) and PARAFAC2 which is similar to SVD for tensors.  One potential problem of Procustes Analysis is that eh dimensionality of the datasets must be equal.  \textbf{It should also be noted that the perfect alignment between the reference correspondence pairs does not always lead to good alignment for the rest of the data, which is analogous to overfitting in the context of classification.}
+		\\ \\
+		Two evaluation metrics were proposed in conjunction with the standard method of mean average precision (mAP).  One metric was proposed to measure the amount of deformation by determining the preservation of local neighborhoods through the transformation.  The second metric assesses alignment quality by determining how close correspondence pairs are matched in the new space.
+		\\ \\
 		
 		\paperentry{Tuia2015KernelManifoldAlignment}
 		{Kernel Manifold Alignment}

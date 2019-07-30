@@ -1,22 +1,22 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: masterReferences.aux
 The style file: plainnat.bst
 Database file #1: references.bib
-I was expecting a `,' or a `}'---line 58 of file references.bib
+I was expecting a `,' or a `}'---line 53 of file references.bib
  :  
  :  author = { X. Li and V. Monga},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 108 of file references.bib
+I was expecting a `,' or a `}'---line 103 of file references.bib
  :  
  :  number = {2}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 245 of file references.bib
+I was expecting a `,' or a `}'---line 240 of file references.bib
  :  
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1881 of file references.bib
+I was expecting a `,' or a `}'---line 1876 of file references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)

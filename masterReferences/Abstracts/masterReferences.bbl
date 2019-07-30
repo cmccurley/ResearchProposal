@@ -433,13 +433,6 @@ D.~Hong, N.~Yokoya, N.~Ge, J.~Chanussot, and X.~X. Zhu.
   147:\penalty0 193 -- 205, 2019.
 \newblock ISSN 0924-2716.
 
-\bibitem[III et~al.(2018)III, Wolf, and
-  Krishnaswamy]{Stanley2019ManAlignmentFeatureCorrespondence}
-J.~S.~Stanley III, G.~Wolf, and S.~Krishnaswamy.
-\newblock Manifold alignment with feature correspondence.
-\newblock \emph{CoRR}, abs/1810.00386, 2018.
-\newblock URL \url{http://arxiv.org/abs/1810.00386}.
-
 \bibitem[Ilse et~al.(2018)Ilse, Tomczak, and
   Welling]{Ilse2018AttentionBasedDeepMIL}
 M.~Ilse, Jakub~M. Tomczak, and M.~Welling.
@@ -846,6 +839,13 @@ R.~E. {Smith}, D.~T. {Anderson}, A.~{Zare}, J.~E. {Ball}, B.~{Smock}, J.~R.
 \newblock In \emph{2017 IEEE International Conference on Fuzzy Systems
   (FUZZ-IEEE)}, pages 1--8, July 2017.
 \newblock \doi{10.1109/FUZZ-IEEE.2017.8015481}.
+
+\bibitem[{Stanley III} et~al.(2018){Stanley III}, Wolf, and
+  Krishnaswamy]{Stanley2019ManAlignmentFeatureCorrespondence}
+J.~S. {Stanley III}, G.~Wolf, and S.~Krishnaswamy.
+\newblock Manifold alignment with feature correspondence.
+\newblock \emph{CoRR}, abs/1810.00386, 2018.
+\newblock URL \url{http://arxiv.org/abs/1810.00386}.
 
 \bibitem[Sugiyama(2006)]{Sugiyama2006FDASupDimRed}
 M.~Sugiyama.
