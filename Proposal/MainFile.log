@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  20 JUL 2019 10:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  26 JUL 2019 13:28
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -485,7 +485,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-] [4]
+]
 
 Package hyperref Warning: bookmark level for unknown extrachapter defaults to 0
 .
@@ -494,7 +494,7 @@ Package hyperref Warning: bookmark level for unknown extrachapter defaults to 0
 \tf@lot=\write5
 \openout5 = `MainFile.lot'.
 
- [5
+ [4
 
 
 
@@ -502,7 +502,7 @@ Package hyperref Warning: bookmark level for unknown extrachapter defaults to 0
 \tf@lof=\write6
 \openout6 = `MainFile.lof'.
 
- [6
+ [5
 
 
 
@@ -521,14 +521,14 @@ CHAPTER 1.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-[7
+[6
 
 
 
 
 
 
-] [8]
+] [7]
 Underfull \hbox (badness 10000) detected at line 19
 [][][]
  []
@@ -538,12 +538,12 @@ Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
 
-[9]
+[8]
 Underfull \hbox (badness 10000) detected at line 21
 [][][]
  []
 
-) [10]
+) [9]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -554,7 +554,7 @@ CHAPTER 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [11
+) [10
 
 
 
@@ -569,16 +569,31 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
+) [11
+
+
+
+]
+\openout2 = `Chapters/ch_ExperimentalDesign.aux'.
+
+ (Chapters/ch_ExperimentalDesign.tex
+***************************
+CHAPTER 4.
+***************************
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 1.
+
 ) [12
 
 
 
 ]
-\openout2 = `Chapters/ch_TechApproach.aux'.
+\openout2 = `Chapters/ch_PreliminaryWork.aux'.
 
- (Chapters/ch_TechApproach.tex
+ (Chapters/ch_PreliminaryWork.tex
 ***************************
-CHAPTER 4.
+CHAPTER 5.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -589,11 +604,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ]
-\openout2 = `Chapters/ch_ExperimentalDesign.aux'.
+\openout2 = `Chapters/ch_FutureTasks.aux'.
 
- (Chapters/ch_ExperimentalDesign.tex
+ (Chapters/ch_FutureTasks.tex
 ***************************
-CHAPTER 5.
+CHAPTER 6.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -604,24 +619,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ]
-\openout2 = `Chapters/ch_PreliminaryWork.aux'.
+\openout2 = `Chapters/ch_Conclusion.aux'.
 
- (Chapters/ch_PreliminaryWork.tex
-***************************
-CHAPTER 6.
-***************************
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 1.
-
-) [15
-
-
-
-]
-\openout2 = `Chapters/ch_FutureTasks.aux'.
-
- (Chapters/ch_FutureTasks.tex
+ (Chapters/ch_Conclusion.tex
 ***************************
 CHAPTER 7.
 ***************************
@@ -629,22 +629,7 @@ CHAPTER 7.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [16
-
-
-
-]
-\openout2 = `Chapters/ch_Conclusion.aux'.
-
- (Chapters/ch_Conclusion.tex
-***************************
-CHAPTER 8.
-***************************
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 1.
-
-) [17
+) [15
 
 
 
@@ -663,7 +648,7 @@ Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¶ in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
-[18
+[16
 
 
 
@@ -673,35 +658,43 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
  (MainFile.aux (Chapters/acknowledgements.aux)
 (Chapters/TOC.aux) (Chapters/abstract.aux) (Chapters/ch_Introduction.aux)
 (Chapters/ch_LitReview.aux) (Chapters/ch_ProblemDescription.aux)
-(Chapters/ch_TechApproach.aux) (Chapters/ch_ExperimentalDesign.aux)
-(Chapters/ch_PreliminaryWork.aux) (Chapters/ch_FutureTasks.aux)
-(Chapters/ch_Conclusion.aux))
+(Chapters/ch_ExperimentalDesign.aux) (Chapters/ch_PreliminaryWork.aux)
+(Chapters/ch_FutureTasks.aux) (Chapters/ch_Conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
-Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: CF6612D577A876FB7233ECC6F44F3B31;2376.
 
+
+Package rerunfilecheck Warning: File `MainFile.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `MainFile.out':
+(rerunfilecheck)             Before: A73803ABA41219D78F12C4EBCD3CF928;1786
+(rerunfilecheck)             After:  D840E734B0A22A690CCCD957FC895D47;1729.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 7748 strings out of 493323
- 115639 string characters out of 3139067
- 204037 words of memory out of 3000000
- 11025 multiletter control sequences out of 15000+200000
+ 7728 strings out of 493323
+ 115225 string characters out of 3139067
+ 202037 words of memory out of 3000000
+ 11018 multiletter control sequences out of 15000+200000
  12725 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,6n,42p,1670b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on MainFile.pdf (18 pages, 104055 bytes).
+pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist
+, replaced by a fixed one
+
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on MainFile.pdf (16 pages, 97190 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 270 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
