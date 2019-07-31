@@ -22,6 +22,7 @@ I was expecting a `,' or a `}'---line 1876 of file references.bib
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "graphMatching"
 Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
 while executing---line 1347 of file plainnat.bst
 Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
@@ -55,6 +56,6 @@ Warning--empty booktitle in Tanner2019DSIACNeuralNet
 Warning--empty booktitle in Trabelsi2018FuzzyClusteringMILRegression
 Warning--empty journal in Tuia2015KernelManifoldAlignment
 Warning--can't use both author and editor fields in Tulyakov2008ReviewClassifierCombinationMethods
-Warning--empty journal in Wang2010mMultiscaleManAlignment
+Warning--empty journal in Wang2010MultiscaleManAlignment
 Warning--empty journal in Wang2011ManifoldAlignment
 (There were 12 error messages)
