@@ -271,6 +271,16 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Alignment %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\subsection{Manifold Alignment/Matching}
 	
+		\paperentry{graphMatching}
+		{arg2}
+		{arg3}
+		{arg4}
+	
+		\paperentry{Navaratnam2007JointManifoldSemiSupRegression}
+		{The Joint Manifold Model for Semi-supervised Multi-valued Regression}
+		{Manifold_Representation_Learning/Alignment/Navaratnam2007JointManifoldSemiSupRegression.pdf}
+		{arg4}
+	
 		\paperentry{Wang2011ManifoldAlignment}
 		{Manifold Alignment}
 		{Manifold_Representation_Learning/Alignment/Wang2011ManifoldAlignment.pdf}
@@ -282,41 +292,27 @@
 		is the unified representation of $X$ and $Y$, where $f(X)$ is an $n\times k$ matrix containing the result $f$ applied to each row of $X$, and $g(Y)$ and $m \times k$ matrix containing the result of $g$ applied to each row of $Y$.  $f(X)$ and $g(Y)$ are the new coordinates of $X$ and $Y$ in the joint latent space.\\ \\
 			
 		This paper captures this idea mathematically by concatenating the graph Laplacians of each dataset, thus forming a joint Laplacian.  A within-dataset similarity function gives the edge weights of this joint Laplacian between the instances within each dataset, and correspondence information fills in the edge weights between the instances in separate datasets.  The manifold alignment algorithm then embeds this joint Laplacian in a new latent space.  The primary \textbf{challenges of manifold alignment} are identifying whether the datasets are actually sampled from a single underlying manifold, defining the similarity function that captures the appropriate structures of the datasets, inferring any reliable correspondence information, and finding the true dimensionality of this underlying manifold. Experiments were conducted on protein alignment, parallel corpora and aligning topic models. \\ \\Manifold alignment is essentially ta graph-based algorithm, but there is also a vast literature on graph-based methods for alignment that are unrelated to manifold learning, typically called \textit{graph matching} or \textit{graph isomorphism}. Researchers study the general problem of alignment under the names of \textit{information fusion} or \textit{data fusion}. \\
-	
-		\paperentry{Hong2019LearnableManifoldAlignment}
-		{Learnable manifold alignment (LeMA): A semi-supervised cross-modality learning framework for land cover and land use classification}
-		{Manifold_Representation_Learning/Alignment/Hong2019LearnableManifoldAlignment.pdf}
-		{}
 		
-		\paperentry{Yang2016ManifoldAlignmentMultitemporalHSI}
-		{Spectral and Spatial Proximity-Based Manifold Alignment for Multitemporal Hyperspectral Image Classification}
-		{Manifold_Representation_Learning/Alignment/Yang2016ManifoldAlignmentMultitemporalHSI.pdf}
-		{arg4}
 		
 		\paperentry{Davenport2010JointManifoldsDataFusion}
 		{Joint Manifolds for Data Fusion}
 		{Manifold_Representation_Learning/Alignment/Davenport2010JointManifoldsDataFusion.pdf}
+		{ In sensor networks, multiple observations of the same event acquired simultaneously from interdependent signals often share a common parameterization.  As examples, a camera network might observe a single event from a variety of angles where the underlying event is described by a set of common global parameters (i.e. location, orientation of the object of interest).  Similarly, when sensing a single event using multiple modalities, the underlying phenomenon may again be described by a single parameterization (which spans all modalities).  The authors contend that a joint manifold can be obtained which encompasses all the component manifolds sharing the same parameterization.
+		\\ \\
+		The authors compare properties such as geodesic distances, curvature, branch separation, and condition number of the joint manifold in relation to their component manifolds.  They observe that the joint manifold leads to improved performance and noise tolerance for a variety of signal processing algorithms (including ATR). The authors also show how the joint manifold structure can be exploited via a data fusion algorithm based on \textit{random projections}.
+		\\ \\
+		There is an argument that \textit{linear} dimensionality reduction should be performed to allow for out-of-sample embedding of the individual modalities, thus allowing for fusion based on compressive sensing and random projections.
+		\\ \\
+		The problem of manifold-based classification is, given a set of manifolds, to determine which generated a particular sample.  This problem has been explored for application to ATR. The authors describe three distances to be used for generalized maximum likelihood.  These distances, which define separation in metric spaces are: \textit{minimum separation}, \textit{maximum separation}, and \textit{Hausdorff distance}.
+		\\ \\
+		After reading this paper, it is not quite clear how this method would be implemented. 
+		} \\
+		
+		\paperentry{Wang2010MultiscaleManAlignment}
+		{Multiscale Manifold Alignment}
+		{Manifold_Representation_Learning/Alignment/Wang2010mMultiscaleManAlignment.pdf}
 		{arg4}
 		
-		\paperentry{Shen2018ManifoldSensorFusionImageData}
-		{Manifold learning algorithms for sensor fusion of image and radio-frequency data}
-		{Manifold_Representation_Learning/Alignment/Shen2018ManifoldSensorFusionImageData.pdf}
-		{arg4}
-		
-		\paperentry{Hertzberg2013SensorFusionStateRepManifolds}
-		{Integrating generic sensor fusion algorithms with sound state representations through encapsulation of manifolds}
-		{Manifold_Representation_Learning/Alignment/Hertzberg2013SensorFusionStateRepManifolds.pdf}
-		{arg4}
-		
-		\paperentry{Liao2016ManAlignmentHSI}
-		{A Manifold Alignment Approach for Hyperspectral Image Visualization With Natural Color}
-		{Manifold_Representation_Learning/Alignment/Liao2016ManAlignmentHSI.pdf}
-		{arg4}
-		
-		\paperentry{Navaratnam2007JointManifoldSemiSupRegression}
-		{The Joint Manifold Model for Semi-supervised Multi-valued Regression}
-		{Manifold_Representation_Learning/Alignment/Navaratnam2007JointManifoldSemiSupRegression.pdf}
-		{arg4}
 		
 		\paperentry{Wang2011HeteroDomainAdaptationManAlignment}
 		{Heterogeneous Domain Adaptation Using Manifold Alignment}
@@ -330,28 +326,6 @@
 		The contributions of this paper are two-fold.  From the perspective of domain adaptation, the new approach addresses the problem of transfer even when the source and target domains do not share any common features or instances.  From the perspective of manifold alignment, the new  approach uses labels rather than correspondences to learn alignment.
 		\\ \\
 		Here the authors treat each input dataset as a manifold.  The goal is to construct $K$ mapping functions to project the input domains to a new latent space while preserving the topology of each domain, matching instances with the same labels and separating instances with different labels.  Each domain is represented by its graph Laplacian (which is built by instance similarity, label similarity, and label dissimilarity).  A cost function is constructed such that trade-offs between the three objectives can be met.  This function is optimized to learn the set of mapping functions. By representing each domain by it's graph Laplacian, the issue of varying feature sizes is nullified. \\
-		
-		
-		
-		\paperentry{Cui2014GenUnsupManifoldAlignment}
-		{Generalized Unsupervised Manifold Alignment}
-		{Manifold_Representation_Learning/AlignmentCui2014GenUnsupManifoldAlignment/.pdf}
-		{arg4}
-		
-		\paperentry{Wang2010mMultiscaleManAlignment}
-		{Multiscale Manifold Alignment}
-		{Manifold_Representation_Learning/Alignment/Wang2010mMultiscaleManAlignment.pdf}
-		{arg4}
-		
-		\paperentry{Damianou2017ManifoldAlignmentDifferentDataView}
-		{Manifold Alignment Determination: finding correspondences across different data views}
-		{Manifold_Representation_Learning/Alignment/Damianou2017ManifoldAlignmentDifferentDataView.pdf}
-		{arg4}
-		
-		\paperentry{Stanley2019ManAlignmentFeatureCorrespondence}
-		{Manifold Alignment with Feature Correspondence}
-		{Manifold_Representation_Learning/Alignment/Stanley2019ManAlignmentFeatureCorrespondence.pdf}
-		{arg4}
 		
 		\paperentry{Choo2012HeterogeneousDataFusionGraphs}
 		{Heterogeneous Data Fusion via Space Alignment Using Nonmetric Multidimensional Scaling}
@@ -372,6 +346,46 @@
 		\\ \\
 		Two evaluation metrics were proposed in conjunction with the standard method of mean average precision (mAP).  One metric was proposed to measure the amount of deformation by determining the preservation of local neighborhoods through the transformation.  The second metric assesses alignment quality by determining how close correspondence pairs are matched in the new space.
 		\\ \\
+		
+		\paperentry{Hertzberg2013SensorFusionStateRepManifolds}
+		{Integrating generic sensor fusion algorithms with sound state representations through encapsulation of manifolds}
+		{Manifold_Representation_Learning/Alignment/Hertzberg2013SensorFusionStateRepManifolds.pdf}
+		{arg4}
+		
+		\paperentry{Cui2014GenUnsupManifoldAlignment}
+		{Generalized Unsupervised Manifold Alignment}
+		{Manifold_Representation_Learning/AlignmentCui2014GenUnsupManifoldAlignment/.pdf}
+		{arg4}
+		
+		\paperentry{Liao2016ManAlignmentHSI}
+		{A Manifold Alignment Approach for Hyperspectral Image Visualization With Natural Color}
+		{Manifold_Representation_Learning/Alignment/Liao2016ManAlignmentHSI.pdf}
+		{arg4}
+		
+		\paperentry{Yang2016ManifoldAlignmentMultitemporalHSI}
+		{Spectral and Spatial Proximity-Based Manifold Alignment for Multitemporal Hyperspectral Image Classification}
+		{Manifold_Representation_Learning/Alignment/Yang2016ManifoldAlignmentMultitemporalHSI.pdf}
+		{arg4}
+		
+		\paperentry{Damianou2017ManifoldAlignmentDifferentDataView}
+		{Manifold Alignment Determination: finding correspondences across different data views}
+		{Manifold_Representation_Learning/Alignment/Damianou2017ManifoldAlignmentDifferentDataView.pdf}
+		{arg4}
+		
+		\paperentry{Shen2018ManifoldSensorFusionImageData}
+		{Manifold learning algorithms for sensor fusion of image and radio-frequency data}
+		{Manifold_Representation_Learning/Alignment/Shen2018ManifoldSensorFusionImageData.pdf}
+		{arg4}
+		
+		\paperentry{Stanley2019ManAlignmentFeatureCorrespondence}
+		{Manifold Alignment with Feature Correspondence}
+		{Manifold_Representation_Learning/Alignment/Stanley2019ManAlignmentFeatureCorrespondence.pdf}
+		{arg4}
+		
+		\paperentry{Hong2019LearnableManifoldAlignment}
+		{Learnable manifold alignment (LeMA): A semi-supervised cross-modality learning framework for land cover and land use classification}
+		{Manifold_Representation_Learning/Alignment/Hong2019LearnableManifoldAlignment.pdf}
+		{}
 		
 		\paperentry{Tuia2015KernelManifoldAlignment}
 		{Kernel Manifold Alignment}
