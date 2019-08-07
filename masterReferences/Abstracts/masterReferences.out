@@ -21,13 +21,10 @@
 \BOOKMARK [2][-]{subsection.5.2}{Subspace Learning}{section.5}% 21
 \BOOKMARK [2][-]{subsection.5.3}{Fusion Metrics}{section.5}% 22
 \BOOKMARK [2][-]{subsection.5.4}{Co-registration}{section.5}% 23
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Geocoding}{subsection.5.4}% 24
-\BOOKMARK [3][-]{subsubsection.5.4.2}{Similarity Measures}{subsection.5.4}% 25
-\BOOKMARK [3][-]{subsubsection.5.4.3}{Transformation, Interpolation, Re-sampling}{subsection.5.4}% 26
-\BOOKMARK [3][-]{subsubsection.5.4.4}{Conflation}{subsection.5.4}% 27
-\BOOKMARK [2][-]{subsection.5.5}{Multi-resolution Fusion}{section.5}% 28
-\BOOKMARK [2][-]{subsection.5.6}{Fusion of Mixed Data Types}{section.5}% 29
-\BOOKMARK [2][-]{subsection.5.7}{Unsorted}{section.5}% 30
-\BOOKMARK [1][-]{section.6}{Outlier/ Adversarial Detection}{}% 31
-\BOOKMARK [1][-]{section.7}{Army}{}% 32
-\BOOKMARK [1][-]{section.8}{Segmentation}{}% 33
+\BOOKMARK [2][-]{subsection.5.5}{Multi-resolution Fusion}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.6}{Fusion of Mixed Data Types}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.7}{Unsorted}{section.5}% 26
+\BOOKMARK [1][-]{section.6}{Data Processing on Graphs}{}% 27
+\BOOKMARK [1][-]{section.7}{Outlier/ Adversarial Detection}{}% 28
+\BOOKMARK [1][-]{section.8}{Army}{}% 29
+\BOOKMARK [1][-]{section.9}{Segmentation}{}% 30

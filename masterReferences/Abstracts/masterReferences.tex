@@ -292,7 +292,7 @@
 		g(Y)  \end{array} \right)\] 
 		is the unified representation of $X$ and $Y$, where $f(X)$ is an $n\times k$ matrix containing the result $f$ applied to each row of $X$, and $g(Y)$ and $m \times k$ matrix containing the result of $g$ applied to each row of $Y$.  $f(X)$ and $g(Y)$ are the new coordinates of $X$ and $Y$ in the joint latent space.
 		\\ \\	
-		This paper captures this idea mathematically by concatenating the graph Laplacians of each dataset, thus forming a joint Laplacian.  A within-dataset similarity function gives the edge weights of this joint Laplacian between the instances within each dataset, and correspondence information fills in the edge weights between the instances in separate datasets.  The manifold alignment algorithm then embeds this joint Laplacian in a new latent space.  The primary \textbf{challenges of manifold alignment} are identifying whether the datasets are actually sampled from a single underlying manifold, defining the similarity function that captures the appropriate structures of the datasets, inferring any reliable correspondence information, and finding the true dimensionality of this underlying manifold. Experiments were conducted on protein alignment, parallel corpora and aligning topic models. \\ \\Manifold alignment is essentially ta graph-based algorithm, but there is also a vast literature on graph-based methods for alignment that are unrelated to manifold learning, typically called \textit{graph matching} or \textit{graph isomorphism}. Researchers study the general problem of alignment under the names of \textit{information fusion} or \textit{data fusion}. \\
+		This paper captures this idea mathematically by concatenating the graph Laplacians of each dataset, thus forming a joint Laplacian.  A within-dataset similarity function gives the edge weights of this joint Laplacian between the instances within each dataset, and correspondence information fills in the edge weights between the instances in separate datasets.  The manifold alignment algorithm then embeds this joint Laplacian in a new latent space.  \textbf{The primary challenges of manifold alignment are identifying whether the datasets are actually sampled from a single underlying manifold, defining the similarity function that captures the appropriate structures of the datasets, inferring any reliable correspondence information, and finding the true dimensionality of this underlying manifold.} Experiments were conducted on protein alignment, parallel corpora and aligning topic models. \\ \\Manifold alignment is essentially ta graph-based algorithm, but there is also a vast literature on graph-based methods for alignment that are unrelated to manifold learning, typically called \textit{graph matching} or \textit{graph isomorphism}. Researchers study the general problem of alignment under the names of \textit{information fusion} or \textit{data fusion}. \\
 		
 		
 		\paperentry{Davenport2010JointManifoldsDataFusion}
@@ -360,7 +360,16 @@
 		\paperentry{Cui2014GenUnsupManifoldAlignment}
 		{Generalized Unsupervised Manifold Alignment}
 		{Manifold_Representation_Learning/AlignmentCui2014GenUnsupManifoldAlignment/.pdf}
-		{arg4}
+		{}\\
+		The authors proposed a \textit{Generalized Unsupervised Manifold Alignment} (GUMA) method to build connections between differnt but correlated datasets without any known correspondences.
+		\\ \\
+		\textit{Manifold alignment} tries to build or strengthen the relationships of different datasets and ultimately project samples into a mutual embedding space, where the embedded features can be compared directly.  Since samples from different (even heterogeneous) datasets are usually located in different high dimensional spaces, direct alignment in the original spaces is very difficult.  On contrast, it is easier to align manifolds of lower intrinsic dimensions.
+		\\ \\
+		Supervised and semi-supervised methods require some known between-set counterparts as prerequisite for the transformation learning (aka labels or handcrafted correspondences).  In contrast, \textit{unsupervised manifold alignment} learns from manifold structures and avoids the need for hand-labeled correspondence.
+		\\ \\
+		In order to perform this matching, three assumptions are made: 1.) manifolds under the same theme (same action sequences of different persons usually imply a certain similarity in geometric structure), 2.) the embeddings of corresponding points from different manifolds should be as close as possible, and 3.) the geometric structures of both manifolds should be preserved in the mutual embedding space.  To obtain these goals, a three part objective function  is proposed.  Alternating optimization is performed between the correspondence matrix $\bm{F}$ and embedded points $\bm{P}_{x}$ and $\bm{P}_{z}$ to learn the correspondence points for matching and to corresponding embedding functions.
+		\\ \\
+		A few questions I have... Do the same actions imply similar manifold structure even for different modalities?  Also, how difficult would it be to extend this problem to multiple datasets?  What does this mean in terms of computational complexity? \textbf{Additionally, the authors make a note that there might be partial alignment cases, in which some points on one manifold might not correspond to any points on the other manifold (i.e. different resolutions) and that these points should be detected and not considered in the computation of the matching.  However, are these points still considered in the final embedding? i.e. are we losing information?}\\
 		
 		\paperentry{Tuia2015KernelManifoldAlignment}
 		{Kernel Manifold Alignment}
@@ -1047,13 +1056,13 @@
 		{arg4}
 		
 	
-		\subsubsection{Geocoding}
-	
-		\subsubsection{Similarity Measures}
-	
-		\subsubsection{Transformation, Interpolation, Re-sampling}
-	
-		\subsubsection{Conflation}
+%		\subsubsection{Geocoding}
+%	
+%		\subsubsection{Similarity Measures}
+%	
+%		\subsubsection{Transformation, Interpolation, Re-sampling}
+%	
+%		\subsubsection{Conflation}
 		
 	\subsection{Multi-resolution Fusion}
 	
@@ -1088,10 +1097,30 @@
 	{}
 	{}
 	
-	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Graph Processing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Data Processing on Graphs}	
 
+\paperentry{Bronstein2017GeometricDeepLearning}
+{Geometric Deep Learning: Going beyond Euclidean data}
+{Manifold_Representation_Learning/NeuralNets/Bronstein2017GeometricDeepLearning.pdf}
+{}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Outlier Detection %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paperentry{Nicolicioiu2019RecurrentSpaceTimeGraphNN}
+{Recurrent Space-time Graph Neural Networks}
+{Manifold_Representation_Learning/NeuralNets/Nicolicioiu2019RecurrentSpaceTimeGraphNN.pdf}
+{}
+
+\paperentry{Wu2019SurveyGraphConvolutionalNeuralNetworks}
+{A Comprehensive Survey on Graph Neural Networks}
+{Manifold_Representation_Learning/NeuralNets/Wu2019SurveyGraphConvolutionalNeuralNetworks.pdf}
+{}
+
+\paperentry{Zhou2019ReviewGraphNeuralNetworks}
+{Graph Neural Networks: {A} Review of Methods and Applications}
+{Manifold_Representation_Learning/NeuralNets/Zhou2019ReviewGraphNeuralNetworks.pdf}
+{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Outlier Detection %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Outlier/ Adversarial Detection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Army %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

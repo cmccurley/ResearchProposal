@@ -1,4 +1,4 @@
-\begin{thebibliography}{141}
+\begin{thebibliography}{145}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -116,6 +116,15 @@ G.~{Brigot}, E.~{Colin-Koeniguer}, A.~{Plyer}, and F.~{Janez}.
   and Remote Sensing}, 9\penalty0 (7):\penalty0 2923--2939, July 2016.
 \newblock ISSN 1939-1404.
 \newblock \doi{10.1109/JSTARS.2016.2578362}.
+
+\bibitem[{Bronstein} et~al.(2017){Bronstein}, {Bruna}, {LeCun}, {Szlam}, and
+  {Vandergheynst}]{Bronstein2017GeometricDeepLearning}
+M.~M. {Bronstein}, J.~{Bruna}, Y.~{LeCun}, A.~{Szlam}, and P.~{Vandergheynst}.
+\newblock Geometric deep learning: Going beyond euclidean data.
+\newblock \emph{IEEE Signal Processing Magazine}, 34\penalty0 (4):\penalty0
+  18--42, July 2017.
+\newblock ISSN 1053-5888.
+\newblock \doi{10.1109/MSP.2017.2693418}.
 
 \bibitem[Butenuth et~al.(2007)Butenuth, v.~Gösseln, Tiedge, Heipke, Lipeck,
   and Sester]{Butenuth2007HeterogeneousGeospatialData}
@@ -690,6 +699,13 @@ M.~Nickel and D.~Kiela.
   Information Processing Systems 30}, pages 6338--6347. Curran Associates,
   Inc., 2017.
 
+\bibitem[Nicolicioiu et~al.(2019)Nicolicioiu, Duta, and
+  Leordeanu]{Nicolicioiu2019RecurrentSpaceTimeGraphNN}
+A.~L. Nicolicioiu, I.~Duta, and M.~Leordeanu.
+\newblock Recurrent space-time graph neural networks.
+\newblock \emph{CoRR}, abs/1904.05582, 2019.
+\newblock URL \url{http://arxiv.org/abs/1904.05582}.
+
 \bibitem[Palomo and Lopez-Rubio(2016)]{Palomo2016GrowingNeuralForest}
 E.~J. Palomo and E.~Lopez-Rubio.
 \newblock Learning topologies with the growing neural forest.
@@ -1024,6 +1040,13 @@ R.~{Wang}, X.~{Wang}, S.~{Kwong}, and C.~{Xu}.
 \newblock ISSN 1063-6706.
 \newblock \doi{10.1109/TFUZZ.2017.2717803}.
 
+\bibitem[Wu et~al.(2019)Wu, Pan, Chen, Long, Zhang, and
+  Yu]{Wu2019SurveyGraphConvolutionalNeuralNetworks}
+Z.~Wu, S.~Pan, F.~Chen, G.~Long, C.~Zhang, and P.~S. Yu.
+\newblock A comprehensive survey on graph neural networks.
+\newblock \emph{CoRR}, abs/1901.00596, 2019.
+\newblock URL \url{http://arxiv.org/abs/1901.00596}.
+
 \bibitem[{X. Geng} et~al.(2005){X. Geng}, {D. Zhan}, and {Z.
   Zhou}]{Geng2005SupNonlinearDimRed}
 {X. Geng}, {D. Zhan}, and {Z. Zhou}.
@@ -1135,6 +1158,13 @@ Y.~{Zhang}, X.~{Zheng}, G.~{Liu}, X.~{Sun}, H.~{Wang}, and K.~{Fu}.
   (2):\penalty0 464--468, Feb 2014.
 \newblock ISSN 1545-598X.
 \newblock \doi{10.1109/LGRS.2013.2267091}.
+
+\bibitem[Zhou et~al.(2018)Zhou, Cui, Zhang, Yang, Liu, and
+  Sun]{Zhou2019ReviewGraphNeuralNetworks}
+J.~Zhou, G.~Cui, Z.~Zhang, C.~Yang, Z.~Liu, and M.~Sun.
+\newblock Graph neural networks: {A} review of methods and applications.
+\newblock \emph{CoRR}, abs/1812.08434, 2018.
+\newblock URL \url{http://arxiv.org/abs/1812.08434}.
 
 \bibitem[Zitová and Flusser(2003)]{Zitova2003SurveyImageRegistrationMethods}
 B.~Zitová and J.~Flusser.
