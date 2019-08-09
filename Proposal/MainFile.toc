@@ -14,8 +14,10 @@
 \contentsline {section}{\numberline {2.3}Sensor Fusion}{10}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Classic Approaches}{10}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Feature-level Fusion}{10}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Information Loss}{10}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Manifold Alignment}{10}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Data Processing on Graphs}{10}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Classic Approaches}{10}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Graph Convolutional Neural Networks}{10}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Outlier/ Adversarial Detection}{10}{section.2.5}
 \contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{11}{chapter.3}
 \contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{12}{chapter.4}

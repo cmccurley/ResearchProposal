@@ -14,12 +14,14 @@
 \BOOKMARK [1][-]{section.2.3}{2.3 Sensor Fusion}{chapter.2}% 14
 \BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Classic Approaches}{section.2.3}% 15
 \BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Feature-level Fusion}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Information Loss}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Manifold Alignment}{section.2.3}% 17
 \BOOKMARK [1][-]{section.2.4}{2.4 Data Processing on Graphs}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.5}{2.5 Outlier/ Adversarial Detection}{chapter.2}% 19
-\BOOKMARK [0][-]{chapter.3}{3 Problem Description}{}% 20
-\BOOKMARK [0][-]{chapter.4}{4 Experimental Design}{}% 21
-\BOOKMARK [0][-]{chapter.5}{5 Preliminary Work}{}% 22
-\BOOKMARK [0][-]{chapter.6}{6 Future Tasks}{}% 23
-\BOOKMARK [0][-]{chapter.7}{7 Conclusions}{}% 24
-\BOOKMARK [0][-]{appendix*.5}{REFERENCES}{}% 25
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Classic Approaches}{section.2.4}% 19
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Graph Convolutional Neural Networks}{section.2.4}% 20
+\BOOKMARK [1][-]{section.2.5}{2.5 Outlier/ Adversarial Detection}{chapter.2}% 21
+\BOOKMARK [0][-]{chapter.3}{3 Problem Description}{}% 22
+\BOOKMARK [0][-]{chapter.4}{4 Experimental Design}{}% 23
+\BOOKMARK [0][-]{chapter.5}{5 Preliminary Work}{}% 24
+\BOOKMARK [0][-]{chapter.6}{6 Future Tasks}{}% 25
+\BOOKMARK [0][-]{chapter.7}{7 Conclusions}{}% 26
+\BOOKMARK [0][-]{appendix*.5}{REFERENCES}{}% 27

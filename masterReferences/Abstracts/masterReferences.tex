@@ -374,8 +374,15 @@
 		\paperentry{Tuia2015KernelManifoldAlignment}
 		{Kernel Manifold Alignment}
 		{Manifold_Representation_Learning/Alignment/Tuia2015KernelManifoldAlignment.pdf}
-		{arg4}
+		{}\\
+		The authors present a method for \textit{manifold alignment} (also denoted as \textit{feature representation transfer} or \textit{feature transformation learning}) 
+		which addresses a few key deficiencies in manifold alignment approaches. Specifically, their \textit{kernel manifold alignment} (KEMA) (which can perform alignment or domain adaptation without corresponding pairs, only a few labeled examples in each of the domains) 1.) generalizes other manifold alignment methods, 2.) can align manifolds of different complexities by performing manifold unfolding along with matching, 3.) \textbf{can define a domain-specific metric to cope with multimodal specificities}, 4.) \textbf{can align data spaces of different dimensionalities}, 5.) is robust to strong nonlinear feature deformations and 6.) is closed-form invertible, which allows transfer across domains and data synthesis.
+		\\ \\
+		Roughly speaking, manifold alignment reduces to finding projections to a common latent space where all datasets show similar statistical characteristics.  There are three types of manifold alignment/ domain adaptation.  \textit{Unsupervised adaptation, semi-supervised adaptation, and supervised adaptation}.  Manifold alignment aims at concurrently matching the corresponding instances while preserving the topology of each input data domain, generally using a \textit{Graph Laplacian}.  While appealing, \textbf{these methods often require specifying a small amount of cross-domain sample correspondences.}
+		\\ \\
+		The method proposed in this paper is a kernel extension to Semi-supervised Manifold Alignment proposed by Wang et. al.  A key benefit to that method is that it can easily project data between domains by first mapping the data to the latent domain, then from there inverting back to the target domain.  Therefore, the method can be used for both domain adaptation and data synthesis.  Additionally, that method does not require data correspondence, only a few labeled samples from each domain.  Experiments show that the kernelized extension provided good performance, especially on data with strong nonlinear deformations. \\
 		
+				
 		\paperentry{Liao2016ManAlignmentHSI}
 		{A Manifold Alignment Approach for Hyperspectral Image Visualization With Natural Color}
 		{Manifold_Representation_Learning/Alignment/Liao2016ManAlignmentHSI.pdf}

@@ -2,29 +2,29 @@
 \contentsline {subsection}{\numberline {1.1}Classic Methods}{2}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Supervised and Semi-Supervised}{3}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Manifold Alignment/Matching}{4}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Competitive Hebbian Learning}{8}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.4}Competitive Hebbian Learning}{9}{subsection.1.4}
 \contentsline {subsection}{\numberline {1.5}Deep Learning}{12}{subsection.1.5}
-\contentsline {section}{\numberline {2}Information Measures}{12}{section.2}
-\contentsline {section}{\numberline {3}Manifold Regularization}{12}{section.3}
+\contentsline {section}{\numberline {2}Information Measures}{13}{section.2}
+\contentsline {section}{\numberline {3}Manifold Regularization}{13}{section.3}
 \contentsline {section}{\numberline {4}Multiple Instance Learning}{13}{section.4}
 \contentsline {subsection}{\numberline {4.1}Multiple Instance Concept Learning}{13}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Multiple Instance Classification}{14}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Multiple Instance Regression}{14}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.2}Multiple Instance Classification}{15}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Multiple Instance Regression}{15}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Applications}{15}{subsection.4.4}
 \contentsline {section}{\numberline {5}Fusion}{15}{section.5}
 \contentsline {subsection}{\numberline {5.1}Classical Approaches}{15}{subsection.5.1}
 \contentsline {subsubsection}{\numberline {5.1.1}General Approach}{15}{subsubsection.5.1.1}
 \contentsline {subsubsection}{\numberline {5.1.2}Hierarchical Mixture of Experts}{20}{subsubsection.5.1.2}
 \contentsline {subsubsection}{\numberline {5.1.3}Choquet Integral}{20}{subsubsection.5.1.3}
-\contentsline {subsubsection}{\numberline {5.1.4}Deep Learning}{20}{subsubsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.4}Deep Learning}{21}{subsubsection.5.1.4}
 \contentsline {subsubsection}{\numberline {5.1.5}Graph-Based}{21}{subsubsection.5.1.5}
 \contentsline {subsection}{\numberline {5.2}Subspace Learning}{21}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Fusion Metrics}{21}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}Co-registration}{21}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Multi-resolution Fusion}{22}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Fusion of Mixed Data Types}{22}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Unsorted}{22}{subsection.5.7}
-\contentsline {section}{\numberline {6}Data Processing on Graphs}{22}{section.6}
+\contentsline {subsection}{\numberline {5.5}Multi-resolution Fusion}{23}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Fusion of Mixed Data Types}{23}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Unsorted}{23}{subsection.5.7}
+\contentsline {section}{\numberline {6}Data Processing on Graphs}{23}{section.6}
 \contentsline {section}{\numberline {7}Outlier/ Adversarial Detection}{23}{section.7}
 \contentsline {section}{\numberline {8}Army}{23}{section.8}
 \contentsline {section}{\numberline {9}Segmentation}{24}{section.9}
