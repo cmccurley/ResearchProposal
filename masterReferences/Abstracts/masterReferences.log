@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  10 AUG 2019 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  10 AUG 2019 14:04
 entering extended mode
 **./masterReferences.tex
 (masterReferences.tex
@@ -730,107 +730,147 @@ Underfull \hbox (badness 10000) in paragraph at lines 389--399
 
  []
 
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 463--466
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 403--419
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--469
+Underfull \hbox (badness 10000) in paragraph at lines 403--419
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--471
+Underfull \hbox (badness 10000) in paragraph at lines 403--419
 
  []
 
 
-Overfull \hbox (9.05936pt too wide) in paragraph at lines 483--483
+Underfull \hbox (badness 10000) in paragraph at lines 403--419
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--419
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--419
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--419
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--419
+
+ []
+
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 479--482
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 486--487
+
+ []
+
+
+Overfull \hbox (9.05936pt too wide) in paragraph at lines 499--499
 [][]\OT1/cmr/m/n/10 Rauber et al.[] ([]2002[]) - [][]\OT1/cmr/m/it/10 The grow-
 ing hi-er-ar-chi-cal self-organizing map: ex-ploratory anal-y-sis of high-dimen
 sional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--483
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--483
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 505--505
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 505--505
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 510--513
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 514--516
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--519
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--522
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 523--525
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 541--543
+Underfull \hbox (badness 10000) in paragraph at lines 526--529
 
  []
 
 [12]
+Underfull \hbox (badness 10000) in paragraph at lines 530--532
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--535
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--538
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--541
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--559
+
+ []
+
+[13]
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no “ in font cmti10!
- [13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 834--847
+ [14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 850--863
 
  []
 
-[16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 871--874
+[17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 887--890
 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 918--921
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 934--937
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 926--936
+Underfull \hbox (badness 10000) in paragraph at lines 942--952
 
  []
 
-[19] [20] [21]
+[20] [21] [22]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¡ in font cmr10!
- [22]
-Underfull \hbox (badness 10000) in paragraph at lines 1066--1068
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 1082--1084
 
  []
 
@@ -840,12 +880,12 @@ Missing character: There is no “ in font cmti10!
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no “ in font cmti10!
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1148
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
 
  []
 
-[24] [25] (masterReferences.bbl
+[25] [26] (masterReferences.bbl
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 
@@ -856,10 +896,10 @@ Underfull \hbox (badness 3942) in paragraph at lines 79--84
 
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
-[26]
+[27]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
- [27]
+ [28]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
 
@@ -869,17 +909,17 @@ Underfull \hbox (badness 1038) in paragraph at lines 366--370
  : / / www .
  []
 
-[28]
+[29]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
- [29] [30] [31]
+ [30] [31] [32]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [32]
+ [33]
 Underfull \hbox (badness 1087) in paragraph at lines 940--947
 []\OT1/cmr/m/n/10 I. W. Tsang and J. T. Kwok.  Large-scale spar-si-fied man-i-f
 old reg-u-lar-iza-tion.  In B. Scholkopf,
@@ -900,27 +940,27 @@ RL []$\OT1/cmtt/m/n/10 http : / / papers . nips . cc / paper /
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[33]
+[34]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¡ in font cmr10!
 )
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1194.
-[34]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1194.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1210.
+[35]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1210.
  (masterReferences.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1194.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1210.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1210.
 
 Package rerunfilecheck Info: File `masterReferences.out' has not changed.
 (rerunfilecheck)             Checksum: DEA4B4A4409C87D135E8F1FAE698EB71;2053.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1194.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1210.
  ) 
 Here is how much of TeX's memory you used:
- 10604 strings out of 493323
- 170088 string characters out of 3139067
+ 10605 strings out of 493323
+ 170095 string characters out of 3139067
  277230 words of memory out of 3000000
  13770 multiletter control sequences out of 15000+200000
  17287 words of font info for 64 fonts, out of 3000000 for 9000
@@ -942,9 +982,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
 ype1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb>
-Output written on masterReferences.pdf (34 pages, 515435 bytes).
+Output written on masterReferences.pdf (35 pages, 520582 bytes).
 PDF statistics:
- 1103 PDF objects out of 1200 (max. 8388607)
- 217 named destinations out of 1000 (max. 500000)
+ 1107 PDF objects out of 1200 (max. 8388607)
+ 218 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
