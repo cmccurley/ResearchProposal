@@ -386,7 +386,16 @@
 		\paperentry{Liao2016ManAlignmentHSI}
 		{A Manifold Alignment Approach for Hyperspectral Image Visualization With Natural Color}
 		{Manifold_Representation_Learning/Alignment/Liao2016ManAlignmentHSI.pdf}
-		{arg4}
+		{}\\
+		In this paper, the authors apply manifold alignment to the transfer of HSI imagery to RGB for visualization.  The manifold embedding made bridged the gap between the high-dimensional spectral space of the HSI and the RGB space of the color imagery.  Once the embedding functions were learned, they were easily transferable to alternative images not included in the training set. 
+		\\ \\
+		Manifold alignment considers the mutual relationships of several data sets at the same time to generate a shared embedding space representing the common low-dimensional manifold shared among the datasets.  Of course, there is an assumption that seemingly disparate data sets are produced by similar generating processes and will share a similar underlying manifold structure.  Generally, there are two levels of manifold alignment.  \textit{Instance-level alignment} builds connections between instances from different datasets, but the alignment result is limited only to known instances and is difficult to generalize to new instances.  \textit{Feature-level alignment}, on the other hand, transforms features of different data sets to a common embedding space, which makes direct knowledge transfer possible.  The alignment result provides direct connections between features in different spaces, so it easily generalizes to new instances (although you have to assume your features in each space are accurate, discriminative representatives).
+		\\ \\
+		In this paper, feature-level manifold alignment was used to find direct mappings between HSI and RGB space.  First, a few matching pairs were denoted between the datasets (by hand).  Next, the manifolds were aligned in a shared embedding space (using \textit{Locality Preserving Projections}, a linear approximation of the nonlinear \textit{Laplacian eigenmaps}). Next, the inverse mapping could be used to transform the HSI imagery into the RGB colorspace. 
+		\\ \\
+		Experiments were conducted on HSI data over the Washington D.C. Mall and California Bay.  Results demonstrated good performance over four quantitative evaluation criteria.
+		\\ \\
+		\textbf{Manifold alignment based visualization only requires that a matching pair represents the same or similar class of objects/materials rather than being from the same geospatial location.  This is different from the traditional matching pair searching in image fusion/ image registration.  THIS SUGGESTS THAT EXACT IMAGE REGISTRATION IS NOT A NECESSARY CONDITION TO EXTRACT THE MATCHING PAIRS.}  \textbf{\textit{Connor note:} This signifies that weak labels could be used to discover the correspondence pairs.} \\
 		
 		\paperentry{Yang2016ManifoldAlignmentMultitemporalHSI}
 		{Spectral and Spatial Proximity-Based Manifold Alignment for Multitemporal Hyperspectral Image Classification}
