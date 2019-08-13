@@ -285,7 +285,10 @@
 		\paperentry{Navaratnam2007JointManifoldSemiSupRegression}
 		{The Joint Manifold Model for Semi-supervised Multi-valued Regression}
 		{Manifold_Representation_Learning/Alignment/Navaratnam2007JointManifoldSemiSupRegression.pdf}
-		{arg4}
+		{
+		The authors present a method for \textit{Joint Manifold Modeling (JMM)} which makes use of a \textit{Gaussian Processes Latent Variable Model (GPLVM)}.  Gaussian Processes (GP) are distributions over functions which, when conditioned on training data, produce radial basis function approximations of the data, along with associated covariance estimates.  The GP is one way to model regression.  Now, provided training examples $\bm{X}\in\mathbb{R}^{d}$ which are assumed to live in a low-dimensional submanifold of $\mathbb{R}^{d}$.  The goal of the GPLVM is to discover this submanifold, that is to associate with each $\bm{x}_{i}$ a latent variable $\bm{t}_{i}$ representing its coordinates in the manifold $\mathcal{M}^{k}$ where $k < d$. An advantage of the GPLVM is that it is relatively straightforward to incorporate unlabelled samples.
+		\\ \\
+		This method was run on simulated data for the task of pose estimation.  Once the GPLVM is learned, inference is straightforward.}
 	
 		\paperentry{Wang2011ManifoldAlignment}
 		{Manifold Alignment}
