@@ -421,7 +421,12 @@
 		\paperentry{Damianou2017ManifoldAlignmentDifferentDataView}
 		{Manifold Alignment Determination: finding correspondences across different data views}
 		{Manifold_Representation_Learning/Alignment/Damianou2017ManifoldAlignmentDifferentDataView.pdf}
-		{arg4}
+		{}\\
+		\textbf{Learning alignments is an important (and very challenging) task in multiview learning that we believe needs to be highlighted in order to stimulate further research.}  The author's present a methods for learning alignments between data points from multiple views of modalities, called \textit{Manifold Alignment Determination (MAD)}.  MAD requires only a few aligned examples  from which it is capable of recovering global alignment through probabilistic models.
+		\\ \\
+		Multiview learning is a strand of machine learning which aims at consolidating corresponding views into  a single model.  The underlying idea is to exploit correspondence between the views to learn a shared representation.  A very common scenario is when the views are coming from different modalities.  An example is when observing a conservation where both audio and video are separately being captures.  However, we can exploit the fact that the signals are aligned temporally ro obtain correspondence and thus to learn a joint representation for both signals.  This scenario, however, is based on the assumption that the data-points in each view are aligned, i.e. that for each video frame there is a single corresponding sound snippet. (Connor note: What if the sampling/ polling rates are different?? ) \textbf{In many scenarios we do not know the correspondence between the data-points and this uncertainty should be included in the multiview model. (Connor note: this would be the perfect scenario for cross-modality MIL to select the appropriate corresponding instances.)}
+		\\ \\
+		In this paper, the authors exploit the regularization of a probabilistic factorized mutliview latent variable model which allows the search to be formulated as a bipartite-matching problem.  Two different approaches are proposed: one myopic, which aligns data-poins in a sequential (iterative) fashion and a nonmyopic algorithm whcih produces the optimal alignment for a batch of data-points. Both implementations require a small number of initially aligned instances to act as a ``prior" to dictate what an alignment means in the particular scenario.  Experiments were conducted on simulated data and digits datasets.  The key insight from the paper is that the combination of a factorized latent space model and Bayesian learning naturally reflects alignments in multiview data. \\
 		
 		\paperentry{Shen2018ManifoldSensorFusionImageData}
 		{Manifold learning algorithms for sensor fusion of image and radio-frequency data}
