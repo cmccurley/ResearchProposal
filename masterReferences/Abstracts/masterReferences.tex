@@ -45,7 +45,7 @@
 %[4] abstract or any text you want to add
 \newcommand{\paperentry}[4]{
             \hangindent=1cm
-            \cite{#1} - \href{run:../References/#3}{\textcolor{ForestGreen}{\textit{#2}}}
+            \textcolor{red}{\cite{#1}} - \href{run:../References/#3}{\textcolor{ForestGreen}{\textit{#2}}}
             
             \noindent            
             \begin{minipage}[t]{0.1\linewidth}\hfill\end{minipage}
@@ -276,6 +276,11 @@
 		{arg2}
 		{arg3}
 		{arg4}
+		
+		\paperentry{graphMatchingProblem}
+		{arg2}
+		{arg3}
+		{arg4}
 	
 		\paperentry{Navaratnam2007JointManifoldSemiSupRegression}
 		{The Joint Manifold Model for Semi-supervised Multi-valued Regression}
@@ -355,7 +360,8 @@
 		\paperentry{Hertzberg2013SensorFusionStateRepManifolds}
 		{Integrating generic sensor fusion algorithms with sound state representations through encapsulation of manifolds}
 		{Manifold_Representation_Learning/Alignment/Hertzberg2013SensorFusionStateRepManifolds.pdf}
-		{arg4}
+		{Sensor fusion is the process of combining information obtained from a variety of different sensors into a joint belief over the system state.  In the design of a sensor fusion system, a keyengineering task lies in finding a state representation that 1.) adequately describes the relevant aspects of reality and is 2.) compatible with the sensor fusion algorithm in the sense that the latter yields meaningful or even optimal results when operating over the state representation.\\
+		Satisfying both of these goals at the same time has been a long-standing challenge.  Standard sensor fusion algorithms typically operate on real valued vector state representations while mathematically sound representations often form more complex, non-Euclidean topological spaces.  To address these issues, the authors' approach is based on the observation that sensor fusion algorithms employ operations whcih are inherently local i.e., they compare and modify state variables in a local neighborhood around some reference.  Thus, they arrive at a  generic solution that bridges the gap between the two goals by \textbf{viewing that state space as a manifold.}}
 		
 		\paperentry{Cui2014GenUnsupManifoldAlignment}
 		{Generalized Unsupervised Manifold Alignment}
@@ -453,7 +459,16 @@
 		\paperentry{Hong2019LearnableManifoldAlignment}
 		{Learnable manifold alignment (LeMA): A semi-supervised cross-modality learning framework for land cover and land use classification}
 		{Manifold_Representation_Learning/Alignment/Hong2019LearnableManifoldAlignment.pdf}
-		{}
+		{}\\
+		In this paper, the authors aimed at tackling the cross-modality feature learning question of whether aligning a small amount of highly discriminative HSI data with copious amounts of poorly-discriminative multi-spectral data would aide in landcover classification.  Therefore, they propose a novel semi-supervised cross-modality learning framework called \textit{learnable manifold alignment (LeMA)}.  LeMA learns a joint graph structure directly from the data instead of using a given fixed graph defined by a RBF kernel function.  With the learned graph, we can further capture the data distribution by graph-based label propagation, which enables finding more accurate decision boundaries.
+		\\ \\
+		\textbf{In general, a reliable classifier needs to be trained on large amounts of labeled, discriminative, and high-quality samples.  Unfortunately, labeling data, in particular, large scale data, is very grueling and time consuming.} Incorporating only a small amount of labeled data can lead to the poor generalization problem of over-fitting, where the few samples cannot fully represent the entirety of class variability. A natural way to alleviate this issue is to consider tons of unlabeled samples, yielding a semi-supervised learning problem.
+		\\ \\
+		To address the issue of limited data capture, considerable work has been done in the areas of transfer learning and domain adaptation.  One such tool aiding in domain adaptation is manifold alignment and is one of the most popular semi-supervised learning frameworks that  facilitates transfer learning.  \textbf{The key idea of MA can be generalized as learning a common (or shared) subspace where different data can be aligned to learn a joint feature representation.  Generally, unsupervised MA fails to align multi-modal data sufficiently well, as their corresponding low-dimensional embeddings may be quite divers.  In the supervised case, only aligning the limited number of correspondence samples often leads to weak transferability (over-fitting)}.  \textbf{Although the joint manifold structure used in conventional semi-supervised MA approaches can relate features or instances, poor connections between the common subspace  and label information  still hinder the low-dimensional feature representation from being more discriminative (Connor note: this is a good argument for supervised manifold learning!).  More importantly, in most graph-based semi-supervised learning algorithms (e.g. graph-based label  propagation (GLP)), semi-supervised manifold alignment (S-SMA), the topology of unlabeled samples is merely given by a fixed Gaussian kernel function, which is computed in the original space, rather than the common space.  This makes it difficult to adaptively transfer unlabeled samples into the learned common subspace, particularly when applied to multimodal data due to different number os dimension.}
+		\\ \\
+		To address the aforementioned issues, the authors proposed a learn-able manifold alignment by a data-driven graph learning directly from a common subspace so as to make the multimodal data comparable as well as improve the explain-ability of the learned common subspace.  This is done by extending the commonly used semi-supervised manifold alignment model where the common subspace learning problem is formulated by alternating optimization of an objective designed to both learn the mapping functions and the embedded coordinates of the training set (with label information) (This is based off the graph Laplacian and was formulated in a paper I already read.  From Wang maybe?).  The authors refer to this framework for joint common subspace learning as \textit{CoSpace}.  The CoSpace framework is then extended to further exploit information of unlabled samples by learning a joint Laplacian matrix. The whole process boils down to optimizing a linear objective function (so this method cannot handle non-linearity well) using the ADMM optimization approach.
+		\\ \\
+		Experiments were conducted on both simulated and real heterogeneous modality datasets (Houston and Chikusei multispectral-lidar and hyperspectral) and classification was compared using two high-performing classifiers after alignment, the linear SVM (LSVM) and canonical classification forests (CCF).  The proposed method greatly outperformed the alternatives. \\
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
