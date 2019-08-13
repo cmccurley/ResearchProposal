@@ -1,4 +1,4 @@
-\begin{thebibliography}{145}
+\begin{thebibliography}{147}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -67,6 +67,13 @@ Y.~Bengio, A.~C. Courville, and P.~Vincent.
   perspectives.
 \newblock \emph{CoRR}, abs/1206.5538, 2012.
 \newblock URL \url{http://arxiv.org/abs/1206.5538}.
+
+\bibitem[Bengoetxea(2002)]{Bengoetxea2002ThesisGraphMatching}
+E.~Bengoetxea.
+\newblock \emph{Inexact Graph Matching Using Estimation of Distribution
+  Algorithms}.
+\newblock PhD thesis, Ecole Nationale Sup\'erieure des T\'el\'ecommunications,
+  Paris, France, Dec. 2002.
 
 \bibitem[Beyer et~al.(2009)Beyer, Heesche, Hauptmann, and
   Otte]{Beyer2009HeterogeneousMixtureOfExperts}
@@ -611,6 +618,14 @@ Y.~{Liu}, Y.~{Liu}, K.~C.~C. {Chan}, and K.~A. {Hua}.
   25\penalty0 (12):\penalty0 2295--2302, Dec 2014.
 \newblock ISSN 2162-237X.
 \newblock \doi{10.1109/TNNLS.2014.2305760}.
+
+\bibitem[Livi and Rizzi(2013)]{Livi2013GraphMatchingProblem}
+L.~Livi and A.~Rizzi.
+\newblock The graph matching problem.
+\newblock \emph{Pattern Anal. Appl.}, 16\penalty0 (3):\penalty0 253--283, Aug
+  2013.
+\newblock ISSN 1433-7541.
+\newblock \doi{10.1007/s10044-012-0284-8}.
 
 \bibitem[L.Jian et~al.(2019)L.Jian, Yang, Liu, Jeon, Gao, and
   Chisholm]{Jian2019AEInfraredVisibleFusion}
