@@ -72,7 +72,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manifold/ Representation Learning}
 
-	\subsection{Classic Methods}
+	\textcolor{Violet}{\subsection{Classic Methods}}
 
 	\paperentry{VanDerMaaten2009DRReview}
 	{Dimensionality Reduction: A Comparative Review}
@@ -171,7 +171,7 @@
 	{}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Supervised %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsection{Supervised and Semi-Supervised}
+	\textcolor{Violet}{\subsection{Supervised and Semi-Supervised}}
 	
 	
 	\paperentry{Belkin2004SemiSupLearningRiemannianManifolds}
@@ -270,17 +270,24 @@
 	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Alignment %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsection{Manifold Alignment/Matching}
+	\textcolor{Violet}{\subsection{Manifold Alignment/Matching}}
 	
 		\paperentry{Bengoetxea2002ThesisGraphMatching}
 		{Inexact Graph Matching Using Estimation of Distribution Algorithmsarg2}
 		{Manifold_Representation_Learning/Alignment/Bengoetxea2002ThesisGraphMatching.pdf}
 		{}\\
+		This thesis chapter provides a good general overview of graphs in general as well as the definitions of graph matching (graph isomorphism) and SOA approaches (in 2002).  The amount of this type of work shows that the interest on the field is increasing with the years.
+		\\ \\
+		\textbf{Basic notation and terminology:} A graph $G = (V,E)$ in its basic form is composed of vertices and edges.  $V$ is the set of vertices (also called nodes or points) and $E \subset V \times V$ (also defined as $E \subset [V]^{2}$ in the literature) is the set of edges (also known as arcs or lines) of graph $G$.  The \textit{order} (or \textit{size}) of a graph $G$ is defined as the number of vertices of $G$ and it is represented as $|V|$ and the number of edges as $|E|$.  If two vertices in $G$, say $u,v \in V$, are connected by and edge $e \in E$, this is denoted by $e=(u,v)$ and the two vertices are said to be \textit{adjacent} or \textit{neighbors}.  Edges are said to be undirected when they have no direction, a nd a graph $G$ containing only such types of connections is called \textit{undirected}.  When all edges have directions and therefore $(u,v)$ and $(v,u)$ can be distinguished, the graph is said to be \textit{directed}.  Usually, the term \textit{arc} is used when the graph is directed, and the term \textit{edge} is used when it is undirected.  In addition, a directed graph $G=(V,E)$ is called \textit{complete} when there is always and edge $(u,u')\in E = V \times V$ between any two vertices $u, u'$ in the graph.  Graph vertices and edges can also contain information.  When this information is a simple label, the graph is called a \textit{labeled graph}.  Other times vertices and edges contain more information.  These are called vertex and edge \textit{attributes}, and the graph is called an \textit{attributed graph}.  More commonly, this concept is further specified by distinguishing between \textit{vertex-attributed} (or \textit{weighted graphs}) and \textit{edge-attributed} graphs.  A \textit{path} between any two vertices $u,u'  \in V$ is a non-empty sequence of $k$ different vertices $<v_{0}, v_{1}, \dots, v_{k}>$ where $u=v_{0}, u'=v_{k}$ and $(v_{i-1},v_{i})\in E$, $i=1,2,\dots,k$.  Finally, a graph $G$ is said to be \textit{acyclic} when there are no cycles between its edges, independently, of whether the graph $G$ is directed or not.  
+		\\ \\
+		\textbf{Definition and classification of graph matching problems:}  Graphs have been proven as an effective way of representing objects.  When using graphs to represent objects or images, vertices usually represent regions (or features) of the object or images, and edges between them represent the relations between regions.  Similar graphs can be used for representing objects or general knowledge, and they can be either directed or undirected.  When edges are undirected, they simply indicate the existence of a relation between two vertices.  On the other hand, directed edges are used when relations between vertices are considered in an asymmetric way.  Generally speaking, the graph matching problem can be stated as follows:  Given two graphs $G_{M}=(V_{M}, E_{M})$ and $G_{D}=(V_{D}, E_{D})$, with $|V_{M}| = |V_{D}|$, the problem is to find a one-to-one mapping $f:V_{D} \rightarrow V_{M}$ such that $(u,v)\in E_{D}$ iff $(f(u),f(v))\in E_{M}$.  When such a mapping $f$ exists, this is called an \textit{isomorphism}, and $G_{D}$ is said to be isomorphic to $G_{M}$.  This type of problem is said to be \textit{exact graph matching}.  The term \textit{inexact} applied to some graph matching problems means that it is not possible to find an isomorphism between the two graphs to be matched.  This is the case when the number of vertices is different in both the model and  data graphs.  When dealing with an \textit{inexact graph matching} problem, the goal is not to find the exact match, but to find the \textit{best} match between the two graphs, and we aim to find a non-bijective correspondence between the data and model graphs. This often corresponds to a search for small graphs within big ones.  An important sub-type of inexact graph matching problems are the \text{sub-graph matching} (also called \textit{subgraph isomorphism}).  In some inexact graph matching problems, the aim is still to find a one-to-one correspondence, but with the exception that some of the vertices in the data graph have no correspondence at all.  Graph matching in general is sometimes referred to in the literature as \textit{isomorphic} and \textit{homomorphic}.  \textbf{It is considered to be one of the most complex problems in object recognition and computer vision.}  Its complexity is due to its combinatorial nature. The best correspondence of a graph matching problem is defined as the optimum of some objective function which measures the similarity between matched vertices and edges.  This objective function is also called a \textit{fitness function}.		
+		\\ \\
+		Graph matching has been entertained in a variety of domains, including: subgraph transformations, fuzzy set theory, elastic and morphological graph matching, multiple graph matching, Bayesian methods, error-correction, genetic algorithms (GA), other forms of probability theory, probabilistic relaxation, Expectation-Maximization (EM), decision trees, clustering techniques, and neural networks.  A popular dissimilarity measure on graphs is called the \textit{graph edit distance} which is defined as the number of modification that one graph has to undertake to become the other.  While many approaches have been taken toward graph matching, the complexity of the problem itself makes it very difficult to consider all types of dependencies between the vertices and edges in the model and data graphs. \\
 		
 		\paperentry{Livi2013GraphMatchingProblem}
 		{The Graph Matching Problem}
 		{Manifold_Representation_Learning/Alignment/Livi2013GraphMatchingProblem.pdf}
-		{}\\
+		{\textbf{Refer to this for a good reference on all things graphs.}  (I didn't want to type it all out.)}\\
 	
 		\paperentry{Navaratnam2007JointManifoldSemiSupRegression}
 		{The Joint Manifold Model for Semi-supervised Multi-valued Regression}
@@ -475,7 +482,7 @@
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	\subsection{Competitive Hebbian Learning}
+	\textcolor{Violet}{\subsection{Competitive Hebbian Learning}}
 	
 	\paperentry
 	{Rumelhart1985CHL}
@@ -608,7 +615,7 @@
 	{Manifold_Representation_Learning/CHL/Palomo2016GrowingNeuralForest.pdf}
 	{}
 	
-	\subsection{Deep Learning}
+	\textcolor{Violet}{\subsection{Deep Learning}}
 	
 		\paperentry{Goodfellow2016DeepLearning}
 		{Deep Learning}
@@ -680,7 +687,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Multiple Instance Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Multiple Instance Learning}
 
-	\subsection{Multiple Instance Concept Learning}
+	\textcolor{Violet}{\subsection{Multiple Instance Concept Learning}}
 	
 		\paperentry{Bocinsky2019Thesis}
 		{Learning Multiple Target Concepts from Uncertain, Ambiguous Data Using the Adaptive Cosine Estimator and Spectral Match Filter}
@@ -829,7 +836,7 @@
 		{}
 		
 	
-	\subsection{Multiple Instance Classification}
+	\textcolor{Violet}{\subsection{Multiple Instance Classification}}
 	
 		\paperentry{Cao2016VehicleDetectionMIL}
 		{Weakly Supervised Vehicle Detection in Satellite Images via Multi-Instance Discriminative Learning}
@@ -837,7 +844,7 @@
 		{}
 		
 	
-	\subsection{Multiple Instance Regression}
+	\textcolor{Violet}{\subsection{Multiple Instance Regression}}
 	
 		\paperentry{Trabelsi2018FuzzyClusteringMILRegression}
 		{Fuzzy and Possibilistic Clustering for Multiple Instance Linear Regression}
@@ -877,7 +884,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Fusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Fusion}
 	
-	\subsection{Classical Approaches}
+	\textcolor{Violet}{\subsection{Classical Approaches}}
 		\subsubsection{General Approach}
 			\paperentry{Mohandes2018ClassifierCombinationTechniquesReview}
 			{Classifiers Combination Techniques: A Comprehensive Review}
@@ -998,7 +1005,7 @@
 			\textbf{For specific purposes, ancillary and terrestrial meta-data such as laser-scanners, GIS data, web-sensors, field survey data, economic consensus data, and meteorological data me be combined with remote sensing data to improve the performance of data fusion. }
 		
 	
-		\subsubsection{Hierarchical Mixture of Experts}
+		\textcolor{Violet}{\subsubsection{Hierarchical Mixture of Experts}}
 		
 			\paperentry{Jordan1993HME}
 			{Hierarchical mixtures of experts and the EM algorithm}
@@ -1021,7 +1028,7 @@
 			{}
 		
 		
-		\subsubsection{Choquet Integral}
+		\textcolor{Violet}{\subsubsection{Choquet Integral}}
 		
 			\paperentry{Du2017Thesis}
 			{Multiple Instance Choquet Integral For MultiResolution Sensor Fusion}
@@ -1061,21 +1068,21 @@
 			
 			
 		
-		\subsubsection{Deep Learning}
+		\textcolor{Violet}{\subsubsection{Deep Learning}}
 		
 			\paperentry{Jian2019AEInfraredVisibleFusion}
 			{A Symmetric Encoder-Decoder with Residual Block for Infrared and Visible Image Fusion}
 			{Fusion/DeepLearning/Jian2019AEInfraredVisibleFusion.pdf}
 			{}
 		
-		\subsubsection{Graph-Based}
+		\textcolor{Violet}{\subsubsection{Graph-Based}}
 		
 			\paperentry{Vivar2019MultiModalGraphFusion}
 			{Multi-modal Graph Fusion for Inductive Disease Classification in Incomplete Datasets}
 			{Fusion/GraphBased/Vivar2019MultiModalGraphFusion.pdf}
 			{}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Subspace Fusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	\subsection{Subspace Learning}
+	\textcolor{Violet}{\subsection{Subspace Learning}}
 	
 		\paperentry{Hong2018CommonSubspaceLearningHSI}
 		{CoSpace: Common Subspace Learning from Hyperspectral-Multispectral Correspondences}
@@ -1088,9 +1095,9 @@
 		{arg4}
 		
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Fusion Metrics %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsection{Fusion Metrics}
+	\textcolor{Violet}{\subsection{Fusion Metrics}}
 
-	\subsection{Co-registration}
+	\textcolor{Violet}{\subsection{Co-registration}}
 	
 		\paperentry{Dawn2010SurveyRemoteSensingImageRegistration}
 		{Remote Sensing Image Registration Techniques: A Survey}
@@ -1131,9 +1138,9 @@
 %	
 %		\subsubsection{Conflation}
 		
-	\subsection{Multi-resolution Fusion}
+	\textcolor{Violet}{\subsection{Multi-resolution Fusion}}
 	
-	\subsection{Fusion of Mixed Data Types}
+	\textcolor{Violet}{\subsection{Fusion of Mixed Data Types}}
 		
 		\paperentry{Butenuth2007HeterogeneousGeospatialData}
 		{Integration of heterogeneous geospatial data in a federated database}
@@ -1151,7 +1158,7 @@
 		{Fusion/Zhang2019FusionHeteroEarthObsClimateZones.pdf}
 		{}
 	
-	\subsection{Unsorted}
+	\textcolor{Violet}{\subsection{Unsorted}}
 	
 	\paperentry{Shen2016SpatioTemporalSpectralFusion}
 	{An Integrated Framework for the Spatio–Temporal–Spectral Fusion of Remote Sensing Images}
