@@ -295,13 +295,23 @@
 		{
 		The authors present a method for \textit{Joint Manifold Modeling (JMM)} which makes use of a \textit{Gaussian Processes Latent Variable Model (GPLVM)}.  Gaussian Processes (GP) are distributions over functions which, when conditioned on training data, produce radial basis function approximations of the data, along with associated covariance estimates.  The GP is one way to model regression.  Now, provided training examples $\bm{X}\in\mathbb{R}^{d}$ which are assumed to live in a low-dimensional submanifold of $\mathbb{R}^{d}$.  The goal of the GPLVM is to discover this submanifold, that is to associate with each $\bm{x}_{i}$ a latent variable $\bm{t}_{i}$ representing its coordinates in the manifold $\mathcal{M}^{k}$ where $k < d$. An advantage of the GPLVM is that it is relatively straightforward to incorporate unlabelled samples.
 		\\ \\
-		This method was run on simulated data for the task of pose estimation.  Once the GPLVM is learned, inference is straightforward.}
-	
+		This method was run on simulated data for the task of pose estimation.  Once the GPLVM is learned, inference is straightforward.}\\
+		
+		\paperentry{Wang2010MultiscaleManAlignment}
+		{Multiscale Manifold Alignment}
+		{Manifold_Representation_Learning/Alignment/Wang2010mMultiscaleManAlignment.pdf}
+		{}\\
+		One limitation to existing domain adaptation problems is the assumption that source and target domains are defined by the same features and the differences come from their distributions.  To address this problem, manifold alignment was proposed.  Manifold alignment builds mappings between disparate data sets by aligning their underlying manifolds, thus providing a geometric framework for knowledge transfer across data sets.
+		\\ \\
+		Existing manifold alignment approaches can be classified into two types. In two-step alignment, the first step maps the data to low-dimensional spaces, then a subsequent step eliminates some components from one set to the other so alignment can be achieved.  One-step alignment combines the embedding projection and alignment steps into one.  Two approaches for one-step alignment are \textit{semi-supervised alignment} and \textit{manifold projections}. Semi-supervised alignment learns \textit{instance-level alignment} by constructing non-linear embeddings, while manifold projections learn \textit{feature-level alignment} by constructing linear embedding functions, thus allowing for out-of-sample embeddings.
+		\\ \\
+		However, many real-world data sets exhibit non-trivial regularities at multiple levels, which correspond to their underlying intrinsic structure.  With this in mind, the authors investigated the previously un-studied notion of multiscale manifold alignment by using multi-resolution wavelet analysis (which discovers multiscale intrinsic structure in a matrix).  Multiscale manifold alignment automatically generates alignment results at different scales by discovering the shared intrinsic multilevel structures exhibited by the datasets.  This provides a solution to the key problem in manifold alignment where users must define the latent dimensionality.  \\
+		
 		\paperentry{Wang2011ManifoldAlignment}
 		{Manifold Alignment}
 		{Manifold_Representation_Learning/Alignment/Wang2011ManifoldAlignment.pdf}
 		{} \\ \textbf{\textit{Manifold alignment} is a simultaneous solution to the problem of alignment and a framework for discovering a unifying representation of multiple datasets.  The goal is  to ultimately map disparate datasets to a joint latent space, while preserving the qualities of each dataset and also highlighting the similarities between the datasets. The fundamental idea of manifold alignment is that all datasets included in the fusion lie on the same manifold.} \\ \\
-			
+		
 		The problem of alignment is to identify a transformation of one dataset that ``matches it up" with a transformation of another dataset.  That is, given two datasets $X$ and $Y$, whose instances lie on the same manifold, $Z$, but who may be represented by different features, the problem of alignment is to find two functions $f$ and $g$, such that $f(x_i)$ is close to $g(y_j)$ in terms of Euclidean distance if $x_i$ and $y_j$ are close with respect to geodesic distance along $Z$.  Here, $X$ is an $n \times p$ matrix containing $n$ data instances in $p$-dimensional space, $Y$ is an n$m\times q$ matrix containing $m$ data instances in $q$-dimensional space, $f:\mathbb{R}^{p}\rightarrow\mathbb{R}^{k}$, and $g:\mathbb{R}^{q}\rightarrow\mathbb{R}^{k}$ for some $k$ called the latent dimensionality.  The instances $x_i$ and $y_j$ are in exact correspondence if and only if $f(x_i)=g(y_j)$.  On the other hand, prior correspondence information includes any information about the similarity of the instances in $X$ and $Y$, not just exact correspondence information. The union of the range of $f$ and $g$ is the joint latent space, and the concatenation of the new coordinates \[ \left( \begin{array}{cc}
 		f(X) \\
 		g(Y)  \end{array} \right)\] 
@@ -323,16 +333,6 @@
 		\\ \\
 		After reading this paper, it is not quite clear how this method would be implemented. 
 		} \\
-		
-		\paperentry{Wang2010MultiscaleManAlignment}
-		{Multiscale Manifold Alignment}
-		{Manifold_Representation_Learning/Alignment/Wang2010mMultiscaleManAlignment.pdf}
-		{}\\
-		One limitation to existing domain adaptation problems is the assumption that source and target domains are defined by the same features and the differences come from their distributions.  To address this problem, manifold alignment was proposed.  Manifold alignment builds mappings between disparate data sets by aligning their underlying manifolds, thus providing a geometric framework for knowledge transfer across data sets.
-		\\ \\
-		Existing manifold alignment approaches can be classified into two types. In two-step alignment, the first step maps the data to low-dimensional spaces, then a subsequent step eliminates some components from one set to the other so alignment can be achieved.  One-step alignment combines the embedding projection and alignment steps into one.  Two approaches for one-step alignment are \textit{semi-supervised alignment} and \textit{manifold projections}. Semi-supervised alignment learns \textit{instance-level alignment} by constructing non-linear embeddings, while manifold projections learn \textit{feature-level alignment} by constructing linear embedding functions, thus allowing for out-of-sample embeddings.
-		\\ \\
-		However, many real-world data sets exhibit non-trivial regularities at multiple levels, which correspond to their underlying intrinsic structure.  With this in mind, the authors investigated the previously un-studied notion of multiscale manifold alignment by using multi-resolution wavelet analysis (which discovers multiscale intrinsic structure in a matrix).  Multiscale manifold alignment automatically generates alignment results at different scales by discovering the shared intrinsic multilevel structures exhibited by the datasets.  This provides a solution to the key problem in manifold alignment where users must define the latent dimensionality.  \\
 		
 		\paperentry{Wang2011HeteroDomainAdaptationManAlignment}
 		{Heterogeneous Domain Adaptation Using Manifold Alignment}
