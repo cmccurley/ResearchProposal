@@ -387,6 +387,11 @@
 		\\ \\
 		A few questions I have... Do the same actions imply similar manifold structure even for different modalities?  Also, how difficult would it be to extend this problem to multiple datasets?  What does this mean in terms of computational complexity? \textbf{Additionally, the authors make a note that there might be partial alignment cases, in which some points on one manifold might not correspond to any points on the other manifold (i.e. different resolutions) and that these points should be detected and not considered in the computation of the matching.  However, are these points still considered in the final embedding? i.e. are we losing information?}\\
 		
+		\paperentry{Zhang2014SemiSupManLearningFusion}
+		{Semi-Supervised Manifold Learning Based Multigraph Fusion for High-Resolution Remote Sensing Image Classification}
+		{Manifold_Representation_Learning/Alignment/Zhang2014SemiSupManLearningFusion.pdf}
+		{arg4}
+		
 		\paperentry{Tuia2015KernelManifoldAlignment}
 		{Kernel Manifold Alignment}
 		{Manifold_Representation_Learning/Alignment/Tuia2015KernelManifoldAlignment.pdf}
@@ -452,6 +457,10 @@
 		\\ \\
 		\textbf{Sensor fusion includes low-level information fusion (LLIF) in which raw data is processed upstream near the sensors for object and situation assessments such as extraction of color features from pixel imagery. High-level information fusion (HLIF) includes downstream methods in which context is used for sensor, user, and mission refinement.}  Sensor fusion is typically performed by combining the outputs (decisions) of several signature modalities through decision-level fusion.  While this data fusion approach improves performance by incorporating decisions from different modalities, it requires the consideration of the correlation/dependence between data of different modalities.  \textbf{All the data in the measurement domain factually reflects the same objects of interest, which indicates that the measurements of different modalities have strong mutual information between them.  The transformation from sensor data to a decision introduces information loss.  How to efficiently fuse all the data of different modalities in the measurement domain with a tolerable cost is investigated in this paper through \textit{feature level fusion} using the joint manifold learning (JML) approach  in Davenport's paper.}  The numerical results show that the proposed heterogeneous data fusion approach can discover the low intrinsic dimensionalities from the high dimensional sensor data.  Promising results are obtained to demonstrate  the effectiveness of the manifold learning algorithms in sensor fusion, specifically on the fusion of mid-wave infrared (MWIR) and distributed radio-frequency (RF) from the DIRSIG dataset. \\
 		
+		\paperentry{Hong2018CommonSubspaceLearningHSI}
+		{CoSpace: Common Subspace Learning from Hyperspectral-Multispectral Correspondences}
+		{Manifold_Representation_Learning/Alignment/Hong2018CommonSubspaceLearningHSI.pdf}
+		{arg4}
 		
 		\paperentry{Stanley2019ManAlignmentFeatureCorrespondence}
 		{Manifold Alignment with Feature Correspondence}
@@ -479,6 +488,8 @@
 		To address the aforementioned issues, the authors proposed a learn-able manifold alignment by a data-driven graph learning directly from a common subspace so as to make the multimodal data comparable as well as improve the explain-ability of the learned common subspace.  This is done by extending the commonly used semi-supervised manifold alignment model where the common subspace learning problem is formulated by alternating optimization of an objective designed to both learn the mapping functions and the embedded coordinates of the training set (with label information) (This is based off the graph Laplacian and was formulated in a paper I already read.  From Wang maybe?).  The authors refer to this framework for joint common subspace learning as \textit{CoSpace}.  The CoSpace framework is then extended to further exploit information of unlabled samples by learning a joint Laplacian matrix. The whole process boils down to optimizing a linear objective function (so this method cannot handle non-linearity well) using the ADMM optimization approach.
 		\\ \\
 		Experiments were conducted on both simulated and real heterogeneous modality datasets (Houston and Chikusei multispectral-lidar and hyperspectral) and classification was compared using two high-performing classifiers after alignment, the linear SVM (LSVM) and canonical classification forests (CCF).  The proposed method greatly outperformed the alternatives. \\
+		
+		
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
@@ -1081,18 +1092,7 @@
 			{Multi-modal Graph Fusion for Inductive Disease Classification in Incomplete Datasets}
 			{Fusion/GraphBased/Vivar2019MultiModalGraphFusion.pdf}
 			{}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Subspace Fusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	\textcolor{Violet}{\subsection{Subspace Learning}}
 	
-		\paperentry{Hong2018CommonSubspaceLearningHSI}
-		{CoSpace: Common Subspace Learning from Hyperspectral-Multispectral Correspondences}
-		{Fusion/SubspaceLearning/Hong2018CommonSubspaceLearningHSI.pdf}
-		{arg4}
-		
-		\paperentry{Zhang2014SemiSupManLearningFusion}
-		{Semi-Supervised Manifold Learning Based Multigraph Fusion for High-Resolution Remote Sensing Image Classification}
-		{Fusion/SubspaceLearning/Zhang2014SemiSupManLearningFusion.pdf}
-		{arg4}
 		
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Fusion Metrics %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\textcolor{Violet}{\subsection{Fusion Metrics}}
