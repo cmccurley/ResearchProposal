@@ -273,7 +273,7 @@
 	\textcolor{Violet}{\subsection{Manifold Alignment/Matching}}
 	
 		\paperentry{Bengoetxea2002ThesisGraphMatching}
-		{Inexact Graph Matching Using Estimation of Distribution Algorithmsarg2}
+		{Inexact Graph Matching Using Estimation of Distribution Algorithms}
 		{Manifold_Representation_Learning/Alignment/Bengoetxea2002ThesisGraphMatching.pdf}
 		{}\\
 		This thesis chapter provides a good general overview of graphs in general as well as the definitions of graph matching (graph isomorphism) and SOA approaches (in 2002).  The amount of this type of work shows that the interest on the field is increasing with the years.
@@ -465,7 +465,8 @@
 		A cross-modality feature learning framework called \textit{CoSpace} is proposed which jointly considers subspace learning and supervised classification.  CoSpace \textbf{linearly} learns a shared latent subspace from HSI/ multispectral correspondences.  The multispectral out-of-samples can be projected into the subspace since the function is linear.  Experiments on Houston and Chikusei datasets show improved classification performance.
 		\\ \\
 		A variety of multi-modal feature learning techniques have been proposed and can roughly be categorized into two classes: fusion-based joint feature learning (FJFL) and alignment-based shared feature learning (ASFL).  FJFL aims to learn discriminative features by absorbing the different properties from multi-modal data.  FJFL fuses the different sources at the data level to diversify the information and then to further learn the higher-level feature representation.  \textbf{One intuitive way for FJFL is to directly learn a joint data representation at the feature level.  \large{At present, this is the mainstream approach for multimodal data analysis.}}  \textbf{However, FJFL requires \textit{complete data correspondence}.}  \textbf{Unlike FJFL, ASFL is more apt for cross-modal feature learning, since ASFL can adaptively shuttle back and forth between the different modalities or domains by means of the learned common subspace.}  \textbf{\large{Manifold alignment (MA) is also a powerful tool for ASFL which can align class distributions for robust HSI classification.}} \textbf{It should be noted that these methods mentioned above	only consider the differences of a unimodality between the source and target domains at the level of original features, but they fail to investigate the transferability of multi-modality since the different modalities usually hold the different feature dimensions.Although these approaches can build connections between features or instances, a poorly connected relationship between the learned common subspace and label information is still hindering the low-dimensional feature representation from being more discriminative.}	 We propose a cross-modality feature learning framework,
-		called common subspace learning (CoSpace), that learns the shared feature representation (common subspace) from partialHS-MS correspondences.
+		called common subspace learning (CoSpace), that learns the shared feature representation (common subspace) from partial
+HS-MS correspondences.
 		\\ \\
 		The problem was formulated by creating a constrained optimization problem where the projection functions and weights are learned through ADMM.  The goal is to minimize correspondence error while regularizing both the weight size and manifold geometry. \textbf{(This would be a good one to show in the lit review along with LeMA.  Because this is involved in LeMA.) }  Experiments for classification of land-use were performed with SVMs after the alignment.  Results were good.
 		\\ \\
