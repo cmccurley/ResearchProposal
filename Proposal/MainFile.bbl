@@ -133,4 +133,41 @@ H.~L. {Yang} and M.~M. {Crawford}, ``Spectral and spatial proximity-based
 A.~Damianou, N.~D.~Lawrence, and C.~H. Ek, ``Manifold alignment determination:
   finding correspondences across different data views,'' 01 2017.
 
+\bibitem{Tulyakov2008ReviewClassifierCombinationMethods}
+\BIBentryALTinterwordspacing
+S.~Tulyakov, S.~Jaeger, V.~Govindaraju, and D.~Doermann, \emph{Review of
+  Classifier Combination Methods}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Berlin, Heidelberg: Springer Berlin Heidelberg, 2008, pp. 361--386. [Online].
+  Available: \url{https://doi.org/10.1007/978-3-540-76280-5_14}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Du2016MIChoquetIntegralFusion}
+X.~{Du}, A.~{Zare}, J.~M. {Keller}, and D.~T. {Anderson}, ``Multiple instance
+  choquet integral for classifier fusion,'' in \emph{2016 IEEE Congress on
+  Evolutionary Computation (CEC)}, July 2016, pp. 1054--1061.
+
+\bibitem{Zhang2014SemiSupManLearningFusion}
+Y.~{Zhang}, X.~{Zheng}, G.~{Liu}, X.~{Sun}, H.~{Wang}, and K.~{Fu},
+  ``Semi-supervised manifold learning based multigraph fusion for
+  high-resolution remote sensing image classification,'' \emph{IEEE Geoscience
+  and Remote Sensing Letters}, vol.~11, no.~2, pp. 464--468, Feb 2014.
+
+\bibitem{Hong2018CommonSubspaceLearningHSI}
+\BIBentryALTinterwordspacing
+D.~Hong, N.~Yokoya, J.~Chanussot, and X.~X. Zhu, ``Cospace: Common subspace
+  learning from hyperspectral-multispectral correspondences,'' \emph{CoRR},
+  vol. abs/1812.11501, 2018. [Online]. Available:
+  \url{http://arxiv.org/abs/1812.11501}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Davenport2010JointManifoldsDataFusion}
+M.~A. {Davenport}, C.~{Hegde}, M.~F. {Duarte}, and R.~G. {Baraniuk}, ``Joint
+  manifolds for data fusion,'' \emph{IEEE Transactions on Image Processing},
+  vol.~19, no.~10, pp. 2580--2594, Oct 2010.
+
+\bibitem{Navaratnam2007JointManifoldSemiSupRegression}
+R.~{Navaratnam}, A.~W. {Fitzgibbon}, and R.~{Cipolla}, ``The joint manifold
+  model for semi-supervised multi-valued regression,'' in \emph{2007 IEEE 11th
+  International Conference on Computer Vision}, Oct 2007, pp. 1--8.
+
 \end{thebibliography}

@@ -21,16 +21,16 @@
 \contentsline {subsection}{\numberline {2.2.2}Multiple Instance Classification}{13}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Multiple Instance Regression}{13}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Sensor Fusion}{13}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Classic Approaches}{15}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Feature-level Fusion}{15}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Manifold Alignment}{15}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Data Processing on Graphs}{15}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Classic Approaches}{15}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Graph Convolutional Neural Networks}{15}{subsection.2.4.2}
-\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{16}{chapter.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{17}{chapter.4}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{18}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{19}{chapter.6}
-\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{20}{chapter.7}
+\contentsline {subsection}{\numberline {2.3.1}Classic Approaches}{16}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Feature-level Fusion}{16}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Manifold Alignment}{16}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Data Processing on Graphs}{16}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Classic Approaches}{16}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Graph Convolutional Neural Networks}{16}{subsection.2.4.2}
+\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{17}{chapter.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{18}{chapter.4}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{19}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{20}{chapter.6}
+\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{21}{chapter.7}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 
-\contentsline {extrachapter}{REFERENCES}{21}{appendix*.5}
+\contentsline {extrachapter}{REFERENCES}{22}{appendix*.5}
