@@ -1,4 +1,4 @@
-\begin{thebibliography}{147}
+\begin{thebibliography}{151}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -326,6 +326,16 @@ H.~Frigui and P.~Gader.
 \newblock ISSN 1063-6706.
 \newblock \doi{10.1109/TFUZZ.2008.2005249}.
 
+\bibitem[{Frigui} et~al.(2010){Frigui}, {Zhang}, and
+  {Gader}]{Frigui2010ContextDependentFusionLandmine}
+H.~{Frigui}, L.~{Zhang}, and P.~D. {Gader}.
+\newblock Context-dependent multisensor fusion and its application to land mine
+  detection.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  48\penalty0 (6):\penalty0 2528--2543, June 2010.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2009.2039936}.
+
 \bibitem[Fritzke(1994)]{Fritzke1995GrowingNeuralGas}
 B.~Fritzke.
 \newblock A growing neural gas network learns topologies.
@@ -342,6 +352,14 @@ P.~{Gader}, A.~{Mendez-Vasquez}, K.~{Chamberlin}, J.~{Bolton}, and A.~{Zare}.
 \newblock In \emph{IGARSS 2004. 2004 IEEE International Geoscience and Remote
   Sensing Symposium}, volume~3, pages 1605--1608 vol.3, Sep. 2004.
 \newblock \doi{10.1109/IGARSS.2004.1370635}.
+
+\bibitem[Gader et~al.(1996)Gader, Mohamed, and
+  Keller]{Gader1996FusionHandwrittenLetters}
+P.~D. Gader, M.~A. Mohamed, and J.~M. Keller.
+\newblock Fusion of handwritten word classifiers.
+\newblock \emph{Pattern Recognition Letters}, 17\penalty0 (6):\penalty0 577 --
+  584, 1996.
+\newblock ISSN 0167-8655.
 
 \bibitem[Gao et~al.(2017)Gao, Li, Yu, Morariu, and
   Davis]{Gao2017CountGuidedWeaklySupervisedLocalization}
@@ -384,6 +402,16 @@ A.~N. Gorban and A.~Y. Zinovyev.
   Reduction}, pages 96--130, Berlin, Heidelberg, 2008. Springer Berlin
   Heidelberg.
 \newblock ISBN 978-3-540-73750-6.
+
+\bibitem[{Gunatilaka} and
+  {Baertlein}(2001)]{Gunatilaka2001FusionNoncoincidentlySampledLandmine}
+A.~H. {Gunatilaka} and B.~A. {Baertlein}.
+\newblock Feature-level and decision-level fusion of noncoincidently sampled
+  sensors for land mine detection.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 23\penalty0 (6):\penalty0 577--589, June 2001.
+\newblock ISSN 0162-8828.
+\newblock \doi{10.1109/34.927459}.
 
 \bibitem[Guo(2019)]{Guo2019LVAforMultimodalLearningandSensorFusion}
 L.~Guo.
@@ -506,6 +534,15 @@ A.~{Karem} and H.~{Frigui}.
 \newblock In \emph{2016 23rd International Conference on Pattern Recognition
   (ICPR)}, pages 474--479, Dec 2016.
 \newblock \doi{10.1109/ICPR.2016.7899679}.
+
+\bibitem[Keller et~al.(2001)Keller, Auephanwiriyakul, and
+  Gader]{Keller2001PredictiveSensorFusion}
+J.~M. Keller, S.~Auephanwiriyakul, and P.~D. Gader.
+\newblock Experiments inf predictive sensor fusion.
+\newblock In \emph{Detection and Remediation Technologies for Mines and
+  Minelike Targets VI}, volume 4394 of \emph{Proc.SPIE}, pages 1047 -- 1058,
+  Oct. 2001.
+\newblock \doi{10.1117/12.445433}.
 
 \bibitem[Kohonen(1990)]{Kohonen1990SOM}
 T.~Kohonen.

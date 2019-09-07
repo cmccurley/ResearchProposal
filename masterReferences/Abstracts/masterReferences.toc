@@ -16,14 +16,14 @@
 \contentsline {subsubsection}{\numberline {5.1.1}General Approach}{23}{subsubsection.5.1.1}
 \contentsline {subsubsection}{\numberline {5.1.2}Hierarchical Mixture of Experts}{28}{subsubsection.5.1.2}
 \contentsline {subsubsection}{\numberline {5.1.3}Choquet Integral}{28}{subsubsection.5.1.3}
-\contentsline {subsubsection}{\numberline {5.1.4}Deep Learning}{28}{subsubsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.4}Deep Learning}{29}{subsubsection.5.1.4}
 \contentsline {subsubsection}{\numberline {5.1.5}Graph-Based}{29}{subsubsection.5.1.5}
 \contentsline {subsection}{\numberline {5.2}Fusion Metrics}{29}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Co-registration}{29}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}Multi-resolution Fusion}{30}{subsection.5.4}
 \contentsline {subsection}{\numberline {5.5}Fusion of Mixed Data Types}{30}{subsection.5.5}
 \contentsline {subsection}{\numberline {5.6}Unsorted}{30}{subsection.5.6}
-\contentsline {section}{\numberline {6}Data Processing on Graphs}{30}{section.6}
+\contentsline {section}{\numberline {6}Data Processing on Graphs}{31}{section.6}
 \contentsline {section}{\numberline {7}Outlier/ Adversarial Detection}{31}{section.7}
 \contentsline {section}{\numberline {8}Army}{31}{section.8}
 \contentsline {section}{\numberline {9}Segmentation}{32}{section.9}

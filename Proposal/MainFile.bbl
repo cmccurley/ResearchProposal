@@ -165,6 +165,44 @@ M.~A. {Davenport}, C.~{Hegde}, M.~F. {Duarte}, and R.~G. {Baraniuk}, ``Joint
   manifolds for data fusion,'' \emph{IEEE Transactions on Image Processing},
   vol.~19, no.~10, pp. 2580--2594, Oct 2010.
 
+\bibitem{Gader2004ChoquetIntegralLandmine}
+P.~{Gader}, A.~{Mendez-Vasquez}, K.~{Chamberlin}, J.~{Bolton}, and A.~{Zare},
+  ``Multi-sensor and algorithm fusion with the choquet integral: applications
+  to landmine detection,'' in \emph{IGARSS 2004. 2004 IEEE International
+  Geoscience and Remote Sensing Symposium}, vol.~3, Sep. 2004, pp. 1605--1608
+  vol.3.
+
+\bibitem{Smith2017ChoquetIntegralLandmine}
+\BIBentryALTinterwordspacing
+J.~E. B. A. Z. B.~A. Ryan E.~Smith, Derek T.~Anderson, ``Aggregation of choquet
+  integrals in gpr and emi for handheld platform-based explosive hazard
+  detection,'' in \emph{Detection and Sensing of Mines, Explosive Objects, and
+  Obscured Targets XXII, 1018217}, vol. 10182, May 2017. [Online]. Available:
+  \url{https://doi.org/10.1117/12.2263005}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Keller2001PredictiveSensorFusion}
+J.~M. Keller, S.~Auephanwiriyakul, and P.~D. Gader, ``Experiments inf
+  predictive sensor fusion,'' in \emph{Detection and Remediation Technologies
+  for Mines and Minelike Targets VI}, ser. Proc.SPIE, vol. 4394, Oct. 2001, pp.
+  1047 -- 1058.
+
+\bibitem{Gunatilaka2001FusionNoncoincidentlySampledLandmine}
+A.~H. {Gunatilaka} and B.~A. {Baertlein}, ``Feature-level and decision-level
+  fusion of noncoincidently sampled sensors for land mine detection,''
+  \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  vol.~23, no.~6, pp. 577--589, June 2001.
+
+\bibitem{Frigui2010ContextDependentFusionLandmine}
+H.~{Frigui}, L.~{Zhang}, and P.~D. {Gader}, ``Context-dependent multisensor
+  fusion and its application to land mine detection,'' \emph{IEEE Transactions
+  on Geoscience and Remote Sensing}, vol.~48, no.~6, pp. 2528--2543, June 2010.
+
+\bibitem{Gader1996FusionHandwrittenLetters}
+P.~D. Gader, M.~A. Mohamed, and J.~M. Keller, ``Fusion of handwritten word
+  classifiers,'' \emph{Pattern Recognition Letters}, vol.~17, no.~6, pp. 577 --
+  584, 1996.
+
 \bibitem{Navaratnam2007JointManifoldSemiSupRegression}
 R.~{Navaratnam}, A.~W. {Fitzgibbon}, and R.~{Cipolla}, ``The joint manifold
   model for semi-supervised multi-valued regression,'' in \emph{2007 IEEE 11th
