@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  1 NOV 2019 10:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  5 NOV 2019 10:16
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -584,6 +584,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ] [13]
+Overfull \vbox (0.33514pt too high) has occurred while \output is active []
+
+
+[14]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
 
  (Chapters/ch_ProblemDescription.tex
@@ -594,7 +598,7 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [14
+) [15
 
 
 
@@ -609,7 +613,7 @@ CHAPTER 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [15
+) [16
 
 
 
@@ -624,7 +628,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [16
+) [17
 
 
 
@@ -639,7 +643,7 @@ CHAPTER 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [17
+) [18
 
 
 
@@ -654,7 +658,7 @@ CHAPTER 7.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [18
+) [19
 
 
 
@@ -669,11 +673,11 @@ Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¶ in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [19
+ [20
 
 
 
-] [20] [21])
+] [21] [22])
 (Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
@@ -685,7 +689,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: 41BD326E122BD39403E54B37AA284804;3478.
+(rerunfilecheck)             Checksum: 8A0FCC82BDE04A1B06540E84750063B4;3668.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -693,10 +697,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 7807 strings out of 493323
- 117647 string characters out of 3139067
+ 7812 strings out of 493323
+ 117722 string characters out of 3139067
  205823 words of memory out of 3000000
- 11057 multiletter control sequences out of 15000+200000
+ 11059 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,6n,42p,3158b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -705,9 +709,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on MainFile.pdf (21 pages, 131373 bytes).
+Output written on MainFile.pdf (22 pages, 133793 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 103 named destinations out of 1000 (max. 500000)
- 345 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 442 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 361 words of extra memory for PDF output out of 10000 (max. 10000000)
 

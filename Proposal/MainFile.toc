@@ -10,35 +10,37 @@
 \contentsline {subsubsection}{\numberline {2.1.2.2}Multidimensional Scaling (MDS)}{12}{subsubsection.2.1.2.2}
 \contentsline {subsection}{\numberline {2.1.3}Nonlinear Methods}{12}{subsection.2.1.3}
 \contentsline {subsubsection}{\numberline {2.1.3.1}Graph-based Methods}{12}{subsubsection.2.1.3.1}
-\contentsline {subsubsection}{\numberline {2.1.3.2}Graphs}{13}{subsubsection.2.1.3.2}
-\contentsline {subsubsection}{\numberline {2.1.3.3}$K$-Nearest Neighbor Graph}{13}{subsubsection.2.1.3.3}
-\contentsline {subsubsection}{\numberline {2.1.3.4}$\epsilon $ Neighborhood Graph}{13}{subsubsection.2.1.3.4}
-\contentsline {subsubsection}{\numberline {2.1.3.5}Geodesic Distance Approximation}{13}{subsubsection.2.1.3.5}
-\contentsline {subsubsection}{\numberline {2.1.3.6}Isomap}{13}{subsubsection.2.1.3.6}
-\contentsline {subsubsection}{\numberline {2.1.3.7}Locally Linear Embedding (LLE)}{13}{subsubsection.2.1.3.7}
-\contentsline {subsubsection}{\numberline {2.1.3.8}Laplacian Eigenmaps}{13}{subsubsection.2.1.3.8}
-\contentsline {subsubsection}{\numberline {2.1.3.9}Hessian Eigenmaps}{13}{subsubsection.2.1.3.9}
-\contentsline {subsubsection}{\numberline {2.1.3.10}Diffusion Maps}{13}{subsubsection.2.1.3.10}
-\contentsline {subsubsection}{\numberline {2.1.3.11}Sammon Mapping}{13}{subsubsection.2.1.3.11}
-\contentsline {subsubsection}{\numberline {2.1.3.12}Latent Variable Models}{13}{subsubsection.2.1.3.12}
-\contentsline {subsubsection}{\numberline {2.1.3.13}Competitive Hebbian Learning}{13}{subsubsection.2.1.3.13}
-\contentsline {subsubsection}{\numberline {2.1.3.14}Deep Learning}{13}{subsubsection.2.1.3.14}
-\contentsline {subsection}{\numberline {2.1.4}Supervised and Semi-Supervised Approaches}{13}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Manifold Regularization}{13}{subsection.2.1.5}
-\contentsline {section}{\numberline {2.2}Multiple Instance Learning}{13}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Overview and short description}{13}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Multiple Instance Concept Learning}{13}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Multiple Instance Classification}{13}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Multiple Instance Regression}{13}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Multiple Instance Learning on Graphs}{13}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Data Processing on Graphs}{13}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Classic Approaches}{13}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Graph Convolutional Neural Networks}{13}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Competency Aware Overview}{13}{section.2.4}
-\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{14}{chapter.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{15}{chapter.4}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{16}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{17}{chapter.6}
-\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{18}{chapter.7}
+\contentsline {subsubsection}{\numberline {2.1.3.2}Graphs}{14}{subsubsection.2.1.3.2}
+\contentsline {subsubsection}{\numberline {2.1.3.3}$K$-Nearest Neighbor Graph}{14}{subsubsection.2.1.3.3}
+\contentsline {subsubsection}{\numberline {2.1.3.4}$\epsilon $ Neighborhood Graph}{14}{subsubsection.2.1.3.4}
+\contentsline {subsubsection}{\numberline {2.1.3.5}Geodesic Distance Approximation}{14}{subsubsection.2.1.3.5}
+\contentsline {subsubsection}{\numberline {2.1.3.6}Isomap}{14}{subsubsection.2.1.3.6}
+\contentsline {subsubsection}{\numberline {2.1.3.7}Locally Linear Embedding (LLE)}{14}{subsubsection.2.1.3.7}
+\contentsline {subsubsection}{\numberline {2.1.3.8}Laplacian Eigenmaps}{14}{subsubsection.2.1.3.8}
+\contentsline {subsubsection}{\numberline {2.1.3.9}Hessian Eigenmaps}{14}{subsubsection.2.1.3.9}
+\contentsline {subsubsection}{\numberline {2.1.3.10}Diffusion Maps}{14}{subsubsection.2.1.3.10}
+\contentsline {subsubsection}{\numberline {2.1.3.11}Sammon Mapping}{14}{subsubsection.2.1.3.11}
+\contentsline {subsubsection}{\numberline {2.1.3.12}Latent Variable Models}{14}{subsubsection.2.1.3.12}
+\contentsline {subsubsection}{\numberline {2.1.3.13}Competitive Hebbian Learning}{14}{subsubsection.2.1.3.13}
+\contentsline {subsubsection}{\numberline {2.1.3.14}Deep Learning}{14}{subsubsection.2.1.3.14}
+\contentsline {subsection}{\numberline {2.1.4}Supervised and Semi-Supervised Approaches}{14}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Manifold Regularization}{14}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Matrix Factorization}{14}{subsection.2.1.6}
+\contentsline {section}{\numberline {2.2}Multiple Instance Learning}{14}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Overview and short description}{14}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Multiple Instance Concept Learning}{14}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Multiple Instance Classification}{14}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Multiple Instance Regression}{14}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Multiple Instance Learning on Graphs}{14}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Data Processing on Graphs}{14}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}What can we do?, Inference, link prediction, etc}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Classic Approaches}{14}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Graph Convolutional Neural Networks}{14}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Competency Aware Overview}{14}{section.2.4}
+\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{15}{chapter.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{16}{chapter.4}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{17}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{18}{chapter.6}
+\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{19}{chapter.7}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 
-\contentsline {extrachapter}{REFERENCES}{19}{appendix*.5}
+\contentsline {extrachapter}{REFERENCES}{20}{appendix*.5}
