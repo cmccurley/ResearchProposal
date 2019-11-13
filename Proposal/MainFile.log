@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  5 NOV 2019 10:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  12 NOV 2019 20:43
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -365,7 +365,7 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 17.
 \openout2 = `Misc/NewCommands.aux'.
 
 (Misc/NewCommands.tex) (MainFile.aux (Chapters/acknowledgements.aux)
-(Chapters/TOC.aux) (Chapters/abstract.aux) (Chapters/ch_Introduction2.aux)
+(Chapters/TOC.aux) (Chapters/abstract.aux) (Chapters/ch_Introduction.aux)
 (Chapters/ch_LitReview.aux) (Chapters/ch_ProblemDescription.aux)
 (Chapters/ch_ExperimentalDesign.aux) (Chapters/ch_PreliminaryWork.aux)
 (Chapters/ch_FutureTasks.aux) (Chapters/ch_Conclusion.aux))
@@ -510,10 +510,10 @@ Package hyperref Warning: bookmark level for unknown extrachapter defaults to 0
 \openout2 = `Chapters/abstract.aux'.
 
  (Chapters/abstract.tex)
-\openout2 = `Chapters/ch_Introduction2.aux'.
+\openout2 = `Chapters/ch_Introduction.aux'.
 
 
-(Chapters/ch_Introduction2.tex
+(Chapters/ch_Introduction.tex
 ***************************
 CHAPTER 1.
 ***************************
@@ -559,35 +559,32 @@ CHAPTER 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
+[12
+
+
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 24.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 24.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 26.
+(hyperref)                removing `math shift' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 26.
+(hyperref)                removing `math shift' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 26.
-
-) [12
+(hyperref)                removing `math shift' on input line 71.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\epsilon' on input line 71.
 
-] [13]
-Overfull \vbox (0.33514pt too high) has occurred while \output is active []
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 71.
 
-[14]
+) [13] [14]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
 
  (Chapters/ch_ProblemDescription.tex
@@ -677,19 +674,19 @@ Missing character: There is no ¡ in font cmss12!
 
 
 
-] [21] [22])
+] [21])
 (Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (MainFile.aux (Chapters/acknowledgements.aux)
-(Chapters/TOC.aux) (Chapters/abstract.aux) (Chapters/ch_Introduction2.aux)
+(Chapters/TOC.aux) (Chapters/abstract.aux) (Chapters/ch_Introduction.aux)
 (Chapters/ch_LitReview.aux) (Chapters/ch_ProblemDescription.aux)
 (Chapters/ch_ExperimentalDesign.aux) (Chapters/ch_PreliminaryWork.aux)
 (Chapters/ch_FutureTasks.aux) (Chapters/ch_Conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: 8A0FCC82BDE04A1B06540E84750063B4;3668.
+(rerunfilecheck)             Checksum: 192618C08FDA37F8695604390AAAEA4E;3990.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -697,21 +694,24 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 7812 strings out of 493323
- 117722 string characters out of 3139067
- 205823 words of memory out of 3000000
- 11059 multiletter control sequences out of 15000+200000
- 13025 words of font info for 48 fonts, out of 3000000 for 9000
+ 7797 strings out of 493323
+ 116956 string characters out of 3139067
+ 205148 words of memory out of 3000000
+ 11050 multiletter control sequences out of 15000+200000
+ 12725 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,6n,42p,3158b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,8n,42p,3158b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on MainFile.pdf (22 pages, 133793 bytes).
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb>
+Output written on MainFile.pdf (21 pages, 157724 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
- 361 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 459 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 393 words of extra memory for PDF output out of 10000 (max. 10000000)
 
