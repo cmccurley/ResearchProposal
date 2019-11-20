@@ -21,6 +21,26 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Bocinsky2019Thesis}
+J.~Bocinsky, ``Learning multiple target concepts from uncertain, ambiguous data
+  using the adaptive cosine estimator and spectral match filter,'' Master's
+  thesis, Univ. of Florida, Gainesville, FL, May 2019.
+
+\bibitem{Cook2015Thesis}
+M.~Cook, ``Task driven extended functions of multiple instances (td-efumi),''
+  Master's thesis, Univ. of Missouri, Columbia, MO, 2015.
+
+\bibitem{Zare2016MIACE}
+\BIBentryALTinterwordspacing
+A.~Zare, C.~Jiao, and T.~C. Glenn, ``Multiple instance hyperspectral target
+  characterization,'' \emph{CoRR}, vol. abs/1606.06354, 2016. [Online].
+  Available: \url{http://arxiv.org/abs/1606.06354}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Du2017Thesis}
+X.~Du, ``Multiple instance choquet integral for multiresolution sensor
+  fusion,'' Ph.D. dissertation, Univ. of Missouri, Columbia, MO, Dec. 2017.
+
 \bibitem{Sun2010MIDR}
 \BIBentryALTinterwordspacing
 Y.-Y. Sun, M.~K. Ng, and Z.-H. Shou, ``Multi-instance dimensionality
