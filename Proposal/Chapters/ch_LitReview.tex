@@ -2,38 +2,6 @@
 
 This chapter provides a literature review on Manifold Learning, including classic approaches, supervised and semi-supervised methods and uses of manifolds for functional regularization.  A review of the Multiple Instance Learning framework for learning from weak and ambiguous annotations is provided. Additionally, this chapter reviews the existing literature in classification over graphs, focusing heavily on the utilization of graph convolutional neural networks.  A brief overview of competency aware machine learning methods is also included.  Reviews describe basic terminology and definitions.  Foundational approaches are described and advances are addressed.
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Loss Functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Metric Embedding}
-
-	\subsection{Overview of Metric Embedding}
-	
-		\subsubsection{Metric Learning}
-
-	\subsection{Point-wise Loss}
-	
-	\subsection{Contrastive Loss}
-	
-		\subsubsection{Siamese Networks}
-	
-	\subsection{Triplet Loss}
-
-		\subsubsection{Large-Margin K-Nearest Neighbors (LMNN)}
-		
-		\subsubsection{FaceNet}
-		
-		FaceNet is a convolutional neural network which learns a mapping from face images to a compact Euclidean space where distances directly correspond to a measure of face similarity \cite{Schroff2015FaceNet}. 
-		
-		\begin{align}
-			||f(x^{a}_{i}) - f(x^{p}_{i})||^{2}_{2} + \alpha < ||f(x^{a}_{i}) - f(x^{n}_{i})||^{2}_{2}, \quad \forall (f(x^{a}_{i}),f(x^{p}_{i}),f(x^{n}_{i})) \in \mathcal{T}
-		\end{align} 
-	
-		\begin{align}
-			\mathcal{L} = ||f(x^{a}_{i}) - f(x^{p}_{i})||^{2}_{2} -||f(x^{a}_{i}) - f(x^{n}_{i})||^{2}_{2} + \alpha
-		\end{align}
-	
-	\subsection{Manifold Regularization}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Multiple Instance Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Multiple Instance Learning}
 
@@ -50,6 +18,47 @@ This chapter provides a literature review on Manifold Learning, including classi
 %\subsection{Multiple Instance Regression}
 
 \subsection{Multiple Instance Learning on Graphs/Manifolds}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Metric Embedding %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Metric Embedding}
+
+	\subsection{Overview of Metric Embedding}
+	
+		\subsubsection{Metric Learning}
+
+	\subsection{Point-wise Loss}
+	
+	\subsection{Contrastive Loss}
+	Definition of Contrastive Loss:
+	
+		\subsubsection{Siamese Networks}
+	
+	\subsection{Triplet Loss}
+	
+	Definition of Triplet Loss:
+	
+	Triplet loss was extended in \cite{Sohn2016NPairLoss} to simultaneously optimize against N negative classes.
+
+		\subsubsection{Large-Margin K-Nearest Neighbors (LMNN)}
+		
+		\subsubsection{FaceNet}
+		
+		FaceNet is a convolutional neural network which learns a mapping from face images to a compact Euclidean space where distances directly correspond to a measure of face similarity \cite{Schroff2015FaceNet}. 
+		
+		\begin{align}
+			||f(x^{a}_{i}) - f(x^{p}_{i})||^{2}_{2} + \alpha < ||f(x^{a}_{i}) - f(x^{n}_{i})||^{2}_{2}, \quad \forall (f(x^{a}_{i}),f(x^{p}_{i}),f(x^{n}_{i})) \in \mathcal{T}
+		\end{align} 
+	
+		\begin{align}
+			\mathcal{L} = ||f(x^{a}_{i}) - f(x^{p}_{i})||^{2}_{2} -||f(x^{a}_{i}) - f(x^{n}_{i})||^{2}_{2} + \alpha
+		\end{align}
+		
+		
+		\subsubsection{Siamese Neural Networks}
+	
+	\subsection{Manifold Regularization}
+	
+	\subsection{Multiple Instance Metric Learning}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manifold Learning}
@@ -98,8 +107,8 @@ This chapter provides a literature review on Manifold Learning, including classi
 \subsection{Supervised and Semi-Supervised Approaches}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Outlier Detection %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Competency Aware Overview}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Outlier Detection %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Competency Aware Overview}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Sensor Fusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
