@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  22 DEC 2019 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  22 DEC 2019 15:44
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -566,93 +566,112 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_labels".jpg, id=339, 485.4135pt x 396.88275pt>
+_labels".jpg, id=343, 485.4135pt x 396.88275pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_labels".jpg Graphic file (type jpg)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 weak_labels".jpg>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/weak_labels".jpg used on input line 34.
+ages/""introduction/weak_labels".jpg used on input line 36.
 (pdftex.def)             Requested size: 375.20143pt x 306.76945pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 []\OT1/cmss/m/n/12 Figure 1-1: |Ex-am-ples of weakly-labeled in-frared im-agery
 . The im-ages demon-strate var-i-ous
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \OT1/cmss/m/n/12 forms of weak groundtruth around a pickup truck taken with a m
 id-wave in-frared cam-era. The
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
+_bbox".jpg, id=344, 255.95625pt x 202.356pt>
+File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
+/weak_bbox".jpg Graphic file (type jpg)
+
+<use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
+weak_bbox".jpg>
+Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
+ages/""introduction/weak_bbox".jpg used on input line 45.
+(pdftex.def)             Requested size: 375.20143pt x 296.65076pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/targ
-et_img".jpg, id=340, 111.41624pt x 69.861pt>
+et_img".jpg, id=345, 111.41624pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /target_img".jpg Graphic file (type jpg)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 target_img".jpg>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/target_img".jpg used on input line 44.
+ages/""introduction/target_img".jpg used on input line 55.
 (pdftex.def)             Requested size: 138.31111pt x 86.72377pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/bg_i
-mg".jpg, id=341, 110.21175pt x 69.861pt>
+mg".jpg, id=346, 110.21175pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /bg_img".jpg Graphic file (type jpg)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 bg_img".jpg>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/bg_img".jpg used on input line 50.
+ages/""introduction/bg_img".jpg used on input line 61.
 (pdftex.def)             Requested size: 136.81586pt x 86.72377pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 42--53
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 53--64
  [][]  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-[]\OT1/cmss/m/n/12 Figure 1-2: |Ex-am-ple of image-level la-bels for bi-nary ta
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]\OT1/cmss/m/n/12 Figure 1-3: |Ex-am-ple of image-level la-bels for bi-nary ta
 r-get de-tec-tion. Im-age (a) is de-noted
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
 \OT1/cmss/m/n/12 to con-tain pix-els be-long-ing to the tar-get class some-wher
 e within the im-age, while im-age (b)
  []
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 57.
+(hyperref)                than one, level fixed on input line 68.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 58.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 69.
 
-[8 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/weak
-_labels.jpg>] [9 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/int
-roduction/target_img.jpg> <C:/Users/Conma/Documents/ResearchProposal/Proposal/I
-mages/introduction/bg_img.jpg>] [10]
-Underfull \hbox (badness 10000) detected at line 84
-[][][]
- []
-
-[11]
-Underfull \hbox (badness 10000) detected at line 85
+[8] [9 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/
+weak_labels.jpg>] [10 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Image
+s/introduction/weak_bbox.jpg> <C:/Users/Conma/Documents/ResearchProposal/Propos
+al/Images/introduction/target_img.jpg> <C:/Users/Conma/Documents/ResearchPropos
+al/Proposal/Images/introduction/bg_img.jpg>] [11] [12]
+Underfull \hbox (badness 10000) detected at line 95
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 86
+Underfull \hbox (badness 10000) detected at line 96
 [][][]
  []
 
-) [12]
+
+Underfull \hbox (badness 10000) detected at line 97
+[][][]
+ []
+
+) [13]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -663,7 +682,7 @@ CHAPTER 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-[13
+[14
 
 
 
@@ -688,7 +707,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 84.
 
-) [14] [15]
+) [15] [16]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
 
  (Chapters/ch_ProblemDescription.tex
@@ -699,7 +718,7 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [16
+) [17
 
 
 
@@ -714,7 +733,7 @@ CHAPTER 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [17
+) [18
 
 
 
@@ -729,7 +748,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [18
+) [19
 
 
 
@@ -744,7 +763,7 @@ CHAPTER 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [19
+) [20
 
 
 
@@ -759,15 +778,15 @@ CHAPTER 7.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [20
+) [21
 
 
 
-] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl [21
+] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl [22
 
 
 
-])
+] [23])
 (Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
@@ -779,7 +798,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: D8F88D128002DE051B6E94A42192903B;4802.
+(rerunfilecheck)             Checksum: B782420263BB2F31BEC2E471ABE6D6D0;4802.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -787,10 +806,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 8091 strings out of 493323
- 121769 string characters out of 3139067
- 208720 words of memory out of 3000000
- 11317 multiletter control sequences out of 15000+200000
+ 8102 strings out of 493323
+ 122233 string characters out of 3139067
+ 208794 words of memory out of 3000000
+ 11323 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,8n,42p,3158b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -803,9 +822,9 @@ ublic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 y10.pfb>
-Output written on MainFile.pdf (21 pages, 264682 bytes).
+Output written on MainFile.pdf (23 pages, 299655 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 464 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 504 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 469 words of extra memory for PDF output out of 10000 (max. 10000000)
 

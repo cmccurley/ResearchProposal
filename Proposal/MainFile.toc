@@ -4,54 +4,54 @@
 \contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{7}{chapter.1}
 \contentsline {subsection}{\numberline {1.0.1}What is Multiple Instance Learning/ How it Addresses Uncertainty}{8}{subsection.1.0.1}
 \contentsline {subsection}{\numberline {1.0.2}Statement of Problems}{9}{subsection.1.0.2}
-\contentsline {subsection}{\numberline {1.0.3}What is Dimensionality Reduction/ Manifold Learning/ Feature Embedding? Better feature representations facilitate classification.}{9}{subsection.1.0.3}
-\contentsline {subsection}{\numberline {1.0.4}Existing Approaches}{10}{subsection.1.0.4}
-\contentsline {subsection}{\numberline {1.0.5}Proposition and Research Questions}{11}{subsection.1.0.5}
-\contentsline {subsection}{\numberline {1.0.6}Datasets}{12}{subsection.1.0.6}
-\contentsline {chapter}{\numberline {2}\uppercase {Background}}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}Multiple Instance Learning}{13}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Overview and short description}{13}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Multiple Instance Concept Learning}{13}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Multiple Instance Learning via Embedded Instance Selection}{13}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Multiple Instance Dictionary Learning}{13}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Multiple Instance Learning on Graphs/Manifolds}{13}{subsection.2.1.5}
-\contentsline {section}{\numberline {2.2}Metric Embedding}{13}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Overview of Metric Embedding}{13}{subsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.1.1}Metric Learning}{13}{subsubsection.2.2.1.1}
-\contentsline {subsection}{\numberline {2.2.2}Point-wise Loss}{13}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Contrastive Loss}{13}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}Siamese Networks}{13}{subsubsection.2.2.3.1}
-\contentsline {subsection}{\numberline {2.2.4}Triplet Loss}{13}{subsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.4.1}Large-Margin K-Nearest Neighbors (LMNN)}{14}{subsubsection.2.2.4.1}
-\contentsline {subsubsection}{\numberline {2.2.4.2}FaceNet}{14}{subsubsection.2.2.4.2}
-\contentsline {subsubsection}{\numberline {2.2.4.3}Siamese Neural Networks}{14}{subsubsection.2.2.4.3}
-\contentsline {subsection}{\numberline {2.2.5}Manifold Regularization}{14}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Multiple Instance Metric Learning}{14}{subsection.2.2.6}
-\contentsline {section}{\numberline {2.3}Manifold Learning}{14}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Overview and short description}{14}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Linear Methods}{14}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}Principal Component Analysis (PCA) (Kernel PCA)}{14}{subsubsection.2.3.2.1}
-\contentsline {subsubsection}{\numberline {2.3.2.2}Multidimensional Scaling (MDS)}{14}{subsubsection.2.3.2.2}
-\contentsline {subsection}{\numberline {2.3.3}Nonlinear Methods}{14}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}Graph-based Methods}{14}{subsubsection.2.3.3.1}
-\contentsline {subsubsection}{\numberline {2.3.3.2}Graphs}{15}{subsubsection.2.3.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3.3}$K$-Nearest Neighbor Graph}{15}{subsubsection.2.3.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.4}$\epsilon $ Neighborhood Graph}{15}{subsubsection.2.3.3.4}
-\contentsline {subsubsection}{\numberline {2.3.3.5}Geodesic Distance Approximation}{15}{subsubsection.2.3.3.5}
-\contentsline {subsubsection}{\numberline {2.3.3.6}Isomap}{15}{subsubsection.2.3.3.6}
-\contentsline {subsubsection}{\numberline {2.3.3.7}Locally Linear Embedding (LLE)}{15}{subsubsection.2.3.3.7}
-\contentsline {subsubsection}{\numberline {2.3.3.8}Laplacian Eigenmaps}{15}{subsubsection.2.3.3.8}
-\contentsline {subsubsection}{\numberline {2.3.3.9}Hessian Eigenmaps}{15}{subsubsection.2.3.3.9}
-\contentsline {subsubsection}{\numberline {2.3.3.10}Diffusion Maps}{15}{subsubsection.2.3.3.10}
-\contentsline {subsubsection}{\numberline {2.3.3.11}Sammon Mapping}{15}{subsubsection.2.3.3.11}
-\contentsline {subsubsection}{\numberline {2.3.3.12}Latent Variable Models}{15}{subsubsection.2.3.3.12}
-\contentsline {subsubsection}{\numberline {2.3.3.13}Competitive Hebbian Learning}{15}{subsubsection.2.3.3.13}
-\contentsline {subsubsection}{\numberline {2.3.3.14}Deep Learning}{15}{subsubsection.2.3.3.14}
-\contentsline {subsection}{\numberline {2.3.4}Supervised and Semi-Supervised Approaches}{15}{subsection.2.3.4}
-\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{16}{chapter.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{17}{chapter.4}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{18}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{19}{chapter.6}
-\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{20}{chapter.7}
+\contentsline {subsection}{\numberline {1.0.3}What is Dimensionality Reduction/ Manifold Learning/ Feature Embedding? Better feature representations facilitate classification.}{11}{subsection.1.0.3}
+\contentsline {subsection}{\numberline {1.0.4}Existing Approaches}{11}{subsection.1.0.4}
+\contentsline {subsection}{\numberline {1.0.5}Proposition and Research Questions}{12}{subsection.1.0.5}
+\contentsline {subsection}{\numberline {1.0.6}Datasets}{13}{subsection.1.0.6}
+\contentsline {chapter}{\numberline {2}\uppercase {Background}}{14}{chapter.2}
+\contentsline {section}{\numberline {2.1}Multiple Instance Learning}{14}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Overview and short description}{14}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Multiple Instance Concept Learning}{14}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Multiple Instance Learning via Embedded Instance Selection}{14}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Multiple Instance Dictionary Learning}{14}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Multiple Instance Learning on Graphs/Manifolds}{14}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}Metric Embedding}{14}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Overview of Metric Embedding}{14}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Metric Learning}{14}{subsubsection.2.2.1.1}
+\contentsline {subsection}{\numberline {2.2.2}Point-wise Loss}{14}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Contrastive Loss}{14}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Siamese Networks}{14}{subsubsection.2.2.3.1}
+\contentsline {subsection}{\numberline {2.2.4}Triplet Loss}{14}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Large-Margin K-Nearest Neighbors (LMNN)}{15}{subsubsection.2.2.4.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}FaceNet}{15}{subsubsection.2.2.4.2}
+\contentsline {subsubsection}{\numberline {2.2.4.3}Siamese Neural Networks}{15}{subsubsection.2.2.4.3}
+\contentsline {subsection}{\numberline {2.2.5}Manifold Regularization}{15}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Multiple Instance Metric Learning}{15}{subsection.2.2.6}
+\contentsline {section}{\numberline {2.3}Manifold Learning}{15}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Overview and short description}{15}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Linear Methods}{15}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Principal Component Analysis (PCA) (Kernel PCA)}{15}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}Multidimensional Scaling (MDS)}{15}{subsubsection.2.3.2.2}
+\contentsline {subsection}{\numberline {2.3.3}Nonlinear Methods}{15}{subsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.1}Graph-based Methods}{15}{subsubsection.2.3.3.1}
+\contentsline {subsubsection}{\numberline {2.3.3.2}Graphs}{16}{subsubsection.2.3.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3.3}$K$-Nearest Neighbor Graph}{16}{subsubsection.2.3.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.4}$\epsilon $ Neighborhood Graph}{16}{subsubsection.2.3.3.4}
+\contentsline {subsubsection}{\numberline {2.3.3.5}Geodesic Distance Approximation}{16}{subsubsection.2.3.3.5}
+\contentsline {subsubsection}{\numberline {2.3.3.6}Isomap}{16}{subsubsection.2.3.3.6}
+\contentsline {subsubsection}{\numberline {2.3.3.7}Locally Linear Embedding (LLE)}{16}{subsubsection.2.3.3.7}
+\contentsline {subsubsection}{\numberline {2.3.3.8}Laplacian Eigenmaps}{16}{subsubsection.2.3.3.8}
+\contentsline {subsubsection}{\numberline {2.3.3.9}Hessian Eigenmaps}{16}{subsubsection.2.3.3.9}
+\contentsline {subsubsection}{\numberline {2.3.3.10}Diffusion Maps}{16}{subsubsection.2.3.3.10}
+\contentsline {subsubsection}{\numberline {2.3.3.11}Sammon Mapping}{16}{subsubsection.2.3.3.11}
+\contentsline {subsubsection}{\numberline {2.3.3.12}Latent Variable Models}{16}{subsubsection.2.3.3.12}
+\contentsline {subsubsection}{\numberline {2.3.3.13}Competitive Hebbian Learning}{16}{subsubsection.2.3.3.13}
+\contentsline {subsubsection}{\numberline {2.3.3.14}Deep Learning}{16}{subsubsection.2.3.3.14}
+\contentsline {subsection}{\numberline {2.3.4}Supervised and Semi-Supervised Approaches}{16}{subsection.2.3.4}
+\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{17}{chapter.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{18}{chapter.4}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{19}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{20}{chapter.6}
+\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{21}{chapter.7}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 
-\contentsline {extrachapter}{REFERENCES}{21}{appendix*.7}
+\contentsline {extrachapter}{REFERENCES}{22}{appendix*.8}

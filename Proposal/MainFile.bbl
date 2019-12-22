@@ -30,15 +30,6 @@ B.~Chaudhuri and S.~Parui, ``Target detection: Remote sensing techniques for
   defence applications,'' \emph{Defence Science Journal}, vol.~45, pp.
   285--291, 04 1995.
 
-\bibitem{Bocinsky2019Thesis}
-J.~Bocinsky, ``Learning multiple target concepts from uncertain, ambiguous data
-  using the adaptive cosine estimator and spectral match filter,'' Master's
-  thesis, Univ. of Florida, Gainesville, FL, May 2019.
-
-\bibitem{Cook2015Thesis}
-M.~Cook, ``Task driven extended functions of multiple instances (td-efumi),''
-  Master's thesis, Univ. of Missouri, Columbia, MO, 2015.
-
 \bibitem{Zare2016MIACE}
 \BIBentryALTinterwordspacing
 A.~Zare, C.~Jiao, and T.~C. Glenn, ``Multiple instance hyperspectral target
@@ -49,6 +40,19 @@ A.~Zare, C.~Jiao, and T.~C. Glenn, ``Multiple instance hyperspectral target
 \bibitem{Du2017Thesis}
 X.~Du, ``Multiple instance choquet integral for multiresolution sensor
   fusion,'' Ph.D. dissertation, Univ. of Missouri, Columbia, MO, Dec. 2017.
+
+\bibitem{Bocinsky2019Thesis}
+J.~Bocinsky, ``Learning multiple target concepts from uncertain, ambiguous data
+  using the adaptive cosine estimator and spectral match filter,'' Master's
+  thesis, Univ. of Florida, Gainesville, FL, May 2019.
+
+\bibitem{Zare2008Thesis}
+A.~Zare, ``Hyperspectral endmember detection and band selection using bayesian
+  methods,'' Ph.D. dissertation, Univ. of Florida, Gainesville, FL, 2008.
+
+\bibitem{Cook2015Thesis}
+M.~Cook, ``Task driven extended functions of multiple instances (td-efumi),''
+  Master's thesis, Univ. of Missouri, Columbia, MO, 2015.
 
 \bibitem{Carbonneau2016MILSurvey}
 \BIBentryALTinterwordspacing
