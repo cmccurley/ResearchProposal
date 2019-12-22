@@ -4,7 +4,7 @@
 \BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 4
 \BOOKMARK [1][-]{subsection.1.0.1}{1.0.1 Causes of ambiguity/ imprecision in groundtruth}{chapter.1}% 5
 \BOOKMARK [2][-]{subsection.1.0.2}{1.0.2 What is Multiple Instance Learning/ How it Addresses Uncertainty}{subsection.1.0.1}% 6
-\BOOKMARK [2][-]{subsection.1.0.3}{1.0.3 Calling out the Problems}{subsection.1.0.1}% 7
+\BOOKMARK [2][-]{subsection.1.0.3}{1.0.3 Statement of Problems}{subsection.1.0.1}% 7
 \BOOKMARK [2][-]{subsection.1.0.4}{1.0.4 What is Dimensionality Reduction/ Manifold Learning/ Feature Embedding? Better feature representations facilitate classification.}{subsection.1.0.1}% 8
 \BOOKMARK [2][-]{subsection.1.0.5}{1.0.5 Existing Approaches}{subsection.1.0.1}% 9
 \BOOKMARK [2][-]{subsection.1.0.6}{1.0.6 Proposition and Research Questions}{subsection.1.0.1}% 10
