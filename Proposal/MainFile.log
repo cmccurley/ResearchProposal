@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  22 DEC 2019 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  22 DEC 2019 16:26
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -576,9 +576,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-] [8]
+]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_bbox".jpg, id=356, 255.95625pt x 202.356pt>
+_bbox".jpg, id=352, 255.95625pt x 202.356pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_bbox".jpg Graphic file (type jpg)
 
@@ -600,8 +600,11 @@ und-ing boxes (blue). Red dots
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_labels".jpg, id=357, 485.4135pt x 396.88275pt>
+_labels".jpg, id=358, 485.4135pt x 396.88275pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_labels".jpg Graphic file (type jpg)
 
@@ -627,7 +630,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/targ
-et_img".jpg, id=358, 111.41624pt x 69.861pt>
+et_img".jpg, id=359, 111.41624pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /target_img".jpg Graphic file (type jpg)
 
@@ -638,7 +641,7 @@ ages/""introduction/target_img".jpg used on input line 56.
 (pdftex.def)             Requested size: 138.31111pt x 86.72377pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/bg_i
-mg".jpg, id=359, 110.21175pt x 69.861pt>
+mg".jpg, id=360, 110.21175pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /bg_img".jpg Graphic file (type jpg)
 
@@ -686,12 +689,12 @@ Underfull \hbox (badness 10000) detected at line 99
 [][][]
  []
 
-[13]
+
 Underfull \hbox (badness 10000) detected at line 100
 [][][]
  []
 
-) [14]
+[13]) [14]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -842,7 +845,7 @@ ublic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 y10.pfb>
-Output written on MainFile.pdf (24 pages, 303059 bytes).
+Output written on MainFile.pdf (24 pages, 303130 bytes).
 PDF statistics:
  517 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)
