@@ -21,6 +21,15 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Geng2017TargetDetection}
+X.~Geng, L.~Ji, and Y.~Zhao, ``The basic equation for target detection in
+  remote sensing,'' 2017.
+
+\bibitem{Chaudhuri1995TargetDetection}
+B.~Chaudhuri and S.~Parui, ``Target detection: Remote sensing techniques for
+  defence applications,'' \emph{Defence Science Journal}, vol.~45, pp.
+  285--291, 04 1995.
+
 \bibitem{Bocinsky2019Thesis}
 J.~Bocinsky, ``Learning multiple target concepts from uncertain, ambiguous data
   using the adaptive cosine estimator and spectral match filter,'' Master's

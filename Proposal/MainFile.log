@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  22 DEC 2019 13:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  22 DEC 2019 15:07
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -364,30 +364,52 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 17.
 \@input{Misc/NewCommands.aux}
 \openout2 = `Misc/NewCommands.aux'.
 
-(Misc/NewCommands.tex) (MainFile.aux (Chapters/acknowledgements.aux)
-(Chapters/TOC.aux) (Chapters/abstract.aux) (Chapters/ch_Introduction.aux)
+(Misc/NewCommands.tex)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+\Gread@gobject=\count119
+))
+\Gin@req@height=\dimen128
+\Gin@req@width=\dimen129
+)
+(MainFile.aux (Chapters/acknowledgements.aux) (Chapters/TOC.aux)
+(Chapters/abstract.aux) (Chapters/ch_Introduction.aux)
 (Chapters/ch_LitReview.aux) (Chapters/ch_ProblemDescription.aux)
 (Chapters/ch_ExperimentalDesign.aux) (Chapters/ch_PreliminaryWork.aux)
 (Chapters/ch_FutureTasks.aux) (Chapters/ch_Conclusion.aux))
 \openout1 = `MainFile.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 22.
+LaTeX Info: Redefining \selectfont on input line 23.
 
 **************************************
 * Executing Begin Document Statement *
@@ -403,43 +425,52 @@ Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
+)
+Package hyperref Info: Link coloring ON on input line 23.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-\Gread@gobject=\count119
-
-(C:\Users\Conma\AppData\Roaming\MiKTeX\2.9\tex\context\base\mkii\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen128
-\scratchbox=\box32
-\nofMPsegments=\count121
-\nofMParguments=\count122
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen129
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
-\everyMPtoPDFconversion=\toks29
-)))
-Package hyperref Info: Link coloring ON on input line 22.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count126
+\c@section@level=\count120
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 
 (MainFile.out) (MainFile.out)
 \@outlinefile=\write3
 \openout3 = `MainFile.out'.
 
- [1
+
+(C:\Users\Conma\AppData\Roaming\MiKTeX\2.9\tex\context\base\mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count121
+\scratchdimen=\dimen130
+\scratchbox=\box32
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen131
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
+\everyMPtoPDFconversion=\toks29
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+) [1
 
 
 
@@ -447,13 +478,13 @@ LaTeX Info: Redefining \nameref on input line 22.
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 26.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 27.
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 26.
+LaTeX Font Info:    No file OMScmss.fd. on input line 27.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 26.
+(Font)              using `OMS/cmsy/m/n' instead on input line 27.
 
 [2
 
@@ -498,7 +529,13 @@ Package hyperref Warning: bookmark level for unknown extrachapter defaults to 0
 
 
 
-] (MainFile.lof)
+] (MainFile.lof
+Overfull \hbox (0.98897pt too wide) in paragraph at lines 1--1
+ [][] [][][]\OT1/cmss/m/n/12 Examples of weakly-labeled in-frared im-agery. The
+ im-ages demon-strate var-i-ous forms 
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `MainFile.lof'.
 
@@ -512,22 +549,13 @@ Package hyperref Warning: bookmark level for unknown extrachapter defaults to 0
  (Chapters/abstract.tex)
 \openout2 = `Chapters/ch_Introduction.aux'.
 
-
-(Chapters/ch_Introduction.tex
+ (Chapters/ch_Introduction.tex
 ***************************
 CHAPTER 1.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 23.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 40.
 
 [7
 
@@ -536,22 +564,95 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
 
 
 
-] [8] [9]
-Underfull \hbox (badness 10000) detected at line 63
+]
+<"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
+_labels".jpg, id=339, 485.4135pt x 396.88275pt>
+File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
+/weak_labels".jpg Graphic file (type jpg)
+
+<use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
+weak_labels".jpg>
+Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
+ages/""introduction/weak_labels".jpg used on input line 34.
+(pdftex.def)             Requested size: 375.20143pt x 306.76945pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]\OT1/cmss/m/n/12 Figure 1-1: |Ex-am-ples of weakly-labeled in-frared im-agery
+. The im-ages demon-strate var-i-ous
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+\OT1/cmss/m/n/12 forms of weak groundtruth around a pickup truck taken with a m
+id-wave in-frared cam-era. The
+ []
+
+
+<"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/targ
+et_img".jpg, id=340, 111.41624pt x 69.861pt>
+File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
+/target_img".jpg Graphic file (type jpg)
+
+<use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
+target_img".jpg>
+Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
+ages/""introduction/target_img".jpg used on input line 44.
+(pdftex.def)             Requested size: 138.31111pt x 86.72377pt.
+
+<"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/bg_i
+mg".jpg, id=341, 110.21175pt x 69.861pt>
+File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
+/bg_img".jpg Graphic file (type jpg)
+
+<use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
+bg_img".jpg>
+Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
+ages/""introduction/bg_img".jpg used on input line 50.
+(pdftex.def)             Requested size: 136.81586pt x 86.72377pt.
+
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 42--53
+ [][]  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]\OT1/cmss/m/n/12 Figure 1-2: |Ex-am-ple of image-level la-bels for bi-nary ta
+r-get de-tec-tion. Im-age (a) is de-noted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/cmss/m/n/12 to con-tain pix-els be-long-ing to the tar-get class some-wher
+e within the im-age, while im-age (b)
+ []
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 57.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 58.
+
+[8 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/weak
+_labels.jpg>] [9 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/int
+roduction/target_img.jpg> <C:/Users/Conma/Documents/ResearchProposal/Proposal/I
+mages/introduction/bg_img.jpg>] [10]
+Underfull \hbox (badness 10000) detected at line 84
+[][][]
+ []
+
+[11]
+Underfull \hbox (badness 10000) detected at line 85
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 64
+Underfull \hbox (badness 10000) detected at line 86
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 65
-[][][]
- []
-
-[10]) [11]
+) [12]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -562,7 +663,7 @@ CHAPTER 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-[12
+[13
 
 
 
@@ -587,7 +688,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 84.
 
-) [13] [14]
+) [14] [15]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
 
  (Chapters/ch_ProblemDescription.tex
@@ -598,7 +699,7 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [15
+) [16
 
 
 
@@ -613,7 +714,7 @@ CHAPTER 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [16
+) [17
 
 
 
@@ -628,7 +729,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [17
+) [18
 
 
 
@@ -643,7 +744,7 @@ CHAPTER 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [18
+) [19
 
 
 
@@ -658,52 +759,53 @@ CHAPTER 7.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [19
+) [20
 
 
 
-] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl [20
+] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl [21
 
 
 
 ])
 (Chapters/bio.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
  (MainFile.aux (Chapters/acknowledgements.aux)
 (Chapters/TOC.aux) (Chapters/abstract.aux) (Chapters/ch_Introduction.aux)
 (Chapters/ch_LitReview.aux) (Chapters/ch_ProblemDescription.aux)
 (Chapters/ch_ExperimentalDesign.aux) (Chapters/ch_PreliminaryWork.aux)
 (Chapters/ch_FutureTasks.aux) (Chapters/ch_Conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: 36DB73E3559ED0A7A144740715505D67;4915.
+(rerunfilecheck)             Checksum: D8F88D128002DE051B6E94A42192903B;4802.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 7793 strings out of 493323
- 116086 string characters out of 3139067
- 204360 words of memory out of 3000000
- 11050 multiletter control sequences out of 15000+200000
+ 8091 strings out of 493323
+ 121769 string characters out of 3139067
+ 208720 words of memory out of 3000000
+ 11317 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,8n,42p,3158b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,8n,42p,3158b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb>
-Output written on MainFile.pdf (20 pages, 154808 bytes).
+/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y10.pfb>
+Output written on MainFile.pdf (21 pages, 264682 bytes).
 PDF statistics:
- 465 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 457 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 490 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 464 words of extra memory for PDF output out of 10000 (max. 10000000)
 

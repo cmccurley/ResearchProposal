@@ -20,21 +20,39 @@
 %
 %Experiments will be conducted on both synthetic data and real applications such as target detection and scene understanding in remote sensing imagery, plant phenotyping, and semantic segmentation.  Datasets will include the DSIAC ATR Algorithm Development Database, MUUFL Gulfport, and Danforth Plant Science Center Manifold Learning datasets.  Initial results demonstrate the aptitude of the proposed approaches and suggest further development and evaluation of these methods.
 
-\subsection{Causes of ambiguity/ imprecision in groundtruth}
-Target detection is a paramount problem in many remote sensing applications.  Target detection can be formulated as a two-class classification problem where samples belonging to a class of interest are discriminated from a global background distribution.  For example,  Alternatively, the problem can be posed as distinguishing a single class from all other classes presented in the training data.  Traditional supervised learning approaches require highly precise groundtruth to guide algorithmic training.  However, acquiring large quantities  of accurately labeled training data can be expensive both in terms of time and resources, and in some cases, may even be infeasible to obtain.  Furthermore, label imprecision and ambiguity are often presented from multiple avenues. Additionally, many applications such as medical diagnosis or wildlife identification require domain experts to provide accurate data labels.  However, label subjectivity is even introduced in this  case, as there might not always be agreement between expert annotators.   .  For example, GPS
+%\subsection{Causes of ambiguity/ imprecision in groundtruth}
+Target detection is a paramount area of research in the field of remote sensing which aims to locate an object or region of interest while suppressing background \cite{Geng2017TargetDetection,Chaudhuri1995TargetDetection}.  Target detection can be formulated as a two-class classification problem where samples belonging to a class of interest are discriminated from a global background distribution \cite{Zare2016MIACE}.  Most pattern recognition techniques in the literature for target detection in remote sensing are based off variations of constrained energy minimization and maximum likelihood with matched filters \cite{Geng2017TargetDetection,Chaudhuri1995TargetDetection}. The goal of learning in these scenarios is to discover prototypes which represent both the target and background classes which can be compared against during test.  Traditional supervised learning approaches such as these require extensive amounts of highly precise groundtruth to guide algorithmic training.  However, acquiring large quantities  of accurately labeled training data can be expensive both in terms of time and resources, and in some cases, may even be infeasible to obtain.  Consider the scenario described in \cite{Du2017Thesis} and \cite{Bocinsky2019Thesis}.  
 
-Techniques which can address these forms of label ambiguity while achieving comparable or better target detection than standard supervised methods can greatly ease the burdens associated with many remote sensing tasks. 
+This example demonstrates inherent in-feasibility to obtain accurate sample-level labels due to both sensor accuracy and resolution restrictions.  Furthermore, label imprecision and ambiguity can often be presented from subjectivity between annotators. Additionally, many applications such as medical diagnosis or wildlife identification require domain experts to provide accurate data labels.  However, label subjectivity is even introduced in this  case, as there might not always be agreement between expert annotators.  For example, when looking at computed tomography (CT) scans for malignant/benign tumors, many doctors would likely determine different pixel-level boundaries denoting the tumor, and in some cases, might even mis-classify the detriment of the growth.  Similarly, expert wildlife  ecologist determining the identity of birds solely from their songs might get a few incorrect.
 
-Images showing examples of weak labels (point, scribble, in-image, region/ weak bounding box)
+Techniques which can address these forms of label ambiguity while achieving comparable or better target detection than standard supervised methods can greatly ease the burdens associated with many remote sensing labeling tasks and allow for the application of pattern recognition techniques which would otherwise be infeasible.
 
-%\begin{center}
-%	\begin{figure*}[h]
-%		\centering
-%		\includegraphics[width=0.8\textwidth]{example-image-a}
-%		\caption{}
-%		\label{fig:samples}
-%	\end{figure*}
-%\end{center}
+
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{"introduction/weak_labels"}
+		\caption{Examples of weakly-labeled infrared imagery.  The images demonstrate various forms of weak groundtruth around a pickup truck taken with a mid-wave infrared camera.  The images show spot, scribble, imprecise bounding box and image-level labels, respectively.}
+		\label{fig:weak_labels}
+	\end{figure*}
+\end{center}
+
+\begin{figure*}[t!]
+	\centering
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=1.2in]{"introduction/target_img"}
+		\caption{}
+	\end{subfigure}%
+	~ 
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=1.2in]{"introduction/bg_img"}
+		\caption{}
+	\end{subfigure}
+	\caption{Example of image-level labels for binary target detection.  Image (a) is denoted to contain pixels belonging to the target class somewhere within the image, while image (b) clearly contains samples solely from the background distribution.}
+	\label{fig:binary_targets}%
+\end{figure*}
 
 \subsection{What is Multiple Instance Learning/ How it Addresses Uncertainty}
 Learning from uncertain, imprecise and ambiguous data has been an active area of research since the late 1990s and is known as multiple instance learning (MIL) \cite{Bocinsky2019Thesis}.  Supervised learning assumes that each training sample is paired with a corresponding classification label.  In multiple instance learning, however, the label of each sample is not necessarily known.  Instead, MIL approaches learn from groups of data points called \textit{bags}, and each bag concept is paired with a label \cite{Cook2015Thesis}. Under the two-class classification scenario the bags are labeled as \textit{negative} if all data points (or \textit{instances}) are known to belong to the background class (not the class of interest).  While the actual number of positive and negative instances may be unknown, bags are labeled \textit{positive} if \textit{at least one} instance is known to belong to the target class (also called a ``true positive") \cite{Zare2016MIACE}.  The goal of learning under the MIL framework is to train a model which can classify a bag as positive or negative (bag-level classification) or to predict the class labels of individual instances (instance-level classification). This problem formulation fits many remote sensing scenarios and is thus an important area of investigation \cite{Du2017Thesis}.  
@@ -51,6 +69,9 @@ Effects of high-dimensionality on classification and relation to obtaining train
 	\item Why reduce dimensionality?
 	\item Examples of uninformative and redundant (correlated) features (crabs, etc)
 \end{itemize}
+
+
+The goal of manifold learning can be posed as discovering intrinsic features from the data which meet an overarching objective, such as preserving variance, maintaining global or local structure  or promoting discriminability.
 
 \subsection{Existing Approaches}
 Recently, methods for representation learning have gained in popularity because they typically result in high levels of accuracy.  Some of these methods  learn features in a supervised manner to obtain a more discriminative representation.  However, this learning cannot be done directly in  MIL because of the uncertainty on the labels.  Thus, \textit{adaptation of discriminative  feature learning methods would be beneficial to MIL} \cite{Carbonneau2016MILSurvey}.
