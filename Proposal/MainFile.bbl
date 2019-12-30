@@ -52,6 +52,19 @@ A.~Zare, ``Hyperspectral endmember detection and band selection using bayesian
 M.~Cook, ``Task driven extended functions of multiple instances (td-efumi),''
   Master's thesis, Univ. of Missouri, Columbia, MO, 2015.
 
+\bibitem{VanDerMaaten2009DRReview}
+L.~van~der Maaten, E.~Postma, and H.~Herik, ``Dimensionality reduction: A
+  comparative review,'' \emph{Journal of Machine Learning Research - JMLR},
+  vol.~10, 01 2007.
+
+\bibitem{Bengio2014RepLearningReview}
+\BIBentryALTinterwordspacing
+Y.~Bengio, A.~C. Courville, and P.~Vincent, ``Unsupervised feature learning and
+  deep learning: {A} review and new perspectives,'' \emph{CoRR}, vol.
+  abs/1206.5538, 2012. [Online]. Available:
+  \url{http://arxiv.org/abs/1206.5538}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Carbonneau2016MILSurvey}
 \BIBentryALTinterwordspacing
 M.~Carbonneau, V.~Cheplygina, E.~Granger, and G.~Gagnon, ``Multiple instance

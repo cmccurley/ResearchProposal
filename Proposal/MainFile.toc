@@ -3,7 +3,7 @@
 \addvspace {10pt}\noindent {CHAPTER}\hfill \par 
 \contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{7}{chapter.1}
 \contentsline {subsection}{\numberline {1.0.1}What is Dimensionality Reduction/ Manifold Learning/ Feature Embedding? Better feature representations facilitate classification.}{11}{subsection.1.0.1}
-\contentsline {subsection}{\numberline {1.0.2}Existing Approaches}{11}{subsection.1.0.2}
+\contentsline {subsection}{\numberline {1.0.2}Existing Approaches}{12}{subsection.1.0.2}
 \contentsline {subsection}{\numberline {1.0.3}Proposition and Research Questions}{13}{subsection.1.0.3}
 \contentsline {subsection}{\numberline {1.0.4}Datasets}{14}{subsection.1.0.4}
 \contentsline {chapter}{\numberline {2}\uppercase {Background}}{15}{chapter.2}
