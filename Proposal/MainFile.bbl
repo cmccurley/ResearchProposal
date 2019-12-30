@@ -31,11 +31,9 @@ B.~Chaudhuri and S.~Parui, ``Target detection: Remote sensing techniques for
   285--291, 04 1995.
 
 \bibitem{Zare2016MIACE}
-\BIBentryALTinterwordspacing
-A.~Zare, C.~Jiao, and T.~C. Glenn, ``Multiple instance hyperspectral target
-  characterization,'' \emph{CoRR}, vol. abs/1606.06354, 2016. [Online].
-  Available: \url{http://arxiv.org/abs/1606.06354}
-\BIBentrySTDinterwordspacing
+A.~Zare, C.~Jiao, and T.~Glenn, ``Discriminative multiple instance
+  hyperspectral target characterization,'' \emph{IEEE Trans. Pattern Anal.
+  Mach. Inteli.}, vol.~40, no.~10, pp. 2342--2354, Oct. 2018.
 
 \bibitem{Du2017Thesis}
 X.~Du, ``Multiple instance choquet integral for multiresolution sensor

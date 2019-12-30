@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  22 DEC 2019 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  29 DEC 2019 19:39
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -576,7 +576,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-]
+] [8]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
 _bbox".jpg, id=352, 255.95625pt x 202.356pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
@@ -600,11 +600,8 @@ und-ing boxes (blue). Red dots
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_labels".jpg, id=358, 485.4135pt x 396.88275pt>
+_labels".jpg, id=353, 485.4135pt x 396.88275pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_labels".jpg Graphic file (type jpg)
 
@@ -630,7 +627,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/targ
-et_img".jpg, id=359, 111.41624pt x 69.861pt>
+et_img".jpg, id=354, 111.41624pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /target_img".jpg Graphic file (type jpg)
 
@@ -641,7 +638,7 @@ ages/""introduction/target_img".jpg used on input line 56.
 (pdftex.def)             Requested size: 138.31111pt x 86.72377pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/bg_i
-mg".jpg, id=360, 110.21175pt x 69.861pt>
+mg".jpg, id=355, 110.21175pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /bg_img".jpg Graphic file (type jpg)
 
@@ -668,29 +665,30 @@ e within the im-age, while im-age (b)
  []
 
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 71.
-
-
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 72.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 71.
 
 [9 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/weak
 _bbox.jpg>] [10 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/intr
 oduction/weak_labels.jpg> <C:/Users/Conma/Documents/ResearchProposal/Proposal/I
 mages/introduction/target_img.jpg> <C:/Users/Conma/Documents/ResearchProposal/P
-roposal/Images/introduction/bg_img.jpg>] [11] [12]
+roposal/Images/introduction/bg_img.jpg>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 75.
+
+[11] [12]
+Underfull \hbox (badness 10000) detected at line 96
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 97
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 98
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 99
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 100
 [][][]
  []
 
@@ -820,34 +818,43 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
 (Chapters/ch_FutureTasks.aux) (Chapters/ch_Conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
-Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: B782420263BB2F31BEC2E471ABE6D6D0;4802.
 
+
+Package rerunfilecheck Warning: File `MainFile.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `MainFile.out':
+(rerunfilecheck)             Before: 2BC92F9450F459F0C999FF229B1B62F1;4672
+(rerunfilecheck)             After:  DE07B8AE077276B9BC7611AE4CC9A4C9;4585.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 8103 strings out of 493323
- 122240 string characters out of 3139067
- 208996 words of memory out of 3000000
- 11323 multiletter control sequences out of 15000+200000
+ 8101 strings out of 493323
+ 122206 string characters out of 3139067
+ 208995 words of memory out of 3000000
+ 11322 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,8n,42p,3158b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y10.pfb>
-Output written on MainFile.pdf (24 pages, 303130 bytes).
+pdfTeX warning (dest): name{subsection.1.0.5} has been referenced but does no
+t exist, replaced by a fixed one
+
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb>
+Output written on MainFile.pdf (24 pages, 302181 bytes).
 PDF statistics:
- 517 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
- 469 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 511 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 461 words of extra memory for PDF output out of 10000 (max. 10000000)
 
