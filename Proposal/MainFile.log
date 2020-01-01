@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  29 DEC 2019 19:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  31 DEC 2019 19:21
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -682,12 +682,12 @@ Underfull \hbox (badness 10000) detected at line 94
 [][][]
  []
 
-
+[13]
 Underfull \hbox (badness 10000) detected at line 95
 [][][]
  []
 
-[13]
+
 Underfull \hbox (badness 10000) detected at line 96
 [][][]
  []
@@ -843,7 +843,7 @@ ublic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 y10.pfb>
-Output written on MainFile.pdf (24 pages, 303014 bytes).
+Output written on MainFile.pdf (24 pages, 303167 bytes).
 PDF statistics:
  511 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)
