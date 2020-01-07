@@ -378,14 +378,6 @@ X.~{Gao}, X.~{Wang}, D.~{Tao}, and X.~{Li}.
 \newblock ISSN 1083-4419.
 \newblock \doi{10.1109/TSMCB.2010.2057422}.
 
-\bibitem[{Gönen}(2013)]{Gonen2013BayesianSupDimRed}
-M.~{Gönen}.
-\newblock Bayesian supervised dimensionality reduction.
-\newblock \emph{IEEE Transactions on Cybernetics}, 43\penalty0 (6):\penalty0
-  2179--2189, Dec 2013.
-\newblock ISSN 2168-2267.
-\newblock \doi{10.1109/TCYB.2013.2245321}.
-
 \bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and
   Courville]{Goodfellow2016DeepLearning}
 I.~Goodfellow, Y.~Bengio, and A.~Courville.
@@ -418,6 +410,14 @@ L.~Guo.
 \newblock Latent variable algorithms for multimodal learning and sensor fusion.
 \newblock \emph{CoRR}, abs/1904.10450, 2019.
 \newblock URL \url{http://arxiv.org/abs/1904.10450}.
+
+\bibitem[{Gönen}(2013)]{Gonen2013BayesianSupDimRed}
+M.~{Gönen}.
+\newblock Bayesian supervised dimensionality reduction.
+\newblock \emph{IEEE Transactions on Cybernetics}, 43\penalty0 (6):\penalty0
+  2179--2189, Dec 2013.
+\newblock ISSN 2168-2267.
+\newblock \doi{10.1109/TCYB.2013.2245321}.
 
 \bibitem[{Hackett} and {Shah}(1990)]{hackett1990multisensorfusion}
 J.~K. {Hackett} and M.~{Shah}.

@@ -177,7 +177,7 @@
 	\paperentry{Belkin2004SemiSupLearningRiemannianManifolds}
 	{Semi-Supervised Learning on Riemannian Manifolds}
 	{Manifold_Representation_Learning/Supervised/Belkin2004SemiSupLearningRiemannianManifolds.pdf}
-	{}
+	{The authors developed a semi-supervised approach for classification on Riemannian manifolds.  The algorithms uses unsupervised data to model the manifold using the adjacency graph and graph Laplacian, then uses labels to learn a discriminant function in the embedding space. \textbf{Collecting labeled examples can be costly and time-consuming.}  This paper also provides a detailed explanation of the \textbf{Graph Laplacian}.}
 	
 	\paperentry{Geng2005SupNonlinearDimRed}
 	{Supervised nonlinear dimensionality reduction for visualization and classification}
@@ -187,7 +187,7 @@
 	\paperentry{Sugiyama2006FDASupDimRed}
 	{Local Fisher Discriminant Analysis for Supervised Dimensionality Reduction}
 	{Manifold_Representation_Learning/Supervised/Sugiyama2006FDASupDimRed.pdf}
-	{}
+	{Dimensionality reduction is one of the important preprocessing steps in high-dimensional data analysis. The authors considered the supervised dimensionality reduction problem, where each sample has an associated label.  The author notes that Fisher's discriminant often fails when classes are multi-modal.  This lead the author to develop a local FDA which allows multimodal data to be embedded appropriately. This method combines traditional FDA and locality preserving projections (LLP) where between-class separability is maximized while within-class local structure is preserved.  This method is linear, but can be kernelized.}
 	
 	\paperentry{Rish2008SupDimRedGLM}
 	{Closed-form supervised dimensionality reduction with generalized linear models}
@@ -249,7 +249,7 @@
 	\paperentry{Vural2018StudySupervisedManifoldLearning}
 	{A study of the classification of low-dimensional data with supervised manifold learning}
 	{Manifold_Representation_Learning/Supervised/Vural2018StudySupervisedManifoldLearning.pdf}
-	{}
+	{ \textbf{Supervised manifold learning methods learn data representations by preserving the geometric structure of data while enhancing the separation between data samples from different classes.}  This paper provides a good lit review of supervised dimensionality reduction methods and explains the differences between linear and nonlinear approaches.  The authors studied satisfying conditions on the interpolation functions for nonlinear methods for test. It was found that the misclassification error probability decays at an exponential rate with the number of samples, provided that the interpolation function is sufficiently regular with respect to the separation margin of the embedding. \newline Supervised Laplacian eigenmaps methods embed the data with the eigenvectors of the linear combination of two graph Laplacian matrices that encode the links between neighboring samples from the same class and different classes.  In such a data representation, the coordinates of neighboring data samples change slowly within the same class and rapidly across different classes. \newline \textbf{This paper provides good mathematical definitions of data separability.}  There is also toy data in their experiments section which might be usable for MIL discriminative manifold learning. \textbf{Compare against their toy data experiments with MIL.}}
 	
 	
 	\paperentry{Kang2018ManifoldRegularizedPCA}
