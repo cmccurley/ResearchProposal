@@ -65,6 +65,12 @@ Y.~Bengio, A.~C. Courville, and P.~Vincent, ``Unsupervised feature learning and
   \url{http://arxiv.org/abs/1206.5538}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Geng2005SupNonlinearDimRed}
+{X. Geng}, {D. Zhan}, and {Z. Zhou}, ``Supervised nonlinear dimensionality
+  reduction for visualization and classification,'' \emph{IEEE Transactions on
+  Systems, Man, and Cybernetics, Part B (Cybernetics)}, vol.~35, no.~6, pp.
+  1098--1107, Dec 2005.
+
 \bibitem{Carbonneau2016MILSurvey}
 \BIBentryALTinterwordspacing
 M.~Carbonneau, V.~Cheplygina, E.~Granger, and G.~Gagnon, ``Multiple instance
