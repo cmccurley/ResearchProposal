@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: masterReferences.aux
+The style file: plainnat.bst
+Database file #1: references.bib
+I was expecting a `,' or a `}'---line 53 of file references.bib
+ :  
+ :  author = { X. Li and V. Monga},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 103 of file references.bib
+ :  
+ :  number = {2}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 261 of file references.bib
+ :  
+ :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2015 of file references.bib
+ :  
+ :  doi = {10.1117/12.778898},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
+Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
+while executing---line 1347 of file plainnat.bst
+Warning--to sort, need author or key in Li2018CollaborativeSparsePriorsMultiViewATR
+Warning--empty author in Li2018CollaborativeSparsePriorsMultiViewATR
+Warning--empty title in Li2018CollaborativeSparsePriorsMultiViewATR
+Warning--empty booktitle in Li2018CollaborativeSparsePriorsMultiViewATR
+Warning--empty year in Li2018CollaborativeSparsePriorsMultiViewATR
+Warning--empty year in Li2018CollaborativeSparsePriorsMultiViewATR
+Warning--empty booktitle in Beyer2009HeterogeneousMixtureOfExperts
+Warning--empty journal in Bishop1998GTM
+Warning--empty journal in Damianou2017ManifoldAlignmentDifferentDataView
+Warning--empty journal in Delaporte2008DiffusionMaps
+Warning--empty booktitle in Li2017SmoothMIL
+Warning--empty booktitle in Mahalanobis2019DSIACCharacterization
+Warning--empty booktitle in Rish2008SupDimRedGLM
+Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "Ryan E. Smith,Derek T. Anderson,John E. Ball,Alina Zare,Brendan Alvey" for entry Smith2017ChoquetIntegralLandmine
+while executing---line 1429 of file plainnat.bst
+Warning--empty booktitle in Tanner2019DSIACNeuralNet
+Warning--empty booktitle in Trabelsi2018FuzzyClusteringMILRegression
+Warning--empty journal in Tuia2015KernelManifoldAlignment
+Warning--can't use both author and editor fields in Tulyakov2008ReviewClassifierCombinationMethods
+Warning--empty journal in Wang2010MultiscaleManAlignment
+Warning--empty journal in Wang2011ManifoldAlignment
+(There were 12 error messages)

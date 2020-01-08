@@ -1,0 +1,1229 @@
+\begin{thebibliography}{151}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Li2()]{Li2018CollaborativeSparsePriorsMultiViewATR}
+
+
+\bibitem[{\'Alvarez} et~al.(2010){\'Alvarez}, {Baumela}, {Henr\'iquez}, and
+  {M\'arquez-Neila}]{Alvarez2010MorphologicalSnakes}
+L.~{\'Alvarez}, L.~{Baumela}, P.~{Henr\'iquez}, and P.~{M\'arquez-Neila}.
+\newblock Morphological snakes.
+\newblock In \emph{2010 IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition}, pages 2197--2202, June 2010.
+\newblock \doi{10.1109/CVPR.2010.5539900}.
+
+\bibitem[{Anderson} et~al.(2017){Anderson}, {Islam}, {King}, {Younan},
+  {Fairley}, {Howington}, {Petry}, {Elmore}, and
+  {Zare}]{Anderson2017BinaryFuzzyMeasureChoquetIntegral}
+D.~T. {Anderson}, M.~A. {Islam}, R.~{King}, N.~H. {Younan}, J.~R. {Fairley},
+  S.~{Howington}, F.~{Petry}, P.~{Elmore}, and A.~{Zare}.
+\newblock Binary fuzzy measures and choquet integration for multi-source
+  fusion.
+\newblock In \emph{2017 International Conference on Military Technologies
+  (ICMT)}, pages 676--681, May 2017.
+\newblock \doi{10.1109/MILTECHS.2017.7988843}.
+
+\bibitem[{Arandjelovic} et~al.(2005){Arandjelovic}, {Shakhnarovich}, {Fisher},
+  {Cipolla}, and {Darrell}]{Arandjelovic2005FaceRecManifoldDensityDivergence}
+O.~{Arandjelovic}, G.~{Shakhnarovich}, J.~{Fisher}, R.~{Cipolla}, and
+  T.~{Darrell}.
+\newblock Face recognition with image sets using manifold density divergence.
+\newblock In \emph{2005 IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition (CVPR'05)}, volume~1, pages 581--588 vol. 1, June 2005.
+\newblock \doi{10.1109/CVPR.2005.151}.
+
+\bibitem[Belkin and Niyogi(2003)]{Belkin2003LaplacianEigenmaps}
+M.~Belkin and P.~Niyogi.
+\newblock Laplacian eigenmaps for dimensionality reduction and data
+  representation.
+\newblock \emph{Neural Computation}, 15\penalty0 (6):\penalty0 1373--1396,
+  2003.
+\newblock \doi{10.1162/089976603321780317}.
+
+\bibitem[Belkin and Niyogi(2004)]{Belkin2004SemiSupLearningRiemannianManifolds}
+M.~Belkin and P.~Niyogi.
+\newblock Semi-supervised learning on riemannian manifolds.
+\newblock \emph{Machine Learning}, 56\penalty0 (1):\penalty0 209--239, Jul
+  2004.
+\newblock ISSN 1573-0565.
+\newblock \doi{10.1023/B:MACH.0000033120.25363.1e}.
+
+\bibitem[Belkin et~al.(2006)Belkin, Niyogi, and Sindhwani]{Belkin2006ManReg}
+M.~Belkin, P.~Niyogi, and V.~Sindhwani.
+\newblock Manifold regularization: A geometric framework for learning from
+  labeled and unlabeled examples.
+\newblock \emph{J. Mach. Learn. Res.}, 7:\penalty0 2399--2434, December 2006.
+\newblock ISSN 1532-4435.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=1248547.1248632}.
+
+\bibitem[Bengio et~al.(2012)Bengio, Courville, and
+  Vincent]{Bengio2014RepLearningReview}
+Y.~Bengio, A.~C. Courville, and P.~Vincent.
+\newblock Unsupervised feature learning and deep learning: {A} review and new
+  perspectives.
+\newblock \emph{CoRR}, abs/1206.5538, 2012.
+\newblock URL \url{http://arxiv.org/abs/1206.5538}.
+
+\bibitem[Bengoetxea(2002)]{Bengoetxea2002ThesisGraphMatching}
+E.~Bengoetxea.
+\newblock \emph{Inexact Graph Matching Using Estimation of Distribution
+  Algorithms}.
+\newblock PhD thesis, Ecole Nationale Sup\'erieure des T\'el\'ecommunications,
+  Paris, France, Dec. 2002.
+
+\bibitem[Beyer et~al.(2009)Beyer, Heesche, Hauptmann, and
+  Otte]{Beyer2009HeterogeneousMixtureOfExperts}
+J.~Beyer, K.~Heesche, W.~Hauptmann, and C.~Otte.
+\newblock Heterogeneous mixture-of-experts for fusion of locally valid
+  knowledge-based submodels.
+\newblock 01 2009.
+
+\bibitem[Bishop et~al.(1998)Bishop, Svensén, and Williams]{Bishop1998GTM}
+C.~Bishop, M.~Svensén, and C.~K.~I. Williams.
+\newblock Gtm: The generative topographic mapping.
+\newblock 10:\penalty0 215--234, January 1998.
+\newblock URL
+  \url{https://www.microsoft.com/en-us/research/publication/gtm-the-generative-topographic-mapping/}.
+
+\bibitem[Bocinsky(2019)]{Bocinsky2019Thesis}
+J.~Bocinsky.
+\newblock Learning multiple target concepts from uncertain, ambiguous data
+  using the adaptive cosine estimator and spectral match filter.
+\newblock Master's thesis, Univ. of Florida, Gainesville, FL, May 2019.
+
+\bibitem[Bocinsky et~al.(2019)Bocinsky, McCurley, Shats, and
+  Zare]{Bocinsky2019SPIEMIACEInitialization}
+J.~Bocinsky, C.~H. McCurley, D.~Shats, and A.~Zare.
+\newblock Investigation of initialization strategies for the multiple instance
+  adaptive cosine estimator.
+\newblock In \emph{Detection and Sensing of Mines, Explosive Objects, and
+  Obscured Targets XXIV, 110120N}, volume 11012 of \emph{Proc.SPIE}, May 2019.
+\newblock \doi{10.1117/12.2519463}.
+
+\bibitem[{Bouzas} et~al.(2015){Bouzas}, {Arvanitopoulos}, and
+  {Tefas}]{Bouzas2015GraphEmbeddedMutualInformationSupDimRed}
+D.~{Bouzas}, N.~{Arvanitopoulos}, and A.~{Tefas}.
+\newblock Graph embedded nonparametric mutual information for supervised
+  dimensionality reduction.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  26\penalty0 (5):\penalty0 951--963, May 2015.
+\newblock ISSN 2162-237X.
+\newblock \doi{10.1109/TNNLS.2014.2329240}.
+
+\bibitem[{Brigot} et~al.(2016){Brigot}, {Colin-Koeniguer}, {Plyer}, and
+  {Janez}]{Brigot2016CoregistrationForestRemoteSensingImages}
+G.~{Brigot}, E.~{Colin-Koeniguer}, A.~{Plyer}, and F.~{Janez}.
+\newblock Adaptation and evaluation of an optical flow method applied to
+  coregistration of forest remote sensing images.
+\newblock \emph{IEEE Journal of Selected Topics in Applied Earth Observations
+  and Remote Sensing}, 9\penalty0 (7):\penalty0 2923--2939, July 2016.
+\newblock ISSN 1939-1404.
+\newblock \doi{10.1109/JSTARS.2016.2578362}.
+
+\bibitem[{Bronstein} et~al.(2017){Bronstein}, {Bruna}, {LeCun}, {Szlam}, and
+  {Vandergheynst}]{Bronstein2017GeometricDeepLearning}
+M.~M. {Bronstein}, J.~{Bruna}, Y.~{LeCun}, A.~{Szlam}, and P.~{Vandergheynst}.
+\newblock Geometric deep learning: Going beyond euclidean data.
+\newblock \emph{IEEE Signal Processing Magazine}, 34\penalty0 (4):\penalty0
+  18--42, July 2017.
+\newblock ISSN 1053-5888.
+\newblock \doi{10.1109/MSP.2017.2693418}.
+
+\bibitem[Butenuth et~al.(2007)Butenuth, v.~Gösseln, Tiedge, Heipke, Lipeck,
+  and Sester]{Butenuth2007HeterogeneousGeospatialData}
+M.~Butenuth, G.~v.~Gösseln, M.~Tiedge, C.~Heipke, U.~Lipeck, and M.~Sester.
+\newblock Integration of heterogeneous geospatial data in a federated database.
+\newblock \emph{ISPRS Journal of Photogrammetry and Remote Sensing},
+  62:\penalty0 328--346, 10 2007.
+\newblock \doi{10.1016/j.isprsjprs.2007.04.003}.
+
+\bibitem[Cao et~al.(2016)Cao, Luo, Chen, Yihan, Wang, Wang, and
+  Ji]{Cao2016VehicleDetectionMIL}
+L.~Cao, F.~Luo, L.~Chen, S.~Yihan, H.~Wang, C.~Wang, and R.~Ji.
+\newblock Weakly supervised vehicle detection in satellite images via
+  multi-instance discriminative learning.
+\newblock \emph{Pattern Recognition}, 64, 12 2016.
+\newblock \doi{10.1016/j.patcog.2016.10.033}.
+
+\bibitem[Carbonneau et~al.(2016)Carbonneau, Cheplygina, Granger, and
+  Gagnon]{Carbonneau2016MILSurvey}
+M.~Carbonneau, V.~Cheplygina, E.~Granger, and G.~Gagnon.
+\newblock Multiple instance learning: {A} survey of problem characteristics and
+  applications.
+\newblock \emph{CoRR}, abs/1612.03365, 2016.
+\newblock URL \url{http://arxiv.org/abs/1612.03365}.
+
+\bibitem[Caselles et~al.(1997)Caselles, Kimmel, and
+  Sapiro]{Caselles1997GeodesicActiveContours}
+V.~Caselles, R.~Kimmel, and G.~Sapiro.
+\newblock Geodesic active contours.
+\newblock \emph{International Journal of Computer Vision}, 22\penalty0
+  (1):\penalty0 61--79, Feb 1997.
+\newblock ISSN 1573-1405.
+\newblock \doi{10.1023/A:1007979827043}.
+\newblock URL \url{https://doi.org/10.1023/A:1007979827043}.
+
+\bibitem[Chao et~al.(2019)Chao, Luo, and
+  Ding]{Chao2019RecentAdvancesSupervisedDimRed}
+G.~Chao, Y.~Luo, and W.~Ding.
+\newblock Recent advances in supervised dimension reduction: A survey.
+\newblock \emph{Machine Learning and Knowledge Extraction}, 1\penalty0
+  (1):\penalty0 341--358, 2019.
+\newblock ISSN 2504-4990.
+\newblock \doi{10.3390/make1010020}.
+
+\bibitem[Chen et~al.(2018)Chen, Wang, Li, and
+  Sun]{Chen2018RobustSemiSupManifoldLearning}
+M.~Chen, J.~Wang, X.~Li, and X.~Sun.
+\newblock Robust semi-supervised manifold learning algorithm for
+  classification.
+\newblock \emph{Mathematical Problems in Engineering}, 2018:\penalty0 1--8, 02
+  2018.
+\newblock \doi{10.1155/2018/2382803}.
+
+\bibitem[{Cheplygina} et~al.(2016){Cheplygina}, {Tax}, and
+  {Loog}]{Cheplygina2016DissimilarityEnsemblesMIL}
+V.~{Cheplygina}, D.~M.~J. {Tax}, and M.~{Loog}.
+\newblock Dissimilarity-based ensembles for multiple instance learning.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  27\penalty0 (6):\penalty0 1379--1391, June 2016.
+\newblock ISSN 2162-237X.
+\newblock \doi{10.1109/TNNLS.2015.2424254}.
+
+\bibitem[Cheplygina et~al.(2019)Cheplygina, Bruijne, and
+  Pluim]{Cheplygina2019MILSurvey}
+V.~Cheplygina, M.~Bruijne, and J.~P.~W. Pluim.
+\newblock Not-so-supervised: A survey of semi-supervised, multi-instance, and
+  transfer learning in medical image analysis.
+\newblock \emph{Medical Image Analysis}, 54:\penalty0 280 -- 296, 2019.
+\newblock ISSN 1361-8415.
+\newblock \doi{https://doi.org/10.1016/j.media.2019.03.009}.
+
+\bibitem[Chiang and Gader(1997)]{Chiang1997HandWrittenWords}
+J.~Chiang and P.~D. Gader.
+\newblock Hybrid fuzzy-neural systems in handwritten word recognition.
+\newblock \emph{IEEE Transactions on Fuzzy Systems}, 5\penalty0 (4):\penalty0
+  497--510, Nov 1997.
+\newblock ISSN 1063-6706.
+\newblock \doi{10.1109/91.649901}.
+
+\bibitem[Choo et~al.(2012)Choo, Bohn, Nakamura, White, and
+  Park]{Choo2012HeterogeneousDataFusionGraphs}
+J.~Choo, S.~Bohn, G.~Nakamura, A.~M. White, and H.~Park.
+\newblock Heterogeneous data fusion via space alignment using nonmetric
+  multidimensional scaling.
+\newblock In \emph{SDM}, 2012.
+
+\bibitem[Cook(2015)]{Cook2015Thesis}
+M.~Cook.
+\newblock Task driven extended functions of multiple instances (td-efumi).
+\newblock Master's thesis, Univ. of Missouri, Columbia, MO, 2015.
+
+\bibitem[Cook et~al.(2016)Cook, Zare, and Ho]{Cook2016LandmineTaskDriveneFUMI}
+M.~Cook, A.~Zare, and D.~K.~C. Ho.
+\newblock Buried object detection using handheld wemi with task-driven extended
+  functions of multiple instances.
+\newblock In \emph{Proc. SPIE 9823, Detection and Sensing of Mines, Explosive
+  Objects, and Obscured Targets XXI, 98230A}, volume 9823 of \emph{Proc. SPIE},
+  pages 9823 -- 9823 -- 9, Apr. 2016.
+\newblock \doi{10.1117/12.2223349}.
+
+\bibitem[Cui et~al.(2014)Cui, Chang, Shan, and
+  Chen]{Cui2014GenUnsupManifoldAlignment}
+Z.~Cui, H.~Chang, S.~Shan, and X.~Chen.
+\newblock Generalized unsupervised manifold alignment.
+\newblock In Z.~Ghahramani, M.~Welling, C.~Cortes, N.~D. Lawrence, and K.~Q.
+  Weinberger, editors, \emph{Advances in Neural Information Processing Systems
+  27}, pages 2429--2437. Curran Associates, Inc., 2014.
+\newblock URL
+  \url{http://papers.nips.cc/paper/5620-generalized-unsupervised-manifold-alignment.pdf}.
+
+\bibitem[Dai et~al.(2017)Dai, Wang, Aston, Hua, and
+  Wipf]{Dai2017VariationalAutoencoder}
+B.~Dai, Y.~Wang, J.~Aston, G.~Hua, and D.~Wipf.
+\newblock Hidden talents of the variational autoencoder, 2017.
+
+\bibitem[Damianou et~al.(2017)Damianou, D.~Lawrence, and
+  Ek]{Damianou2017ManifoldAlignmentDifferentDataView}
+Andreas Damianou, Neil D.~Lawrence, and Carl~Henrik Ek.
+\newblock Manifold alignment determination: finding correspondences across
+  different data views.
+\newblock 01 2017.
+
+\bibitem[{Davenport} et~al.(2010){Davenport}, {Hegde}, {Duarte}, and
+  {Baraniuk}]{Davenport2010JointManifoldsDataFusion}
+M.~A. {Davenport}, C.~{Hegde}, M.~F. {Duarte}, and R.~G. {Baraniuk}.
+\newblock Joint manifolds for data fusion.
+\newblock \emph{IEEE Transactions on Image Processing}, 19\penalty0
+  (10):\penalty0 2580--2594, Oct 2010.
+\newblock ISSN 1057-7149.
+\newblock \doi{10.1109/TIP.2010.2052821}.
+
+\bibitem[Dawn et~al.(2010)Dawn, Saxena, and
+  Sharma]{Dawn2010SurveyRemoteSensingImageRegistration}
+S.~Dawn, V.~Saxena, and B.~Sharma.
+\newblock Remote sensing image registration techniques: A survey.
+\newblock In A.~Elmoataz, O.~Lezoray, F.~Nouboud, D.~Mammass, and J.~Meunier,
+  editors, \emph{Image and Signal Processing}, pages 103--112, Berlin,
+  Heidelberg, 2010. Springer Berlin Heidelberg.
+\newblock ISBN 978-3-642-13681-8.
+
+\bibitem[Delaporte et~al.(2008)Delaporte, Herbst, Hereman, and der
+  Walt]{Delaporte2008DiffusionMaps}
+J.~Delaporte, B.~M. Herbst, W.~Hereman, and S.~Van der Walt.
+\newblock An introduction to diffusion maps.
+\newblock 2008.
+
+\bibitem[Dietterich et~al.(1997)Dietterich, Lathrop, and
+  Lozano-Pérez]{Dietterich1996AxisParallelRectangles}
+T.~G. Dietterich, R.~H. Lathrop, and T.~Lozano-Pérez.
+\newblock Solving the multiple instance problem with axis-parallel rectangles.
+\newblock \emph{Artificial Intelligence}, 89\penalty0 (1):\penalty0 31 -- 71,
+  1997.
+\newblock ISSN 0004-3702.
+\newblock \doi{https://doi.org/10.1016/S0004-3702(96)00034-3}.
+
+\bibitem[Du(2017)]{Du2017Thesis}
+X.~Du.
+\newblock \emph{Multiple Instance Choquet Integral For MultiResolution Sensor
+  Fusion}.
+\newblock PhD thesis, Univ. of Missouri, Columbia, MO, Dec. 2017.
+
+\bibitem[Du and Zare(2018)]{Du2018MultiResolutionSensorFusion}
+X.~Du and A.~Zare.
+\newblock Multi-resolution multi-modal sensor fusion for remote sensing data
+  with label uncertainty.
+\newblock \emph{CoRR}, abs/1805.00930, 2018.
+\newblock URL \url{http://arxiv.org/abs/1805.00930}.
+
+\bibitem[{Du} and {Zare}(2019)]{Du2019MIChoquetIntegral}
+X.~{Du} and A.~{Zare}.
+\newblock Multiple instance choquet integral classifier fusion and regression
+  for remote sensing applications.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  57\penalty0 (5):\penalty0 2741--2753, May 2019.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2018.2876687}.
+
+\bibitem[{Du} et~al.(2016){Du}, {Zare}, {Keller}, and
+  {Anderson}]{Du2016MIChoquetIntegralFusion}
+X.~{Du}, A.~{Zare}, J.~M. {Keller}, and D.~T. {Anderson}.
+\newblock Multiple instance choquet integral for classifier fusion.
+\newblock In \emph{2016 IEEE Congress on Evolutionary Computation (CEC)}, pages
+  1054--1061, July 2016.
+\newblock \doi{10.1109/CEC.2016.7743905}.
+
+\bibitem[Frigui and Gader(2009)]{Frigui2009LandmineSOM}
+H.~Frigui and P.~Gader.
+\newblock Detection and discrimination of land mines in ground-penetrating
+  radar based on edge histogram descriptors and a possibilistic $k$-nearest
+  neighbor classifier.
+\newblock \emph{IEEE Transactions on Fuzzy Systems}, 17\penalty0 (1), Feb 2009.
+\newblock ISSN 1063-6706.
+\newblock \doi{10.1109/TFUZZ.2008.2005249}.
+
+\bibitem[{Frigui} et~al.(2010){Frigui}, {Zhang}, and
+  {Gader}]{Frigui2010ContextDependentFusionLandmine}
+H.~{Frigui}, L.~{Zhang}, and P.~D. {Gader}.
+\newblock Context-dependent multisensor fusion and its application to land mine
+  detection.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  48\penalty0 (6):\penalty0 2528--2543, June 2010.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2009.2039936}.
+
+\bibitem[Fritzke(1994)]{Fritzke1995GrowingNeuralGas}
+B.~Fritzke.
+\newblock A growing neural gas network learns topologies.
+\newblock In \emph{Proceedings of the 7th International Conference on Neural
+  Information Processing Systems}, NIPS'94, pages 625--632, Cambridge, MA, USA,
+  1994. MIT Press.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=2998687.2998765}.
+
+\bibitem[{Gader} et~al.(2004){Gader}, {Mendez-Vasquez}, {Chamberlin}, {Bolton},
+  and {Zare}]{Gader2004ChoquetIntegralLandmine}
+P.~{Gader}, A.~{Mendez-Vasquez}, K.~{Chamberlin}, J.~{Bolton}, and A.~{Zare}.
+\newblock Multi-sensor and algorithm fusion with the choquet integral:
+  applications to landmine detection.
+\newblock In \emph{IGARSS 2004. 2004 IEEE International Geoscience and Remote
+  Sensing Symposium}, volume~3, pages 1605--1608 vol.3, Sep. 2004.
+\newblock \doi{10.1109/IGARSS.2004.1370635}.
+
+\bibitem[Gader et~al.(1996)Gader, Mohamed, and
+  Keller]{Gader1996FusionHandwrittenLetters}
+P.~D. Gader, M.~A. Mohamed, and J.~M. Keller.
+\newblock Fusion of handwritten word classifiers.
+\newblock \emph{Pattern Recognition Letters}, 17\penalty0 (6):\penalty0 577 --
+  584, 1996.
+\newblock ISSN 0167-8655.
+
+\bibitem[Gao et~al.(2017)Gao, Li, Yu, Morariu, and
+  Davis]{Gao2017CountGuidedWeaklySupervisedLocalization}
+M.~Gao, A.~Li, R.~Yu, V.~I. Morariu, and L.~S. Davis.
+\newblock {C-WSL:} count-guided weakly supervised localization.
+\newblock \emph{CoRR}, abs/1711.05282, 2017.
+\newblock URL \url{http://arxiv.org/abs/1711.05282}.
+
+\bibitem[{Gao} et~al.(2011){Gao}, {Wang}, {Tao}, and
+  {Li}]{Gao2011SupGPLVMDimRed}
+X.~{Gao}, X.~{Wang}, D.~{Tao}, and X.~{Li}.
+\newblock Supervised gaussian process latent variable model for dimensionality
+  reduction.
+\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part B
+  (Cybernetics)}, 41\penalty0 (2):\penalty0 425--434, April 2011.
+\newblock ISSN 1083-4419.
+\newblock \doi{10.1109/TSMCB.2010.2057422}.
+
+\bibitem[{Gönen}(2013)]{Gonen2013BayesianSupDimRed}
+M.~{Gönen}.
+\newblock Bayesian supervised dimensionality reduction.
+\newblock \emph{IEEE Transactions on Cybernetics}, 43\penalty0 (6):\penalty0
+  2179--2189, Dec 2013.
+\newblock ISSN 2168-2267.
+\newblock \doi{10.1109/TCYB.2013.2245321}.
+
+\bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and
+  Courville]{Goodfellow2016DeepLearning}
+I.~Goodfellow, Y.~Bengio, and A.~Courville.
+\newblock \emph{Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
+\bibitem[Gorban and Zinovyev(2008)]{Gorban2007ElasticMaps}
+A.~N. Gorban and A.~Y. Zinovyev.
+\newblock Elastic maps and nets for approximating principal manifolds and their
+  application to microarray data visualization.
+\newblock In A.~N. Gorban, B.~K{\'e}gl, D.~C. Wunsch, and A.~Y. Zinovyev,
+  editors, \emph{Principal Manifolds for Data Visualization and Dimension
+  Reduction}, pages 96--130, Berlin, Heidelberg, 2008. Springer Berlin
+  Heidelberg.
+\newblock ISBN 978-3-540-73750-6.
+
+\bibitem[{Gunatilaka} and
+  {Baertlein}(2001)]{Gunatilaka2001FusionNoncoincidentlySampledLandmine}
+A.~H. {Gunatilaka} and B.~A. {Baertlein}.
+\newblock Feature-level and decision-level fusion of noncoincidently sampled
+  sensors for land mine detection.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 23\penalty0 (6):\penalty0 577--589, June 2001.
+\newblock ISSN 0162-8828.
+\newblock \doi{10.1109/34.927459}.
+
+\bibitem[Guo(2019)]{Guo2019LVAforMultimodalLearningandSensorFusion}
+L.~Guo.
+\newblock Latent variable algorithms for multimodal learning and sensor fusion.
+\newblock \emph{CoRR}, abs/1904.10450, 2019.
+\newblock URL \url{http://arxiv.org/abs/1904.10450}.
+
+\bibitem[{Hackett} and {Shah}(1990)]{hackett1990multisensorfusion}
+J.~K. {Hackett} and M.~{Shah}.
+\newblock Multi-sensor fusion: a perspective.
+\newblock In \emph{Proceedings., IEEE International Conference on Robotics and
+  Automation}, pages 1324--1330 vol.2, May 1990.
+\newblock \doi{10.1109/ROBOT.1990.126184}.
+
+\bibitem[{Hajimirsadeghi} and
+  {Mori}(2017)]{Hajimirsadeghi2017MIClassificationMarkovNetworks}
+H.~{Hajimirsadeghi} and G.~{Mori}.
+\newblock Multi-instance classification by max-margin training of
+  cardinality-based markov networks.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 39\penalty0 (9):\penalty0 1839--1852, Sep. 2017.
+\newblock ISSN 0162-8828.
+\newblock \doi{10.1109/TPAMI.2016.2613865}.
+
+\bibitem[Hall et~al.(2018)Hall, Dayoub, Skinner, Corke, Carneiro, and
+  S{\"{u}}nderhauf]{Hall2019ProbabilisticObjectDetection}
+D.~Hall, F.~Dayoub, J.~Skinner, P.~Corke, G.~Carneiro, and N.~S{\"{u}}nderhauf.
+\newblock Probability-based detection quality {(PDQ):} {A} probabilistic
+  approach to detection evaluation.
+\newblock \emph{CoRR}, abs/1811.10800, 2018.
+\newblock URL \url{http://arxiv.org/abs/1811.10800}.
+
+\bibitem[Haykin(2009)]{Haykin2009NeuralNetworks}
+S.~S. Haykin.
+\newblock \emph{Neural networks and learning machines}.
+\newblock Pearson Education, Upper Saddle River, NJ, third edition, 2009.
+
+\bibitem[Hertzberg et~al.(2013)Hertzberg, Wagner, Frese, and
+  Schröder]{Hertzberg2013SensorFusionStateRepManifolds}
+C.~Hertzberg, R.~Wagner, U.~Frese, and L.~Schröder.
+\newblock Integrating generic sensor fusion algorithms with sound state
+  representations through encapsulation of manifolds.
+\newblock \emph{Information Fusion}, 14\penalty0 (1):\penalty0 57 -- 77, 2013.
+\newblock ISSN 1566-2535.
+\newblock \doi{https://doi.org/10.1016/j.inffus.2011.08.003}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S1566253511000571}.
+
+\bibitem[Hong et~al.(2018)Hong, Yokoya, Chanussot, and
+  Zhu]{Hong2018CommonSubspaceLearningHSI}
+D.~Hong, N.~Yokoya, J.~Chanussot, and X.~X. Zhu.
+\newblock Cospace: Common subspace learning from hyperspectral-multispectral
+  correspondences.
+\newblock \emph{CoRR}, abs/1812.11501, 2018.
+\newblock URL \url{http://arxiv.org/abs/1812.11501}.
+
+\bibitem[Hong et~al.(2019)Hong, Yokoya, Ge, Chanussot, and
+  Zhu]{Hong2019LearnableManifoldAlignment}
+D.~Hong, N.~Yokoya, N.~Ge, J.~Chanussot, and X.~X. Zhu.
+\newblock Learnable manifold alignment (lema): A semi-supervised cross-modality
+  learning framework for land cover and land use classification.
+\newblock \emph{ISPRS Journal of Photogrammetry and Remote Sensing},
+  147:\penalty0 193 -- 205, 2019.
+\newblock ISSN 0924-2716.
+
+\bibitem[Ilse et~al.(2018)Ilse, Tomczak, and
+  Welling]{Ilse2018AttentionBasedDeepMIL}
+M.~Ilse, Jakub~M. Tomczak, and M.~Welling.
+\newblock Attention-based deep multiple instance learning.
+\newblock \emph{CoRR}, abs/1802.04712, 2018.
+\newblock URL \url{http://arxiv.org/abs/1802.04712}.
+
+\bibitem[Jiao(2017)]{Jiao2017Thesis}
+C.~Jiao.
+\newblock \emph{Target Concept Learning From Ambiguously Labeled Data}.
+\newblock PhD thesis, Univ. of Missouri, Columbia, MO, Dec. 2017.
+
+\bibitem[Jiao and Zare(2017)]{Jiao2017MIHE}
+C.~Jiao and A.~Zare.
+\newblock Multiple instance hybrid estimator for learning target signatures.
+\newblock In \emph{2017 IEEE Int. Geoscience and Remote Sensing Symp.
+  (IGARSS)}, pages 988--991, July 2017.
+\newblock \doi{10.1109/IGARSS.2017.8127120}.
+
+\bibitem[Jiao et~al.(2018)Jiao, Chen, McGarvey, Bohlman, Jiao, and
+  Zare]{Jiao2018MIHE2}
+Changzhe Jiao, Chao Chen, Ronald~G. McGarvey, Stephanie Bohlman, Licheng Jiao,
+  and Alina Zare.
+\newblock Multiple instance hybrid estimator for hyperspectral target
+  characterization and sub-pixel target detection.
+\newblock \emph{ISPRS Journal of Photogrammetry and Remote Sensing},
+  146:\penalty0 235 -- 250, 2018.
+\newblock ISSN 0924-2716.
+\newblock \doi{https://doi.org/10.1016/j.isprsjprs.2018.08.012}.
+
+\bibitem[Jindal and Kumar(2017)]{Jindal2017ReviewDRTechniques}
+P.~Jindal and D.~Kumar.
+\newblock A review on dimensionality reduction techniques.
+\newblock \emph{International Journal of Computer Applications}, 173, 09 2017.
+
+\bibitem[{Jordan} and {Jacobs}(1993)]{Jordan1993HME}
+M.~I. {Jordan} and R.~A. {Jacobs}.
+\newblock Hierarchical mixtures of experts and the em algorithm.
+\newblock In \emph{Proceedings of 1993 International Conference on Neural
+  Networks (IJCNN-93-Nagoya, Japan)}, volume~2, pages 1339--1344 vol.2, Oct
+  1993.
+
+\bibitem[Kang et~al.(2018)Kang, Pan, Hoi, and
+  Xu]{Kang2018ManifoldRegularizedPCA}
+Z.~Kang, H.~Pan, S.~C.~H. Hoi, and Z.~Xu.
+\newblock Robust graph learning from noisy data.
+\newblock \emph{CoRR}, abs/1812.06673, 2018.
+\newblock URL \url{http://arxiv.org/abs/1812.06673}.
+
+\bibitem[{Karem} and
+  {Frigui}(2016)]{Karem2016MILMultiplePositiveAndNegativeConcepts}
+A.~{Karem} and H.~{Frigui}.
+\newblock Multiple instance learning with multiple positive and negative target
+  concepts.
+\newblock In \emph{2016 23rd International Conference on Pattern Recognition
+  (ICPR)}, pages 474--479, Dec 2016.
+\newblock \doi{10.1109/ICPR.2016.7899679}.
+
+\bibitem[Keller et~al.(2001)Keller, Auephanwiriyakul, and
+  Gader]{Keller2001PredictiveSensorFusion}
+J.~M. Keller, S.~Auephanwiriyakul, and P.~D. Gader.
+\newblock Experiments inf predictive sensor fusion.
+\newblock In \emph{Detection and Remediation Technologies for Mines and
+  Minelike Targets VI}, volume 4394 of \emph{Proc.SPIE}, pages 1047 -- 1058,
+  Oct. 2001.
+\newblock \doi{10.1117/12.445433}.
+
+\bibitem[Kohonen(1990)]{Kohonen1990SOM}
+T.~Kohonen.
+\newblock The self-organizing map.
+\newblock \emph{Proceedings of the IEEE}, 78\penalty0 (9):\penalty0 1464--1480,
+  Sep. 1990.
+\newblock ISSN 0018-9219.
+\newblock \doi{10.1109/5.58325}.
+
+\bibitem[Kokiopoulou and
+  Frossard(2010)]{Kokiopoulou2009GraphBasedClassificationMultipleObsSets}
+E.~Kokiopoulou and P.~Frossard.
+\newblock Graph-based classification of multiple observation sets.
+\newblock \emph{Pattern Recognition}, 43\penalty0 (12):\penalty0 3988 -- 3997,
+  2010.
+\newblock ISSN 0031-3203.
+\newblock \doi{https://doi.org/10.1016/j.patcog.2010.07.016}.
+
+\bibitem[{Kokiopoulou} and
+  {Saad}(2007)]{Kokiopoulou2007OrthoNeighborhoodPreservingProjections}
+E.~{Kokiopoulou} and Y.~{Saad}.
+\newblock Orthogonal neighborhood preserving projections: A projection-based
+  dimensionality reduction technique.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 29\penalty0 (12):\penalty0 2143--2156, Dec 2007.
+\newblock ISSN 0162-8828.
+\newblock \doi{10.1109/TPAMI.2007.1131}.
+
+\bibitem[Lawrence(2005)]{Lawrence2005PPCAGPLVModels}
+N.~Lawrence.
+\newblock Probabilistic non-linear principal component analysis with gaussian
+  process latent variable models.
+\newblock \emph{J. Mach. Learn. Res.}, 6:\penalty0 1783--1816, dec 2005.
+\newblock ISSN 1532-4435.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=1046920.1194904}.
+
+\bibitem[Lawrence(2003)]{Lawrence2003GPLVM}
+N.~D. Lawrence.
+\newblock Gaussian process latent variable models for visualisation of high
+  dimensional data.
+\newblock In \emph{Proceedings of the 16th International Conference on Neural
+  Information Processing Systems}, NIPS'03, pages 329--336, Cambridge, MA, USA,
+  2003. MIT Press.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=2981345.2981387}.
+
+\bibitem[Lee et~al.(2016)Lee, Elgammal, and Torki]{Lee2015MultipleManifolds}
+C.~Lee, A.~Elgammal, and M.~Torki.
+\newblock Learning representations from multiple manifolds.
+\newblock \emph{Pattern Recogn.}, 50\penalty0 (C):\penalty0 74--87, February
+  2016.
+\newblock ISSN 0031-3203.
+\newblock \doi{10.1016/j.patcog.2015.08.024}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.patcog.2015.08.024}.
+
+\bibitem[{Li} et~al.(2017){Li}, {Yuan}, {Xiong}, {Hu}, {Peng}, {Ding}, and
+  {Maybank}]{Li2017MultiviewMIL}
+B.~{Li}, C.~{Yuan}, W.~{Xiong}, W.~{Hu}, H.~{Peng}, X.~{Ding}, and
+  S.~{Maybank}.
+\newblock Multi-view multi-instance learning based on joint sparse
+  representation and multi-view dictionary learning.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 39\penalty0 (12):\penalty0 2554--2560, Dec 2017.
+\newblock ISSN 0162-8828.
+\newblock \doi{10.1109/TPAMI.2017.2669303}.
+
+\bibitem[Li et~al.(2017)Li, Zhu, Bao, Cheng, Ren, and Huang]{Li2017SmoothMIL}
+D.~Li, L.~Zhu, W.~Bao, F.~Cheng, Y.~Ren, and D.~Huang.
+\newblock Cross-validated smooth multi-instance learning.
+\newblock pages 1321--1325, 05 2017.
+\newblock \doi{10.1109/IJCNN.2017.7966005}.
+
+\bibitem[{Li} et~al.(2015){Li}, {Liu}, and
+  {Wang}]{Li2015ManRegReinforcementLearning}
+H.~{Li}, D.~{Liu}, and D.~{Wang}.
+\newblock Approximate policy iteration with unsupervised feature learning based
+  on manifold regularization.
+\newblock In \emph{2015 International Joint Conference on Neural Networks
+  (IJCNN)}, pages 1--6, July 2015.
+
+\bibitem[Li et~al.(2009)Li, Shi, Shi, and Zhong]{Li2009SupManifoldLearning}
+Z.~Li, W.~Shi, X.~Shi, and Z.~Zhong.
+\newblock A supervised manifold learning method.
+\newblock \emph{Comput. Sci. Inf. Syst.}, 6:\penalty0 205--215, 12 2009.
+
+\bibitem[{Liang} et~al.(2014){Liang}, {Liu}, {Huang}, {Li}, {Wang}, and
+  {Wang}]{Liang2014ImageRegistrationMutualInformation}
+J.~{Liang}, X.~{Liu}, K.~{Huang}, X.~{Li}, D.~{Wang}, and X.~{Wang}.
+\newblock Automatic registration of multisensor images using an integrated
+  spatial and mutual information (smi) metric.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  52\penalty0 (1):\penalty0 603--615, Jan 2014.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2013.2242895}.
+
+\bibitem[{Liao} et~al.(2016){Liao}, {Qian}, {Zhou}, and
+  {Tang}]{Liao2016ManAlignmentHSI}
+D.~{Liao}, Y.~{Qian}, J.~{Zhou}, and Y.~Y. {Tang}.
+\newblock A manifold alignment approach for hyperspectral image visualization
+  with natural color.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  54\penalty0 (6):\penalty0 3151--3162, June 2016.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2015.2512659}.
+
+\bibitem[{Liu} et~al.(2014){Liu}, {Liu}, {Chan}, and
+  {Hua}]{Liu2014HybridManifoldEmbedding}
+Y.~{Liu}, Y.~{Liu}, K.~C.~C. {Chan}, and K.~A. {Hua}.
+\newblock Hybrid manifold embedding.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  25\penalty0 (12):\penalty0 2295--2302, Dec 2014.
+\newblock ISSN 2162-237X.
+\newblock \doi{10.1109/TNNLS.2014.2305760}.
+
+\bibitem[Livi and Rizzi(2013)]{Livi2013GraphMatchingProblem}
+L.~Livi and A.~Rizzi.
+\newblock The graph matching problem.
+\newblock \emph{Pattern Anal. Appl.}, 16\penalty0 (3):\penalty0 253--283, Aug
+  2013.
+\newblock ISSN 1433-7541.
+\newblock \doi{10.1007/s10044-012-0284-8}.
+
+\bibitem[L.Jian et~al.(2019)L.Jian, Yang, Liu, Jeon, Gao, and
+  Chisholm]{Jian2019AEInfraredVisibleFusion}
+L.Jian, X.~Yang, Z.~Liu, G.~Jeon, M.~Gao, and D.~Chisholm.
+\newblock A symmetric encoder-decoder with residual block for infrared and
+  visible image fusion.
+\newblock \emph{ArXiv}, abs/1905.11447, 2019.
+
+\bibitem[{Lopez-Rubio} and {Palomo}(2011)]{LopezRubio2011GHPGraphs}
+E.~{Lopez-Rubio} and E.~J. {Palomo}.
+\newblock Growing hierarchical probabilistic self-organizing graphs.
+\newblock \emph{IEEE Transactions on Neural Networks}, 22\penalty0
+  (7):\penalty0 997--1008, July 2011.
+\newblock ISSN 1045-9227.
+\newblock \doi{10.1109/TNN.2011.2138159}.
+
+\bibitem[Mahalanobis and McIntosh(2019)]{Mahalanobis2019DSIACCharacterization}
+A.~Mahalanobis and B.~McIntosh.
+\newblock A comparison of target detection algorithms using dsiac atr algorithm
+  development data set.
+\newblock Proc.SPIE, Apr. 2019.
+
+\bibitem[Maron and Lozano-P{\'e}rez(1998)]{Maron1998DiverseDensity}
+O.~Maron and T.~Lozano-P{\'e}rez.
+\newblock A framework for multiple-instance learning.
+\newblock In \emph{Proceedings of the 1997 Conference on Advances in Neural
+  Information Processing Systems 10}, NIPS '97, pages 570--576, Cambridge, MA,
+  USA, 1998. MIT Press.
+\newblock ISBN 0-262-10076-2.
+
+\bibitem[Maron and Ratan(1998)]{Maron1998MILSceneClassification}
+O.~Maron and A.~L. Ratan.
+\newblock Multiple-instance learning for natural scene classification.
+\newblock In \emph{Proceedings of the Fifteenth International Conference on
+  Machine Learning}, ICML '98, pages 341--349, San Francisco, CA, USA, 1998.
+  Morgan Kaufmann Publishers Inc.
+\newblock ISBN 1-55860-556-8.
+
+\bibitem[{M\'arquez-Neila} et~al.(2014){M\'arquez-Neila}, {Baumela}, and
+  {\'Alvarez}]{Marquez_Neila2014MorphologicalCurveBasedEvolution}
+P.~{M\'arquez-Neila}, L.~{Baumela}, and L.~{\'Alvarez}.
+\newblock A morphological approach to curvature-based evolution of curves and
+  surfaces.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 36\penalty0 (1):\penalty0 2--17, Jan 2014.
+\newblock ISSN 0162-8828.
+
+\bibitem[McCurley et~al.(2019)McCurley, Bocinsky, and
+  Zare]{Mccurley2019SPIEWEMIComparison}
+C.~H. McCurley, J.~Bocinsky, and A.~Zare.
+\newblock Comparison of hand-held wemi target detection algorithms.
+\newblock In \emph{Detection and Sensing of Mines, Explosive Objects, and
+  Obscured Targets XXIV, 110120U}, volume 11012 of \emph{Proc.SPIE}, May 2019.
+\newblock \doi{10.1117/12.2519454}.
+
+\bibitem[{Meng} and {Zhan}(2018)]{Meng2018ManRegZeroShot}
+M.~{Meng} and X.~{Zhan}.
+\newblock Zero-shot learning via low-rank-representation based manifold
+  regularization.
+\newblock \emph{IEEE Signal Processing Letters}, 25\penalty0 (9):\penalty0
+  1379--1383, Sep. 2018.
+\newblock ISSN 1070-9908.
+\newblock \doi{10.1109/LSP.2018.2857201}.
+
+\bibitem[{Mohandes} et~al.(2018){Mohandes}, {Deriche}, and
+  {Aliyu}]{Mohandes2018ClassifierCombinationTechniquesReview}
+M.~{Mohandes}, M.~{Deriche}, and S.~O. {Aliyu}.
+\newblock Classifiers combination techniques: A comprehensive review.
+\newblock \emph{IEEE Access}, 6:\penalty0 19626--19639, 2018.
+\newblock ISSN 2169-3536.
+\newblock \doi{10.1109/ACCESS.2018.2813079}.
+
+\bibitem[{Navaratnam} et~al.(2007){Navaratnam}, {Fitzgibbon}, and
+  {Cipolla}]{Navaratnam2007JointManifoldSemiSupRegression}
+R.~{Navaratnam}, A.~W. {Fitzgibbon}, and R.~{Cipolla}.
+\newblock The joint manifold model for semi-supervised multi-valued regression.
+\newblock In \emph{2007 IEEE 11th International Conference on Computer Vision},
+  pages 1--8, Oct 2007.
+\newblock \doi{10.1109/ICCV.2007.4408976}.
+
+\bibitem[Nickel and Kiela(2017)]{Nickel2017PoincareEmbeddings}
+M.~Nickel and D.~Kiela.
+\newblock Poincar\'{e} embeddings for learning hierarchical representations.
+\newblock In I.~Guyon, U.~V. Luxburg, S.~Bengio, H.~Wallach, R.~Fergus,
+  S.~Vishwanathan, and R.~Garnett, editors, \emph{Advances in Neural
+  Information Processing Systems 30}, pages 6338--6347. Curran Associates,
+  Inc., 2017.
+
+\bibitem[Nicolicioiu et~al.(2019)Nicolicioiu, Duta, and
+  Leordeanu]{Nicolicioiu2019RecurrentSpaceTimeGraphNN}
+A.~L. Nicolicioiu, I.~Duta, and M.~Leordeanu.
+\newblock Recurrent space-time graph neural networks.
+\newblock \emph{CoRR}, abs/1904.05582, 2019.
+\newblock URL \url{http://arxiv.org/abs/1904.05582}.
+
+\bibitem[Palomo and Lopez-Rubio(2016)]{Palomo2016GrowingNeuralForest}
+E.~J. Palomo and E.~Lopez-Rubio.
+\newblock Learning topologies with the growing neural forest.
+\newblock \emph{International Journal of Neural Systems}, 26\penalty0
+  (04):\penalty0 1650019, 2016.
+\newblock \doi{10.1142/S0129065716500192}.
+\newblock URL \url{https://doi.org/10.1142/S0129065716500192}.
+\newblock PMID: 27121995.
+
+\bibitem[{Palomo} and {Lopez-Rubio}(2017)]{Palomo2017GHNG}
+E.~J. {Palomo} and E.~{Lopez-Rubio}.
+\newblock The growing hierarchical neural gas self-organizing neural network.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  28\penalty0 (9):\penalty0 2000--2009, Sep. 2017.
+\newblock ISSN 2162-237X.
+\newblock \doi{10.1109/TNNLS.2016.2570124}.
+
+\bibitem[Raducanu and
+  Dornaika(2012)]{Raducanu2012SupervisedNonlinearDimReduction}
+B.~Raducanu and F.~Dornaika.
+\newblock A supervised non-linear dimensionality reduction approach for
+  manifold learning.
+\newblock \emph{Pattern Recognition}, 45\penalty0 (6):\penalty0 2432 -- 2444,
+  2012.
+\newblock ISSN 0031-3203.
+
+\bibitem[{Ratle} et~al.(2010){Ratle}, {Camps-Valls}, and
+  {Weston}]{Ratle2010ManRegHSI}
+F.~{Ratle}, G.~{Camps-Valls}, and J.~{Weston}.
+\newblock Semisupervised neural networks for efficient hyperspectral image
+  classification.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  48\penalty0 (5):\penalty0 2271--2282, May 2010.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2009.2037898}.
+
+\bibitem[Rauber et~al.(2002)Rauber, Merkl, and Dittenbach]{Rauber2002GHSOM}
+A.~Rauber, D.~Merkl, and M.~Dittenbach.
+\newblock The growing hierarchical self-organizing map: exploratory analysis of
+  high-dimensional data.
+\newblock \emph{IEEE Transactions on Neural Networks}, 13\penalty0
+  (6):\penalty0 1331--1341, Nov 2002.
+\newblock ISSN 1045-9227.
+\newblock \doi{10.1109/TNN.2002.804221}.
+
+\bibitem[{Ren} et~al.(2017){Ren}, {Hou}, {Zhao}, and {Jiao}]{Ren2017ManRegSAR}
+B.~{Ren}, B.~{Hou}, J.~{Zhao}, and L.~{Jiao}.
+\newblock Unsupervised classification of polarimetirc sar image via improved
+  manifold regularized low-rank representation with multiple features.
+\newblock \emph{IEEE Journal of Selected Topics in Applied Earth Observations
+  and Remote Sensing}, 10\penalty0 (2):\penalty0 580--595, Feb 2017.
+\newblock ISSN 1939-1404.
+\newblock \doi{10.1109/JSTARS.2016.2573380}.
+
+\bibitem[Rish et~al.(2008)Rish, Grabarnik, Cecchi, Pereira, and
+  Gordon]{Rish2008SupDimRedGLM}
+I.~Rish, G.~Grabarnik, G.~A. Cecchi, F.~Pereira, and G.~J. Gordon.
+\newblock Closed-form supervised dimensionality reduction with generalized
+  linear models.
+\newblock pages 832--839, 01 2008.
+\newblock \doi{10.1145/1390156.1390261}.
+
+\bibitem[Rojas(1996)]{Rojas1996AssociativeNetworks}
+R.~Rojas.
+\newblock Associative networks.
+\newblock In \emph{Neural Networks - A Systematic Introduction}, chapter~12,
+  pages 311--336. Springer-Verlag, Berlin, New-York, 1st edition, 1996.
+
+\bibitem[Roweis and Saul(2000)]{Roweis2000LLE}
+S.~T. Roweis and L.~K. Saul.
+\newblock Nonlinear dimensionality reduction by locally linear embedding.
+\newblock \emph{Science}, 290\penalty0 (5500):\penalty0 2323--2326, 2000.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.290.5500.2323}.
+\newblock URL \url{https://science.sciencemag.org/content/290/5500/2323}.
+
+\bibitem[{Ruiz} et~al.(2018){Ruiz}, {Rudovic}, {Binefa}, and
+  {Pantic}]{Ruiz2018MIDynamicOrdinalRegression}
+A.~{Ruiz}, O.~{Rudovic}, X.~{Binefa}, and M.~{Pantic}.
+\newblock Multi-instance dynamic ordinal random fields for weakly supervised
+  facial behavior analysis.
+\newblock \emph{IEEE Transactions on Image Processing}, 27\penalty0
+  (8):\penalty0 3969--3982, Aug 2018.
+\newblock ISSN 1057-7149.
+\newblock \doi{10.1109/TIP.2018.2830189}.
+
+\bibitem[Rumelhart and Zipser(1985)]{Rumelhart1985CHL}
+D.~E. Rumelhart and D.~Zipser.
+\newblock Feature discovery by competitive learning.
+\newblock \emph{Cognitive Science}, 9\penalty0 (1):\penalty0 75--112, 1985.
+\newblock \doi{10.1207/s15516709cog0901\_5}.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog0901_5}.
+
+\bibitem[Ruta and Gabrys(2000)]{Ruta2000OverviewClassifierFusionMethods}
+D.~Ruta and B.~Gabrys.
+\newblock An overview of classifier fusion methods.
+\newblock \emph{Computing and Information Systems}, 7:\penalty0 1--10, 01 2000.
+
+\bibitem[Ryan E.~Smith(2017)]{Smith2017ChoquetIntegralLandmine}
+John E. Ball Alina Zare Brendan~Alvey Ryan E.~Smith, Derek T.~Anderson.
+\newblock Aggregation of choquet integrals in gpr and emi for handheld
+  platform-based explosive hazard detection.
+\newblock In \emph{Detection and Sensing of Mines, Explosive Objects, and
+  Obscured Targets XXII, 1018217}, volume 10182, May 2017.
+\newblock \doi{10.1117/12.2263005}.
+\newblock URL \url{https://doi.org/10.1117/12.2263005}.
+
+\bibitem[Saul and Roweis(2001)]{Saul2001LLEIntro}
+L.~K. Saul and S.~T. Roweis.
+\newblock An introduction to locally linear embedding.
+\newblock \emph{Journal of Machine Learning Research}, 7, 01 2001.
+
+\bibitem[Shazeer et~al.(2017)Shazeer, Mirhoseini, Maziarz, Davis, Le, Hinton,
+  and Dean]{Shazeer2017SparselyGatedMixtureOfExperts}
+N.~Shazeer, A.~Mirhoseini, K.~Maziarz, A.~Davis, Q.~V. Le, G.~E. Hinton, and
+  Jeff Dean.
+\newblock Outrageously large neural networks: The sparsely-gated
+  mixture-of-experts layer.
+\newblock \emph{CoRR}, abs/1701.06538, 2017.
+\newblock URL \url{http://arxiv.org/abs/1701.06538}.
+
+\bibitem[{Shen} et~al.(2018){Shen}, {Zulch}, {Disasio}, {Blasch}, {Chen},
+  {Wang}, {Lu}, and {Niu}]{Shen2018ManifoldSensorFusionImageData}
+D.~{Shen}, P.~{Zulch}, M.~{Disasio}, E.~{Blasch}, G.~{Chen}, Z.~{Wang},
+  J.~{Lu}, and R.~{Niu}.
+\newblock Manifold learning algorithms for sensor fusion of image and
+  radio-frequency data.
+\newblock In \emph{2018 IEEE Aerospace Conference}, pages 1--9, March 2018.
+\newblock \doi{10.1109/AERO.2018.8396395}.
+
+\bibitem[{Shen} et~al.(2016){Shen}, {Meng}, and
+  {Zhang}]{Shen2016SpatioTemporalSpectralFusion}
+H.~{Shen}, X.~{Meng}, and L.~{Zhang}.
+\newblock An integrated framework for the spatio–temporal–spectral fusion
+  of remote sensing images.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  54\penalty0 (12):\penalty0 7135--7148, Dec 2016.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2016.2596290}.
+
+\bibitem[{Smith} et~al.(2017){Smith}, {Anderson}, {Zare}, {Ball}, {Smock},
+  {Fairley}, and {Howington}]{Smith2017GeneticProgrammingChoquetIntegral}
+R.~E. {Smith}, D.~T. {Anderson}, A.~{Zare}, J.~E. {Ball}, B.~{Smock}, J.~R.
+  {Fairley}, and S.~E. {Howington}.
+\newblock Genetic programming based choquet integral for multi-source fusion.
+\newblock In \emph{2017 IEEE International Conference on Fuzzy Systems
+  (FUZZ-IEEE)}, pages 1--8, July 2017.
+\newblock \doi{10.1109/FUZZ-IEEE.2017.8015481}.
+
+\bibitem[{Stanley III} et~al.(2018){Stanley III}, Wolf, and
+  Krishnaswamy]{Stanley2019ManAlignmentFeatureCorrespondence}
+J.~S. {Stanley III}, G.~Wolf, and S.~Krishnaswamy.
+\newblock Manifold alignment with feature correspondence.
+\newblock \emph{CoRR}, abs/1810.00386, 2018.
+\newblock URL \url{http://arxiv.org/abs/1810.00386}.
+
+\bibitem[Sugiyama(2006)]{Sugiyama2006FDASupDimRed}
+M.~Sugiyama.
+\newblock Local fisher discriminant analysis for supervised dimensionality
+  reduction.
+\newblock In \emph{Proceedings of the 23rd International Conference on Machine
+  Learning}, ICML '06, pages 905--912, New York, NY, USA, 2006. ACM.
+\newblock ISBN 1-59593-383-2.
+\newblock \doi{10.1145/1143844.1143958}.
+
+\bibitem[Sun et~al.(2017)Sun, Liu, and Harada]{Sun2016GNGMotionDetection}
+Q.~Sun, H.~Liu, and T.~Harada.
+\newblock Online growing neural gas for anomaly detection in changing
+  surveillance scenes.
+\newblock \emph{Pattern Recognition}, 64:\penalty0 187 -- 201, 2017.
+\newblock ISSN 0031-3203.
+\newblock \doi{https://doi.org/10.1016/j.patcog.2016.09.016}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0031320316302771}.
+
+\bibitem[{Talmon} et~al.(2015){Talmon}, {Mallat}, {Zaveri}, and
+  {Coifman}]{Talmon2015ManifoldLearningInDynamicalSystems}
+R.~{Talmon}, S.~{Mallat}, H.~{Zaveri}, and R.~R. {Coifman}.
+\newblock Manifold learning for latent variable inference in dynamical systems.
+\newblock \emph{IEEE Transactions on Signal Processing}, 63\penalty0
+  (15):\penalty0 3843--3856, Aug 2015.
+\newblock ISSN 1053-587X.
+\newblock \doi{10.1109/TSP.2015.2432731}.
+
+\bibitem[Tanner and Mahalanobis(2019)]{Tanner2019DSIACNeuralNet}
+I.~L. Tanner and A.~Mahalanobis.
+\newblock Fundamentals of target classification using deep learning.
+\newblock Proc.SPIE, Apr. 2019.
+
+\bibitem[Tenenbaum et~al.(2000)Tenenbaum, Silva, and
+  Langford]{Tenenbaum2000Isomap}
+J.~B. Tenenbaum, V.~Silva, and J.~C. Langford.
+\newblock A global geometric framework for nonlinear dimensionality reduction.
+\newblock \emph{Science}, 290\penalty0 (5500):\penalty0 2319--2323, 2000.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.290.5500.2319}.
+\newblock URL \url{https://science.sciencemag.org/content/290/5500/2319}.
+
+\bibitem[Theodoridis and Koutroumbas(2008{\natexlab{a}})]{Theodoris2008KPCA}
+S.~Theodoridis and K.~Koutroumbas.
+\newblock Kernel pca.
+\newblock In \emph{Pattern Recognition, Fourth Edition}, chapter~6, pages
+  351--353. Academic Press, Inc., Orlando, FL, USA, 4th edition,
+  2008{\natexlab{a}}.
+\newblock ISBN 1597492728, 9781597492720.
+
+\bibitem[Theodoridis and Koutroumbas(2008{\natexlab{b}})]{Theodoris2008PCA}
+S.~Theodoridis and K.~Koutroumbas.
+\newblock The karhunen-loeve transform.
+\newblock In \emph{Pattern Recognition, Fourth Edition}, chapter~6, pages
+  326--334. Academic Press, Inc., Orlando, FL, USA, 4th edition,
+  2008{\natexlab{b}}.
+\newblock ISBN 1597492728, 9781597492720.
+
+\bibitem[Tipping and Bishop(1999)]{Tipping1999PPCA}
+M.~E. Tipping and C.~Bishop.
+\newblock Probabilistic principal component analysis.
+\newblock \emph{Journal of the Royal Statistical Society, Series B},
+  21\penalty0 (3):\penalty0 611--622, January 1999.
+\newblock URL
+  \url{https://www.microsoft.com/en-us/research/publication/probabilistic-principal-component-analysis/}.
+
+\bibitem[Trabelsi and Frigui(2018)]{Trabelsi2018FuzzyClusteringMILRegression}
+M.~Trabelsi and H.~Frigui.
+\newblock Fuzzy and possibilistic clustering for multiple instance linear
+  regression.
+\newblock pages 1--7, 07 2018.
+\newblock \doi{10.1109/FUZZ-IEEE.2018.8491540}.
+
+\bibitem[Tsang and Kwok(2007)]{Tsang2007ManifoldRegularization}
+I.~W. Tsang and J.~T. Kwok.
+\newblock Large-scale sparsified manifold regularization.
+\newblock In B.~Sch\"{o}lkopf, J.~C. Platt, and T.~Hoffman, editors,
+  \emph{Advances in Neural Information Processing Systems 19}, pages
+  1401--1408. MIT Press, 2007.
+\newblock URL
+  \url{http://papers.nips.cc/paper/3005-large-scale-sparsified-manifold-regularization.pdf}.
+
+\bibitem[Tuia and Camps-Valls(2015)]{Tuia2015KernelManifoldAlignment}
+D.~Tuia and G.~Camps-Valls.
+\newblock Kernel manifold alignment.
+\newblock 04 2015.
+
+\bibitem[Tulyakov et~al.(2008)Tulyakov, Jaeger, Govindaraju, and
+  Doermann]{Tulyakov2008ReviewClassifierCombinationMethods}
+S.~Tulyakov, S.~Jaeger, V.~Govindaraju, and D.~Doermann.
+\newblock \emph{Review of Classifier Combination Methods}, pages 361--386.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
+\newblock ISBN 978-3-540-76280-5.
+\newblock \doi{10.1007/978-3-540-76280-5_14}.
+\newblock URL \url{https://doi.org/10.1007/978-3-540-76280-5_14}.
+
+\bibitem[van~der Maaten et~al.(2007)van~der Maaten, Postma, and
+  Herik]{VanDerMaaten2009DRReview}
+L.~van~der Maaten, E.~Postma, and H.~Herik.
+\newblock Dimensionality reduction: A comparative review.
+\newblock \emph{Journal of Machine Learning Research - JMLR}, 10, 01 2007.
+
+\bibitem[Vepakomma et~al.(2016)Vepakomma, Tonde, and
+  Elgammal]{Vepakomma2016SupDimRedDistanceCorrelationMax}
+Praneeth Vepakomma, C.~Tonde, and A.~M. Elgammal.
+\newblock Supervised dimensionality reduction via distance correlation
+  maximization.
+\newblock \emph{CoRR}, abs/1601.00236, 2016.
+\newblock URL \url{http://arxiv.org/abs/1601.00236}.
+
+\bibitem[Vivar et~al.(2019)Vivar, Burwinkel, Kazi, Zwergal, Navab, and
+  Ahmadi]{Vivar2019MultiModalGraphFusion}
+G.~Vivar, H.~Burwinkel, A.~Kazi, A~Zwergal, N.~Navab, and S.~Ahmadi.
+\newblock Multi-modal graph fusion for inductive disease classification in
+  incomplete datasets.
+\newblock \emph{CoRR}, abs/1905.03053, 2019.
+\newblock URL \url{http://arxiv.org/abs/1905.03053}.
+
+\bibitem[{Vural} and
+  {Guillemot}(2016)]{Vural2016OutOfSampleSupManifoldLearning}
+E.~{Vural} and C.~{Guillemot}.
+\newblock Out-of-sample generalizations for supervised manifold learning for
+  classification.
+\newblock \emph{IEEE Transactions on Image Processing}, 25\penalty0
+  (3):\penalty0 1410--1424, March 2016.
+\newblock ISSN 1057-7149.
+\newblock \doi{10.1109/TIP.2016.2520368}.
+
+\bibitem[Vural and Guillemot(2018)]{Vural2018StudySupervisedManifoldLearning}
+E.~Vural and C.~Guillemot.
+\newblock A study of the classification of low-dimensional data with supervised
+  manifold learning.
+\newblock \emph{CoRR}, abs/1507.05880, 2018.
+\newblock URL \url{http://arxiv.org/abs/1507.05880}.
+
+\bibitem[Wang and Mahadevan(2010)]{Wang2010MultiscaleManAlignment}
+C.~Wang and S.~Mahadevan.
+\newblock Multiscale manifold alignment.
+\newblock 09 2010.
+
+\bibitem[Wang and Mahadevan(2011)]{Wang2011HeteroDomainAdaptationManAlignment}
+C.~Wang and S.~Mahadevan.
+\newblock Heterogeneous domain adaptation using manifold alignment.
+\newblock In \emph{Proceedings of the Twenty-Second International Joint
+  Conference on Artificial Intelligence - Volume Volume Two}, IJCAI'11, pages
+  1541--1546. AAAI Press, 2011.
+\newblock ISBN 978-1-57735-514-4.
+\newblock \doi{10.5591/978-1-57735-516-8/IJCAI11-259}.
+\newblock URL \url{http://dx.doi.org/10.5591/978-1-57735-516-8/IJCAI11-259}.
+
+\bibitem[Wang et~al.(2011)Wang, Krafft, and
+  Mahadevan]{Wang2011ManifoldAlignment}
+C.~Wang, P.~Krafft, and S.~Mahadevan.
+\newblock Manifold alignment.
+\newblock 12 2011.
+\newblock \doi{10.1201/b11431-6}.
+
+\bibitem[{Wang} et~al.(2012){Wang}, {Shan}, {Chen}, {Dai}, and
+  {Gao}]{Wang2008ManifoldManifoldDistance}
+R.~{Wang}, S.~{Shan}, X.~{Chen}, Q.~{Dai}, and W.~{Gao}.
+\newblock Manifold–manifold distance and its application to face recognition
+  with image sets.
+\newblock \emph{IEEE Transactions on Image Processing}, 21\penalty0
+  (10):\penalty0 4466--4479, Oct 2012.
+\newblock ISSN 1057-7149.
+\newblock \doi{10.1109/TIP.2012.2206039}.
+
+\bibitem[{Wang} et~al.(2017){Wang}, {Wang}, {Kwong}, and
+  {Xu}]{Wang2017DiversityMILActiveLearning}
+R.~{Wang}, X.~{Wang}, S.~{Kwong}, and C.~{Xu}.
+\newblock Incorporating diversity and informativeness in multiple-instance
+  active learning.
+\newblock \emph{IEEE Transactions on Fuzzy Systems}, 25\penalty0 (6):\penalty0
+  1460--1475, Dec 2017.
+\newblock ISSN 1063-6706.
+\newblock \doi{10.1109/TFUZZ.2017.2717803}.
+
+\bibitem[Wu et~al.(2019)Wu, Pan, Chen, Long, Zhang, and
+  Yu]{Wu2019SurveyGraphConvolutionalNeuralNetworks}
+Z.~Wu, S.~Pan, F.~Chen, G.~Long, C.~Zhang, and P.~S. Yu.
+\newblock A comprehensive survey on graph neural networks.
+\newblock \emph{CoRR}, abs/1901.00596, 2019.
+\newblock URL \url{http://arxiv.org/abs/1901.00596}.
+
+\bibitem[{X. Geng} et~al.(2005){X. Geng}, {D. Zhan}, and {Z.
+  Zhou}]{Geng2005SupNonlinearDimRed}
+{X. Geng}, {D. Zhan}, and {Z. Zhou}.
+\newblock Supervised nonlinear dimensionality reduction for visualization and
+  classification.
+\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part B
+  (Cybernetics)}, 35\penalty0 (6):\penalty0 1098--1107, Dec 2005.
+\newblock ISSN 1083-4419.
+
+\bibitem[Xiao et~al.(2017)Xiao, Liu, and Hao]{Xiao2017MIOrdinalRegression}
+Y.~Xiao, B.~Liu, and Z.~Hao.
+\newblock Multiple-instance ordinal regression.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  PP:\penalty0 1--16, 11 2017.
+\newblock \doi{10.1109/TNNLS.2017.2766164}.
+
+\bibitem[{Xiao} et~al.(2017){Xiao}, {Liu}, and {Hao}]{Xiao2017SphereMIL}
+Y.~{Xiao}, B.~{Liu}, and Z.~{Hao}.
+\newblock A sphere-description-based approach for multiple-instance learning.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 39\penalty0 (2):\penalty0 242--257, Feb 2017.
+\newblock ISSN 0162-8828.
+\newblock \doi{10.1109/TPAMI.2016.2539952}.
+
+\bibitem[Xu et~al.(2017)Xu, Yu, Davenport, and
+  Zha]{Xu2017ActiveManifoldLearning}
+H.~Xu, L.~Yu, M.~A. Davenport, and H.~Zha.
+\newblock Active manifold learning via a unified framework for manifold
+  landmarking.
+\newblock \emph{CoRR}, abs/1710.09334, 2017.
+\newblock URL \url{http://arxiv.org/abs/1710.09334}.
+
+\bibitem[{Yang} and
+  {Crawford}(2016)]{Yang2016ManifoldAlignmentMultitemporalHSI}
+H.~L. {Yang} and M.~M. {Crawford}.
+\newblock Spectral and spatial proximity-based manifold alignment for
+  multitemporal hyperspectral image classification.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  54\penalty0 (1):\penalty0 51--64, Jan 2016.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2015.2449736}.
+
+\bibitem[{Yuksel} et~al.(2012){Yuksel}, {Wilson}, and
+  {Gader}]{Yuksel2012TwentyYearsMixtureofExperts}
+S.~E. {Yuksel}, J.~N. {Wilson}, and P.~D. {Gader}.
+\newblock Twenty years of mixture of experts.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  23\penalty0 (8):\penalty0 1177--1193, Aug 2012.
+\newblock ISSN 2162-237X.
+\newblock \doi{10.1109/TNNLS.2012.2200299}.
+
+\bibitem[{Z. Zhang} et~al.(2008){Z. Zhang}, {H. Zha}, and {M.
+  Zhang}]{Zhang2008SpectralSemiSupManifoldLearning}
+{Z. Zhang}, {H. Zha}, and {M. Zhang}.
+\newblock Spectral methods for semi-supervised manifold learning.
+\newblock In \emph{2008 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 1--6, June 2008.
+\newblock \doi{10.1109/CVPR.2008.4587381}.
+
+\bibitem[{Zare} and {Jiao}(2014)]{Zare2015eFUMI}
+A.~{Zare} and C.~{Jiao}.
+\newblock Extended functions of multiple instances for target characterization.
+\newblock In \emph{2014 6th Workshop on Hyperspectral Image and Signal
+  Processing: Evolution in Remote Sensing (WHISPERS)}, pages 1--4, June 2014.
+\newblock \doi{10.1109/WHISPERS.2014.8077525}.
+
+\bibitem[Zare et~al.(2015)Zare, Cook, Alvey, and Ho]{Zare2015MILLandmineEMI}
+A.~Zare, M.~Cook, B.~Alvey, and D.~K. Ho.
+\newblock Multiple instance dictionary learning for subsurface object detection
+  using handheld emi.
+\newblock In \emph{Detection and Sensing of Mines, Explosive Objects, and
+  Obscured Targets XX, 94540G}, Proc. SPIE, May 2015.
+\newblock \doi{10.1117/12.2179177}.
+\newblock URL \url{https://doi.org/10.1117/12.2179177}.
+
+\bibitem[Zare et~al.(2016)Zare, Jiao, and Glenn]{Zare2016MIACE}
+A.~Zare, C.~Jiao, and T.~C. Glenn.
+\newblock Multiple instance hyperspectral target characterization.
+\newblock \emph{CoRR}, abs/1606.06354, 2016.
+\newblock URL \url{http://arxiv.org/abs/1606.06354}.
+
+\bibitem[Zhang et~al.(2019)Zhang, Ghamisi, and
+  Zhu]{Zhang2019FusionHeteroEarthObsClimateZones}
+G.~Zhang, P.~Ghamisi, and X.~Zhu.
+\newblock Fusion of heterogeneous earth observation data for the classification
+  of local climate zones.
+\newblock \emph{ArXiv}, abs/1905.12305, 2019.
+
+\bibitem[Zhang(2010)]{zhang2010multisourceremotingsensingfusion}
+J.~Zhang.
+\newblock Multi-source remote sensing data fusion: Status and trends.
+\newblock \emph{International Journal of Image and Data Fusion}, 1:\penalty0
+  5--24, 03 2010.
+\newblock \doi{10.1080/19479830903561035}.
+
+\bibitem[Zhang and Goldman(2002)]{Zhang2002EMDD}
+Q.~Zhang and S.~A. Goldman.
+\newblock Em-dd: An improved multiple-instance learning technique.
+\newblock In T.~G. Dietterich, S.~Becker, and Z.~Ghahramani, editors,
+  \emph{Advances in Neural Information Processing Systems 14}, pages
+  1073--1080. MIT Press, 2002.
+
+\bibitem[{Zhang} et~al.(2014){Zhang}, {Zheng}, {Liu}, {Sun}, {Wang}, and
+  {Fu}]{Zhang2014SemiSupManLearningFusion}
+Y.~{Zhang}, X.~{Zheng}, G.~{Liu}, X.~{Sun}, H.~{Wang}, and K.~{Fu}.
+\newblock Semi-supervised manifold learning based multigraph fusion for
+  high-resolution remote sensing image classification.
+\newblock \emph{IEEE Geoscience and Remote Sensing Letters}, 11\penalty0
+  (2):\penalty0 464--468, Feb 2014.
+\newblock ISSN 1545-598X.
+\newblock \doi{10.1109/LGRS.2013.2267091}.
+
+\bibitem[Zhou et~al.(2018)Zhou, Cui, Zhang, Yang, Liu, and
+  Sun]{Zhou2019ReviewGraphNeuralNetworks}
+J.~Zhou, G.~Cui, Z.~Zhang, C.~Yang, Z.~Liu, and M.~Sun.
+\newblock Graph neural networks: {A} review of methods and applications.
+\newblock \emph{CoRR}, abs/1812.08434, 2018.
+\newblock URL \url{http://arxiv.org/abs/1812.08434}.
+
+\bibitem[Zitová and Flusser(2003)]{Zitova2003SurveyImageRegistrationMethods}
+B.~Zitová and J.~Flusser.
+\newblock Image registration methods: a survey.
+\newblock \emph{Image and Vision Computing}, 21\penalty0 (11):\penalty0 977 --
+  1000, 2003.
+\newblock ISSN 0262-8856.
+\newblock \doi{https://doi.org/10.1016/S0262-8856(03)00137-9}.
+
+\end{thebibliography}
