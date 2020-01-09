@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  8 JAN 2020 12:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  9 JAN 2020 18:21
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -671,6 +671,11 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
 [10 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/tar
 get_img.jpg> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introdu
 ction/bg_img.jpg>] [11] [12]
+Underfull \hbox (badness 10000) detected at line 97
+[][][]
+ []
+
+[13]
 Underfull \hbox (badness 10000) detected at line 98
 [][][]
  []
@@ -680,12 +685,7 @@ Underfull \hbox (badness 10000) detected at line 99
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 100
-[][][]
- []
-
-[13]) [14]
+) [14]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -820,10 +820,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 8097 strings out of 493323
- 122211 string characters out of 3139067
- 209134 words of memory out of 3000000
- 11320 multiletter control sequences out of 15000+200000
+ 8101 strings out of 493323
+ 122279 string characters out of 3139067
+ 209207 words of memory out of 3000000
+ 11322 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,8n,42p,3462b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -836,9 +836,9 @@ ublic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 y10.pfb>
-Output written on MainFile.pdf (24 pages, 300423 bytes).
+Output written on MainFile.pdf (24 pages, 302336 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
+ 496 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
  421 words of extra memory for PDF output out of 10000 (max. 10000000)
 

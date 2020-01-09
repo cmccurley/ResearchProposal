@@ -71,6 +71,15 @@ Y.~Bengio, A.~C. Courville, and P.~Vincent, ``Unsupervised feature learning and
   Systems, Man, and Cybernetics, Part B (Cybernetics)}, vol.~35, no.~6, pp.
   1098--1107, Dec 2005.
 
+\bibitem{Murphy2012}
+K.~P. Murphy, \emph{Machine Learning: A Probabilistic Perspective}.\hskip 1em
+  plus 0.5em minus 0.4em\relax The MIT Press, 2012.
+
+\bibitem{Theodoris2008KPCA}
+S.~Theodoridis and K.~Koutroumbas, ``Kernel pca,'' in \emph{Pattern
+  Recognition, Fourth Edition}, 4th~ed.\hskip 1em plus 0.5em minus 0.4em\relax
+  Orlando, FL, USA: Academic Press, Inc., 2008, ch.~6, pp. 351--353.
+
 \bibitem{Carbonneau2016MILSurvey}
 \BIBentryALTinterwordspacing
 M.~Carbonneau, V.~Cheplygina, E.~Granger, and G.~Gagnon, ``Multiple instance
