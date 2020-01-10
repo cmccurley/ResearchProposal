@@ -168,6 +168,11 @@ J.~Chai, X.~Ding, H.~Chen, and T.~Li, ``Multiple-instance discriminant
 \bibitem{Xu2011MI_Metric_Learning}
 Y.~{Xu}, W.~{Ping}, and A.~T. {Campbell}.
 
+\bibitem{Dietterich1996AxisParallelRectangles}
+T.~G. Dietterich, R.~H. Lathrop, and T.~Lozano-Pérez, ``Solving the multiple
+  instance problem with axis-parallel rectangles,'' \emph{Artificial
+  Intelligence}, vol.~89, no.~1, pp. 31 -- 71, 1997.
+
 \bibitem{Sohn2016NPairLoss}
 K.~Sohn, ``Improved deep metric learning with multi-class n-pair loss
   objective,'' in \emph{Advances in Neural Information Processing Systems 29},

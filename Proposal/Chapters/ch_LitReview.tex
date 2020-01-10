@@ -1,25 +1,87 @@
 \chapter{Background}
 
-This chapter provides a literature review on Manifold Learning, including classic approaches, supervised and semi-supervised methods and uses of manifolds for functional regularization.  A review of the Multiple Instance Learning framework for learning from weak and ambiguous annotations is provided. Additionally, this chapter reviews the existing literature in classification over graphs, focusing heavily on the utilization of graph convolutional neural networks.  A brief overview of competency aware machine learning methods is also included.  Reviews describe basic terminology and definitions.  Foundational approaches are described and advances are addressed.
+This chapter provides a literature review on Manifold Learning, including classic approaches, supervised and semi-supervised methods and uses of manifolds for functional regularization.  A review of the Multiple Instance Learning framework for learning from weak and ambiguous annotations is provided. Additionally, this chapter reviews the existing literature on metric embedding, focusing heavily on the utilization of contrastive and triplet-based loss evaluation.  Reviews describe basic terminology and definitions.  Foundational approaches are elaborated and advances are addressed.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%% Multiple Instance Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Multiple Instance Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Multiple Instance Learning}
 
-\subsection{Overview and short description}
+Multiple Instance Learning (MIL) was originally proposed in \cite{Dietterich1996AxisParallelRectangles} as a method to handle inherent observation difficulties associated with drug activity prediction.  This problem, among many others, fits well into the framework of MIL where training labels are associated with sets of data points, called \textit{bags} instead of each individual data points, or \textit{instances}.  Under the \textit{standard MIL assumption}, a bag is given a ``positive" label if it is known that  \textit{at least one} sample in the set represents a target.  Alternatively, a bag is labeled as ``negative" if does not contain any positive instances \cite{Carbonneau2016MILSurvey}.  Let $\bm{X}=[\bm{x}_1,\dots, \bm{x}_N] \in \mathbb{R}^{d \times N}$ be training data where $d$ is the dimensionality of an instance, $\bm{x}_n$, and $N$ is the total number of training instances.  The data is grouped into K \textit{bags}, $\bm{B} = \{\bm{B}_1, \dots, \bm{B}_K\}$, with associated binary bag-level labels, $L = \{L_1, \dots, L_K \}$ where 
+\begin{align}
+	L_k = \begin{cases} 
+	1, & \exists \bm{x}_{kn} \in \bm{B}^{+}_{k} \ni  l_{kn} = 1\\
+	-1, & l_{kn} = 0 \quad \forall \bm{x}_{kn} \in \bm{B}^{-}_{k} 
+	\end{cases}
+\end{align} and $\bm{x}_{kn} \in \bm{B}_k$ denotes the $n^{th}$ instance in bag $\bm{B}_k$ \cite{Zare2016MIACE}.  Figure \ref{fig:bag_eg} demonstrates the concept of MIL bags.  The objective of learning under MIL is, given only bag-level label information, to fit a model which can classify bags as either being positive or negative (bag-level classification) or to predict the class labels of individual instances (instance-level classification).
+
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{example-image-a}
+		\caption{Placeholder for examples of positive and negative bag concepts}
+		\label{fig:bag_eg}
+	\end{figure*}
+\end{center}
 
 \subsection{Multiple Instance Concept Learning}
+
+\subsection{Multiple Instance Classification}
+
+\subsection{Multiple Instance Boosting}
 
 \subsection{Multiple Instance Learning via Embedded Instance Selection}
 
 \subsection{Multiple Instance Dictionary Learning}
 
-%\subsection{Multiple Instance Classification}
 
-%\subsection{Multiple Instance Regression}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Manifold Learning}
 
-\subsection{Multiple Instance Learning on Graphs/Manifolds}
+\subsection{Overview and short description}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Metric Embedding %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Linear Methods}
+
+\subsubsection{Principal Component Analysis (PCA) (Kernel PCA)}
+
+\subsubsection{Multidimensional Scaling (MDS)}
+
+\subsection{Nonlinear Methods}
+
+\subsubsection{Graph-based Methods}
+Nonlinear dimensionality reduction methods typically rely on the use of adjacency graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  An overview of computational graphs, as well as the two most prominent methods for graph construction in manifold learning are presented.
+
+\subsubsection{Graphs}
+
+\subsubsection{$K$-Nearest Neighbor Graph}
+
+\subsubsection{$\epsilon$ Neighborhood Graph}
+
+\subsubsection{Geodesic Distance Approximation}
+
+\subsubsection{Isomap}
+
+\subsubsection{Locally Linear Embedding (LLE)}
+
+\subsubsection{Laplacian Eigenmaps}
+
+\subsubsection{Hessian Eigenmaps}
+
+\subsubsection{Diffusion Maps}
+
+\subsubsection{Sammon Mapping}
+
+\subsubsection{Latent Variable Models}
+
+\subsubsection{Competitive Hebbian Learning}
+
+\subsubsection{Deep Learning}
+
+
+\subsection{Supervised and Semi-Supervised Approaches}
+
+\subsection{Multiple Instance Learning on/with Graphs/Manifolds}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Metric Embedding %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Metric Embedding}
 
 	\subsection{Overview of Metric Embedding}
@@ -60,58 +122,13 @@ This chapter provides a literature review on Manifold Learning, including classi
 	
 	\subsection{Multiple Instance Metric Learning}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Manifold Learning}
-
-	\subsection{Overview and short description}
-	
-
-\subsection{Linear Methods}
-
-	\subsubsection{Principal Component Analysis (PCA) (Kernel PCA)}
-
-	\subsubsection{Multidimensional Scaling (MDS)}
-
-\subsection{Nonlinear Methods}
-
-	\subsubsection{Graph-based Methods}
-		Nonlinear dimensionality reduction methods typically rely on the use of adjacency graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  An overview of computational graphs, as well as the two most prominent methods for graph construction in manifold learning are presented.
-		
-		\subsubsection{Graphs}
-		
-		\subsubsection{$K$-Nearest Neighbor Graph}
-		
-		\subsubsection{$\epsilon$ Neighborhood Graph}
-		
-		\subsubsection{Geodesic Distance Approximation}
-	
-	\subsubsection{Isomap}
-	
-	\subsubsection{Locally Linear Embedding (LLE)}
-	
-	\subsubsection{Laplacian Eigenmaps}
-	
-	\subsubsection{Hessian Eigenmaps}
-	
-	\subsubsection{Diffusion Maps}
-	
-	\subsubsection{Sammon Mapping}
-	
-	\subsubsection{Latent Variable Models}
-	
-	\subsubsection{Competitive Hebbian Learning}
-	
-	\subsubsection{Deep Learning}
 
 
-\subsection{Supervised and Semi-Supervised Approaches}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Outlier Detection %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Outlier Detection %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Competency Aware Overview}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Sensor Fusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Sensor Fusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Sensor Fusion}
 %
 %	Sensor fusion is the process of combining multiple sensors to provide complimentary or reinforcing information about a scene under observation \cite{hackett1990multisensorfusion,zhang2010multisourceremotingsensingfusion}.  Sensor fusion can operate on three levels: data or sample level, feature level, and decision level.  This  means that raw data, extracted features, or classifier prediction outputs can all be leveraged through a fusion process \cite{Ruta2000OverviewClassifierFusionMethods,zhang2010multisourceremotingsensingfusion}. While the process of sensor fusion is, in fact, general, this dissertation focuses primarily on combining sensors of varying types and resolutions with the goal of providing support for classification and detection decisions. In this context, sample-level fusion aims to combine data from multiple sources into single-resolution data which are expected to be more informative than any of the inputs, individually.  Fusion on this level involves applying a transformation on the data directly to project, map or co-register data obtained from multiple sources.  Feature-level fusion combines attributes computed from each sensors' collection, such as shape, texture, frequency, local statistics, or other discriminative characteristics exhibited in the data.  Feature-level fusion transforms the data into a single representation space which can be used instead of the original parameterizations for further processing.  Decision-level fusion takes outputs from multiple classifier or real-valued prediction models and derives a singular, fused output.  Decision-level fusion aims to provide a more accurate and/or descriptive classification or regression result through selection, transformation, or consensus of the models being combined \cite{hackett1990multisensorfusion, zhang2010multisourceremotingsensingfusion,Du2017Thesis,Tulyakov2008ReviewClassifierCombinationMethods, Du2016MIChoquetIntegralFusion,Du2018MultiResolutionSensorFusion}.  Sensor fusion has been used in a wide expanse of applications, including: remote sensing and hyperspectral image registration, classification and visualization, \cite{Zhang2014SemiSupManLearningFusion,Liao2016ManAlignmentHSI,Yang2016ManifoldAlignmentMultitemporalHSI,Hong2018CommonSubspaceLearningHSI}, object detection \cite{Davenport2010JointManifoldsDataFusion}, explosive hazard detection \cite{Gader2004ChoquetIntegralLandmine,Smith2017ChoquetIntegralLandmine,Keller2001PredictiveSensorFusion,Gunatilaka2001FusionNoncoincidentlySampledLandmine,Frigui2010ContextDependentFusionLandmine},  handwriting recognition \cite{Gader1996FusionHandwrittenLetters}, pose estimation \cite{Navaratnam2007JointManifoldSemiSupRegression}, automatic target recognition in mid-wave infrared/ sonar imagery \cite{Shen2018ManifoldSensorFusionImageData}, land-use classification \cite{Hong2019LearnableManifoldAlignment}, super-resolution, medical and fault diagnosis, defense, meteorology, environmental monitoring, and economic forecasting   \cite{zhang2010multisourceremotingsensingfusion,Zitova2003SurveyImageRegistrationMethods}. 
