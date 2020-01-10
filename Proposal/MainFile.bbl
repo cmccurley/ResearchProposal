@@ -48,6 +48,13 @@ J.~Bocinsky, ``Learning multiple target concepts from uncertain, ambiguous data
 A.~Zare, ``Hyperspectral endmember detection and band selection using bayesian
   methods,'' Ph.D. dissertation, Univ. of Florida, Gainesville, FL, 2008.
 
+\bibitem{Redmon2018YOLOV3}
+\BIBentryALTinterwordspacing
+J.~Redmon and A.~Farhadi, ``Yolov3: An incremental improvement,'' \emph{CoRR},
+  vol. abs/1804.02767, 2018. [Online]. Available:
+  \url{http://arxiv.org/abs/1804.02767}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Cook2015Thesis}
 M.~Cook, ``Task driven extended functions of multiple instances (td-efumi),''
   Master's thesis, Univ. of Missouri, Columbia, MO, 2015.

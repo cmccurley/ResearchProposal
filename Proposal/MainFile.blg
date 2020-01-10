@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: MainFile.aux
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: MainFile.aux
 The style file: BibFiles/IEEEtran.bst
 A level-1 auxiliary file: Chapters/acknowledgements.aux
 A level-1 auxiliary file: Chapters/TOC.aux
@@ -10,27 +12,32 @@ A level-1 auxiliary file: Chapters/ch_ExperimentalDesign.aux
 A level-1 auxiliary file: Chapters/ch_PreliminaryWork.aux
 A level-1 auxiliary file: Chapters/ch_FutureTasks.aux
 A level-1 auxiliary file: Chapters/ch_Conclusion.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: BibFiles/references.bib
 I was expecting a `,' or a `}'---line 53 of file BibFiles/references.bib
  :  
  :  author = { X. Li and V. Monga},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 200 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 211 of file BibFiles/references.bib
  :  
  :  number = {2}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 337 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 348 of file BibFiles/references.bib
  :  
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-"{" immediately follows a field name---line 1225 of file BibFiles/references.bib
+"{" immediately follows a field name---line 1236 of file BibFiles/references.bib
  :  booktitl\part
  :               {title}e={2011 IEEE 11th International Conference on Data Mining},
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2162 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 2173 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
@@ -43,4 +50,45 @@ Warning--empty booktitle in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 
 Done.
+You've used 20 entries,
+            4024 wiz_defined-function locations,
+            961 strings with 11178 characters,
+and the built_in function-call counts, 13383 in all, are:
+= -- 1125
+> -- 298
+< -- 98
++ -- 161
+- -- 52
+* -- 664
+:= -- 2181
+add.period$ -- 42
+call.type$ -- 20
+change.case$ -- 21
+chr.to.int$ -- 225
+cite$ -- 23
+duplicate$ -- 965
+empty$ -- 1056
+format.name$ -- 67
+if$ -- 3015
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 166
+newline$ -- 97
+num.names$ -- 22
+pop$ -- 366
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1037
+stack$ -- 0
+substring$ -- 530
+swap$ -- 775
+text.length$ -- 23
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 20
+warning$ -- 3
+while$ -- 50
+width$ -- 22
+write$ -- 231
 (There were 5 error messages)
