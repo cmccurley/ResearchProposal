@@ -78,6 +78,47 @@ Y.~Bengio, A.~C. Courville, and P.~Vincent, ``Unsupervised feature learning and
   Systems, Man, and Cybernetics, Part B (Cybernetics)}, vol.~35, no.~6, pp.
   1098--1107, Dec 2005.
 
+\bibitem{Bishop1998GTM}
+\BIBentryALTinterwordspacing
+C.~Bishop, M.~Svensén, and C.~K.~I. Williams, ``Gtm: The generative
+  topographic mapping,'' vol.~10, pp. 215--234, January 1998. [Online].
+  Available:
+  \url{https://www.microsoft.com/en-us/research/publication/gtm-the-generative-topographic-mapping/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Nickel2017PoincareEmbeddings}
+M.~Nickel and D.~Kiela, ``Poincar\'{e} embeddings for learning hierarchical
+  representations,'' in \emph{Advances in Neural Information Processing Systems
+  30}, I.~Guyon, U.~V. Luxburg, S.~Bengio, H.~Wallach, R.~Fergus,
+  S.~Vishwanathan, and R.~Garnett, Eds.\hskip 1em plus 0.5em minus 0.4em\relax
+  Curran Associates, Inc., 2017, pp. 6338--6347.
+
+\bibitem{Talmon2015ManifoldLearningInDynamicalSystems}
+R.~{Talmon}, S.~{Mallat}, H.~{Zaveri}, and R.~R. {Coifman}, ``Manifold learning
+  for latent variable inference in dynamical systems,'' \emph{IEEE Transactions
+  on Signal Processing}, vol.~63, no.~15, pp. 3843--3856, Aug 2015.
+
+\bibitem{Tenenbaum2000Isomap}
+\BIBentryALTinterwordspacing
+J.~B. Tenenbaum, V.~Silva, and J.~C. Langford, ``A global geometric framework
+  for nonlinear dimensionality reduction,'' \emph{Science}, vol. 290, no. 5500,
+  pp. 2319--2323, 2000. [Online]. Available:
+  \url{https://science.sciencemag.org/content/290/5500/2319}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Palomo2017GHNG}
+E.~J. {Palomo} and E.~{Lopez-Rubio}, ``The growing hierarchical neural gas
+  self-organizing neural network,'' \emph{IEEE Transactions on Neural Networks
+  and Learning Systems}, vol.~28, no.~9, pp. 2000--2009, Sep. 2017.
+
+\bibitem{Kohonen1990SOM}
+T.~Kohonen, ``The self-organizing map,'' \emph{Proceedings of the IEEE},
+  vol.~78, no.~9, pp. 1464--1480, Sep. 1990.
+
+\bibitem{Kegl2008PrincipalManifoldsTextbook}
+B.~Kégl, D.~Wunsch, and A.~Zinovyev, \emph{Principal Manifolds for Data
+  Visualisation and Dimension Reduction, LNCSE 58}, 01 2008.
+
 \bibitem{Murphy2012}
 K.~P. Murphy, \emph{Machine Learning: A Probabilistic Perspective}.\hskip 1em
   plus 0.5em minus 0.4em\relax The MIT Press, 2012.
@@ -86,6 +127,10 @@ K.~P. Murphy, \emph{Machine Learning: A Probabilistic Perspective}.\hskip 1em
 S.~Theodoridis and K.~Koutroumbas, ``Kernel pca,'' in \emph{Pattern
   Recognition, Fourth Edition}, 4th~ed.\hskip 1em plus 0.5em minus 0.4em\relax
   Orlando, FL, USA: Academic Press, Inc., 2008, ch.~6, pp. 351--353.
+
+\bibitem{Belkin2004SemiSupLearningRiemannianManifolds}
+M.~Belkin and P.~Niyogi, ``Semi-supervised learning on riemannian manifolds,''
+  \emph{Machine Learning}, vol.~56, no.~1, pp. 209--239, Jul 2004.
 
 \bibitem{Carbonneau2016MILSurvey}
 \BIBentryALTinterwordspacing
