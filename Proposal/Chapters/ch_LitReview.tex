@@ -11,7 +11,7 @@ Multiple Instance Learning (MIL) was originally proposed in \cite{Dietterich1996
 	1, & \exists \bm{x}_{kn} \in \bm{B}^{+}_{k} \ni  l_{kn} = 1\\
 	-1, & l_{kn} = 0 \quad \forall \bm{x}_{kn} \in \bm{B}^{-}_{k} 
 	\end{cases}
-\end{align} and $\bm{x}_{kn} \in \bm{B}_k$ denotes the $n^{th}$ instance in bag $\bm{B}_k$ \cite{Zare2016MIACE}.  Figure \ref{fig:bag_eg} demonstrates the concept of MIL bags.  The objective of learning under MIL is, given only bag-level label information, to fit a model which can classify bags as either being positive or negative (bag-level classification) or to predict the class labels of individual instances (instance-level classification).
+\end{align} and $\bm{x}_{kn}$ denotes the $n^{th}$ instance in positive bag $\bm{B}^{+}_{k}$ or negative bag $\bm{B}^{-}_{k}$ \cite{Zare2016MIACE}.  Figure \ref{fig:bag_eg} demonstrates the concept of MIL bags.  The objective of learning under MIL is, given only bag-level label information, to fit a model which can classify bags as either being positive or negative (bag-level classification) or to predict the class labels of individual instances (instance-level classification).
 
 \begin{center}
 	\begin{figure*}[h]
