@@ -86,6 +86,11 @@ Y.~Bengio, A.~C. Courville, and P.~Vincent, ``Unsupervised feature learning and
   Systems, Man, and Cybernetics, Part B (Cybernetics)}, vol.~35, no.~6, pp.
   1098--1107, Dec 2005.
 
+\bibitem{Thorstensen2009ManifoldThesis}
+N.~Thorstensen, ``Manifold learning and applications to shape and image
+  processing,'' Ph.D. dissertation, Ecole Nationale des Ponts et Chaussees,
+  Paris, France, Nov. 2009.
+
 \bibitem{Bishop1998GTM}
 \BIBentryALTinterwordspacing
 C.~Bishop, M.~Svensén, and C.~K.~I. Williams, ``Gtm: The generative
@@ -202,11 +207,6 @@ T.~G. Dietterich, R.~H. Lathrop, and T.~Lozano-Pérez, ``Solving the multiple
   instance problem with axis-parallel rectangles,'' \emph{Artificial
   Intelligence}, vol.~89, no.~1, pp. 31 -- 71, 1997.
 
-\bibitem{Thorstensen2009ManifoldThesis}
-N.~Thorstensen, ``Manifold learning and applications to shape and image
-  processing,'' Ph.D. dissertation, Ecole Nationale des Ponts et Chaussees,
-  Paris, France, Nov. 2009.
-
 \bibitem{Belkin2006ManReg}
 \BIBentryALTinterwordspacing
 M.~Belkin, P.~Niyogi, and V.~Sindhwani, ``Manifold regularization: A geometric
@@ -224,6 +224,13 @@ G.~Chao, Y.~Luo, and W.~Ding, ``Recent advances in supervised dimension
 I.~Rish, G.~Grabarnik, G.~A. Cecchi, F.~Pereira, and G.~J. Gordon,
   ``Closed-form supervised dimensionality reduction with generalized linear
   models,'' 01 2008, pp. 832--839.
+
+\bibitem{Hermans2017DefenseTripletLoss}
+\BIBentryALTinterwordspacing
+A.~H. an~Lucas~Beyer and B.~Leibe, ``In defense of the triplet loss for person
+  re-identification,'' \emph{CoRR}, vol. abs/1703.07737, 2017. [Online].
+  Available: \url{http://arxiv.org/abs/1703.07737}
+\BIBentrySTDinterwordspacing
 
 \bibitem{Sohn2016NPairLoss}
 K.~Sohn, ``Improved deep metric learning with multi-class n-pair loss

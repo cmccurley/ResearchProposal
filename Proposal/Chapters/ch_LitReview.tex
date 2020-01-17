@@ -99,20 +99,30 @@ Overview and terminology
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Metric Embedding %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Metric Embedding}
 
-The concepts of ``near" and ``far" are very powerful and useful utilities in everyday life.  They classify the relationship between two ``primitives" as being similar or dissimilar, as well as the degree of compatibility \cite{Thorstensen2009ManifoldThesis}. As an example, a medical doctor might consider a machine learning researcher and a software engineer to might as being similar (near), because they both perform research for computer applications.  However, the same researcher and engineer would likely consider their jobs as being very disparate (far), based on the details of their work.  
+The concepts of ``near" and ``far" are very powerful and useful utilities in everyday life.  They classify the relationship between two ``primitives" as being similar or dissimilar, as well as the degree of compatibility \cite{Thorstensen2009ManifoldThesis}. As an example, a medical doctor might consider a machine learning researcher and a software engineer as being similar (near), because they both perform research for computer applications.  However, the same researcher and engineer would likely consider their jobs as being very disparate (far) based on the details of their work.  In order to capture this abstraction of distance, a \textit{metric space} is defined as a mathematical construction  of this vague generality.
 
-	\subsection{Overview of Metric Embedding}
-	
-		\subsubsection{Metric Learning}
+ \theoremstyle{definition}
+ \begin{definition}{Metric Space}
 
-	\subsection{Point-wise Loss}
+ \end{definition}
+ 	\begin{enumerate}
+	\item Non-negativity
+	\item Symmetry
+	\item  Triangle Inequality
+	\end{enumerate}
+
+The goal of metric embedding learning it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{K}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{K}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{K}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \cite{Hermans2017DefenseTripletLoss}.
+
+
+	\subsection{Ranking Loss}
 	
-	\subsection{Contrastive Loss}
+	\subsubsection{Pairwise Loss}
+	
+	\subsubsection{Contrastive Loss}
 	Definition of Contrastive Loss:
 	
-		\subsubsection{Siamese Networks}
 	
-	\subsection{Triplet Loss}
+	\subsubsection{Triplet Loss}
 	
 	Definition of Triplet Loss:
 	
