@@ -207,6 +207,14 @@ N.~Thorstensen, ``Manifold learning and applications to shape and image
   processing,'' Ph.D. dissertation, Ecole Nationale des Ponts et Chaussees,
   Paris, France, Nov. 2009.
 
+\bibitem{Belkin2006ManReg}
+\BIBentryALTinterwordspacing
+M.~Belkin, P.~Niyogi, and V.~Sindhwani, ``Manifold regularization: A geometric
+  framework for learning from labeled and unlabeled examples,'' \emph{J. Mach.
+  Learn. Res.}, vol.~7, pp. 2399--2434, Dec. 2006. [Online]. Available:
+  \url{http://dl.acm.org/citation.cfm?id=1248547.1248632}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Chao2019RecentAdvancesSupervisedDimRed}
 G.~Chao, Y.~Luo, and W.~Ding, ``Recent advances in supervised dimension
   reduction: A survey,'' \emph{Machine Learning and Knowledge Extraction},

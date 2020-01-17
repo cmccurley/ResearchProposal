@@ -5,13 +5,13 @@ This chapter provides a literature review on Manifold Learning, including classi
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Multiple Instance Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Multiple Instance Learning}
 
-Multiple Instance Learning (MIL) was originally proposed in \cite{Dietterich1996AxisParallelRectangles} as a method to handle inherent observation difficulties associated with drug activity prediction.  This problem, among many others, fits well into the framework of MIL where training labels are associated with sets of data points, called \textit{bags} instead of each individual data points, or \textit{instances}.  Under the \textit{standard MIL assumption}, a bag is given a ``positive" label if it is known that  \textit{at least one} sample in the set represents pure or partial target.  Alternatively, a bag is labeled as ``negative" if does not contain any positive instances \cite{Carbonneau2016MILSurvey}.  Let $\bm{X}=[\bm{x}_1,\dots, \bm{x}_N] \in \mathbb{R}^{d \times N}$ be training data where $d$ is the dimensionality of an instance, $\bm{x}_n$, and $N$ is the total number of training instances.  The data is grouped into K \textit{bags}, $\bm{B} = \{\bm{B}_1, \dots, \bm{B}_K\}$, with associated binary bag-level labels, $L = \{L_1, \dots, L_K \}$ where 
+Multiple Instance Learning (MIL) was originally proposed in \cite{Dietterich1996AxisParallelRectangles} as a method to handle inherent observation difficulties associated with drug activity prediction.  This problem, among many others, fits well into the framework of MIL where training labels are associated with sets of data points, called \textit{bags} instead of each individual data points, or \textit{instances}.  Under the \textit{standard MIL assumption}, a bag is given a ``positive" label if it is known that  \textit{at least one} sample in the set represents pure or partial target.  Alternatively, a bag is labeled as ``negative" if does not contain any positive instances \cite{Carbonneau2016MILSurvey}.  Let $\bm{X}=[\bm{x}_1,\dots, \bm{x}_N] \in \mathbb{R}^{d \times N}$ be training data where $d$ is the dimensionality of an instance, $\bm{x}_n$, and $N$ is the total number of training instances.  The data is grouped into K \textit{bags}, $\bm{B} = \{\bm{B}_1, \dots, \bm{B}_K\}$, with associated binary bag-level labels, $\mathcal{L} = \{L_1, \dots, L_K \}$ where 
 \begin{align}
 	L_k = \begin{cases} 
 	1, & \exists \bm{x}_{kn} \in \bm{B}^{+}_{k} \ni  l_{kn} = 1\\
 	-1, & l_{kn} = 0 \quad \forall \bm{x}_{kn} \in \bm{B}^{-}_{k} 
 	\end{cases}
-\end{align} and $\bm{x}_{kn}$ denotes the $n^{th}$ instance in positive bag $\bm{B}^{+}_{k}$ or negative bag $\bm{B}^{-}_{k}$ \cite{Zare2016MIACE}.  Figure \ref{fig:bag_eg} demonstrates the concept of MIL bags.  The objective of learning under MIL is, given only bag-level label information, to fit a model which can classify bags as either being positive or negative (bag-level classification) or to predict the class labels of individual instances (instance-level classification).
+\end{align} and $\bm{x}_{kn}$ denotes the $n^{th}$ instance in positive bag $\bm{B}^{+}_{k}$ or negative bag $\bm{B}^{-}_{k}$ \cite{Zare2016MIACE} and $l_{kn}$ denotes the instance-level label on instance $\bm{x}_{kn}$.  Figure \ref{fig:bag_eg} demonstrates the concept of MIL bags.  The objective of learning under MIL is, given only bag-level label information, to fit a model which can classify bags as either being positive or negative (bag-level classification) or to predict the class labels of individual instances (instance-level classification).
 
 \begin{center}
 	\begin{figure*}[h]
@@ -22,28 +22,23 @@ Multiple Instance Learning (MIL) was originally proposed in \cite{Dietterich1996
 	\end{figure*}
 \end{center}
 
+\subsection{Multiple Instance Space Paradigm}
+Multiple Instance Learning via Embedded Instance Selection
+
 \subsection{Multiple Instance Concept Learning}
 
 \subsection{Multiple Instance Classification}
 
 \subsection{Multiple Instance Boosting}
 
-\subsection{Multiple Instance Learning via Embedded Instance Selection}
-
-\subsection{Multiple Instance Dictionary Learning}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manifold Learning}
 
-Real-world remote sensing data such as hyperspectral imagery, ground-penetrating radar scans and sonar signals are naturally represented by high-dimensional feature vectors.  However, in order to handle such real-world data adequately, its dimensionality usually needs to be reduced \cite{VanDerMaaten2009DRReview}. The problem considered in this work is discovering feature representations that promote class discriminability for target or anomaly detection.  This is typically achieved in one of two ways.  First, features can be projected into a high-dimensional space (such as a Kernel Hilbert Space) using a kernel function. The second option, which is the focus of this work, is to transform the data into a new (often lower-dimensional) coordinate system which optimizes feature representations for discrimination. \textbf{CITE supervised manifold learning paper... gonna have to search for it again}
+Real-world remote sensing data such as hyperspectral imagery, ground-penetrating radar scans and sonar signals are naturally represented by high-dimensional feature vectors.  However, in order to handle such real-world data adequately, its dimensionality usually needs to be reduced \cite{VanDerMaaten2009DRReview,Belkin2004SemiSupLearningRiemannianManifolds}. The problem considered in this work is discovering feature representations that promote class discriminability for target or anomaly detection.  This is typically achieved in one of two ways.  First, features can be projected into a high-dimensional space (such as a Kernel Hilbert Space) using a kernel function. The second option, which is the focus of this work, is to transform the data into a new (often lower-dimensional) coordinate system which optimizes feature representations for discrimination. \textbf{CITE supervised manifold learning paper... gonna have to search for it again}
 
-Combining correlated features to remove redundancy, making classes more discriminative, 
-
-
-
-
-Natural patterns in remote sensing data are typically embedded in a very high-dimensional space.  However, the intuition of researchers has always been that, although these patterns are ostensibly high dimensional, there is a low dimensional, \textit{intrinsic}, structure that needs to be discovered \cite{Belkin2004SemiSupLearningRiemannianManifolds}.  In fact, the idea of intrinsic dimensionality is equivalent to the number of degrees of freedom in a dataset \cite{Thorstensen2009ManifoldThesis}. Consider the example shown in Figure \ref{fig:manifold_eg}.
+The application of \textit{dimensionality reduction} (DR) has proven useful in myriad applications in the literature, such as: visualization of high-dimensional data, classification, redundancy removal, compression and data management, improving computational tractability and efficiency, and reducing the effects of the Curse of Dimensionality \cite{Bishop1998GTM,Nickel2017PoincareEmbeddings,Talmon2015ManifoldLearningInDynamicalSystems,Tenenbaum2000Isomap, Geng2005SupNonlinearDimRed, Palomo2017GHNG, Kohonen1990SOM,Kegl2008PrincipalManifoldsTextbook,Bengio2014RepLearningReview}.  In classification of object entities, it is often assumed that classes can be described by an \textit{intrinsic} subset of representative features which demonstrate geometrical structure \cite{Belkin2006ManReg}. These structures are called intrinsic \textit{manifolds}, and they represent the generating distributions of class objects exactly by the number of degrees of freedom in a dataset \cite{Thorstensen2009ManifoldThesis, Belkin2004SemiSupLearningRiemannianManifolds}.     Consider the example shown in Figure \ref{fig:manifold_eg}.  This classic example demonstrated in \cite{Thorstensen2009ManifoldThesis} shows samples from a pose-estimation dataset \textbf{CITE}.  While each individual image is represented by a vector of features (pixel intensities in this case) in $\mathbb{R}^{4096}$, the dataset only exhibits three degrees of freedom: 1 light variation parameter and 2 rotation angles.  Thus, it is intuitive that the dataset lies on a smooth, intrinsic submanifold spanning three dimensions which inherently capture the degrees of freedom in the data.
 
 \begin{center}
 	\begin{figure*}[h]
@@ -54,22 +49,25 @@ Natural patterns in remote sensing data are typically embedded in a very high-di
 	\end{figure*}
 \end{center}
 
-\subsection{Linear Methods}
+The goal of manifold Learning is then to discover embedding functions which take data from the input feature space and transform it into a lower-dimensional (ideally intrinsic) coordinate system (also called a \textit{latent space} in the literature) which captures the ``useful" properties of the data, while enforcing constraints such as smoothness (the transformation function should not produce sporadic images), continuity (no discontinuous points on the hyper-surface), topological ordering (neighbors in the input space should also be neighbors in the embedded space ), or class separability (samples from the same class should fall metrically close to each other in the embedded space and disparate classes should be distinctly far) \textbf{CITE}.
 
-\subsubsection{Principal Component Analysis (PCA) (Kernel PCA)}
+This dissertation focuses on investigating the use of manifold learning to increase instance discriminability in the latent space, where labels are solely provided at the bag-level.   While there is an expansive literature in unsupervised manifold learning methods, this document will pay special attention to both strictly- and semi-supervised methods, since they are typically adaptations of unsupervised approaches, as well as manifold learning under the MIL framework.
 
-\subsubsection{Multidimensional Scaling (MDS)}
+\subsection{Supervised and Semi-Supervised Approaches}
+Most studies perform classification or regression after applying unsupervised dimensionality reduction.  However, it has been shown that there are advantages of learning the low-dimensional representation and classification/regression models simultaneously \cite{Chao2019RecentAdvancesSupervisedDimRed,Rish2008SupDimRedGLM}.
 
-\subsection{Nonlinear Methods}
+\subsection{Global Approaches}
+PCA and KPCA, MDS, LDA/KDA
 
+
+\subsection{Locality Preservation}
 \subsubsection{Graph-based Methods}
 Nonlinear dimensionality reduction methods typically rely on the use of adjacency graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  An overview of computational graphs, as well as the two most prominent methods for graph construction in manifold learning are presented.
+Overview and terminology
 
-\subsubsection{Graphs}
+\subsubsection{$K$ - Nearest Neighbor Graph}
 
-\subsubsection{$K$-Nearest Neighbor Graph}
-
-\subsubsection{$\epsilon$ Neighborhood Graph}
+\subsubsection{$\epsilon$ - Neighborhood Graph}
 
 \subsubsection{Geodesic Distance Approximation}
 
@@ -92,20 +90,16 @@ Nonlinear dimensionality reduction methods typically rely on the use of adjacenc
 \subsubsection{Deep Learning}
 
 
-\subsection{Supervised and Semi-Supervised Approaches}
-Most studies perform classification or regression after applying unsupervised dimensionality reduction.  However, it has been shown that there are advantages of learning the low-dimensional representation and classification/regression models simultaneously \cite{Chao2019RecentAdvancesSupervisedDimRed,Rish2008SupDimRedGLM}.
-
-\subsubsection{LDA}
-\subsubsection{Kernel LDA (KDA)}
-
 \subsubsection{UMAP}
 
 \subsubsection{t-SNE}
 
-\subsection{Multiple Instance Learning on/with Graphs/Manifolds}
+\subsection{Multiple Instance Learning on Manifolds}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Metric Embedding %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Metric Embedding}
+
+The concepts of ``near" and ``far" are very powerful and useful utilities in everyday life.  They classify the relationship between two ``primitives" as being similar or dissimilar, as well as the degree of compatibility \cite{Thorstensen2009ManifoldThesis}. As an example, a medical doctor might consider a machine learning researcher and a software engineer to might as being similar (near), because they both perform research for computer applications.  However, the same researcher and engineer would likely consider their jobs as being very disparate (far), based on the details of their work.  
 
 	\subsection{Overview of Metric Embedding}
 	
