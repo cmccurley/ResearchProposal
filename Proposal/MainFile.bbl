@@ -202,6 +202,21 @@ T.~G. Dietterich, R.~H. Lathrop, and T.~Lozano-Pérez, ``Solving the multiple
   instance problem with axis-parallel rectangles,'' \emph{Artificial
   Intelligence}, vol.~89, no.~1, pp. 31 -- 71, 1997.
 
+\bibitem{Thorstensen2009ManifoldThesis}
+N.~Thorstensen, ``Manifold learning and applications to shape and image
+  processing,'' Ph.D. dissertation, Ecole Nationale des Ponts et Chaussees,
+  Paris, France, Nov. 2009.
+
+\bibitem{Chao2019RecentAdvancesSupervisedDimRed}
+G.~Chao, Y.~Luo, and W.~Ding, ``Recent advances in supervised dimension
+  reduction: A survey,'' \emph{Machine Learning and Knowledge Extraction},
+  vol.~1, no.~1, pp. 341--358, 2019.
+
+\bibitem{Rish2008SupDimRedGLM}
+I.~Rish, G.~Grabarnik, G.~A. Cecchi, F.~Pereira, and G.~J. Gordon,
+  ``Closed-form supervised dimensionality reduction with generalized linear
+  models,'' 01 2008, pp. 832--839.
+
 \bibitem{Sohn2016NPairLoss}
 K.~Sohn, ``Improved deep metric learning with multi-class n-pair loss
   objective,'' in \emph{Advances in Neural Information Processing Systems 29},

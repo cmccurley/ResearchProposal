@@ -36,8 +36,23 @@ Multiple Instance Learning (MIL) was originally proposed in \cite{Dietterich1996
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manifold Learning}
 
-\subsection{Overview and short description}
+Real-world remote sensing data such as hyperspectral imagery, ground-penetrating radar scans and sonar signals are naturally represented by high-dimensional feature vectors.  However, in order to handle such real-world data adequately, its dimensionality usually needs to be reduced \cite{VanDerMaaten2009DRReview}. The problem considered in this work is discovering feature representations that promote class discriminability for target or anomaly detection.  This is typically achieved in one of two ways.  First, features can be projected into a high-dimensional space (such as a Kernel Hilbert Space) using a kernel function. The second option, which is the focus of this work, is to transform the data into a new (often lower-dimensional) coordinate system which optimizes feature representations for discrimination. \textbf{CITE supervised manifold learning paper... gonna have to search for it again}
 
+Combining correlated features to remove redundancy, making classes more discriminative, 
+
+
+
+
+Natural patterns in remote sensing data are typically embedded in a very high-dimensional space.  However, the intuition of researchers has always been that, although these patterns are ostensibly high dimensional, there is a low dimensional, \textit{intrinsic}, structure that needs to be discovered \cite{Belkin2004SemiSupLearningRiemannianManifolds}.  In fact, the idea of intrinsic dimensionality is equivalent to the number of degrees of freedom in a dataset \cite{Thorstensen2009ManifoldThesis}. Consider the example shown in Figure \ref{fig:manifold_eg}.
+
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{example-image-a}
+		\caption{Placeholder for example of high D data lying on a low-dimensional sub-manifold.}
+		\label{fig:manifold_eg}
+	\end{figure*}
+\end{center}
 
 \subsection{Linear Methods}
 
@@ -78,6 +93,14 @@ Nonlinear dimensionality reduction methods typically rely on the use of adjacenc
 
 
 \subsection{Supervised and Semi-Supervised Approaches}
+Most studies perform classification or regression after applying unsupervised dimensionality reduction.  However, it has been shown that there are advantages of learning the low-dimensional representation and classification/regression models simultaneously \cite{Chao2019RecentAdvancesSupervisedDimRed,Rish2008SupDimRedGLM}.
+
+\subsubsection{LDA}
+\subsubsection{Kernel LDA (KDA)}
+
+\subsubsection{UMAP}
+
+\subsubsection{t-SNE}
 
 \subsection{Multiple Instance Learning on/with Graphs/Manifolds}
 
