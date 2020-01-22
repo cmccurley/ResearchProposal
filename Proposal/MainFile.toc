@@ -22,12 +22,12 @@
 \contentsline {subsubsection}{\numberline {2.2.3.8}Hessian Eigenmaps}{19}{subsubsection.2.2.3.8}
 \contentsline {subsubsection}{\numberline {2.2.3.9}Diffusion Maps}{19}{subsubsection.2.2.3.9}
 \contentsline {subsubsection}{\numberline {2.2.3.10}Sammon Mapping}{19}{subsubsection.2.2.3.10}
-\contentsline {subsubsection}{\numberline {2.2.3.11}Latent Variable Models}{19}{subsubsection.2.2.3.11}
-\contentsline {subsubsection}{\numberline {2.2.3.12}Competitive Hebbian Learning}{19}{subsubsection.2.2.3.12}
-\contentsline {subsubsection}{\numberline {2.2.3.13}Deep Learning}{19}{subsubsection.2.2.3.13}
-\contentsline {subsubsection}{\numberline {2.2.3.14}UMAP}{19}{subsubsection.2.2.3.14}
-\contentsline {subsubsection}{\numberline {2.2.3.15}t-SNE}{19}{subsubsection.2.2.3.15}
-\contentsline {subsection}{\numberline {2.2.4}Multiple Instance Learning on Manifolds}{19}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Latent Variable Models}{19}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Competitive Hebbian Learning}{19}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Deep Learning}{19}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}UMAP}{19}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.8}t-SNE}{19}{subsection.2.2.8}
+\contentsline {subsection}{\numberline {2.2.9}Multiple Instance Learning on Manifolds}{19}{subsection.2.2.9}
 \contentsline {section}{\numberline {2.3}Metric Embedding}{19}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Ranking Loss}{20}{subsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.1.1}Pairwise Loss}{20}{subsubsection.2.3.1.1}
