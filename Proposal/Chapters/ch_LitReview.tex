@@ -17,7 +17,7 @@ Multiple Instance Learning (MIL) was originally proposed in \cite{Dietterich1996
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=0.6\textwidth]{example-image-a}
-		\caption{Placeholder for examples of positive and negative bag concepts}
+		\caption[Multiple instance learning bags.]{Placeholder for examples of positive and negative bag concepts}
 		\label{fig:bag_eg}
 	\end{figure*}
 \end{center}
@@ -44,12 +44,12 @@ The application of \textit{dimensionality reduction} (DR) has proven useful in m
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=0.6\textwidth]{example-image-a}
-		\caption{Placeholder for example of high D data lying on a low-dimensional sub-manifold.}
+		\caption[Example pose data manifold.]{Placeholder for example of high D data lying on a low-dimensional sub-manifold.}
 		\label{fig:manifold_eg}
 	\end{figure*}
 \end{center}
 
-The goal of manifold Learning is then to discover embedding functions which take data from the input feature space and transform it into a lower-dimensional (ideally intrinsic) coordinate system (also called a \textit{latent space} in the literature) which captures the ``useful" properties of the data, while enforcing constraints such as smoothness (the transformation function should not produce sporadic images), continuity (no discontinuous points on the hyper-surface), topological ordering (neighbors in the input space should also be neighbors in the embedded space ), or class separability (samples from the same class should fall metrically close to each other in the embedded space and disparate classes should be distinctly far) \textbf{CITE}.
+The goal of manifold Learning is then to discover embedding functions which take data from the input feature space and transform it into a lower-dimensional (ideally intrinsic) coordinate system (also called a \textit{latent space} in the literature) which captures the ``useful" properties of the data, while enforcing constraints such as smoothness (the transformation function should not produce sporadic images), continuity (no discontinuous points on the hyper-surface), topological ordering (neighbors in the input space should also be neighbors in the embedded space ) or class separability (samples from the same class should fall metrically close to each other in the embedded space and disparate classes should be distinctly far) \textbf{CITE}.
 
 This dissertation focuses on investigating the use of manifold learning to increase instance discriminability in the latent space, where labels are solely provided at the bag-level.   While there is an expansive literature in unsupervised manifold learning methods, this document will pay special attention to both strictly- and semi-supervised methods, since they are typically adaptations of unsupervised approaches, as well as manifold learning under the MIL framework.
 
