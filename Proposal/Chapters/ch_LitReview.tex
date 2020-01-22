@@ -103,16 +103,18 @@ The concepts of ``near" and ``far" are very powerful and useful utilities in eve
 
  \theoremstyle{definition}
  \begin{definition}{Metric Space}
+ A \textit{metric space} is an ordered pair $(\mathcal{X},D)$ where $\mathcal{X}$ is a set and $D$ is a metric on $\mathcal{X}$, or $D:\mathcal{X} \times \mathcal{X} \rightarrow \mathbb{R}$ such that $\forall \bm{x},\bm{y},\bm{z}\in\mathcal{X}$, the following holds:
 
  \end{definition}
  	\begin{enumerate}
-	\item Non-negativity
-	\item Symmetry
-	\item  Triangle Inequality
+	\item Non-negativity: $D(\bm{x},\bm{y}) \geq 0$
+	\item Identity: $D(\bm{x},\bm{y}) = 0 \iff \bm{x} = \bm{y} $
+	\item Symmetry: $D(\bm{x},\bm{y}) = D(\bm{y},\bm{x})$
+	\item Triangle Inequality:  $D(\bm{x},\bm{z}) \leq D(\bm{x},\bm{y}) + D(\bm{y},\bm{z})$
 	\end{enumerate}
 
-The goal of metric embedding learning it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{K}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{K}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{K}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \cite{Hermans2017DefenseTripletLoss}.
-
+The goal of \textit{metric embedding learning} it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{K}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{K}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{K}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \cite{Hermans2017DefenseTripletLoss}.  Let $D(\bm{x},\bm{y}): \mathbb{R}^{K} \times \mathbb{R}^{K} \rightarrow \mathbb{R}$ be a metric function measuring dissimilarity in the embedded space.  For succinctness, $D_{i,j} = D(f_{\theta}(\bm{x_{i}}),f_{\theta}(\bm{x_{j}}))$
+defines the dissimilarity between samples $\bm{x}_{i}$ and $\bm{x}_{j}$, after being embedded.
 
 	\subsection{Ranking Loss}
 	
