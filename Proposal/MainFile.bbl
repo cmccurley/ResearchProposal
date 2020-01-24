@@ -215,6 +215,13 @@ M.~Belkin, P.~Niyogi, and V.~Sindhwani, ``Manifold regularization: A geometric
   \url{http://dl.acm.org/citation.cfm?id=1248547.1248632}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Vural2018StudySupervisedManifoldLearning}
+\BIBentryALTinterwordspacing
+E.~Vural and C.~Guillemot, ``A study of the classification of low-dimensional
+  data with supervised manifold learning,'' \emph{CoRR}, vol. abs/1507.05880,
+  2018. [Online]. Available: \url{http://arxiv.org/abs/1507.05880}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Chao2019RecentAdvancesSupervisedDimRed}
 G.~Chao, Y.~Luo, and W.~Ding, ``Recent advances in supervised dimension
   reduction: A survey,'' \emph{Machine Learning and Knowledge Extraction},
