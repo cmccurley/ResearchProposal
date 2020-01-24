@@ -13,17 +13,17 @@
 \BOOKMARK [1][-]{section.2.2}{2.2 Manifold Learning}{chapter.2}% 13
 \BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Definition and General Notation}{section.2.2}% 14
 \BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Linear Manifold Learning}{section.2.2}% 15
-\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Nonlinear Manifold Learning}{section.2.2}% 16
-\BOOKMARK [3][-]{subsubsection.2.2.3.1}{2.2.3.1 Graph-based Methods}{subsection.2.2.3}% 17
-\BOOKMARK [3][-]{subsubsection.2.2.3.2}{2.2.3.2 K - Nearest Neighbor Graph}{subsection.2.2.3}% 18
-\BOOKMARK [3][-]{subsubsection.2.2.3.3}{2.2.3.3 \040- Neighborhood Graph}{subsection.2.2.3}% 19
-\BOOKMARK [3][-]{subsubsection.2.2.3.4}{2.2.3.4 Geodesic Distance Approximation}{subsection.2.2.3}% 20
-\BOOKMARK [3][-]{subsubsection.2.2.3.5}{2.2.3.5 Isomap}{subsection.2.2.3}% 21
-\BOOKMARK [3][-]{subsubsection.2.2.3.6}{2.2.3.6 Locally Linear Embedding \(LLE\)}{subsection.2.2.3}% 22
-\BOOKMARK [3][-]{subsubsection.2.2.3.7}{2.2.3.7 Laplacian Eigenmaps}{subsection.2.2.3}% 23
-\BOOKMARK [3][-]{subsubsection.2.2.3.8}{2.2.3.8 Hessian Eigenmaps}{subsection.2.2.3}% 24
-\BOOKMARK [3][-]{subsubsection.2.2.3.9}{2.2.3.9 Diffusion Maps}{subsection.2.2.3}% 25
-\BOOKMARK [3][-]{subsubsection.2.2.3.10}{2.2.3.10 Sammon Mapping}{subsection.2.2.3}% 26
+\BOOKMARK [3][-]{subsubsection.2.2.2.1}{2.2.2.1 Principal Component Analysis \(PCA\)}{subsection.2.2.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.2.2.2}{2.2.2.2 Multi-Dimensional Scaling \(MDS\)}{subsection.2.2.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.2.3}{2.2.2.3 Fisher's Linear Discriminant Analysis \(LDA\)}{subsection.2.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Nonlinear Manifold Learning}{section.2.2}% 19
+\BOOKMARK [3][-]{subsubsection.2.2.3.1}{2.2.3.1 Graph-based Methods}{subsection.2.2.3}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.3.2}{2.2.3.2 Isomap}{subsection.2.2.3}% 21
+\BOOKMARK [3][-]{subsubsection.2.2.3.3}{2.2.3.3 Locally Linear Embedding \(LLE\)}{subsection.2.2.3}% 22
+\BOOKMARK [3][-]{subsubsection.2.2.3.4}{2.2.3.4 Laplacian Eigenmaps}{subsection.2.2.3}% 23
+\BOOKMARK [3][-]{subsubsection.2.2.3.5}{2.2.3.5 Hessian Eigenmaps}{subsection.2.2.3}% 24
+\BOOKMARK [3][-]{subsubsection.2.2.3.6}{2.2.3.6 Diffusion Maps}{subsection.2.2.3}% 25
+\BOOKMARK [3][-]{subsubsection.2.2.3.7}{2.2.3.7 Sammon Mapping}{subsection.2.2.3}% 26
 \BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Latent Variable Models}{section.2.2}% 27
 \BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 Competitive Hebbian Learning}{section.2.2}% 28
 \BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Deep Learning}{section.2.2}% 29
@@ -47,4 +47,4 @@
 \BOOKMARK [0][-]{chapter.5}{5 Preliminary Work}{}% 47
 \BOOKMARK [0][-]{chapter.6}{6 Future Tasks}{}% 48
 \BOOKMARK [0][-]{chapter.7}{7 Conclusions}{}% 49
-\BOOKMARK [0][-]{appendix*.12}{REFERENCES}{}% 50
+\BOOKMARK [0][-]{appendix*.23}{REFERENCES}{}% 50

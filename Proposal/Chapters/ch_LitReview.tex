@@ -62,18 +62,41 @@ Given a data matrix $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]\in \mathbb{R}^{D \time
 Manifold learning methods can be subdivided into a wide taxonomy of approaches, with \textit{linear} and \text{nonlinear} at the root. Nonlinear approaches can be further divided into purely global methods and approaches that capture global structure solely from local information, local.  We begin with a review of popular linear manifold learning techniques before moving into the realm of nonlinear approaches. Base, unsupervised methods are reviewed along with corresponding supervised and semi-supervised adaptations. 
 
 \subsection{Linear Manifold Learning}
-PCA and KPCA, MDS, LDA/KDA
+A review of linear manifold learning approaches is provided.  Linear approaches are advantageous over nonlinear because they allow for out-of-sample extensions.  In other words, linear transformation matrices are learned which can be easily applied on data not included in the training set.  However, linear approaches are limited in their abilities to capture irregular data surfaces \textbf{CITE}.  Principal Component Analysis (PCA), Multi-dimensional Scaling (MDS) and Fisher's Linear Discriminant Analysis (LDA) are reviewed.  General approaches are discussed and supervised as well as nonlinear extensions are elaborated. Special focus is given to (LDA), as it is the only inherently-supervised technique out of the included approaches.
+
+\subsubsection{Principal Component Analysis (PCA)}
+
+\paragraph{Unsupervised PCA}
+
+\paragraph{Supervised PCA}
+
+\paragraph{Kernel PCA}
+
+\subsubsection{Multi-Dimensional Scaling (MDS)}
+
+\paragraph{Unsupervised MDS}
+
+\paragraph{Supervised MDS}
+
+\paragraph{Kernel MDS}
+
+\subsubsection{Fisher's Linear Discriminant Analysis (LDA)}
+
+\paragraph{Linear LDA}
+
+\paragraph{Kernel LDA (KDA)}
 
 \subsection{Nonlinear Manifold Learning}
+
 \subsubsection{Graph-based Methods}
 Nonlinear dimensionality reduction methods typically rely on the use of adjacency graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  An overview of computational graphs, as well as the two most prominent methods for graph construction in manifold learning are presented.
 Overview and terminology
 
-\subsubsection{$K$ - Nearest Neighbor Graph}
+\paragraph{$K$ - Nearest Neighbor Graph}
 
-\subsubsection{$\epsilon$ - Neighborhood Graph}
+\paragraph{$\epsilon$ - Neighborhood Graph}
 
-\subsubsection{Geodesic Distance Approximation}
+\paragraph{Geodesic Distance Approximation}
 
 \subsubsection{Isomap}
 
