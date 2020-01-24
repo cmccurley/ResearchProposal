@@ -11,9 +11,9 @@
 \contentsline {subsection}{\numberline {2.1.3}Multiple Instance Classification}{19}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Multiple Instance Boosting}{19}{subsection.2.1.4}
 \contentsline {section}{\numberline {2.2}Manifold Learning}{19}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Supervised and Semi-Supervised Approaches}{21}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Global Approaches}{22}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Locality Preservation}{22}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.1}Definition and General Notation}{21}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Linear Manifold Learning}{22}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Nonlinear Manifold Learning}{22}{subsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.3.1}Graph-based Methods}{22}{subsubsection.2.2.3.1}
 \contentsline {subsubsection}{\numberline {2.2.3.2}$K$ - Nearest Neighbor Graph}{23}{subsubsection.2.2.3.2}
 \contentsline {subsubsection}{\numberline {2.2.3.3}$\epsilon $ - Neighborhood Graph}{23}{subsubsection.2.2.3.3}

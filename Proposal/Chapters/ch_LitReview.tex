@@ -54,18 +54,17 @@ The goal of manifold Learning is then to discover embedding functions which take
 
 This dissertation focuses on investigating the use of manifold learning to increase instance discriminability in the latent space, where labels are solely provided at the bag-level.   While there is an expansive literature in unsupervised manifold learning methods, this document will pay special attention to both strictly- and semi-supervised methods, since they are typically adaptations of unsupervised approaches, as well as manifold learning under the MIL framework.
 
-\subsection{Supervised and Semi-Supervised Approaches}
+\subsection{Definition and General Notation}
 Most studies perform classification or regression after applying unsupervised dimensionality reduction.  However, it has been shown that there are advantages of learning the low-dimensional representations and classification/regression models simultaneously \cite{Chao2019RecentAdvancesSupervisedDimRed,Rish2008SupDimRedGLM}.  Considering classification as the main goal of dimensionality reduction, this section provides a summary of the current literature in the area. \newline
 
-Given a data matrix $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]\in \mathbb{R}^{D \times N}$ where $N$ is the total number of samples and $D$ is the dimensionality of the input feature space, general dimensionality reduction seeks to find a representation $\bm{U} \in \mathbb{R}^{K \times N}$ with $K \ll D$ that enhances the between-class separation while preserving the intrinsic geometric structure of the data\cite{Vural2018StudySupervisedManifoldLearning}.  In other words, it is assumed that the data lie on a smooth manifold $\mathcal{X}$, which is the image of some parameter domain $\mathcal{U} \subset \mathbb{R}^{K}$ under a smooth mapping $\Psi : \mathcal{U} \rightarrow \mathbb{R}^{D}$.  The goal of manifold learning is to discover an inverse mapping to the low-dimensional pre-image coordinates $\bm{u}_n \in \bm{U}$ corresponding to points $\bm{x}_n \in \bm{X}$.  The data matrices $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]$ and $\bm{U} = [\bm{u}_1, \dots, \bm{u}_N]$  are of size $D \times N$ and $K \times N$, respectively.  Traditional classification methods can operate on these \textit{latent} data representations of reduced-dimensionality.  \newline
+Given a data matrix $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]\in \mathbb{R}^{D \times N}$ where $N$ is the total number of samples and $D$ is the dimensionality of the input feature space, general dimensionality reduction seeks to find a representation $\bm{U} \in \mathbb{R}^{K \times N}$ with $K \ll D$ that enhances the between-class separation while preserving the intrinsic geometric structure of the data\cite{Vural2018StudySupervisedManifoldLearning}.  In other words, it is assumed that the data lie on a smooth manifold $\mathcal{X}$, which is the image of some parameter domain $\mathcal{U} \subset \mathbb{R}^{K}$ under a smooth mapping $\Psi : \mathcal{U} \rightarrow \mathbb{R}^{D}$.  The goal of manifold learning is to discover an inverse mapping to the low-dimensional pre-image coordinates $\bm{u}_n \in \bm{U}$ corresponding to points $\bm{x}_n \in \bm{X}$.  The data matrices $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]$ and $\bm{U} = [\bm{u}_1, \dots, \bm{u}_N]$  are of size $D \times N$ and $K \times N$, respectively.  Traditional classification methods can operate on these \textit{latent} data representations of reduced-dimensionality. The primary difference between traditional, unsupervised manifold learning and supervised approaches is that, in supervised manifold learning, data matrix $\bm{X} $ is accompanied with a corresponding label vector $\bm{y} = [y_1, \dots, y_N]$ indicating the corresponding class labels of each sample in $\bm{X}$. \newline
 
-Manifold learning methods can be subdivided into a wide taxonomy of approaches, with \textit{linear} and \text{nonlinear} at the root. Nonlinear approaches can be further divided into purely global methods and approaches that capture global structure solely from local information, local.  
+Manifold learning methods can be subdivided into a wide taxonomy of approaches, with \textit{linear} and \text{nonlinear} at the root. Nonlinear approaches can be further divided into purely global methods and approaches that capture global structure solely from local information, local.  We begin with a review of popular linear manifold learning techniques before moving into the realm of nonlinear approaches. Base, unsupervised methods are reviewed along with corresponding supervised and semi-supervised adaptations. 
 
-\subsection{Global Approaches}
+\subsection{Linear Manifold Learning}
 PCA and KPCA, MDS, LDA/KDA
 
-
-\subsection{Locality Preservation}
+\subsection{Nonlinear Manifold Learning}
 \subsubsection{Graph-based Methods}
 Nonlinear dimensionality reduction methods typically rely on the use of adjacency graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  An overview of computational graphs, as well as the two most prominent methods for graph construction in manifold learning are presented.
 Overview and terminology
@@ -110,17 +109,17 @@ The concepts of ``near" and ``far" are very powerful and useful utilities in eve
 
  \theoremstyle{definition}
  \begin{definition}{Metric Space}
- A \textit{metric space} is an ordered pair $(\mathcal{X},D)$ where $\mathcal{X}$ is a set and $D$ is a metric on $\mathcal{X}$, or $D:\mathcal{X} \times \mathcal{X} \rightarrow \mathbb{R}$ such that $\forall \bm{x},\bm{y},\bm{z}\in\mathcal{X}$, the following holds:
+ A \textit{metric space} is an ordered pair $(\mathcal{X},\mathcal{D})$ where $\mathcal{X}$ is a set and $\mathcal{D}$ is a metric on $\mathcal{X}$, or $\mathcal{D}:\mathcal{X} \times \mathcal{X} \rightarrow \mathbb{R}$ such that $\forall \bm{x},\bm{y},\bm{z}\in\mathcal{X}$, the following holds:
 
  \end{definition}
  	\begin{enumerate}
-	\item Non-negativity: $D(\bm{x},\bm{y}) \geq 0$
-	\item Identity: $D(\bm{x},\bm{y}) = 0 \iff \bm{x} = \bm{y} $
-	\item Symmetry: $D(\bm{x},\bm{y}) = D(\bm{y},\bm{x})$
-	\item Triangle Inequality:  $D(\bm{x},\bm{z}) \leq D(\bm{x},\bm{y}) + D(\bm{y},\bm{z})$
+	\item Non-negativity: $\mathcal{D}(\bm{x},\bm{y}) \geq 0$
+	\item Identity: $\mathcal{D}(\bm{x},\bm{y}) = 0 \iff \bm{x} = \bm{y} $
+	\item Symmetry: $\mathcal{D}(\bm{x},\bm{y}) = \mathcal{D}(\bm{y},\bm{x})$
+	\item Triangle Inequality:  $\mathcal{D}(\bm{x},\bm{z}) \leq \mathcal{D}(\bm{x},\bm{y}) + \mathcal{D}(\bm{y},\bm{z})$
 	\end{enumerate}
 
-The goal of \textit{metric embedding learning} it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{K}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{K}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{K}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \cite{Hermans2017DefenseTripletLoss}.  Let $D(\bm{x},\bm{y}): \mathbb{R}^{K} \times \mathbb{R}^{K} \rightarrow \mathbb{R}$ be a metric function measuring dissimilarity in the embedded space.  For succinctness, $D_{i,j} = D(f_{\theta}(\bm{x_{i}}),f_{\theta}(\bm{x_{j}}))$
+The goal of \textit{metric embedding learning} it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{K}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{K}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{K}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \cite{Hermans2017DefenseTripletLoss}.  Let $\mathcal{D}(\bm{x},\bm{y}): \mathbb{R}^{K} \times \mathbb{R}^{K} \rightarrow \mathbb{R}$ be a metric function measuring dissimilarity in the embedded space.  For succinctness, $\mathcal{D}_{i,j} = \mathcal{D}(f_{\theta}(\bm{x_{i}}),f_{\theta}(\bm{x_{j}}))$
 defines the dissimilarity between samples $\bm{x}_{i}$ and $\bm{x}_{j}$, after being embedded.
 
 	\subsection{Ranking Loss}
