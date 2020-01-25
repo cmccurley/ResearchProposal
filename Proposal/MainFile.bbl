@@ -207,19 +207,19 @@ T.~G. Dietterich, R.~H. Lathrop, and T.~Lozano-Pérez, ``Solving the multiple
   instance problem with axis-parallel rectangles,'' \emph{Artificial
   Intelligence}, vol.~89, no.~1, pp. 31 -- 71, 1997.
 
+\bibitem{Vural2018StudySupervisedManifoldLearning}
+\BIBentryALTinterwordspacing
+E.~Vural and C.~Guillemot, ``A study of the classification of low-dimensional
+  data with supervised manifold learning,'' \emph{CoRR}, vol. abs/1507.05880,
+  2018. [Online]. Available: \url{http://arxiv.org/abs/1507.05880}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Belkin2006ManReg}
 \BIBentryALTinterwordspacing
 M.~Belkin, P.~Niyogi, and V.~Sindhwani, ``Manifold regularization: A geometric
   framework for learning from labeled and unlabeled examples,'' \emph{J. Mach.
   Learn. Res.}, vol.~7, pp. 2399--2434, Dec. 2006. [Online]. Available:
   \url{http://dl.acm.org/citation.cfm?id=1248547.1248632}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Vural2018StudySupervisedManifoldLearning}
-\BIBentryALTinterwordspacing
-E.~Vural and C.~Guillemot, ``A study of the classification of low-dimensional
-  data with supervised manifold learning,'' \emph{CoRR}, vol. abs/1507.05880,
-  2018. [Online]. Available: \url{http://arxiv.org/abs/1507.05880}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Chao2019RecentAdvancesSupervisedDimRed}

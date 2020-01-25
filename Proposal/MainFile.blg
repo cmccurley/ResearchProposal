@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: MainFile.aux
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: MainFile.aux
 The style file: BibFiles/IEEEtran.bst
 A level-1 auxiliary file: Chapters/acknowledgements.aux
 A level-1 auxiliary file: Chapters/TOC.aux
@@ -12,6 +14,11 @@ A level-1 auxiliary file: Chapters/ch_ExperimentalDesign.aux
 A level-1 auxiliary file: Chapters/ch_PreliminaryWork.aux
 A level-1 auxiliary file: Chapters/ch_FutureTasks.aux
 A level-1 auxiliary file: Chapters/ch_Conclusion.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: BibFiles/references.bib
 I was expecting a `,' or a `}'---line 53 of file BibFiles/references.bib
  :  
@@ -23,22 +30,22 @@ I was expecting a `,' or a `}'---line 211 of file BibFiles/references.bib
  :  number = {2}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 374 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 385 of file BibFiles/references.bib
  :  
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-"{" immediately follows a field name---line 1262 of file BibFiles/references.bib
+"{" immediately follows a field name---line 1273 of file BibFiles/references.bib
  :  booktitl\part
  :               {title}e={2011 IEEE 11th International Conference on Data Mining},
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2208 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 2219 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 2678 of file BibFiles/references.bib
+--line 2689 of file BibFiles/references.bib
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -50,4 +57,45 @@ Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty booktitle in Rish2008SupDimRedGLM
 
 Done.
+You've used 40 entries,
+            4024 wiz_defined-function locations,
+            1104 strings with 15473 characters,
+and the built_in function-call counts, 28112 in all, are:
+= -- 2349
+> -- 655
+< -- 224
++ -- 359
+- -- 113
+* -- 1389
+:= -- 4438
+add.period$ -- 82
+call.type$ -- 40
+change.case$ -- 42
+chr.to.int$ -- 507
+cite$ -- 46
+duplicate$ -- 2023
+empty$ -- 2170
+format.name$ -- 146
+if$ -- 6374
+int.to.chr$ -- 0
+int.to.str$ -- 40
+missing$ -- 357
+newline$ -- 171
+num.names$ -- 43
+pop$ -- 782
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 2170
+stack$ -- 0
+substring$ -- 1207
+swap$ -- 1686
+text.length$ -- 55
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 40
+warning$ -- 6
+while$ -- 108
+width$ -- 42
+write$ -- 440
 (There were 5 error messages)
