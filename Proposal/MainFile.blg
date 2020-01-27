@@ -1,5 +1,5 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: MainFile.aux
-The style file: BibFiles/IEEEtran.bst
+The style file: plainnat.bst
 A level-1 auxiliary file: Chapters/acknowledgements.aux
 A level-1 auxiliary file: Chapters/TOC.aux
 A level-1 auxiliary file: Chapters/abbreviations.aux
@@ -38,16 +38,13 @@ I was expecting a `,' or a `}'---line 2219 of file BibFiles/references.bib
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 2689 of file BibFiles/references.bib
--- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
--- http://www.michaelshell.org/tex/ieeetran/bibtex/
--- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+--line 2691 of file BibFiles/references.bib
 Warning--empty journal in Bishop1998GTM
-Warning--missing publisher in Kegl2008PrincipalManifoldsTextbook
+Warning--empty year in MUUFLScoringCode
+Warning--empty publisher in Kegl2008PrincipalManifoldsTextbook
+Warning--empty booktitle in Rish2008SupDimRedGLM
 Warning--empty title in Xu2011MI_Metric_Learning
 Warning--empty booktitle in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
-Warning--empty booktitle in Rish2008SupDimRedGLM
-
-Done.
+Warning--empty year in Xu2011MI_Metric_Learning
 (There were 5 error messages)
