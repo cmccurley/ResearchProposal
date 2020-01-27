@@ -33,7 +33,7 @@
 \contentsline {subsubsection}{\numberline {2.2.3.2}General Graph Embedding Framework}{24}{subsubsection.2.2.3.2}
 \contentsline {subsubsection}{\numberline {2.2.3.3}Isomap}{24}{subsubsection.2.2.3.3}
 \contentsline {subsubsection}{\numberline {2.2.3.4}Locally Linear Embedding (LLE)}{24}{subsubsection.2.2.3.4}
-\contentsline {subsubsection}{\numberline {2.2.3.5}Laplacian Eigenmaps}{24}{subsubsection.2.2.3.5}
+\contentsline {subsubsection}{\numberline {2.2.3.5}Laplacian Eigenmaps (LE)}{24}{subsubsection.2.2.3.5}
 \contentsline {subsubsection}{\numberline {2.2.3.6}Hessian Eigenmaps}{24}{subsubsection.2.2.3.6}
 \contentsline {subsubsection}{\numberline {2.2.3.7}Diffusion Maps}{24}{subsubsection.2.2.3.7}
 \contentsline {subsubsection}{\numberline {2.2.3.8}Sammon Mapping}{24}{subsubsection.2.2.3.8}

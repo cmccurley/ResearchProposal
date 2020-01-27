@@ -22,7 +22,7 @@
 \BOOKMARK [3][-]{subsubsection.2.2.3.2}{2.2.3.2 General Graph Embedding Framework}{subsection.2.2.3}% 22
 \BOOKMARK [3][-]{subsubsection.2.2.3.3}{2.2.3.3 Isomap}{subsection.2.2.3}% 23
 \BOOKMARK [3][-]{subsubsection.2.2.3.4}{2.2.3.4 Locally Linear Embedding \(LLE\)}{subsection.2.2.3}% 24
-\BOOKMARK [3][-]{subsubsection.2.2.3.5}{2.2.3.5 Laplacian Eigenmaps}{subsection.2.2.3}% 25
+\BOOKMARK [3][-]{subsubsection.2.2.3.5}{2.2.3.5 Laplacian Eigenmaps \(LE\)}{subsection.2.2.3}% 25
 \BOOKMARK [3][-]{subsubsection.2.2.3.6}{2.2.3.6 Hessian Eigenmaps}{subsection.2.2.3}% 26
 \BOOKMARK [3][-]{subsubsection.2.2.3.7}{2.2.3.7 Diffusion Maps}{subsection.2.2.3}% 27
 \BOOKMARK [3][-]{subsubsection.2.2.3.8}{2.2.3.8 Sammon Mapping}{subsection.2.2.3}% 28
