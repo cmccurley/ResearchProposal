@@ -57,7 +57,7 @@ This dissertation focuses on investigating the use of manifold learning to incre
 \subsection{Definition and General Notation}
 Most studies perform classification or regression after applying unsupervised dimensionality reduction.  However, it has been shown that there are advantages of learning the low-dimensional representations and classification/regression models simultaneously \citep{Chao2019RecentAdvancesSupervisedDimRed,Rish2008SupDimRedGLM}.  Considering classification as the main goal of dimensionality reduction, this section provides a summary of the current literature in the area. \newline
 
-Given a data matrix $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]\in \mathbb{R}^{D \times N}$ where $N$ is the total number of samples and $D$ is the dimensionality of the input feature space, general dimensionality reduction seeks to find a representation $\bm{U} \in \mathbb{R}^{K \times N}$ with $K \ll D$ that enhances the between-class separation while preserving the intrinsic geometric structure of the data\citep{Vural2018StudySupervisedManifoldLearning}.  In other words, it is assumed that the data lie on a smooth manifold $\mathcal{X}$, which is the image of some parameter domain $\mathcal{U} \subset \mathbb{R}^{K}$ under a smooth mapping $\Psi : \mathcal{U} \rightarrow \mathbb{R}^{D}$.  The goal of manifold learning is to discover an inverse mapping to the low-dimensional pre-image coordinates $\bm{u}_n \in \bm{U}$ corresponding to points $\bm{x}_n \in \bm{X}$.  The data matrices $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]$ and $\bm{U} = [\bm{u}_1, \dots, \bm{u}_N]$  are of size $D \times N$ and $K \times N$, respectively.  Traditional classification methods can operate on these \textit{latent} data representations of reduced-dimensionality. The primary difference between traditional, unsupervised manifold learning and supervised approaches is that, in supervised manifold learning, data matrix $\bm{X} $ is accompanied with a corresponding label vector $\bm{y} = [y_1, \dots, y_N]$ indicating the corresponding class labels of each sample in $\bm{X}$. \newline
+Given a data matrix $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]\in \mathbb{R}^{D \times N}$ where $N$ is the total number of samples and $D$ is the dimensionality of the input feature space, general dimensionality reduction seeks to find a representation $\bm{Z} \in \mathbb{R}^{K \times N}$ with $K \ll D$ that enhances the between-class separation while preserving the intrinsic geometric structure of the data\citep{Vural2018StudySupervisedManifoldLearning}.  In other words, it is assumed that the data lie on a smooth manifold $\mathcal{X}$, which is the image of some parameter domain $\mathcal{Z} \subset \mathbb{R}^{K}$ under a smooth mapping $\Psi : \mathcal{Z} \rightarrow \mathbb{R}^{D}$.  The goal of manifold learning is to discover an inverse mapping to the low-dimensional pre-image coordinates $\bm{z}_n \in \bm{z}$ corresponding to points $\bm{x}_n \in \bm{X}$.  The data matrices $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]$ and $\bm{Z} = [\bm{z}_1, \dots, \bm{z}_N]$ are of size $D \times N$ and $K \times N$, respectively.  Since these low-dimensional data representations are unknown, they are often referred to as \textit{latent} vectors and the span in $\mathbb{R}^K$ is sometimes called the \textit{latent feature space} or \textit{latent space} for conciseness \textbf{CITE}. The primary difference between traditional, unsupervised manifold learning and supervised approaches is that, in supervised manifold learning, data matrix $\bm{X} $ is accompanied with a corresponding label vector $\bm{l} = [l_1, \dots, l_N]$ indicating the corresponding class labels of each sample in $\bm{X}$. \newline
 
 Manifold learning methods can be subdivided into a wide taxonomy of approaches, with \textit{linear} and \textit{nonlinear} at the root. Nonlinear approaches can be further divided into purely global methods and approaches that capture global structure solely from local information.  We begin with a review of popular linear manifold learning techniques before moving into the realm of nonlinear approaches. Base, unsupervised methods are reviewed along with corresponding supervised and semi-supervised adaptations. 
 
@@ -66,10 +66,31 @@ A review of linear manifold learning approaches is provided.  Linear approaches 
 
 \subsubsection{Principal Component Analysis (PCA)}
 
-Principal Component Analysis (PCA) is arguably the most popular (and best-studied) technique for dimensionality reduction and manifold learning.  It attempts to learn an orthogonal projection of the input data into a lower-dimensional space, known as the principal subspace, such that the variance of the projected data is maximized \citep{Chao2019RecentAdvancesSupervisedDimRed}.
-
 \paragraph{Unsupervised PCA}
+Principal Component Analysis (PCA) is arguably the most popular (and best-studied) technique for dimensionality reduction and manifold learning.  It attempts to learn an orthogonal projection of the input data into a lower-dimensional space, known as the principal subspace, such that the variance of the projected data is maximized \citep{Chao2019RecentAdvancesSupervisedDimRed}.  In other words, each \textit{principal axis}, or \textit{principal component}, of the learned coordinate system is orthogonal to the other principal components.  In summary, the problem of PCA is to discover basis vectors which linearly combine to reconstruct the data.  In practice, data in the input feature space are projected into a new coordinate system of $K$ dimensions, such that the variance along each principal axis is maximized and the reconstruction errors of the data are minimized in the mean-square sense \citep{Thorstensen2009ManifoldThesis}.  Let $V$ be a $K$-dimensional subspace of $\mathbb{R}^{D}$ and let  $\bm{w}_1, \dots, \bm{w}_D$ be an orthonormal basis of $\mathbb{R}^{D}$ such that $\bm{w}_1, \dots, \bm{w}_K$ is a basis of $V$.  The goal of PCA is to find an orthogonal set of basis vectors $\bm{w}_n \in \mathbb{R}^{D}$ and corresponding latent coordinates $\bm{x}_n \in \mathbb{R}^{K}$ such that the average reconstruction error is minimized \citep{Murphy2012}
+\begin{align}
+	J(\bm{W}, \bm{Z}) = \frac{1}{N}\sum_{n=1}^{N} ||\bm{x}_n - \hat{\bm{x}}_n ||^{2}
+\end{align}
 
+\noindent
+where $\hat{\bm{x}}_n = \bm{W}\bm{z}_{n}$, subject to the constraint that $\bm{W}$ is \textit{orthonormal}, or that $\bm{w}_{i}^{T}\bm{w}_{j}=0,\forall i \neq j$ and $\bm{w}_{i}^{T}\bm{w}_{i}=1 $.  This is equivalently written as 
+
+\begin{align}
+		J(\bm{W}, \bm{Z}) = ||\bm{X} - \bm{W}\bm{Z} ||^{2}_{F}
+\end{align}
+
+\noindent
+where $\bm{Z}$ is a $N \times K$ matrix with the $\bm{z}_{n}$ in its rows and $||\bm{A}||_{F}$ is the \textit{Frobenius norm} of matrix $\bm{A}$, defined by 
+
+\begin{align}
+	||\bm{A}||_{F} &= \sqrt{\sum_{m=1}^{M}\sum_{n=1}^{N}}a^{2}_{mn} = \sqrt{tr(\bm{A}^{T}\bm{A})} = ||\bm{A}(:)||_{2}
+\end{align} 
+
+\noindent
+As noted by Murphy \citep{Murphy2012}, the optimal solution is obtained by setting $\hat{\bm{W}} = \bm{U}_{K}$, where $\bm{U}_{K}$ contains the eigenvectors corresponding to the $K$ largest eigenvalues of the mean-subtracted, empirical data covariance matrix, $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}(\bm{x}_{n}-\hat{\bm{\mu}})(\bm{x}_{n}-\hat{\bm{\mu}})^{T}$, where $\hat{\bm{\mu}}$ is the empirical data mean.  Therefore, the low-dimensional encoding of the data is given by $\bm{z}_n = \hat{\bm{W}}^{T}\bm{x}_n$, which is the orthogonal, linear projection of the data onto the column space spanned by the eigenvectors of the $K$ largest eigenvalues of the empirical data covariance.
+
+
+Assumes Gaussian distributions
 \paragraph{Supervised PCA}
 
 \paragraph{Kernel PCA}
