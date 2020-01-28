@@ -12,42 +12,43 @@
 \BOOKMARK [2][-]{subsection.2.1.4}{2.1.4 Multiple Instance Boosting}{section.2.1}% 12
 \BOOKMARK [1][-]{section.2.2}{2.2 Manifold Learning}{chapter.2}% 13
 \BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Definition and General Notation}{section.2.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Linear Manifold Learning}{section.2.2}% 15
-\BOOKMARK [3][-]{subsubsection.2.2.2.1}{2.2.2.1 Principal Component Analysis \(PCA\)}{subsection.2.2.2}% 16
-\BOOKMARK [3][-]{subsubsection.2.2.2.2}{2.2.2.2 Multi-Dimensional Scaling \(MDS\)}{subsection.2.2.2}% 17
-\BOOKMARK [3][-]{subsubsection.2.2.2.3}{2.2.2.3 Fisher's Linear Discriminant Analysis \(LDA\)}{subsection.2.2.2}% 18
-\BOOKMARK [3][-]{subsubsection.2.2.2.4}{2.2.2.4 Locality Preserving Projection \(LPP\)}{subsection.2.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Nonlinear Manifold Learning}{section.2.2}% 20
-\BOOKMARK [3][-]{subsubsection.2.2.3.1}{2.2.3.1 Graph-based Methods}{subsection.2.2.3}% 21
-\BOOKMARK [3][-]{subsubsection.2.2.3.2}{2.2.3.2 General Graph Embedding Framework}{subsection.2.2.3}% 22
-\BOOKMARK [3][-]{subsubsection.2.2.3.3}{2.2.3.3 Isomap}{subsection.2.2.3}% 23
-\BOOKMARK [3][-]{subsubsection.2.2.3.4}{2.2.3.4 Locally Linear Embedding \(LLE\)}{subsection.2.2.3}% 24
-\BOOKMARK [3][-]{subsubsection.2.2.3.5}{2.2.3.5 Laplacian Eigenmaps \(LE\)}{subsection.2.2.3}% 25
-\BOOKMARK [3][-]{subsubsection.2.2.3.6}{2.2.3.6 Hessian Eigenmaps}{subsection.2.2.3}% 26
-\BOOKMARK [3][-]{subsubsection.2.2.3.7}{2.2.3.7 Diffusion Maps}{subsection.2.2.3}% 27
-\BOOKMARK [3][-]{subsubsection.2.2.3.8}{2.2.3.8 Sammon Mapping}{subsection.2.2.3}% 28
-\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Latent Variable Models}{section.2.2}% 29
-\BOOKMARK [3][-]{subsubsection.2.2.4.1}{2.2.4.1 General Latent Variable Model \(GLVM\)}{subsection.2.2.4}% 30
-\BOOKMARK [3][-]{subsubsection.2.2.4.2}{2.2.4.2 Generative Topographic Mapping \(GTM\)}{subsection.2.2.4}% 31
-\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 Competitive Hebbian Learning}{section.2.2}% 32
-\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Deep Learning}{section.2.2}% 33
-\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Current State of the Art}{section.2.2}% 34
-\BOOKMARK [2][-]{subsection.2.2.8}{2.2.8 UMAP}{section.2.2}% 35
-\BOOKMARK [2][-]{subsection.2.2.9}{2.2.9 t-SNE}{section.2.2}% 36
-\BOOKMARK [2][-]{subsection.2.2.10}{2.2.10 NCA}{section.2.2}% 37
-\BOOKMARK [2][-]{subsection.2.2.11}{2.2.11 Multiple Instance Learning on Manifolds}{section.2.2}% 38
-\BOOKMARK [1][-]{section.2.3}{2.3 Metric Embedding}{chapter.2}% 39
-\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Ranking Loss}{section.2.3}% 40
-\BOOKMARK [3][-]{subsubsection.2.3.1.1}{2.3.1.1 Pairwise Loss}{subsection.2.3.1}% 41
-\BOOKMARK [3][-]{subsubsection.2.3.1.2}{2.3.1.2 Contrastive Loss}{subsection.2.3.1}% 42
-\BOOKMARK [3][-]{subsubsection.2.3.1.3}{2.3.1.3 Triplet Loss}{subsection.2.3.1}% 43
-\BOOKMARK [3][-]{subsubsection.2.3.1.4}{2.3.1.4 Large-Margin K-Nearest Neighbors \(LMNN\)}{subsection.2.3.1}% 44
-\BOOKMARK [3][-]{subsubsection.2.3.1.5}{2.3.1.5 FaceNet}{subsection.2.3.1}% 45
-\BOOKMARK [3][-]{subsubsection.2.3.1.6}{2.3.1.6 Siamese Neural Networks}{subsection.2.3.1}% 46
-\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Manifold Regularization}{section.2.3}% 47
-\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Multiple Instance Metric Learning}{section.2.3}% 48
-\BOOKMARK [0][-]{chapter.3}{3 Problem Description}{}% 49
-\BOOKMARK [0][-]{chapter.4}{4 Experimental Design}{}% 50
-\BOOKMARK [0][-]{chapter.5}{5 Preliminary Work}{}% 51
-\BOOKMARK [0][-]{chapter.6}{6 Future Tasks}{}% 52
-\BOOKMARK [0][-]{chapter.7}{7 Conclusions}{}% 53
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Comparison Table of Manifold Learning Methods}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Linear Manifold Learning}{section.2.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.2.3.1}{2.2.3.1 Principal Component Analysis \(PCA\)}{subsection.2.2.3}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.3.2}{2.2.3.2 Multi-Dimensional Scaling \(MDS\)}{subsection.2.2.3}% 18
+\BOOKMARK [3][-]{subsubsection.2.2.3.3}{2.2.3.3 Fisher's Linear Discriminant Analysis \(LDA\)}{subsection.2.2.3}% 19
+\BOOKMARK [3][-]{subsubsection.2.2.3.4}{2.2.3.4 Locality Preserving Projection \(LPP\)}{subsection.2.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Nonlinear Manifold Learning}{section.2.2}% 21
+\BOOKMARK [3][-]{subsubsection.2.2.4.1}{2.2.4.1 Graph-based Methods}{subsection.2.2.4}% 22
+\BOOKMARK [3][-]{subsubsection.2.2.4.2}{2.2.4.2 General Graph Embedding Framework}{subsection.2.2.4}% 23
+\BOOKMARK [3][-]{subsubsection.2.2.4.3}{2.2.4.3 Isomap}{subsection.2.2.4}% 24
+\BOOKMARK [3][-]{subsubsection.2.2.4.4}{2.2.4.4 Locally Linear Embedding \(LLE\)}{subsection.2.2.4}% 25
+\BOOKMARK [3][-]{subsubsection.2.2.4.5}{2.2.4.5 Laplacian Eigenmaps \(LE\)}{subsection.2.2.4}% 26
+\BOOKMARK [3][-]{subsubsection.2.2.4.6}{2.2.4.6 Hessian Eigenmaps}{subsection.2.2.4}% 27
+\BOOKMARK [3][-]{subsubsection.2.2.4.7}{2.2.4.7 Diffusion Maps}{subsection.2.2.4}% 28
+\BOOKMARK [3][-]{subsubsection.2.2.4.8}{2.2.4.8 Sammon Mapping}{subsection.2.2.4}% 29
+\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 Latent Variable Models}{section.2.2}% 30
+\BOOKMARK [3][-]{subsubsection.2.2.5.1}{2.2.5.1 General Latent Variable Model \(GLVM\)}{subsection.2.2.5}% 31
+\BOOKMARK [3][-]{subsubsection.2.2.5.2}{2.2.5.2 Generative Topographic Mapping \(GTM\)}{subsection.2.2.5}% 32
+\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Competitive Hebbian Learning}{section.2.2}% 33
+\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Deep Learning}{section.2.2}% 34
+\BOOKMARK [2][-]{subsection.2.2.8}{2.2.8 Current State of the Art}{section.2.2}% 35
+\BOOKMARK [2][-]{subsection.2.2.9}{2.2.9 UMAP}{section.2.2}% 36
+\BOOKMARK [2][-]{subsection.2.2.10}{2.2.10 t-SNE}{section.2.2}% 37
+\BOOKMARK [2][-]{subsection.2.2.11}{2.2.11 NCA}{section.2.2}% 38
+\BOOKMARK [2][-]{subsection.2.2.12}{2.2.12 Multiple Instance Learning on Manifolds}{section.2.2}% 39
+\BOOKMARK [1][-]{section.2.3}{2.3 Metric Embedding}{chapter.2}% 40
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Ranking Loss}{section.2.3}% 41
+\BOOKMARK [3][-]{subsubsection.2.3.1.1}{2.3.1.1 Pairwise Loss}{subsection.2.3.1}% 42
+\BOOKMARK [3][-]{subsubsection.2.3.1.2}{2.3.1.2 Contrastive Loss}{subsection.2.3.1}% 43
+\BOOKMARK [3][-]{subsubsection.2.3.1.3}{2.3.1.3 Triplet Loss}{subsection.2.3.1}% 44
+\BOOKMARK [3][-]{subsubsection.2.3.1.4}{2.3.1.4 Large-Margin K-Nearest Neighbors \(LMNN\)}{subsection.2.3.1}% 45
+\BOOKMARK [3][-]{subsubsection.2.3.1.5}{2.3.1.5 FaceNet}{subsection.2.3.1}% 46
+\BOOKMARK [3][-]{subsubsection.2.3.1.6}{2.3.1.6 Siamese Neural Networks}{subsection.2.3.1}% 47
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Manifold Regularization}{section.2.3}% 48
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Multiple Instance Metric Learning}{section.2.3}% 49
+\BOOKMARK [0][-]{chapter.3}{3 Problem Description}{}% 50
+\BOOKMARK [0][-]{chapter.4}{4 Experimental Design}{}% 51
+\BOOKMARK [0][-]{chapter.5}{5 Preliminary Work}{}% 52
+\BOOKMARK [0][-]{chapter.6}{6 Future Tasks}{}% 53
+\BOOKMARK [0][-]{chapter.7}{7 Conclusions}{}% 54
