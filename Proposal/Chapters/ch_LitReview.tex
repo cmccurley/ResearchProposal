@@ -152,7 +152,20 @@ Overview and terminology
 \subsubsection{Locally Linear Embedding (LLE)}
 
 \subsubsection{Laplacian Eigenmaps (LE)}
-Spectral Embedding
+Similar to LLE, Laplacian Eigenmaps, or \textit{Spectral Embedding}, is a nonlinear dimensionality reduction technique which aims to preserve local structure of data \citep{Raducanu2012SupervisedNonlinearDimReduction,VanDerMaaten2009DRReview}.  Using \textit{spectral graph theory}, LE computes low-dimensional representations of data in which the dissimilarities between datapoints and their neighbors (according to an affinity measure) are minimized.  The name \textit{Laplacian Eigenmaps} is derived by the use of Laplacian regularization in the optimization procedure \citep{Thorstensen2009ManifoldThesis}. Given a set of $N$ samples $\bm{X} = \{\bm{x}_n\}^{N}_{n-1} \subset \mathbb{R}^{D}$, the first step of LE is to define a \textit{neighborhood graph on the samples}.  This graph, also called an \textit{affinity} or \textit{adjacency} matrix can be constructed in a variety of ways, such as K-nearest neighbor, $\epsilon$-ball, full mesh, or by weighting each edge $\bm{x}_m \sim \bm{x}_n$ by a symmetric affinity function $A_{mn} = K(\bm{x}_m;\bm{x}_n)$, typically a radial basis kernel:
+
+\begin{align}
+	A_{mn} = \exp \left ( - \frac{|| \bm{x}_m - \bm{x}_n ||^{2}}{\beta}  \right )
+\end{align}
+
+\noindent
+where the kernel bandwidth $\beta$ is typically set as the variance of the dataset \citep{Raducanu2012SupervisedNonlinearDimReduction,Thorstensen2009ManifoldThesis}.
+
+The goal is to uncover the latent data representations $\{ \bm{z}_n \}^{N}_{n=1} \subset \mathbb{R}^{K}$ where $K \ll D$ which minimizes the objective 
+
+\begin{align}
+	J(\bm{A},\bm{Z})
+\end{align}
 
 \subsubsection{Hessian Eigenmaps}
 
@@ -184,15 +197,25 @@ p(\bm{x}_n|\bm{z}_n,\bm{\theta}) = \mathcal{N}(\bm{W}\bm{z}_n + \bm{\mu}, \bm{\P
 where $\bm{W}$ is a $D \times K$ \textit{factor loading matrix}, and $\bm{\Psi}$ is a $D \times D$ covariance matrix.  The objective of FA is to compute the posterior over the latent factors in hopes that they will reveal something interesting about the data \citep{Murphy2012}.  Classical PCA assumes the data covariance to be $\bm{\Psi} = \sigma^2\bm{I}$ with $\sigma^2 \rightarrow 0$, thus the model is deterministic.  Alternatively, when $\sigma^2 > 0$,the projection is no longer orthogonal since it is shrunk toward the prior mean.  The trade-off is that the reconstructions of $\bm{x}_n$ with be closer to the data mean.
 
 
-While the typical method for fitting PCA is to use the method of eigenvectors of Singular Value Decomposition (SVD), it can also be fit with Expectation-Maximization (EM).  This formulation may be more computationally efficient for high-dimensional data.  By using Gaussian Processes, PPCA may also be extended to learn nonlinear mappings between the input and latent feature spaces \citep{VanDerMaaten2009DRReview}.
+While the typical approach for fitting PCA is to use the method of eigenvectors of Singular Value Decomposition (SVD), it can also be fit with Expectation-Maximization (EM).  This formulation may be more computationally efficient for high-dimensional data.  By using Gaussian Processes, PPCA may also be extended to learn nonlinear mappings between the input and latent feature spaces \citep{VanDerMaaten2009DRReview}.
 
 \paragraph{Supervised PCA}
 
-Supervision has also been applied to PCA.  
+Supervision has also been applied to PCA.  Two such examples, Supervised PCA and Discriminative Supervised PCA, were provided by Murphy in \citep{Murphy2012}.  The two are briefly described. 
 
-Latent Factor Regression (Murphy page 406)
+\subparagraph{Supervised PCA (Latent Factor Regression)}
+\textit{Supervised PCA} or \textit{Bayesian factor regression} is a model like PCA, except that the target variable (or label), $l_n$ is taken into account when learning the low-dimensional embedding.  For the case of binary classification, the Bayesian model can be decomposed into the following elements:
+\begin{align}
+	p(\bm{z}_n) = \mathcal{N}(0,\bm{I}_K)
+\end{align}
+\begin{align}
+	p(l_n|\bm{z}_n) = \text{Ber}(\text{sigm}(\bm{w}^{T}_{l}\bm{z}_n))
+\end{align}
+\begin{align}
+	p(\bm{x}_n|\bm{z}_n) = \mathcal{N}(\bm{W}_{x}\bm{z}_{n} + \bm{\mu}_{x}, \sigma^{2}\bm{I}_D)
+\end{align}
 
-Discriminative Supervised PCA (Murphy page 408)
+\subparagraph{Discriminative Supervised PCA} 
 
 
 \subsubsection{Generative Topographic Mapping (GTM)}
