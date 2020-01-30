@@ -76,14 +76,12 @@ Principal Component Analysis (PCA) is arguably the most popular (and best-studie
 
 \noindent
 where $\hat{\bm{x}}_n = \bm{W}\bm{z}_{n}$, subject to the constraint that $\bm{W}$ is \textit{orthonormal}, or that $\bm{w}_{i}^{T}\bm{w}_{j}=0,\forall i \neq j$ and $\bm{w}_{i}^{T}\bm{w}_{i}=1 $.  This is equivalently written as 
-
 \begin{align}
 		J(\bm{W}, \bm{Z}) = ||\bm{X} - \bm{W}\bm{Z} ||^{2}_{F}
 \end{align}
 
 \noindent
 where $\bm{Z}$ is a $N \times K$ matrix with the $\bm{z}_{n}$ in its rows and $||\bm{A}||_{F}$ is the \textit{Frobenius norm} of matrix $\bm{A}$, defined by 
-
 \begin{align}
 	||\bm{A}||_{F} &= \sqrt{\sum_{m=1}^{M}\sum_{n=1}^{N}}a^{2}_{mn} = \sqrt{tr(\bm{A}^{T}\bm{A})} = ||\bm{A}(:)||_{2}
 \end{align} 
@@ -152,20 +150,46 @@ Overview and terminology
 \subsubsection{Locally Linear Embedding (LLE)}
 
 \subsubsection{Laplacian Eigenmaps (LE)}
-Similar to LLE, Laplacian Eigenmaps, or \textit{Spectral Embedding}, is a nonlinear dimensionality reduction technique which aims to preserve local structure of data \citep{Raducanu2012SupervisedNonlinearDimReduction,VanDerMaaten2009DRReview}.  Using \textit{spectral graph theory}, LE computes low-dimensional representations of data in which the dissimilarities between datapoints and their neighbors (according to an affinity measure) are minimized.  The name \textit{Laplacian Eigenmaps} is derived by the use of Laplacian regularization in the optimization procedure \citep{Thorstensen2009ManifoldThesis}. Given a set of $N$ samples $\bm{X} = \{\bm{x}_n\}^{N}_{n-1} \subset \mathbb{R}^{D}$, the first step of LE is to define a \textit{neighborhood graph on the samples}.  This graph, also called an \textit{affinity} or \textit{adjacency} matrix can be constructed in a variety of ways, such as K-nearest neighbor, $\epsilon$-ball, full mesh, or by weighting each edge $\bm{x}_m \sim \bm{x}_n$ by a symmetric affinity function $A_{mn} = K(\bm{x}_m;\bm{x}_n)$, typically a radial basis kernel:
-
+Similar to LLE, Laplacian Eigenmaps, or \textit{Spectral Embedding}, is a nonlinear dimensionality reduction technique which aims to preserve local structure of data \citep{Raducanu2012SupervisedNonlinearDimReduction,VanDerMaaten2009DRReview}.  Using \textit{spectral graph theory}, LE computes low-dimensional representations of data in which the dissimilarities between datapoints and their neighbors (according to an affinity measure) are minimized.  The name \textit{Laplacian Eigenmaps} is derived by the use of Laplacian regularization in the optimization procedure \citep{Thorstensen2009ManifoldThesis}. Given a set of $N$ samples $\bm{X} = \{\bm{x}_n\}^{N}_{n-1} \subset \mathbb{R}^{D}$, the first step of LE is to define a \textit{neighborhood graph on the samples}.  This graph, also called an \textit{affinity} or \textit{adjacency} matrix can be constructed in a variety of ways, such as K-nearest neighbor, $\epsilon$-ball, full mesh, or by weighting each edge $\bm{x}_m \sim \bm{x}_n$ by a symmetric affinity function $W_{mn} = K(\bm{x}_m;\bm{x}_n)$, typically a radial basis or heat kernel:
 \begin{align}
-	A_{mn} = \exp \left ( - \frac{|| \bm{x}_m - \bm{x}_n ||^{2}}{\beta}  \right )
+	\bm{W}_{mn}= w_{mn} = \exp \left ( - \frac{|| \bm{x}_m - \bm{x}_n ||^{2}}{\beta}  \right )
 \end{align}
 
 \noindent
 where the kernel bandwidth $\beta$ is typically set as the variance of the dataset \citep{Raducanu2012SupervisedNonlinearDimReduction,Thorstensen2009ManifoldThesis}.
 
 The goal is to uncover the latent data representations $\{ \bm{z}_n \}^{N}_{n=1} \subset \mathbb{R}^{K}$ where $K \ll D$ which minimizes the objective 
-
 \begin{align}
-	J(\bm{A},\bm{Z})
+	J(\bm{W},\bm{Z}) = \frac{1}{2} \sum_{m,n}^{}||\bm{z}_{m} - \bm{z}_{n} ||^{2}w_{mn} = tr(\bm{Z}^{T}\bm{L}\bm{Z})
 \end{align}
+
+\noindent
+with $\bm{W}$ denoting the symmetric affinity matrix, $\bm{D}$ the diagonal weight matrix whose entries are the sum of the rows (or columns since $\bm{W}$ is symmetric) of $\bm{W}$ (i.e. $d_{mm} = \sum_{n}w_{mn}$, and is $0$ otherwise).  The graph Laplacian matrix is provided as $\bm{L} = \bm{D} - \bm{W}$.  The matrix $\bm{Z} = [\bm{z}^{T}_{1}, \dots, \bm{z}^{T}_{N}]$ is the $N \times K$ embedding matrix and $tr(.)$ denotes the trace of a matrix. The $n^{th}$ row of matrix $\bm{Z}$ provides the vector $\bm{z}_n$, which is the latent representation of sample  $\bm{x}_n$. This objective discourages projecting similar points in the input feature space to disparate regions of the embedding space by enforcing heavy penalization. 
+
+The latent sample coordinates $\bm{Z}$ are found as the solution to the optimization problem:
+\begin{align}
+	\min_{\bm{Z}} tr(\bm{Z}^{T}\bm{L}\bm{Z}) \quad s.t. \quad \bm{Z}^{T}\bm{D}\bm{Z} = \bm{I}, \bm{Z}^{T}\bm{L}\bm{e} = \bm{0}
+\end{align}
+
+\noindent
+where $\bm{I}$ is the $K \times K$ identity matrix and $\bm{e} = (1, \dots, 1)^{T}$, which is a $N \times 1$ \textbf{VERIFY SIZE of e and 0} vector.  The first constraint eliminates the trivial solution $\bm{Z} = \bm{0}$ (scaling) and the second constraint avoids the trivial solution $\bm{Z} = \bm{e}$ (uniqueness). By applying the Langrange multiplier method and using the fact that $\bm{L}\bm{e} = 0$, the low-dimensional data representations can be found by solving the generalized eigenvalue problem:
+\begin{align}
+	\bm{L}\bm{z} = \lambda \bm{D} \bm{z}
+\end{align}
+\noindent
+The column vectors $\bm{z}_{1}, \dots, \bm{z}_{N}$ are the solutions of (\textbf{INCLUDE EQUATION NUMBER}), ordered to the corresponding non-zero eigenvalues in ascending order, $\lambda_{1} = 0 \leq \lambda_{2} \leq \dots \leq \lambda_{N} $. The embedding of the input samples is given by row vectors of the matrix $\bm{Z}$, or
+\begin{align}
+	\bm{x}_n \rightarrow \bm{z}_n = (z_{1}(n),\dots,z_{K}(n))^{T}
+\end{align}
+\noindent
+where $K < N$ is the dimensionality of the embedded space.  From observation, it is clear that the embedding dimensionality is limited by the number of samples $N$.
+
+
+LE suffers from
+
+Despite these nuances, LE has been successfully applied in 
+
+In order to adopt LE for classification,
 
 \subsubsection{Hessian Eigenmaps}
 
