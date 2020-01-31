@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  30 JAN 2020 21:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  31 JAN 2020 11:30
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -585,7 +585,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [10]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_bbox".jpg, id=366, 255.95625pt x 202.356pt>
+_bbox".jpg, id=371, 255.95625pt x 202.356pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_bbox".jpg Graphic file (type jpg)
 
@@ -608,7 +608,7 @@ und-ing boxes (blue). Red dots
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_labels".jpg, id=367, 485.4135pt x 396.88275pt>
+_labels".jpg, id=372, 485.4135pt x 396.88275pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_labels".jpg Graphic file (type jpg)
 
@@ -634,7 +634,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/targ
-et_img".jpg, id=368, 111.41624pt x 69.861pt>
+et_img".jpg, id=373, 111.41624pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /target_img".jpg Graphic file (type jpg)
 
@@ -645,7 +645,7 @@ ages/""introduction/target_img".jpg used on input line 37.
 (pdftex.def)             Requested size: 138.31111pt x 86.72377pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/bg_i
-mg".jpg, id=369, 110.21175pt x 69.861pt>
+mg".jpg, id=374, 110.21175pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /bg_img".jpg Graphic file (type jpg)
 
@@ -709,7 +709,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-] <example-image-a.png, id=514, 401.5pt x 301.125pt>
+] <example-image-a.png, id=519, 401.5pt x 301.125pt>
 File: example-image-a.png Graphic file (type png)
 
 <use example-image-a.png>
@@ -731,27 +731,32 @@ File: example-image-a.png Graphic file (type png)
 Package pdftex.def Info: example-image-a.png used on input line 101.
 (pdftex.def)             Requested size: 281.40286pt x 211.06633pt.
  [24] [25] [26] [27] [28] [29]
-[30] [31]
+[30] [31] [32]
+Underfull \hbox (badness 10000) detected at line 332
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 333
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 334
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 335
 [][][]
  []
 
+[33]
 
-Underfull \hbox (badness 10000) detected at line 336
-[][][]
- []
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 341.
 
-
-Underfull \hbox (badness 10000) detected at line 337
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 338
-[][][]
- []
-
-[32]) [33]
+) [34] [35]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
 
  (Chapters/ch_ProblemDescription.tex
@@ -762,7 +767,7 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [34
+) [36
 
 
 
@@ -777,7 +782,7 @@ CHAPTER 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [35
+) [37
 
 
 
@@ -792,7 +797,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [36
+) [38
 
 
 
@@ -807,7 +812,7 @@ CHAPTER 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [37
+) [39
 
 
 
@@ -822,14 +827,14 @@ CHAPTER 7.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [38
+) [40
 
 
 
 ] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [39
+ [41
 
 
 ]
@@ -837,10 +842,10 @@ Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [40] [41]
-[42]) (Chapters/bio.tex)
+ [42] [43]
+[44]) (Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
- [43]
+ [45]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (MainFile.aux (Chapters/acknowledgements.aux)
 (Chapters/TOC.aux) (Chapters/abbreviations.aux) (Chapters/symbols.aux)
@@ -851,7 +856,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: AC400FA1A5E2705BC9F192492A1876D8;4440.
+(rerunfilecheck)             Checksum: FA7B8CCBE9E94EBA20830EE3AD9FFAA9;4523.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -859,13 +864,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 8646 strings out of 493323
- 131230 string characters out of 3139067
- 217797 words of memory out of 3000000
- 11753 multiletter control sequences out of 15000+200000
+ 8674 strings out of 493323
+ 131988 string characters out of 3139067
+ 218264 words of memory out of 3000000
+ 11774 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,16n,42p,3746b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,16n,42p,3746b,551s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
@@ -882,9 +887,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/symbols/msbm10.pfb>
-Output written on MainFile.pdf (43 pages, 491907 bytes).
+Output written on MainFile.pdf (45 pages, 501621 bytes).
 PDF statistics:
- 886 PDF objects out of 1000 (max. 8388607)
- 199 named destinations out of 1000 (max. 500000)
- 458 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 922 PDF objects out of 1000 (max. 8388607)
+ 206 named destinations out of 1000 (max. 500000)
+ 466 words of extra memory for PDF output out of 10000 (max. 10000000)
 

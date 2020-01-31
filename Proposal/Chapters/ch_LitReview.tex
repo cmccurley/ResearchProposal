@@ -173,41 +173,27 @@ The latent sample coordinates $\bm{Z}$ are found as the solution to the optimiza
 \end{align}
 
 \noindent
-where $\bm{I}$ is the $K \times K$ identity matrix and $\bm{e} = (1, \dots, 1)^{T}$, which is a $N \times 1$ \textbf{VERIFY SIZE of e and 0} vector.  The first constraint eliminates the trivial solution $\bm{Z} = \bm{0}$ (scaling) and the second constraint avoids the trivial solution $\bm{Z} = \bm{e}$ (uniqueness). By applying the Langrange multiplier method and using the fact that $\bm{L}\bm{e} = 0$, the low-dimensional data representations can be found by solving the generalized eigenvalue problem:
+where $\bm{I}$ is the identity matrix and $\bm{e} = (1, \dots, 1)^{T}$.  The first constraint eliminates the trivial solution $\bm{Z} = \bm{0}$ (scaling) and the second constraint avoids the trivial solution $\bm{Z} = \bm{e}$ (uniqueness). By applying the Langrange multiplier method and using the fact that $\bm{L}\bm{e} = \bm{0}$, the low-dimensional data representations can be found by solving the generalized eigenvalue problem:
 \begin{align}
-	\bm{L}\bm{z} = \lambda \bm{D} \bm{z}
+	\bm{L}\bm{v} = \lambda \bm{D} \bm{v} \label{eq:trad_le_eig}
 \end{align}
 \noindent
-The column vectors $\bm{z}_{1}, \dots, \bm{z}_{N}$ are the solutions of (\textbf{INCLUDE EQUATION NUMBER}), ordered to the corresponding non-zero eigenvalues in ascending order, $\lambda_{1} = 0 \leq \lambda_{2} \leq \dots \leq \lambda_{N} $. The embedding of the input samples is given by row vectors of the matrix $\bm{Z}$, or
-\begin{align}
-	\bm{x}_n \rightarrow \bm{z}_n = (z_{1}(n),\dots,z_{K}(n))^{T}
-\end{align}
-\noindent
-where $K < N$ is the dimensionality of the embedded space.  From observation, it is clear that the embedding dimensionality is limited by the number of samples $N$.
+The column vectors $\bm{v}_{1}, \dots, \bm{v}_{N}$ are the solutions of Equation \ref{eq:trad_le_eig}, ordered to the corresponding eigenvalues, in ascending order, $\lambda_{1} = 0 \leq \lambda_{2} \leq \dots \leq \lambda_{N} $. The embedding of the input samples given by the matrix $\bm{Z}$, is obtained by concatenating the eigenvectors of the $K$ smallest non-zero eigenvalues.  $\bm{Z}$ is a $N \times K$ matrix, where $K < N$ is the dimensionality of the embedded space.  From observation, it is clear that the embedding dimensionality is limited by the number of samples $N$.
 
-\textbf{Finish discussion}
-LE suffers from
-
-Results vary highly on choice of neighborhood size and assumed intrinsic dimensionality,  However, choosing the size of $K$ or $\epsilon$ in advance can be very difficult. 
-
-Despite these nuances, LE has been successfully applied in nonlinear dimensionality reduction tasks such as 
-
-\textbf{End Discussion}
-
-\paragraph{Supervised LE}
+\paragraph{Supervised LE (S-LE)}
 In order to adopt LE for classification,Raducanu and Dornaika \citep{Raducanu2012SupervisedNonlinearDimReduction} proposed a supervised LE which minimizes the margin between samples with similar class labels and maximizes the margin between samples with opposing class labels.  Supervised LE utilizes discriminative information contained in the class labels when finding the nonlinear embedding (spectral projection). 
 
 In order to discover both geometrical and discriminative manifold structure, supervised LE splits the global graph into two components: the within-class graph $G_{w}$ and the between-class graph $G_{b}$.  To define the margin, they define two subsets, $N_{w}(\bm{x}_{n})$ and $N_{b}(\bm{x}_{n})$ for each sample $\bm{x}_{n}$.  These two subsets contain the neighbors of $\bm{x}_{n}$ sharing the same label and having different labels, respectively, which have a similarity higher than the average.
 \begin{align}
-	N_{w}(\bm{x}_n) = \{\bm{x}_m |l_{m} = l_{n}, \exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right)  > AS(\bm{x}_{n}) \}
+	N_{w}(\bm{x}_n) = \{\bm{x}_m |l_{m} = l_{n}, \exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right)  > AS(\bm{x}_{n}) \} \label{eq:s_le_within_neighbor}
 \end{align}
 
 \begin{align}
-N_{b}(\bm{x}_n) = \{\bm{x}_m |l_{m} \neq l_{n}, \exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right)  > AS(\bm{x}_{n}) \}
+N_{b}(\bm{x}_n) = \{\bm{x}_m |l_{m} \neq l_{n}, \exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right)  > AS(\bm{x}_{n}) \} \label{eq:s_le_between_neighbor}
 \end{align}
 
 \noindent
-where $AS(\bm{x}_{n}) = \frac{1}{N} \sum_{n=1}^{N} \exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right)$ denotes the average similarity of the sample  $\bm{x}_{n}$ to the rest of the data.  From Equations \textbf{reference equations} it is clear that the neighborhoods for each data sample are not necessarily the same size.  As a result, this function constructs the affinity graph according to both the local density and similarity between data samples in the input feature space.
+where $AS(\bm{x}_{n}) = \frac{1}{N} \sum_{n=1}^{N} \exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right)$ denotes the average similarity of the sample  $\bm{x}_{n}$ to the rest of the data.  From Equations \ref{eq:s_le_within_neighbor} and \ref{eq:s_le_between_neighbor} it is clear that the neighborhoods for each data sample are not necessarily the same size.  As a result, this function constructs the affinity graph according to both the local density and similarity between data samples in the input feature space.
 
 With the two sets defined, the within-class and between-class weight matrices $\bm{W}_{w}$ and $\bm{W}_{b}$ are formed from the adjacency graphs $G_{w}$ and $G_{b}$, respectively.  These weight matrices are defined as:
 \begin{align}
@@ -245,15 +231,26 @@ By merging the two objective functions, the final optimization problem is formul
 \begin{align}
 	\arg\max_{\bm{Z}} \left \{  \gamma tr(\bm{Z}^{T}\bm{L}_{b}\bm{Z}) + (1- \gamma)tr(\bm{Z}^{T}\bm{L}_{w}\bm{Z}) \right \} \quad s.t. \quad \bm{Z}^{T}\bm{D}_{w}\bm{Z} = \bm{I}
 \end{align}
-By defining matrix $\bm{B} = \gamma \bm{L}_{b} + (1 - \gamma)\bm{W}_{w}$, the problem becomes:
+The term $\gamma$ is a scalar value in $[0,1]$ which determines the trade-off between pulling similar samples toward each other in the latent space and pushing heterogeneous points away.  A value of $\gamma = 1$ forces the objective to solely focus on maximizing the margin between dissimilar points.  Alternatively, a value of $\gamma = 0$ priorities the objective on embedding homogeneous samples in close spatial proximity. By defining matrix $\bm{B} = \gamma \bm{L}_{b} + (1 - \gamma)\bm{W}_{w}$, the problem becomes:
 \begin{align}
 	\arg\max_{\bm{Z}} \left ( \bm{Z}^{T}\bm{B}\bm{Z}  \right ) \quad s.t. \quad \bm{Z}^{T}\bm{D}_{w}\bm{Z} = \bm{I}
 \end{align}
-\noindent
+
 The low-dimensional embedding matrix $\bm{Z}$ can be found by solving the generalized eigenvalue problem:
 \begin{align}
-	\bm{B}\bm{z} = \lambda \bm{D}_{w}\bm{z}
+	\bm{B}\bm{v} = \lambda \bm{D}_{w}\bm{v} \label{eq:sup_le_eig}
 \end{align}
+
+The column vectors $\bm{v}_{1}, \bm{v}_{2}, \dots, \bm{v}_{N}$ are the generalized eigenvectors of 
+Equation \ref{eq:sup_le_eig} arranged by descending eigenvalues $\lambda_{1} \geq \lambda_{2} \geq \dots \lambda_{K}$.  Then the $N \times K$ embedding matrix $\bm{Z} =  [ \bm{z}^{T}_{1}, \dots, \bm{z}^{T}_{N}]$ is provided by concatenating the obtained eigenvectors $\bm{Z} = [\bm{v}_{1}, \bm{v}_{2}, \dots, \bm{v}_{K}]$.
+
+The primary difference between the classic LE and S-LE is that traditional LE solely attempts to preserve the spatial relationships between samples, and thus, does not consider label information when learning the embeddings.  Alternatively, S-LE aims at aiding discriminant analysis by collapsing the distance between samples with the same label that are in close spatial proximity and pushing away spatial neighbors with differing class labels.  This is done through the utilization of two affinity graphs: the within-class and between-class graphs.  As with most graph-based methods, LE results vary highly according to the choice of neighborhood size.  However, choosing the size of $K$ or $\epsilon$ in advance can be very difficult. S-LE does not require user-defined graph parameters, other than those associated with the chosen affinity measure.  Instead, graph edges are chosen according to an adaptive neighborhood for each sample.   Both methods, however, suffer from inherent difficulties associated with nonlinear manifold learning, namely, selecting the intrinsic embedding dimensionality and handling out-of-sample extensions.
+
+Despite these nuances, LE (and its variants) have been successfully applied in nonlinear dimensionality reduction tasks for facial recognition, spectral clustering and object classification \cite{VanDerMaaten2009DRReview}.
+
+Apart from S-LE, other methods have been explored to integrate label information into Laplacian Eigenmaps.  A review of supervised dimensionality reduction methods by Chao et al. \citep{Chao2019RecentAdvancesSupervisedDimRed} explains that author's have optimized the affinity matrix using label information after constructing from spatial proximity, proposed deep learning-based approaches to achieve supervised LE and integrated label information into the affinity matrix construction process.  
+
+The special feature exhibited by all Laplacian Eigenmap methods is the use of laplacian regularization, which enforces properties such as smoothness and provides a level of resistance toward the influences of outliers.  This useful feature has been applied in a variety of supervised and semi-supervised tasks, such as hyperspectral and synthetic aperture radar remote sensing classification \citep{Ratle2010ManRegHSI, Ren2017ManRegSAR}, classification of synthetic data \citep{Tsang2007ManifoldRegularization}, zero-shot learning \citep{Meng2018ManRegZeroShot} and reinforcement learning \citep{Li2015ManRegReinforcementLearning}.
 
 \subsubsection{Hessian Eigenmaps}
 
@@ -338,8 +335,11 @@ The concepts of ``near" and ``far" are very powerful and useful utilities in eve
 	\item Triangle Inequality:  $\mathcal{D}(\bm{x},\bm{z}) \leq \mathcal{D}(\bm{x},\bm{y}) + \mathcal{D}(\bm{y},\bm{z})$
 	\end{enumerate}
 
-The goal of \textit{metric embedding learning} it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{K}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{K}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{K}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \citep{Hermans2017DefenseTripletLoss}.  Let $\mathcal{D}(\bm{x},\bm{y}): \mathbb{R}^{K} \times \mathbb{R}^{K} \rightarrow \mathbb{R}$ be a metric function measuring dissimilarity in the embedded space.  For succinctness, $\mathcal{D}_{i,j} = \mathcal{D}(f_{\theta}(\bm{x_{i}}),f_{\theta}(\bm{x_{j}}))$
+The goal of \textit{metric embedding learning} it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{K}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{K}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{K}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \citep{Hermans2017DefenseTripletLoss}.  Let $\mathcal{D}(\bm{x},\bm{ y}): \mathbb{R}^{K} \times \mathbb{R}^{K} \rightarrow \mathbb{R}$ be a metric function measuring dissimilarity in the embedded space.  For succinctness, $\mathcal{D}_{i,j} = \mathcal{D}(f_{\theta}(\bm{x_{i}}),f_{\theta}(\bm{x_{j}}))$
 defines the dissimilarity between samples $\bm{x}_{i}$ and $\bm{x}_{j}$, after being embedded.
+
+\subsubsection{Metric Learning}
+Thorstensen thesis, Raducanu S-LE
 
 	\subsection{Ranking Loss}
 	
