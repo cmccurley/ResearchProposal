@@ -150,6 +150,7 @@ Overview and terminology
 \subsubsection{Locally Linear Embedding (LLE)}
 
 \subsubsection{Laplacian Eigenmaps (LE)}
+\paragraph{Classical LE}
 Similar to LLE, Laplacian Eigenmaps, or \textit{Spectral Embedding}, is a nonlinear dimensionality reduction technique which aims to preserve local structure of data \citep{Raducanu2012SupervisedNonlinearDimReduction,VanDerMaaten2009DRReview}.  Using \textit{spectral graph theory}, LE computes low-dimensional representations of data in which the dissimilarities between datapoints and their neighbors (according to an affinity measure) are minimized.  The name \textit{Laplacian Eigenmaps} is derived by the use of Laplacian regularization in the optimization procedure \citep{Thorstensen2009ManifoldThesis}. Given a set of $N$ samples $\bm{X} = \{\bm{x}_n\}^{N}_{n-1} \subset \mathbb{R}^{D}$, the first step of LE is to define a \textit{neighborhood graph on the samples}.  This graph, also called an \textit{affinity} or \textit{adjacency} matrix can be constructed in a variety of ways, such as K-nearest neighbor, $\epsilon$-ball, full mesh, or by weighting each edge $\bm{x}_m \sim \bm{x}_n$ by a symmetric affinity function $W_{mn} = K(\bm{x}_m;\bm{x}_n)$, typically a radial basis or heat kernel:
 \begin{align}
 	\bm{W}_{mn}= w_{mn} = \exp \left ( - \frac{|| \bm{x}_m - \bm{x}_n ||^{2}}{\beta}  \right )
@@ -184,12 +185,75 @@ The column vectors $\bm{z}_{1}, \dots, \bm{z}_{N}$ are the solutions of (\textbf
 \noindent
 where $K < N$ is the dimensionality of the embedded space.  From observation, it is clear that the embedding dimensionality is limited by the number of samples $N$.
 
-
+\textbf{Finish discussion}
 LE suffers from
 
-Despite these nuances, LE has been successfully applied in 
+Results vary highly on choice of neighborhood size and assumed intrinsic dimensionality,  However, choosing the size of $K$ or $\epsilon$ in advance can be very difficult. 
 
-In order to adopt LE for classification,
+Despite these nuances, LE has been successfully applied in nonlinear dimensionality reduction tasks such as 
+
+\textbf{End Discussion}
+
+\paragraph{Supervised LE}
+In order to adopt LE for classification,Raducanu and Dornaika \citep{Raducanu2012SupervisedNonlinearDimReduction} proposed a supervised LE which minimizes the margin between samples with similar class labels and maximizes the margin between samples with opposing class labels.  Supervised LE utilizes discriminative information contained in the class labels when finding the nonlinear embedding (spectral projection). 
+
+In order to discover both geometrical and discriminative manifold structure, supervised LE splits the global graph into two components: the within-class graph $G_{w}$ and the between-class graph $G_{b}$.  To define the margin, they define two subsets, $N_{w}(\bm{x}_{n})$ and $N_{b}(\bm{x}_{n})$ for each sample $\bm{x}_{n}$.  These two subsets contain the neighbors of $\bm{x}_{n}$ sharing the same label and having different labels, respectively, which have a similarity higher than the average.
+\begin{align}
+	N_{w}(\bm{x}_n) = \{\bm{x}_m |l_{m} = l_{n}, \exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right)  > AS(\bm{x}_{n}) \}
+\end{align}
+
+\begin{align}
+N_{b}(\bm{x}_n) = \{\bm{x}_m |l_{m} \neq l_{n}, \exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right)  > AS(\bm{x}_{n}) \}
+\end{align}
+
+\noindent
+where $AS(\bm{x}_{n}) = \frac{1}{N} \sum_{n=1}^{N} \exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right)$ denotes the average similarity of the sample  $\bm{x}_{n}$ to the rest of the data.  From Equations \textbf{reference equations} it is clear that the neighborhoods for each data sample are not necessarily the same size.  As a result, this function constructs the affinity graph according to both the local density and similarity between data samples in the input feature space.
+
+With the two sets defined, the within-class and between-class weight matrices $\bm{W}_{w}$ and $\bm{W}_{b}$ are formed from the adjacency graphs $G_{w}$ and $G_{b}$, respectively.  These weight matrices are defined as:
+\begin{align}
+	W_{w,mn} =
+	\begin{cases}
+		\exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right), \text{ if } \bm{x}_{n} \in N_{w}(\bm{x}_{m}) \text{ or } \bm{x}_{m} \in N_{w}(\bm{x}_{n})  \\
+		0, \text{ otherwise}
+	\end{cases}
+\end{align}
+
+\begin{align}
+	W_{b,mn} =
+	\begin{cases}
+		1, \text{ if } \bm{x}_{n} \in N_{b}(\bm{x}_{m}) \text{ or } \bm{x}_{m} \in N_{b}(\bm{x}_{n}) \\
+	0, \text{ otherwise}
+	\end{cases}
+\end{align}
+\noindent
+and the global affinity matrix, $\bm{W}$, can be written as:
+\begin{align}
+	\bm{W} = \bm{W}_{w} + \bm{W}_{b}
+\end{align}
+
+In order to obtain the low-dimensional representations $\bm{z}_n$ of the input data $\bm{x}_{n}$, the following objective functions can be optimized for $\bm{Z}$:
+\begin{align}
+	\min \frac{1}{2} \sum_{m,n} || \bm{z}_{m} - \bm{z}_{n} ||^{2} W_{w,mn} = tr(\bm{Z}^{T}\bm{L}_{w}\bm{Z})
+\end{align}
+\begin{align}
+\max \frac{1}{2} \sum_{m,n} || \bm{z}_{m} - \bm{z}_{n} ||^{2} W_{b,mn} = tr(\bm{Z}^{T}\bm{L}_{b}\bm{Z})
+\end{align}
+\noindent
+where $\bm{L}_{w} = \bm{D}_{w} - \bm{W}_{w}$ and $\bm{L}_{b} = \bm{D}_{b} - \bm{W}_{b}$ indicate the corresponding graph Laplacians of the within-class and between-class affinity graphs, respectively.  The matrix $\bm{Z} = \bm{z}^{T}_{1}, \dots, \bm{z}^{T}_{N}$ contains the low-dimensional representations of the input samples in its rows.
+
+By merging the two objective functions, the final optimization problem is formulated as:
+\begin{align}
+	\arg\max_{\bm{Z}} \left \{  \gamma tr(\bm{Z}^{T}\bm{L}_{b}\bm{Z}) + (1- \gamma)tr(\bm{Z}^{T}\bm{L}_{w}\bm{Z}) \right \} \quad s.t. \quad \bm{Z}^{T}\bm{D}_{w}\bm{Z} = \bm{I}
+\end{align}
+By defining matrix $\bm{B} = \gamma \bm{L}_{b} + (1 - \gamma)\bm{W}_{w}$, the problem becomes:
+\begin{align}
+	\arg\max_{\bm{Z}} \left ( \bm{Z}^{T}\bm{B}\bm{Z}  \right ) \quad s.t. \quad \bm{Z}^{T}\bm{D}_{w}\bm{Z} = \bm{I}
+\end{align}
+\noindent
+The low-dimensional embedding matrix $\bm{Z}$ can be found by solving the generalized eigenvalue problem:
+\begin{align}
+	\bm{B}\bm{z} = \lambda \bm{D}_{w}\bm{z}
+\end{align}
 
 \subsubsection{Hessian Eigenmaps}
 
