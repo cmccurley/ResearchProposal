@@ -18,31 +18,34 @@ I was expecting a `,' or a `}'---line 53 of file BibFiles/references.bib
  :  author = { X. Li and V. Monga},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 211 of file BibFiles/references.bib
+Warning--entry type for "WeinbergerFalseAlarms" isn't style-file defined
+--line 112 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 219 of file BibFiles/references.bib
  :  
  :  number = {2}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 385 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 393 of file BibFiles/references.bib
  :  
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-"{" immediately follows a field name---line 1273 of file BibFiles/references.bib
+"{" immediately follows a field name---line 1281 of file BibFiles/references.bib
  :  booktitl\part
  :               {title}e={2011 IEEE 11th International Conference on Data Mining},
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2219 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 2227 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 2691 of file BibFiles/references.bib
+--line 2699 of file BibFiles/references.bib
 Warning--empty journal in Bishop1998GTM
 Warning--empty year in MUUFLScoringCode
 Warning--empty publisher in Kegl2008PrincipalManifoldsTextbook
 Warning--empty booktitle in Rish2008SupDimRedGLM
+Warning--empty year in WeinbergerFalseAlarms
 Warning--empty title in Xu2011MI_Metric_Learning
 Warning--empty booktitle in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning

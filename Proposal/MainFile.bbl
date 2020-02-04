@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{47}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -309,6 +309,11 @@ E.~Vural and C.~Guillemot.
   manifold learning.
 \newblock \emph{CoRR}, abs/1507.05880, 2018.
 \newblock URL \url{http://arxiv.org/abs/1507.05880}.
+
+\bibitem[Weinberger()]{WeinbergerFalseAlarms}
+David Weinberger.
+\newblock Ai outside in: Machine learning's triangle of error.
+\newblock URL \url{https://accelerate.withgoogle.com/stories/ai-outside}.
 
 \bibitem[{X. Geng} et~al.(2005){X. Geng}, {D. Zhan}, and {Z.
   Zhou}]{Geng2005SupNonlinearDimRed}

@@ -1,6 +1,6 @@
 \chapter{Background}
 
-This chapter provides a literature review on Manifold Learning, including classic approaches, supervised and semi-supervised methods and uses of manifolds for functional regularization.  A review of the Multiple Instance Learning framework for learning from weak and ambiguous annotations is provided. Additionally, this chapter reviews the existing literature on metric embedding, focusing heavily on the utilization of contrastive and triplet-based loss evaluation.  Reviews describe basic terminology and definitions.  Foundational approaches are elaborated and advances are addressed.
+This chapter provides a literature review of the Multiple Instance Learning framework for learning from weak and ambiguous annotations.  A review is provided on Manifold Learning, including classic approaches, supervised and semi-supervised methods and uses of manifolds for functional regularization. Additionally, this chapter reviews the existing literature on metric embedding, focusing heavily on the utilization of contrastive and triplet-based loss evaluation.  Reviews describe basic terminology and definitions.  Foundational approaches are elaborated and advances are addressed.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Multiple Instance Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Multiple Instance Learning}
@@ -126,6 +126,8 @@ Many extensions and alternative viewpoints have been made to PCA, such as creati
 \paragraph{Kernel LDA (KDA)}
 
 \subsubsection{Locality Preserving Projection (LPP)}
+
+\subsubsection{Non-negative Matrix Factorization (NMF)}
 
 \subsection{Nonlinear Manifold Learning}
 
@@ -258,6 +260,8 @@ The special feature exhibited by all Laplacian Eigenmap methods is the use of la
 
 \subsubsection{Sammon Mapping}
 
+\subsubsection{Maximum Variance Unfolding (MVU)}
+
 \subsection{Latent Variable Models}
 
 \subsubsection{General Latent Variable Model (GLVM)}
@@ -312,7 +316,7 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 \subsection{Current State of the Art}
 \subsection{UMAP}
 
-\subsection{t-SNE}
+\subsection{Stochastic Neighbor Embedding (SNE and t-SNE)}
 
 \subsection{NCA}
 
@@ -335,6 +339,8 @@ The concepts of ``near" and ``far" are very powerful and useful utilities in eve
 	\item Triangle Inequality:  $\mathcal{D}(\bm{x},\bm{z}) \leq \mathcal{D}(\bm{x},\bm{y}) + \mathcal{D}(\bm{y},\bm{z})$
 	\end{enumerate}
 
+
+\textbf{Explain more about these properties...} \newline
 The goal of \textit{metric embedding learning} it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{K}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{K}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{K}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \citep{Hermans2017DefenseTripletLoss}.  Let $\mathcal{D}(\bm{x},\bm{ y}): \mathbb{R}^{K} \times \mathbb{R}^{K} \rightarrow \mathbb{R}$ be a metric function measuring dissimilarity in the embedded space.  For succinctness, $\mathcal{D}_{i,j} = \mathcal{D}(f_{\theta}(\bm{x_{i}}),f_{\theta}(\bm{x_{j}}))$
 defines the dissimilarity between samples $\bm{x}_{i}$ and $\bm{x}_{j}$, after being embedded.
 
