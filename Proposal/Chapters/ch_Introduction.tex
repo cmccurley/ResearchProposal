@@ -54,7 +54,7 @@ Techniques which can address these forms of label ambiguity while achieving comp
 Learning from uncertain, imprecise and ambiguous data has been an active area of research since the late 1990s and is known as \textit{multiple instance learning} (MIL) or \textit{weak learning} \citep{Bocinsky2019Thesis}.  Supervised learning assumes that each training sample is paired with a corresponding classification label.  In multiple instance learning, however, the label of each sample is not necessarily known.  Instead, MIL approaches learn from groups of data points called \textit{bags}, and each bag concept is paired with a label \citep{Cook2015Thesis}. Under the two-class classification scenario the bags are labeled as \textit{negative} if all data points (or \textit{instances}) are known to belong to the background class (not the class of interest).  While the actual number of positive and negative instances may be unknown, bags are labeled \textit{positive} if \textit{at least one} instance is known to belong to the target class (also called a ``true positive") \citep{Zare2016MIACE} or to contain a proportion of true target.  The goal of learning under the MIL framework is to train a model which can classify a bag as positive or negative (bag-level classification) or to predict the class labels of individual instances (instance-level classification). Consider again the example shown in Figure \ref{fig:binary_targets}.  The figure labeled as ``Target" could be considered as a positive bag because, while the image is not accompanied with pixel-level labels, it is known that a true target pixel exists somewhere within the set.  Additionally, the image denoted as ``Background" could be considered as a negative bag, since it does not contain any pure target pixels.  Given data of this type, multiple instance learning could be used to discover target and/or background class representatives which could be used for class discrimination, or a classifier could be trained to label and unseen test image as containing or excluding target pixels (bag-level classification) or to label each individual pixel as belonging to the target class (instance-level classification).  As with this example, the MIL problem formulation fits many remote sensing scenarios and is thus an important area of investigation \citep{Du2017Thesis}.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%  Problems with Existing Methods %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{Multiple instance learning approaches in the literature can be broadly generalized into two categories: learning a concept(s) which effectively describes the positive and/or negative classes, or training a classifier to discriminate bags or individual instances.  Existing approaches in the literature} have two primary limitations:  (1) MIL methods assume that target instances are already separable in the feature space or that a signature(s) can be learned which represents the target class well, while poorly representing the entirety of the negative class, regardless of potential distribution overlap \citep{Carbonneau2016MILSurvey}. (2) Current methods are unable to address learning complications associated with high-dimensionality.
+Multiple instance learning approaches in the literature can be broadly generalized into two categories: learning a concept(s) which effectively describes the positive and/or negative classes, or embedding bags in high-dimensional spaces such that positive and negative bags are well-separated.  In both cases a classifier can be trained to discriminate bags or individual instances.  \textbf{Existing approaches in the literature have two primary limitations:  (1) MIL methods assume that target instances are already separable in the feature space or that a signature(s) can be learned which represents the target class well, while poorly representing the entirety of the negative class, regardless of potential distribution overlap \citep{Carbonneau2016MILSurvey}. (2) Current methods are unable to address learning complications associated with high-dimensionality.}
 
 %%%%%%%%%%%%% \subsection{Manifold Learning and Dimensionality Reduction} %%%%%%%%%%%%%%
 %\subsection{Manifold Learning and Dimensionality Reduction}
@@ -67,7 +67,95 @@ The underlying assumption in using manifold learning for discrimination is that 
 
 %%%%%%%%%%%%%%%%%%%% \subsection{Existing Approaches} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Existing Approaches}
-Methods for representation learning have recently gained in popularity because they typically result in high levels of classification accuracy.  Some of these methods  learn features in a supervised manner to obtain more discriminative representations.  However, this learning cannot be done directly in  MIL because of the uncertainty on the labels.  Thus, \textit{adaptation of discriminative  feature learning methods would be beneficial to MIL} \citep{Carbonneau2016MILSurvey}, yet this area of research has scarcely been explored.  The first true experimentation was performed in \citep{Sun2010MIDR}.  In this work, Sun et al. showed that Principal Component Analysis (PCA) failed to incorporate bag-level label information and thus provided poor separation between positive and negative bags.  Additionally, Linear Discriminant Analysis (LDA) was used to project bags into a latent space which maximized between-bag separation, while minimizing within-bag dissimilarity.  However, LDA often mixed the latent bag representations due to the uncertainty of negative sample distributions in the positive bags.  To address these issues, Sun proposed Multiple Instance Dimensionality Reduction (MIDR) which optimized an objective through gradient descent to discover sparse, orthogonal projection vectors into the latent space.  Their approach relied on fitting a distribution of negative instances and applying maximum likelihood estimation.  This approach was later extended in \citep{Zhu2018MIDRSparsity} in attempt to improve sparsity.  Both of these methods rely on fitting a distribution of negative instances and determining positive instances as samples which have low likelihood of belonging to the distribution.  However, these approaches fail when the the target and background instances are metrically similar in the feature space \textbf{Include Synthetic Figure (Swiss-Roll) to show how points on the opposite ends of the manifold are considered close, even though they should really be far, Or my synthetic quadratic example}.  It would, therefore, be beneficial to first transform the instance representations into more discriminable forms.  Most existing approaches in the literature extend LDA to distinguish between positive and negative bags \citep{Chai2014MIDA,Zhu2018MIDRSparsity}.  These methods typically rely on costly optimization procedures to maximize an objective for orthogonal and sparse projection vectors.  The work in \citep{Xu2011MI_Metric_Learning} investigated metric learning on sets of data (where each bag was a set) to learn an appropriate similarity metric to compare bags.  They do not go as far as to discriminate positive instances within the positive bags, nor do they propose positive target concepts.  In fact, virtually all MIL DR methods in the literature are applied, solely, to predict bag-level labels. While bag-level label prediction is useful in many remote sensing applications, such as region of interest (ROI) proposal for anomaly detection, they limit the the ability of learners to classify on the pixel or sample level.  Xu et al. proposed an importance term to weight samples believed to be true target exemplars, as those instances are more important in determining the bag-level label \citep{Xu2011MI_Metric_Learning}.  However, to the author's knowledge, no work has been done to investigate instance-level discrimination through manifold learning/ dimensionality reduction.  \textbf{Include synthetic data to motivate }\textit{With this in mind, the goal of this work is, using only bag-level labels, to find discriminative instance embeddings which allow for accurate sample-level classification.}
+Methods for representation learning have recently gained in popularity because they typically result in high levels of classification accuracy.  Some of these methods  learn features in a supervised manner to obtain more discriminative representations.  However, this learning cannot be done directly in  MIL because of the uncertainty on the labels.  Thus, \textit{adaptation of discriminative  feature learning methods would be beneficial to MIL} \citep{Carbonneau2016MILSurvey}, yet this area of research has scarcely been explored.  The first true experimentation was performed in \citep{Sun2010MIDR}.  In this work, Sun et al. showed that Principal Component Analysis (PCA) failed to incorporate bag-level label information and thus provided poor separation between positive and negative bags.  Additionally, Linear Discriminant Analysis (LDA) was used to project bags into a latent space which maximized between-bag separation, while minimizing within-bag dissimilarity.  However, LDA often mixed the latent bag representations due to the uncertainty of negative sample distributions in the positive bags.  To address these issues, Sun proposed Multiple Instance Dimensionality Reduction (MIDR) which optimized an objective through gradient descent to discover sparse, orthogonal projection vectors into the latent space.  Their approach relied on fitting a distribution of negative instances and applying maximum likelihood estimation.  This approach was later extended in \citep{Zhu2018MIDRSparsity} in attempt to improve sparsity.  Both of these methods rely on fitting a distribution of negative instances and determining positive instances as samples which have low likelihood of belonging to the distribution.  However, these approaches fail when the the target and background instances are metrically similar in the feature space.  For example, consider the data shown in Figure \ref{fig:swiss_roll}.  This image demonstrates the popular Swiss Roll dataset, which is a 2-dimensional manifold folded in 3-dimensions.  Assume that the data classes lie on separate ends of the manifold, and that samples are governed by a smooth labeling function.  In Figure \ref{fig:swiss_roll_3d}, the red samples denote one class while the blue represent another.  If using Euclidean (straight line) distance to measure dissimilarity, it would appear that many red samples are (untruly) close to the blue.  However, if an alternative distance metric such as geodesic distance (around the curve) is used to measure dissimilarity between samples, the true class distributions are better represented.  Figure \ref{fig:swiss_roll_2d} shows the unfolding of manifold using geodesic distance.  It can be observed that, after the unfolding, the classification problem was transformed from a nonlinear to a linear one.  Additionally, a dimension of the data was also deemed unnecessary.
+\begin{figure*}[t!]
+	\centering
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2.5in]{"introduction/swiss_roll_3d_view_2"}
+		\caption{}
+		\label{fig:swiss_roll_3d}
+	\end{subfigure}%
+	~ 
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2.3in]{"introduction/swiss_roll_2d"}
+		\caption{}
+		\label{fig:swiss_roll_2d}
+	\end{subfigure}
+	\caption[Swiss Roll manifold unfolding.]{(a) This dataset is known as the Swiss Roll and it depicts a 2-dimensional manifold embedded in 3 dimensions.  (b) The Swiss Roll unfolded according to the geodesic path around the manifold.}
+	\label{fig:swiss_roll}%
+\end{figure*}  
+It would, therefore, be beneficial to first transform the instance representations into more discriminable forms.  Most existing approaches in the literature extend LDA to distinguish between positive and negative bags \citep{Chai2014MIDA,Zhu2018MIDRSparsity}.  These methods typically rely on costly optimization procedures to maximize an objective for orthogonal and sparse projection vectors.  The work in \citep{Xu2011MI_Metric_Learning} investigated metric learning on sets of data (where each bag was a set) to learn an appropriate similarity metric to compare bags.  They do not go as far as to discriminate positive instances within the positive bags, nor do they propose positive target concepts.  In fact, virtually all MIL DR methods in the literature are applied, solely, to predict bag-level labels. While bag-level label prediction is useful in many remote sensing applications, such as region of interest (ROI) proposal for anomaly detection, they limit the the ability of learners to classify on the pixel or sample level.  Xu et al. proposed an importance term to weight samples believed to be true target exemplars, as those instances are more important in determining the bag-level label \citep{Xu2011MI_Metric_Learning}.  However, to the author's knowledge, no work has been done to investigate instance-level discrimination through manifold learning/ dimensionality reduction. 
+
+\begin{figure*}[t!]
+	\centering
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2.2in]{"introduction/quad_surface_lin_sep"}
+		\caption{}
+		\label{fig:quad_surface_lin_sep}
+	\end{subfigure}%
+	~ 
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2.3in]{"introduction/quad_surface_non_sep"}
+		\caption{}
+		\label{fig:quad_surface_non_sep}
+	\end{subfigure}
+
+	
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2in]{"introduction/quad_surface_lin_sep_le_1d"}
+		\caption{}
+		\label{fig:quad_surface_lin_sep_le_1d}
+	\end{subfigure}%
+	~ 
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2in]{"introduction/quad_surface_non_sep_le_1d"}
+		\caption{}
+		\label{fig:quad_surface_non_sep_le_1d}
+	\end{subfigure}
+\caption[Quadratic surfaces no labels]{}
+\label{fig:quad_surfaces_no_labels}%
+\end{figure*} 
+
+\begin{figure*}[t!]
+	\centering
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2.2in]{"introduction/quad_surface_lin_sep_bags"}
+		\caption{}
+		\label{fig:quad_surface_lin_sep_bags}
+	\end{subfigure}%
+	~ 
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2.3in]{"introduction/quad_surface_non_sep_bags"}
+		\caption{}
+		\label{fig:quad_surface_non_sep_bags}
+	\end{subfigure}
+	
+	
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2in]{"introduction/quad_surface_lin_sep_sle_1d"}
+		\caption{}
+		\label{fig:quad_surface_lin_sep_sle_1d}
+	\end{subfigure}%
+	~ 
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2in]{"introduction/quad_surface_non_sep_sle_1d"}
+		\caption{}
+		\label{fig:quad_surface_non_sep_sle_1d}
+	\end{subfigure}
+\caption[Quadratic surfaces with bag-level labels]{}
+\label{fig:quad_surfaces_with_labels}%
+\end{figure*} 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% \subsection{Proposition of Work} %%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Proposition of Work}

@@ -1,6 +1,9 @@
 \contentsline {figure}{\numberline {{1-1}}{\ignorespaces Example of bounding box imprecision.}}{11}{figure.caption.7}
 \contentsline {figure}{\numberline {{1-2}}{\ignorespaces Forms of weak labels.}}{12}{figure.caption.8}
 \contentsline {figure}{\numberline {{1-3}}{\ignorespaces Examples of image-level labels.}}{12}{figure.caption.9}
-\contentsline {figure}{\numberline {{2-1}}{\ignorespaces Multiple instance learning bags.}}{19}{figure.caption.10}
-\contentsline {figure}{\numberline {{2-2}}{\ignorespaces Example pose data manifold.}}{21}{figure.caption.11}
-\contentsline {figure}{\numberline {{2-3}}{\ignorespaces PCA Example.}}{24}{figure.caption.13}
+\contentsline {figure}{\numberline {{1-4}}{\ignorespaces Swiss Roll manifold unfolding.}}{16}{figure.caption.10}
+\contentsline {figure}{\numberline {{1-5}}{\ignorespaces Quadratic surfaces no labels}}{17}{figure.caption.11}
+\contentsline {figure}{\numberline {{1-6}}{\ignorespaces Quadratic surfaces with bag-level labels}}{18}{figure.caption.12}
+\contentsline {figure}{\numberline {{2-1}}{\ignorespaces Multiple instance learning bags.}}{21}{figure.caption.13}
+\contentsline {figure}{\numberline {{2-2}}{\ignorespaces Example pose data manifold.}}{23}{figure.caption.14}
+\contentsline {figure}{\numberline {{2-3}}{\ignorespaces PCA Example.}}{26}{figure.caption.16}
