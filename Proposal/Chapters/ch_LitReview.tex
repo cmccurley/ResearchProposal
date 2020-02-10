@@ -231,7 +231,7 @@ where $\bm{L}_{w} = \bm{D}_{w} - \bm{W}_{w}$ and $\bm{L}_{b} = \bm{D}_{b} - \bm{
 
 By merging the two objective functions, the final optimization problem is formulated as:
 \begin{align}
-	\arg\max_{\bm{Z}} \left \{  \gamma tr(\bm{Z}^{T}\bm{L}_{b}\bm{Z}) + (1- \gamma)tr(\bm{Z}^{T}\bm{L}_{w}\bm{Z}) \right \} \quad s.t. \quad \bm{Z}^{T}\bm{D}_{w}\bm{Z} = \bm{I}
+	\arg\max_{\bm{Z}} \left \{  \gamma tr(\bm{Z}^{T}\bm{L}_{b}\bm{Z}) + (1- \gamma)tr(\bm{Z}^{T}\bm{W}_{w}\bm{Z}) \right \} \quad s.t. \quad \bm{Z}^{T}\bm{D}_{w}\bm{Z} = \bm{I}
 \end{align}
 The term $\gamma$ is a scalar value in $[0,1]$ which determines the trade-off between pulling similar samples toward each other in the latent space and pushing heterogeneous points away.  A value of $\gamma = 1$ forces the objective to solely focus on maximizing the margin between dissimilar points.  Alternatively, a value of $\gamma = 0$ priorities the objective on embedding homogeneous samples in close spatial proximity. By defining matrix $\bm{B} = \gamma \bm{L}_{b} + (1 - \gamma)\bm{W}_{w}$, the problem becomes:
 \begin{align}
