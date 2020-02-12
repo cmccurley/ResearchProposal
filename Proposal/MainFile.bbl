@@ -1,4 +1,4 @@
-\begin{thebibliography}{47}
+\begin{thebibliography}{48}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -241,6 +241,15 @@ Florian Schroff, Dmitry Kalenichenko, and James Philbin.
 \newblock Facenet: {A} unified embedding for face recognition and clustering.
 \newblock \emph{CoRR}, abs/1503.03832, 2015.
 \newblock URL \url{http://arxiv.org/abs/1503.03832}.
+
+\bibitem[{Shuman} et~al.(2013){Shuman}, {Narang}, {Frossard}, {Ortega}, and
+  {Vandergheynst}]{Shuman2013SignalProcessingGraphs}
+D.~I. {Shuman}, S.~K. {Narang}, P.~{Frossard}, A.~{Ortega}, and
+  P.~{Vandergheynst}.
+\newblock The emerging field of signal processing on graphs: Extending
+  high-dimensional data analysis to networks and other irregular domains.
+\newblock \emph{IEEE Signal Processing Magazine}, 30\penalty0 (3):\penalty0
+  83--98, May 2013.
 
 \bibitem[Sohn(2016)]{Sohn2016NPairLoss}
 Kihyuk Sohn.

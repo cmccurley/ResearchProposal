@@ -5,7 +5,7 @@ This chapter provides a literature review of the Multiple Instance Learning fram
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Multiple Instance Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Multiple Instance Learning}
 
-Multiple Instance Learning (MIL) was originally proposed in \citep{Dietterich1996AxisParallelRectangles} as a method to handle inherent observation difficulties associated with drug activity prediction.  This problem, among many others, fits well into the framework of MIL where training labels are associated with sets of data points, called \textit{bags} instead of each individual data points, or \textit{instances}.  Under the \textit{standard MIL assumption}, a bag is given a ``positive" label if it is known that  \textit{at least one} sample in the set represents pure or partial target.  Alternatively, a bag is labeled as ``negative" if does not contain any positive instances \citep{Carbonneau2016MILSurvey}.  Let $\bm{X}=[\bm{x}_1,\dots, \bm{x}_N] \in \mathbb{R}^{d \times N}$ be training data where $d$ is the dimensionality of an instance, $\bm{x}_n$, and $N$ is the total number of training instances.  The data is grouped into K \textit{bags}, $\bm{B} = \{\bm{B}_1, \dots, \bm{B}_K\}$, with associated binary bag-level labels, $\mathcal{L} = \{L_1, \dots, L_K \}$ where 
+Multiple Instance Learning (MIL) was originally proposed in \citep{Dietterich1996AxisParallelRectangles} as a method to handle inherent observation difficulties associated with drug activity prediction.  This problem, among many others, fits well into the framework of MIL where training labels are associated with sets of data points, called \textit{bags} instead of each individual data points, or \textit{instances}.  Under the \textit{standard MIL assumption}, a bag is given a ``positive" label if it is known that  \textit{at least one} sample in the set represents pure or partial target.  Alternatively, a bag is labeled as ``negative" if does not contain any positive instances \citep{Carbonneau2016MILSurvey}.  Let $\bm{X}=[\bm{x}_1,\dots, \bm{x}_N] \in \mathbb{R}^{D \times N}$ be training data where $D$ is the dimensionality of an instance, $\bm{x}_n$, and $N$ is the total number of training instances.  The data is grouped into K \textit{bags}, $\bm{B} = \{\bm{B}_1, \dots, \bm{B}_K\}$, with associated binary bag-level labels, $\mathcal{L} = \{L_1, \dots, L_K \}$ where 
 \begin{align}
 	L_k = \begin{cases} 
 	1, & \exists \bm{x}_{kn} \in \bm{B}^{+}_{k} \ni  l_{kn} = 1\\
@@ -57,7 +57,7 @@ This dissertation focuses on investigating the use of manifold learning to incre
 \subsection{Definition and General Notation}
 Most studies perform classification or regression after applying unsupervised dimensionality reduction.  However, it has been shown that there are advantages of learning the low-dimensional representations and classification/regression models simultaneously \citep{Chao2019RecentAdvancesSupervisedDimRed,Rish2008SupDimRedGLM}.  Considering classification as the main goal of dimensionality reduction, this section provides a summary of the current literature in the area. \newline
 
-Given a data matrix $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]\in \mathbb{R}^{D \times N}$ where $N$ is the total number of samples and $D$ is the dimensionality of the input feature space, general dimensionality reduction seeks to find a representation $\bm{Z} \in \mathbb{R}^{K \times N}$ with $K \ll D$ that enhances the between-class separation while preserving the intrinsic geometric structure of the data\citep{Vural2018StudySupervisedManifoldLearning}.  In other words, it is assumed that the data lie on a smooth manifold $\mathcal{X}$, which is the image of some parameter domain $\mathcal{Z} \subset \mathbb{R}^{K}$ under a smooth mapping $\Psi : \mathcal{Z} \rightarrow \mathbb{R}^{D}$.  The goal of manifold learning is to discover an inverse mapping to the low-dimensional pre-image coordinates $\bm{z}_n \in \bm{z}$ corresponding to points $\bm{x}_n \in \bm{X}$.  The data matrices $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]$ and $\bm{Z} = [\bm{z}_1, \dots, \bm{z}_N]$ are of size $D \times N$ and $K \times N$, respectively.  Since these low-dimensional data representations are unknown, they are often referred to as \textit{latent} vectors and the span in $\mathbb{R}^K$ is sometimes called the \textit{latent feature space} or \textit{latent space} for conciseness \textbf{CITE}. The primary difference between traditional, unsupervised manifold learning and supervised approaches is that, in supervised manifold learning, data matrix $\bm{X} $ is accompanied with a corresponding label vector $\bm{l} = [l_1, \dots, l_N]$ indicating the corresponding class labels of each sample in $\bm{X}$. \newline
+Given a data matrix $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]\in \mathbb{R}^{D \times N}$ where $N$ is the total number of samples and $D$ is the dimensionality of the input feature space, general dimensionality reduction seeks to find a representation $\bm{Z} \in \mathbb{R}^{d \times N}$ with $d \ll D$ that enhances the between-class separation while preserving the intrinsic geometric structure of the data\citep{Vural2018StudySupervisedManifoldLearning}.  In other words, it is assumed that the data lie on a smooth manifold $\mathcal{X}$, which is the image of some parameter domain $\mathcal{Z} \subset \mathbb{R}^{d}$ under a smooth mapping $\Psi : \mathcal{Z} \rightarrow \mathbb{R}^{D}$.  The goal of manifold learning is to discover an inverse mapping to the low-dimensional pre-image coordinates $\bm{z}_n \in \bm{z}$ corresponding to points $\bm{x}_n \in \bm{X}$.  The data matrices $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]$ and $\bm{Z} = [\bm{z}_1, \dots, \bm{z}_N]$ are of size $D \times N$ and $d \times N$, respectively.  Since these low-dimensional data representations are unknown, they are often referred to as \textit{latent} vectors and the span in $\mathbb{R}^d$ is sometimes called the \textit{latent feature space} or \textit{latent space} for conciseness \textbf{CITE}. The primary difference between traditional, unsupervised manifold learning and supervised approaches is that, in supervised manifold learning, data matrix $\bm{X} $ is accompanied with a corresponding label vector $\bm{l} = [l_1, \dots, l_N]$ indicating the corresponding class labels of each sample in $\bm{X}$. \newline
 
 Manifold learning methods can be subdivided into a wide taxonomy of approaches, with \textit{linear} and \textit{nonlinear} at the root. Nonlinear approaches can be further divided into purely global methods and approaches that capture global structure solely from local information.  We begin with a review of popular linear manifold learning techniques before moving into the realm of nonlinear approaches. Base, unsupervised methods are reviewed along with corresponding supervised and semi-supervised adaptations. 
 
@@ -69,7 +69,7 @@ A review of linear manifold learning approaches is provided.  Linear approaches 
 \subsubsection{Principal Component Analysis (PCA)}
 
 \paragraph{Unsupervised PCA}
-Principal Component Analysis (PCA) is arguably the most popular (and best-studied) technique for dimensionality reduction and manifold learning.  It attempts to learn an orthogonal projection of the input data into a lower-dimensional space, known as the principal subspace, such that the variance of the projected data is maximized \citep{Chao2019RecentAdvancesSupervisedDimRed}.  In other words, each \textit{principal axis}, or \textit{principal component}, of the learned coordinate system is orthogonal to the other principal components.  In summary, the problem of PCA is to discover basis vectors which linearly combine to reconstruct the data.  In practice, data in the input feature space are projected into a new coordinate system of $K$ dimensions, such that the variance along each principal axis is maximized and the reconstruction errors of the data are minimized in the mean-square sense \citep{Thorstensen2009ManifoldThesis}.  Let $V$ be a $K$-dimensional subspace of $\mathbb{R}^{D}$ and let  $\bm{w}_1, \dots, \bm{w}_D$ be an orthonormal basis of $\mathbb{R}^{D}$ such that $\bm{w}_1, \dots, \bm{w}_K$ is a basis of $V$.  The goal of PCA is to find an orthogonal set of basis vectors $\bm{w}_n \in \mathbb{R}^{D}$ and corresponding latent coordinates $\bm{x}_n \in \mathbb{R}^{K}$ such that the average reconstruction error is minimized \citep{Murphy2012}
+Principal Component Analysis (PCA) is arguably the most popular (and best-studied) technique for dimensionality reduction and manifold learning.  It attempts to learn an orthogonal projection of the input data into a lower-dimensional space, known as the principal subspace, such that the variance of the projected data is maximized \citep{Chao2019RecentAdvancesSupervisedDimRed}.  In other words, each \textit{principal axis}, or \textit{principal component}, of the learned coordinate system is orthogonal to the other principal components.  In summary, the problem of PCA is to discover basis vectors which linearly combine to reconstruct the data.  In practice, data in the input feature space are projected into a new coordinate system of $d$ dimensions, such that the variance along each principal axis is maximized and the reconstruction errors of the data are minimized in the mean-square sense \citep{Thorstensen2009ManifoldThesis}.  Let $V$ be a $d$-dimensional subspace of $\mathbb{R}^{D}$ and let  $\bm{w}_1, \dots, \bm{w}_D$ be an orthonormal basis of $\mathbb{R}^{D}$ such that $\bm{w}_1, \dots, \bm{w}_d$ is a basis of $V$.  The goal of PCA is to find an orthogonal set of basis vectors $\bm{w}_n \in \mathbb{R}^{D}$ and corresponding latent coordinates $\bm{x}_n \in \mathbb{R}^{d}$ such that the average reconstruction error is minimized \citep{Murphy2012}
 \begin{align}
 	J(\bm{W}, \bm{Z}) = \frac{1}{N}\sum_{n=1}^{N} ||\bm{x}_n - \hat{\bm{x}}_n ||^{2}
 \end{align}
@@ -81,13 +81,13 @@ where $\hat{\bm{x}}_n = \bm{W}\bm{z}_{n}$, subject to the constraint that $\bm{W
 \end{align}
 
 \noindent
-where $\bm{Z}$ is a $N \times K$ matrix with the $\bm{z}_{n}$ in its rows and $||\bm{A}||_{F}$ is the \textit{Frobenius norm} of matrix $\bm{A}$, defined by 
+where $\bm{Z}$ is a $N \times d$ matrix with the $\bm{z}_{n}$ in its rows and $||\bm{A}||_{F}$ is the \textit{Frobenius norm} of matrix $\bm{A}$, defined by 
 \begin{align}
-	||\bm{A}||_{F} &= \sqrt{\sum_{m=1}^{M}\sum_{n=1}^{N}}a^{2}_{mn} = \sqrt{tr(\bm{A}^{T}\bm{A})} = ||\bm{A}(:)||_{2}
+	||\bm{A}||_{F} &= \sqrt{\sum_{m=1}^{M}\sum_{n=1}^{N}a^{2}_{mn}} = \sqrt{tr(\bm{A}^{T}\bm{A})} = ||\bm{A}(:)||_{2}
 \end{align} 
 
 \noindent
-As noted by Murphy \citep{Murphy2012}, the optimal solution is obtained by setting $\hat{\bm{W}} = \bm{U}_{K}$, where $\bm{U}_{K}$ contains the eigenvectors corresponding to the $K$ largest eigenvalues of the mean-subtracted, empirical data covariance matrix, $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}(\bm{x}_{n}-\hat{\bm{\mu}})(\bm{x}_{n}-\hat{\bm{\mu}})^{T}$, where $\hat{\bm{\mu}}$ is the empirical data mean.  Therefore, the low-dimensional encoding of the data is given by $\bm{z}_n = \hat{\bm{W}}^{T}\bm{x}_n$, which is the orthogonal, linear projection of the data onto the column space spanned by the eigenvectors of the $K$ largest eigenvalues of the empirical data covariance.  Alternatively, 
+As noted by Murphy \citep{Murphy2012}, the optimal solution is obtained by setting $\hat{\bm{W}} = \bm{U}_{d}$, where $\bm{U}_{d}$ contains the eigenvectors corresponding to the $d$ largest eigenvalues of the mean-subtracted, empirical data covariance matrix, $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}(\bm{x}_{n}-\hat{\bm{\mu}})(\bm{x}_{n}-\hat{\bm{\mu}})^{T}$, where $\hat{\bm{\mu}}$ is the empirical data mean.  Therefore, the low-dimensional encoding of the data is given by $\bm{z}_n = \hat{\bm{W}}^{T}\bm{x}_n$, which is the orthogonal, linear projection of the data onto the column space spanned by the eigenvectors of the $d$ largest eigenvalues of the empirical data covariance.  Alternatively, 
 
 
 Assumes Gaussian distributions
@@ -109,6 +109,9 @@ PCA has been successfully applied to a large  number of domains such as face rec
 
 Many extensions and alternative viewpoints have been made to PCA, such as creating a nonlinear version, a supervised version and looking at it as a factor analysis problem \textbf{CITE}.  A few adaptations to PCA are discussed in later sections.
 
+\paragraph{Kernel PCA}
+
+Page 497 Murphy textbook
 
 
 \subsubsection{Multi-Dimensional Scaling (MDS)}
@@ -131,13 +134,22 @@ Many extensions and alternative viewpoints have been made to PCA, such as creati
 
 \subsection{Nonlinear Manifold Learning}
 
-\paragraph{Kernel PCA}
+Linear methods such as PCA and MDS are convenient for projecting out-of-sample test points into the embedding space.  However, they are unable to capture the structure of data that are sampled from nonlinear manifolds \textbf{CITE} \textbf{REFERENCE}. This section will discuss a variety of nonlinear dimensionality reduction and manifold learning approaches.  All methods reviewed assume the data is distributed along a $d$-dimensional sub-manifold $\mathcal{X}$ embedded in $\mathbb{R}^{D}$.
 
-Page 497 Murphy textbook
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{example-image-a}
+		\caption[Example of a nonlinear manifold.]{Example of a nonlinear manifold.}
+		\label{fig:nonlinear_manifold}
+	\end{figure*}
+\end{center}
 
 \subsubsection{Graph-based Methods}
-Nonlinear dimensionality reduction methods typically rely on the use of adjacency graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  An overview of computational graphs, as well as the two most prominent methods for graph construction in manifold learning are presented.
-Overview and terminology
+Nonlinear dimensionality reduction methods typically rely on the use of adjacency graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  An overview of computational graphs as well as prominent methods for graph construction in manifold learning are presented. Additionally, geodesic distance approximation from pairwise distances is reviewed.
+
+\paragraph{Terminology}
+Spectral graph theory focuses on constructing, analyzing and manipulating graphs.  It has proved useful for graph visualization, spectral clustering, dimensionality reduction and numerous other applications in chemistry, physics, signal processing and computer science \citep{Shuman2013SignalProcessingGraphs}.  Dimensionality reduction methods are interested in analyzing relationships between samples defined on an undirected, weighted graph $\mathcal{G} = \{ \mathcal{V}, \mathcal{E}, \mathbf{W} \}$
 
 \paragraph{$K$ - Nearest Neighbor Graph}
 
@@ -153,7 +165,7 @@ Overview and terminology
 
 \subsubsection{Laplacian Eigenmaps (LE)}
 \paragraph{Classical LE}
-Similar to LLE, Laplacian Eigenmaps, or \textit{Spectral Embedding}, is a nonlinear dimensionality reduction technique which aims to preserve local structure of data \citep{Raducanu2012SupervisedNonlinearDimReduction,VanDerMaaten2009DRReview}.  Using \textit{spectral graph theory}, LE computes low-dimensional representations of data in which the dissimilarities between datapoints and their neighbors (according to an affinity measure) are minimized.  The name \textit{Laplacian Eigenmaps} is derived by the use of Laplacian regularization in the optimization procedure \citep{Thorstensen2009ManifoldThesis}. Given a set of $N$ samples $\bm{X} = \{\bm{x}_n\}^{N}_{n-1} \subset \mathbb{R}^{D}$, the first step of LE is to define a \textit{neighborhood graph on the samples}.  This graph, also called an \textit{affinity} or \textit{adjacency} matrix can be constructed in a variety of ways, such as K-nearest neighbor, $\epsilon$-ball, full mesh, or by weighting each edge $\bm{x}_m \sim \bm{x}_n$ by a symmetric affinity function $W_{mn} = K(\bm{x}_m;\bm{x}_n)$, typically a radial basis or heat kernel:
+Similar to LLE, Laplacian Eigenmaps, or \textit{Spectral Embedding}, is a nonlinear dimensionality reduction technique which aims to preserve local structure of data \citep{Raducanu2012SupervisedNonlinearDimReduction,VanDerMaaten2009DRReview}.  Using \textit{spectral graph theory}, LE computes low-dimensional representations of data in which the dissimilarities between datapoints and their neighbors (according to an affinity measure) are minimized.  The name \textit{Laplacian Eigenmaps} is derived by the use of Laplacian regularization in the optimization procedure \citep{Thorstensen2009ManifoldThesis}. Given a set of $N$ samples $\bm{X} = \{\bm{x}_n\}^{N}_{n=1} \subset \mathbb{R}^{D}$, the first step of LE is to define a \textit{neighborhood graph on the samples}.  This graph, also called an \textit{affinity} or \textit{adjacency} matrix can be constructed in a variety of ways, such as K-nearest neighbor, $\epsilon$-ball, full mesh, or by weighting each edge $\bm{x}_m \sim \bm{x}_n$ by a symmetric affinity function $W_{mn} = K(\bm{x}_m;\bm{x}_n)$, typically a radial basis or heat kernel:
 \begin{align}
 	\bm{W}_{mn}= w_{mn} = \exp \left ( - \frac{|| \bm{x}_m - \bm{x}_n ||^{2}}{\beta}  \right )
 \end{align}
@@ -161,13 +173,13 @@ Similar to LLE, Laplacian Eigenmaps, or \textit{Spectral Embedding}, is a nonlin
 \noindent
 where the kernel bandwidth $\beta$ is typically set as the variance of the dataset \citep{Raducanu2012SupervisedNonlinearDimReduction,Thorstensen2009ManifoldThesis}.
 
-The goal is to uncover the latent data representations $\{ \bm{z}_n \}^{N}_{n=1} \subset \mathbb{R}^{K}$ where $K \ll D$ which minimizes the objective 
+The goal is to uncover the latent data representations $\{ \bm{z}_n \}^{N}_{n=1} \subset \mathbb{R}^{d}$ where $d \ll D$ which minimizes the objective 
 \begin{align}
 	J(\bm{W},\bm{Z}) = \frac{1}{2} \sum_{m,n}^{}||\bm{z}_{m} - \bm{z}_{n} ||^{2}w_{mn} = tr(\bm{Z}^{T}\bm{L}\bm{Z})
 \end{align}
 
 \noindent
-with $\bm{W}$ denoting the symmetric affinity matrix, $\bm{D}$ the diagonal weight matrix whose entries are the sum of the rows (or columns since $\bm{W}$ is symmetric) of $\bm{W}$ (i.e. $d_{mm} = \sum_{n}w_{mn}$, and is $0$ otherwise).  The graph Laplacian matrix is provided as $\bm{L} = \bm{D} - \bm{W}$.  The matrix $\bm{Z} = [\bm{z}^{T}_{1}, \dots, \bm{z}^{T}_{N}]$ is the $N \times K$ embedding matrix and $tr(.)$ denotes the trace of a matrix. The $n^{th}$ row of matrix $\bm{Z}$ provides the vector $\bm{z}_n$, which is the latent representation of sample  $\bm{x}_n$. This objective discourages projecting similar points in the input feature space to disparate regions of the embedding space by enforcing heavy penalization. 
+with $\bm{W}$ denoting the symmetric affinity matrix, $\bm{D}$ the diagonal weight matrix whose entries are the sum of the rows (or columns since $\bm{W}$ is symmetric) of $\bm{W}$ (i.e. $d_{mm} = \sum_{n}w_{mn}$, and is $0$ otherwise).  The graph Laplacian matrix is provided as $\bm{L} = \bm{D} - \bm{W}$.  The matrix $\bm{Z} = [\bm{z}^{T}_{1}, \dots, \bm{z}^{T}_{N}]$ is the $N \times d$ embedding matrix and $tr(.)$ denotes the trace of a matrix. The $n^{th}$ row of matrix $\bm{Z}$ provides the vector $\bm{z}_n$, which is the latent representation of sample  $\bm{x}_n$. This objective discourages projecting similar points in the input feature space to disparate regions of the embedding space by enforcing heavy penalization. 
 
 The latent sample coordinates $\bm{Z}$ are found as the solution to the optimization problem:
 \begin{align}
@@ -180,7 +192,7 @@ where $\bm{I}$ is the identity matrix and $\bm{e} = (1, \dots, 1)^{T}$.  The fir
 	\bm{L}\bm{v} = \lambda \bm{D} \bm{v} \label{eq:trad_le_eig}
 \end{align}
 \noindent
-The column vectors $\bm{v}_{1}, \dots, \bm{v}_{N}$ are the solutions of Equation \ref{eq:trad_le_eig}, ordered to the corresponding eigenvalues, in ascending order, $\lambda_{1} = 0 \leq \lambda_{2} \leq \dots \leq \lambda_{N} $. The embedding of the input samples given by the matrix $\bm{Z}$, is obtained by concatenating the eigenvectors of the $K$ smallest non-zero eigenvalues.  $\bm{Z}$ is a $N \times K$ matrix, where $K < N$ is the dimensionality of the embedded space.  From observation, it is clear that the embedding dimensionality is limited by the number of samples $N$.
+The column vectors $\bm{v}_{1}, \dots, \bm{v}_{N}$ are the solutions of Equation \ref{eq:trad_le_eig}, ordered to the corresponding eigenvalues, in ascending order, $\lambda_{1} = 0 \leq \lambda_{2} \leq \dots \leq \lambda_{N} $. The embedding of the input samples given by the matrix $\bm{Z}$, is obtained by concatenating the eigenvectors of the $d$ smallest non-zero eigenvalues.  $\bm{Z}$ is a $N \times d$ matrix, where $d < N$ is the dimensionality of the embedded space.  From observation, it is clear that the embedding dimensionality is limited by the number of samples $N$.
 
 \paragraph{Supervised LE (S-LE)}
 In order to adopt LE for classification,Raducanu and Dornaika \citep{Raducanu2012SupervisedNonlinearDimReduction} proposed a supervised LE which minimizes the margin between samples with similar class labels and maximizes the margin between samples with opposing class labels.  Supervised LE utilizes discriminative information contained in the class labels when finding the nonlinear embedding (spectral projection). 
@@ -227,7 +239,7 @@ In order to obtain the low-dimensional representations $\bm{z}_n$ of the input d
 \max \frac{1}{2} \sum_{m,n} || \bm{z}_{m} - \bm{z}_{n} ||^{2} W_{b,mn} = tr(\bm{Z}^{T}\bm{L}_{b}\bm{Z})
 \end{align}
 \noindent
-where $\bm{L}_{w} = \bm{D}_{w} - \bm{W}_{w}$ and $\bm{L}_{b} = \bm{D}_{b} - \bm{W}_{b}$ indicate the corresponding graph Laplacians of the within-class and between-class affinity graphs, respectively.  The matrix $\bm{Z} = \bm{z}^{T}_{1}, \dots, \bm{z}^{T}_{N}$ contains the low-dimensional representations of the input samples in its rows.
+where $\bm{L}_{w} = \bm{D}_{w} - \bm{W}_{w}$ and $\bm{L}_{b} = \bm{D}_{b} - \bm{W}_{b}$ indicate the corresponding graph Laplacians of the within-class and between-class affinity graphs, respectively.  The matrix $\bm{Z} = [\bm{z}^{T}_{1}, \dots, \bm{z}^{T}_{N}]$ contains the low-dimensional representations of the input samples in its rows.
 
 By merging the two objective functions, the final optimization problem is formulated as:
 \begin{align}
@@ -244,7 +256,7 @@ The low-dimensional embedding matrix $\bm{Z}$ can be found by solving the genera
 \end{align}
 
 The column vectors $\bm{v}_{1}, \bm{v}_{2}, \dots, \bm{v}_{N}$ are the generalized eigenvectors of 
-Equation \ref{eq:sup_le_eig} arranged by descending eigenvalues $\lambda_{1} \geq \lambda_{2} \geq \dots \lambda_{K}$.  Then the $N \times K$ embedding matrix $\bm{Z} =  [ \bm{z}^{T}_{1}, \dots, \bm{z}^{T}_{N}]$ is provided by concatenating the obtained eigenvectors $\bm{Z} = [\bm{v}_{1}, \bm{v}_{2}, \dots, \bm{v}_{K}]$.
+Equation \ref{eq:sup_le_eig} arranged by descending eigenvalues $\lambda_{1} \geq \lambda_{2} \geq \dots \lambda_{d}$.  Then the $N \times d$ embedding matrix $\bm{Z} =  [ \bm{z}^{T}_{1}, \dots, \bm{z}^{T}_{N}]$ is provided by concatenating the obtained eigenvectors $\bm{Z} = [\bm{v}_{1}, \bm{v}_{2}, \dots, \bm{v}_{d}]$.
 
 The primary difference between the classic LE and S-LE is that traditional LE solely attempts to preserve the spatial relationships between samples, and thus, does not consider label information when learning the embeddings.  Alternatively, S-LE aims at aiding discriminant analysis by collapsing the distance between samples with the same label that are in close spatial proximity and pushing away spatial neighbors with differing class labels.  This is done through the utilization of two affinity graphs: the within-class and between-class graphs.  As with most graph-based methods, LE results vary highly according to the choice of neighborhood size.  However, choosing the size of $K$ or $\epsilon$ in advance can be very difficult. S-LE does not require user-defined graph parameters, other than those associated with the chosen affinity measure.  Instead, graph edges are chosen according to an adaptive neighborhood for each sample.   Both methods, however, suffer from inherent difficulties associated with nonlinear manifold learning, namely, selecting the intrinsic embedding dimensionality and handling out-of-sample extensions.
 
@@ -269,7 +281,7 @@ The special feature exhibited by all Laplacian Eigenmap methods is the use of la
 \paragraph{Factor Analysis (FA)}
 
 \paragraph{Probabilistic PCA (PPCA)}
-PCA can also be analyzed from the viewpoint of factor analysis (FA), which is discussed later in this literature review.  The basic idea, however, is that data observations $\bm{x}_{n} \in \mathbb{R}^{D}$ are realizations of a probability distribution with a prior on the lower-dimensional latent variable $\bm{z}_n \in \mathbb{R}^{K}$.  A typical choice on this model is a Gaussian-Gaussian conjugate prior pair where the mean of the data likelihood is a linear function of the latent inputs.  As an example, the prior over the hidden data representations can be expressed as Gaussian distribution
+PCA can also be analyzed from the viewpoint of factor analysis (FA), which is discussed later in this literature review.  The basic idea, however, is that data observations $\bm{x}_{n} \in \mathbb{R}^{D}$ are realizations of a probability distribution with a prior on the lower-dimensional latent variable $\bm{z}_n \in \mathbb{R}^{d}$.  A typical choice on this model is a Gaussian-Gaussian conjugate prior pair where the mean of the data likelihood is a linear function of the latent inputs.  As an example, the prior over the hidden data representations can be expressed as Gaussian distribution
 
 \begin{align}
 p(\bm{z}_n) = \mathcal{N}(\bm{z}_n|\bm{\mu}_0, \bm{S}_0)
@@ -283,7 +295,7 @@ p(\bm{x}_n|\bm{z}_n,\bm{\theta}) = \mathcal{N}(\bm{W}\bm{z}_n + \bm{\mu}, \bm{\P
 \end{align}
 
 \noindent
-where $\bm{W}$ is a $D \times K$ \textit{factor loading matrix}, and $\bm{\Psi}$ is a $D \times D$ covariance matrix.  The objective of FA is to compute the posterior over the latent factors in hopes that they will reveal something interesting about the data \citep{Murphy2012}.  Classical PCA assumes the data covariance to be $\bm{\Psi} = \sigma^2\bm{I}$ with $\sigma^2 \rightarrow 0$, thus the model is deterministic.  Alternatively, when $\sigma^2 > 0$,the projection is no longer orthogonal since it is shrunk toward the prior mean.  The trade-off is that the reconstructions of $\bm{x}_n$ with be closer to the data mean.
+where $\bm{W}$ is a $D \times d$ \textit{factor loading matrix}, and $\bm{\Psi}$ is a $D \times D$ covariance matrix.  The objective of FA is to compute the posterior over the latent factors in hopes that they will reveal something interesting about the data \citep{Murphy2012}.  Classical PCA assumes the data covariance to be $\bm{\Psi} = \sigma^2\bm{I}$ with $\sigma^2 \rightarrow 0$, thus the model is deterministic.  Alternatively, when $\sigma^2 > 0$,the projection is no longer orthogonal since it is shrunk toward the prior mean.  The trade-off is that the reconstructions of $\bm{x}_n$ with be closer to the data mean.
 
 
 While the typical approach for fitting PCA is to use the method of eigenvectors of Singular Value Decomposition (SVD), it can also be fit with Expectation-Maximization (EM).  This formulation may be more computationally efficient for high-dimensional data.  By using Gaussian Processes, PPCA may also be extended to learn nonlinear mappings between the input and latent feature spaces \citep{VanDerMaaten2009DRReview}.
@@ -295,7 +307,7 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 \subparagraph{Supervised PCA (Latent Factor Regression)}
 \textit{Supervised PCA} or \textit{Bayesian factor regression} is a model like PCA, except that the target variable (or label), $l_n$ is taken into account when learning the low-dimensional embedding.  For the case of binary classification, the Bayesian model can be decomposed into the following elements:
 \begin{align}
-	p(\bm{z}_n) = \mathcal{N}(0,\bm{I}_K)
+	p(\bm{z}_n) = \mathcal{N}(0,\bm{I}_d)
 \end{align}
 \begin{align}
 	p(l_n|\bm{z}_n) = \text{Ber}(\text{sigm}(\bm{w}^{T}_{l}\bm{z}_n))
@@ -341,7 +353,7 @@ The concepts of ``near" and ``far" are very powerful and useful utilities in eve
 
 
 \textbf{Explain more about these properties...} \newline
-The goal of \textit{metric embedding learning} it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{K}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{K}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{K}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \citep{Hermans2017DefenseTripletLoss}.  Let $\mathcal{D}(\bm{x},\bm{ y}): \mathbb{R}^{K} \times \mathbb{R}^{K} \rightarrow \mathbb{R}$ be a metric function measuring dissimilarity in the embedded space.  For succinctness, $\mathcal{D}_{i,j} = \mathcal{D}(f_{\theta}(\bm{x_{i}}),f_{\theta}(\bm{x_{j}}))$
+The goal of \textit{metric embedding learning} it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{d}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{d}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{d}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \citep{Hermans2017DefenseTripletLoss}.  Let $\mathcal{D}(\bm{x},\bm{ y}): \mathbb{R}^{d} \times \mathbb{R}^{d} \rightarrow \mathbb{R}$ be a metric function measuring similarity or dissimilarity in the embedded space.  For succinctness, $\mathcal{D}_{i,j} = \mathcal{D}(f_{\theta}(\bm{x_{i}}),f_{\theta}(\bm{x_{j}}))$
 defines the dissimilarity between samples $\bm{x}_{i}$ and $\bm{x}_{j}$, after being embedded.
 
 \subsubsection{Metric Learning}
@@ -383,54 +395,4 @@ Thorstensen thesis, Raducanu S-LE
 	\subsection{Multiple Instance Metric Learning}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Outlier Detection %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Competency Aware Overview}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Sensor Fusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Sensor Fusion}
-%
-%	Sensor fusion is the process of combining multiple sensors to provide complimentary or reinforcing information about a scene under observation \cite{hackett1990multisensorfusion,zhang2010multisourceremotingsensingfusion}.  Sensor fusion can operate on three levels: data or sample level, feature level, and decision level.  This  means that raw data, extracted features, or classifier prediction outputs can all be leveraged through a fusion process \cite{Ruta2000OverviewClassifierFusionMethods,zhang2010multisourceremotingsensingfusion}. While the process of sensor fusion is, in fact, general, this dissertation focuses primarily on combining sensors of varying types and resolutions with the goal of providing support for classification and detection decisions. In this context, sample-level fusion aims to combine data from multiple sources into single-resolution data which are expected to be more informative than any of the inputs, individually.  Fusion on this level involves applying a transformation on the data directly to project, map or co-register data obtained from multiple sources.  Feature-level fusion combines attributes computed from each sensors' collection, such as shape, texture, frequency, local statistics, or other discriminative characteristics exhibited in the data.  Feature-level fusion transforms the data into a single representation space which can be used instead of the original parameterizations for further processing.  Decision-level fusion takes outputs from multiple classifier or real-valued prediction models and derives a singular, fused output.  Decision-level fusion aims to provide a more accurate and/or descriptive classification or regression result through selection, transformation, or consensus of the models being combined \cite{hackett1990multisensorfusion, zhang2010multisourceremotingsensingfusion,Du2017Thesis,Tulyakov2008ReviewClassifierCombinationMethods, Du2016MIChoquetIntegralFusion,Du2018MultiResolutionSensorFusion}.  Sensor fusion has been used in a wide expanse of applications, including: remote sensing and hyperspectral image registration, classification and visualization, \cite{Zhang2014SemiSupManLearningFusion,Liao2016ManAlignmentHSI,Yang2016ManifoldAlignmentMultitemporalHSI,Hong2018CommonSubspaceLearningHSI}, object detection \cite{Davenport2010JointManifoldsDataFusion}, explosive hazard detection \cite{Gader2004ChoquetIntegralLandmine,Smith2017ChoquetIntegralLandmine,Keller2001PredictiveSensorFusion,Gunatilaka2001FusionNoncoincidentlySampledLandmine,Frigui2010ContextDependentFusionLandmine},  handwriting recognition \cite{Gader1996FusionHandwrittenLetters}, pose estimation \cite{Navaratnam2007JointManifoldSemiSupRegression}, automatic target recognition in mid-wave infrared/ sonar imagery \cite{Shen2018ManifoldSensorFusionImageData}, land-use classification \cite{Hong2019LearnableManifoldAlignment}, super-resolution, medical and fault diagnosis, defense, meteorology, environmental monitoring, and economic forecasting   \cite{zhang2010multisourceremotingsensingfusion,Zitova2003SurveyImageRegistrationMethods}. 
-%	
-%	\textbf{Challenges in sensor fusion}
-%	Features might not have the same dimensionality between sensors. The number/ length of features/ physical qualities vary  between modalities.
-%	Data from different sensors must be put into equivalent forms to allow for fusion.  In order for data from multiple sources to be fused, there must be some method to relate data points from one sensor with corresponding data points from the other sensors.  Before sensor measurements can be combined, we must ensure that the measurements represent the same physical entity. Therefore, we need to check the consistency of sensor measurements.  Since each sensor is sensitive to a different modality, multiple sensors not only can provide multiple views of objects, but they can also impose more constraints to reduce the search	space during matching.
-%
-%
-%	
-%	Additionally, data fusion can provide confidence bounds on sensor's collections \cite{hackett1990multisensorfusion,Mohandes2018ClassifierCombinationTechniquesReview}.  For example, HSI sensors measure the radiance across a broad range of wavelengths at varying ground locations.  The measured radiance is a combination of radiation that is reflected and/or emitted by materials on the ground.  This inherently implies that environmental characteristics such as atmospheric conditions and diurnal cycle affect the amount of radiance that can be captured by the sensor \cite{Zare2008Thesis}.  Therefore, incorporation of meta-data such as time-of-day and weather conditions can provide bounds on the uncertainty contained in a given measurement and reinforce when to trust readings from particular spectral bands (i.e. IR during night).   These examples demonstrate how it could be useful to incorporate and fuse the information provided by multiple sensor modalities to reduce measurement uncertainty or to obtain a more complete understanding of a scene, thus aiding in classification or segmentation decisions.
-%	\newline
-%	
-%	Information fusion approaches make two typical assumptions: (1) If fusing multiple heterogeneous sources (varying types and resolutions), it is assumed that individual data points can be co-registered \cite{Shen2016SpatioTemporalSpectralFusion}. In other words, standard methods require data from $m$ different sensors to produce data with one-to-one correspondence, or that some form of pre-processing can transform all sources to the same resolution and perform matching \cite{hackett1990multisensorfusion,Butenuth2007HeterogeneousGeospatialData}.  Assumption (2) states that precise training labels are available for each data point \cite{Du2017Thesis}. 
-%	\newline 
-%	
-%	Two problems arise from these assumptions.  First, when working with sensors operating at varying spatial, spectral, or temporal resolutions, it is usually non-trivial to convert all data to the same resolution or to map to the same grid and existing co-registration approaches often result in loss of sensor-specific information \cite{Shen2016SpatioTemporalSpectralFusion,Brigot2016CoregistrationForestRemoteSensingImages}.  Referring to the previous scene understanding example, it is intuitive that the addition of external meta-data could supply context which has the ability to aid in decision making or provide confidence bounds on each sensor's measurement capabilities.  This addition, of course, adds a new level of difficulty to the fusion process since high-level information such as time-of-day, weather, environmental-setting (e.g. urban or forest), etc., would likely be collected at different spatial or temporal rates and would probably not align easily.  Typical approaches would address this problem by throwing out data points to match the lowest sampling rate.  However, this mapping is often noisy and results in loss of sensor-specific information.  This loss is often detrimental since classification improvement may only be achieved if the total information uncertainty in a problem is reduced \cite{Ruta2000OverviewClassifierFusionMethods}.  Moreover, it becomes difficult to distinguish between errors which evolve during the registration process and actual physical differences in a scene \cite{Zitova2003SurveyImageRegistrationMethods}.
-%	\newline 
-%	
-%	\subsection{Classic Approaches}
-%	
-%%		\subsubsection{Choquet Integral}
-%%		
-%%		\subsubsection{Hierarchical Mixture of Experts}
-%%		
-%%		\subsubsection{Deep Learning}
-%%		
-%%		\subsubsection{Graph-Based}
-%		
-%	\subsection{Feature-level Fusion}
-%	
-%	\subsection{Manifold Alignment}
-%		Manifold alignment is the process of matching two or more seemingly disparate datasets by mapping them to a joint latent space, while both preserving the qualities of each dataset and highlighting their similarities \cite{Wang2011ManifoldAlignment,Liao2016ManAlignmentHSI,Stanley2019ManAlignmentFeatureCorrespondence}.  
-%	
-%%	\subsection{Information Loss}
-%%	
-%%	\subsection{Geocoding}
-%%	
-%%	\subsection{Similarity Measures}
-%%	
-%%	\subsection{Transformation, Interpolation, Re-sampling}
-%%	
-%%	\subsection{Conflation}
-%	
 
