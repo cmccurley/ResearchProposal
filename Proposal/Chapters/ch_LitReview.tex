@@ -146,16 +146,40 @@ Linear methods such as PCA and MDS are convenient for projecting out-of-sample t
 \end{center}
 
 \subsubsection{Graph-based Methods}
-Nonlinear dimensionality reduction methods typically rely on the use of adjacency graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  An overview of computational graphs as well as prominent methods for graph construction in manifold learning are presented. Additionally, geodesic distance approximation from pairwise distances is reviewed.
+Nonlinear dimensionality reduction methods typically rely on the use of computational graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  Spectral graph theory focuses on constructing, analyzing and manipulating graphs.  It has proved useful for object representation, graph visualization, spectral clustering, dimensionality reduction and numerous other applications in chemistry, physics, signal processing and computer science \citep{Shuman2013SignalProcessingGraphs, Bengoetxea2002ThesisGraphMatching}.   An overview of computational graphs as well as prominent methods for graph construction in manifold learning are presented. Additionally, geodesic distance approximation from pairwise distances is reviewed.
 
 \paragraph{Terminology}
-Spectral graph theory focuses on constructing, analyzing and manipulating graphs.  It has proved useful for graph visualization, spectral clustering, dimensionality reduction and numerous other applications in chemistry, physics, signal processing and computer science \citep{Shuman2013SignalProcessingGraphs}.  Dimensionality reduction methods are interested in analyzing relationships between samples defined on an undirected, weighted graph $\mathcal{G} = \{ \mathcal{V}, \mathcal{E}, \mathbf{W} \}$
+Many dimensionality reduction methods in the literature are interested in analyzing relationships between samples defined on an undirected, weighted graph $G = \{ \mathcal{V}, \mathcal{E}, \bm{W} \}$, which consists of a finite set of \textit{vertices}  $\mathcal{V}$ (also called \textit{nodes} or \textit{points}) with cardinality $\mathcal{V}=N$, a set of \textit{edges} $\mathcal{E} \subset \mathcal{V} \times \mathcal{V} = [\mathcal{V}]^{2}$ (also known as \textit{arcs} or \textit{lines}) and a weighted \textit{adjacency} or \textit{affinity} matrix $\bm{W}$ \citep{Shuman2013SignalProcessingGraphs, Livi2013GraphMatchingProblem, Bengoetxea2002ThesisGraphMatching}.  The the size or \textit{order} of a graph is defined by the number of nodes $|\mathcal{V}|$ and edges $|\mathcal{E}|$.  If two vertices in $G$, say $u,v \in \mathcal{V}$, are connected by an edge $e \in \mathcal{E}$, this is denoted by $e=(u,v)$ and the two vertices are said to be \textit{adjacent} or \textit{neighbors}.  When edges do not have a direction, they are coined as undirected.  A graph solely containing this type of connection is termed as an \textit{undirected graph}.  When all edges have directions, meaning $(u,v)$ and $(v,u)$ are distinguishable, the graph is said to be \textit{directed}.  In the literature, the term \textit{arc} is typically used to denote connections between nodes in directed graphs, while \textit{edge} is used when they are undirected.  The graph-based methods included in this literature review focus on analyzing affinities between data samples in undirected graphs.  Moreover, a \textit{path} between any two nodes in $u,u' \in \mathcal{V}$ is a non-empty sequence of $k$ different vertices $<v_{0}, v_{1}, \dots, v_{k}>$ where $u=v_{0},u'=v_{k}$ and $(v_{i-1},v_{i})\in \mathcal{E}$, $i=1,2,\dots,k$.  Additionally, a graph is said to be \textit{acyclic} if there are no cycles between its edges, regardless of whether it is directed or undirected.  When using graphs for dimensionality reduction, vertices usually represent features of individual samples and edges express relationships between them. Weights on edges are captured in the graph adjacency matrix $\bm{W}$.  When weights are not naturally defined by an application, a common way to the define the weight of an edge connecting vertices $u \sim u'$ is by a symmetric affinity function $W_{u,u'} = K(u;u')$; typically a \textit{radial basis function} or \textit{heat kernel}, defined as:
+\begin{align}
+\bm{W}_{u,u'}= w_{u,u'} = \exp \left ( - \frac{|| u - u' ||^{2}}{\beta}  \right )
+\end{align}
+\noindent
+where $\beta$ is the \textit{bandwidth} of the kernel.  Vertices will have a nonzero weight only if they fall within the nonzero mapping domain of the kernel. 
+
+
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{example-image-a}
+		\caption[Examples of graphs.]{Examples of K-nearest neighbor and $\epsilon$-ball graphs}
+		\label{fig:examples_of_graphs}
+	\end{figure*}
+\end{center}
+
 
 \paragraph{$K$ - Nearest Neighbor Graph}
 
 \paragraph{$\epsilon$ - Neighborhood Graph}
 
 \paragraph{Geodesic Distance Approximation}
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{example-image-a}
+		\caption[Demonstration of geodesic distance]{Demonstration of geodesic distance}
+		\label{fig:geodesic_distance}
+	\end{figure*}
+\end{center}
 
 \subsubsection{General Graph Embedding Framework}
 

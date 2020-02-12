@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{50}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -34,6 +34,13 @@ Y.~Bengio, A.~C. Courville, and P.~Vincent.
   perspectives.
 \newblock \emph{CoRR}, abs/1206.5538, 2012.
 \newblock URL \url{http://arxiv.org/abs/1206.5538}.
+
+\bibitem[Bengoetxea(2002)]{Bengoetxea2002ThesisGraphMatching}
+E.~Bengoetxea.
+\newblock \emph{Inexact Graph Matching Using Estimation of Distribution
+  Algorithms}.
+\newblock PhD thesis, Ecole Nationale Sup\'erieure des T\'el\'ecommunications,
+  Paris, France, Dec. 2002.
 
 \bibitem[Bishop et~al.(1998)Bishop, Svensén, and Williams]{Bishop1998GTM}
 C.~Bishop, M.~Svensén, and C.~K.~I. Williams.
@@ -161,6 +168,14 @@ H.~{Li}, D.~{Liu}, and D.~{Wang}.
   on manifold regularization.
 \newblock In \emph{2015 International Joint Conference on Neural Networks
   (IJCNN)}, pages 1--6, July 2015.
+
+\bibitem[Livi and Rizzi(2013)]{Livi2013GraphMatchingProblem}
+L.~Livi and A.~Rizzi.
+\newblock The graph matching problem.
+\newblock \emph{Pattern Anal. Appl.}, 16\penalty0 (3):\penalty0 253--283, Aug
+  2013.
+\newblock ISSN 1433-7541.
+\newblock \doi{10.1007/s10044-012-0284-8}.
 
 \bibitem[{Meng} and {Zhan}(2018)]{Meng2018ManRegZeroShot}
 M.~{Meng} and X.~{Zhan}.
