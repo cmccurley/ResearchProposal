@@ -64,8 +64,8 @@
 \contentsline {subsubsection}{\numberline {2.3.1.1}Pairwise Loss}{42}{subsubsection.2.3.1.1}
 \contentsline {subsubsection}{\numberline {2.3.1.2}Contrastive Loss}{42}{subsubsection.2.3.1.2}
 \contentsline {subsubsection}{\numberline {2.3.1.3}Triplet Loss}{42}{subsubsection.2.3.1.3}
-\contentsline {subsubsection}{\numberline {2.3.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{42}{subsubsection.2.3.1.4}
-\contentsline {subsubsection}{\numberline {2.3.1.5}FaceNet}{42}{subsubsection.2.3.1.5}
+\contentsline {subsubsection}{\numberline {2.3.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{43}{subsubsection.2.3.1.4}
+\contentsline {subsubsection}{\numberline {2.3.1.5}FaceNet}{43}{subsubsection.2.3.1.5}
 \contentsline {subsubsection}{\numberline {2.3.1.6}Siamese Neural Networks}{43}{subsubsection.2.3.1.6}
 \contentsline {subsection}{\numberline {2.3.2}Manifold Regularization}{43}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Multiple Instance Metric Learning}{43}{subsection.2.3.3}
