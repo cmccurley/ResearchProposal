@@ -30,17 +30,17 @@ I was expecting a `,' or a `}'---line 405 of file BibFiles/references.bib
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-"{" immediately follows a field name---line 1293 of file BibFiles/references.bib
+"{" immediately follows a field name---line 1349 of file BibFiles/references.bib
  :  booktitl\part
  :               {title}e={2011 IEEE 11th International Conference on Data Mining},
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2239 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 2295 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 2711 of file BibFiles/references.bib
+--line 2767 of file BibFiles/references.bib
 Warning--empty journal in Bishop1998GTM
 Warning--empty year in MUUFLScoringCode
 Warning--empty publisher in Kegl2008PrincipalManifoldsTextbook

@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{54}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -87,6 +87,14 @@ B.~Chaudhuri and S.~Parui.
 \newblock Target detection: Remote sensing techniques for defence applications.
 \newblock \emph{Defence Science Journal}, 45:\penalty0 285--291, 04 1995.
 \newblock \doi{10.14429/dsj.45.4135}.
+
+\bibitem[{Chun-Guang Li} and {Jun Guo}(2006)]{Li2006SupervisedIsomap}
+{Chun-Guang Li} and {Jun Guo}.
+\newblock Supervised isomap with explicit mapping.
+\newblock In \emph{First International Conference on Innovative Computing,
+  Information and Control - Volume I (ICICIC'06)}, volume~3, pages 345--348,
+  Aug 2006.
+\newblock \doi{10.1109/ICICIC.2006.530}.
 
 \bibitem[Cook(2015)]{Cook2015Thesis}
 M.~Cook.
@@ -242,6 +250,14 @@ B.~{Ren}, B.~{Hou}, J.~{Zhao}, and L.~{Jiao}.
 \newblock ISSN 1939-1404.
 \newblock \doi{10.1109/JSTARS.2016.2573380}.
 
+\bibitem[Ribeiro et~al.(2008)Ribeiro, Vieira, and Carvalho~das
+  Neves]{Ribeiro2008SupervisedIsomap}
+Bernardete Ribeiro, Armando Vieira, and Jo{\~a}o Carvalho~das Neves.
+\newblock Supervised isomap with dissimilarity measures in embedding learning.
+\newblock In Jos{\'e} Ruiz-Shulcloper and Walter~G. Kropatsch, editors,
+  \emph{Progress in Pattern Recognition, Image Analysis and Applications},
+  pages 389--396, Berlin, Heidelberg, 2008. Springer Berlin Heidelberg.
+
 \bibitem[Rish et~al.(2008)Rish, Grabarnik, Cecchi, Pereira, and
   Gordon]{Rish2008SupDimRedGLM}
 I.~Rish, G.~Grabarnik, G.~A. Cecchi, F.~Pereira, and G.~J. Gordon.
@@ -327,6 +343,19 @@ L.~van~der Maaten, E.~Postma, and H.~Herik.
 \newblock Dimensionality reduction: A comparative review.
 \newblock \emph{Journal of Machine Learning Research - JMLR}, 10, 01 2007.
 
+\bibitem[Vlachos et~al.(2002)Vlachos, Domeniconi, Gunopulos, Kollios, and
+  Koudas]{Vlachos2002NonlinearDRClassification}
+Michail Vlachos, Carlotta Domeniconi, Dimitrios Gunopulos, George Kollios, and
+  Nick Koudas.
+\newblock Non-linear dimensionality reduction techniques for classification and
+  visualization.
+\newblock In \emph{Proceedings of the Eighth ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining}, KDD ’02, page
+  645–651, New York, NY, USA, 2002. Association for Computing Machinery.
+\newblock ISBN 158113567X.
+\newblock \doi{10.1145/775047.775143}.
+\newblock URL \url{https://doi.org/10.1145/775047.775143}.
+
 \bibitem[Vural and Guillemot(2018)]{Vural2018StudySupervisedManifoldLearning}
 E.~Vural and C.~Guillemot.
 \newblock A study of the classification of low-dimensional data with supervised
@@ -364,6 +393,17 @@ Alina Zare, Changzhe Jiao, and Taylor Glenn.
 \newblock \emph{IEEE Trans. Pattern Anal. Mach. Inteli.}, 40\penalty0
   (10):\penalty0 2342--2354, Oct. 2018.
 \newblock \doi{10.1109/TPAMI.2017.2756632}.
+
+\bibitem[Zhang et~al.(2018)Zhang, Zhang, Qin, Zhang, Li, and
+  Li]{Zhang2018IsomapMultiManifold}
+Yan Zhang, Zhao Zhang, Jie Qin, Li~Zhang, Bing Li, and Fanzhang Li.
+\newblock Semi-supervised local multi-manifold isomap by linear embedding for
+  feature extraction.
+\newblock \emph{Pattern Recognition}, 76:\penalty0 662 -- 678, 2018.
+\newblock ISSN 0031-3203.
+\newblock \doi{https://doi.org/10.1016/j.patcog.2017.09.043}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0031320317303977}.
 
 \bibitem[Zhu et~al.(2018)Zhu, liao, and Ng]{Zhu2018MIDRSparsity}
 Hong Zhu, Li-Zhi liao, and Michael~K. Ng.
