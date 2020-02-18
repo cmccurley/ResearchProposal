@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  18 FEB 2020 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  18 FEB 2020 18:58
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -723,213 +723,213 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--86
 cord-ing to the geodesic path around
  []
 
-[15] [16 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introductio
-n/swiss_roll_3d_view_2.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal
-/Images/introduction/swiss_roll_2d.png>]
+
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_sep".png, id=532, 462.528pt x 344.0052pt>
+_surface_sep".png, id=506, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_sep".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_sep".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_sep".png used on input line 95.
+ages/""introduction/quad_surface_sep".png used on input line 94.
 (pdftex.def)             Requested size: 213.77469pt x 158.99377pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep".png, id=533, 462.528pt x 344.0052pt>
+_surface_non_sep".png, id=507, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_non_sep".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_non_sep".png used on input line 102.
+ages/""introduction/quad_surface_non_sep".png used on input line 101.
 (pdftex.def)             Requested size: 223.493pt x 166.2212pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
 []\OT1/cmss/m/n/10.95 (b) |Non-separable 3-dimensional quadratic sur-
  []
 
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 93--106
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 92--105
  [][]  [] 
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_lin_sep_le_1d".png, id=534, 194.18pt x 143.81pt>
+_surface_lin_sep_le_1d".png, id=508, 194.18pt x 143.81pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_lin_sep_le_1d".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_lin_sep_le_1d".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_lin_sep_le_1d".png used on input line 110.
+ages/""introduction/quad_surface_lin_sep_le_1d".png used on input line 109.
 (pdftex.def)             Requested size: 195.18097pt x 144.54pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--111
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
 []\OT1/cmss/m/n/10.95 (c) |1-dimensional em-bed-ding of sep-a-ra-ble
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_le_1d".png, id=535, 194.18pt x 144.54pt>
+_surface_non_sep_le_1d".png, id=509, 194.18pt x 144.54pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_le_1d".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_non_sep_le_1d".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_non_sep_le_1d".png used on input line 117.
+ages/""introduction/quad_surface_non_sep_le_1d".png used on input line 116.
 (pdftex.def)             Requested size: 194.18839pt x 144.54pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 []\OT1/cmss/m/n/10.95 (d) |1-dimensional em-bed-ding of non-separable
  []
 
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 108--121
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 107--120
  [][]  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 []\OT1/cmss/m/n/12 Figure 1-5: |Un-su-per-vised em-bed-ding of quadratic sur-fa
 ces us-ing Lapla-cian Eigen-maps with a
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_sep_bags".png, id=536, 462.528pt x 344.0052pt>
+_surface_sep_bags".png, id=514, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_sep_bags".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_sep_bags".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_sep_bags".png used on input line 129.
+ages/""introduction/quad_surface_sep_bags".png used on input line 128.
 (pdftex.def)             Requested size: 213.77469pt x 158.99377pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []\OT1/cmss/m/n/10.95 (a) |Sep-a-ra-ble 3-dimensional quadratic sur-faces and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 \OT1/cmss/m/n/10.95 ex-am-ples po-ten-tial bag splits. Blue cir-cles rep-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 \OT1/cmss/m/n/10.95 sent neg-a-tive bags while red cir-cle de-note pos-i-tive
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_bags".png, id=537, 462.528pt x 344.0052pt>
+_surface_non_sep_bags".png, id=515, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_bags".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_non_sep_bags".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_non_sep_bags".png used on input line 136.
+ages/""introduction/quad_surface_non_sep_bags".png used on input line 135.
 (pdftex.def)             Requested size: 223.493pt x 166.2212pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
 []\OT1/cmss/m/n/10.95 (b) |Non-separable 3-dimensional quadratic sur-faces
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
 \OT1/cmss/m/n/10.95 and ex-am-ples po-ten-tial bag splits. Blue cir-cles
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
 \OT1/cmss/m/n/10.95 rep-re-sent neg-a-tive bags while red cir-cle de-note
  []
 
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 127--140
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 126--139
  [][]  [] 
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_lin_sep_sle_1d".png, id=538, 193.45pt x 143.81pt>
+_surface_lin_sep_sle_1d".png, id=516, 193.45pt x 143.81pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_lin_sep_sle_1d".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_lin_sep_sle_1d".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_lin_sep_sle_1d".png used on input line 144.
+ages/""introduction/quad_surface_lin_sep_sle_1d".png used on input line 143.
 (pdftex.def)             Requested size: 194.4472pt x 144.54pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--145
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 []\OT1/cmss/m/n/10.95 (c) |1-dimensional em-bed-ding of sep-a-ra-ble
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--145
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \OT1/cmss/m/n/10.95 quadratic sur-faces us-ing Su-per-vised Lapla-cian
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_sle_1d".png, id=539, 193.45pt x 144.54pt>
+_surface_non_sep_sle_1d".png, id=517, 193.45pt x 144.54pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_sle_1d".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_non_sep_sle_1d".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_non_sep_sle_1d".png used on input line 151.
+ages/""introduction/quad_surface_non_sep_sle_1d".png used on input line 150.
 (pdftex.def)             Requested size: 193.45836pt x 144.54pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
 []\OT1/cmss/m/n/10.95 (d) |1-dimensional em-bed-ding of non-separable
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
 \OT1/cmss/m/n/10.95 quadratic sur-faces us-ing Su-per-vised Lapla-cian
  []
 
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 142--155
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 141--154
  [][]  [] 
  []
 
-[17]
+[15] [16 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introductio
+n/swiss_roll_3d_view_2.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal
+/Images/introduction/swiss_roll_2d.png>] [17 <C:/Users/Conma/Documents/Research
+Proposal/Proposal/Images/introduction/quad_surface_sep.png> <C:/Users/Conma/Doc
+uments/ResearchProposal/Proposal/Images/introduction/quad_surface_non_sep.png> 
+<C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/quad_su
+rface_lin_sep_le_1d.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
+ages/introduction/quad_surface_non_sep_le_1d.png>] [18 <C:/Users/Conma/Document
+s/ResearchProposal/Proposal/Images/introduction/quad_surface_sep_bags.png> <C:/
+Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/quad_surfac
+e_non_sep_bags.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/
+introduction/quad_surface_lin_sep_sle_1d.png> <C:/Users/Conma/Documents/Researc
+hProposal/Proposal/Images/introduction/quad_surface_non_sep_sle_1d.png>]
+Underfull \hbox (badness 10000) detected at line 163
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 164
 [][][]
  []
 
-[18 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/qua
-d_surface_sep.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/i
-ntroduction/quad_surface_non_sep.png> <C:/Users/Conma/Documents/ResearchProposa
-l/Proposal/Images/introduction/quad_surface_lin_sep_le_1d.png> <C:/Users/Conma/
-Documents/ResearchProposal/Proposal/Images/introduction/quad_surface_non_sep_le
-_1d.png>]
+
 Underfull \hbox (badness 10000) detected at line 165
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 166
-[][][]
- []
-
-[19 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/qua
-d_surface_sep_bags.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Ima
-ges/introduction/quad_surface_non_sep_bags.png> <C:/Users/Conma/Documents/Resea
-rchProposal/Proposal/Images/introduction/quad_surface_lin_sep_sle_1d.png> <C:/U
-sers/Conma/Documents/ResearchProposal/Proposal/Images/introduction/quad_surface
-_non_sep_sle_1d.png>]) [20]
+[19]) [20]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -1149,7 +1149,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
 Here is how much of TeX's memory you used:
  8816 strings out of 493323
  138795 string characters out of 3139067
- 227380 words of memory out of 3000000
+ 231380 words of memory out of 3000000
  11869 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1172,7 +1172,7 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb>
-Output written on MainFile.pdf (56 pages, 1712822 bytes).
+Output written on MainFile.pdf (56 pages, 1712787 bytes).
 PDF statistics:
  1121 PDF objects out of 1200 (max. 8388607)
  243 named destinations out of 1000 (max. 500000)

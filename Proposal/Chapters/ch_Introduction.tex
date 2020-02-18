@@ -86,8 +86,7 @@ Methods for representation learning have recently gained in popularity because t
 	\caption[Swiss Roll manifold unfolding.]{(a) This dataset is known as the Swiss Roll and it depicts a 2-dimensional manifold embedded in 3 dimensions.  (b) The Swiss Roll unfolded according to the geodesic path around the manifold.}
 	\label{fig:swiss_roll}%
 \end{figure*}  
-It would, therefore, be beneficial to first transform the instance representations into more discriminable forms.  Most existing approaches in the literature extend LDA to distinguish between positive and negative bags \citep{Chai2014MIDA,Zhu2018MIDRSparsity}.  These methods typically rely on costly optimization procedures to maximize an objective for orthogonal and sparse projection vectors.  The work in \citep{Xu2011MI_Metric_Learning} investigated metric learning on sets of data (where each bag was a set) to learn an appropriate similarity metric to compare bags.  They do not go as far as to discriminate positive instances within the positive bags, nor do they propose positive target concepts.  \textit{In fact, virtually all MIL DR methods in the literature are applied, solely, to predict bag-level labels.} While bag-level label prediction is useful in many remote sensing applications, such as region of interest (ROI) proposal for anomaly detection, they limit the the ability of learners to classify on the pixel or sample level.  To this end, methods for instance-level discriminative dimensionality reduction should be developed.  This point is demonstrated in by the embeddings of 3-dimensional quadratic surfaces as shown in Figures \ref{fig:quad_surfaces_no_labels} and \ref{fig:quad_surfaces_with_labels}.  Figures \ref{fig:quad_surface_sep} and \ref{fig:quad_surface_non_sep} demonstrate a set of separable and non-separable quadratic surfaces, respectively.  The use of a traditional, unsupervised dimensionality reduction method to project the data into a 1-dimensional space managed to retain  topological ordering of the samples, but failed to promote class discriminability, as shown in Figures \ref{fig:quad_surface_sep_le_1d} and \ref{fig:quad_surface_non_sep_le_1d}.  However, using a supervised version of the same algorithm demonstrated the enforcement of class separability in the latent embedding space for both the separable and non-separable quadratic surfaces, as shown by Figures \ref{fig:quad_surface_lin_sep_sle_1d} and \ref{fig:quad_surface_non_sep_sle_1d}.  This embedding used sample-level labels.  However, the proposed work will relax the precision of the labels to bags.  This notion can be conceptualized by Figures \ref{fig:quad_surface_sep_bags} and \ref{fig:quad_surface_non_sep_bags}, where sets of data samples are used to form bags.  While Xu et al. proposed an importance term to weight samples believed to be true target exemplars, as those instances are more important in determining the bag-level label \citep{Xu2011MI_Metric_Learning}, to the author's knowledge, no work has been done to investigate instance-level discrimination through manifold learning/ dimensionality reduction. 
-
+It would, therefore, be beneficial to first transform the instance representations into more discriminable forms.  Most existing approaches in the literature extend LDA to distinguish between positive and negative bags \citep{Chai2014MIDA,Zhu2018MIDRSparsity}.  These methods typically rely on costly optimization procedures to maximize an objective for orthogonal and sparse projection vectors.  The work in \citep{Xu2011MI_Metric_Learning} investigated metric learning on sets of data (where each bag was a set) to learn an appropriate similarity metric to compare bags.  They do not go as far as to discriminate positive instances within the positive bags, nor do they propose positive target concepts. 
 \begin{figure*}[t!]
 	\centering
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -103,7 +102,7 @@ It would, therefore, be beneficial to first transform the instance representatio
 		\caption{Non-separable 3-dimensional quadratic surfaces.}
 		\label{fig:quad_surface_non_sep}
 	\end{subfigure}
-
+	
 	
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
@@ -118,44 +117,44 @@ It would, therefore, be beneficial to first transform the instance representatio
 		\caption{1-dimensional embedding of non-separable quadratic surfaces.}
 		\label{fig:quad_surface_non_sep_le_1d}
 	\end{subfigure}
-\caption[Unsupervised embedding of quadratic surfaces]{Unsupervised embedding of quadratic surfaces using Laplacian Eigenmaps with a $K$-nearest neighbors graph.}
-\label{fig:quad_surfaces_no_labels}%
+	\caption[Unsupervised embedding of quadratic surfaces]{Unsupervised embedding of quadratic surfaces using Laplacian Eigenmaps with a $K$-nearest neighbors graph.}
+	\label{fig:quad_surfaces_no_labels}%
 \end{figure*} 
-
-\begin{figure*}[t!]
-	\centering
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[height=2.2in]{"introduction/quad_surface_sep_bags"}
-		\caption{Separable 3-dimensional quadratic surfaces and examples potential bag splits.  Blue circles represent negative bags while red circle denote positive bags.}
-		\label{fig:quad_surface_sep_bags}
-	\end{subfigure}%
-	~ 
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[height=2.3in]{"introduction/quad_surface_non_sep_bags"}
-		\caption{Non-separable 3-dimensional quadratic surfaces and examples potential bag splits. Blue circles represent negative bags while red circle denote positive bags.}
-		\label{fig:quad_surface_non_sep_bags}
-	\end{subfigure}
-	
-	
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[height=2in]{"introduction/quad_surface_lin_sep_sle_1d"}
-		\caption{1-dimensional embedding of separable quadratic surfaces using Supervised Laplacian Eigenmaps.}
-		\label{fig:quad_surface_lin_sep_sle_1d}
-	\end{subfigure}%
-	~ 
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[height=2in]{"introduction/quad_surface_non_sep_sle_1d"}
-		\caption{1-dimensional embedding of non-separable quadratic surfaces using Supervised Laplacian Eigenmaps.}
-		\label{fig:quad_surface_non_sep_sle_1d}
-	\end{subfigure}
-\caption[Supervised embedding of quadratic surfaces]{Embedding of quadratic surfaces using Supervised Laplacian Eigenmaps.}
-\label{fig:quad_surfaces_with_labels}%
-\end{figure*} 
-
+\textit{In fact, virtually all MIL DR methods in the literature are applied, solely, to predict bag-level labels.} While bag-level label prediction is useful in many remote sensing applications, such as region of interest (ROI) proposal for anomaly detection, they limit the the ability of learners to classify on the pixel or sample level.  To this end, methods for instance-level discriminative dimensionality reduction should be developed.  This point is demonstrated in by the embeddings of 3-dimensional quadratic surfaces as shown in Figures \ref{fig:quad_surfaces_no_labels} and \ref{fig:quad_surfaces_with_labels}.  Figures \ref{fig:quad_surface_sep} and \ref{fig:quad_surface_non_sep} demonstrate a set of separable and non-separable quadratic surfaces, respectively. 
+ \begin{figure*}[t!]
+ 	\centering
+ 	\begin{subfigure}[t]{0.5\textwidth}
+ 		\centering
+ 		\includegraphics[height=2.2in]{"introduction/quad_surface_sep_bags"}
+ 		\caption{Separable 3-dimensional quadratic surfaces and examples potential bag splits.  Blue circles represent negative bags while red circle denote positive bags.}
+ 		\label{fig:quad_surface_sep_bags}
+ 	\end{subfigure}%
+ 	~ 
+ 	\begin{subfigure}[t]{0.5\textwidth}
+ 		\centering
+ 		\includegraphics[height=2.3in]{"introduction/quad_surface_non_sep_bags"}
+ 		\caption{Non-separable 3-dimensional quadratic surfaces and examples potential bag splits. Blue circles represent negative bags while red circle denote positive bags.}
+ 		\label{fig:quad_surface_non_sep_bags}
+ 	\end{subfigure}
+ 	
+ 	
+ 	\begin{subfigure}[t]{0.5\textwidth}
+ 		\centering
+ 		\includegraphics[height=2in]{"introduction/quad_surface_lin_sep_sle_1d"}
+ 		\caption{1-dimensional embedding of separable quadratic surfaces using Supervised Laplacian Eigenmaps.}
+ 		\label{fig:quad_surface_lin_sep_sle_1d}
+ 	\end{subfigure}%
+ 	~ 
+ 	\begin{subfigure}[t]{0.5\textwidth}
+ 		\centering
+ 		\includegraphics[height=2in]{"introduction/quad_surface_non_sep_sle_1d"}
+ 		\caption{1-dimensional embedding of non-separable quadratic surfaces using Supervised Laplacian Eigenmaps.}
+ 		\label{fig:quad_surface_non_sep_sle_1d}
+ 	\end{subfigure}
+ 	\caption[Supervised embedding of quadratic surfaces]{Embedding of quadratic surfaces using Supervised Laplacian Eigenmaps.}
+ 	\label{fig:quad_surfaces_with_labels}%
+ \end{figure*} 
+The use of a traditional, unsupervised dimensionality reduction method to project the data into a 1-dimensional space managed to retain  topological ordering of the samples, but failed to promote class discriminability, as shown in Figures \ref{fig:quad_surface_sep_le_1d} and \ref{fig:quad_surface_non_sep_le_1d}.  However, using a supervised version of the same algorithm demonstrated the enforcement of class separability in the latent embedding space for both the separable and non-separable quadratic surfaces, as shown by Figures \ref{fig:quad_surface_lin_sep_sle_1d} and \ref{fig:quad_surface_non_sep_sle_1d}.  This embedding used sample-level labels.  However, the proposed work will relax the precision of the labels to bags as to comply with the labeling needs of many remote sensing problems.  This notion can be conceptualized by Figures \ref{fig:quad_surface_sep_bags} and \ref{fig:quad_surface_non_sep_bags}, where sets of data samples are used to form bags.  While Xu et al. proposed an importance term to weight samples believed to be true target exemplars, as those instances are more important in determining the bag-level label \citep{Xu2011MI_Metric_Learning}, to the author's knowledge, no work has been done to investigate instance-level discrimination through manifold learning/ dimensionality reduction. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% \subsection{Proposition of Work} %%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Proposition of Work}
