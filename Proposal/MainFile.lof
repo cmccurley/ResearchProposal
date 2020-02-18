@@ -2,11 +2,11 @@
 \contentsline {figure}{\numberline {{1-2}}{\ignorespaces Forms of weak labels.}}{12}{figure.caption.8}
 \contentsline {figure}{\numberline {{1-3}}{\ignorespaces Examples of image-level labels.}}{12}{figure.caption.9}
 \contentsline {figure}{\numberline {{1-4}}{\ignorespaces Swiss Roll manifold unfolding.}}{16}{figure.caption.10}
-\contentsline {figure}{\numberline {{1-5}}{\ignorespaces Quadratic surfaces no labels}}{17}{figure.caption.11}
-\contentsline {figure}{\numberline {{1-6}}{\ignorespaces Quadratic surfaces with bag-level labels}}{18}{figure.caption.12}
-\contentsline {figure}{\numberline {{2-1}}{\ignorespaces Multiple instance learning bags.}}{21}{figure.caption.13}
-\contentsline {figure}{\numberline {{2-2}}{\ignorespaces Example pose data manifold.}}{23}{figure.caption.14}
-\contentsline {figure}{\numberline {{2-3}}{\ignorespaces PCA Example.}}{27}{figure.caption.16}
-\contentsline {figure}{\numberline {{2-4}}{\ignorespaces Example of a nonlinear manifold.}}{28}{figure.caption.23}
-\contentsline {figure}{\numberline {{2-5}}{\ignorespaces Examples of graphs.}}{30}{figure.caption.25}
-\contentsline {figure}{\numberline {{2-6}}{\ignorespaces Demonstration of geodesic distance}}{32}{figure.caption.29}
+\contentsline {figure}{\numberline {{1-5}}{\ignorespaces Unsupervised embedding of quadratic surfaces}}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {{1-6}}{\ignorespaces Supervised embedding of quadratic surfaces}}{19}{figure.caption.12}
+\contentsline {figure}{\numberline {{2-1}}{\ignorespaces Multiple instance learning bags.}}{22}{figure.caption.13}
+\contentsline {figure}{\numberline {{2-2}}{\ignorespaces Example pose data manifold.}}{24}{figure.caption.14}
+\contentsline {figure}{\numberline {{2-3}}{\ignorespaces PCA Example.}}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {{2-4}}{\ignorespaces Example of a nonlinear manifold.}}{29}{figure.caption.23}
+\contentsline {figure}{\numberline {{2-5}}{\ignorespaces Examples of graphs.}}{31}{figure.caption.25}
+\contentsline {figure}{\numberline {{2-6}}{\ignorespaces Demonstration of geodesic distance}}{33}{figure.caption.29}
