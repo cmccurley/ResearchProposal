@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  18 FEB 2020 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  19 FEB 2020 16:04
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -585,7 +585,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [10]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_bbox".jpg, id=403, 255.95625pt x 202.356pt>
+_bbox".jpg, id=409, 255.95625pt x 202.356pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_bbox".jpg Graphic file (type jpg)
 
@@ -608,7 +608,7 @@ und-ing boxes (blue). Red dots
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_labels".jpg, id=404, 485.4135pt x 396.88275pt>
+_labels".jpg, id=410, 485.4135pt x 396.88275pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_labels".jpg Graphic file (type jpg)
 
@@ -634,7 +634,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/targ
-et_img".jpg, id=405, 111.41624pt x 69.861pt>
+et_img".jpg, id=411, 111.41624pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /target_img".jpg Graphic file (type jpg)
 
@@ -645,7 +645,7 @@ ages/""introduction/target_img".jpg used on input line 37.
 (pdftex.def)             Requested size: 138.31111pt x 86.72377pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/bg_i
-mg".jpg, id=406, 110.21175pt x 69.861pt>
+mg".jpg, id=412, 110.21175pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /bg_img".jpg Graphic file (type jpg)
 
@@ -681,7 +681,7 @@ roduction/weak_labels.jpg> <C:/Users/Conma/Documents/ResearchProposal/Proposal/
 Images/introduction/target_img.jpg> <C:/Users/Conma/Documents/ResearchProposal/
 Proposal/Images/introduction/bg_img.jpg>] [13] [14]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/swis
-s_roll_3d_view_2".png, id=498, 462.528pt x 344.0052pt>
+s_roll_3d_view_2".png, id=503, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /swiss_roll_3d_view_2".png Graphic file (type png)
 
@@ -697,7 +697,7 @@ Overfull \hbox (8.42258pt too wide) in paragraph at lines 75--76
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/swis
-s_roll_2d".png, id=500, 462.528pt x 344.0052pt>
+s_roll_2d".png, id=505, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /swiss_roll_2d".png Graphic file (type png)
 
@@ -725,7 +725,7 @@ cord-ing to the geodesic path around
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_sep".png, id=506, 462.528pt x 344.0052pt>
+_surface_sep".png, id=511, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_sep".png Graphic file (type png)
 
@@ -736,7 +736,7 @@ ages/""introduction/quad_surface_sep".png used on input line 94.
 (pdftex.def)             Requested size: 213.77469pt x 158.99377pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep".png, id=507, 462.528pt x 344.0052pt>
+_surface_non_sep".png, id=512, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep".png Graphic file (type png)
 
@@ -757,7 +757,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 92--105
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_lin_sep_le_1d".png, id=508, 194.18pt x 143.81pt>
+_surface_lin_sep_le_1d".png, id=513, 194.18pt x 143.81pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_lin_sep_le_1d".png Graphic file (type png)
 
@@ -773,7 +773,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--110
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_le_1d".png, id=509, 194.18pt x 144.54pt>
+_surface_non_sep_le_1d".png, id=514, 194.18pt x 144.54pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_le_1d".png Graphic file (type png)
 
@@ -800,7 +800,7 @@ ces us-ing Lapla-cian Eigen-maps with a
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_sep_bags".png, id=514, 462.528pt x 344.0052pt>
+_surface_sep_bags".png, id=519, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_sep_bags".png Graphic file (type png)
 
@@ -826,7 +826,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--129
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_bags".png, id=515, 462.528pt x 344.0052pt>
+_surface_non_sep_bags".png, id=520, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_bags".png Graphic file (type png)
 
@@ -857,7 +857,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 126--139
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_lin_sep_sle_1d".png, id=516, 193.45pt x 143.81pt>
+_surface_lin_sep_sle_1d".png, id=521, 193.45pt x 143.81pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_lin_sep_sle_1d".png Graphic file (type png)
 
@@ -878,7 +878,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--144
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_sle_1d".png, id=517, 193.45pt x 144.54pt>
+_surface_non_sep_sle_1d".png, id=522, 193.45pt x 144.54pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_sle_1d".png Graphic file (type png)
 
@@ -944,7 +944,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-] <example-image-a.png, id=598, 401.5pt x 301.125pt>
+] <example-image-a.png, id=605, 401.5pt x 301.125pt>
 File: example-image-a.png Graphic file (type png)
 
 <use example-image-a.png>
@@ -1147,13 +1147,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 8816 strings out of 493323
- 138795 string characters out of 3139067
- 231380 words of memory out of 3000000
- 11869 multiletter control sequences out of 15000+200000
+ 8826 strings out of 493323
+ 139114 string characters out of 3139067
+ 231545 words of memory out of 3000000
+ 11877 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,17n,42p,2959b,567s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,17n,42p,2975b,569s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files
@@ -1172,9 +1172,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb>
-Output written on MainFile.pdf (56 pages, 1712787 bytes).
+Output written on MainFile.pdf (56 pages, 1713948 bytes).
 PDF statistics:
- 1121 PDF objects out of 1200 (max. 8388607)
- 243 named destinations out of 1000 (max. 500000)
+ 1126 PDF objects out of 1200 (max. 8388607)
+ 245 named destinations out of 1000 (max. 500000)
  540 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{54}
+\begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -87,6 +87,15 @@ B.~Chaudhuri and S.~Parui.
 \newblock Target detection: Remote sensing techniques for defence applications.
 \newblock \emph{Defence Science Journal}, 45:\penalty0 285--291, 04 1995.
 \newblock \doi{10.14429/dsj.45.4135}.
+
+\bibitem[Cheplygina et~al.(2019)Cheplygina, Bruijne, and
+  Pluim]{Cheplygina2019MILSurvey}
+V.~Cheplygina, M.~Bruijne, and J.~P.~W. Pluim.
+\newblock Not-so-supervised: A survey of semi-supervised, multi-instance, and
+  transfer learning in medical image analysis.
+\newblock \emph{Medical Image Analysis}, 54:\penalty0 280 -- 296, 2019.
+\newblock ISSN 1361-8415.
+\newblock \doi{https://doi.org/10.1016/j.media.2019.03.009}.
 
 \bibitem[{Chun-Guang Li} and {Jun Guo}(2006)]{Li2006SupervisedIsomap}
 {Chun-Guang Li} and {Jun Guo}.
@@ -265,6 +274,14 @@ I.~Rish, G.~Grabarnik, G.~A. Cecchi, F.~Pereira, and G.~J. Gordon.
   linear models.
 \newblock pages 832--839, 01 2008.
 \newblock \doi{10.1145/1390156.1390261}.
+
+\bibitem[Ruiz-Mu{\~n}oz et~al.(2015)Ruiz-Mu{\~n}oz, Orozco-Alzate, and
+  Castellanos-Dom{\'i}nguez]{RuizMunoz2015MILBirdsongClassification}
+Jos{\'e}~Francisco Ruiz-Mu{\~n}oz, Mauricio Orozco-Alzate, and Germ{\'a}n
+  Castellanos-Dom{\'i}nguez.
+\newblock Multiple instance learning-based birdsong classification using
+  unsupervised recording segmentation.
+\newblock In \emph{IJCAI}, 2015.
 
 \bibitem[Schroff et~al.(2015)Schroff, Kalenichenko, and
   Philbin]{Schroff2015FaceNet}
