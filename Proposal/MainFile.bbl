@@ -1,4 +1,4 @@
-\begin{thebibliography}{56}
+\begin{thebibliography}{59}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -299,12 +299,30 @@ D.~I. {Shuman}, S.~K. {Narang}, P.~{Frossard}, A.~{Ortega}, and
 \newblock \emph{IEEE Signal Processing Magazine}, 30\penalty0 (3):\penalty0
   83--98, May 2013.
 
+\bibitem[Silva and Tenenbaum(2002)]{deSilva2002ConformalIsomap}
+Vin Silva and Joshua Tenenbaum.
+\newblock Unsupervised learning of curved manifolds.
+\newblock 01 2002.
+\newblock \doi{10.1007/978-0-387-21579-2_31}.
+
+\bibitem[Silva and Tenenbaum(2003)]{deSilva2002IsomapReview}
+Vin~D. Silva and Joshua~B. Tenenbaum.
+\newblock Global versus local methods in nonlinear dimensionality reduction.
+\newblock In S.~Becker, S.~Thrun, and K.~Obermayer, editors, \emph{Advances in
+  Neural Information Processing Systems 15}, pages 721--728. MIT Press, 2003.
+\newblock URL
+  \url{http://papers.nips.cc/paper/2141-global-versus-local-methods-in-nonlinear-dimensionality-reduction.pdf}.
+
 \bibitem[Sohn(2016)]{Sohn2016NPairLoss}
 Kihyuk Sohn.
 \newblock Improved deep metric learning with multi-class n-pair loss objective.
 \newblock In D.~D. Lee, M.~Sugiyama, U.~V. Luxburg, I.~Guyon, and R.~Garnett,
   editors, \emph{Advances in Neural Information Processing Systems 29}, pages
   1857--1865. Curran Associates, Inc., 2016.
+
+\bibitem[Sorzano et~al.(2014)Sorzano, Vargas, and Montano]{Sorzano2014DRReview}
+C.~O.~S. Sorzano, J.~Vargas, and A.~Pascual Montano.
+\newblock A survey of dimensionality reduction techniques, 2014.
 
 \bibitem[Sun et~al.(2010)Sun, Ng, and Shou]{Sun2010MIDR}
 Yu-Yin Sun, Michael~K. Ng, and Zhi-Hua Shou.
