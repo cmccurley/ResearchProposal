@@ -65,7 +65,7 @@ Manifold learning methods can be subdivided into a wide taxonomy of approaches, 
 \subsection{Geneology Image of Manifold Learning Methods from van der Maaten 2009, page  2}
 
 \subsection{Linear Manifold Learning}
-A review of linear manifold learning approaches is provided.  Linear approaches are advantageous over nonlinear because they allow for out-of-sample extensions.  In other words, linear transformation matrices are learned which can be easily applied on data not included in the training set.  However, linear approaches are limited in their abilities to capture irregular data surfaces \textbf{CITE}.  Principal Component Analysis (PCA), Multi-dimensional Scaling (MDS) and Fisher's Linear Discriminant Analysis (LDA) are reviewed.  General approaches are discussed and supervised as well as nonlinear extensions are elaborated. Special focus is given to (LDA), as it is the only inherently-supervised technique out of the included approaches.
+A review of linear manifold learning approaches is provided.  Linear approaches are advantageous over nonlinear because they allow for out-of-sample extensions.  In other words, linear transformation matrices are learned which can be easily applied on data not included in the training set.  However, linear approaches are limited in their abilities to capture irregular data surfaces \citep{Kegl2008PrincipalManifoldsTextbook}.  Principal Component Analysis (PCA), Multi-dimensional Scaling (MDS) and Fisher's Linear Discriminant Analysis (LDA) are reviewed.  General approaches are discussed and supervised as well as nonlinear extensions are elaborated. Special focus is given to (LDA), as it is the only inherently-supervised technique out of the included approaches.
 
 \subsubsection{Principal Component Analysis (PCA)}
 
@@ -94,7 +94,7 @@ As noted by Murphy \citep{Murphy2012}, the optimal solution is obtained by setti
 Assumes Gaussian distributions
 Typically, the data is standardized before applying PCA, as it can be misled by directions in which the variance is high simply because of the measurement scale.
 
-The example shown in figure \textbf{REFERENCE FIGURE} demonstrates the projection of 2-dimensional data onto the first principal axis.  As can be seen from the figure, the first principal axis corresponds to the direction of maximal variance of the data.  PCA from the viewpoint of variance maximization is often called the \textit{analysis view} of PCA \citep{Murphy2012}.
+The example shown in figure \ref{fig:pca_eg} demonstrates the projection of 2-dimensional data onto the first principal axis.  As can be seen from the figure, the first principal axis corresponds to the direction of maximal variance of the data.  PCA from the viewpoint of variance maximization is often called the \textit{analysis view} of PCA \citep{Murphy2012}.
 
 \begin{center}
 	\begin{figure*}[h]
@@ -110,24 +110,25 @@ PCA has been successfully applied to a large  number of domains such as face rec
 
 Many extensions and alternative viewpoints have been made to PCA, such as creating a nonlinear version, a supervised version and looking at it as a factor analysis problem \textbf{CITE}.  A few adaptations to PCA are discussed in later sections.
 
-\paragraph{Kernel PCA}
-
-Page 497 Murphy textbook
 
 
-\subsubsection{Multi-Dimensional Scaling (MDS)}
+
+\subsubsection{Multi-Dimensional Scaling (MDS)} 
 
 \paragraph{Unsupervised MDS} \label{sec:MDS}
+Most modern manifold learners have theoretical and algorithmic roots in one of three basic dimensionality reduction techniques: PCA, K-means and \textit{Multidimensional Scaling} (MDS). Whereas PCA looks for linear projection bases which are constructed from the eigenvectors of a data covariance or scatter matrix, MDS tries to find a linear projection that preserves pairwise distances as well as possible.  While MDS does not construct an embedded manifold explicitly, it holds the status of being the grandfather of ``one-shot" (non-iteratve) manifold learners, such as Isomap and Locally Linear Embedding (LLE), which are discussed later in this literature review \citep{Kegl2008PrincipalManifoldsTextbook}. 
+
+The steps of MDS correspond exactly to those of PCA except that, instead of a scatter matrix, MDS operates on a double-centered, positive semi-definite, dissimilarity matrix $\bm{D} \in \mathbb{R}^{N \times N}$, where $N$ is the number of data samples.  The problem of MDS is posed as finding $d$-dimensional Euclidean coordinates for each sample $\bm{x}_{n}$ in dataset $\bm{X}$ such that the Euclidean distances in the low-dimensional embedding space are proportional to the pairwise distances in the input space \citep{Thorstensen2009ManifoldThesis}. While the literature poses several cost functions for this task, this review focuses on classical MDS, which is described as follows:
+
+A pitfall of MDS is that it focuses on retaining global pairwise distances as opposed to local distances, which are typically much more important for capturing the geometry of the data \citep{VanDerMaaten2009DRReview}.  Several MDS variants have been proposed to address this weakness.  A popular variant is known as \textit{Sammon Mapping} and is discussed in Section \ref{sec:sammon_mapping}.
 
 \paragraph{Supervised MDS}
 
-\paragraph{Kernel MDS}
 
 \subsubsection{Fisher's Linear Discriminant Analysis (LDA)}
 
 \paragraph{Linear LDA}
 
-\paragraph{Kernel LDA (KDA)}
 
 \subsubsection{Locality Preserving Projection (LPP)}
 
@@ -135,7 +136,7 @@ Page 497 Murphy textbook
 
 \subsection{Nonlinear Manifold Learning}
 
-Linear methods such as PCA and MDS are convenient for projecting out-of-sample test points into the embedding space.  However, they are unable to capture the structure of data that are sampled from nonlinear manifolds \textbf{CITE} \textbf{REFERENCE}. This section will discuss a variety of nonlinear dimensionality reduction and manifold learning approaches.  All methods reviewed assume the data is distributed along a $d$-dimensional sub-manifold $\mathcal{X}$ embedded in $\mathbb{R}^{D}$.
+Linear methods such as PCA and MDS are convenient for projecting out-of-sample test points into the embedding space.  However, they are unable to capture the structure of data that are sampled from nonlinear manifolds \citep{Kegl2008PrincipalManifoldsTextbook}. This section will discuss a variety of nonlinear dimensionality reduction and manifold learning approaches.  All methods reviewed assume the data is distributed along a $d$-dimensional sub-manifold $\mathcal{X}$ embedded in $\mathbb{R}^{D}$.
 
 \begin{center}
 	\begin{figure*}[h]
@@ -145,6 +146,16 @@ Linear methods such as PCA and MDS are convenient for projecting out-of-sample t
 		\label{fig:nonlinear_manifold}
 	\end{figure*}
 \end{center}
+
+\subsubsection{Kernelization}
+
+\paragraph{Kernel PCA}
+
+Page 497 Murphy textbook
+
+\paragraph{Kernel MDS}
+
+\paragraph{Kernel LDA (KDA)}
 
 \subsubsection{Graph-based Methods}
 Nonlinear dimensionality reduction methods typically rely on the use of computational graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  \textit{Spectral graph theory} focuses on constructing, analyzing and manipulating graphs.  It has proved useful for object representation, graph visualization, spectral clustering, dimensionality reduction and numerous other applications in chemistry, physics, signal processing and computer science \citep{Shuman2013SignalProcessingGraphs, Bengoetxea2002ThesisGraphMatching}.   An overview of computational graphs as well as prominent methods for graph construction in manifold learning are presented. Additionally, geodesic distance approximation from pairwise distances is reviewed.
@@ -328,7 +339,7 @@ The special feature exhibited by all Laplacian Eigenmap methods is the use of la
 
 \subsubsection{Diffusion Maps}
 
-\subsubsection{Sammon Mapping}
+\subsubsection{Sammon Mapping} \label{sec:sammon_mapping}
 
 \subsubsection{Maximum Variance Unfolding (MVU)}
 
