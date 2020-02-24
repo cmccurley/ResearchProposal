@@ -19,62 +19,62 @@
 \contentsline {paragraph}{Unsupervised PCA}{26}{section*.15}
 \contentsline {subsubsection}{\numberline {2.2.4.2}Multi-Dimensional Scaling (MDS)}{28}{subsubsection.2.2.4.2}
 \contentsline {paragraph}{Unsupervised MDS}{28}{section*.17}
-\contentsline {paragraph}{Supervised MDS}{29}{section*.18}
-\contentsline {subsubsection}{\numberline {2.2.4.3}Fisher's Linear Discriminant Analysis (LDA)}{29}{subsubsection.2.2.4.3}
-\contentsline {paragraph}{Linear LDA}{29}{section*.19}
-\contentsline {subsubsection}{\numberline {2.2.4.4}Locality Preserving Projection (LPP)}{29}{subsubsection.2.2.4.4}
-\contentsline {subsubsection}{\numberline {2.2.4.5}Non-negative Matrix Factorization (NMF)}{29}{subsubsection.2.2.4.5}
-\contentsline {subsection}{\numberline {2.2.5}Nonlinear Manifold Learning}{29}{subsection.2.2.5}
-\contentsline {subsubsection}{\numberline {2.2.5.1}Kernelization}{29}{subsubsection.2.2.5.1}
-\contentsline {paragraph}{Kernel PCA}{29}{section*.21}
-\contentsline {paragraph}{Kernel MDS}{29}{section*.22}
-\contentsline {paragraph}{Kernel LDA (KDA)}{29}{section*.23}
-\contentsline {subsubsection}{\numberline {2.2.5.2}Graph-based Methods}{30}{subsubsection.2.2.5.2}
-\contentsline {paragraph}{Terminology}{30}{section*.24}
-\contentsline {paragraph}{$\bm {K}$-Nearest Neighbor Graph}{31}{section*.26}
-\contentsline {paragraph}{$\bm {\epsilon }$-Neighborhood Graph}{32}{section*.27}
-\contentsline {paragraph}{Geodesic Distance Approximation}{33}{section*.28}
-\contentsline {subsubsection}{\numberline {2.2.5.3}General Graph Embedding Framework}{34}{subsubsection.2.2.5.3}
-\contentsline {subsubsection}{\numberline {2.2.5.4}Isomap}{34}{subsubsection.2.2.5.4}
-\contentsline {paragraph}{Traditional Isomap}{34}{section*.30}
-\contentsline {paragraph}{Supervised Isomap Approaches}{36}{section*.31}
-\contentsline {subsubsection}{\numberline {2.2.5.5}Locally Linear Embedding (LLE)}{37}{subsubsection.2.2.5.5}
-\contentsline {subsubsection}{\numberline {2.2.5.6}Laplacian Eigenmaps (LE)}{37}{subsubsection.2.2.5.6}
-\contentsline {paragraph}{Classical LE}{37}{section*.32}
-\contentsline {paragraph}{Supervised LE (S-LE)}{39}{section*.33}
-\contentsline {subsubsection}{\numberline {2.2.5.7}Hessian Eigenmaps}{42}{subsubsection.2.2.5.7}
-\contentsline {subsubsection}{\numberline {2.2.5.8}Diffusion Maps}{42}{subsubsection.2.2.5.8}
-\contentsline {subsubsection}{\numberline {2.2.5.9}Sammon Mapping}{42}{subsubsection.2.2.5.9}
-\contentsline {subsubsection}{\numberline {2.2.5.10}Maximum Variance Unfolding (MVU)}{42}{subsubsection.2.2.5.10}
-\contentsline {subsection}{\numberline {2.2.6}Latent Variable Models}{42}{subsection.2.2.6}
-\contentsline {subsubsection}{\numberline {2.2.6.1}General Latent Variable Model (GLVM)}{42}{subsubsection.2.2.6.1}
-\contentsline {paragraph}{Factor Analysis (FA)}{42}{section*.34}
-\contentsline {paragraph}{Probabilistic PCA (PPCA)}{42}{section*.35}
-\contentsline {paragraph}{Supervised PCA}{43}{section*.36}
-\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{43}{section*.37}
-\contentsline {subparagraph}{Discriminative Supervised PCA}{44}{section*.38}
-\contentsline {subsubsection}{\numberline {2.2.6.2}Generative Topographic Mapping (GTM)}{44}{subsubsection.2.2.6.2}
-\contentsline {subsection}{\numberline {2.2.7}Competitive Hebbian Learning}{44}{subsection.2.2.7}
-\contentsline {subsection}{\numberline {2.2.8}Deep Learning}{44}{subsection.2.2.8}
-\contentsline {subsection}{\numberline {2.2.9}Current State of the Art}{44}{subsection.2.2.9}
-\contentsline {subsection}{\numberline {2.2.10}UMAP}{44}{subsection.2.2.10}
-\contentsline {subsection}{\numberline {2.2.11}Stochastic Neighbor Embedding (SNE and t-SNE)}{44}{subsection.2.2.11}
-\contentsline {subsection}{\numberline {2.2.12}NCA}{44}{subsection.2.2.12}
-\contentsline {subsection}{\numberline {2.2.13}Multiple Instance Learning on Manifolds}{44}{subsection.2.2.13}
-\contentsline {section}{\numberline {2.3}Metric Embedding}{44}{section.2.3}
-\contentsline {subsubsection}{\numberline {2.3.0.1}Metric Learning}{45}{subsubsection.2.3.0.1}
-\contentsline {subsection}{\numberline {2.3.1}Ranking Loss}{45}{subsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.1.1}Pairwise Loss}{45}{subsubsection.2.3.1.1}
-\contentsline {subsubsection}{\numberline {2.3.1.2}Contrastive Loss}{45}{subsubsection.2.3.1.2}
-\contentsline {subsubsection}{\numberline {2.3.1.3}Triplet Loss}{45}{subsubsection.2.3.1.3}
-\contentsline {subsubsection}{\numberline {2.3.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{45}{subsubsection.2.3.1.4}
-\contentsline {subsubsection}{\numberline {2.3.1.5}FaceNet}{45}{subsubsection.2.3.1.5}
-\contentsline {subsubsection}{\numberline {2.3.1.6}Siamese Neural Networks}{46}{subsubsection.2.3.1.6}
-\contentsline {subsection}{\numberline {2.3.2}Manifold Regularization}{46}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Multiple Instance Metric Learning}{46}{subsection.2.3.3}
-\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{47}{chapter.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{48}{chapter.4}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{49}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{50}{chapter.6}
-\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{51}{chapter.7}
+\contentsline {paragraph}{Supervised MDS}{30}{section*.18}
+\contentsline {subsubsection}{\numberline {2.2.4.3}Fisher's Linear Discriminant Analysis (LDA)}{30}{subsubsection.2.2.4.3}
+\contentsline {paragraph}{Linear LDA}{30}{section*.19}
+\contentsline {subsubsection}{\numberline {2.2.4.4}Locality Preserving Projection (LPP)}{30}{subsubsection.2.2.4.4}
+\contentsline {subsubsection}{\numberline {2.2.4.5}Non-negative Matrix Factorization (NMF)}{30}{subsubsection.2.2.4.5}
+\contentsline {subsection}{\numberline {2.2.5}Nonlinear Manifold Learning}{30}{subsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.5.1}Kernelization}{30}{subsubsection.2.2.5.1}
+\contentsline {paragraph}{Kernel PCA}{30}{section*.21}
+\contentsline {paragraph}{Kernel MDS}{31}{section*.22}
+\contentsline {paragraph}{Kernel LDA (KDA)}{31}{section*.23}
+\contentsline {subsubsection}{\numberline {2.2.5.2}Graph-based Methods}{31}{subsubsection.2.2.5.2}
+\contentsline {paragraph}{Terminology}{31}{section*.24}
+\contentsline {paragraph}{$\bm {K}$-Nearest Neighbor Graph}{32}{section*.26}
+\contentsline {paragraph}{$\bm {\epsilon }$-Neighborhood Graph}{33}{section*.27}
+\contentsline {paragraph}{Geodesic Distance Approximation}{34}{section*.28}
+\contentsline {subsubsection}{\numberline {2.2.5.3}General Graph Embedding Framework}{35}{subsubsection.2.2.5.3}
+\contentsline {subsubsection}{\numberline {2.2.5.4}Isomap}{35}{subsubsection.2.2.5.4}
+\contentsline {paragraph}{Traditional Isomap}{35}{section*.30}
+\contentsline {paragraph}{Supervised Isomap Approaches}{37}{section*.31}
+\contentsline {subsubsection}{\numberline {2.2.5.5}Locally Linear Embedding (LLE)}{38}{subsubsection.2.2.5.5}
+\contentsline {subsubsection}{\numberline {2.2.5.6}Laplacian Eigenmaps (LE)}{38}{subsubsection.2.2.5.6}
+\contentsline {paragraph}{Classical LE}{38}{section*.32}
+\contentsline {paragraph}{Supervised LE (S-LE)}{40}{section*.33}
+\contentsline {subsubsection}{\numberline {2.2.5.7}Hessian Eigenmaps}{43}{subsubsection.2.2.5.7}
+\contentsline {subsubsection}{\numberline {2.2.5.8}Diffusion Maps}{43}{subsubsection.2.2.5.8}
+\contentsline {subsubsection}{\numberline {2.2.5.9}Sammon Mapping}{43}{subsubsection.2.2.5.9}
+\contentsline {subsubsection}{\numberline {2.2.5.10}Maximum Variance Unfolding (MVU)}{43}{subsubsection.2.2.5.10}
+\contentsline {subsection}{\numberline {2.2.6}Latent Variable Models}{43}{subsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.6.1}General Latent Variable Model (GLVM)}{43}{subsubsection.2.2.6.1}
+\contentsline {paragraph}{Factor Analysis (FA)}{43}{section*.34}
+\contentsline {paragraph}{Probabilistic PCA (PPCA)}{43}{section*.35}
+\contentsline {paragraph}{Supervised PCA}{44}{section*.36}
+\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{44}{section*.37}
+\contentsline {subparagraph}{Discriminative Supervised PCA}{45}{section*.38}
+\contentsline {subsubsection}{\numberline {2.2.6.2}Generative Topographic Mapping (GTM)}{45}{subsubsection.2.2.6.2}
+\contentsline {subsection}{\numberline {2.2.7}Competitive Hebbian Learning}{45}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.8}Deep Learning}{45}{subsection.2.2.8}
+\contentsline {subsection}{\numberline {2.2.9}Current State of the Art}{45}{subsection.2.2.9}
+\contentsline {subsection}{\numberline {2.2.10}UMAP}{45}{subsection.2.2.10}
+\contentsline {subsection}{\numberline {2.2.11}Stochastic Neighbor Embedding (SNE and t-SNE)}{45}{subsection.2.2.11}
+\contentsline {subsection}{\numberline {2.2.12}NCA}{45}{subsection.2.2.12}
+\contentsline {subsection}{\numberline {2.2.13}Multiple Instance Learning on Manifolds}{45}{subsection.2.2.13}
+\contentsline {section}{\numberline {2.3}Metric Embedding}{45}{section.2.3}
+\contentsline {subsubsection}{\numberline {2.3.0.1}Metric Learning}{46}{subsubsection.2.3.0.1}
+\contentsline {subsection}{\numberline {2.3.1}Ranking Loss}{46}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Pairwise Loss}{46}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Contrastive Loss}{46}{subsubsection.2.3.1.2}
+\contentsline {subsubsection}{\numberline {2.3.1.3}Triplet Loss}{46}{subsubsection.2.3.1.3}
+\contentsline {subsubsection}{\numberline {2.3.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{46}{subsubsection.2.3.1.4}
+\contentsline {subsubsection}{\numberline {2.3.1.5}FaceNet}{46}{subsubsection.2.3.1.5}
+\contentsline {subsubsection}{\numberline {2.3.1.6}Siamese Neural Networks}{47}{subsubsection.2.3.1.6}
+\contentsline {subsection}{\numberline {2.3.2}Manifold Regularization}{47}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Multiple Instance Metric Learning}{47}{subsection.2.3.3}
+\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{48}{chapter.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{49}{chapter.4}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{50}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{51}{chapter.6}
+\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{52}{chapter.7}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 

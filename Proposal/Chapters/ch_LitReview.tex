@@ -118,7 +118,40 @@ Many extensions and alternative viewpoints have been made to PCA, such as creati
 \paragraph{Unsupervised MDS} \label{sec:MDS}
 Most modern manifold learners have theoretical and algorithmic roots in one of three basic dimensionality reduction techniques: PCA, K-means and \textit{Multidimensional Scaling} (MDS). Whereas PCA looks for linear projection bases which are constructed from the eigenvectors of a data covariance or scatter matrix, MDS tries to find a linear projection that preserves pairwise distances as well as possible.  While MDS does not construct an embedded manifold explicitly, it holds the status of being the grandfather of ``one-shot" (non-iteratve) manifold learners, such as Isomap and Locally Linear Embedding (LLE), which are discussed later in this literature review \citep{Kegl2008PrincipalManifoldsTextbook}. 
 
-The steps of MDS correspond exactly to those of PCA except that, instead of a scatter matrix, MDS operates on a double-centered, positive semi-definite, dissimilarity matrix $\bm{D} \in \mathbb{R}^{N \times N}$, where $N$ is the number of data samples.  The problem of MDS is posed as finding $d$-dimensional Euclidean coordinates for each sample $\bm{x}_{n}$ in dataset $\bm{X}$ such that the Euclidean distances in the low-dimensional embedding space are proportional to the pairwise distances in the input space \citep{Thorstensen2009ManifoldThesis}. While the literature poses several cost functions for this task, this review focuses on classical MDS, which is described as follows:
+The steps of MDS correspond exactly to those of PCA except that, instead of a scatter matrix $\bm{S}=\frac{1}{N}\bm{X}\bm{X}^{T}$, MDS operates with a positive semi-definite, dissimilarity matrix $\bm{D} \in \mathbb{R}^{N \times N}$, where $N$ is the number of data samples and a real, symmetric Gram matrix $\bm{K} = \bm{X}^{T}\bm{X}$ (inner-product matrix) where $\bm{K}_{mn}$ is the inner product between $\bm{x}_{m}$ and $\bm{x}_{n}$.  The problem of MDS is posed as finding $d$-dimensional Euclidean coordinates for each sample $\bm{x}_{n}$ in dataset $\bm{X}$ such that the Euclidean distances in the low-dimensional embedding space are proportional to the pairwise distances in the input space \citep{Thorstensen2009ManifoldThesis,Sorzano2014DRReview}. While the literature poses several cost functions for this task, this review focuses on classical MDS, which is described as follows:
+
+First, the pairwise distance matrix $\bm{D}$ is computed such that 
+\begin{align}
+	\bm{D}_{mn} = \mathcal{D}_{\mathcal{X}}(\bm{x}_{m},\bm{x}_{n}) = ||\bm{x}_{m} - \bm{x}_{n} ||^{2} = (\bm{x}_{m} - \bm{x}_{n})^{T}(\bm{x}_{m} - \bm{x}_{n}) 
+\end{align}
+\noindent
+where $\mathcal{D}_{\mathcal{X}}(\cdot,\cdot)$ is a chosen dissimilarity metric (Euclidean distance for classical MDS).  Then, the double-centered Gram matrix $\bm{K}$ is computed by
+\begin{align}
+	\bm{K}= -\frac{1}{2}\bm{H}\bm{D}\bm{H}
+\end{align}
+\noindent
+where 
+\begin{align}
+	\bm{H}= \bm{I}_{N} - \frac{1}{N}\bm{e}\bm{e}^{T}
+\end{align}
+\noindent
+with $\bm{I}_{N}$ denoting the $N \times N$ identity matrix and $\bm{e}= (1, \dots, 1)^{T}$ the $N \times 1$ column vector of all ones.  Multiplying $\bm{D}$ on both sides by $\bm{H}$ performs \textit{double centering}, which subtracts the row and column means from $\bm{D}$ (and adds back the global mean which gets subtracted twice), so that both the row and column means of $\bm{K}$ are equal to zero.  The objective is to find $\bm{Z}= \{\bm{z}_{1}, \dots, \bm{z}_{N}\} \in \mathbb{R}^{d}$ which minimizes the objective 
+\begin{align}
+	J(\bm{D}_{\bm{X}},\bm{D}_{\bm{Z}}) = ||\bm{K}_{\bm{X}} - \bm{D}_{\bm{Z}} ||^{2} = \left |\left|-\frac{1}{2} \bm{H} (\bm{D}_{\bm{X}} - \bm{D}_{\bm{Z}}) \bm{H} \right |\right|^{2}
+\end{align}
+Similarly to PCA, this can be solved by a generalized eigenvalue problem 
+\begin{align}
+	\bm{K}v = \lambda v
+\end{align}
+\noindent
+such that 
+\begin{align}
+	\bm{Z} = \bm{V}\bm{\Lambda}^{\frac{1}{2}}
+\end{align}
+\noindent
+with $\bm{\Lambda}^{\frac{1}{2}} = diag(\sqrt{\lambda_{1}},\dots,\sqrt{\lambda_N})$ being a diagonal matrix with entries equal to the square roots of the eigenvalues of $\bm{K}$ sorted from largest to smallest ($\lambda_{1} \geq  \lambda_{2} \geq \dots \geq 0$), and $\bm{V} = \{ \bm{v}_{1}, \dots, \bm{v}_{N} \}$ the corresponding eigenvectors.  The low-dimensional embedding coordinates $\bm{Z} \in \mathbb{R}^{N \times d}$ are obtained by $\bm{Z} = \{\sqrt{\lambda_{1}}\bm{v_{1}}, \dots, \sqrt{\lambda_{d}}\bm{v_{d}} \}$ \citep{Chao2019RecentAdvancesSupervisedDimRed}.
+
+
 
 A pitfall of MDS is that it focuses on retaining global pairwise distances as opposed to local distances, which are typically much more important for capturing the geometry of the data \citep{VanDerMaaten2009DRReview}.  Several MDS variants have been proposed to address this weakness.  A popular variant is known as \textit{Sammon Mapping} and is discussed in Section \ref{sec:sammon_mapping}.
 
