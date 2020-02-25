@@ -1,4 +1,4 @@
-\begin{thebibliography}{59}
+\begin{thebibliography}{60}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -402,6 +402,14 @@ E.~Vural and C.~Guillemot.
 David Weinberger.
 \newblock Ai outside in: Machine learning's triangle of error.
 \newblock URL \url{https://accelerate.withgoogle.com/stories/ai-outside}.
+
+\bibitem[Witten and Tibshirani(2011)]{Witten2011SuperMDS}
+Daniela~M. Witten and Robert Tibshirani.
+\newblock Supervised multidimensional scaling for visualization,
+  classification, and bipartite ranking.
+\newblock \emph{Computational Statistics and Data Analysis}, 55\penalty0
+  (1):\penalty0 789 -- 801, 2011.
+\newblock ISSN 0167-9473.
 
 \bibitem[{X. Geng} et~al.(2005){X. Geng}, {D. Zhan}, and {Z.
   Zhou}]{Geng2005SupNonlinearDimRed}
