@@ -172,14 +172,27 @@ This objective has two terms.  The first is the traditional metric MDS \textit{s
 
 A least square regression was applied to estimate the embedding function for out-of-sample  test points.  SMDS was successfully applied to tasks in data visualization, bipartite ranking and classification of prostate data and USPS handwritten digits.
 
-\subsubsection{Fisher's Linear Discriminant Analysis (FDA)}
+\subsubsection{Non-negative Matrix Factorization (NMF)}
 
-\paragraph{Linear FDA}
+\subsubsection{Fisher's Linear Discriminant Analysis (LDA)}
 
+\paragraph{Classical LDA}
+\textit{Linear Discriminant Analysis} (LDA) is a popular method for supervised, linear dimensionality reduction.  LDA currently forms the basis for Multiple Instance Learning dimensionality reduction methods exhibited in the literature \citep{Sun2010MIDR,Chai2014MIDA,Zhu2018MIDRSparsity,Xu2011MI_Metric_Learning}. Whereas PCA tries to project data into a space which maximizes variance, LDA considers class label information and tries to find a transformation which both maximizes between-class (inter-class) dissimilarity and minimizes between-class (intra-class) compactness \citep{Yan2007GeneralGraphEmbeddingFramework,Chao2019RecentAdvancesSupervisedDimRed, Sun2010MIDR, Murphy2012}.   This is done by maximizing the ratio between the inter-class $\bm{S}_{b}$ and intra-class $\bm{S}_{w}$ scatter matrices, defined as:
+\begin{align}
+	\bm{S}_{w} = \sum_{k=1}^{K}\bm{S}_{k}
+\end{align}
+\begin{align}
+	\bm{S}_{k} = \sum_{n \in C_{k}}(\bm{x}_{n} - \hat{\bm{\mu}_{k}})(\bm{x}_{n} - \hat{\bm{\mu}_{k}})^{T}
+\end{align}
+\begin{align}
+	\bm{S}_{b} = \sum_{k=1}^{K}N_{k}(\hat{\bm{\mu}_{k}} - \hat{\bm{\mu}})(\hat{\bm{\mu}_{k}} - \hat{\bm{\mu}})^{T}
+\end{align}
+\noindent
+Here, $\bm{S}_{w}$ is the global within-class scatter matrix which is defined as the sum over each individual class' scatter matrix $\bm{S}_{k}$, and $\bm{S}_{k}$ is essentially an outer product between all samples belonging to class $C_{k}$ after subtracting the respective empirical class mean $\hat{\bm{\mu}_{k}}$.  This scatter matrix would be the class covariance if it was normalized by the number of samples $N_{k}$ in class $C_{k}$.  However, this normalization constant does not affect the final solution and can thus be ignored.  The between-class scatter $\bm{S}_{b}$ is defined by the sum of outer products of the differences between the empirical class means $\hat{\bm{\mu}_{k}}$ and the global data mean $\hat{\bm{\mu}}$, weighted by the number of samples in each class.  The objective of LDA is then to 
 
 \subsubsection{Locality Preserving Projection (LPP)}
 
-\subsubsection{Non-negative Matrix Factorization (NMF)}
+
 
 \subsection{Nonlinear Manifold Learning}
 

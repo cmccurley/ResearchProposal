@@ -1,4 +1,4 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{61}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -422,6 +422,14 @@ Daniela~M. Witten and Robert Tibshirani.
 
 \bibitem[{Xu} et~al.(){Xu}, {Ping}, and {Campbell}]{Xu2011MI_Metric_Learning}
 Y.~{Xu}, W.~{Ping}, and A.~T. {Campbell}.
+
+\bibitem[{Yan} et~al.(2007){Yan}, {Xu}, {Zhang}, {Zhang}, {Yang}, and
+  {Lin}]{Yan2007GeneralGraphEmbeddingFramework}
+S.~{Yan}, D.~{Xu}, B.~{Zhang}, H.~{Zhang}, Q.~{Yang}, and S.~{Lin}.
+\newblock Graph embedding and extensions: A general framework for
+  dimensionality reduction.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 29\penalty0 (1):\penalty0 40--51, Jan 2007.
 
 \bibitem[Zare(2008)]{Zare2008Thesis}
 A.~Zare.
