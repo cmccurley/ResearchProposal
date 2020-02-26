@@ -30,9 +30,9 @@
 \contentsline {paragraph}{Kernel MDS}{35}{section*.24}
 \contentsline {paragraph}{Kernel FDA (KDA)}{35}{section*.25}
 \contentsline {subsubsection}{\numberline {2.2.5.2}Graph-based Methods}{35}{subsubsection.2.2.5.2}
-\contentsline {paragraph}{Terminology}{35}{section*.26}
+\contentsline {paragraph}{Terminology}{36}{section*.26}
 \contentsline {paragraph}{$\bm {K}$-Nearest Neighbor Graph}{37}{section*.28}
-\contentsline {paragraph}{$\bm {\epsilon }$-Neighborhood Graph}{37}{section*.29}
+\contentsline {paragraph}{$\bm {\epsilon }$-Neighborhood Graph}{38}{section*.29}
 \contentsline {paragraph}{Geodesic Distance Approximation}{38}{section*.30}
 \contentsline {subsubsection}{\numberline {2.2.5.3}General Graph Embedding Framework}{39}{subsubsection.2.2.5.3}
 \contentsline {subsubsection}{\numberline {2.2.5.4}Isomap}{39}{subsubsection.2.2.5.4}
@@ -51,7 +51,7 @@
 \contentsline {paragraph}{Factor Analysis (FA)}{47}{section*.36}
 \contentsline {paragraph}{Probabilistic PCA (PPCA)}{47}{section*.37}
 \contentsline {paragraph}{Supervised PCA}{48}{section*.38}
-\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{48}{section*.39}
+\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{49}{section*.39}
 \contentsline {subparagraph}{Discriminative Supervised PCA}{49}{section*.40}
 \contentsline {subsubsection}{\numberline {2.2.6.2}Generative Topographic Mapping (GTM)}{49}{subsubsection.2.2.6.2}
 \contentsline {subsection}{\numberline {2.2.7}Competitive Hebbian Learning}{49}{subsection.2.2.7}
@@ -67,8 +67,8 @@
 \contentsline {subsubsection}{\numberline {2.3.1.1}Pairwise Loss}{50}{subsubsection.2.3.1.1}
 \contentsline {subsubsection}{\numberline {2.3.1.2}Contrastive Loss}{50}{subsubsection.2.3.1.2}
 \contentsline {subsubsection}{\numberline {2.3.1.3}Triplet Loss}{50}{subsubsection.2.3.1.3}
-\contentsline {subsubsection}{\numberline {2.3.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{50}{subsubsection.2.3.1.4}
-\contentsline {subsubsection}{\numberline {2.3.1.5}FaceNet}{50}{subsubsection.2.3.1.5}
+\contentsline {subsubsection}{\numberline {2.3.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{51}{subsubsection.2.3.1.4}
+\contentsline {subsubsection}{\numberline {2.3.1.5}FaceNet}{51}{subsubsection.2.3.1.5}
 \contentsline {subsubsection}{\numberline {2.3.1.6}Siamese Neural Networks}{51}{subsubsection.2.3.1.6}
 \contentsline {subsection}{\numberline {2.3.2}Manifold Regularization}{51}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Multiple Instance Metric Learning}{51}{subsection.2.3.3}

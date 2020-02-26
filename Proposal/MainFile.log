@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  25 FEB 2020 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  25 FEB 2020 19:50
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -987,41 +987,30 @@ Package pdftex.def Info: example-image-a.png used on input line 209.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33]
+[33] [34]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 228.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[34] [35]
+ [35] [36]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 261.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[36]
+[37]
 Overfull \hbox (8.66458pt too wide) in paragraph at lines 271--273
  []$\OML/cmm/b/it/12 $\OT1/cmss/bx/n/12 -Neighborhood Graph[] \OT1/cmss/m/n/12
  . An-other method for graph con-struc-tion is to use $\OML/cmm/m/it/12 $\OT1/
 cmss/m/n/12 -neighborhoods 
  []
 
-[37]
+[38]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 279.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[38]
+ [39]
 Underfull \hbox (badness 10000) detected at line 292
 [][][]
  []
@@ -1031,12 +1020,12 @@ Underfull \hbox (badness 10000) detected at line 298
 [][][]
  []
 
-[39]
+
 Underfull \hbox (badness 10000) detected at line 300
 [][][]
  []
 
-[40] [41] [42] [43] [44] [45] [46] [47] [48]
+[40] [41] [42] [43] [44] [45] [46] [47] [48] [49]
 Underfull \hbox (badness 10000) detected at line 501
 [][][]
  []
@@ -1056,7 +1045,6 @@ Underfull \hbox (badness 10000) detected at line 504
 [][][]
  []
 
-[49]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 512.
@@ -1177,13 +1165,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 8873 strings out of 493323
- 140129 string characters out of 3139067
- 231984 words of memory out of 3000000
- 11896 multiletter control sequences out of 15000+200000
+ 8889 strings out of 493323
+ 140661 string characters out of 3139067
+ 232146 words of memory out of 3000000
+ 11908 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,17n,42p,2975b,589s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,17n,42p,2975b,587s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/
@@ -1203,9 +1191,9 @@ public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on MainFile.pdf (63 pages, 1761050 bytes).
+Output written on MainFile.pdf (63 pages, 1766382 bytes).
 PDF statistics:
- 1250 PDF objects out of 1440 (max. 8388607)
- 273 named destinations out of 1000 (max. 500000)
+ 1273 PDF objects out of 1440 (max. 8388607)
+ 277 named destinations out of 1000 (max. 500000)
  548 words of extra memory for PDF output out of 10000 (max. 10000000)
 

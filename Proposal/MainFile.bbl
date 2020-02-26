@@ -1,4 +1,4 @@
-\begin{thebibliography}{61}
+\begin{thebibliography}{65}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,13 @@ Alexander~Hermans an~Lucas~Beyer and Bastian Leibe.
 \newblock In defense of the triplet loss for person re-identification.
 \newblock \emph{CoRR}, abs/1703.07737, 2017.
 \newblock URL \url{http://arxiv.org/abs/1703.07737}.
+
+\bibitem[Baudat and Anouar(2000)]{Baudat2000GeneralizedDiscriminantAnalysis}
+G.~Baudat and F.~Anouar.
+\newblock Generalized discriminant analysis using a kernel approach.
+\newblock \emph{Neural Computation}, 12\penalty0 (10):\penalty0 2385--2404,
+  2000.
+\newblock \doi{10.1162/089976600300014980}.
 
 \bibitem[Belkin and Niyogi(2004)]{Belkin2004SemiSupLearningRiemannianManifolds}
 M.~Belkin and P.~Niyogi.
@@ -139,6 +146,14 @@ X.~Du and A.~Zare.
 \newblock Technical Report 417, University of Florida, Gainesville, FL, April
   2017.
 \newblock URL \url{http://ufdc.ufl.edu/IR00009711/00001}.
+
+\bibitem[{Fukunaga} and {Mantock}(1983)]{Fukunaga1983NonparametricLDA}
+K.~{Fukunaga} and J.~M. {Mantock}.
+\newblock Nonparametric discriminant analysis.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, PAMI-5\penalty0 (6):\penalty0 671--678, Nov 1983.
+\newblock ISSN 1939-3539.
+\newblock \doi{10.1109/TPAMI.1983.4767461}.
 
 \bibitem[Gader et~al.(2013)Gader, Zare, Close, Aitken, and Tuell]{MUUFL}
 P.~Gader, A.~Zare, R.~Close, J.~Aitken, and G.~Tuell.
@@ -397,6 +412,21 @@ E.~Vural and C.~Guillemot.
   manifold learning.
 \newblock \emph{CoRR}, abs/1507.05880, 2018.
 \newblock URL \url{http://arxiv.org/abs/1507.05880}.
+
+\bibitem[Wang et~al.(2016)Wang, Xie, and Wu]{Wang2016OrthogonalLDA}
+Yong Wang, Jian-Bin Xie, and Yi~Wu.
+\newblock Orthogonal discriminant analysis revisited.
+\newblock \emph{Pattern Recognition Letters}, 84:\penalty0 149 -- 155, 2016.
+\newblock ISSN 0167-8655.
+\newblock \doi{https://doi.org/10.1016/j.patrec.2016.09.010}.
+
+\bibitem[Webb and Lowe(1990)]{Webb1990MLPLDA}
+Andrew~R Webb and David Lowe.
+\newblock The optimised internal representation of multilayer classifier
+  networks performs nonlinear discriminant analysis.
+\newblock \emph{Neural Networks}, 3\penalty0 (4):\penalty0 367 -- 375, 1990.
+\newblock ISSN 0893-6080.
+\newblock \doi{https://doi.org/10.1016/0893-6080(90)90019-H}.
 
 \bibitem[Weinberger()]{WeinbergerFalseAlarms}
 David Weinberger.
