@@ -231,8 +231,10 @@ Linear methods such as PCA and MDS are convenient for projecting out-of-sample t
 	\end{figure*}
 \end{center}
 
-\subsubsection{Kernels}
-Although each of the manifold learning techniques previously discussed are inherently linear, nonlinear adaptations have been made.  One easily extend-able approach is to utilize kernel functions as means to provide nonlinearity in the embeddings.  A \textit{kernel function} is a real-valued function of two arguments $\kappa(\bm{x},\bm{x}') \in \mathbb{R}$, for $\bm{x},\bm{x}' \in \mathcal{X}$, which maps vectors from the input feature space to a single value in $\mathbb{R}$.  The function is typically symmetric (i.e.  $\kappa(\bm{x},\bm{x}') =  \kappa(\bm{x}',\bm{x})$) and non-negative (i.e.  $\kappa(\bm{x},\bm{x}') \geq 0$), which implies that it can be interpreted as a measure of similarity \citep{Murphy2012}.  The notion of kernels is very useful in certain applications where data representation is not straightforward, such as representing text documents or molecular structures which can have variable length.  Additionally, this allows algorithms to operate directly on the kernel representations.  This is useful in data-sensitive scenarios where direct access to the data may not be available.
+\subsubsection{Kernelization}
+Although each of the manifold learning techniques previously discussed are inherently linear, nonlinear adaptations have been made.  One easily extendable approach is to utilize kernel functions as means to provide nonlinearity in the embeddings. 
+
+\paragraph{Kernels} A \textit{kernel function} is a real-valued function of two arguments $\kappa(\bm{x},\bm{x}') \in \mathbb{R}$, for $\bm{x},\bm{x}' \in \mathcal{X}$, which maps vectors from the input feature space to a single value in $\mathbb{R}$.  The function is typically symmetric (i.e.  $\kappa(\bm{x},\bm{x}') =  \kappa(\bm{x}',\bm{x})$) and non-negative (i.e.  $\kappa(\bm{x},\bm{x}') \geq 0$), which implies that it can be interpreted as a measure of similarity \citep{Murphy2012}.  The notion of kernels is very useful in certain applications where data representation is not straightforward, such as representing text documents or molecular structures which can have variable length.  Additionally, this allows algorithms to operate directly on the kernel representations.  This is useful in data-sensitive scenarios where direct access to the data may not be available.
 
 A popular choice of kernel in manifold learning is the \textit{radial basis function} (RBF) kernel, defined as:
 \begin{align}
@@ -256,10 +258,19 @@ Some of the nonlinear manifold learning methods in the literature require the ke
 	\end{bmatrix}
 \end{align}
 \noindent
-be positive definite for any set of inputs $\{\bm{x}_{n}\}_{n=1}^{N}$.  This type of kernel is called a \textit{Mercer kernel} or \textit{positive definite kernel}.
+be positive definite for any set of inputs $\{\bm{x}_{n}\}_{n=1}^{N}$.  This type of kernel is called a \textit{Mercer kernel} or \textit{positive definite kernel}.  The importance of the Mercer Kernel is the following result, known as \textit{Mercer's theorem}.  This theorem states that if the Gram matrix is positive definite, its eigenvector decomposition can be written as
+\begin{align}
+	\bm{K} = \bm{U}^{T}\bm{\Lambda}\bm{U}
+\end{align}
+As derived by Murphy and Liu et al. \citep{Murphy2012,Liu2010KernelAdaptiveFiltering}, it then follows that each entry of $\bm{K}$ can be computed as 
+\begin{align}
+	\kappa(\bm{x},\bm{x}') = \phi(\bm{x})^{T}\phi(\bm{x}') = <\phi(\bm{x}),\phi(\bm{x}')>
+	\label{eq:kernel_inner_product}
+\end{align}
+meaning that the entries of the kernel matrix can be defined by the inner product of some feature vectors that are implicitly defined by the eigenvectors $\bm{U}$.  If the kernel is Mercer, then there exists a function $\phi$ which maps $\bm{x} \in \mathcal{X}$ to $\mathbb{R}^{D}$ such that Equation \ref{eq:kernel_inner_product} holds.  Additionally, $\phi$ depends on the eigenfunctions of $\kappa$, meaning that $D$ is a potentially infinite dimensional space.
+Additionally, instead of representing feature vectors in terms of kernels $\phi(\bm{x}) = [\kappa(\bm{x},\bm{x}_{1}), \dots, \kappa(\bm{x},\bm{x}_{N})]$, algorithms can instead work with the input feature vectors $\bm{x}$ by replacing all inner products $<\bm{x},\bm{x}'>$ with a call to the kernel function $\kappa(\bm{x},\bm{x}')$.  This is called the \textit{kernel trick}, and it turns out that many algorithms can be kernelized in this way.
 
-
-Kernel functions play an important role in the dimensionality reduction literature for both applying nonlinearity to inherently linear problems and in defining similarity measures for graph-based manifold learning methods.
+Kernel functions play an important role in the dimensionality reduction literature for both applying nonlinearity to inherently linear problems and in defining similarity measures for graph-based manifold learning methods.  The kernelization of three traditionally linear manifold learning methods, namely: PCA, MDS and LDA, is briefly described in the following.
 \paragraph{Kernel PCA}
 
 Page 497 Murphy textbook
