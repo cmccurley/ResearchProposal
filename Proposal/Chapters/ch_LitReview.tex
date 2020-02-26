@@ -65,7 +65,7 @@ Manifold learning methods can be subdivided into a wide taxonomy of approaches, 
 \subsection{Geneology Image of Manifold Learning Methods from van der Maaten 2009, page  2}
 
 \subsection{Linear Manifold Learning}
-A review of linear manifold learning approaches is provided.  Linear approaches are advantageous over nonlinear because they allow for out-of-sample extensions.  In other words, linear transformation matrices are learned which can be easily applied on data not included in the training set.  However, linear approaches are limited in their abilities to capture irregular data surfaces \citep{Kegl2008PrincipalManifoldsTextbook}.  Principal Component Analysis (PCA), Multi-dimensional Scaling (MDS) and Fisher's Linear Discriminant Analysis (FDA) are reviewed.  General approaches are discussed and supervised as well as nonlinear extensions are elaborated. Special focus is given to (FDA), as it is the only inherently-supervised technique out of the included approaches.
+A review of linear manifold learning approaches is provided.  Linear approaches are advantageous over nonlinear because they allow for out-of-sample extensions.  In other words, linear transformation matrices are learned which can be easily applied on data not included in the training set.  However, linear approaches are limited in their abilities to capture irregular data surfaces \citep{Kegl2008PrincipalManifoldsTextbook}.  Principal Component Analysis (PCA), Multi-dimensional Scaling (MDS) and Fisher's Linear Discriminant Analysis (LDA) are reviewed.  General approaches are discussed and supervised as well as nonlinear extensions are elaborated. Special focus is given to (LDA), as it is the only inherently supervised technique out of the included approaches.
 
 \subsubsection{Principal Component Analysis (PCA)}
 
@@ -188,7 +188,31 @@ A least square regression was applied to estimate the embedding function for out
 	\bm{S}_{b} = \sum_{k=1}^{K}N_{k}(\hat{\bm{\mu}_{k}} - \hat{\bm{\mu}})(\hat{\bm{\mu}_{k}} - \hat{\bm{\mu}})^{T}
 \end{align}
 \noindent
-Here, $\bm{S}_{w}$ is the global within-class scatter matrix which is defined as the sum over each individual class' scatter matrix $\bm{S}_{k}$, and $\bm{S}_{k}$ is essentially an outer product between all samples belonging to class $C_{k}$ after subtracting the respective empirical class mean $\hat{\bm{\mu}_{k}}$.  This scatter matrix would be the class covariance if it was normalized by the number of samples $N_{k}$ in class $C_{k}$.  However, this normalization constant does not affect the final solution and can thus be ignored.  The between-class scatter $\bm{S}_{b}$ is defined by the sum of outer products of the differences between the empirical class means $\hat{\bm{\mu}_{k}}$ and the global data mean $\hat{\bm{\mu}}$, weighted by the number of samples in each class.  The objective of LDA is then to 
+Here, $\bm{S}_{w}$ is the global within-class scatter matrix which is defined as the sum over each individual class' scatter matrix $\bm{S}_{k}$, and $\bm{S}_{k}$ is essentially an outer product between all samples belonging to class $C_{k}$ after subtracting the respective empirical class mean $\hat{\bm{\mu}_{k}}$.  This scatter matrix would be the class covariance if it was normalized by the number of samples $N_{k}$ in class $C_{k}$.  However, this normalization constant does not affect the final solution and can thus be ignored.  The between-class scatter $\bm{S}_{b}$ is defined by the sum of outer products of the differences between the empirical class means $\hat{\bm{\mu}_{k}}$ and the global data mean $\hat{\bm{\mu}}$, weighted by the number of samples in each class.  The objective of LDA is then to solve for $\bm{W}^{*}$ which maximizes the ratio $J(\bm{W})$:
+\begin{align}
+	\bm{W}^{*} = \arg\min_{\bm{W}} J(\bm{W}) =  \arg\max_{\bm{W}} \frac{|\bm{W}^{T}\bm{S}_{b}\bm{W}|}{|\bm{W}^{T}\bm{S}_{w}\bm{W}|}
+\end{align}
+It has been shown that the optimal projection matrix $\bm{W}^{*}$ is the one whose columns are the eigenvectors corresponding to the largest eigenvalues of the generalized eigenvalue problem 
+\begin{align}
+	\bm{S}_{b}\bm{w}=\lambda \bm{S}_{w}\bm{w} \Rightarrow \bm{S}_{w}^{-1}\bm{S}_{b}\bm{w} = \lambda\bm{w}
+\end{align}
+Since $\bm{S}_{b}$ is the sum of $K$ matrices of rank $\leq 1$, this implies that $\bm{S}_{b}$ will be of rank $(K-1)$ or less and only $(K-1)$ of the eigenvalues $\lambda$ will be non-zero.  
+A low-dimensional coordinate representation $\bm{z}_{n} \in \mathbb{R}^{(K-1)}$ of sample $\bm{x}_{n} \in \mathbb{R}^{D}$ is given by the linear projection of $\bm{x}_{n}$ onto the hyper-plane parameterized by $\bm{W}^{*}$, $\bm{z}_{n} = \bm{W}^{*T}\bm{x}_{n}$  It should be noted that the for LDA, the dimensionality of the latent space is not a free-parameter, but is always fixed at $d=K-1$, or one less than the number of classes present in the dataset.  Equivalently, LDA can be derived by maximum likelihood for normal class-conditional densities where the covariances for each class are assumed to be equivalent \citep{Murphy2012}.  For the special case of binary target classification, the LDA transformation will place every sample onto a single line in 1-dimension, and thus the LDA can be simplified:
+\begin{align}
+	\bm{w}^{*} = \arg\max_{\bm{w}} \frac{\bm{w}^{T}\bm{S}_{b}\bm{w}}{\bm{w}^{T}\bm{S}_{w}\bm{w}} = \bm{S}_{w}^{-1}(\hat{\bm{\mu}_{2}} - \hat{\bm{\mu}_{1}})
+\end{align}  
+where $\hat{\bm{\mu}_{1}}$ and $\hat{\bm{\mu}_{2}}$ are the empirical means for classes $1$ and $2$, respectively.  Figure \ref{fig:lda_example} demonstrates the differences between PCA and LDA.  While PCA projects data onto the axes exhibiting the maximal variation, LDA projects the data into a space which attempts to simultaneously enforce between-class separation and within-class compactness. 
+
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{example-image-a}
+		\caption[LDA Example.]{LDA example.}
+		\label{fig:lda_example}
+	\end{figure*}
+\end{center}
+
+Although LDA is the basis for large number of discriminative dimensionality reduction approaches, it does not guarantee class separation in the embedding space.  For example, LDA projects data into a space of at most $(K-1)$, however, more features may be necessary for adequate class discrimination.  Additionally, LDA is a parametric method which assumes unimodal Gaussian likelihoods.  This implies that it may not be able to preserve complex data structure.  Finally, LDA will fail if the discriminatory information is contained in the variance of the data instead of the mean.  Despite these pitfalls, LDA  has been successfully applied to \textbf{ADD APPLICATIONS}.  Additionally, LDA serves as the foundation for all of the Multiple Instance Learning dimensionality reduction approaches in the current literature.
 
 \subsubsection{Locality Preserving Projection (LPP)}
 
