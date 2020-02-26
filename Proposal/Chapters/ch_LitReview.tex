@@ -231,8 +231,35 @@ Linear methods such as PCA and MDS are convenient for projecting out-of-sample t
 	\end{figure*}
 \end{center}
 
-\subsubsection{Kernelization}
+\subsubsection{Kernels}
+Although each of the manifold learning techniques previously discussed are inherently linear, nonlinear adaptations have been made.  One easily extend-able approach is to utilize kernel functions as means to provide nonlinearity in the embeddings.  A \textit{kernel function} is a real-valued function of two arguments $\kappa(\bm{x},\bm{x}') \in \mathbb{R}$, for $\bm{x},\bm{x}' \in \mathcal{X}$, which maps vectors from the input feature space to a single value in $\mathbb{R}$.  The function is typically symmetric (i.e.  $\kappa(\bm{x},\bm{x}') =  \kappa(\bm{x}',\bm{x})$) and non-negative (i.e.  $\kappa(\bm{x},\bm{x}') \geq 0$), which implies that it can be interpreted as a measure of similarity \citep{Murphy2012}.  The notion of kernels is very useful in certain applications where data representation is not straightforward, such as representing text documents or molecular structures which can have variable length.  Additionally, this allows algorithms to operate directly on the kernel representations.  This is useful in data-sensitive scenarios where direct access to the data may not be available.
 
+A popular choice of kernel in manifold learning is the \textit{radial basis function} (RBF) kernel, defined as:
+\begin{align}
+	\kappa(\bm{x},\bm{x}') = \exp \left( - \frac{|| \bm{x} - \bm{x}' ||^{2}}{\beta} \right)
+\end{align}
+\noindent
+where $\beta$ is the bandwidth of the isotropic function.  Another popular kernel for text classification is \textit{cosine similarity}, defined by:
+\begin{align}
+	\kappa(\bm{x},\bm{x}') = \frac{\bm{x}^{T}\bm{x}'}{||\bm{x}||_{2}||\bm{x}'||_{2}} 
+\end{align}
+\noindent
+This kernel measures the cosine of the angle between vectors $\bm{x}$ and  $\bm{x}'$ after scaling them onto the unit hyper-sphere.  If  $\bm{x}$ and  $\bm{x}'$ are strictly positive vectors (counts in the bag-of-words model, for example), then the kernel provides values in $[0,1]$, where a value of $0$ means the feature vectors are orthogonal and, therefore, have no features in common, and a value of $1$ means the vectors are the same. 
+
+Some of the nonlinear manifold learning methods in the literature require the kernel function to satisfy the requirement that the \textit{Gram matrix}
+\begin{align}
+	\bm{K} = 	
+	\begin{bmatrix}
+		\kappa(\bm{x}_{1},\bm{x}_{1}) &  \dots & \kappa(\bm{x}_{1},\bm{x}_{N}) \\
+		 & \vdots  & \\
+		\kappa(\bm{x}_{N},\bm{x}_{1}) & \dots & \kappa(\bm{x}_{N},\bm{x}_{N})
+	\end{bmatrix}
+\end{align}
+\noindent
+be positive definite for any set of inputs $\{\bm{x}_{n}\}_{n=1}^{N}$.  This type of kernel is called a \textit{Mercer kernel} or \textit{positive definite kernel}.
+
+
+Kernel functions play an important role in the dimensionality reduction literature for both applying nonlinearity to inherently linear problems and in defining similarity measures for graph-based manifold learning methods.
 \paragraph{Kernel PCA}
 
 Page 497 Murphy textbook

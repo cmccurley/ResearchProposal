@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  25 FEB 2020 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  26 FEB 2020 12:32
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -992,64 +992,65 @@ File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 228.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
- [35] [36]
+ [35] [36] [37]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 261.
+Package pdftex.def Info: example-image-a.png used on input line 288.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
-[37]
-Overfull \hbox (8.66458pt too wide) in paragraph at lines 271--273
+[38]
+Overfull \hbox (8.66458pt too wide) in paragraph at lines 298--300
  []$\OML/cmm/b/it/12 $\OT1/cmss/bx/n/12 -Neighborhood Graph[] \OT1/cmss/m/n/12
  . An-other method for graph con-struc-tion is to use $\OML/cmm/m/it/12 $\OT1/
 cmss/m/n/12 -neighborhoods 
  []
 
-[38]
+[39]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 279.
+Package pdftex.def Info: example-image-a.png used on input line 306.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
- [39]
-Underfull \hbox (badness 10000) detected at line 292
+ [40]
+Underfull \hbox (badness 10000) detected at line 319
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 298
+Underfull \hbox (badness 10000) detected at line 325
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 300
+Underfull \hbox (badness 10000) detected at line 327
 [][][]
  []
 
-[40] [41] [42] [43] [44] [45] [46] [47] [48] [49]
-Underfull \hbox (badness 10000) detected at line 501
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 502
+[41] [42] [43] [44] [45] [46] [47] [48] [49] [50]
+Underfull \hbox (badness 10000) detected at line 528
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 503
+Underfull \hbox (badness 10000) detected at line 529
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 504
+Underfull \hbox (badness 10000) detected at line 530
 [][][]
  []
 
+
+Underfull \hbox (badness 10000) detected at line 531
+[][][]
+ []
+
+[51]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 512.
+(hyperref)                than one, level fixed on input line 539.
 
-[50]) [51]
+[52]) [53]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
 
  (Chapters/ch_ProblemDescription.tex
@@ -1060,7 +1061,7 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [52
+) [54
 
 
 
@@ -1075,7 +1076,7 @@ CHAPTER 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [53
+) [55
 
 
 
@@ -1090,7 +1091,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [54
+) [56
 
 
 
@@ -1105,7 +1106,7 @@ CHAPTER 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [55
+) [57
 
 
 
@@ -1120,33 +1121,33 @@ CHAPTER 7.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [56
+) [58
 
 
 
 ] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [57
+ [59
 
 
 ]
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [58]
+ [60]
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [59]
-[60] [61]
+ [61]
+[62] [63]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [62]) (Chapters/bio.tex)
+ [64]) (Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
- [63]
+ [65]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (MainFile.aux
 (Chapters/acknowledgements.aux) (Chapters/TOC.aux) (Chapters/abbreviations.aux)
@@ -1157,7 +1158,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: A7F9B29783E141020F5573A22E1675D2;5014.
+(rerunfilecheck)             Checksum: 4D723454720C5F78919C24D4F2960925;5008.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1165,8 +1166,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 8889 strings out of 493323
- 140661 string characters out of 3139067
+ 8894 strings out of 493323
+ 140720 string characters out of 3139067
  232146 words of memory out of 3000000
  11908 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
@@ -1191,9 +1192,9 @@ public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on MainFile.pdf (63 pages, 1766382 bytes).
+Output written on MainFile.pdf (65 pages, 1771905 bytes).
 PDF statistics:
- 1273 PDF objects out of 1440 (max. 8388607)
- 277 named destinations out of 1000 (max. 500000)
+ 1288 PDF objects out of 1440 (max. 8388607)
+ 282 named destinations out of 1000 (max. 500000)
  548 words of extra memory for PDF output out of 10000 (max. 10000000)
 
