@@ -67,7 +67,7 @@ Manifold learning methods can be subdivided into a wide taxonomy of approaches, 
 \subsection{Linear Manifold Learning}
 A review of linear manifold learning approaches is provided.  Linear approaches are advantageous over nonlinear because they allow for out-of-sample extensions.  In other words, linear transformation matrices are learned which can be easily applied on data not included in the training set.  However, linear approaches are limited in their abilities to capture irregular data surfaces \citep{Kegl2008PrincipalManifoldsTextbook}.  Principal Component Analysis (PCA), Multi-dimensional Scaling (MDS) and Fisher's Linear Discriminant Analysis (LDA) are reviewed.  General approaches are discussed and supervised as well as nonlinear extensions are elaborated. Special focus is given to (LDA), as it is the only inherently supervised technique out of the included approaches.
 
-\subsubsection{Principal Component Analysis (PCA)}
+\subsubsection{Principal Component Analysis (PCA)} \label{sec:PCA}
 
 \paragraph{Unsupervised PCA}
 Principal Component Analysis (PCA) is arguably the most popular (and best-studied) technique for dimensionality reduction and manifold learning.  It attempts to learn an orthogonal projection of the input data into a lower-dimensional space, known as the principal subspace, such that the variance of the projected data is maximized \citep{Chao2019RecentAdvancesSupervisedDimRed}.  In other words, each \textit{principal axis}, or \textit{principal component}, of the learned coordinate system is orthogonal to the other principal components.  In summary, the problem of PCA is to discover basis vectors which linearly combine to reconstruct the data.  In practice, data in the input feature space are projected into a new coordinate system of $d$ dimensions, such that the variance along each principal axis is maximized and the reconstruction errors of the data are minimized in the mean-square sense \citep{Thorstensen2009ManifoldThesis}.  Let $V$ be a $d$-dimensional subspace of $\mathbb{R}^{D}$ and let  $\bm{w}_1, \dots, \bm{w}_D$ be an orthonormal basis of $\mathbb{R}^{D}$ such that $\bm{w}_1, \dots, \bm{w}_d$ is a basis of $V$.  The goal of PCA is to find an orthogonal set of basis vectors $\bm{w}_n \in \mathbb{R}^{D}$ and corresponding latent coordinates $\bm{x}_n \in \mathbb{R}^{d}$ such that the average reconstruction error is minimized \citep{Murphy2012}
@@ -174,7 +174,7 @@ A least square regression was applied to estimate the embedding function for out
 
 \subsubsection{Non-negative Matrix Factorization (NMF)}
 
-\subsubsection{Fisher's Linear Discriminant Analysis (LDA)}
+\subsubsection{Fisher's Linear Discriminant Analysis (LDA)} \label{sec:LDA}
 
 \paragraph{Classical LDA}
 \textit{Linear Discriminant Analysis} (LDA) is a popular method for supervised, linear dimensionality reduction.  LDA currently forms the basis for Multiple Instance Learning dimensionality reduction methods exhibited in the literature \citep{Sun2010MIDR,Chai2014MIDA,Zhu2018MIDRSparsity,Xu2011MI_Metric_Learning}. Whereas PCA tries to project data into a space which maximizes variance, LDA considers class label information and tries to find a transformation which both maximizes between-class (inter-class) dissimilarity and minimizes between-class (intra-class) compactness \citep{Yan2007GeneralGraphEmbeddingFramework,Chao2019RecentAdvancesSupervisedDimRed, Sun2010MIDR, Murphy2012}.   This is done by maximizing the ratio between the inter-class $\bm{S}_{b}$ and intra-class $\bm{S}_{w}$ scatter matrices, defined as:
@@ -271,9 +271,10 @@ meaning that the entries of the kernel matrix can be defined by the inner produc
 Additionally, instead of representing feature vectors in terms of kernels $\phi(\bm{x}) = [\kappa(\bm{x},\bm{x}_{1}), \dots, \kappa(\bm{x},\bm{x}_{N})]$, algorithms can instead work with the input feature vectors $\bm{x}$ by replacing all inner products $<\bm{x},\bm{x}'>$ with a call to the kernel function $\kappa(\bm{x},\bm{x}')$.  This is called the \textit{kernel trick}, and it turns out that many algorithms can be kernelized in this way.
 
 Kernel functions play an important role in the dimensionality reduction literature for both applying nonlinearity to inherently linear problems and in defining similarity measures for graph-based manifold learning methods.  The kernelization of three traditionally linear manifold learning methods, namely: PCA, MDS and LDA, is briefly described in the following.
+
 \paragraph{Kernel PCA}
 
-Page 497 Murphy textbook
+Section \ref{sec:PCA} showed how PCA could be used to compute linear low-dimensional embeddings of data.  This process involved finding the eigenvectors of the empirical data covariance matrix $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}\hat{\bm{x}}_{n}\hat{\bm{x}}_{n}^{T} = \frac{1}{N}\hat{\bm{X}}^{T}\hat{\bm{X}}$, where $\hat{\bm{x}}_{n} = \bm{x}_{n} - \hat{\bm{\mu}}$ is the mean subtracted feature vector.  However, PCA can also be computed by finding the eigenvectors of the inner product matrix $\bm{X}\bm{X}^{T}$.  This allows the production of nonlinear embeddings by taking advantage of the kernel trick.  This approach is known as Kernel PCA (Schoelkopf 1998). 
 
 \paragraph{Kernel MDS}
 

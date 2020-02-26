@@ -30,7 +30,7 @@
 \contentsline {paragraph}{Kernel PCA}{37}{section*.24}
 \contentsline {paragraph}{Kernel MDS}{37}{section*.25}
 \contentsline {paragraph}{Kernel FDA (KDA)}{37}{section*.26}
-\contentsline {subsubsection}{\numberline {2.2.5.2}Graph-based Methods}{37}{subsubsection.2.2.5.2}
+\contentsline {subsubsection}{\numberline {2.2.5.2}Graph-based Methods}{38}{subsubsection.2.2.5.2}
 \contentsline {paragraph}{Terminology}{38}{section*.27}
 \contentsline {paragraph}{$\bm {K}$-Nearest Neighbor Graph}{39}{section*.29}
 \contentsline {paragraph}{$\bm {\epsilon }$-Neighborhood Graph}{40}{section*.30}
@@ -50,7 +50,7 @@
 \contentsline {subsection}{\numberline {2.2.6}Latent Variable Models}{49}{subsection.2.2.6}
 \contentsline {subsubsection}{\numberline {2.2.6.1}General Latent Variable Model (GLVM)}{49}{subsubsection.2.2.6.1}
 \contentsline {paragraph}{Factor Analysis (FA)}{49}{section*.37}
-\contentsline {paragraph}{Probabilistic PCA (PPCA)}{49}{section*.38}
+\contentsline {paragraph}{Probabilistic PCA (PPCA)}{50}{section*.38}
 \contentsline {paragraph}{Supervised PCA}{50}{section*.39}
 \contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{51}{section*.40}
 \contentsline {subparagraph}{Discriminative Supervised PCA}{51}{section*.41}
@@ -67,7 +67,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Ranking Loss}{52}{subsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.1.1}Pairwise Loss}{52}{subsubsection.2.3.1.1}
 \contentsline {subsubsection}{\numberline {2.3.1.2}Contrastive Loss}{52}{subsubsection.2.3.1.2}
-\contentsline {subsubsection}{\numberline {2.3.1.3}Triplet Loss}{52}{subsubsection.2.3.1.3}
+\contentsline {subsubsection}{\numberline {2.3.1.3}Triplet Loss}{53}{subsubsection.2.3.1.3}
 \contentsline {subsubsection}{\numberline {2.3.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{53}{subsubsection.2.3.1.4}
 \contentsline {subsubsection}{\numberline {2.3.1.5}FaceNet}{53}{subsubsection.2.3.1.5}
 \contentsline {subsubsection}{\numberline {2.3.1.6}Siamese Neural Networks}{53}{subsubsection.2.3.1.6}
