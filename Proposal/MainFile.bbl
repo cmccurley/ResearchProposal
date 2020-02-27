@@ -1,4 +1,4 @@
-\begin{thebibliography}{66}
+\begin{thebibliography}{69}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -164,6 +164,13 @@ P.~Gader, A.~Zare, R.~Close, J.~Aitken, and G.~Tuell.
 \bibitem[Geng et~al.(2017)Geng, Ji, and Zhao]{Geng2017TargetDetection}
 Xiurui Geng, Luyan Ji, and Yongchao Zhao.
 \newblock The basic equation for target detection in remote sensing, 2017.
+
+\bibitem[Ghojogh et~al.(2019)Ghojogh, Karray, and
+  Crowley]{Ghojogh2019KDATutorial}
+Benyamin Ghojogh, Fakhri Karray, and Mark Crowley.
+\newblock Fisher and kernel fisher discriminant analysis: Tutorial.
+\newblock \emph{CoRR}, abs/1906.09436, 2019.
+\newblock URL \url{https://arxiv.org/abs/1906.09436}.
 
 \bibitem[Glenn et~al.()Glenn, Zare, Gader, and Dranishnikov]{MUUFLScoringCode}
 T.~Glenn, A.~Zare, P.~Gader, and D.~Dranishnikov.
@@ -420,12 +427,24 @@ E.~Vural and C.~Guillemot.
 \newblock \emph{CoRR}, abs/1507.05880, 2018.
 \newblock URL \url{http://arxiv.org/abs/1507.05880}.
 
+\bibitem[Wang(2012)]{Wang2014KPCAReview}
+Quan Wang.
+\newblock Kernel principal component analysis and its applications in face
+  recognition and active shape models.
+\newblock \emph{CoRR}, abs/1207.3538, 2012.
+\newblock URL \url{http://arxiv.org/abs/1207.3538}.
+
 \bibitem[Wang et~al.(2016)Wang, Xie, and Wu]{Wang2016OrthogonalLDA}
 Yong Wang, Jian-Bin Xie, and Yi~Wu.
 \newblock Orthogonal discriminant analysis revisited.
 \newblock \emph{Pattern Recognition Letters}, 84:\penalty0 149 -- 155, 2016.
 \newblock ISSN 0167-8655.
 \newblock \doi{https://doi.org/10.1016/j.patrec.2016.09.010}.
+
+\bibitem[Webb(2002)]{Webb2002KMDS}
+Andrew Webb.
+\newblock A kernel approach to metric multidimensional scaling.
+\newblock pages 613--629, 02 2002.
 
 \bibitem[Webb and Lowe(1990)]{Webb1990MLPLDA}
 Andrew~R Webb and David Lowe.

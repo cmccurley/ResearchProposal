@@ -25,27 +25,28 @@ I was expecting a `,' or a `}'---line 219 of file BibFiles/references.bib
  :  number = {2}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 474 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 497 of file BibFiles/references.bib
  :  
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-"{" immediately follows a field name---line 1428 of file BibFiles/references.bib
+"{" immediately follows a field name---line 1459 of file BibFiles/references.bib
  :  booktitl\part
  :               {title}e={2011 IEEE 11th International Conference on Data Mining},
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2381 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 2412 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 2853 of file BibFiles/references.bib
+--line 2884 of file BibFiles/references.bib
 Warning--empty journal in Bishop1998GTM
 Warning--empty year in MUUFLScoringCode
 Warning--empty publisher in Kegl2008PrincipalManifoldsTextbook
 Warning--empty booktitle in Rish2008SupDimRedGLM
 Warning--empty journal in deSilva2002ConformalIsomap
+Warning--empty booktitle in Webb2002KMDS
 Warning--empty year in WeinbergerFalseAlarms
 Warning--empty title in Xu2011MI_Metric_Learning
 Warning--empty booktitle in Xu2011MI_Metric_Learning
