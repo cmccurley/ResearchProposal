@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  27 FEB 2020 16:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  27 FEB 2020 16:10
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -996,10 +996,10 @@ Package pdftex.def Info: example-image-a.png used on input line 228.
 File: example-image-a.png Graphic file (type png)
 
 <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 302.
+Package pdftex.def Info: example-image-a.png used on input line 301.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
  [39]
-Overfull \hbox (8.66458pt too wide) in paragraph at lines 312--314
+Overfull \hbox (8.66458pt too wide) in paragraph at lines 311--313
  []$\OML/cmm/b/it/12 $\OT1/cmss/bx/n/12 -Neighborhood Graph[] \OT1/cmss/m/n/12
  . An-other method for graph con-struc-tion is to use $\OML/cmm/m/it/12 $\OT1/
 cmss/m/n/12 -neighborhoods 
@@ -1008,24 +1008,29 @@ cmss/m/n/12 -neighborhoods
 [40]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 320.
+Package pdftex.def Info: example-image-a.png used on input line 319.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
  [41]
-Underfull \hbox (badness 10000) detected at line 333
+Underfull \hbox (badness 10000) detected at line 332
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 339
+Underfull \hbox (badness 10000) detected at line 338
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 341
+Underfull \hbox (badness 10000) detected at line 340
 [][][]
  []
 
 [42] [43] [44] [45] [46] [47] [48] [49] [50] [51]
+Underfull \hbox (badness 10000) detected at line 541
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 542
 [][][]
  []
@@ -1041,13 +1046,8 @@ Underfull \hbox (badness 10000) detected at line 544
  []
 
 
-Underfull \hbox (badness 10000) detected at line 545
-[][][]
- []
-
-
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 553.
+(hyperref)                than one, level fixed on input line 552.
 
 [52]) [53]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
@@ -1137,7 +1137,11 @@ Missing character: There is no © in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
  [61]
-[62] [63]
+[62]
+Missing character: There is no â in font cmss12!
+Missing character: There is no € in font cmss12!
+Missing character: There is no “ in font cmss12!
+ [63]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1165,13 +1169,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 8917 strings out of 493323
- 141255 string characters out of 3139067
- 232514 words of memory out of 3000000
- 11923 multiletter control sequences out of 15000+200000
+ 8922 strings out of 493323
+ 141360 string characters out of 3139067
+ 232587 words of memory out of 3000000
+ 11927 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,17n,42p,2975b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,17n,42p,2975b,612s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/
@@ -1191,9 +1195,9 @@ public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on MainFile.pdf (66 pages, 1779160 bytes).
+Output written on MainFile.pdf (66 pages, 1780571 bytes).
 PDF statistics:
- 1314 PDF objects out of 1440 (max. 8388607)
- 290 named destinations out of 1000 (max. 500000)
+ 1321 PDF objects out of 1440 (max. 8388607)
+ 291 named destinations out of 1000 (max. 500000)
  548 words of extra memory for PDF output out of 10000 (max. 10000000)
 

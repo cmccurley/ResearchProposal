@@ -273,8 +273,7 @@ Additionally, instead of representing feature vectors in terms of kernels $\phi(
 Kernel functions play an important role in the dimensionality reduction literature for both applying nonlinearity to inherently linear problems and in defining similarity measures for graph-based manifold learning methods.  The kernelization of three traditionally linear manifold learning methods, namely: PCA, MDS and LDA, is briefly described in the following.
 
 \paragraph{Kernel PCA}
-\citep{Wang2014KPCAReview}
-Section \ref{sec:PCA} showed how PCA could be used to compute linear low-dimensional embeddings of data.  This process involved finding the eigenvectors of the empirical data covariance matrix $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}\hat{\bm{x}}_{n}\hat{\bm{x}}_{n}^{T} = \frac{1}{N}\hat{\bm{X}}^{T}\hat{\bm{X}}$, where $\hat{\bm{x}}_{n} = \bm{x}_{n} - \hat{\bm{\mu}}$ is the mean subtracted feature vector.  However, PCA can also be computed by finding the eigenvectors of the inner product matrix $\bm{X}\bm{X}^{T}$.  This allows the production of nonlinear embeddings by taking advantage of the kernel trick.  This approach is known as Kernel PCA (Schoelkopf 1998). 
+Section \ref{sec:PCA} showed how PCA could be used to compute linear low-dimensional embeddings of data.  This process involved finding the eigenvectors of the empirical data covariance matrix $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}\hat{\bm{x}}_{n}\hat{\bm{x}}_{n}^{T} = \frac{1}{N}\hat{\bm{X}}^{T}\hat{\bm{X}}$, where $\hat{\bm{x}}_{n} = \bm{x}_{n} - \hat{\bm{\mu}}$ is the mean subtracted feature vector.  However, PCA can also be computed by finding the eigenvectors of the inner product matrix $\bm{X}\bm{X}^{T}$ \citep{Murphy2012,Wang2014KPCAReview}.  This allows the production of nonlinear embeddings by taking advantage of the kernel trick.  This approach is known as Kernel PCA \citep{Scholkopf1999KPCA}. 
 
 \paragraph{Kernel MDS}
 \citep{Webb2002KMDS}

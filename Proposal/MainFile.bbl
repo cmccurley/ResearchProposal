@@ -1,4 +1,4 @@
-\begin{thebibliography}{69}
+\begin{thebibliography}{70}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -311,6 +311,13 @@ Jos{\'e}~Francisco Ruiz-Mu{\~n}oz, Mauricio Orozco-Alzate, and Germ{\'a}n
 \newblock Multiple instance learning-based birdsong classification using
   unsupervised recording segmentation.
 \newblock In \emph{IJCAI}, 2015.
+
+\bibitem[Sch\"{o}lkopf et~al.(1999)Sch\"{o}lkopf, Smola, and
+  M\"{u}ller]{Scholkopf1999KPCA}
+Bernhard Sch\"{o}lkopf, Alexander~J. Smola, and Klaus-Robert M\"{u}ller.
+\newblock \emph{Kernel Principal Component Analysis}, page 327–352.
+\newblock MIT Press, Cambridge, MA, USA, 1999.
+\newblock ISBN 0262194163.
 
 \bibitem[Schroff et~al.(2015)Schroff, Kalenichenko, and
   Philbin]{Schroff2015FaceNet}
