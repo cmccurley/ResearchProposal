@@ -527,8 +527,20 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 
 \subsection{Multiple Instance Learning on Manifolds}
 
+At the time of this literature review, very few manifold learning and dimensionality reduction approaches have been developed with the weak learning paradigm in mind.
+
+Among the developed MIL dimensionality reduction methods, even fewer were designed explicitly for discrimination tasks.  A few methods have been developed for bag-level classification \cite{Sun2010MIDR, Chai2014MIDA,Zhu2018MIDRSparsity, Xu2011MI_Metric_Learning}.    Among the literature, few DR approaches were developed for instance-level classification. Xu et al. developed a large-margin based weakly supervised dimensionality reduction approach \citep{Xu2014LargeMarginWeaklySupervisedDR}.  Their approach uses information contained in weak labels to maximize a margin between differing classes. However, their method assumes that labels are provided as rankings of semantic similarity and pairs of samples are taken into consideration, jointly. This does not correspond directly to the multiple instance learning problem formulation, so it will be discussed in Section \ref{sec:MetricEmedding} where it is more appropriate.
+
+
+
+\paragraph{LDA-Based}
+
+\paragraph{Neural-Based}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Metric Embedding %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Metric Embedding}
+\section{Metric Embedding} \label{sec:MetricEmedding}
 
 The concepts of ``near" and ``far" are very powerful and useful utilities in everyday life.  They classify the relationship between two ``primitives" as being similar or dissimilar, as well as the degree of compatibility \citep{Thorstensen2009ManifoldThesis}. As an example, a medical doctor might consider a machine learning researcher and a software engineer as being similar (near), because they both perform research for computer applications.  However, the same researcher and engineer would likely consider their jobs as being very disparate (far) based on the details of their work.  In order to capture this abstraction of distance, a \textit{metric space} is defined as a mathematical construction  of this vague generality.
 

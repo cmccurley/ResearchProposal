@@ -1,4 +1,4 @@
-\begin{thebibliography}{70}
+\begin{thebibliography}{71}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -482,6 +482,12 @@ Daniela~M. Witten and Robert Tibshirani.
 \newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part B
   (Cybernetics)}, 35\penalty0 (6):\penalty0 1098--1107, Dec 2005.
 \newblock ISSN 1083-4419.
+
+\bibitem[Xu et~al.(2014)Xu, Tao, and Rui]{Xu2014LargeMarginWeaklySupervisedDR}
+C.~Xu, D.~Tao, and Y.~Rui.
+\newblock Large-margin weakly supervised dimensionality reduction.
+\newblock \emph{31st International Conference on Machine Learning, ICML 2014},
+  3:\penalty0 2472--2482, 01 2014.
 
 \bibitem[{Xu} et~al.(){Xu}, {Ping}, and {Campbell}]{Xu2011MI_Metric_Learning}
 Y.~{Xu}, W.~{Ping}, and A.~T. {Campbell}.
