@@ -1,4 +1,4 @@
-\begin{thebibliography}{72}
+\begin{thebibliography}{80}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -95,6 +95,15 @@ B.~Chaudhuri and S.~Parui.
 \newblock \emph{Defence Science Journal}, 45:\penalty0 285--291, 04 1995.
 \newblock \doi{10.14429/dsj.45.4135}.
 
+\bibitem[Chen et~al.(2018)Chen, Wang, Li, and
+  Sun]{Chen2018RobustSemiSupManifoldLearning}
+M.~Chen, J.~Wang, X.~Li, and X.~Sun.
+\newblock Robust semi-supervised manifold learning algorithm for
+  classification.
+\newblock \emph{Mathematical Problems in Engineering}, 2018:\penalty0 1--8, 02
+  2018.
+\newblock \doi{10.1155/2018/2382803}.
+
 \bibitem[Cheplygina et~al.(2019)Cheplygina, Bruijne, and
   Pluim]{Cheplygina2019MILSurvey}
 V.~Cheplygina, M.~Bruijne, and J.~P.~W. Pluim.
@@ -177,6 +186,15 @@ T.~Glenn, A.~Zare, P.~Gader, and D.~Dranishnikov.
 \newblock Bullwinkle: Scoring code for sub-pixel targets.
 \newblock URL \url{https://github.com/GatorSense/MUUFLGulfport/}.
 
+\bibitem[Hong et~al.(2019)Hong, Yokoya, Ge, Chanussot, and
+  Zhu]{Hong2019LearnableManifoldAlignment}
+D.~Hong, N.~Yokoya, N.~Ge, J.~Chanussot, and X.~X. Zhu.
+\newblock Learnable manifold alignment (lema): A semi-supervised cross-modality
+  learning framework for land cover and land use classification.
+\newblock \emph{ISPRS Journal of Photogrammetry and Remote Sensing},
+  147:\penalty0 193 -- 205, 2019.
+\newblock ISSN 0924-2716.
+
 \bibitem[Huang et~al.(2007)Huang, Ramesh, Berg, and Learned-Miller]{LFW}
 Gary~B. Huang, Manu Ramesh, Tamara Berg, and Erik Learned-Miller.
 \newblock Labeled faces in the wild: A database for studying face recognition
@@ -237,6 +255,14 @@ K.~P. Murphy.
 \newblock \emph{Machine Learning: A Probabilistic Perspective}.
 \newblock The MIT Press, 2012.
 \newblock ISBN 0262018020, 9780262018029.
+
+\bibitem[{Navaratnam} et~al.(2007){Navaratnam}, {Fitzgibbon}, and
+  {Cipolla}]{Navaratnam2007JointManifoldSemiSupRegression}
+R.~{Navaratnam}, A.~W. {Fitzgibbon}, and R.~{Cipolla}.
+\newblock The joint manifold model for semi-supervised multi-valued regression.
+\newblock In \emph{2007 IEEE 11th International Conference on Computer Vision},
+  pages 1--8, Oct 2007.
+\newblock \doi{10.1109/ICCV.2007.4408976}.
 
 \bibitem[Nickel and Kiela(2017)]{Nickel2017PoincareEmbeddings}
 M.~Nickel and D.~Kiela.
@@ -360,6 +386,13 @@ Kihyuk Sohn.
 C.~O.~S. Sorzano, J.~Vargas, and A.~Pascual Montano.
 \newblock A survey of dimensionality reduction techniques, 2014.
 
+\bibitem[{Stanley III} et~al.(2018){Stanley III}, Wolf, and
+  Krishnaswamy]{Stanley2019ManAlignmentFeatureCorrespondence}
+J.~S. {Stanley III}, G.~Wolf, and S.~Krishnaswamy.
+\newblock Manifold alignment with feature correspondence.
+\newblock \emph{CoRR}, abs/1810.00386, 2018.
+\newblock URL \url{http://arxiv.org/abs/1810.00386}.
+
 \bibitem[Sun et~al.(2010)Sun, Ng, and Shou]{Sun2010MIDR}
 Yu-Yin Sun, Michael~K. Ng, and Zhi-Hua Shou.
 \newblock Multi-instance dimensionality reduction.
@@ -408,6 +441,11 @@ I.~W. Tsang and J.~T. Kwok.
 \newblock URL
   \url{http://papers.nips.cc/paper/3005-large-scale-sparsified-manifold-regularization.pdf}.
 
+\bibitem[Tuia and Camps-Valls(2015)]{Tuia2015KernelManifoldAlignment}
+D.~Tuia and G.~Camps-Valls.
+\newblock Kernel manifold alignment.
+\newblock 04 2015.
+
 \bibitem[van~der Maaten et~al.(2007)van~der Maaten, Postma, and
   Herik]{VanDerMaaten2009DRReview}
 L.~van~der Maaten, E.~Postma, and H.~Herik.
@@ -433,6 +471,21 @@ E.~Vural and C.~Guillemot.
   manifold learning.
 \newblock \emph{CoRR}, abs/1507.05880, 2018.
 \newblock URL \url{http://arxiv.org/abs/1507.05880}.
+
+\bibitem[Wang and Mahadevan(2010)]{Wang2010MultiscaleManAlignment}
+C.~Wang and S.~Mahadevan.
+\newblock Multiscale manifold alignment.
+\newblock 09 2010.
+
+\bibitem[Wang and Mahadevan(2011)]{Wang2011HeteroDomainAdaptationManAlignment}
+C.~Wang and S.~Mahadevan.
+\newblock Heterogeneous domain adaptation using manifold alignment.
+\newblock In \emph{Proceedings of the Twenty-Second International Joint
+  Conference on Artificial Intelligence - Volume Volume Two}, IJCAI'11, pages
+  1541--1546. AAAI Press, 2011.
+\newblock ISBN 978-1-57735-514-4.
+\newblock \doi{10.5591/978-1-57735-516-8/IJCAI11-259}.
+\newblock URL \url{http://dx.doi.org/10.5591/978-1-57735-516-8/IJCAI11-259}.
 
 \bibitem[Wang(2012)]{Wang2014KPCAReview}
 Quan Wang.
@@ -489,12 +542,6 @@ Hui Wu.
   (Cybernetics)}, 35\penalty0 (6):\penalty0 1098--1107, Dec 2005.
 \newblock ISSN 1083-4419.
 
-\bibitem[Xu et~al.(2014)Xu, Tao, and Rui]{Xu2014LargeMarginWeaklySupervisedDR}
-C.~Xu, D.~Tao, and Y.~Rui.
-\newblock Large-margin weakly supervised dimensionality reduction.
-\newblock \emph{31st International Conference on Machine Learning, ICML 2014},
-  3:\penalty0 2472--2482, 01 2014.
-
 \bibitem[{Xu} et~al.(){Xu}, {Ping}, and {Campbell}]{Xu2011MI_Metric_Learning}
 Y.~{Xu}, W.~{Ping}, and A.~T. {Campbell}.
 
@@ -505,6 +552,14 @@ S.~{Yan}, D.~{Xu}, B.~{Zhang}, H.~{Zhang}, Q.~{Yang}, and S.~{Lin}.
   dimensionality reduction.
 \newblock \emph{IEEE Transactions on Pattern Analysis and Machine
   Intelligence}, 29\penalty0 (1):\penalty0 40--51, Jan 2007.
+
+\bibitem[{Z. Zhang} et~al.(2008){Z. Zhang}, {H. Zha}, and {M.
+  Zhang}]{Zhang2008SpectralSemiSupManifoldLearning}
+{Z. Zhang}, {H. Zha}, and {M. Zhang}.
+\newblock Spectral methods for semi-supervised manifold learning.
+\newblock In \emph{2008 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 1--6, June 2008.
+\newblock \doi{10.1109/CVPR.2008.4587381}.
 
 \bibitem[Zare(2008)]{Zare2008Thesis}
 A.~Zare.
@@ -519,6 +574,16 @@ Alina Zare, Changzhe Jiao, and Taylor Glenn.
 \newblock \emph{IEEE Trans. Pattern Anal. Mach. Inteli.}, 40\penalty0
   (10):\penalty0 2342--2354, Oct. 2018.
 \newblock \doi{10.1109/TPAMI.2017.2756632}.
+
+\bibitem[{Zhang} et~al.(2014){Zhang}, {Zheng}, {Liu}, {Sun}, {Wang}, and
+  {Fu}]{Zhang2014SemiSupManLearningFusion}
+Y.~{Zhang}, X.~{Zheng}, G.~{Liu}, X.~{Sun}, H.~{Wang}, and K.~{Fu}.
+\newblock Semi-supervised manifold learning based multigraph fusion for
+  high-resolution remote sensing image classification.
+\newblock \emph{IEEE Geoscience and Remote Sensing Letters}, 11\penalty0
+  (2):\penalty0 464--468, Feb 2014.
+\newblock ISSN 1545-598X.
+\newblock \doi{10.1109/LGRS.2013.2267091}.
 
 \bibitem[Zhang et~al.(2018)Zhang, Zhang, Qin, Zhang, Li, and
   Li]{Zhang2018IsomapMultiManifold}

@@ -57,13 +57,18 @@
 \contentsline {subsubsection}{\numberline {2.2.6.2}Generative Topographic Mapping (GTM)}{51}{subsubsection.2.2.6.2}
 \contentsline {subsection}{\numberline {2.2.7}Competitive Hebbian Learning}{51}{subsection.2.2.7}
 \contentsline {subsection}{\numberline {2.2.8}Deep Learning}{51}{subsection.2.2.8}
-\contentsline {subsection}{\numberline {2.2.9}Current State of the Art}{51}{subsection.2.2.9}
-\contentsline {subsection}{\numberline {2.2.10}UMAP}{51}{subsection.2.2.10}
-\contentsline {subsection}{\numberline {2.2.11}Stochastic Neighbor Embedding (SNE and t-SNE)}{51}{subsection.2.2.11}
-\contentsline {subsection}{\numberline {2.2.12}NCA}{51}{subsection.2.2.12}
-\contentsline {subsection}{\numberline {2.2.13}Multiple Instance Learning on Manifolds}{51}{subsection.2.2.13}
-\contentsline {paragraph}{LDA-Based}{55}{section*.42}
-\contentsline {paragraph}{Neural-Based}{55}{section*.43}
+\contentsline {paragraph}{Autoencoders}{51}{section*.42}
+\contentsline {paragraph}{Graph Convolutional Networks}{51}{section*.43}
+\contentsline {paragraph}{M3DNet}{51}{section*.44}
+\contentsline {paragraph}{Paper in Papers channel}{51}{section*.45}
+\contentsline {subsection}{\numberline {2.2.9}Current State of the Art}{52}{subsection.2.2.9}
+\contentsline {subsection}{\numberline {2.2.10}UMAP}{52}{subsection.2.2.10}
+\contentsline {subsection}{\numberline {2.2.11}Stochastic Neighbor Embedding (SNE and t-SNE)}{52}{subsection.2.2.11}
+\contentsline {subsection}{\numberline {2.2.12}NCA}{52}{subsection.2.2.12}
+\contentsline {subsection}{\numberline {2.2.13}Multiple Instance Learning on Manifolds}{52}{subsection.2.2.13}
+\contentsline {paragraph}{LDA-Based}{55}{section*.46}
+\contentsline {paragraph}{Neural-Based}{55}{section*.47}
+\contentsline {paragraph}{Metric Embedding}{55}{section*.48}
 \contentsline {section}{\numberline {2.3}Metric Embedding}{55}{section.2.3}
 \contentsline {subsubsection}{\numberline {2.3.0.1}Metric Learning}{56}{subsubsection.2.3.0.1}
 \contentsline {subsection}{\numberline {2.3.1}Ranking Loss}{56}{subsection.2.3.1}

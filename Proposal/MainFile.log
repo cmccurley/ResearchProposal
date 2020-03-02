@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  2 MAR 2020 10:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  2 MAR 2020 14:30
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -1026,29 +1026,29 @@ Underfull \hbox (badness 10000) detected at line 340
  []
 
 [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54]
-Underfull \hbox (badness 10000) detected at line 567
+Underfull \hbox (badness 10000) detected at line 572
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 568
+Underfull \hbox (badness 10000) detected at line 573
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 569
+Underfull \hbox (badness 10000) detected at line 574
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 570
+Underfull \hbox (badness 10000) detected at line 575
 [][][]
  []
 
 [55]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 578.
+(hyperref)                than one, level fixed on input line 583.
 
 [56]) [57]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
@@ -1142,16 +1142,16 @@ Missing character: There is no ¡ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [67]
+ [67] [68]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [68] [69]) (Chapters/bio.tex)
+ [69] [70]) (Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
- [70]
+ [71]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (MainFile.aux
 (Chapters/acknowledgements.aux) (Chapters/TOC.aux) (Chapters/abbreviations.aux)
@@ -1170,13 +1170,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 8937 strings out of 493323
- 141740 string characters out of 3139067
- 232698 words of memory out of 3000000
- 11934 multiletter control sequences out of 15000+200000
+ 8975 strings out of 493323
+ 143234 string characters out of 3139067
+ 233202 words of memory out of 3000000
+ 11958 multiletter control sequences out of 15000+200000
  13025 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,17n,42p,2975b,612s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,17n,42p,2975b,632s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/
@@ -1196,9 +1196,9 @@ public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on MainFile.pdf (70 pages, 1796317 bytes).
+Output written on MainFile.pdf (71 pages, 1803595 bytes).
 PDF statistics:
- 1375 PDF objects out of 1440 (max. 8388607)
- 299 named destinations out of 1000 (max. 500000)
+ 1411 PDF objects out of 1440 (max. 8388607)
+ 313 named destinations out of 1000 (max. 500000)
  548 words of extra memory for PDF output out of 10000 (max. 10000000)
 
