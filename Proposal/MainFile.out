@@ -41,7 +41,7 @@
 \BOOKMARK [2][-]{subsection.2.2.10}{2.2.10 UMAP}{section.2.2}% 41
 \BOOKMARK [2][-]{subsection.2.2.11}{2.2.11 Stochastic Neighbor Embedding \(SNE and t-SNE\)}{section.2.2}% 42
 \BOOKMARK [2][-]{subsection.2.2.12}{2.2.12 NCA}{section.2.2}% 43
-\BOOKMARK [2][-]{subsection.2.2.13}{2.2.13 Multiple Instance Learning on Manifolds}{section.2.2}% 44
+\BOOKMARK [2][-]{subsection.2.2.13}{2.2.13 Weak Learning on Manifolds}{section.2.2}% 44
 \BOOKMARK [1][-]{section.2.3}{2.3 Metric Embedding}{chapter.2}% 45
 \BOOKMARK [2][-]{subsubsection.2.3.0.1}{2.3.0.1 Metric Learning}{section.2.3}% 46
 \BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Ranking Loss}{section.2.3}% 47

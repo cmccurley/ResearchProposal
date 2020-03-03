@@ -66,7 +66,7 @@
 \contentsline {subsection}{\numberline {2.2.10}UMAP}{52}{subsection.2.2.10}
 \contentsline {subsection}{\numberline {2.2.11}Stochastic Neighbor Embedding (SNE and t-SNE)}{52}{subsection.2.2.11}
 \contentsline {subsection}{\numberline {2.2.12}NCA}{52}{subsection.2.2.12}
-\contentsline {subsection}{\numberline {2.2.13}Multiple Instance Learning on Manifolds}{52}{subsection.2.2.13}
+\contentsline {subsection}{\numberline {2.2.13}Weak Learning on Manifolds}{52}{subsection.2.2.13}
 \contentsline {paragraph}{MIL-Based}{53}{section*.46}
 \contentsline {paragraph}{General Weak Supervision}{56}{section*.47}
 \contentsline {paragraph}{Metric Embedding}{56}{section*.48}
@@ -75,7 +75,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Ranking Loss}{57}{subsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.1.1}Pairwise Loss}{57}{subsubsection.2.3.1.1}
 \contentsline {subsubsection}{\numberline {2.3.1.2}Contrastive Loss}{57}{subsubsection.2.3.1.2}
-\contentsline {subsubsection}{\numberline {2.3.1.3}Triplet Loss}{57}{subsubsection.2.3.1.3}
+\contentsline {subsubsection}{\numberline {2.3.1.3}Triplet Loss}{58}{subsubsection.2.3.1.3}
 \contentsline {subsubsection}{\numberline {2.3.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{58}{subsubsection.2.3.1.4}
 \contentsline {subsubsection}{\numberline {2.3.1.5}FaceNet}{58}{subsubsection.2.3.1.5}
 \contentsline {subsubsection}{\numberline {2.3.1.6}Siamese Neural Networks}{58}{subsubsection.2.3.1.6}
