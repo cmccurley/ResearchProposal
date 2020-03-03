@@ -29,7 +29,16 @@ Multiple Instance Learning via Embedded Instance Selection
 
 \subsection{Multiple Instance Classification}
 
+citation-KNN, RIPPER-MI, BP-MIP, ID3-MI, MI-SVM \cite{Zhu2018MIDRSparsity}
+
+
+\cite{Wei2016ImageBagGenerators}
+
 \subsection{Multiple Instance Boosting}
+
+
+\subsection{Multiple Instance Learning with Manifold Bags?}
+Baenko et al. introduced the framework of MIL fusing manifold bags  \cite{Babenko2011MILManifoldBags}.  Their work claimed that instead of finite sets of instances, bags are inherently better represented as low-dimensional manifolds in a high-dimensional feature space.  They considered the scenario of classifying whether or not an image contained a face.  In this scenario, the entire image was considered to be a bag, and patches of the image were considered as individual instances.  It was assumed that the collection of instances collectively formed a low-dimensional manifold.  This work laid the groundwork for learning with manifold bags as well as  proved PAC learnability under this framework.
 
 
 
@@ -536,23 +545,62 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 
 \subsection{Multiple Instance Learning on Manifolds}
 Although the specific feature vectors being used in remote sensing applications can be very high-dimensional, the underlying structure of a given dataset set is usually governed by only a few variables. Either implicitly or explicitly, most learning algorithms exploit this underlying structure to make learning and inference possible.
-If it is available, relevant information for a specific task can generally be incorporated to provide supervision and improve the performance of unsupervised methods.  Supervised methods for nonlinear dimensionality reduction assume that the samples lie on a manifold parameterized by multiple latent factors.  However, different from traditional manifold learning (where the goal is to preserve the relationships between samples), these methods find the most discriminative low-dimensional representations for classification tasks \citep{Wu2015MILImageManifoldThesis}.  The optimal embedding uses class label information to  minimize distances between nearby points with the same class label while separating samples of different classes.  Although supervised manifold learning often outperforms unsupervised methods for classification tasks, this learning cannot be done directly in  MIL because of the uncertainty on the labels \citep{Carbonneau2016MILSurvey}.  Moreover, fully-annotated samples are often difficult or impossible to obtain in many remote sensing applications \citep{Zare2016MIACE}.  Even with the successes of manifold learning, most the of the previous work has mainly focused on either fully supervised or unsupervised learning.   Existing work in weakly supervised learning on manifolds has primarily considered the semi-supervised setting \cite{Zhang2008SpectralSemiSupManifoldLearning,Chen2018RobustSemiSupManifoldLearning,Zhang2014SemiSupManLearningFusion,Hong2019LearnableManifoldAlignment,Navaratnam2007JointManifoldSemiSupRegression,Stanley2019ManAlignmentFeatureCorrespondence,Tuia2015KernelManifoldAlignment,Wang2010MultiscaleManAlignment,Wang2011HeteroDomainAdaptationManAlignment}.  Methods in this category usually incorporate partially provided image labels and propagate the labels over the manifold approximated by the neighborhood graph on the images.  In a broad sense, however, different situations of weak supervision (and specifically, Multiple Instance  Learning), have not been well studied \citep{Wu2015MILImageManifoldThesis}.
+If it is available, relevant information for a specific task can generally be incorporated to provide supervision and improve the performance of unsupervised methods.  Supervised methods for nonlinear dimensionality reduction assume that the samples lie on a manifold parameterized by multiple latent factors.  However, different from traditional manifold learning (where the goal is to preserve the relationships between samples), these methods find the most discriminative low-dimensional representations for classification tasks \citep{Wu2015MILImageManifoldThesis}.  The optimal embedding uses class label information to  minimize distances between nearby points with the same class label while separating samples of different classes.  Although supervised manifold learning often outperforms unsupervised methods for classification tasks, this learning cannot be done directly in  MIL because of the uncertainty on the labels \citep{Carbonneau2016MILSurvey}.  Moreover, fully-annotated samples are often difficult or impossible to obtain in many remote sensing applications \citep{Zare2016MIACE}.  Even with the successes of manifold learning, most the of the previous work has mainly focused on either fully supervised or unsupervised learning.   Existing work in weakly supervised learning on manifolds has primarily considered the semi-supervised setting \citep{Zhang2008SpectralSemiSupManifoldLearning,Chen2018RobustSemiSupManifoldLearning,Zhang2014SemiSupManLearningFusion,Hong2019LearnableManifoldAlignment,Navaratnam2007JointManifoldSemiSupRegression,Stanley2019ManAlignmentFeatureCorrespondence,Tuia2015KernelManifoldAlignment,Wang2010MultiscaleManAlignment,Wang2011HeteroDomainAdaptationManAlignment}.  Methods in this category usually incorporate partially provided image labels and propagate the labels over the manifold approximated by the neighborhood graph on the images.  In a broad sense, however, different situations of weak supervision (specifically, Multiple Instance  Learning), have not been well studied \citep{Wu2015MILImageManifoldThesis}.
 
 
-Wu studied weakly supervised manifold learning for manifold factorization using image-level labels, where the labels were the variation of interest.  The primary idea was to use weak labels to find image pairs that should be more similar after removing unwanted image variation.  He used an alignment method constrained by Hessian regularization to learn a manifold regression, such that new test images would be projected smoothly into a space near neighboring input images.
+\paragraph{MIL-Based}
 
-Xu did a thing with large margin
+MIDR - \cite{Sun2010MIDR, Chai2014MIDA, Zhu2018MIDRSparsity, Ping2010MILDRMaxMargin, Kim2010LocalDRMIL}
 
-The first true experimentation was performed in \citep{Sun2010MIDR}.  In this work, Sun et al. showed that Principal Component Analysis (PCA) failed to incorporate bag-level label information and thus provided poor separation between positive and negative bags.  Additionally, Linear Discriminant Analysis (LDA) was used to project bags into a latent space which maximized between-bag separation, while minimizing within-bag dissimilarity.  However, LDA often mixed the latent bag representations due to the uncertainty of negative sample distributions in the positive bags.  To address these issues, Sun proposed Multiple Instance Dimensionality Reduction (MIDR) which optimized an objective through gradient descent to discover sparse, orthogonal projection vectors in the latent space.  Their approach relied on fitting a distribution of negative instances and applying maximum likelihood estimation.  This approach was later extended in \citep{Zhu2018MIDRSparsity} in attempt to improve sparsity.  Both of these methods rely on fitting a distribution of negative instances and determining positive instances as samples which have low likelihood of belonging to the distribution.  However, these approaches fail when the the target and background instances are metrically similar in the feature space.  For example, consider the data shown in Figure \ref{fig:swiss_roll}.  This image demonstrates the popular Swiss Roll dataset, which is a 2-dimensional manifold folded in 3-dimensions.  Assume that the data classes lie on separate ends of the manifold, and that samples are governed by a smooth labeling function.  In Figure \ref{fig:swiss_roll_3d}, the red samples denote one class while the blue represent another.  If using Euclidean (straight line) distance to measure dissimilarity, it would appear that many red samples are (untruly) close to the blue.  However, if an alternative distance metric such as geodesic distance (around the curve) is used to measure dissimilarity between samples, the true class distributions are better represented.  Figure \ref{fig:swiss_roll_2d} shows the unfolding of the manifold according to geodesic distance.  It can be observed that, after the unfolding, the classification problem was transformed from a nonlinear to a linear one.  Additionally, a dimension of the data was deemed unnecessary.
+The existing MIL manifold learning in the literature can be broken into two paradigms: LDA-based approaches and sparse, orthogonal matrix-based techniques \citep{Zhu2018MIDRSparsity}.  It should be noted, while this proposal addresses the problem of manifold learning  for instance-level classification, all MIL DR approaches in the literature were developed with bag-level classification in mind.  Additionally, all existing approaches are linear, meaning they may not work well if the underlying bag variation exhibits curvature.  The existing approaches are briefly described.
 
-It would, therefore, be beneficial to first transform the instance representations into more discriminable forms.  Most existing approaches in the literature extend LDA to distinguish between positive and negative bags \citep{Chai2014MIDA,Zhu2018MIDRSparsity}.  These methods typically rely on costly optimization procedures to maximize an objective for orthogonal and sparse projection vectors.  The work in \citep{Xu2011MI_Metric_Learning} investigated metric learning on sets of data (where each bag was a set) to learn an appropriate similarity metric to compare bags.  They do not go as far as to discriminate positive instances within the positive bags, nor do they propose positive target concepts. 
+MIDR and MI-ALM
+
+The first true MIL manifold learning experimentation was performed in \citep{Sun2010MIDR} under the orthogonal matrix-based paradigm.  In this work, Sun et al. showed that Principal Component Analysis (PCA) failed to incorporate bag-level label information and thus provided poor separation between positive and negative bags.  Additionally, traditional Linear Discriminant Analysis (LDA) was used to project bags into a latent space which maximized between-bag separation, while minimizing within-bag dissimilarity.  However, LDA often mixed the latent bag representations due to the uncertainty of negative sample distributions in the positive bags.  To address these issues, Sun et al. proposed Multiple Instance Dimensionality Reduction (MIDR) which optimized an objective through gradient descent to discover sparse, orthogonal projection vectors in the latent space.  The goal of MIDR is to discover a projection matrix $\bm{W} \in \mathbb{R}^{D \times d}$ which will increase discriminability between positive and negative bags in the latent embedding space.  If given the $k^{th}$ training bag, $\bm{B}_{k} = \{ \bm{x}_{k,1}, \dots, \bm{x}_{k,n_{k}} \}$ with corresponding binary bag-level label $L_k \subset \{0,1\}$, MIDR attempts to find a matrix $\bm{W}$ such that the projection of $\bm{B}_{k} \subset \mathbb{R}^{D}$ by $\bm{W}^{T}\bm{B}_{k} \subset \mathbb{R}^{d}$ increases the separation between positive and negative bags. The intuition is that the probability of the $k^{th}$ bag being positive $\Pr(L_{k}=1|\bm{W}^{T}\bm{B}_{k})$ should be close to one if it is positive and close to zero otherwise.  This can be achieved by minimizing the squared loss between the actual and predicted label of each bag
+\begin{align}
+	\min_{\bm{W}} \sum_{k=1}^{K} (\Pr(L_{k}=1|\bm{W}^{T}\bm{B}_{k}) - L_{k})^{2}
+	\label{eq:MIDR_orig_objective}
+\end{align}
+\noindent
+Taking advantage of the standard assumption, the posterior probability of a bag can be written in terms of the posterior probabilities of its instances
+\begin{align}
+	\Pr(L_{k}=1|\bm{W}^{T}\bm{B}_{k}) = \max_{n} \Pr(l_{k,n}=1|\bm{W}^{T}\bm{x}_{k,n}) 
+\end{align}
+Then Equation \ref{eq:MIDR_orig_objective} becomes 
+\begin{align}
+	\min_{\bm{W}} \sum_{k=1}^{K} (\max_{n} \Pr(l_{k,n}=1|\bm{W}^{T}\bm{x}_{k,n}) - L_{k})^{2}
+	\label{eq:MIDR_instance_objective}
+\end{align}
+\noindent
+From the objective, it is clear that in order to minimize the squared loss, the distances between the key positive instances and all negative instances should be as large as possible. Additionally, $\bm{W}$ is required to be orthogonal in order to guarantee the resulting latent features are uncorrelated and not redundant and sparse in attempt to improve interpret-ability.  This implies that the new feature representations of instances $\bm{x}_{kn}$ in bag $\bm{B}_{k}$ are formed by linear combinations of the features in the input feature space.  The MIDR optimization problem can be written succinctly as
+\begin{align}
+	\min_{\bm{W},\beta} f(\bm{W},\alpha) + \gamma ||\bm{W} ||_{1}  \quad \text{s.t.} \quad \bm{W}^{T}\bm{W} = \mathbb{I}_{d}
+\end{align}
+\noindent
+where $\gamma$ is a positive number which controls the balance between the sparsity term $||\bm{W}||_{1}$ and the fitting term $f(\bm{W},\alpha)=\sum_{k=1}^{K} (P_{k}(\bm{W},\beta) - L_{k})^{2}$.  In this case, 
+\begin{align}
+	P_{k}(\bm{W},\beta) = softmax_{}
+\end{align}
+
+
+
+  Their approach relied on fitting a distribution of negative instances and applying maximum likelihood estimation.  This approach was later extended in \citep{Zhu2018MIDRSparsity} in attempt to improve sparsity.  Both of these methods rely on fitting a distribution of negative instances and determining positive instances as samples which have low likelihood of belonging to the distribution. 
+
+MidLABS, MIDA, CLFDA
+
+
+Most existing approaches in the literature extend LDA to distinguish between positive and negative bags \citep{Chai2014MIDA,Zhu2018MIDRSparsity}.  These methods typically rely on costly optimization procedures to maximize an objective for orthogonal and sparse projection vectors.  The work in \citep{Xu2011MI_Metric_Learning} investigated metric learning on sets of data (where each bag was a set) to learn an appropriate similarity metric to compare bags.  They do not go as far as to discriminate positive instances within the positive bags, nor do they propose positive target concepts. 
 \textit{In fact, virtually all MIL DR methods in the literature are applied, solely, to predict bag-level labels.} While bag-level label prediction is useful in many remote sensing applications, such as region of interest (ROI) proposal for anomaly detection, they limit the the ability of learners to classify on the pixel or sample level.  To this end, methods for instance-level discriminative dimensionality reduction should be developed.  This point is demonstrated in by the embeddings of 3-dimensional quadratic surfaces as shown in Figures 
 
-The use of a traditional, unsupervised dimensionality reduction method to project the data into a 1-dimensional space managed to retain  topological ordering of the samples, but failed to promote class discriminability separability in the latent embedding space for both the separable and non-separable quadratic surfaces, as shown by Figures \ref{fig:quad_surface_lin_sep_sle_1d} and \ref{fig:quad_surface_non_sep_sle_1d}.  This embedding used sample-level labels.  However, the proposed work will relax the precision of the labels to bags as to comply with the labeling needs of many remote sensing problems.  This notion can be conceptualized by Figures \ref{fig:quad_surface_sep_bags} and \ref{fig:quad_surface_non_sep_bags}, where sets of data samples are used to form bags.  While Xu et al. proposed an importance term to weight samples believed to be true target exemplars, as those instances are more important in determining the bag-level label \citep{Xu2011MI_Metric_Learning}, to the author's knowledge, no work has been done to investigate instance-level discrimination through manifold learning/ dimensionality reduction.
 
-\paragraph{LDA-Based}
+\paragraph{General Weak Supervision}
 
-\paragraph{Neural-Based}
+Wu studied weakly supervised manifold learning for manifold factorization using image-level labels, where the labels were the variation of interest.  The primary idea was to use weak labels to find image pairs that should be more similar after removing unwanted image variation.  He used an alignment method constrained by Hessian regularization to learn a manifold regression, such that new test images would be projected smoothly into a space near neighboring input images. \cite{Wu2015MILImageManifoldThesis}
+
+Xu did a thing with large margin \cite{Xu2014LargeMarginWeaklySupervisedDR}
+
+Dense object Correspondence \cite{Gaur2017MILSemanticObjectCorrespondence}
+
 
 
 \paragraph{Metric Embedding}
@@ -617,6 +665,8 @@ Thorstensen thesis, Raducanu S-LE
 	\subsection{Manifold Regularization}
 	
 	\subsection{Multiple Instance Metric Learning}
+	
+	\cite{Xu2011MI_Metric_Learning}
 
 
 

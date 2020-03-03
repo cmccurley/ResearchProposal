@@ -1,4 +1,4 @@
-\begin{thebibliography}{80}
+\begin{thebibliography}{86}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,12 @@ Alexander~Hermans an~Lucas~Beyer and Bastian Leibe.
 \newblock In defense of the triplet loss for person re-identification.
 \newblock \emph{CoRR}, abs/1703.07737, 2017.
 \newblock URL \url{http://arxiv.org/abs/1703.07737}.
+
+\bibitem[Babenko et~al.(2011)Babenko, Verma, Dollár, and
+  Belongie]{Babenko2011MILManifoldBags}
+Boris Babenko, Nakul Verma, Piotr Dollár, and Serge Belongie.
+\newblock Multiple instance learning with manifold bags.
+\newblock pages 81--88, 01 2011.
 
 \bibitem[Baudat and Anouar(2000)]{Baudat2000GeneralizedDiscriminantAnalysis}
 G.~Baudat and F.~Anouar.
@@ -170,6 +176,14 @@ P.~Gader, A.~Zare, R.~Close, J.~Aitken, and G.~Tuell.
 \newblock Technical Report 570, University of Florida, Gainesville, FL, October
   2013.
 
+\bibitem[{Gaur} and {Manjunath}(2017)]{Gaur2017MILSemanticObjectCorrespondence}
+U.~{Gaur} and B.~S. {Manjunath}.
+\newblock Weakly supervised manifold learning for dense semantic object
+  correspondence.
+\newblock In \emph{2017 IEEE International Conference on Computer Vision
+  (ICCV)}, pages 1744--1752, Oct 2017.
+\newblock \doi{10.1109/ICCV.2017.192}.
+
 \bibitem[Geng et~al.(2017)Geng, Ji, and Zhao]{Geng2017TargetDetection}
 Xiurui Geng, Luyan Ji, and Yongchao Zhao.
 \newblock The basic equation for target detection in remote sensing, 2017.
@@ -280,6 +294,13 @@ E.~J. {Palomo} and E.~{Lopez-Rubio}.
 \newblock ISSN 2162-237X.
 \newblock \doi{10.1109/TNNLS.2016.2570124}.
 
+\bibitem[Ping et~al.(2010)Ping, Xu, Kexin, Chi, and
+  Furao]{Ping2010MILDRMaxMargin}
+Wei Ping, Ye~Xu, Ren Kexin, Chi-Hung Chi, and Shen Furao.
+\newblock Non-i.i.d. multi-instance dimensionality reduction by learning a
+  maximum bag margin subspace.
+\newblock volume~1, 01 2010.
+
 \bibitem[Raducanu and
   Dornaika(2012)]{Raducanu2012SupervisedNonlinearDimReduction}
 B.~Raducanu and F.~Dornaika.
@@ -337,6 +358,13 @@ Jos{\'e}~Francisco Ruiz-Mu{\~n}oz, Mauricio Orozco-Alzate, and Germ{\'a}n
 \newblock Multiple instance learning-based birdsong classification using
   unsupervised recording segmentation.
 \newblock In \emph{IJCAI}, 2015.
+
+\bibitem[{Saehoon Kim} and {Seungjin Choi}(2010)]{Kim2010LocalDRMIL}
+{Saehoon Kim} and {Seungjin Choi}.
+\newblock Local dimensionality reduction for multiple instance learning.
+\newblock In \emph{2010 IEEE International Workshop on Machine Learning for
+  Signal Processing}, pages 13--18, Aug 2010.
+\newblock \doi{10.1109/MLSP.2010.5589175}.
 
 \bibitem[Sch\"{o}lkopf et~al.(1999)Sch\"{o}lkopf, Smola, and
   M\"{u}ller]{Scholkopf1999KPCA}
@@ -514,6 +542,16 @@ Andrew~R Webb and David Lowe.
 \newblock ISSN 0893-6080.
 \newblock \doi{https://doi.org/10.1016/0893-6080(90)90019-H}.
 
+\bibitem[Wei and Zhou(2016)]{Wei2016ImageBagGenerators}
+Xiu-Shen Wei and Zhi-Hua Zhou.
+\newblock An empirical study on image bag generators for multi-instance
+  learning.
+\newblock \emph{Mach. Learn.}, 105\penalty0 (2):\penalty0 155–198, November
+  2016.
+\newblock ISSN 0885-6125.
+\newblock \doi{10.1007/s10994-016-5560-1}.
+\newblock URL \url{https://doi.org/10.1007/s10994-016-5560-1}.
+
 \bibitem[Weinberger()]{WeinbergerFalseAlarms}
 David Weinberger.
 \newblock Ai outside in: Machine learning's triangle of error.
@@ -541,6 +579,12 @@ Hui Wu.
 \newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part B
   (Cybernetics)}, 35\penalty0 (6):\penalty0 1098--1107, Dec 2005.
 \newblock ISSN 1083-4419.
+
+\bibitem[Xu et~al.(2014)Xu, Tao, and Rui]{Xu2014LargeMarginWeaklySupervisedDR}
+C.~Xu, D.~Tao, and Y.~Rui.
+\newblock Large-margin weakly supervised dimensionality reduction.
+\newblock \emph{31st International Conference on Machine Learning, ICML 2014},
+  3:\penalty0 2472--2482, 01 2014.
 
 \bibitem[{Xu} et~al.(){Xu}, {Ping}, and {Campbell}]{Xu2011MI_Metric_Learning}
 Y.~{Xu}, W.~{Ping}, and A.~T. {Campbell}.
