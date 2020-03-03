@@ -590,9 +590,37 @@ is the softmax approximation over $n$ of $\max (P_{k,1}(\bm{\bm{W}},\bm{\beta}),
 \noindent
 In \citep{Sun2010MIDR}, gradient descent was used to optimize the objective.  It was found that the newly developed method outperformed unsupervised instance-level dimensionality reduction approaches (applied to bags) for bag-level classification.  MIDR was later revisited by Zhu et al. where the optimization problem was reformulated using the intertial proximal alternating linearized minimization (iPALM) method \citep{Zhu2018MIDRSparsity}.  The advantage of this approach is that the problem variables can be managed sperately and updated effectively.  Additionally, the global convergence of MIDR was proved. 
 
-The other approach to dimensionality reduction with weak labels is by a LDA scheme.  
+The other existing approaches for dimensionality reduction with multiple instance learning follow a LDA scheme.  Multi-Instance Dimensionality reduction by Learning a mAximum Bag margin Subspace (MidLABS) \citep{Ping2010MILDRMaxMargin} applies LDA to find a projection vector which simultaneously maximizes between class scattering and minimizes within-class scattering.  MidLABS represents each bag as a neighborhood graph in order to take advantage of data structure and jointly constructs  the scatter matrices by evaluating the scattering between bags. Just like LDA, MidLABS maximizes the objective
+\begin{align}
+	\max_{\bm{w}} J(\bm{w})= \max_{\bm{w}} \frac{\bm{w}^{T}(\sum_{L_{i} \neq L_{j}}\bm{K}_{ij})\bm{w}}{\bm{w}^{T}(\sum_{L_{i} = L_{j}}\bm{K}_{ij})\bm{w}}
+\end{align}  
+\noindent
+where 
+\begin{align}
+	\bm{K}_{ij} = \frac{\sum_{a=1}^{n_{i}}\sum_{b=1}^{n_{j}} (\bm{x}_{ia} - \bm{x}_{jb})(\bm{x}_{ia} - \bm{x}_{jb})^{T}  }{n_{i}n_{j}} + C\frac{\sum_{c=1}^{m_{i}}\sum_{d=1}^{m_{j}} (\bm{e}_{ic} - \bm{e}_{jd})(\bm{e}_{ic} - \bm{x}_{jd})^{T}  }{n_{i}^{2}n_{j}^{2}}
+\end{align}
+\noindent
+\noindent
+where $\bm{x}_{ia}$ is the $a^{th}$ instance in the $i^{th}$ bag, $n_i$ is the total number of instances in the $i^{th}$ bag, $\bm{e}_{ic}$ is the $c^{th}$ edge in the $i^{th}$ bag and $m_{i}$ is the total number of edges in the $i^{th}$ bag.  With the between-class and within-class scatter matrices defined as
+\begin{align}
+	\bm{S}_{b} = \sum_{L_{i} \neq L_{j}}\bm{K}_{ij}
+\end{align}
+\noindent
+and
+\begin{align}
+	\bm{S}_{w} = \sum_{L_{i} = L_{j}}\bm{K}_{ij}
+\end{align}
+\noindent
+the problem formulation follows LDA exactly.
+
+In 2014, Chia et al. introduced Multiple-Instance Discriminant Analysis (MIDA) \citep{Chai2014MIDA}.  
+
+
+  Citation Local Fisher Linear Discriminant Analysis (CLFDA) \citep{Kim2010LocalDRMIL}
 
 MidLABS, MIDA, CLFDA
+
+ 
 
 
 Most existing approaches in the literature extend LDA to distinguish between positive and negative bags \citep{Chai2014MIDA,Zhu2018MIDRSparsity}.  These methods typically rely on costly optimization procedures to maximize an objective for orthogonal and sparse projection vectors.  The work in \citep{Xu2011MI_Metric_Learning} investigated metric learning on sets of data (where each bag was a set) to learn an appropriate similarity metric to compare bags.  They do not go as far as to discriminate positive instances within the positive bags, nor do they propose positive target concepts. 
