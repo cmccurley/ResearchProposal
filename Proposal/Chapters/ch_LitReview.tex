@@ -618,11 +618,9 @@ As previously mentioned, all existing MIL dimensionality reduction approaches in
 
 
 \subsection{General Weak Supervision}
-Alternative approaches to weakly supervised dimensionality reduction that do not follow the MIL framework have been proposed.  For example, Wu studied weakly supervised manifold learning for manifold factorization using image-level labels, where the labels were the variation of interest.  The primary idea was to use weak labels to find image pairs that should be more similar after removing unwanted image variation.  Wu used an alignment method constrained by Hessian regularization to learn a manifold regression, such that new test images would be projected smoothly into a space near neighboring input images \citep{Wu2015MILImageManifoldThesis}.  Gaur et al. used weakly supervised manifold learning to perform dense semantic object correspondence \citep{Gaur2017MILSemanticObjectCorrespondence}. The objective of the semantic object correspondence problem is to compute dense association maps for a pair of images such that the same object parts get matched, even for very different appearing object instances. The goal of Gaur's work was to learn a manifold sucht that features belonging to the same semantic object parts were projected closer to each other on the manifold. This was achieved by re-purposing deep convolutional features from a classification network, where the labels were weak segmentations of object parts.  These features were then projected onto a manifold using LDA. \textit{Hierarchical Agglomerative Clustering} (HAC) was performed in the embedding space and the labels were refined with respect to geodesic distance on the manifold.  This method was inspired by the \textit{manifold assumption}, which states that similar objects (even though disparate in the input feature space), should share an intrinsic manifold.  In this way, feature embeddings are learned by an optimization process which is rewarded for projecting features closer on the manifold if they have low feature-space dissimilarity.  Additionally, the optimization penalizes feature clusters whose geometric structure is inconsistent with the observed geometric structures of object parts.  Xu et al. proposed a large-margin weakly supervised dimensionality reduction approach in which  \citep{Xu2014LargeMarginWeaklySupervisedDR}.
+Alternative approaches to weakly supervised dimensionality reduction that do not follow the MIL framework have been proposed.  For example, Wu studied weakly supervised manifold learning for manifold factorization using image-level labels, where the labels were the variation of interest.  The primary idea was to use weak labels to find image pairs that should be more similar after removing unwanted image variation.  Wu used an alignment method constrained by Hessian regularization to learn a manifold regression, such that new test images would be projected smoothly into a space near neighboring input images \citep{Wu2015MILImageManifoldThesis}.  Gaur et al. used weakly supervised manifold learning to perform dense semantic object correspondence \citep{Gaur2017MILSemanticObjectCorrespondence}. The objective of the semantic object correspondence problem is to compute dense association maps for a pair of images such that the same object parts get matched, even for very different appearing object instances. The goal of Gaur's work was to learn a manifold sucht that features belonging to the same semantic object parts were projected closer to each other on the manifold. This was achieved by re-purposing deep convolutional features from a classification network, where the labels were weak segmentations of object parts.  These features were then projected onto a manifold using LDA. \textit{Hierarchical Agglomerative Clustering} (HAC) was performed in the embedding space and the labels were refined with respect to geodesic distance on the manifold.  This method was inspired by the \textit{manifold assumption}, which states that similar objects (even though disparate in the input feature space), should share an intrinsic manifold.  In this way, feature embeddings are learned by an optimization process which is rewarded for projecting features closer on the manifold if they have low feature-space dissimilarity.  Additionally, the optimization penalizes feature clusters whose geometric structure is inconsistent with the observed geometric structures of object parts.  
 
-
-
-An alternative approach for discriminative dimensionality reduction with weak labels is through the application of metric embedding, which is discussed in detail in Section \ref{sec:MetricEmedding}.  While they can be fully supervised, metric embedding techniques often consider groups of samples (usually two or three), jointly, to learn an embedding function.  Under this type of weak supervision, only a notion of semantic similarity is needed,  as compared to direct class labels. 
+An alternative approach for discriminative dimensionality reduction with weak labels is through the application of metric embedding, which is discussed in detail in Section \ref{sec:MetricEmedding} because of its prominence in the literature.  While they can be fully supervised, metric embedding techniques often consider groups of samples (usually two or three), jointly, to learn an embedding function.  Under this type of weak supervision, only a notion of semantic similarity is needed,  as compared to direct class labels. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Metric Embedding %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Metric Embedding} \label{sec:MetricEmedding}
@@ -640,14 +638,17 @@ The concepts of ``near" and ``far" are very powerful and useful utilities in eve
 	\item Symmetry: $\mathcal{D}(\bm{x},\bm{y}) = \mathcal{D}(\bm{y},\bm{x})$
 	\item Triangle Inequality:  $\mathcal{D}(\bm{x},\bm{z}) \leq \mathcal{D}(\bm{x},\bm{y}) + \mathcal{D}(\bm{y},\bm{z})$
 	\end{enumerate}
-
-
-\textbf{Explain more about these properties...} \newline
+\noindent
+The non-negativity rule states that the metric evaluated on two instances must have a positive value or be equal to zero.  From the Identity rule, we can see that the metric may only be defined as zero if the two instances being evaluated are exactly the same (thus the dissimilarity is zero).  The Symmetry rule states that a metric evaluated between two instances must be the same regardless of ordering.  Finally, the Triangle Inequality says, intuitively, that the direct distance between two instances $\bm{x}$ and $\bm{z}$ is smaller than the distance between $\bm{x}$ and $\bm{y}$ plus the distance between $\bm{y}$ and $\bm{z}$.  Both sides of the inequality will be equal if and only if $\bm{y}$ lies on the path between $\bm{x}$ and $\bm{z}$ on which the metric is defined.  \newline
 The goal of \textit{metric embedding learning} it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{d}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{d}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{d}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \citep{Hermans2017DefenseTripletLoss}.  Let $\mathcal{D}(\bm{x},\bm{ y}): \mathbb{R}^{d} \times \mathbb{R}^{d} \rightarrow \mathbb{R}$ be a metric function measuring similarity or dissimilarity in the embedded space.  For succinctness, $\mathcal{D}_{i,j} = \mathcal{D}(f_{\theta}(\bm{x_{i}}),f_{\theta}(\bm{x_{j}}))$
 defines the dissimilarity between samples $\bm{x}_{i}$ and $\bm{x}_{j}$, after being embedded.
 
 \subsubsection{Metric Learning}
 Thorstensen thesis, Raducanu S-LE
+
+\subsubsection{Preference Learning}
+Choquet integral
+Can we use to preference learning to discern instances which are likely to be positive and negative, then use these rankings for embedding?
 
 	\subsection{Ranking Loss}
 	
@@ -679,6 +680,10 @@ Thorstensen thesis, Raducanu S-LE
 		
 		
 		\subsubsection{Siamese Neural Networks}
+		
+	\subsection{Weakly Supervised Dimensionality Reduction with Metric Embedding}
+	Xu et al. proposed a large-margin weakly supervised dimensionality reduction approach in which  \citep{Xu2014LargeMarginWeaklySupervisedDR}.
+	
 	
 	\subsection{Manifold Regularization}
 	
