@@ -6,11 +6,11 @@
 \BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 6
 \BOOKMARK [0][-]{chapter.2}{2 Background}{}% 7
 \BOOKMARK [1][-]{section.2.1}{2.1 Multiple Instance Learning}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Multiple Instance Space Paradigm}{section.2.1}% 9
-\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Multiple Instance Concept Learning}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Multiple Instance Learning with Manifold Bags}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Tasks}{section.2.1}% 10
 \BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Multiple Instance Classification}{section.2.1}% 11
-\BOOKMARK [2][-]{subsection.2.1.4}{2.1.4 Multiple Instance Boosting}{section.2.1}% 12
-\BOOKMARK [2][-]{subsection.2.1.5}{2.1.5 Multiple Instance Learning with Manifold Bags?}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.4}{2.1.4 Multiple Instance Ranking}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.5}{2.1.5 Multiple Instance Boosting}{section.2.1}% 13
 \BOOKMARK [1][-]{section.2.2}{2.2 Manifold Learning}{chapter.2}% 14
 \BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Definition and General Notation}{section.2.2}% 15
 \BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Comparison Table of Manifold Learning Methods}{section.2.2}% 16

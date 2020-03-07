@@ -34,16 +34,17 @@ I'm skipping whatever remains of this entry
  :  booktitl\part
  :               {title}e={2011 IEEE 11th International Conference on Data Mining},
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2506 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 2540 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 2978 of file BibFiles/references.bib
+--line 3012 of file BibFiles/references.bib
 Warning--empty booktitle in Babenko2011MILManifoldBags
 Warning--empty journal in Bishop1998GTM
 Warning--empty year in MUUFLScoringCode
+Warning--empty booktitle in Hu2008MIRanking
 Warning--empty publisher in Kegl2008PrincipalManifoldsTextbook
 Warning--empty booktitle in Ping2010MILDRMaxMargin
 Warning--empty booktitle in Rish2008SupDimRedGLM

@@ -8,10 +8,10 @@ This chapter provides a literature review of the Multiple Instance Learning fram
 Multiple Instance Learning (MIL) was originally proposed in \citep{Dietterich1996AxisParallelRectangles} as a method to handle inherent observation difficulties associated with drug activity prediction.  This problem, among many others, fits well into the framework of MIL where training labels are associated with sets of data points, called \textit{bags} instead of each individual data points, or \textit{instances}.  Under the \textit{standard MIL assumption}, a bag is given a ``positive" label if it is known that  \textit{at least one} sample in the set represents pure or partial target.  Alternatively, a bag is labeled as ``negative" if does not contain any positive instances \citep{Carbonneau2016MILSurvey}.  Let $\bm{X}=[\bm{x}_1,\dots, \bm{x}_N] \in \mathbb{R}^{D \times N}$ be training data where $D$ is the dimensionality of an instance, $\bm{x}_n$, and $N$ is the total number of training instances.  The data is grouped into K \textit{bags}, $\bm{B} = \{\bm{B}_1, \dots, \bm{B}_K\}$, with associated binary bag-level labels, $\mathcal{L} = \{L_1, \dots, L_K \}$ where 
 \begin{align}
 	L_k = \begin{cases} 
-	1, & \exists \bm{x}_{kn} \in \bm{B}^{+}_{k} \ni  l_{kn} = 1\\
+	+1, & \exists \bm{x}_{kn} \in \bm{B}^{+}_{k} \ni  l_{kn} = +1\\
 	-1, & l_{kn} = -1 \quad \forall \bm{x}_{kn} \in \bm{B}^{-}_{k} 
 	\end{cases}
-\end{align} and $\bm{x}_{kn}$ denotes the $n^{th}$ instance in positive bag $\bm{B}^{+}_{k}$ or negative bag $\bm{B}^{-}_{k}$ \citep{Zare2016MIACE} and $l_{kn}$ denotes the instance-level label on instance $\bm{x}_{kn}$.  Figure \ref{fig:bag_eg} demonstrates the concept of MIL bags.  The objective of learning under MIL is, given only bag-level label information, to fit a model which can classify bags as either being positive or negative (bag-level classification) or to predict the class labels of individual instances (instance-level classification).
+\end{align} and $\bm{x}_{kn}$ denotes the $n^{th}$ instance in positive bag $\bm{B}^{+}_{k}$ or negative bag $\bm{B}^{-}_{k}$ \citep{Zare2016MIACE} and $l_{kn} \in \{ -1, +1\}$ denotes the instance-level label on instance $\bm{x}_{kn}$.  Figure \ref{fig:bag_eg} demonstrates the concept of MIL bags.  The objective of learning under MIL is, given only bag-level label information, to fit a model which can classify bags as either being positive or negative (bag-level classification) or to predict the class labels of individual instances (instance-level classification).
 
 \begin{center}
 	\begin{figure*}[h]
@@ -22,23 +22,41 @@ Multiple Instance Learning (MIL) was originally proposed in \citep{Dietterich199
 	\end{figure*}
 \end{center}
 
-\subsection{Multiple Instance Space Paradigm}
-Multiple Instance Learning via Embedded Instance Selection
+\noindent
 
-\subsection{Multiple Instance Concept Learning}
+\subsection{Multiple Instance Learning with Manifold Bags}
+It should be noted that while the aforementioned MIL formulation is standard in the literature, Baenko et al. introduced the framework of MIL using manifold bags  \citep{Babenko2011MILManifoldBags}.  Their work claimed that instead of finite sets of instances, bags are inherently better represented as low-dimensional manifolds in a high-dimensional feature space.  They considered the scenario of classifying whether or not an image contained a face.  In this scenario, the entire image was considered to be a bag, and patches of the image were considered as individual instances.  It was assumed that the collection of instances collectively formed a low-dimensional manifold.  This work laid the groundwork for learning with manifold bags and proved PAC learnability under this framework.  The remainder of this literature review focuses solely on the standard MIL formulation.
+
+\subsection{Tasks}
+Multiple instance learning in the literature can be broadly categorized into four tasks: classification, regression, ranking and clustering.  MIL classification can be performed at either the bag or instance level.  The goal is to assign a class label to either the set of instances or the individual instances themselves.  MIL regression consists of assigning a real-valued label to a bag (or instance) instead of a class label.  A few methods have been proposed to rank bags or instances instead of assigning a class label or score.  This problem differs from regression because the goal is not to obtain an exact real-valued label, but to compare the magnitude of scores to perform sorting.  The clustering task consists of finding clusters or structure among a set of unlabeled bags.  Alternatively, clustering can be performed within bags in attempt to distinguish between the positive and negative instances.  Classification and ranking are the most pertinent tasks to the proposed work, and will thus be discussed in detail.
 
 \subsection{Multiple Instance Classification}
+The \textit{Multiple Instance Classification} (MIC) problem has been formulated under three paradigms: Instance Space, Bag Space and Embedded Space \citep{Amores2013MIClassification}.  
 
-citation-KNN, RIPPER-MI, BP-MIP, ID3-MI, MI-SVM \cite{Zhu2018MIDRSparsity}
+Figure \ref{fig:mil_classification_space_paradigm} demonstrates the differences between standard supervised classification and the three MIL classification space paradigms.  
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{example-image-a}
+		\caption[MIL classification space paradigm.]{MIL classification space paradigm.}
+		\label{fig:mil_classification_space_paradigm}
+	\end{figure*}
+\end{center}
 
+citation-KNN, RIPPER-MI, BP-MIP, ID3-MI, MI-SVM \cite{Zhu2018MIDRSparsity} 
+
+\subsection{Multiple Instance Ranking}
+
+Related to Boosting
+
+\cite{Hu2008MIRanking}, \cite{Bergeron2012FastBundleMILRanking}
 
 \cite{Wei2016ImageBagGenerators}
 
 \subsection{Multiple Instance Boosting}
 
 
-\subsection{Multiple Instance Learning with Manifold Bags?}
-Baenko et al. introduced the framework of MIL fusing manifold bags  \cite{Babenko2011MILManifoldBags}.  Their work claimed that instead of finite sets of instances, bags are inherently better represented as low-dimensional manifolds in a high-dimensional feature space.  They considered the scenario of classifying whether or not an image contained a face.  In this scenario, the entire image was considered to be a bag, and patches of the image were considered as individual instances.  It was assumed that the collection of instances collectively formed a low-dimensional manifold.  This work laid the groundwork for learning with manifold bags as well as  proved PAC learnability under this framework.
+
 
 
 
@@ -682,7 +700,7 @@ Can we use to preference learning to discern instances which are likely to be po
 		\subsubsection{Siamese Neural Networks}
 		
 	\subsection{Weakly Supervised Dimensionality Reduction with Metric Embedding}
-	Xu et al. proposed a large-margin weakly supervised dimensionality reduction approach in which  \citep{Xu2014LargeMarginWeaklySupervisedDR}.
+	Xu et al. proposed a weakly supervised dimensionality reduction approach based on the large-margin principle in which the angle between preference pairs is consistent while the distance between examples in preference pairs is maximized \citep{Xu2014LargeMarginWeaklySupervisedDR}.
 	
 	
 	\subsection{Manifold Regularization}

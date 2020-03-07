@@ -1,14 +1,15 @@
-\contentsline {figure}{\numberline {{1-1}}{\ignorespaces Example of bounding box imprecision.}}{11}{figure.caption.7}
-\contentsline {figure}{\numberline {{1-2}}{\ignorespaces Forms of weak labels.}}{12}{figure.caption.8}
-\contentsline {figure}{\numberline {{1-3}}{\ignorespaces Examples of image-level labels.}}{12}{figure.caption.9}
-\contentsline {figure}{\numberline {{1-4}}{\ignorespaces Swiss Roll manifold unfolding.}}{16}{figure.caption.10}
-\contentsline {figure}{\numberline {{1-5}}{\ignorespaces Unsupervised embedding of quadratic surfaces}}{17}{figure.caption.11}
-\contentsline {figure}{\numberline {{1-6}}{\ignorespaces Supervised embedding of quadratic surfaces}}{18}{figure.caption.12}
-\contentsline {figure}{\numberline {{2-1}}{\ignorespaces Multiple instance learning bags.}}{22}{figure.caption.13}
-\contentsline {figure}{\numberline {{2-2}}{\ignorespaces Example pose data manifold.}}{24}{figure.caption.14}
-\contentsline {figure}{\numberline {{2-3}}{\ignorespaces PCA Example.}}{28}{figure.caption.16}
-\contentsline {figure}{\numberline {{2-4}}{\ignorespaces Example of MDS distance preservation.}}{29}{figure.caption.18}
-\contentsline {figure}{\numberline {{2-5}}{\ignorespaces LDA Example.}}{34}{figure.caption.21}
-\contentsline {figure}{\numberline {{2-6}}{\ignorespaces Example of a nonlinear manifold.}}{35}{figure.caption.22}
-\contentsline {figure}{\numberline {{2-7}}{\ignorespaces Examples of graphs.}}{40}{figure.caption.28}
-\contentsline {figure}{\numberline {{2-8}}{\ignorespaces Demonstration of geodesic distance}}{42}{figure.caption.32}
+\contentsline {figure}{\numberline {{1-1}}{\ignorespaces Example of bounding box imprecision.}}{12}{figure.caption.7}
+\contentsline {figure}{\numberline {{1-2}}{\ignorespaces Forms of weak labels.}}{13}{figure.caption.8}
+\contentsline {figure}{\numberline {{1-3}}{\ignorespaces Examples of image-level labels.}}{13}{figure.caption.9}
+\contentsline {figure}{\numberline {{1-4}}{\ignorespaces Swiss Roll manifold unfolding.}}{17}{figure.caption.10}
+\contentsline {figure}{\numberline {{1-5}}{\ignorespaces Unsupervised embedding of quadratic surfaces}}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {{1-6}}{\ignorespaces Supervised embedding of quadratic surfaces}}{19}{figure.caption.12}
+\contentsline {figure}{\numberline {{2-1}}{\ignorespaces Multiple instance learning bags.}}{23}{figure.caption.13}
+\contentsline {figure}{\numberline {{2-2}}{\ignorespaces MIL classification space paradigm.}}{24}{figure.caption.14}
+\contentsline {figure}{\numberline {{2-3}}{\ignorespaces Example pose data manifold.}}{26}{figure.caption.15}
+\contentsline {figure}{\numberline {{2-4}}{\ignorespaces PCA Example.}}{30}{figure.caption.17}
+\contentsline {figure}{\numberline {{2-5}}{\ignorespaces Example of MDS distance preservation.}}{31}{figure.caption.19}
+\contentsline {figure}{\numberline {{2-6}}{\ignorespaces LDA Example.}}{36}{figure.caption.22}
+\contentsline {figure}{\numberline {{2-7}}{\ignorespaces Example of a nonlinear manifold.}}{37}{figure.caption.23}
+\contentsline {figure}{\numberline {{2-8}}{\ignorespaces Examples of graphs.}}{42}{figure.caption.29}
+\contentsline {figure}{\numberline {{2-9}}{\ignorespaces Demonstration of geodesic distance}}{44}{figure.caption.33}

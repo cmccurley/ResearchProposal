@@ -1,9 +1,17 @@
-\begin{thebibliography}{86}
+\begin{thebibliography}{89}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Amores(2013)]{Amores2013MIClassification}
+Jaume Amores.
+\newblock Multiple instance classification: Review, taxonomy and comparative
+  study.
+\newblock \emph{Artificial Intelligence}, 201:\penalty0 81 -- 105, 2013.
+\newblock ISSN 0004-3702.
+\newblock \doi{https://doi.org/10.1016/j.artint.2013.06.003}.
 
 \bibitem[an~Lucas~Beyer and Leibe(2017)]{Hermans2017DefenseTripletLoss}
 Alexander~Hermans an~Lucas~Beyer and Bastian Leibe.
@@ -54,6 +62,16 @@ E.~Bengoetxea.
   Algorithms}.
 \newblock PhD thesis, Ecole Nationale Sup\'erieure des T\'el\'ecommunications,
   Paris, France, Dec. 2002.
+
+\bibitem[{Bergeron} et~al.(2012){Bergeron}, {Moore}, {Zaretzki}, {Breneman},
+  and {Bennett}]{Bergeron2012FastBundleMILRanking}
+C.~{Bergeron}, G.~{Moore}, J.~{Zaretzki}, C.~M. {Breneman}, and K.~P.
+  {Bennett}.
+\newblock Fast bundle algorithm for multiple-instance learning.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 34\penalty0 (6):\penalty0 1068--1079, June 2012.
+\newblock ISSN 1939-3539.
+\newblock \doi{10.1109/TPAMI.2011.194}.
 
 \bibitem[Bishop et~al.(1998)Bishop, Svensén, and Williams]{Bishop1998GTM}
 C.~Bishop, M.~Svensén, and C.~K.~I. Williams.
@@ -208,6 +226,14 @@ D.~Hong, N.~Yokoya, N.~Ge, J.~Chanussot, and X.~X. Zhu.
 \newblock \emph{ISPRS Journal of Photogrammetry and Remote Sensing},
   147:\penalty0 193 -- 205, 2019.
 \newblock ISSN 0924-2716.
+
+\bibitem[Hu et~al.(2008)Hu, Li, and Yu]{Hu2008MIRanking}
+Yang Hu, Mingjing Li, and Nenghai Yu.
+\newblock Multiple-instance ranking: Learning to rank images for image
+  retrieval.
+\newblock pages 1--8, 07 2008.
+\newblock ISBN 978-1-4244-2242-5.
+\newblock \doi{10.1109/CVPR.2008.4587352}.
 
 \bibitem[Huang et~al.(2007)Huang, Ramesh, Berg, and Learned-Miller]{LFW}
 Gary~B. Huang, Manu Ramesh, Tamara Berg, and Erik Learned-Miller.
