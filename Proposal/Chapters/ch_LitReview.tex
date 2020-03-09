@@ -11,7 +11,7 @@ Multiple Instance Learning (MIL) was originally proposed in \citep{Dietterich199
 	+1, & \exists \bm{x}_{kn} \in \bm{B}^{+}_{k} \ni  l_{kn} = +1\\
 	-1, & l_{kn} = -1 \quad \forall \bm{x}_{kn} \in \bm{B}^{-}_{k} 
 	\end{cases}
-\end{align} and $\bm{x}_{kn}$ denotes the $n^{th}$ instance in positive bag $\bm{B}^{+}_{k}$ or negative bag $\bm{B}^{-}_{k}$ \citep{Zare2016MIACE} and $l_{kn} \in \{ -1, +1\}$ denotes the instance-level label on instance $\bm{x}_{kn}$.  Figure \ref{fig:bag_eg} demonstrates the concept of MIL bags.  The objective of learning under MIL is, given only bag-level label information, to fit a model which can classify bags as either being positive or negative (bag-level classification) or to predict the class labels of individual instances (instance-level classification).
+\end{align} and $\bm{x}_{kn}$ denotes the $n^{th}$ instance in positive bag $\bm{B}^{+}_{k}$ or negative bag $\bm{B}^{-}_{k}$ \citep{Zare2016MIACE} and $l_{kn} \in \{ -1, +1\}$ denotes the instance-level label on instance $\bm{x}_{kn}$.  Figure \ref{fig:bag_eg} demonstrates the concept of MIL bags.  The objective of learning under MIL is, given only bag-level label information, to fit a model which can perform one of the following tasks: classification, regression, ranking or clustering \citep{Carbonneau2016MILSurvey}.
 
 \begin{center}
 	\begin{figure*}[h]
@@ -25,14 +25,14 @@ Multiple Instance Learning (MIL) was originally proposed in \citep{Dietterich199
 \noindent
 
 \subsection{Multiple Instance Learning with Manifold Bags}
-It should be noted that while the aforementioned MIL formulation is standard in the literature, Baenko et al. introduced the framework of MIL using manifold bags  \citep{Babenko2011MILManifoldBags}.  Their work claimed that instead of finite sets of instances, bags are inherently better represented as low-dimensional manifolds in a high-dimensional feature space.  They considered the scenario of classifying whether or not an image contained a face.  In this scenario, the entire image was considered to be a bag, and patches of the image were considered as individual instances.  It was assumed that the collection of instances collectively formed a low-dimensional manifold.  This work laid the groundwork for learning with manifold bags and proved PAC learnability under this framework.  The remainder of this literature review focuses solely on the standard MIL formulation.
+It should be noted that while the aforementioned MIL formulation is standard in the literature, Baenko et al. introduced the framework of MIL using manifold bags  \citep{Babenko2011MILManifoldBags}.  Their work claimed that instead of finite sets of instances, bags are inherently better represented as low-dimensional manifolds in a high-dimensional feature space.  They considered the scenario of classifying whether or not an image contained a face.  In this scenario, the entire image was considered to be a bag, and patches of the image were considered as individual instances.  It was assumed that the collection of instances collectively formed a low-dimensional manifold.  This work laid the groundwork for learning with manifold bags and proved PAC learnability under this framework.  While it was worth mentioning this work as it aligns with the objective of manifold learning discussed in the proposed work, the remainder of this literature review focuses solely on the standard MIL formulation.
 
 \subsection{Tasks}
 Multiple instance learning in the literature can be broadly categorized into four tasks: classification, regression, ranking and clustering \citep{Carbonneau2016MILSurvey}.  MIL classification can be performed at either the bag or instance level.  The goal is to assign a class label to either the set of instances or the individual instances themselves.  MIL regression consists of assigning a real-valued label to a bag (or instance) instead of a class label.  A few methods have been proposed to rank bags or instances instead of assigning a class label or score.  This problem differs from regression because the goal is not to obtain an exact real-valued label, but to compare the magnitude of scores to perform sorting.  The clustering task consists of finding clusters or structure among a set of unlabeled bags.  Alternatively, clustering can be performed within bags in attempt to distinguish between the positive and negative instances.  Classification and ranking are the most pertinent tasks to the proposed work, and will thus be discussed in detail.
 
 \subsection{Multiple Instance Classification}
-The standard supervised learning task is to learn a classifier based on a training set of feature vectors, where each feature vector is paired with and associated class label.  In the \textit{Multiple Instance Classification} (MIC) task, the goal is to learn a classifier based on a training set of bags, where each bag is a set of feature vectors known as instances.  In this setting, each bag is paired with an associated binary class label; however, the labels of each instance in the sets are unknown. The MIC problem has been formulated under three paradigms: Instance-Space, Bag-Space and Embedded-Space \citep{Amores2013MIClassification}.  Each paradigm is categorized according to how information presented in the MI data is exploited.  In the \textit{Instance-Space} (IS) paradigm, the discriminative information is considered to lie at the instance-level.  An instance-level classifier is trained to separate the true positive instances from the true negative instances.  Given an instance-level classifier, a bag-level classifier can be developed by simply aggregating the instance-level scores in a test bag.  This paradigm is based on local, instance-level information.  In the \textit{Bag-Space} (BS) paradigm, the discriminative information is considered to lie at the bag-level.  Under this paradigm, each bag is treated as a whole entity, and the learning process discriminates between entire bags.  This paradigm is based on global, bag-level information.  Considering that the bag space is a non-vector space, current BS methods make use of non-vectorial learning techniques which define distance metrics as a way to compare bags.  In the \textit{Embedded-Space} (ES) paradigm, each bag is mapped to a single feature vector which captures the relevant information about the entire bag.  Consequently, the learning problem transforms into a standard supervised problem, where each feature vector is paired with an associated (bag-level) label.  Similar to the BS paradigm, the ES paradigm is also based on global, bag-level information.  However, the difference between the two paradigms lies in the way bag-level information is extracted.  In the BS paradigm, information is extracted implicitly through the definition of the distance or kernel function.  Alternatively, information is extracted explicitly in the ES paradigm through the definition of the mapping function from the bag-space to the vector space.  Figure \ref{fig:mil_classification_space_paradigm} demonstrates the differences between standard supervised classification and the three MIL classification space paradigms.  A review of prominent MIL classification methods in the literature is provided, categorized according to the paradigm they fall under.
-
+The standard supervised learning task is to learn a classifier based on a training set of feature vectors, where each feature vector is paired with and associated class label.  In the \textit{Multiple Instance Classification} (MIC) task, the goal is to learn a classifier based on a training set of bags, where each bag is a set of feature vectors known as instances.  In this setting, each bag is paired with an associated binary class label; however, the labels of each instance in the sets are unknown. 
+\subsubsection{Space Paradigms} The MIC problem has been formulated under three paradigms: Instance-Space, Bag-Space and Embedded-Space \citep{Amores2013MIClassification}.  Each paradigm is categorized according to how information presented in the MI data is exploited.  In the \textit{Instance-Space} (IS) paradigm, the discriminative information is considered to lie at the instance-level.  An instance-level classifier is trained to separate the true positive instances from the true negative instances.  Given an instance-level classifier, a bag-level classifier can be developed by simply aggregating the instance-level scores in a test bag.  This paradigm is based on local, instance-level information.  In the \textit{Bag-Space} (BS) paradigm, the discriminative information is considered to lie at the bag-level.  Under this paradigm, each bag is treated as a whole entity, and the learning process discriminates between entire bags.  This paradigm is based on global, bag-level information.  Considering that the bag space is a non-vector space, current BS methods make use of non-vectorial learning techniques which define distance metrics as a way to compare bags.  In the \textit{Embedded-Space} (ES) paradigm, each bag is mapped to a single feature vector which captures the relevant information about the entire bag.  Consequently, the learning problem transforms into a standard supervised problem, where each feature vector is paired with an associated (bag-level) label.  Similar to the BS paradigm, the ES paradigm is also based on global, bag-level information.  However, the difference between the two paradigms lies in the way bag-level information is extracted.  In the BS paradigm, information is extracted implicitly through the definition of the distance or kernel function.  Alternatively, information is extracted explicitly in the ES paradigm through the definition of the mapping function from the bag-space to the vector space.  Figure \ref{fig:mil_classification_space_paradigm} demonstrates the differences between standard supervised classification and the three MIL classification space paradigms.  A review of prominent MIL classification methods in the literature is provided, categorized according to the paradigm they fall under.
 
 \begin{center}
 	\begin{figure*}[h]
@@ -43,20 +43,51 @@ The standard supervised learning task is to learn a classifier based on a traini
 	\end{figure*}
 \end{center}
 
-citation-KNN, RIPPER-MI, BP-MIP, ID3-MI, MI-SVM \cite{Zhu2018MIDRSparsity} 
+\subsubsection{Instance-Space Classification}
+
+\paragraph{Axis-Parallel Rectangle (APR)}
+
+\paragraph{Diverse Density (DD)}
+
+\paragraph{Expectation-Maximization Diverse Density (EM-DD)}
+
+\paragraph{MI-SVM}
+
+MissSVM
+
+
+\paragraph{MIL-Boost}
+
+\subsubsection{Bag-Space Classification}
+
+K-NN or SVM, Minimal Hausdorrf distance, Earth Mover's Distance (EMD), Chamfer distance, kernels
+
+\paragraph{Citation K-NN}
+
+\paragraph{MI-Graph}
+
+\paragraph{Neural Networks and Deep Learning}
+
+\subsubsection{Embedded-Space Classification}
+
+\paragraph{Multiple-Instance Learning via Embedded Instance Selection (MILES)}
+
 
 \subsection{Multiple Instance Ranking}
 
-Related to Boosting
 
-\cite{Hu2008MIRanking}, \cite{Bergeron2012FastBundleMILRanking}
+\cite{Hu2008MIRanking}, \cite{Bergeron2012FastBundleMILRanking}, \cite{Bergeron2008MIRanking}, \cite{Latham2015MIFeatureRankingThesis} \cite{Asif2017LargeMarginMIRanking}
 
-\cite{Wei2016ImageBagGenerators}
+
 
 \subsection{Multiple Instance Boosting}
 
+\cite{Zhang2006MIBoosting} \cite{Babenko2008MIBoosting}
 
 
+General Boosting framework
+
+MIL-Boost
 
 
 
@@ -634,6 +665,8 @@ Finally, Citation Local Fisher Linear Discriminant Analysis (CLFDA) \citep{Kim20
 
 As previously mentioned, all existing MIL dimensionality reduction approaches in the literature are solely linear.  However, many modalities exhibit nonlinear variation.  Therefore, nonlinear manifold learning approaches should be developed which operate under the multiple instance learning framework. 
 
+
+\textbf{Latham MI-FEAR}
 
 \subsection{General Weak Supervision}
 Alternative approaches to weakly supervised dimensionality reduction that do not follow the MIL framework have been proposed.  For example, Wu studied weakly supervised manifold learning for manifold factorization using image-level labels, where the labels were the variation of interest.  The primary idea was to use weak labels to find image pairs that should be more similar after removing unwanted image variation.  Wu used an alignment method constrained by Hessian regularization to learn a manifold regression, such that new test images would be projected smoothly into a space near neighboring input images \citep{Wu2015MILImageManifoldThesis}.  Gaur et al. used weakly supervised manifold learning to perform dense semantic object correspondence \citep{Gaur2017MILSemanticObjectCorrespondence}. The objective of the semantic object correspondence problem is to compute dense association maps for a pair of images such that the same object parts get matched, even for very different appearing object instances. The goal of Gaur's work was to learn a manifold sucht that features belonging to the same semantic object parts were projected closer to each other on the manifold. This was achieved by re-purposing deep convolutional features from a classification network, where the labels were weak segmentations of object parts.  These features were then projected onto a manifold using LDA. \textit{Hierarchical Agglomerative Clustering} (HAC) was performed in the embedding space and the labels were refined with respect to geodesic distance on the manifold.  This method was inspired by the \textit{manifold assumption}, which states that similar objects (even though disparate in the input feature space), should share an intrinsic manifold.  In this way, feature embeddings are learned by an optimization process which is rewarded for projecting features closer on the manifold if they have low feature-space dissimilarity.  Additionally, the optimization penalizes feature clusters whose geometric structure is inconsistent with the observed geometric structures of object parts.  
