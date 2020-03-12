@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  12 MAR 2020 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  12 MAR 2020 15:44
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -1021,13 +1021,20 @@ File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 161.
 (pdftex.def)             Requested size: 281.40286pt x 211.06633pt.
- [31] [32] [33] [34]
-File: example-image-a.png Graphic file (type png)
 
-<use example-image-a.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31] [32] [33] [34]
+File: example-image-a.png Graphic file (type png)
+ <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 216.
 (pdftex.def)             Requested size: 281.40286pt x 211.06633pt.
- [35]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[35]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 237.
@@ -1045,18 +1052,15 @@ Package pdftex.def Info: example-image-a.png used on input line 323.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41]
+[41] [42]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 342.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[42] [43] [44] [45] [46]
+ [43] [44] [45] [46]
 File: example-image-a.png Graphic file (type png)
- <use example-image-a.png>
+
+<use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 415.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
  [47]
@@ -1087,7 +1091,7 @@ Underfull \hbox (badness 10000) detected at line 454
  []
 
 [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64]
-[65]
+[65] [66]
 Underfull \hbox (badness 10000) detected at line 743
 [][][]
  []
@@ -1107,12 +1111,11 @@ Underfull \hbox (badness 10000) detected at line 746
 [][][]
  []
 
-[66]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 753.
 
-[67]) [68]
+[67]) [68] [69]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
 
  (Chapters/ch_ProblemDescription.tex
@@ -1123,7 +1126,7 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [69
+) [70
 
 
 
@@ -1138,7 +1141,7 @@ CHAPTER 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [70
+) [71
 
 
 
@@ -1153,7 +1156,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [71
+) [72
 
 
 
@@ -1168,7 +1171,7 @@ CHAPTER 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [72
+) [73
 
 
 
@@ -1183,14 +1186,14 @@ CHAPTER 7.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [73
+) [74
 
 
 
 ] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [74
+ [75
 
 
 ]
@@ -1202,7 +1205,7 @@ Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [75]
+ [76]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1211,28 +1214,28 @@ Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [76]
-[77]
+ [77]
+[78]
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [78] [79]
+ [79] [80]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [80] [81]
+ [81] [82]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [82]
+ [83]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [83] [84]) (Chapters/bio.tex)
+ [84] [85]) (Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
- [85]
+ [86]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (MainFile.aux
 (Chapters/acknowledgements.aux) (Chapters/TOC.aux) (Chapters/abbreviations.aux)
@@ -1242,44 +1245,53 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 (Chapters/ch_FutureTasks.aux) (Chapters/ch_Conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
-Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: 69ADAB2A87A54894081288F950CF0735;5966.
 
+
+Package rerunfilecheck Warning: File `MainFile.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `MainFile.out':
+(rerunfilecheck)             Before: 69ADAB2A87A54894081288F950CF0735;5966
+(rerunfilecheck)             After:  0CC00E4A033E0E0279E94D4398D6D6CA;5864.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 9756 strings out of 493323
- 156700 string characters out of 3139067
- 245378 words of memory out of 3000000
- 12645 multiletter control sequences out of 15000+200000
+ 9768 strings out of 493323
+ 157007 string characters out of 3139067
+ 245584 words of memory out of 3000000
+ 12654 multiletter control sequences out of 15000+200000
  13330 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,17n,42p,2933b,686s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-extra/cmmib8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb>
-Output written on MainFile.pdf (85 pages, 1876654 bytes).
+pdfTeX warning (dest): name{subsubsection.2.1.3.5} has been referenced but do
+es not exist, replaced by a fixed one
+
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmex
+tra/cmmib8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm
+10.pfb>
+Output written on MainFile.pdf (86 pages, 1879568 bytes).
 PDF statistics:
- 1677 PDF objects out of 1728 (max. 8388607)
- 388 named destinations out of 1000 (max. 500000)
+ 1694 PDF objects out of 1728 (max. 8388607)
+ 391 named destinations out of 1000 (max. 500000)
  628 words of extra memory for PDF output out of 10000 (max. 10000000)
 

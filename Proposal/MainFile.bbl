@@ -1,4 +1,4 @@
-\begin{thebibliography}{106}
+\begin{thebibliography}{109}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -123,6 +123,14 @@ J.~Bocinsky, C.~H. McCurley, D.~Shats, and A.~Zare.
 \newblock In \emph{Detection and Sensing of Mines, Explosive Objects, and
   Obscured Targets XXIV, 110120N}, volume 11012 of \emph{Proc.SPIE}, May 2019.
 \newblock \doi{10.1117/12.2519463}.
+
+\bibitem[Cao et~al.(2016)Cao, Luo, Chen, Yihan, Wang, Wang, and
+  Ji]{Cao2016VehicleDetectionMIL}
+L.~Cao, F.~Luo, L.~Chen, S.~Yihan, H.~Wang, C.~Wang, and R.~Ji.
+\newblock Weakly supervised vehicle detection in satellite images via
+  multi-instance discriminative learning.
+\newblock \emph{Pattern Recognition}, 64, 12 2016.
+\newblock \doi{10.1016/j.patcog.2016.10.033}.
 
 \bibitem[Carbonneau et~al.(2016)Carbonneau, Cheplygina, Granger, and
   Gagnon]{Carbonneau2016MILSurvey}
@@ -708,6 +716,14 @@ Hui Wu.
   (Cybernetics)}, 35\penalty0 (6):\penalty0 1098--1107, Dec 2005.
 \newblock ISSN 1083-4419.
 
+\bibitem[{Xiao} et~al.(2017){Xiao}, {Liu}, and {Hao}]{Xiao2017SphereMIL}
+Y.~{Xiao}, B.~{Liu}, and Z.~{Hao}.
+\newblock A sphere-description-based approach for multiple-instance learning.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 39\penalty0 (2):\penalty0 242--257, Feb 2017.
+\newblock ISSN 0162-8828.
+\newblock \doi{10.1109/TPAMI.2016.2539952}.
+
 \bibitem[Xu et~al.(2014)Xu, Tao, and Rui]{Xu2014LargeMarginWeaklySupervisedDR}
 C.~Xu, D.~Tao, and Y.~Rui.
 \newblock Large-margin weakly supervised dimensionality reduction.
@@ -724,6 +740,13 @@ S.~{Yan}, D.~{Xu}, B.~{Zhang}, H.~{Zhang}, Q.~{Yang}, and S.~{Lin}.
   dimensionality reduction.
 \newblock \emph{IEEE Transactions on Pattern Analysis and Machine
   Intelligence}, 29\penalty0 (1):\penalty0 40--51, Jan 2007.
+
+\bibitem[{Yixin Chen} et~al.(2006){Yixin Chen}, {Jinbo Bi}, and
+  {Wang}]{Chen2006MILES}
+{Yixin Chen}, {Jinbo Bi}, and J.~Z. {Wang}.
+\newblock Miles: Multiple-instance learning via embedded instance selection.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 28\penalty0 (12):\penalty0 1931--1947, Dec 2006.
 
 \bibitem[{Z. Zhang} et~al.(2008){Z. Zhang}, {H. Zha}, and {M.
   Zhang}]{Zhang2008SpectralSemiSupManifoldLearning}

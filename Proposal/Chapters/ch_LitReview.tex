@@ -46,8 +46,6 @@ The standard supervised learning task is to learn a classifier based on a traini
 \subsubsection{MIL Classification Approaches}
 The majority of MIL classification approaches in the literature can be categorized by their learning procedures.  The main categories are: Axis-Parallel Concepts, Maximum Likelihood, Maximum Margin and Deep Learning.  Each approach is reviewed in the following.
 
-\subsubsection{Instance-Space Classification}
-
 \paragraph{Learning Axis-Parallel Concepts:}
 Learning Axis-Parallel Concepts are among the first group of methods used to solve MIL problems \citep{Dietterich1996AxisParallelRectangles}.  The foundation of this category is based on the method of \textit{Axis-Parallel Rectangles} (APR), proposed by Dietterich et al. in the 1990's.  An axis-parallel hyper-rectangle is a set of thresholds (one for each feature dimension) that is used to discriminate between two classes. It can also be viewed as an overlap or aggregation region of true positive instances in the feature space. The goal of APR is to find an axis-parallel hyper-rectangle in the feature space to represent the target concept \citep{Ghaffarzadegan2018MILVAE, Bocinsky2019SPIEMIACEInitialization, Jiao2017Thesis}.  A disadvantage of these approaches is that they can fail to neglect a majority of data in a large bag sample.    
 
@@ -57,7 +55,8 @@ Similar to traditional \textit{Maximum Likelihood Estimation} (MLE), the objecti
  
 
 \paragraph{Maximum Margin:}
-The concept of weakly-supervised maximum margin learning has been used in a variety of methods, the primary being \textit{Support Vector Machines}(SVM) and \textit{Metric Embedding}, which will be discussed in Section \ref{sec:MetricEmedding}.  Andrews et al. proposed two SVM methods under the MIL framework, namely, mi-SVM and MI-SVM, for instance-level and bag-level classification,  respectively \citep{Carbonneau2016MILSurvey,Du2017Thesis,Jiao2017Thesis}.  The goal of a SVM is to train a classifier to maximize the margin between a small subset of training examples (called \textit{support vectors}) and the decision hyper-plane \citep{Murphy2012}.  Both MIL SVM methods follow a similar procedure to EM-DD.  In MI-SVM, each positive bag is represented by a single instance which is considered to be the ``most positive instance" in the bag. Optimization alternates between learning a decision boundary with SVM and selecting the positive bag representatives given the new classifier. In contrast, mi-SVM considers all points in the positive bags while learning the decision boundary.  Every point in the positive bags is provided a positive label.  The instance labels are refined iteratively under the constraint of standard MIL assumption, that at least one instance from each positive bag must lie on the positive side of the decision hyper-plane.
+The concept of weakly-supervised maximum margin learning has been used in a variety of methods, the primary being \textit{Support Vector Machines}(SVM) and \textit{Metric Embedding}, which will be discussed in Section \ref{sec:MetricEmedding}.  Andrews et al. proposed two SVM methods under the MIL framework, namely, mi-SVM and MI-SVM, for instance-level and bag-level classification,  respectively \citep{Carbonneau2016MILSurvey,Du2017Thesis,Jiao2017Thesis}.  The goal of a SVM is to train a classifier to maximize the margin between a small subset of training examples (called \textit{support vectors}) and the decision hyper-plane \citep{Murphy2012}.  Both MIL SVM methods follow a similar procedure to EM-DD.  In MI-SVM, each positive bag is represented by a single instance which is considered to be the ``most positive instance" in the bag. Optimization alternates between learning a decision boundary with SVM and selecting the positive bag representatives given the new classifier. In contrast, mi-SVM considers all points in the positive bags while learning the decision boundary.  Every point in the positive bags is provided a positive label.  The instance labels are refined iteratively under the constraint of standard MIL assumption, that at least one instance from each positive bag must lie on the positive side of the decision hyper-plane \citep{Cao2016VehicleDetectionMIL}.  Additionally, Xiao et al. developed an ensemble method in which the base classifier enforces a margin between optimal hyper-spheres while enclosing at least one instance from each positive bag inside the ball \citep{Xiao2017SphereMIL}.
+\textbf{MissSVM?}
 
 
 \paragraph{Deep Learning:}
@@ -65,9 +64,6 @@ The concept of weakly-supervised maximum margin learning has been used in a vari
 
 
 
-\paragraph{MI-SVM}
-
-MissSVM
 
 
 \subsubsection{Bag-Space Classification}
@@ -84,8 +80,12 @@ K-NN or SVM, Minimal Hausdorrf distance, Earth Mover's Distance (EMD), Chamfer d
 
 \paragraph{Multiple-Instance Learning via Embedded Instance Selection (MILES)}
 
+\cite{Chen2006MILES,RuizMunoz2015MILBirdsongClassification}
+
 
 \subsection{Multiple Instance Boosting}
+
+
 
 \paragraph{Gradient Boosting Overview}
 In the standard supervised learning setting, the goal of binary classification is to learn a classification function $h:\mathcal{X} \rightarrow \mathcal{L}$ which maps data in $\mathcal{X}$ to a binary class label $\mathcal{L} \in \{-1,+1\}$.  The objective of boosting is to train a classifier of the form
