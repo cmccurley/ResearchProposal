@@ -14,14 +14,14 @@
 \contentsline {paragraph}{Learning Axis-Parallel Concepts:}{25}{section*.15}
 \contentsline {paragraph}{Maximum Likelihood:}{26}{section*.16}
 \contentsline {paragraph}{Maximum Margin:}{27}{section*.17}
-\contentsline {paragraph}{Deep Learning:}{28}{section*.18}
+\contentsline {paragraph}{Neural Networks and Deep Learning:}{28}{section*.18}
+\contentsline {paragraph}{Probabilistic Graphical Methods:}{28}{section*.19}
 \contentsline {subsubsection}{\numberline {2.1.3.3}Bag-Space Classification}{28}{subsubsection.2.1.3.3}
-\contentsline {paragraph}{Citation K-NN}{28}{section*.19}
-\contentsline {paragraph}{MI-Graph}{28}{section*.20}
-\contentsline {paragraph}{Neural Networks and Deep Learning}{28}{section*.21}
+\contentsline {paragraph}{Citation K-NN}{28}{section*.20}
+\contentsline {paragraph}{MI-Graph}{28}{section*.21}
 \contentsline {subsubsection}{\numberline {2.1.3.4}Embedded-Space Classification}{28}{subsubsection.2.1.3.4}
 \contentsline {paragraph}{Multiple-Instance Learning via Embedded Instance Selection (MILES)}{28}{section*.22}
-\contentsline {subsection}{\numberline {2.1.4}Multiple Instance Boosting}{28}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.4}Multiple Instance Boosting (MIL-Boost)}{28}{subsection.2.1.4}
 \contentsline {paragraph}{Gradient Boosting Overview}{28}{section*.23}
 \contentsline {paragraph}{MIL-Boost}{29}{section*.24}
 \contentsline {subsection}{\numberline {2.1.5}Multiple Instance Ranking}{30}{subsection.2.1.5}
@@ -82,23 +82,28 @@
 \contentsline {subsection}{\numberline {2.2.12}NCA}{60}{subsection.2.2.12}
 \contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{60}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}MIL-Based}{61}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}General Weak Supervision}{65}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Metric Embedding}{66}{section.2.4}
-\contentsline {subsubsection}{\numberline {2.4.0.1}Metric Learning}{67}{subsubsection.2.4.0.1}
-\contentsline {subsubsection}{\numberline {2.4.0.2}Preference Learning}{68}{subsubsection.2.4.0.2}
-\contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{68}{subsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Pairwise Loss}{68}{subsubsection.2.4.1.1}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Contrastive Loss}{68}{subsubsection.2.4.1.2}
-\contentsline {subsubsection}{\numberline {2.4.1.3}Triplet Loss}{68}{subsubsection.2.4.1.3}
-\contentsline {subsubsection}{\numberline {2.4.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{68}{subsubsection.2.4.1.4}
-\contentsline {subsubsection}{\numberline {2.4.1.5}FaceNet}{68}{subsubsection.2.4.1.5}
-\contentsline {subsubsection}{\numberline {2.4.1.6}Siamese Neural Networks}{68}{subsubsection.2.4.1.6}
-\contentsline {subsection}{\numberline {2.4.2}Weakly Supervised Dimensionality Reduction with Metric Embedding}{68}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Manifold Regularization}{69}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Multiple Instance Metric Learning}{69}{subsection.2.4.4}
-\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{70}{chapter.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{71}{chapter.4}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{72}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{73}{chapter.6}
-\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{74}{chapter.7}
+\contentsline {subsubsection}{\numberline {2.3.1.1}MIDR}{61}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}MidLABS}{63}{subsubsection.2.3.1.2}
+\contentsline {subsubsection}{\numberline {2.3.1.3}MIDA}{64}{subsubsection.2.3.1.3}
+\contentsline {subsubsection}{\numberline {2.3.1.4}CLFDA}{65}{subsubsection.2.3.1.4}
+\contentsline {subsubsection}{\numberline {2.3.1.5}MI-FEAR}{66}{subsubsection.2.3.1.5}
+\contentsline {subsection}{\numberline {2.3.2}General Weak Supervision}{66}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Metric Embedding}{67}{section.2.4}
+\contentsline {subsubsection}{\numberline {2.4.0.1}Metric Learning}{68}{subsubsection.2.4.0.1}
+\contentsline {subsubsection}{\numberline {2.4.0.2}Preference Learning}{69}{subsubsection.2.4.0.2}
+\contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{69}{subsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Pairwise Loss}{69}{subsubsection.2.4.1.1}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Contrastive Loss}{69}{subsubsection.2.4.1.2}
+\contentsline {subsubsection}{\numberline {2.4.1.3}Triplet Loss}{69}{subsubsection.2.4.1.3}
+\contentsline {subsubsection}{\numberline {2.4.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{69}{subsubsection.2.4.1.4}
+\contentsline {subsubsection}{\numberline {2.4.1.5}FaceNet}{69}{subsubsection.2.4.1.5}
+\contentsline {subsubsection}{\numberline {2.4.1.6}Siamese Neural Networks}{69}{subsubsection.2.4.1.6}
+\contentsline {subsection}{\numberline {2.4.2}Weakly Supervised Dimensionality Reduction with Metric Embedding}{69}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Manifold Regularization}{70}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Multiple Instance Metric Learning}{70}{subsection.2.4.4}
+\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{71}{chapter.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{72}{chapter.4}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{73}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{74}{chapter.6}
+\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{75}{chapter.7}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 

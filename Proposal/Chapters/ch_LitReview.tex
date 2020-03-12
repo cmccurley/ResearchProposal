@@ -55,18 +55,24 @@ Similar to traditional \textit{Maximum Likelihood Estimation} (MLE), the objecti
  
 
 \paragraph{Maximum Margin:}
-The concept of weakly-supervised maximum margin learning has been used in a variety of methods, the primary being \textit{Support Vector Machines}(SVM) and \textit{Metric Embedding}, which will be discussed in Section \ref{sec:MetricEmedding}.  Andrews et al. proposed two SVM methods under the MIL framework, namely, mi-SVM and MI-SVM, for instance-level and bag-level classification,  respectively \citep{Carbonneau2016MILSurvey,Du2017Thesis,Jiao2017Thesis}.  The goal of a SVM is to train a classifier to maximize the margin between a small subset of training examples (called \textit{support vectors}) and the decision hyper-plane \citep{Murphy2012}.  Both MIL SVM methods follow a similar procedure to EM-DD.  In MI-SVM, each positive bag is represented by a single instance which is considered to be the ``most positive instance" in the bag. Optimization alternates between learning a decision boundary with SVM and selecting the positive bag representatives given the new classifier. In contrast, mi-SVM considers all points in the positive bags while learning the decision boundary.  Every point in the positive bags is provided a positive label.  The instance labels are refined iteratively under the constraint of standard MIL assumption, that at least one instance from each positive bag must lie on the positive side of the decision hyper-plane \citep{Cao2016VehicleDetectionMIL}.  Additionally, Xiao et al. developed an ensemble method in which the base classifier enforces a margin between optimal hyper-spheres while enclosing at least one instance from each positive bag inside the ball \citep{Xiao2017SphereMIL}.
+The concept of weakly-supervised maximum margin learning has been used in a variety of methods, the primary being \textit{Support Vector Machines}(SVM) and \textit{Metric Embedding}, which will be discussed in Section \ref{sec:MetricEmedding}.  Andrews et al. proposed two SVM methods under the MIL framework, namely, mi-SVM and MI-SVM, for instance-level and bag-level classification,  respectively \citep{Carbonneau2016MILSurvey,Du2017Thesis,Jiao2017Thesis}.  The goal of a SVM is to train a classifier to maximize the margin between a small subset of training examples (called \textit{support vectors}) and the decision hyper-plane \citep{Murphy2012}.  Both MIL SVM methods follow a similar procedure to EM-DD.  In MI-SVM, each positive bag is represented by a single instance which is considered to be the ``most positive instance" in the bag. Optimization alternates between learning a decision boundary with SVM and selecting the positive bag representatives given the new classifier. In contrast, mi-SVM considers all points in the positive bags while learning the decision boundary.  Every point in the positive bags is provided a positive label.  The instance labels are refined iteratively under the constraint of standard MIL assumption, that at least one instance from each positive bag must lie on the positive side of the decision hyper-plane \citep{Cao2016VehicleDetectionMIL}.  Additionally, Xiao et al. developed an ensemble method in which the base classifier enforces a margin between optimal hyper-spheres while enclosing at least one instance from each positive bag inside the ball \citep{Xiao2017SphereMIL}. Hajimirsadeghi and Mori introduced a max-margin classification scheme 
+
+\textbf{MI-Forests?} 
 \textbf{MissSVM?}
+\textbf{MI-CRF?}
 
 
-\paragraph{Deep Learning:}
+\paragraph{Neural Networks and Deep Learning:}
 
+Recent developments in deep learning have also made their way into the MIL literature under the assumption that useful features can be learned by the networks using only bag-level labels.  
 
+Variational Autoencoder \citep{Ghaffarzadegan2018MILVAE}.
 
-
+\paragraph{Probabilistic Graphical Methods:}
 
 
 \subsubsection{Bag-Space Classification}
+
 
 K-NN or SVM, Minimal Hausdorrf distance, Earth Mover's Distance (EMD), Chamfer distance, kernels
 
@@ -74,7 +80,6 @@ K-NN or SVM, Minimal Hausdorrf distance, Earth Mover's Distance (EMD), Chamfer d
 
 \paragraph{MI-Graph}
 
-\paragraph{Neural Networks and Deep Learning}
 
 \subsubsection{Embedded-Space Classification}
 
@@ -83,9 +88,7 @@ K-NN or SVM, Minimal Hausdorrf distance, Earth Mover's Distance (EMD), Chamfer d
 \cite{Chen2006MILES,RuizMunoz2015MILBirdsongClassification}
 
 
-\subsection{Multiple Instance Boosting}
-
-
+\subsection{Multiple Instance Boosting (MIL-Boost)}
 
 \paragraph{Gradient Boosting Overview}
 In the standard supervised learning setting, the goal of binary classification is to learn a classification function $h:\mathcal{X} \rightarrow \mathcal{L}$ which maps data in $\mathcal{X}$ to a binary class label $\mathcal{L} \in \{-1,+1\}$.  The objective of boosting is to train a classifier of the form
@@ -121,7 +124,7 @@ where $L_{k} \in \{0, 1\}$ is the actual label of the bag.
 Following the idea of gradient boosting, the weight on each training instance is given as the derivative of the log-likelihood with respect to a change on the score given to the instance.  Thus gradient descent can be used to update the the strong classifier.  Pseudo-code for MIL-Boost is provided in Algorithm \ref{alg:mil_boost}.
 
 \begin{algorithm}
-	\caption{Pseudo-code for MIL-Boost}
+	\caption{MIL-Boost}
 	\label{alg:mil_boost}
 	\begin{algorithmic}[1]
 	\Require {Dataset $\{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$}
@@ -656,7 +659,9 @@ If it is available, relevant information for a specific task can generally be in
 \subsection{MIL-Based}
 The existing MIL manifold learning in the literature can be broken into two paradigms: LDA-based approaches and sparse, orthogonal matrix-based techniques \citep{Zhu2018MIDRSparsity}.  It should be noted that while this proposal addresses the problem of manifold learning for instance-level classification, while most MIL DR approaches in the literature were developed with bag-level classification in mind.  Additionally, all existing approaches are linear, meaning they may not work well if the underlying bag manifold exhibits curvature.  The existing approaches are briefly described. 
 
-The first true MIL manifold learning experimentation was performed in \citep{Sun2010MIDR} under the orthogonal matrix-based paradigm.  In this work, Sun et al. showed that Principal Component Analysis (PCA) failed to incorporate bag-level label information and thus provided poor separation between positive and negative bags.  Additionally, traditional Linear Discriminant Analysis (LDA) was used to project bags into a latent space which maximized between-bag separation, while minimizing within-bag dissimilarity.  However, LDA often mixed the latent bag representations due to the uncertainty of negative sample distributions in the positive bags.  To address these issues, Sun et al. proposed \textit{Multiple Instance Dimensionality Reduction} (MIDR) which optimized an objective through gradient descent to discover sparse, orthogonal projection vectors in the latent space.  The goal of MIDR is to discover a projection matrix $\bm{W} \in \mathbb{R}^{D \times d}$ which will increase discriminability between positive and negative bags in the latent embedding space.  If given the $k^{th}$ training bag, $\bm{B}_{k} = \{ \bm{x}_{k,1}, \dots, \bm{x}_{k,n_{k}} \}$ with corresponding binary bag-level label $L_k \subset \{0,1\}$, MIDR attempts to find a matrix $\bm{W}$ such that the projection of $\bm{B}_{k} \subset \mathbb{R}^{D}$ by $\bm{W}^{T}\bm{B}_{k} \subset \mathbb{R}^{d}$ increases the separation between positive and negative bags. The intuition is that the probability of the $k^{th}$ bag being positive $\Pr(L_{k}=1|\bm{W}^{T}\bm{B}_{k})$ should be close to one if it is positive and close to zero otherwise.  This can be achieved by minimizing the squared loss between the actual and predicted label of each bag
+
+\subsubsection{MIDR}
+The first true MIL manifold learning experimentation was performed in \citep{Sun2010MIDR} under the orthogonal matrix-based paradigm.  In this work, Sun et al. showed that Principal Component Analysis (PCA) failed to incorporate bag-level label information and thus provided poor separation between positive and negative bags.  Additionally, traditional Linear Discriminant Analysis (LDA) was used to project bags into a latent space which maximized between-bag separation, while minimizing within-bag dissimilarity.  However, LDA often mixed the latent bag representations due to the uncertainty of negative sample distributions in the positive bags.  To address these issues, Sun et al. proposed \textit{Multiple Instance Dimensionality Reduction} (MIDR), which optimizes an objective through gradient descent to discover sparse, orthogonal projection vectors in the latent space in conjunction with the Multiple Instance Logistic Regression classifier.  The goal of MIDR is to discover a projection matrix $\bm{W} \in \mathbb{R}^{D \times d}$ which will increase discriminability between positive and negative bags in the latent embedding space.  If given the $k^{th}$ training bag, $\bm{B}_{k} = \{ \bm{x}_{k,1}, \dots, \bm{x}_{k,n_{k}} \}$ with corresponding binary bag-level label $L_k \subset \{0,1\}$, MIDR attempts to find a matrix $\bm{W}$ such that the projection of $\bm{B}_{k} \subset \mathbb{R}^{D}$ by $\bm{W}^{T}\bm{B}_{k} \subset \mathbb{R}^{d}$ increases the separation between positive and negative bags. The intuition is that the probability of the $k^{th}$ bag being positive $\Pr(L_{k}=1|\bm{W}^{T}\bm{B}_{k})$ should be close to one if it is positive and close to zero otherwise.  This can be achieved by minimizing the squared loss between the actual and predicted label of each bag
 \begin{align}
 	\min_{\bm{W}} \sum_{k=1}^{K} (\Pr(L_{k}=1|\bm{W}^{T}\bm{B}_{k}) - L_{k})^{2}
 	\label{eq:MIDR_orig_objective}
@@ -690,39 +695,65 @@ is the softmax approximation over $n$ of $\max (P_{k,1}(\bm{\bm{W}},\bm{\beta}),
 	P_{k,n}(\bm{W},\bm{\beta}) = \Pr(l_{k,n}=1|\bm{W}^{T},\bm{x}_{k,n}) = \frac{1}{1+\exp(-\bm{\beta}^{T} \bm{W}^{T}\bm{x}_{k,n})}
 \end{align}
 \noindent
-In \citep{Sun2010MIDR}, gradient descent was used to optimize the objective.  It was found that the newly developed method outperformed unsupervised instance-level dimensionality reduction approaches (applied to bags) for bag-level classification.  MIDR was later revisited by Zhu et al. where the optimization problem was reformulated using the intertial proximal alternating linearized minimization (iPALM) method \citep{Zhu2018MIDRSparsity}.  The advantage of Multiple Instance Augmented Lagrangian Multiplier (MI-ALM) this approach is that the problem variables can be managed sperately and updated effectively.  Additionally, the global convergence of MIDR was proved. 
+In \citep{Sun2010MIDR}, gradient descent was used to optimize the objective.  An alternating optimization scheme was employed that switched between estimating the parameters of the MI Logistic Regression and solving for a new sparse, orthogonal embedding  matrix.  It was found that the newly developed method outperformed unsupervised instance-level dimensionality reduction approaches (applied to bags) for bag-level classification.  MIDR was later revisited by Zhu et al. where the optimization problem was reformulated using the \textit{intertial proximal alternating linearized minimization} (iPALM) method \citep{Zhu2018MIDRSparsity}.  The advantage of \textit{Multiple Instance Augmented Lagrangian Multiplier} (MI-ALM) this approach is that the problem variables can be managed sperately and updated effectively.  Additionally, the global convergence of MIDR was proved. 
 
-The other existing approaches for dimensionality reduction with multiple instance learning follow a LDA scheme.  Multi-Instance Dimensionality reduction by Learning a mAximum Bag margin Subspace (MidLABS) \citep{Ping2010MILDRMaxMargin} applies LDA to find a projection vector which simultaneously maximizes between class scattering and minimizes within-class scattering.  MidLABS represents each bag as a neighborhood graph in order to take advantage of data structure and jointly constructs  the scatter matrices by evaluating the scattering between bags. Just like LDA, MidLABS maximizes the objective
+\subsubsection{MidLABS}
+The other existing approaches for dimensionality reduction with multiple instance learning follow a LDA scheme.  \textit{Multi-Instance Dimensionality reduction by Learning a mAximum Bag margin Subspace} (MidLABS) \citep{Ping2010MILDRMaxMargin} applies LDA to find a projection vector which simultaneously maximizes between-class scattering and minimizes within-class scattering to separate positive and negative bags in the embedding space.  While most MIL approaches assume instances are independently and identically distributed (IID), MidLABS represents each bag as a neighborhood graph in order to take advantage of data structure and jointly constructs  the scatter matrices by evaluating the scattering between bags. MidLABS optimizes the following objective:
 \begin{align}
-	\max_{\bm{w}} J(\bm{w})= \max_{\bm{w}} \frac{\bm{w}^{T}(\sum_{L_{i} \neq L_{j}}\bm{K}_{ij})\bm{w}}{\bm{w}^{T}(\sum_{L_{i} = L_{j}}\bm{K}_{ij})\bm{w}}
+\max_{\bm{w}} J(\bm{w})= \max_{\bm{w}} \frac{\bm{w}^{T}(\sum_{L_{i} \neq L_{j}}\bm{K}_{ij})\bm{w}}{\bm{w}^{T}(\sum_{L_{i} = L_{j}}\bm{K}_{ij})\bm{w}}
 \end{align}  
 \noindent
-where 
+By defining a bag distance measure, $\bm{K}$, the the between-class and within-class scatter matrices can be constructed as
 \begin{align}
-	\bm{K}_{ij} = \frac{\sum_{a=1}^{n_{i}}\sum_{b=1}^{n_{j}} (\bm{x}_{ia} - \bm{x}_{jb})(\bm{x}_{ia} - \bm{x}_{jb})^{T}  }{n_{i}n_{j}} + C\frac{\sum_{c=1}^{m_{i}}\sum_{d=1}^{m_{j}} (\bm{e}_{ic} - \bm{e}_{jd})(\bm{e}_{ic} - \bm{x}_{jd})^{T}  }{n_{i}^{2}n_{j}^{2}}
-\end{align}
-\noindent
-\noindent
-where $\bm{x}_{ia}$ is the $a^{th}$ instance in the $i^{th}$ bag, $n_i$ is the total number of instances in the $i^{th}$ bag, $\bm{e}_{ic}$ is the $c^{th}$ edge in the $i^{th}$ bag and $m_{i}$ is the total number of edges in the $i^{th}$ bag.  With the between-class and within-class scatter matrices defined as
-\begin{align}
-	\bm{S}_{b} = \sum_{L_{i} \neq L_{j}}\bm{K}_{ij}
+\bm{S}_{b} = \sum_{L_{i} \neq L_{j}}\bm{K}_{ij}
 \end{align}
 \noindent
 and
 \begin{align}
-	\bm{S}_{w} = \sum_{L_{i} = L_{j}}\bm{K}_{ij}
+\bm{S}_{w} = \sum_{L_{i} = L_{j}}\bm{K}_{ij}
 \end{align}
 \noindent
-the problem formulation follows LDA exactly.
+It can be observed that this problem follows LDA exactly, and can thus be solved as the generalized eigenvalue problem:
+\begin{align}
+\max_{\bm{w}} J(\bm{w})= \max_{\bm{w}} \frac{\bm{w}^{T}\bm{S}_{b}\bm{w}}{\bm{w}^{T}\bm{S}_{w}\bm{w}}
+\end{align}
+\noindent
+In order to take structural information into account, the customized bag distance measurement is defined by:
+\begin{align}
+	\bm{K}_{ij} = \frac{\sum_{a=1}^{n_{i}}\sum_{b=1}^{n_{j}} (\bm{x}_{ia} - \bm{x}_{jb})(\bm{x}_{ia} - \bm{x}_{jb})^{T}  }{n_{i}n_{j}} + C\frac{\sum_{c=1}^{m_{i}}\sum_{d=1}^{m_{j}} (\bm{e}_{ic} - \bm{e}_{jd})(\bm{e}_{ic} - \bm{x}_{jd})^{T}  }{n_{i}^{2}n_{j}^{2}}
+\end{align}
+\noindent
+where $\bm{x}_{ia}$ is the $a^{th}$ instance in the $i^{th}$ bag, $n_i$ is the total number of instances in the $i^{th}$ bag, $\bm{e}_{ic}$ is the $c^{th}$ edge in the $i^{th}$ bag and $m_{i}$ is the total number of edges in the $i^{th}$ bag.  This bag distance measurement represents each bag by as an $\epsilon$-graph, where each instance is treated as a node.  An edge exists between two  nodes  if the Euclidean distance between them is lower than a threshold, $\epsilon$. \citep{Latham2015MIFeatureRankingThesis}.  This measurement compares the closeness of bags by summing over all pairs of instances between the bags. Pseudo-code for MidLABS is provided in Algorithm \ref{alg:MidLABS}.
 
+\begin{algorithm}
+	\caption{MidLABS}
+	\label{alg:MidLABS}
+	\begin{algorithmic}[1]
+		\Require {Multiple-instance dataset $\{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$}
+		\Ensure {Linear projection vector $\bm{w}$}
+		\For{bag $\bm{B}_{k}$ in $\{ \bm{B}_{1}, \dots, \bm{B}_{K} \}$}   
+		\State{$G_{k} \gets \epsilon$-graph for $\bm{B}_{k}$}
+		\EndFor             
+		\State{Define $\bm{K}_{ij} = \frac{\sum_{a=1}^{n_{i}}\sum_{b=1}^{n_{j}} (\bm{x}_{ia} - \bm{x}_{jb})(\bm{x}_{ia} - \bm{x}_{jb})^{T}  }{n_{i}n_{j}} + C\frac{\sum_{c=1}^{m_{i}}\sum_{d=1}^{m_{j}} (\bm{e}_{ic} - \bm{e}_{jd})(\bm{e}_{ic} - \bm{x}_{jd})^{T}  }{n_{i}^{2}n_{j}^{2}}$}    
+		\State {$\bm{S}_{b} = \sum_{L_{i} \neq L_{j}}\bm{K}_{ij}$}
+		\State{$\bm{S}_{w} = \sum_{L_{i} = L_{j}}\bm{K}_{ij}$}
+		\State {Solve the generalized eigenvalue problem $\bm{S}_{b}\bm{w}=\lambda\bm{S}_{w}\bm{w}$}
+		\State {Sort eigenvectors $\bm{w}$ by their eigenvalues $\lambda$}
+		\State {$\bm{w} \in \mathbb{R}^{D \times 1} \gets$ top eigenvector }
+	\end{algorithmic}
+\end{algorithm}
+
+
+\subsubsection{MIDA}
 In 2014, Chia et al. introduced Multiple-Instance Discriminant Analysis (MIDA) \citep{Chai2014MIDA}.  MIDA has the same objective as MidLABS, however, the way these algorithms construct their scatter matrices is very different.  While MidLABS constructs its  scatter matrices at the bag level, MIDA  uses instance-level information to formulate the within-class and between-class scatter.  In other words, MIDA selects a prototype for each bag and utilizes the selected instances as bag representatives for constructing the scatter.  The mean of all negative instances is used as the negative class prototype. The difficulty with this approach is the ambiguity on which instances are truly positive.  The other major difference between MidLABS and MIDA is that MIDA does not consider structural information of data when formulating the scatter matrices. To select candidate positive prototypes, MIDA initializes a set by selecting the most-likely positive instances as those with the lowest density in a Gaussian likelihood estimated by all instances in the negative bags.  An iterative optimization procedure is applied which trades-off between candidate positive instance selection and learning the projection weights into the latent space  which maximizes the separation between bags with different labels and minimizes the distances between bags with the same label.
 
+
+\subsubsection{CLFDA}
 Finally, Citation Local Fisher Linear Discriminant Analysis (CLFDA) \citep{Kim2010LocalDRMIL} incorporates citation and reference information into local Fisher Discriminant Analysis, thus it can also be treated as a MI extension to LDA.  CLFDA can be viewed as complimentary to MIDA \citep{Chai2014MIDA}.  Whereas, MIDA tries to seek true positive instances in positive bags, CLFDA attempts to detect incorrectly labeled instances (false positive) in positive bags.  CLFDA pre-labels all instances with the label of their bag  $l_{kn} = L_{k}, \forall n = 1,\dots,n_{k}$, then utilizes neighborhood information to detect false positive instances. \textit{References} are defined simply as the nearest neighbors to $\bm{x}_{n}$, while $citers$ are defined as the samples in which $\bm{x}_{n}$ is in their $C$-nearest neighbors, or $citers(\bm{x}_{n}) = \{ \bm{x}_{m}| \bm{x}_{n} \in CNN(\bm{x}_{m}), m=1, \dots, N \}$.   The steps of CLFDA are to 1.) construct a $\max(R,C)$-NN graph, where the $\max(R,C)$-NN graph is a $K$-NN graph with $K=\max(R,C)$.  This is used to detect false positives and re-label them as negative 2.) Construct scatter matrices using the provided positive and negative instances and 3.) find projection weights which simultaneously maximize the distances between positive and negative bags and minimizes the distances between bags with the same class labels.  However, it has been shown that pre-labeling all instances in positive bags as positive often leads to poor results, especially when there are large numbers of negative instances in the positive bags \citep{Chai2014MIDA}.
 
 As previously mentioned, all existing MIL dimensionality reduction approaches in the literature are solely linear.  However, many modalities exhibit nonlinear variation.  Therefore, nonlinear manifold learning approaches should be developed which operate under the multiple instance learning framework. 
 
-
-\textbf{Latham MI-FEAR}
+\subsubsection{MI-FEAR}
 
 \subsection{General Weak Supervision}
 Alternative approaches to weakly supervised dimensionality reduction that do not follow the MIL framework have been proposed.  For example, Wu studied weakly supervised manifold learning for manifold factorization using image-level labels, where the labels were the variation of interest.  The primary idea was to use weak labels to find image pairs that should be more similar after removing unwanted image variation.  Wu used an alignment method constrained by Hessian regularization to learn a manifold regression, such that new test images would be projected smoothly into a space near neighboring input images \citep{Wu2015MILImageManifoldThesis}.  Gaur et al. used weakly supervised manifold learning to perform dense semantic object correspondence \citep{Gaur2017MILSemanticObjectCorrespondence}. The objective of the semantic object correspondence problem is to compute dense association maps for a pair of images such that the same object parts get matched, even for very different appearing object instances. The goal of Gaur's work was to learn a manifold sucht that features belonging to the same semantic object parts were projected closer to each other on the manifold. This was achieved by re-purposing deep convolutional features from a classification network, where the labels were weak segmentations of object parts.  These features were then projected onto a manifold using LDA. \textit{Hierarchical Agglomerative Clustering} (HAC) was performed in the embedding space and the labels were refined with respect to geodesic distance on the manifold.  This method was inspired by the \textit{manifold assumption}, which states that similar objects (even though disparate in the input feature space), should share an intrinsic manifold.  In this way, feature embeddings are learned by an optimization process which is rewarded for projecting features closer on the manifold if they have low feature-space dissimilarity.  Additionally, the optimization penalizes feature clusters whose geometric structure is inconsistent with the observed geometric structures of object parts.  
