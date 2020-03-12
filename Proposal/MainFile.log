@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  12 MAR 2020 18:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  12 MAR 2020 18:55
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -1092,29 +1092,29 @@ Underfull \hbox (badness 10000) detected at line 457
 
 [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64]
 [65] [66] [67] [68]
-Underfull \hbox (badness 10000) detected at line 803
+Underfull \hbox (badness 10000) detected at line 822
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 804
+Underfull \hbox (badness 10000) detected at line 823
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 805
+Underfull \hbox (badness 10000) detected at line 824
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 806
+Underfull \hbox (badness 10000) detected at line 825
 [][][]
  []
 
 [69]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 813.
+(hyperref)                than one, level fixed on input line 832.
 
 [70]) [71]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
@@ -1255,10 +1255,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 9797 strings out of 493323
- 157465 string characters out of 3139067
- 245633 words of memory out of 3000000
- 12673 multiletter control sequences out of 15000+200000
+ 9804 strings out of 493323
+ 157569 string characters out of 3139067
+ 245703 words of memory out of 3000000
+ 12679 multiletter control sequences out of 15000+200000
  13330 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,17n,42p,3185b,686s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1282,9 +1282,9 @@ ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10
 .pfb>
-Output written on MainFile.pdf (88 pages, 1903083 bytes).
+Output written on MainFile.pdf (88 pages, 1904313 bytes).
 PDF statistics:
- 1746 PDF objects out of 2073 (max. 8388607)
- 401 named destinations out of 1000 (max. 500000)
+ 1749 PDF objects out of 2073 (max. 8388607)
+ 402 named destinations out of 1000 (max. 500000)
  668 words of extra memory for PDF output out of 10000 (max. 10000000)
 

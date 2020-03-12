@@ -680,6 +680,7 @@ Equation \ref{eq:MIDR_orig_objective} then becomes
 From the objective, it is clear that in order to minimize the squared loss, the distances between the key positive instances and all negative instances should be as large as possible. Additionally, $\bm{W}$ is required to be orthogonal in order to guarantee the resulting latent features are uncorrelated (to remove redundancy) as well as sparse (to improve interpretability).  This implies that the new feature representations of instances $\bm{x}_{kn}$ in bag $\bm{B}_{k}$ are formed by linear combinations of the features in the input feature space.  The MIDR optimization problem can be written succinctly as defined in \citep{Zhu2018MIDRSparsity}:
 \begin{align}
 	\min_{\bm{W},\bm{\beta}} f(\bm{W},\alpha) + \gamma ||\bm{W} ||_{1}  \quad \text{s.t.} \quad \bm{W}^{T}\bm{W} = \mathbb{I}_{d}
+	\label{eq:MIDR_objective}
 \end{align}
 \noindent
 where $\gamma$ is a positive number which controls the balance between the sparsity term $||\bm{W}||_{1}$ and the fitting term $f(\bm{W},\alpha)=\sum_{k=1}^{K} (P_{k}(\bm{W},\bm{\beta}) - L_{k})^{2}$.  In this case, 
@@ -695,6 +696,24 @@ is the softmax approximation over $n$ of $\max (P_{k,1}(\bm{\bm{W}},\bm{\beta}),
 	P_{k,n}(\bm{W},\bm{\beta}) = \Pr(l_{k,n}=1|\bm{W}^{T},\bm{x}_{k,n}) = \frac{1}{1+\exp(-\bm{\beta}^{T} \bm{W}^{T}\bm{x}_{k,n})}
 \end{align}
 \noindent
+Pseudo-code for MIDR is provided in Algorithm \ref{alg:MIDR}.
+
+\begin{algorithm}
+	\caption{MIDR}
+	\label{alg:MIDR}
+	\begin{algorithmic}[1]
+		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\bm{L} =\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$, sparsity parameter $\gamma$}
+		\Ensure {Projection matrix $\bm{W}$}
+		\While {Not converged}
+		\State {Train multiple instance logistic regression $h$ using data $\bm{W}^{T}\bm{B},\bm{L}$}
+		\For {$\bm{B}_{k} \in \bm{B}$}
+		\State {$P_{k} \gets$ probability $h(\bm{B}_{k})$ }
+		\EndFor
+		\State {Optimize Equation \ref{eq:MIDR_objective} for new $\bm{W}$}
+		\EndWhile            
+	\end{algorithmic}
+\end{algorithm}
+
 In \citep{Sun2010MIDR}, gradient descent was used to optimize the objective.  An alternating optimization scheme was employed that switched between estimating the parameters of the MI Logistic Regression and solving for a new sparse, orthogonal embedding  matrix.  It was found that the newly developed method outperformed unsupervised instance-level dimensionality reduction approaches (applied to bags) for bag-level classification.  MIDR was later revisited by Zhu et al. where the optimization problem was reformulated using the \textit{intertial proximal alternating linearized minimization} (iPALM) method \citep{Zhu2018MIDRSparsity}.  The advantage of \textit{Multiple Instance Augmented Lagrangian Multiplier} (MI-ALM) this approach is that the problem variables can be managed sperately and updated effectively.  Additionally, the global convergence of MIDR was proved. 
 
 \subsubsection{MidLABS}
