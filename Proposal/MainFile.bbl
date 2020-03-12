@@ -1,9 +1,14 @@
-\begin{thebibliography}{94}
+\begin{thebibliography}{106}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aiolli and Sperduti(2004)]{Aiolli2004LearningPreferences}
+Fabio Aiolli and Alessandro Sperduti.
+\newblock Learning preferences for multiclass problems.
+\newblock 01 2004.
 
 \bibitem[Amores(2013)]{Amores2013MIClassification}
 Jaume Amores.
@@ -110,6 +115,15 @@ J.~Bocinsky.
   using the adaptive cosine estimator and spectral match filter.
 \newblock Master's thesis, Univ. of Florida, Gainesville, FL, May 2019.
 
+\bibitem[Bocinsky et~al.(2019)Bocinsky, McCurley, Shats, and
+  Zare]{Bocinsky2019SPIEMIACEInitialization}
+J.~Bocinsky, C.~H. McCurley, D.~Shats, and A.~Zare.
+\newblock Investigation of initialization strategies for the multiple instance
+  adaptive cosine estimator.
+\newblock In \emph{Detection and Sensing of Mines, Explosive Objects, and
+  Obscured Targets XXIV, 110120N}, volume 11012 of \emph{Proc.SPIE}, May 2019.
+\newblock \doi{10.1117/12.2519463}.
+
 \bibitem[Carbonneau et~al.(2016)Carbonneau, Cheplygina, Granger, and
   Gagnon]{Carbonneau2016MILSurvey}
 M.~Carbonneau, V.~Cheplygina, E.~Granger, and G.~Gagnon.
@@ -161,6 +175,16 @@ V.~Cheplygina, M.~Bruijne, and J.~P.~W. Pluim.
 \newblock ISSN 1361-8415.
 \newblock \doi{https://doi.org/10.1016/j.media.2019.03.009}.
 
+\bibitem[Chu and
+  Ghahramani(2005)]{Chu2005LearningPreferencesWithGaussianProcesses}
+Wei Chu and Zoubin Ghahramani.
+\newblock Preference learning with gaussian processes.
+\newblock In \emph{Proceedings of the 22nd International Conference on Machine
+  Learning}, ICML ’05, page 137–144, New York, NY, USA, 2005. Association
+  for Computing Machinery.
+\newblock ISBN 1595931805.
+\newblock \doi{10.1145/1102351.1102369}.
+
 \bibitem[{Chun-Guang Li} and {Jun Guo}(2006)]{Li2006SupervisedIsomap}
 {Chun-Guang Li} and {Jun Guo}.
 \newblock Supervised isomap with explicit mapping.
@@ -173,6 +197,13 @@ V.~Cheplygina, M.~Bruijne, and J.~P.~W. Pluim.
 M.~Cook.
 \newblock Task driven extended functions of multiple instances (td-efumi).
 \newblock Master's thesis, Univ. of Missouri, Columbia, MO, 2015.
+
+\bibitem[Dekel et~al.(2004)Dekel, Singer, and Manning]{Dekel2004Ranking}
+Ofer Dekel, Yoram Singer, and Christopher~D Manning.
+\newblock Log-linear models for label ranking.
+\newblock In S.~Thrun, L.~K. Saul, and B.~Sch\"{o}lkopf, editors,
+  \emph{Advances in Neural Information Processing Systems 16}, pages 497--504.
+  MIT Press, 2004.
 
 \bibitem[Dietterich et~al.(1997)Dietterich, Lathrop, and
   Lozano-Pérez]{Dietterich1996AxisParallelRectangles}
@@ -212,6 +243,13 @@ K.~{Fukunaga} and J.~M. {Mantock}.
 \newblock ISSN 1939-3539.
 \newblock \doi{10.1109/TPAMI.1983.4767461}.
 
+\bibitem[F{\"u}rnkranz and H{\"u}llermeier(2003)]{Furnkranz2003RankingSummary}
+Johannes F{\"u}rnkranz and Eyke H{\"u}llermeier.
+\newblock Pairwise preference learning and ranking.
+\newblock In Nada Lavra{\v{c}}, Dragan Gamberger, Hendrik Blockeel, and
+  Ljup{\v{c}}o Todorovski, editors, \emph{Machine Learning: ECML 2003}, pages
+  145--156, Berlin, Heidelberg, 2003. Springer Berlin Heidelberg.
+
 \bibitem[Gader et~al.(2013)Gader, Zare, Close, Aitken, and Tuell]{MUUFL}
 P.~Gader, A.~Zare, R.~Close, J.~Aitken, and G.~Tuell.
 \newblock Muufl gulfport hyperspectral and lidar airborne data set.
@@ -229,6 +267,11 @@ U.~{Gaur} and B.~S. {Manjunath}.
 \bibitem[Geng et~al.(2017)Geng, Ji, and Zhao]{Geng2017TargetDetection}
 Xiurui Geng, Luyan Ji, and Yongchao Zhao.
 \newblock The basic equation for target detection in remote sensing, 2017.
+
+\bibitem[Ghaffarzadegan(2018)]{Ghaffarzadegan2018MILVAE}
+Shabnam Ghaffarzadegan.
+\newblock Deep multiple instance feature learning via variational autoencoder.
+\newblock In \emph{AAAI Workshops}, 2018.
 
 \bibitem[Ghojogh et~al.(2019)Ghojogh, Karray, and
   Crowley]{Ghojogh2019KDATutorial}
@@ -265,6 +308,11 @@ Gary~B. Huang, Manu Ramesh, Tamara Berg, and Erik Learned-Miller.
   in unconstrained environments.
 \newblock Technical Report 07-49, University of Massachusetts, Amherst, October
   2007.
+
+\bibitem[Jiao(2017)]{Jiao2017Thesis}
+C.~Jiao.
+\newblock \emph{Target Concept Learning From Ambiguously Labeled Data}.
+\newblock PhD thesis, Univ. of Missouri, Columbia, MO, Dec. 2017.
 
 \bibitem[Kegl et~al.(2008)Kegl, Wunsch, and
   Zinovyev]{Kegl2008PrincipalManifoldsTextbook}
@@ -310,6 +358,30 @@ L.~Livi and A.~Rizzi.
   2013.
 \newblock ISSN 1433-7541.
 \newblock \doi{10.1007/s10044-012-0284-8}.
+
+\bibitem[Maron and Lozano-P{\'e}rez(1998)]{Maron1998DiverseDensity}
+O.~Maron and T.~Lozano-P{\'e}rez.
+\newblock A framework for multiple-instance learning.
+\newblock In \emph{Proceedings of the 1997 Conference on Advances in Neural
+  Information Processing Systems 10}, NIPS '97, pages 570--576, Cambridge, MA,
+  USA, 1998. MIT Press.
+\newblock ISBN 0-262-10076-2.
+
+\bibitem[Maron and Ratan(1998)]{Maron1998MILSceneClassification}
+O.~Maron and A.~L. Ratan.
+\newblock Multiple-instance learning for natural scene classification.
+\newblock In \emph{Proceedings of the Fifteenth International Conference on
+  Machine Learning}, ICML '98, pages 341--349, San Francisco, CA, USA, 1998.
+  Morgan Kaufmann Publishers Inc.
+\newblock ISBN 1-55860-556-8.
+
+\bibitem[McCurley et~al.(2019)McCurley, Bocinsky, and
+  Zare]{Mccurley2019SPIEWEMIComparison}
+C.~H. McCurley, J.~Bocinsky, and A.~Zare.
+\newblock Comparison of hand-held wemi target detection algorithms.
+\newblock In \emph{Detection and Sensing of Mines, Explosive Objects, and
+  Obscured Targets XXIV, 110120U}, volume 11012 of \emph{Proc.SPIE}, May 2019.
+\newblock \doi{10.1117/12.2519454}.
 
 \bibitem[{Meng} and {Zhan}(2018)]{Meng2018ManRegZeroShot}
 M.~{Meng} and X.~{Zhan}.
@@ -667,6 +739,15 @@ A.~Zare.
   Bayesian Methods}.
 \newblock PhD thesis, Univ. of Florida, Gainesville, FL, 2008.
 
+\bibitem[Zare et~al.(2015)Zare, Cook, Alvey, and Ho]{Zare2015MILLandmineEMI}
+A.~Zare, M.~Cook, B.~Alvey, and D.~K. Ho.
+\newblock Multiple instance dictionary learning for subsurface object detection
+  using handheld emi.
+\newblock In \emph{Detection and Sensing of Mines, Explosive Objects, and
+  Obscured Targets XX, 94540G}, Proc. SPIE, May 2015.
+\newblock \doi{10.1117/12.2179177}.
+\newblock URL \url{https://doi.org/10.1117/12.2179177}.
+
 \bibitem[Zare et~al.(2018)Zare, Jiao, and Glenn]{Zare2016MIACE}
 Alina Zare, Changzhe Jiao, and Taylor Glenn.
 \newblock Discriminative multiple instance hyperspectral target
@@ -681,6 +762,13 @@ Cha Zhang, John~C. Platt, and Paul~A. Viola.
 \newblock In Y.~Weiss, B.~Sch\"{o}lkopf, and J.~C. Platt, editors,
   \emph{Advances in Neural Information Processing Systems 18}, pages
   1417--1424. MIT Press, 2006.
+
+\bibitem[Zhang and Goldman(2002)]{Zhang2002EMDD}
+Q.~Zhang and S.~A. Goldman.
+\newblock Em-dd: An improved multiple-instance learning technique.
+\newblock In T.~G. Dietterich, S.~Becker, and Z.~Ghahramani, editors,
+  \emph{Advances in Neural Information Processing Systems 14}, pages
+  1073--1080. MIT Press, 2002.
 
 \bibitem[{Zhang} et~al.(2014){Zhang}, {Zheng}, {Liu}, {Sun}, {Wang}, and
   {Fu}]{Zhang2014SemiSupManLearningFusion}

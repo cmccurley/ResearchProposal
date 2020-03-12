@@ -32,7 +32,7 @@ Multiple instance learning in the literature can be broadly categorized into fou
 
 \subsection{Multiple Instance Classification}
 The standard supervised learning task is to learn a classifier based on a training set of feature vectors, where each feature vector is paired with and associated class label.  In the \textit{Multiple Instance Classification} (MIC) task, the goal is to learn a classifier based on a training set of bags, where each bag is a set of feature vectors known as instances.  In this setting, each bag is paired with an associated binary class label; however, the labels of each instance in the sets are unknown. 
-\subsubsection{Space Paradigms} The MIC problem has been formulated under three paradigms: Instance-Space, Bag-Space and Embedded-Space \citep{Amores2013MIClassification}.  Each paradigm is categorized according to how information presented in the MI data is exploited.  In the \textit{Instance-Space} (IS) paradigm, the discriminative information is considered to lie at the instance-level.  An instance-level classifier is trained to separate the true positive instances from the true negative instances.  Given an instance-level classifier, a bag-level classifier can be developed by simply aggregating the instance-level scores in a test bag.  This paradigm is based on local, instance-level information.  In the \textit{Bag-Space} (BS) paradigm, the discriminative information is considered to lie at the bag-level.  Under this paradigm, each bag is treated as a whole entity, and the learning process discriminates between entire bags.  This paradigm is based on global, bag-level information.  Considering that the bag space is a non-vector space, current BS methods make use of non-vectorial learning techniques which define distance metrics as a way to compare bags.  In the \textit{Embedded-Space} (ES) paradigm, each bag is mapped to a single feature vector which captures the relevant information about the entire bag.  Consequently, the learning problem transforms into a standard supervised problem, where each feature vector is paired with an associated (bag-level) label.  Similar to the BS paradigm, the ES paradigm is also based on global, bag-level information.  However, the difference between the two paradigms lies in the way bag-level information is extracted.  In the BS paradigm, information is extracted implicitly through the definition of the distance or kernel function.  Alternatively, information is extracted explicitly in the ES paradigm through the definition of the mapping function from the bag-space to the vector space.  Figure \ref{fig:mil_classification_space_paradigm} demonstrates the differences between standard supervised classification and the three MIL classification space paradigms.  A review of prominent MIL classification methods in the literature is provided, categorized according to the paradigm they fall under.
+\subsubsection{Space Paradigms} The MIC problem has been formulated under three paradigms: Instance-Space, Bag-Space and Embedded-Space \citep{Amores2013MIClassification}.  Each paradigm is categorized according to how information presented in the MI data is exploited.  In the \textit{Instance-Space} (IS) paradigm, the discriminative information is considered to lie at the instance-level.  An instance-level classifier is trained to separate the true positive instances from the true negative instances.  Given an instance-level classifier, a bag-level classifier can be developed by simply aggregating the instance-level scores in a test bag.  This paradigm is based on local, instance-level information.  In the \textit{Bag-Space} (BS) paradigm, the discriminative information is considered to lie at the bag-level.  Under this paradigm, each bag is treated as a whole entity, and the learning process discriminates between entire bags.  This paradigm is based on global, bag-level information.  Considering that the bag space is a non-vector space, current BS methods make use of non-vectorial learning techniques which define distance metrics as a way to compare bags.  In the \textit{Embedded-Space} (ES) paradigm, each bag is mapped to a single feature vector which captures the relevant information about the entire bag.  Consequently, the learning problem transforms into a standard supervised problem, where each feature vector is paired with an associated (bag-level) label.  Similar to the BS paradigm, the ES paradigm is also based on global, bag-level information.  However, the difference between the two paradigms lies in the way bag-level information is extracted.  In the BS paradigm, information is extracted implicitly through the definition of the distance or kernel function.  Alternatively, information is extracted explicitly in the ES paradigm through the definition of the mapping function from the bag-space to the vector space.  Figure \ref{fig:mil_classification_space_paradigm} demonstrates the differences between standard supervised classification and the three MIL classification space paradigms. Apart from space paradigm, MIL classification methods in the literature can be organized according to the their primary approaches toward learning. A review of prominent MIL classification methods in the literature is provided, categorized according to their learning approaches..
 
 \begin{center}
 	\begin{figure*}[h]
@@ -43,20 +43,30 @@ The standard supervised learning task is to learn a classifier based on a traini
 	\end{figure*}
 \end{center}
 
+\subsubsection{MIL Classification Approaches}
+The majority of MIL classification approaches in the literature can be categorized by their learning procedures.  The main categories are: Axis-Parallel Concepts, Maximum Likelihood, Maximum Margin and Deep Learning.  Each approach is reviewed in the following.
+
 \subsubsection{Instance-Space Classification}
 
-\paragraph{Axis-Parallel Rectangle (APR)}
+\paragraph{Learning Axis-Parallel Concepts:}
+Learning Axis-Parallel Concepts are among the first group of methods used to solve MIL problems \citep{Dietterich1996AxisParallelRectangles}.  The foundation of this category is based on the method of \textit{Axis-Parallel Rectangles} (APR), proposed by Dietterich et al. in the 1990's.  An axis-parallel hyper-rectangle is a set of thresholds (one for each feature dimension) that is used to discriminate between two classes. It can also be viewed as an overlap or aggregation region of true positive instances in the feature space. The goal of APR is to find an axis-parallel hyper-rectangle in the feature space to represent the target concept \citep{Ghaffarzadegan2018MILVAE, Bocinsky2019SPIEMIACEInitialization, Jiao2017Thesis}.  A disadvantage of these approaches is that they can fail to neglect a majority of data in a large bag sample.    
 
-\paragraph{Diverse Density (DD)}
+\paragraph{Maximum Likelihood:}
+Similar to traditional \textit{Maximum Likelihood Estimation} (MLE), the objective of maximum likelihood in the MIL setting is to train a classifier which maximizes the likelihood of the data.  The most prominent of these methods is \textit{Diverse Density} (DD) \citep{Maron1998DiverseDensity}, which considers each bag as a manifold describing the instances.  The goal of learning is to discover a prototype  from the training data which maximizes the Diverse Density measure.  Diverse Density is essentially a measure of the intersection of positive bags minus the union of the negative bags.  By maximizing Diverse Density, a point a of intersection can be found which is close to at least one instance  from the positive bags while being as far as possible from all points in the negative bags \citep{Ghaffarzadegan2018MILVAE}.   Zhang et al. later proposed \textit{Expectation-Maximization Diverse Density} (EM-DD) \citep{Zhang2002EMDD}. EM-DD extends DD by viewing the relationships between instances and their corresponding bag's labels as latent variables.  In other words, it asks which instance in the set corresponds to the bag's label \citep{Du2017Thesis}. In the \textit{E-step}, an the instance from each bag which is the most probable for providing the bag its label is selected.  Then in the \textit{M-step}, a new concept point is found by maximizing DD with gradient ascent.  This process is iterated until a stopping criteria is met, however, it will stop naturally as there only a finite number of instance combination that the algorithm can pick.  Multiple instance maximum likelihood approaches have been used in a variety of problems, such as: stock selection, person identification, scene classification, hyperspectral target classification and explosive hazard detection \citep{Maron1998DiverseDensity, Maron1998MILSceneClassification, Zare2016MIACE, Zare2015MILLandmineEMI, Bocinsky2019SPIEMIACEInitialization, Mccurley2019SPIEWEMIComparison}.    
 
-\paragraph{Expectation-Maximization Diverse Density (EM-DD)}
+ 
+
+\paragraph{Maximum Margin:}
+
+\paragraph{Deep Learning:}
+
+
+
 
 \paragraph{MI-SVM}
 
 MissSVM
 
-
-\paragraph{MIL-Boost}
 
 \subsubsection{Bag-Space Classification}
 
@@ -73,13 +83,6 @@ K-NN or SVM, Minimal Hausdorrf distance, Earth Mover's Distance (EMD), Chamfer d
 \paragraph{Multiple-Instance Learning via Embedded Instance Selection (MILES)}
 
 
-\subsection{Multiple Instance Ranking}
-
-
-\cite{Hu2008MIRanking}, \cite{Bergeron2012FastBundleMILRanking}, \cite{Bergeron2008MIRanking}, \cite{Latham2015MIFeatureRankingThesis} \cite{Asif2017LargeMarginMIRanking}
-
-
-
 \subsection{Multiple Instance Boosting}
 
 \paragraph{Gradient Boosting Overview}
@@ -88,7 +91,7 @@ In the standard supervised learning setting, the goal of binary classification i
 	\bm{h}(\bm{x}) = \sum_{t=1}^{T}\alpha_{t}h_{t}(\bm{x})
 \end{align}
 \noindent
-where each $h_{t}:\mathcal{X} \rightarrow \mathcal{L}$ is a \textit{weak learner} whose performance may only be slightly above chance, and the weights $\alpha_{t}$ are each weak learners' relative importance \citep{Babenko2008MIBoosting}.  \textit{Boosting} combines multiple weak learners into a single \textit{strong} classifier with low classification error.  In each phase of training, samples classified incorrectly are given more weight in order to improve classification performance in the next iteration.  The response of each weak classifier $h_{t}$ is given as the maximum response over all instances in the training set:
+where each $h_{t}:\mathcal{X} \rightarrow \mathcal{L}$ is a \textit{weak learner} whose performance may only be slightly above chance, and the weights $\alpha_{t}$ are each weak learners' relative importance \citep{Babenko2008MIBoosting}.  \textit{Boosting} combines multiple weak learners into a single \textit{strong} classifier with low classification error.  This is also known in the literature as \textit{ensembling}.  In each phase of training, samples classified incorrectly are given more weight in order to improve classification performance in the next iteration.  The response of each weak classifier $h_{t}$ is given as the maximum response over all instances in the training set:
 \begin{align}
 	h_{t} = \arg \max_{h} \sum_{n=1}^{N}w_{n}h(\bm{x}_{n})
 \end{align}
@@ -137,7 +140,10 @@ Following the idea of gradient boosting, the weight on each training instance is
 
 Each round of boosting consists of updating the weak learners according to the instances they misclassified and updating the strong classifier according to the new weights calculated over the weak learners.  The goal of MIL-Boost is to be able to correctly classify each instance in a test bag as being positive or negative such that the label of the bag is given as the maximum label over all instances in the bag.
 
+\subsection{Multiple Instance Ranking}
 
+
+\cite{Hu2008MIRanking}, \cite{Bergeron2012FastBundleMILRanking}, \cite{Bergeron2008MIRanking}, \cite{Latham2015MIFeatureRankingThesis} \cite{Asif2017LargeMarginMIRanking} , \cite{Aiolli2004LearningPreferences}, \cite{Chu2005LearningPreferencesWithGaussianProcesses}, \cite{Dekel2004Ranking}, \cite{Furnkranz2003RankingSummary}, 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manifold Learning}

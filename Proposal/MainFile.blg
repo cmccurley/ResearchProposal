@@ -41,6 +41,7 @@ I was expecting a `,' or a `}'---line 2642 of file BibFiles/references.bib
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
 --line 3114 of file BibFiles/references.bib
+Warning--empty booktitle in Aiolli2004LearningPreferences
 Warning--empty booktitle in Babenko2008MIBoosting
 Warning--empty booktitle in Babenko2011MILManifoldBags
 Warning--empty journal in Bishop1998GTM
