@@ -99,11 +99,9 @@ Boosting under the MIL framework was originally proposed by Zhang et al. and is 
 	L_{k} = \max_{n}(l_{kn})
 \end{align}
 \noindent
-In this setting, the goal is to learn a classifier $\bm{h}$ using only bag-level labels such that $\max_{n}(\bm{h}(\bm{x}_{kn})) = L_{k}$.
+In this setting, the goal is to learn a classifier $\bm{h}$ using only bag-level labels such that $\max_{n}(\bm{h}(\bm{x}_{kn})) = L_{k}$. The score given to a sample is $l_{kn} = \bm{h}(\bm{x}_{kn})$ and $\bm{h}(\bm{x}_{kn}) = \sum_{t=1}^{T}\alpha_{t}h_{t}(\bm{x}_{kn})$ which is a weighted sum of predicted labels from each of the weak classifiers.  Obviously, the sign of the prediction from the strong classifier provides the class label for the instance.
 
-The score given to a sample is $l_{kn} = \bm{h}(\bm{x}_{kn})$ and $\bm{h}(\bm{x}_{kn}) = \sum_{t=1}^{T}\alpha_{t}h_{t}(\bm{x}_{kn})$
-
-The probability that an instance is positive is given by the standard logistic function
+A natural objective is to minimize the negative log-likelihood between instances and their predicted labels.  This can also be done at the bag-level.  The probability that an instance is positive is given by the standard logistic function
 \begin{align}
 	p_{kn} = \frac{1}{1+\exp(-l_{kn})}
 \end{align}
@@ -115,37 +113,30 @@ and the probability that bag $k$ is positive is given by a ``noisy OR", $p_{k} =
 \noindent
 where $L_{k} \in \{0, 1\}$ is the actual label of the bag.
 
-Following the idea of gradient boosting, the weight on each training instance is given as the derivative of the log-likelihood with respect to a change on the score given to the instance.  This is used to update the the strong classifier.  Pseudo-code for MIL-Boost is provided in Algorithm \ref{alg:mil_boost}.
+Following the idea of gradient boosting, the weight on each training instance is given as the derivative of the log-likelihood with respect to a change on the score given to the instance.  Thus gradient descent can be used to update the the strong classifier.  Pseudo-code for MIL-Boost is provided in Algorithm \ref{alg:mil_boost}.
 
 \begin{algorithm}
 	\caption{Pseudo-code for MIL-Boost}
-	\begin{algorithmic}
-		\REQUIRE $n \geq 0 \vee x \neq 0$
-		\ENSURE $y = x^n$
-		\STATE $y \leftarrow 1$
-		\IF{$n < 0$}
-		\STATE $X \leftarrow 1 / x$
-		\STATE $N \leftarrow -n$
-		\ELSE
-		\STATE $X \leftarrow x$
-		\STATE $N \leftarrow n$
-		\ENDIF
-		\WHILE{$N \neq 0$}
-		\IF{$N$ is even}
-		\STATE $X \leftarrow X \times X$
-		\STATE $N \leftarrow N / 2$
-		\ELSE[$N$ is odd]
-		\STATE $y \leftarrow y \times X$
-		\STATE $N \leftarrow N - 1$
-		\ENDIF
-		\ENDWHILE
-	\end{algorithmic}
 	\label{alg:mil_boost}
+	\begin{algorithmic}[1]
+	\Require {Dataset $\{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$}
+	\For{$t=1$ to $T$}                    
+	\State {Compute weights $w_{kn} = -\frac{\mathcal{\partial L}}{\partial \bm{h}_{kn}}$}
+	\State \begin{varwidth}[t]{\linewidth}
+	{Train weak classifier $h_{t}$ using weights $|w_{kn}|$ } \par
+		\hskip\algorithmicindent $h_{t} = \arg \min_{h}\sum_{kn}\bm{1}(h(\bm{x}_{kn} \neq L_{k}))|w_{kn}|$
+	\end{varwidth}
+	\State \begin{varwidth}[t]{\linewidth}
+		{Find $\alpha_{t}$ via line search to minimize $\mathcal{L}(\bm{h})$} \par
+		\hskip\algorithmicindent $\alpha_{t} = \arg \min_{\alpha} \mathcal{L}(\bm{h} + \alpha h_{t})$
+	\end{varwidth}
+	\State Update strong classifier $\bm{h} \gets \bm{h} + \alpha_{t} h_{t}$
+	\EndFor
+	\end{algorithmic}
 \end{algorithm}
 
-Each round of boosting is a search for a classifier which maximizes $\sum_{kn} \alpha_{kn}\bm{h}(\bm{x}_{kn})$ where $\bm{h}(\bm{x}_{kn})$ is the score assigned to the sample by the weak classifier ($\bm{h}(\bm{x}_{kn}) \in \{-1, +1\}$ for a binary classifier).
+Each round of boosting consists of updating the weak learners according to the instances they misclassified and updating the strong classifier according to the new weights calculated over the weak learners.  The goal of MIL-Boost is to be able to correctly classify each instance in a test bag as being positive or negative such that the label of the bag is given as the maximum label over all instances in the bag.
 
-It can be observed that as learning proceeds and the probability of the bag approaches the desired, the weight on the entire bag is reduced.  Within the bag, the examples are assigned a weight which is higher for samples with higher scores.  Thus the algorithm selects a subset of samples to assign a higher positive weight.  These samples control subsequent learning.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
