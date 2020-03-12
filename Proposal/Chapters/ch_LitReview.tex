@@ -82,13 +82,23 @@ K-NN or SVM, Minimal Hausdorrf distance, Earth Mover's Distance (EMD), Chamfer d
 
 \subsection{Multiple Instance Boosting}
 
-\cite{Zhang2006MIBoosting} \cite{Babenko2008MIBoosting}
+\paragraph{Gradient Boosting Overview}
+In the standard supervised learning setting, the goal of binary classification is to learn a classification function $h:\mathcal{X} \rightarrow \mathcal{L}$ which maps data in $\mathcal{X}$ to a binary class label $\mathcal{L} \in \{-1,+1\}$.  The objective of boosting is to train a classifier of the form
+\begin{align}
+	\bm{h}(\bm{x}) = \sum_{t=1}^{T}\alpha_{t}h_{t}(\bm{x})
+\end{align}
+\noindent
+where each $h_{t}:\mathcal{X} \rightarrow \mathcal{L}$ is a \textit{weak learner} whose performance may only be slightly above chance, and the weights $\alpha_{t}$ are each weak learners' relative importance \citep{Babenko2008MIBoosting}.  \textit{Boosting} combines multiple weak learners into a single \textit{strong} classifier with low classification error.  In each phase of training, samples classified incorrectly are given more weight in order to improve classification performance in the next iteration.  
 
+\paragraph{MIL-Boost}
+Boosting under the MIL framework was originally proposed by Zhang et al. and is known as \textit{MIL-Boost} \citep{Zhang2006MIBoosting}.  Under MIL, it is assumed that every instance has a true label $l_{kn} \in \{ -1,+1 \}$.  A bag is labeled positive if at least one of its instances are positive, and a bag is labeled negative if every instance is negative.  This means that the label of a bag is provided as the max label of all instances in the bag:
+\begin{align}
+	L_{k} = \max_{n}(l_{kn})
+\end{align}
+\noindent
+In this setting, the goal is to learn a classifier $\bm{h}$ using only bag-level labels such that $\max_{n}(\bm{h}(\bm{x}_{kn})) = L_{k}$.
 
-General Boosting framework
-
-MIL-Boost
-
+Each round phase of boosting is a search for a classifier which maximizes  where  is the score assigned to the weak classifier ()
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
