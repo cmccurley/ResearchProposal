@@ -57,6 +57,8 @@ Similar to traditional \textit{Maximum Likelihood Estimation} (MLE), the objecti
  
 
 \paragraph{Maximum Margin:}
+The concept of weakly-supervised maximum margin learning has been used in a variety of methods, the primary being \textit{Support Vector Machines}(SVM) and \textit{Metric Embedding}, which will be discussed in Section \ref{sec:MetricEmedding}.  Andrews et al. proposed two SVM methods under the MIL framework, namely, mi-SVM and MI-SVM, for instance-level and bag-level classification,  respectively \citep{Carbonneau2016MILSurvey,Du2017Thesis,Jiao2017Thesis}.  The goal of a SVM is to train a classifier to maximize the margin between a small subset of training examples (called \textit{support vectors}) and the decision hyper-plane \citep{Murphy2012}.  Both MIL SVM methods follow a similar procedure to EM-DD.  In MI-SVM, each positive bag is represented by a single instance which is considered to be the ``most positive instance" in the bag. Optimization alternates between learning a decision boundary with SVM and selecting the positive bag representatives given the new classifier. In contrast, mi-SVM considers all points in the positive bags while learning the decision boundary.  Every point in the positive bags is provided a positive label.  The instance labels are refined iteratively under the constraint of standard MIL assumption, that at least one instance from each positive bag must lie on the positive side of the decision hyper-plane.
+
 
 \paragraph{Deep Learning:}
 
