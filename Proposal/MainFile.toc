@@ -87,24 +87,24 @@
 \contentsline {subsubsection}{\numberline {2.3.1.3}MIDA}{65}{subsubsection.2.3.1.3}
 \contentsline {subsubsection}{\numberline {2.3.1.4}CLFDA}{66}{subsubsection.2.3.1.4}
 \contentsline {subsubsection}{\numberline {2.3.1.5}MI-FEAR}{68}{subsubsection.2.3.1.5}
-\contentsline {subsection}{\numberline {2.3.2}General Weak Supervision}{68}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Comparison Table of MI Dimensionality Reduction Methods}{69}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Metric Embedding}{69}{section.2.4}
-\contentsline {subsubsection}{\numberline {2.4.0.1}Metric Learning}{71}{subsubsection.2.4.0.1}
-\contentsline {subsubsection}{\numberline {2.4.0.2}Preference Learning}{71}{subsubsection.2.4.0.2}
-\contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{71}{subsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Pairwise Loss}{71}{subsubsection.2.4.1.1}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Contrastive Loss}{71}{subsubsection.2.4.1.2}
-\contentsline {subsubsection}{\numberline {2.4.1.3}Triplet Loss}{71}{subsubsection.2.4.1.3}
-\contentsline {subsubsection}{\numberline {2.4.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{71}{subsubsection.2.4.1.4}
-\contentsline {subsubsection}{\numberline {2.4.1.5}FaceNet}{71}{subsubsection.2.4.1.5}
-\contentsline {subsubsection}{\numberline {2.4.1.6}Siamese Neural Networks}{72}{subsubsection.2.4.1.6}
-\contentsline {subsection}{\numberline {2.4.2}Weakly Supervised Dimensionality Reduction with Metric Embedding}{72}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Manifold Regularization}{72}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Multiple Instance Metric Learning}{72}{subsection.2.4.4}
-\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{73}{chapter.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{74}{chapter.4}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{75}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{76}{chapter.6}
-\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{77}{chapter.7}
+\contentsline {subsection}{\numberline {2.3.2}General Weak Supervision}{69}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Comparison Table of MI Dimensionality Reduction Methods}{71}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Metric Embedding}{71}{section.2.4}
+\contentsline {subsubsection}{\numberline {2.4.0.1}Metric Learning}{72}{subsubsection.2.4.0.1}
+\contentsline {subsubsection}{\numberline {2.4.0.2}Preference Learning}{72}{subsubsection.2.4.0.2}
+\contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{72}{subsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Pairwise Loss}{72}{subsubsection.2.4.1.1}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Contrastive Loss}{72}{subsubsection.2.4.1.2}
+\contentsline {subsubsection}{\numberline {2.4.1.3}Triplet Loss}{72}{subsubsection.2.4.1.3}
+\contentsline {subsubsection}{\numberline {2.4.1.4}Large-Margin K-Nearest Neighbors (LMNN)}{72}{subsubsection.2.4.1.4}
+\contentsline {subsubsection}{\numberline {2.4.1.5}FaceNet}{72}{subsubsection.2.4.1.5}
+\contentsline {subsubsection}{\numberline {2.4.1.6}Siamese Neural Networks}{73}{subsubsection.2.4.1.6}
+\contentsline {subsection}{\numberline {2.4.2}Weakly Supervised Dimensionality Reduction with Metric Embedding}{73}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Manifold Regularization}{73}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Multiple Instance Metric Learning}{73}{subsection.2.4.4}
+\contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{74}{chapter.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{75}{chapter.4}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{76}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{77}{chapter.6}
+\contentsline {chapter}{\numberline {7}\uppercase {Conclusions}}{78}{chapter.7}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 
