@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  13 MAR 2020 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  13 MAR 2020 11:55
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -638,7 +638,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [11]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_bbox".jpg, id=504, 255.95625pt x 202.356pt>
+_bbox".jpg, id=499, 255.95625pt x 202.356pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_bbox".jpg Graphic file (type jpg)
 
@@ -661,7 +661,7 @@ und-ing boxes (blue). Red dots
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_labels".jpg, id=505, 485.4135pt x 396.88275pt>
+_labels".jpg, id=500, 485.4135pt x 396.88275pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_labels".jpg Graphic file (type jpg)
 
@@ -687,7 +687,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/targ
-et_img".jpg, id=506, 111.41624pt x 69.861pt>
+et_img".jpg, id=501, 111.41624pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /target_img".jpg Graphic file (type jpg)
 
@@ -698,7 +698,7 @@ ages/""introduction/target_img".jpg used on input line 37.
 (pdftex.def)             Requested size: 138.31111pt x 86.72377pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/bg_i
-mg".jpg, id=507, 110.21175pt x 69.861pt>
+mg".jpg, id=502, 110.21175pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /bg_img".jpg Graphic file (type jpg)
 
@@ -734,7 +734,7 @@ roduction/weak_labels.jpg> <C:/Users/Conma/Documents/ResearchProposal/Proposal/
 Images/introduction/target_img.jpg> <C:/Users/Conma/Documents/ResearchProposal/
 Proposal/Images/introduction/bg_img.jpg>] [14] [15]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/swis
-s_roll_3d_view_2".png, id=598, 462.528pt x 344.0052pt>
+s_roll_3d_view_2".png, id=602, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /swiss_roll_3d_view_2".png Graphic file (type png)
 
@@ -750,7 +750,7 @@ Overfull \hbox (8.42258pt too wide) in paragraph at lines 75--76
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/swis
-s_roll_2d".png, id=600, 462.528pt x 344.0052pt>
+s_roll_2d".png, id=604, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /swiss_roll_2d".png Graphic file (type png)
 
@@ -776,213 +776,213 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--86
 cord-ing to the geodesic path around
  []
 
-
+[16]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_sep".png, id=606, 462.528pt x 344.0052pt>
+_surface_sep".png, id=617, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_sep".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_sep".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_sep".png used on input line 94.
+ages/""introduction/quad_surface_sep".png used on input line 95.
 (pdftex.def)             Requested size: 213.77469pt x 158.99377pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep".png, id=607, 462.528pt x 344.0052pt>
+_surface_non_sep".png, id=618, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_non_sep".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_non_sep".png used on input line 101.
+ages/""introduction/quad_surface_non_sep".png used on input line 102.
 (pdftex.def)             Requested size: 223.493pt x 166.2212pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
 []\OT1/cmss/m/n/10.95 (b) |Non-separable 3-dimensional quadratic sur-
  []
 
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 92--105
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 93--106
  [][]  [] 
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_lin_sep_le_1d".png, id=608, 194.18pt x 143.81pt>
+_surface_lin_sep_le_1d".png, id=619, 194.18pt x 143.81pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_lin_sep_le_1d".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_lin_sep_le_1d".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_lin_sep_le_1d".png used on input line 109.
+ages/""introduction/quad_surface_lin_sep_le_1d".png used on input line 110.
 (pdftex.def)             Requested size: 195.18097pt x 144.54pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--110
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 []\OT1/cmss/m/n/10.95 (c) |1-dimensional em-bed-ding of sep-a-ra-ble
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_le_1d".png, id=609, 194.18pt x 144.54pt>
+_surface_non_sep_le_1d".png, id=620, 194.18pt x 144.54pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_le_1d".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_non_sep_le_1d".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_non_sep_le_1d".png used on input line 116.
+ages/""introduction/quad_surface_non_sep_le_1d".png used on input line 117.
 (pdftex.def)             Requested size: 194.18839pt x 144.54pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []\OT1/cmss/m/n/10.95 (d) |1-dimensional em-bed-ding of non-separable
  []
 
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 107--120
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 108--121
  [][]  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 []\OT1/cmss/m/n/12 Figure 1-5: |Un-su-per-vised em-bed-ding of quadratic sur-fa
 ces us-ing Lapla-cian Eigen-maps with a
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_sep_bags".png, id=614, 462.528pt x 344.0052pt>
+_surface_sep_bags".png, id=623, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_sep_bags".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_sep_bags".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_sep_bags".png used on input line 128.
+ages/""introduction/quad_surface_sep_bags".png used on input line 130.
 (pdftex.def)             Requested size: 213.77469pt x 158.99377pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
 []\OT1/cmss/m/n/10.95 (a) |Sep-a-ra-ble 3-dimensional quadratic sur-faces and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
 \OT1/cmss/m/n/10.95 ex-am-ples po-ten-tial bag splits. Blue cir-cles rep-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
 \OT1/cmss/m/n/10.95 sent neg-a-tive bags while red cir-cle de-note pos-i-tive
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_bags".png, id=615, 462.528pt x 344.0052pt>
+_surface_non_sep_bags".png, id=624, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_bags".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_non_sep_bags".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_non_sep_bags".png used on input line 135.
+ages/""introduction/quad_surface_non_sep_bags".png used on input line 137.
 (pdftex.def)             Requested size: 223.493pt x 166.2212pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []\OT1/cmss/m/n/10.95 (b) |Non-separable 3-dimensional quadratic sur-faces
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 \OT1/cmss/m/n/10.95 and ex-am-ples po-ten-tial bag splits. Blue cir-cles
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 \OT1/cmss/m/n/10.95 rep-re-sent neg-a-tive bags while red cir-cle de-note
  []
 
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 126--139
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 128--141
  [][]  [] 
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_lin_sep_sle_1d".png, id=616, 193.45pt x 143.81pt>
+_surface_lin_sep_sle_1d".png, id=625, 193.45pt x 143.81pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_lin_sep_sle_1d".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_lin_sep_sle_1d".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_lin_sep_sle_1d".png used on input line 143.
+ages/""introduction/quad_surface_lin_sep_sle_1d".png used on input line 145.
 (pdftex.def)             Requested size: 194.4472pt x 144.54pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
 []\OT1/cmss/m/n/10.95 (c) |1-dimensional em-bed-ding of sep-a-ra-ble
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
 \OT1/cmss/m/n/10.95 quadratic sur-faces us-ing Su-per-vised Lapla-cian
  []
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_sle_1d".png, id=617, 193.45pt x 144.54pt>
+_surface_non_sep_sle_1d".png, id=626, 193.45pt x 144.54pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_sle_1d".png Graphic file (type png)
 
 <use "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/
 quad_surface_non_sep_sle_1d".png>
 Package pdftex.def Info: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/""introduction/quad_surface_non_sep_sle_1d".png used on input line 150.
+ages/""introduction/quad_surface_non_sep_sle_1d".png used on input line 152.
 (pdftex.def)             Requested size: 193.45836pt x 144.54pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
 []\OT1/cmss/m/n/10.95 (d) |1-dimensional em-bed-ding of non-separable
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
 \OT1/cmss/m/n/10.95 quadratic sur-faces us-ing Su-per-vised Lapla-cian
  []
 
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 141--154
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 143--156
  [][]  [] 
  []
 
-[16] [17 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introductio
-n/swiss_roll_3d_view_2.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal
-/Images/introduction/swiss_roll_2d.png>] [18 <C:/Users/Conma/Documents/Research
-Proposal/Proposal/Images/introduction/quad_surface_sep.png> <C:/Users/Conma/Doc
-uments/ResearchProposal/Proposal/Images/introduction/quad_surface_non_sep.png> 
-<C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/quad_su
-rface_lin_sep_le_1d.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
-ages/introduction/quad_surface_non_sep_le_1d.png>] [19 <C:/Users/Conma/Document
-s/ResearchProposal/Proposal/Images/introduction/quad_surface_sep_bags.png> <C:/
-Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/quad_surfac
-e_non_sep_bags.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/
-introduction/quad_surface_lin_sep_sle_1d.png> <C:/Users/Conma/Documents/Researc
-hProposal/Proposal/Images/introduction/quad_surface_non_sep_sle_1d.png>]
-Underfull \hbox (badness 10000) detected at line 163
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 164
-[][][]
- []
-
-
+[17 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/swi
+ss_roll_3d_view_2.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Imag
+es/introduction/swiss_roll_2d.png>] [18 <C:/Users/Conma/Documents/ResearchPropo
+sal/Proposal/Images/introduction/quad_surface_sep.png> <C:/Users/Conma/Document
+s/ResearchProposal/Proposal/Images/introduction/quad_surface_non_sep.png> <C:/U
+sers/Conma/Documents/ResearchProposal/Proposal/Images/introduction/quad_surface
+_lin_sep_le_1d.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/
+introduction/quad_surface_non_sep_le_1d.png>] [19 <C:/Users/Conma/Documents/Res
+earchProposal/Proposal/Images/introduction/quad_surface_sep_bags.png> <C:/Users
+/Conma/Documents/ResearchProposal/Proposal/Images/introduction/quad_surface_non
+_sep_bags.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/intro
+duction/quad_surface_lin_sep_sle_1d.png> <C:/Users/Conma/Documents/ResearchProp
+osal/Proposal/Images/introduction/quad_surface_non_sep_sle_1d.png>]
 Underfull \hbox (badness 10000) detected at line 165
 [][][]
  []
 
-[20]) [21]
+
+Underfull \hbox (badness 10000) detected at line 166
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 167
+[][][]
+ []
+
+) [20]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -993,18 +993,18 @@ CHAPTER 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-[22
+[21
 
 
 
-] <example-image-a.png, id=701, 401.5pt x 301.125pt>
+] <example-image-a.png, id=696, 401.5pt x 301.125pt>
 File: example-image-a.png Graphic file (type png)
 
 <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 19.
 (pdftex.def)             Requested size: 281.40286pt x 211.06633pt.
- [23 <C:/Users/Conma/AppData/Roaming/MiKTeX/2.9/tex/latex/mwe/example-image-a.p
-ng>] [24]
+ [22 <C:/Users/Conma/AppData/Roaming/MiKTeX/2.9/tex/latex/mwe/example-image-a.p
+ng>] [23]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 40.
@@ -1013,10 +1013,10 @@ Package pdftex.def Info: example-image-a.png used on input line 40.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25] [26] [27] [28] [29]
+[24] [25] [26] [27] [28]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 127.
- [30]
+ [29]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 164.
@@ -1025,7 +1025,7 @@ Package pdftex.def Info: example-image-a.png used on input line 164.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[31] [32] [33] [34]
+[30] [31] [32] [33]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 219.
@@ -1034,7 +1034,7 @@ Package pdftex.def Info: example-image-a.png used on input line 219.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35]
+[34]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 240.
@@ -1043,7 +1043,7 @@ Package pdftex.def Info: example-image-a.png used on input line 240.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36] [37] [38] [39] [40]
+[35] [36] [37] [38] [39]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 326.
@@ -1052,30 +1052,30 @@ Package pdftex.def Info: example-image-a.png used on input line 326.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41] [42]
+[40] [41]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 345.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
- [43] [44] [45] [46]
+ [42] [43] [44] [45]
 File: example-image-a.png Graphic file (type png)
 
 <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 418.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
- [47]
+ [46]
 Overfull \hbox (8.66458pt too wide) in paragraph at lines 428--430
  []$\OML/cmm/b/it/12 $\OT1/cmss/bx/n/12 -Neighborhood Graph[] \OT1/cmss/m/n/12
  . An-other method for graph con-struc-tion is to use $\OML/cmm/m/it/12 $\OT1/
 cmss/m/n/12 -neighborhoods 
  []
 
-[48]
+[47]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 436.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
- [49]
+ [48]
 Underfull \hbox (badness 10000) detected at line 449
 [][][]
  []
@@ -1090,9 +1090,9 @@ Underfull \hbox (badness 10000) detected at line 457
 [][][]
  []
 
-[50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64]
-[65]
-Underfull \hbox (badness 3049) in paragraph at lines 786--787
+[49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63]
+[64]
+Underfull \hbox (badness 3049) in paragraph at lines 785--786
 []\OT1/cmss/m/n/12 Multiple-instance dataset $\OMS/cmss/m/n/12 f\OML/cmm/b/it/1
 2 B[]\OML/cmm/m/it/12 ; [] ; \OML/cmm/b/it/12 B[]\OMS/cmss/m/n/12 g$\OT1/cmss/m
 /n/12 , $\OMS/cmss/m/n/12 f\OML/cmm/m/it/12 L[]; [] ; L[]\OMS/cmss/m/n/12 g$\OT
@@ -1101,97 +1101,102 @@ L/cmm/m/it/12 ; \OT1/cmr/m/n/12 +1\OMS/cmss/m/n/12 g$\OT1/cmss/m/n/12 , Ini-tia
 l-ized
  []
 
-[66] [67]
+[65] [66]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <12> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 848.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 847.
 
-[68]
-Underfull \hbox (badness 10000) in paragraph at lines 864--864
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 863--863
 []\OT1/cmss/m/n/12 Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 864--865
+Underfull \hbox (badness 10000) in paragraph at lines 863--864
 []\OT1/cmss/m/n/12 Classification
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--866
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
 []\OT1/cmss/m/n/12 Finds a sparse, or-thog-o-nal lin-ear
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--866
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
 \OT1/cmss/m/n/12 pro-jec-tion ma-trix op-ti-mized for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--866
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
 []\OT1/cmss/m/n/12 Linear,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--866
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
 \OT1/cmss/m/n/12 or-thog-o-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 867--867
+Underfull \hbox (badness 10000) in paragraph at lines 866--866
 []\OT1/cmss/m/n/12 Finds lin-ear pro-jec-tion vec-tor us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 867--867
+Underfull \hbox (badness 10000) in paragraph at lines 866--866
 \OT1/cmss/m/n/12 LDA de-fined from bag-similarity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 868--868
+Underfull \hbox (badness 10000) in paragraph at lines 867--867
 []\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 868--868
+Underfull \hbox (badness 10000) in paragraph at lines 867--867
 \OT1/cmss/m/n/12 us-ing LDA de-fined from bag rep-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--869
+Underfull \hbox (badness 10000) in paragraph at lines 868--868
 []\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion ma-trix
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--869
+Underfull \hbox (badness 10000) in paragraph at lines 868--868
 \OT1/cmss/m/n/12 us-ing lo-cal dis-crim-i-nant anal-y-sis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--869
+Underfull \hbox (badness 10000) in paragraph at lines 868--868
 \OT1/cmss/m/n/12 de-fined from in-stance scat-ter.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--869
+Underfull \hbox (badness 10000) in paragraph at lines 868--868
 \OT1/cmss/m/n/12 In-stance la-bels are pro-vided as bag
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--870
+Underfull \hbox (badness 10000) in paragraph at lines 869--869
 []\OT1/cmss/m/n/12 Incrementally leaves out fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--870
+Underfull \hbox (badness 10000) in paragraph at lines 869--869
 \OT1/cmss/m/n/12 and eval-u-ates per-for-mance loss to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--870
+Underfull \hbox (badness 10000) in paragraph at lines 869--869
 []\OT1/cmss/m/n/12 Feature
  []
 
-[69] [70] [71]
+[68] [69] [70]
+Underfull \hbox (badness 10000) detected at line 891
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 892
 [][][]
  []
@@ -1206,17 +1211,12 @@ Underfull \hbox (badness 10000) detected at line 894
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 895
-[][][]
- []
-
-[72]
+[71]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 902.
+(hyperref)                than one, level fixed on input line 901.
 
-[73]) [74]
+[72]) [73]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
 
  (Chapters/ch_ProblemDescription.tex
@@ -1227,7 +1227,7 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [75
+) [74
 
 
 
@@ -1242,7 +1242,7 @@ CHAPTER 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [76
+) [75
 
 
 
@@ -1257,7 +1257,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [77
+) [76
 
 
 
@@ -1272,7 +1272,7 @@ CHAPTER 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [78
+) [77
 
 
 
@@ -1287,14 +1287,14 @@ CHAPTER 7.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [79
+) [78
 
 
 
 ] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [80
+ [79
 
 
 ]
@@ -1306,7 +1306,7 @@ Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [81]
+ [80]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1315,28 +1315,28 @@ Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [82]
-[83]
+ [81]
+[82]
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [84] [85]
+ [83] [84]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [86] [87]
+ [85] [86]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [88]
+ [87]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [89] [90]) (Chapters/bio.tex)
+ [88] [89]) (Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
- [91]
+ [90]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (MainFile.aux
 (Chapters/acknowledgements.aux) (Chapters/TOC.aux) (Chapters/abbreviations.aux)
@@ -1347,7 +1347,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: 0B7BF2045D2BFABF56F833A4D89E8541;6398.
+(rerunfilecheck)             Checksum: 6566779B659FC663243D4AC347313049;6311.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1355,10 +1355,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 9826 strings out of 493323
- 157865 string characters out of 3139067
- 246043 words of memory out of 3000000
- 12693 multiletter control sequences out of 15000+200000
+ 9823 strings out of 493323
+ 157822 string characters out of 3139067
+ 241043 words of memory out of 3000000
+ 12692 multiletter control sequences out of 15000+200000
  14233 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,17n,42p,3185b,686s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1382,9 +1382,9 @@ ic/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MainFile.pdf (91 pages, 1926977 bytes).
+Output written on MainFile.pdf (90 pages, 1925683 bytes).
 PDF statistics:
- 1781 PDF objects out of 2073 (max. 8388607)
- 409 named destinations out of 1000 (max. 500000)
- 668 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1772 PDF objects out of 2073 (max. 8388607)
+ 407 named destinations out of 1000 (max. 500000)
+ 660 words of extra memory for PDF output out of 10000 (max. 10000000)
 

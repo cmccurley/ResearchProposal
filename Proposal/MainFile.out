@@ -41,34 +41,33 @@
 \BOOKMARK [3][-]{subsubsection.2.2.6.2}{2.2.6.2 Generative Topographic Mapping \(GTM\)}{subsection.2.2.6}% 41
 \BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Competitive Hebbian Learning}{section.2.2}% 42
 \BOOKMARK [2][-]{subsection.2.2.8}{2.2.8 Deep Learning}{section.2.2}% 43
-\BOOKMARK [2][-]{subsection.2.2.9}{2.2.9 Current State of the Art}{section.2.2}% 44
-\BOOKMARK [2][-]{subsection.2.2.10}{2.2.10 UMAP}{section.2.2}% 45
-\BOOKMARK [2][-]{subsection.2.2.11}{2.2.11 Stochastic Neighbor Embedding \(SNE and t-SNE\)}{section.2.2}% 46
-\BOOKMARK [2][-]{subsection.2.2.12}{2.2.12 NCA}{section.2.2}% 47
-\BOOKMARK [1][-]{section.2.3}{2.3 Weakly Supervised Manifold Learning and Dimensionality Reduction}{chapter.2}% 48
-\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 MIL-Based}{section.2.3}% 49
-\BOOKMARK [3][-]{subsubsection.2.3.1.1}{2.3.1.1 MIDR}{subsection.2.3.1}% 50
-\BOOKMARK [3][-]{subsubsection.2.3.1.2}{2.3.1.2 MidLABS}{subsection.2.3.1}% 51
-\BOOKMARK [3][-]{subsubsection.2.3.1.3}{2.3.1.3 MIDA}{subsection.2.3.1}% 52
-\BOOKMARK [3][-]{subsubsection.2.3.1.4}{2.3.1.4 CLFDA}{subsection.2.3.1}% 53
-\BOOKMARK [3][-]{subsubsection.2.3.1.5}{2.3.1.5 MI-FEAR}{subsection.2.3.1}% 54
-\BOOKMARK [3][-]{subsubsection.2.3.1.6}{2.3.1.6 Comparison Table of MI Dimensionality Reduction Methods}{subsection.2.3.1}% 55
-\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 General Weak Supervision}{section.2.3}% 56
-\BOOKMARK [1][-]{section.2.4}{2.4 Metric Embedding}{chapter.2}% 57
-\BOOKMARK [2][-]{subsubsection.2.4.0.1}{2.4.0.1 Metric Learning}{section.2.4}% 58
-\BOOKMARK [3][-]{subsubsection.2.4.0.2}{2.4.0.2 Preference Learning}{subsubsection.2.4.0.1}% 59
-\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Ranking Loss}{section.2.4}% 60
-\BOOKMARK [3][-]{subsubsection.2.4.1.1}{2.4.1.1 Pairwise Loss}{subsection.2.4.1}% 61
-\BOOKMARK [3][-]{subsubsection.2.4.1.2}{2.4.1.2 Contrastive Loss}{subsection.2.4.1}% 62
-\BOOKMARK [3][-]{subsubsection.2.4.1.3}{2.4.1.3 Triplet Loss}{subsection.2.4.1}% 63
-\BOOKMARK [3][-]{subsubsection.2.4.1.4}{2.4.1.4 Large-Margin K-Nearest Neighbors \(LMNN\)}{subsection.2.4.1}% 64
-\BOOKMARK [3][-]{subsubsection.2.4.1.5}{2.4.1.5 FaceNet}{subsection.2.4.1}% 65
-\BOOKMARK [3][-]{subsubsection.2.4.1.6}{2.4.1.6 Siamese Neural Networks}{subsection.2.4.1}% 66
-\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Weakly Supervised Dimensionality Reduction with Metric Embedding}{section.2.4}% 67
-\BOOKMARK [2][-]{subsection.2.4.3}{2.4.3 Manifold Regularization}{section.2.4}% 68
-\BOOKMARK [2][-]{subsection.2.4.4}{2.4.4 Multiple Instance Metric Learning}{section.2.4}% 69
-\BOOKMARK [0][-]{chapter.3}{3 Problem Description}{}% 70
-\BOOKMARK [0][-]{chapter.4}{4 Experimental Design}{}% 71
-\BOOKMARK [0][-]{chapter.5}{5 Preliminary Work}{}% 72
-\BOOKMARK [0][-]{chapter.6}{6 Future Tasks}{}% 73
-\BOOKMARK [0][-]{chapter.7}{7 Conclusions}{}% 74
+\BOOKMARK [2][-]{subsection.2.2.9}{2.2.9 UMAP}{section.2.2}% 44
+\BOOKMARK [2][-]{subsection.2.2.10}{2.2.10 Stochastic Neighbor Embedding \(SNE and t-SNE\)}{section.2.2}% 45
+\BOOKMARK [2][-]{subsection.2.2.11}{2.2.11 NCA}{section.2.2}% 46
+\BOOKMARK [1][-]{section.2.3}{2.3 Weakly Supervised Manifold Learning and Dimensionality Reduction}{chapter.2}% 47
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 MIL-Based}{section.2.3}% 48
+\BOOKMARK [3][-]{subsubsection.2.3.1.1}{2.3.1.1 MIDR}{subsection.2.3.1}% 49
+\BOOKMARK [3][-]{subsubsection.2.3.1.2}{2.3.1.2 MidLABS}{subsection.2.3.1}% 50
+\BOOKMARK [3][-]{subsubsection.2.3.1.3}{2.3.1.3 MIDA}{subsection.2.3.1}% 51
+\BOOKMARK [3][-]{subsubsection.2.3.1.4}{2.3.1.4 CLFDA}{subsection.2.3.1}% 52
+\BOOKMARK [3][-]{subsubsection.2.3.1.5}{2.3.1.5 MI-FEAR}{subsection.2.3.1}% 53
+\BOOKMARK [3][-]{subsubsection.2.3.1.6}{2.3.1.6 Comparison Table of MI Dimensionality Reduction Methods}{subsection.2.3.1}% 54
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 General Weak Supervision}{section.2.3}% 55
+\BOOKMARK [1][-]{section.2.4}{2.4 Metric Embedding}{chapter.2}% 56
+\BOOKMARK [2][-]{subsubsection.2.4.0.1}{2.4.0.1 Metric Learning}{section.2.4}% 57
+\BOOKMARK [3][-]{subsubsection.2.4.0.2}{2.4.0.2 Preference Learning}{subsubsection.2.4.0.1}% 58
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Ranking Loss}{section.2.4}% 59
+\BOOKMARK [3][-]{subsubsection.2.4.1.1}{2.4.1.1 Pairwise Loss}{subsection.2.4.1}% 60
+\BOOKMARK [3][-]{subsubsection.2.4.1.2}{2.4.1.2 Contrastive Loss}{subsection.2.4.1}% 61
+\BOOKMARK [3][-]{subsubsection.2.4.1.3}{2.4.1.3 Triplet Loss}{subsection.2.4.1}% 62
+\BOOKMARK [3][-]{subsubsection.2.4.1.4}{2.4.1.4 Large-Margin K-Nearest Neighbors \(LMNN\)}{subsection.2.4.1}% 63
+\BOOKMARK [3][-]{subsubsection.2.4.1.5}{2.4.1.5 FaceNet}{subsection.2.4.1}% 64
+\BOOKMARK [3][-]{subsubsection.2.4.1.6}{2.4.1.6 Siamese Neural Networks}{subsection.2.4.1}% 65
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Weakly Supervised Dimensionality Reduction with Metric Embedding}{section.2.4}% 66
+\BOOKMARK [2][-]{subsection.2.4.3}{2.4.3 Manifold Regularization}{section.2.4}% 67
+\BOOKMARK [2][-]{subsection.2.4.4}{2.4.4 Multiple Instance Metric Learning}{section.2.4}% 68
+\BOOKMARK [0][-]{chapter.3}{3 Problem Description}{}% 69
+\BOOKMARK [0][-]{chapter.4}{4 Experimental Design}{}% 70
+\BOOKMARK [0][-]{chapter.5}{5 Preliminary Work}{}% 71
+\BOOKMARK [0][-]{chapter.6}{6 Future Tasks}{}% 72
+\BOOKMARK [0][-]{chapter.7}{7 Conclusions}{}% 73
