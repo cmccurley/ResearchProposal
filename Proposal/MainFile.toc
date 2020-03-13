@@ -1,7 +1,7 @@
 \contentsline {extrachapter}{LIST OF TABLES}{5}{chapter*.2}
 \contentsline {extrachapter}{LIST OF FIGURES}{6}{chapter*.3}
 \addvspace {10pt}\noindent {CHAPTER}\hfill \par 
-\contentsline {chapter}{LIST OF ABBREVIATIONS}{8}{chapter*.5}
+\contentsline {chapter}{LIST OF ABBREVIATIONS}{7}{chapter*.5}
 \contentsline {chapter}{LIST OF SYMBOLS}{9}{chapter*.6}
 \contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{10}{chapter.1}
 \contentsline {chapter}{\numberline {2}\uppercase {Background}}{21}{chapter.2}
@@ -25,11 +25,11 @@
 \contentsline {paragraph}{Gradient Boosting Overview}{27}{section*.23}
 \contentsline {paragraph}{MIL-Boost}{28}{section*.24}
 \contentsline {subsection}{\numberline {2.1.5}Multiple Instance Ranking}{29}{subsection.2.1.5}
-\contentsline {section}{\numberline {2.2}Manifold Learning}{29}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Definition and General Notation}{31}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Comparison Table of Manifold Learning Methods}{32}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Geneology Image of Manifold Learning Methods from van der Maaten 2009, page 2}{32}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Linear Manifold Learning}{32}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.2}Manifold Learning}{30}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Definition and General Notation}{32}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Comparison Table of Manifold Learning Methods}{33}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Geneology Image of Manifold Learning Methods from van der Maaten 2009, page 2}{33}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Linear Manifold Learning}{33}{subsection.2.2.4}
 \contentsline {subsubsection}{\numberline {2.2.4.1}Principal Component Analysis (PCA)}{33}{subsubsection.2.2.4.1}
 \contentsline {paragraph}{Unsupervised PCA}{33}{section*.26}
 \contentsline {subsubsection}{\numberline {2.2.4.2}Multi-Dimensional Scaling (MDS)}{35}{subsubsection.2.2.4.2}
@@ -38,8 +38,8 @@
 \contentsline {subsubsection}{\numberline {2.2.4.3}Non-negative Matrix Factorization (NMF)}{39}{subsubsection.2.2.4.3}
 \contentsline {subsubsection}{\numberline {2.2.4.4}Fisher's Linear Discriminant Analysis (LDA)}{39}{subsubsection.2.2.4.4}
 \contentsline {paragraph}{Classical LDA}{39}{section*.31}
-\contentsline {subsubsection}{\numberline {2.2.4.5}Locality Preserving Projection (LPP)}{41}{subsubsection.2.2.4.5}
-\contentsline {subsection}{\numberline {2.2.5}Nonlinear Manifold Learning}{41}{subsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.4.5}Locality Preserving Projection (LPP)}{42}{subsubsection.2.2.4.5}
+\contentsline {subsection}{\numberline {2.2.5}Nonlinear Manifold Learning}{42}{subsection.2.2.5}
 \contentsline {subsubsection}{\numberline {2.2.5.1}Kernelization}{42}{subsubsection.2.2.5.1}
 \contentsline {paragraph}{Kernels}{42}{section*.34}
 \contentsline {paragraph}{Kernel PCA}{44}{section*.35}
@@ -80,14 +80,13 @@
 \contentsline {subsection}{\numberline {2.2.10}Stochastic Neighbor Embedding (SNE and t-SNE)}{58}{subsection.2.2.10}
 \contentsline {subsection}{\numberline {2.2.11}NCA}{58}{subsection.2.2.11}
 \contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{58}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}MIL-Based}{59}{subsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.1.1}MIDR}{60}{subsubsection.2.3.1.1}
-\contentsline {subsubsection}{\numberline {2.3.1.2}MidLABS}{62}{subsubsection.2.3.1.2}
-\contentsline {subsubsection}{\numberline {2.3.1.3}MIDA}{64}{subsubsection.2.3.1.3}
-\contentsline {subsubsection}{\numberline {2.3.1.4}CLFDA}{65}{subsubsection.2.3.1.4}
-\contentsline {subsubsection}{\numberline {2.3.1.5}MI-FEAR}{67}{subsubsection.2.3.1.5}
-\contentsline {subsubsection}{\numberline {2.3.1.6}Comparison Table of MI Dimensionality Reduction Methods}{68}{subsubsection.2.3.1.6}
-\contentsline {subsection}{\numberline {2.3.2}General Weak Supervision}{69}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.1}MIDR}{60}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}MidLABS}{62}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}MIDA}{64}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}CLFDA}{65}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{67}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{68}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{69}{subsection.2.3.7}
 \contentsline {section}{\numberline {2.4}Metric Embedding}{71}{section.2.4}
 \contentsline {subsubsection}{\numberline {2.4.0.1}Metric Learning}{72}{subsubsection.2.4.0.1}
 \contentsline {subsubsection}{\numberline {2.4.0.2}Preference Learning}{72}{subsubsection.2.4.0.2}
@@ -99,8 +98,6 @@
 \contentsline {subsubsection}{\numberline {2.4.1.5}FaceNet}{72}{subsubsection.2.4.1.5}
 \contentsline {subsubsection}{\numberline {2.4.1.6}Siamese Neural Networks}{73}{subsubsection.2.4.1.6}
 \contentsline {subsection}{\numberline {2.4.2}Weakly Supervised Dimensionality Reduction with Metric Embedding}{73}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Manifold Regularization}{73}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Multiple Instance Metric Learning}{73}{subsection.2.4.4}
 \contentsline {chapter}{\numberline {3}\uppercase {Problem Description}}{74}{chapter.3}
 \contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{75}{chapter.4}
 \contentsline {chapter}{\numberline {5}\uppercase {Preliminary Work}}{76}{chapter.5}
