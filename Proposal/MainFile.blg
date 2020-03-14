@@ -36,14 +36,13 @@ I'm skipping whatever remains of this entry
 I'm skipping whatever remains of this entry
 Warning--entry type for "Tu2019MILGraphNN" isn't style-file defined
 --line 1764 of file BibFiles/references.bib
-I was expecting a `,' or a `}'---line 2743 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 2783 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 3215 of file BibFiles/references.bib
-Warning--I didn't find a database entry for "Ilse2018AttentionBasedDeepMILs"
+--line 3255 of file BibFiles/references.bib
 Warning--empty booktitle in Aiolli2004LearningPreferences
 Warning--empty booktitle in Babenko2008MIBoosting
 Warning--empty booktitle in Babenko2011MILManifoldBags

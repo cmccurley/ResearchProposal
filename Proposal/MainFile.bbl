@@ -1,4 +1,4 @@
-\begin{thebibliography}{119}
+\begin{thebibliography}{125}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -206,12 +206,29 @@ M.~Cook.
 \newblock Task driven extended functions of multiple instances (td-efumi).
 \newblock Master's thesis, Univ. of Missouri, Columbia, MO, 2015.
 
+\bibitem[Cook et~al.(2016)Cook, Zare, and Ho]{Cook2016LandmineTaskDriveneFUMI}
+M.~Cook, A.~Zare, and D.~K.~C. Ho.
+\newblock Buried object detection using handheld wemi with task-driven extended
+  functions of multiple instances.
+\newblock In \emph{Proc. SPIE 9823, Detection and Sensing of Mines, Explosive
+  Objects, and Obscured Targets XXI, 98230A}, volume 9823 of \emph{Proc. SPIE},
+  pages 9823 -- 9823 -- 9, Apr. 2016.
+\newblock \doi{10.1117/12.2223349}.
+
 \bibitem[Dekel et~al.(2004)Dekel, Singer, and Manning]{Dekel2004Ranking}
 Ofer Dekel, Yoram Singer, and Christopher~D Manning.
 \newblock Log-linear models for label ranking.
 \newblock In S.~Thrun, L.~K. Saul, and B.~Sch\"{o}lkopf, editors,
   \emph{Advances in Neural Information Processing Systems 16}, pages 497--504.
   MIT Press, 2004.
+
+\bibitem[Deselaers and Ferrari(2010)]{Deselaers2010MICRF}
+Thomas Deselaers and Vittorio Ferrari.
+\newblock A conditional random field for multiple-instance learning.
+\newblock In \emph{Proceedings of the 27th International Conference on
+  International Conference on Machine Learning}, ICML’10, page 287–294,
+  Madison, WI, USA, 2010. Omnipress.
+\newblock ISBN 9781605589077.
 
 \bibitem[Dietterich et~al.(1997)Dietterich, Lathrop, and
   Lozano-Pérez]{Dietterich1996AxisParallelRectangles}
@@ -306,6 +323,16 @@ T.~Glenn, A.~Zare, P.~Gader, and D.~Dranishnikov.
 \newblock Bullwinkle: Scoring code for sub-pixel targets.
 \newblock URL \url{https://github.com/GatorSense/MUUFLGulfport/}.
 
+\bibitem[{Hajimirsadeghi} and
+  {Mori}(2017)]{Hajimirsadeghi2017MIClassificationMarkovNetworks}
+H.~{Hajimirsadeghi} and G.~{Mori}.
+\newblock Multi-instance classification by max-margin training of
+  cardinality-based markov networks.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 39\penalty0 (9):\penalty0 1839--1852, Sep. 2017.
+\newblock ISSN 0162-8828.
+\newblock \doi{10.1109/TPAMI.2016.2613865}.
+
 \bibitem[Hong et~al.(2019)Hong, Yokoya, Ge, Chanussot, and
   Zhu]{Hong2019LearnableManifoldAlignment}
 D.~Hong, N.~Yokoya, N.~Ge, J.~Chanussot, and X.~X. Zhu.
@@ -341,6 +368,17 @@ M.~Ilse, Jakub~M. Tomczak, and M.~Welling.
 C.~Jiao.
 \newblock \emph{Target Concept Learning From Ambiguously Labeled Data}.
 \newblock PhD thesis, Univ. of Missouri, Columbia, MO, Dec. 2017.
+
+\bibitem[Jiao et~al.(2018)Jiao, Chen, McGarvey, Bohlman, Jiao, and
+  Zare]{Jiao2018MIHE2}
+Changzhe Jiao, Chao Chen, Ronald~G. McGarvey, Stephanie Bohlman, Licheng Jiao,
+  and Alina Zare.
+\newblock Multiple instance hybrid estimator for hyperspectral target
+  characterization and sub-pixel target detection.
+\newblock \emph{ISPRS Journal of Photogrammetry and Remote Sensing},
+  146:\penalty0 235 -- 250, 2018.
+\newblock ISSN 0924-2716.
+\newblock \doi{https://doi.org/10.1016/j.isprsjprs.2018.08.012}.
 
 \bibitem[Kegl et~al.(2008)Kegl, Wunsch, and
   Zinovyev]{Kegl2008PrincipalManifoldsTextbook}
@@ -797,6 +835,24 @@ S.~{Yan}, D.~{Xu}, B.~{Zhang}, H.~{Zhang}, Q.~{Yang}, and S.~{Lin}.
 \newblock Miles: Multiple-instance learning via embedded instance selection.
 \newblock \emph{IEEE Transactions on Pattern Analysis and Machine
   Intelligence}, 28\penalty0 (12):\penalty0 1931--1947, Dec 2006.
+
+\bibitem[{Yuksel} et~al.(2012){Yuksel}, {Bolton}, and
+  {Gader}]{Yuksel2015MIHMMLandmine2}
+S.~E. {Yuksel}, J.~{Bolton}, and P.~D. {Gader}.
+\newblock Landmine detection with multiple instance hidden markov models.
+\newblock In \emph{2012 IEEE International Workshop on Machine Learning for
+  Signal Processing}, pages 1--6, Sep. 2012.
+\newblock \doi{10.1109/MLSP.2012.6349734}.
+
+\bibitem[{Yuksel} et~al.(2015){Yuksel}, {Bolton}, and
+  {Gader}]{Yuksel2015MIHMMLandmine}
+S.~E. {Yuksel}, J.~{Bolton}, and P.~{Gader}.
+\newblock Multiple-instance hidden markov models with applications to landmine
+  detection.
+\newblock \emph{IEEE Transactions on Geoscience and Remote Sensing},
+  53\penalty0 (12):\penalty0 6766--6775, Dec 2015.
+\newblock ISSN 1558-0644.
+\newblock \doi{10.1109/TGRS.2015.2447576}.
 
 \bibitem[{Z. Zhang} et~al.(2008){Z. Zhang}, {H. Zha}, and {M.
   Zhang}]{Zhang2008SpectralSemiSupManifoldLearning}
