@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  14 MAR 2020 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  14 MAR 2020 16:30
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -1032,79 +1032,79 @@ Package pdftex.def Info: example-image-a.png used on input line 40.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24] [25] [26] [27] [28] [29]
+[24] [25] [26] [27] [28] [29] [30]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 133.
- [30] [31]
+put line 132.
+ [31] [32]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 170.
+Package pdftex.def Info: example-image-a.png used on input line 169.
 (pdftex.def)             Requested size: 281.40286pt x 211.06633pt.
- [32] [33]
-[34] [35]
+ [33]
+[34] [35] [36]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 225.
+Package pdftex.def Info: example-image-a.png used on input line 224.
 (pdftex.def)             Requested size: 281.40286pt x 211.06633pt.
- [36]
-File: example-image-a.png Graphic file (type png)
- <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 246.
-(pdftex.def)             Requested size: 234.5pt x 175.87943pt.
  [37]
-[38] [39] [40] [41]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 332.
-(pdftex.def)             Requested size: 234.5pt x 175.87943pt.
- [42]
-File: example-image-a.png Graphic file (type png)
- <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 351.
+Package pdftex.def Info: example-image-a.png used on input line 245.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
-[43] [44] [45] [46]
+[38] [39] [40] [41] [42]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 424.
+Package pdftex.def Info: example-image-a.png used on input line 331.
+(pdftex.def)             Requested size: 234.5pt x 175.87943pt.
+ [43]
+File: example-image-a.png Graphic file (type png)
+
+<use example-image-a.png>
+Package pdftex.def Info: example-image-a.png used on input line 350.
+(pdftex.def)             Requested size: 234.5pt x 175.87943pt.
+ [44] [45] [46] [47]
+File: example-image-a.png Graphic file (type png)
+ <use example-image-a.png>
+Package pdftex.def Info: example-image-a.png used on input line 423.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[47]
-Overfull \hbox (8.66458pt too wide) in paragraph at lines 434--436
+[48]
+Overfull \hbox (8.66458pt too wide) in paragraph at lines 433--435
  []$\OML/cmm/b/it/12 $\OT1/cmss/bx/n/12 -Neighborhood Graph[] \OT1/cmss/m/n/12
  . An-other method for graph con-struc-tion is to use $\OML/cmm/m/it/12 $\OT1/
 cmss/m/n/12 -neighborhoods 
  []
 
-[48]
+[49]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 442.
+Package pdftex.def Info: example-image-a.png used on input line 441.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[49]
-Underfull \hbox (badness 10000) detected at line 455
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 461
-[][][]
- []
-
 [50]
-Underfull \hbox (badness 10000) detected at line 463
+Underfull \hbox (badness 10000) detected at line 454
 [][][]
  []
 
-[51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65]
-Underfull \hbox (badness 3049) in paragraph at lines 786--787
+
+Underfull \hbox (badness 10000) detected at line 460
+[][][]
+ []
+
+[51]
+Underfull \hbox (badness 10000) detected at line 462
+[][][]
+ []
+
+[52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66]
+Underfull \hbox (badness 3049) in paragraph at lines 785--786
 []\OT1/cmss/m/n/12 Multiple-instance dataset $\OMS/cmss/m/n/12 f\OML/cmm/b/it/1
 2 B[]\OML/cmm/m/it/12 ; [] ; \OML/cmm/b/it/12 B[]\OMS/cmss/m/n/12 g$\OT1/cmss/m
 /n/12 , $\OMS/cmss/m/n/12 f\OML/cmm/m/it/12 L[]; [] ; L[]\OMS/cmss/m/n/12 g$\OT
@@ -1113,97 +1113,102 @@ L/cmm/m/it/12 ; \OT1/cmr/m/n/12 +1\OMS/cmss/m/n/12 g$\OT1/cmss/m/n/12 , Ini-tia
 l-ized
  []
 
-[66] [67] [68]
+[67] [68] [69]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <12> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 848.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 847.
 
-[69]
-Underfull \hbox (badness 10000) in paragraph at lines 864--864
+[70]
+Underfull \hbox (badness 10000) in paragraph at lines 863--863
 []\OT1/cmss/m/n/12 Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 864--865
+Underfull \hbox (badness 10000) in paragraph at lines 863--864
 []\OT1/cmss/m/n/12 Classification
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--866
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
 []\OT1/cmss/m/n/12 Finds a sparse, or-thog-o-nal lin-ear
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--866
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
 \OT1/cmss/m/n/12 pro-jec-tion ma-trix op-ti-mized for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--866
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
 []\OT1/cmss/m/n/12 Linear,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--866
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
 \OT1/cmss/m/n/12 or-thog-o-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 867--867
+Underfull \hbox (badness 10000) in paragraph at lines 866--866
 []\OT1/cmss/m/n/12 Finds lin-ear pro-jec-tion vec-tor us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 867--867
+Underfull \hbox (badness 10000) in paragraph at lines 866--866
 \OT1/cmss/m/n/12 LDA de-fined from bag-similarity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 868--868
+Underfull \hbox (badness 10000) in paragraph at lines 867--867
 []\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 868--868
+Underfull \hbox (badness 10000) in paragraph at lines 867--867
 \OT1/cmss/m/n/12 us-ing LDA de-fined from bag rep-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--869
+Underfull \hbox (badness 10000) in paragraph at lines 868--868
 []\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion ma-trix
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--869
+Underfull \hbox (badness 10000) in paragraph at lines 868--868
 \OT1/cmss/m/n/12 us-ing lo-cal dis-crim-i-nant anal-y-sis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--869
+Underfull \hbox (badness 10000) in paragraph at lines 868--868
 \OT1/cmss/m/n/12 de-fined from in-stance scat-ter.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--869
+Underfull \hbox (badness 10000) in paragraph at lines 868--868
 \OT1/cmss/m/n/12 In-stance la-bels are pro-vided as bag
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--870
+Underfull \hbox (badness 10000) in paragraph at lines 869--869
 []\OT1/cmss/m/n/12 Incrementally leaves out fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--870
+Underfull \hbox (badness 10000) in paragraph at lines 869--869
 \OT1/cmss/m/n/12 and eval-u-ates per-for-mance loss to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--870
+Underfull \hbox (badness 10000) in paragraph at lines 869--869
 []\OT1/cmss/m/n/12 Feature
  []
 
-[70] [71] [72]
+[71] [72] [73]
+Underfull \hbox (badness 10000) detected at line 891
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 892
 [][][]
  []
@@ -1218,17 +1223,12 @@ Underfull \hbox (badness 10000) detected at line 894
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 895
-[][][]
- []
-
-[73]
+[74]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 902.
+(hyperref)                than one, level fixed on input line 901.
 
-[74]) [75]
+[75]) [76]
 \openout2 = `Chapters/ch_ProblemDescription.aux'.
 
  (Chapters/ch_ProblemDescription.tex
@@ -1239,7 +1239,7 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [76
+) [77
 
 
 
@@ -1254,7 +1254,7 @@ CHAPTER 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [77
+) [78
 
 
 
@@ -1269,7 +1269,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [78
+) [79
 
 
 
@@ -1284,7 +1284,7 @@ CHAPTER 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [79
+) [80
 
 
 
@@ -1299,14 +1299,14 @@ CHAPTER 7.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [80
+) [81
 
 
 
 ] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [81
+ [82
 
 
 ]
@@ -1318,7 +1318,7 @@ Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [82]
+ [83]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1327,26 +1327,39 @@ Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [83]
-[84]
+ [84]
+[85]
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [85] [86] [87]
+ [86]
+Missing character: There is no â in font cmssi12!
+Missing character: There is no € in font cmssi12!
+Missing character: There is no “ in font cmssi12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [88]
+ [87] [88]
+Missing character: There is no â in font cmss12!
+Missing character: There is no € in font cmss12!
+Missing character: There is no “ in font cmss12!
+ [89] [90]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [89]
+ [91]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [90] [91]
+ [92] [93]
+Missing character: There is no â in font cmss12!
+Missing character: There is no € in font cmss12!
+Missing character: There is no ™ in font cmss12!
+Missing character: There is no â in font cmss12!
+Missing character: There is no € in font cmss12!
+Missing character: There is no “ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1355,14 +1368,15 @@ Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
 ) (Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
- [92]
+ [94]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
- (MainFile.aux
-(Chapters/acknowledgements.aux) (Chapters/TOC.aux) (Chapters/abbreviations.aux)
-(Chapters/symbols.aux) (Chapters/abstract.aux) (Chapters/ch_Introduction.aux)
-(Chapters/ch_LitReview.aux) (Chapters/ch_ProblemDescription.aux)
-(Chapters/ch_ExperimentalDesign.aux) (Chapters/ch_PreliminaryWork.aux)
-(Chapters/ch_FutureTasks.aux) (Chapters/ch_Conclusion.aux))
+
+(MainFile.aux (Chapters/acknowledgements.aux) (Chapters/TOC.aux)
+(Chapters/abbreviations.aux) (Chapters/symbols.aux) (Chapters/abstract.aux)
+(Chapters/ch_Introduction.aux) (Chapters/ch_LitReview.aux)
+(Chapters/ch_ProblemDescription.aux) (Chapters/ch_ExperimentalDesign.aux)
+(Chapters/ch_PreliminaryWork.aux) (Chapters/ch_FutureTasks.aux)
+(Chapters/ch_Conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
@@ -1374,13 +1388,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 9954 strings out of 493323
- 159617 string characters out of 3139067
- 245190 words of memory out of 3000000
- 12814 multiletter control sequences out of 15000+200000
+ 9985 strings out of 493323
+ 160626 string characters out of 3139067
+ 245625 words of memory out of 3000000
+ 12836 multiletter control sequences out of 15000+200000
  14233 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,17n,42p,3185b,686s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,17n,42p,3185b,704s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/
@@ -1401,9 +1415,9 @@ ic/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MainFile.pdf (92 pages, 1934439 bytes).
+Output written on MainFile.pdf (94 pages, 1944966 bytes).
 PDF statistics:
- 1786 PDF objects out of 2073 (max. 8388607)
- 410 named destinations out of 1000 (max. 500000)
+ 1827 PDF objects out of 2073 (max. 8388607)
+ 419 named destinations out of 1000 (max. 500000)
  620 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{112}
+\begin{thebibliography}{119}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -264,6 +264,19 @@ P.~Gader, A.~Zare, R.~Close, J.~Aitken, and G.~Tuell.
 \newblock Technical Report 570, University of Florida, Gainesville, FL, October
   2013.
 
+\bibitem[Gao et~al.(2017)Gao, Li, Yu, Morariu, and
+  Davis]{Gao2017CountGuidedWeaklySupervisedLocalization}
+M.~Gao, A.~Li, R.~Yu, V.~I. Morariu, and L.~S. Davis.
+\newblock {C-WSL:} count-guided weakly supervised localization.
+\newblock \emph{CoRR}, abs/1711.05282, 2017.
+\newblock URL \url{http://arxiv.org/abs/1711.05282}.
+
+\bibitem[G{\"a}rtner et~al.(2002)G{\"a}rtner, Flach, Kowalczyk, and
+  Smola]{Gartner2002MIKernels}
+Thomas G{\"a}rtner, Peter~A. Flach, Adam Kowalczyk, and Alexander~J. Smola.
+\newblock Multi-instance kernels.
+\newblock In \emph{ICML}, 2002.
+
 \bibitem[{Gaur} and {Manjunath}(2017)]{Gaur2017MILSemanticObjectCorrespondence}
 U.~{Gaur} and B.~S. {Manjunath}.
 \newblock Weakly supervised manifold learning for dense semantic object
@@ -317,6 +330,13 @@ Gary~B. Huang, Manu Ramesh, Tamara Berg, and Erik Learned-Miller.
 \newblock Technical Report 07-49, University of Massachusetts, Amherst, October
   2007.
 
+\bibitem[Ilse et~al.(2018)Ilse, Tomczak, and
+  Welling]{Ilse2018AttentionBasedDeepMIL}
+M.~Ilse, Jakub~M. Tomczak, and M.~Welling.
+\newblock Attention-based deep multiple instance learning.
+\newblock \emph{CoRR}, abs/1802.04712, 2018.
+\newblock URL \url{http://arxiv.org/abs/1802.04712}.
+
 \bibitem[Jiao(2017)]{Jiao2017Thesis}
 C.~Jiao.
 \newblock \emph{Target Concept Learning From Ambiguously Labeled Data}.
@@ -359,6 +379,17 @@ H.~{Li}, D.~{Liu}, and D.~{Wang}.
   on manifold regularization.
 \newblock In \emph{2015 International Joint Conference on Neural Networks
   (IJCNN)}, pages 1--6, July 2015.
+
+\bibitem[Li et~al.(2019)Li, Liu, Sui, Chen, Tjio, Ting, and
+  Goh]{Li2019CNNMedicalImageClassification}
+Shaohua Li, Yong Liu, Xiuchao Sui, Cheng Chen, Gabriel Tjio, Daniel Shu~Wei
+  Ting, and Rick Siow~Mong Goh.
+\newblock Multi-instance multi-scale cnn for medical image classification.
+\newblock \emph{Medical Image Computing and Computer Assisted Intervention –
+  MICCAI 2019}, page 531–539, 2019.
+\newblock ISSN 1611-3349.
+\newblock \doi{10.1007/978-3-030-32251-9_58}.
+\newblock URL \url{http://dx.doi.org/10.1007/978-3-030-32251-9_58}.
 
 \bibitem[Liu et~al.(2010)Liu, Principe, and
   Haykin]{Liu2010KernelAdaptiveFiltering}
@@ -613,6 +644,10 @@ I.~W. Tsang and J.~T. Kwok.
 \newblock URL
   \url{http://papers.nips.cc/paper/3005-large-scale-sparsified-manifold-regularization.pdf}.
 
+\bibitem[Tu et~al.(2019)Tu, Huang, He, and Zhou]{Tu2019MILGraphNN}
+Ming Tu, Jing Huang, Xiaodong He, and Bowen Zhou.
+\newblock Multiple instance learning with graph neural networks, 06 2019.
+
 \bibitem[Tuia and Camps-Valls(2015)]{Tuia2015KernelManifoldAlignment}
 D.~Tuia and G.~Camps-Valls.
 \newblock Kernel manifold alignment.
@@ -665,6 +700,13 @@ Quan Wang.
   recognition and active shape models.
 \newblock \emph{CoRR}, abs/1207.3538, 2012.
 \newblock URL \url{http://arxiv.org/abs/1207.3538}.
+
+\bibitem[Wang et~al.(2020)Wang, Chen, Xie, Azzari, and
+  Lobell]{Wang2020WSDeepLearningRemoteSensing}
+S.~Wang, W.~Chen, S.M. Xie, G.~Azzari, and D.B. Lobell.
+\newblock Weakly supervised deep learning for segmentation of remote sensing
+  imagery.
+\newblock \emph{Remote Sens.}, 12:\penalty0 207, 2020.
 
 \bibitem[Wang et~al.(2016)Wang, Xie, and Wu]{Wang2016OrthogonalLDA}
 Yong Wang, Jian-Bin Xie, and Yi~Wu.
@@ -839,6 +881,16 @@ Zhi-Hua Zhou and Min-Ling Zhang.
 \newblock In Nada Lavra{\v{c}}, Dragan Gamberger, Hendrik Blockeel, and
   Ljup{\v{c}}o Todorovski, editors, \emph{Machine Learning: ECML 2003}, pages
   492--502, Berlin, Heidelberg, 2003. Springer Berlin Heidelberg.
+
+\bibitem[Zhou et~al.(2009)Zhou, Sun, and Li]{Zhou2009miGraph}
+Zhi-Hua Zhou, Yu-Yin Sun, and Yu-Feng Li.
+\newblock Multi-instance learning by treating instances as non-i.i.d. samples.
+\newblock In \emph{Proceedings of the 26th Annual International Conference on
+  Machine Learning}, ICML ’09, page 1249–1256, New York, NY, USA, 2009.
+  Association for Computing Machinery.
+\newblock ISBN 9781605585161.
+\newblock \doi{10.1145/1553374.1553534}.
+\newblock URL \url{https://doi.org/10.1145/1553374.1553534}.
 
 \bibitem[Zhu et~al.(2018)Zhu, liao, and Ng]{Zhu2018MIDRSparsity}
 Hong Zhu, Li-Zhi liao, and Michael~K. Ng.
