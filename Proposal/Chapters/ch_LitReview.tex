@@ -165,10 +165,23 @@ The value of $f(\bm{x}_n)$ is referred to as the ranking score of $\bm{x}_n$ and
 	\end{split}
 \end{align}
 \noindent
-which is referred to as a \textit{ranking SVM}.
+which is referred to as a \textit{ranking SVM}.  Assuming the optimal solution is $\bm{w}^{*}$, the ranking score of a test point $\bm{x}'$ is given as $f(\bm{x}') = \langle \bm{w}^{*}, \bm{x}' \rangle$.  This framework assumes each sample $\bm{x}_{n}$ is a single instance.  In multiple-instance ranking, we are given a set of preference relations between bag pairs and it is assumed that the score of a bag $\bm{B}_{k}$ is determined by the scores of the instances it contains
+\begin{align}
+	h(\bm{B}_{k}) = h \left( \{ f(\bm{x}_{n})\}_{n=1}^{N_{k}} \right)
+\end{align}
+\noindent
+Under this formulation, the objective can be re-written to consider bag scores as
+\begin{align}
+\begin{split}
+\min_{f\in\mathcal{H},\bm{\zeta}} \quad &\frac{1}{2} ||f ||^{2}_{\mathcal{H}} + \gamma \sum_{m,n} \zeta_{mn} \\
+\text{s.t.} \quad &\forall \bm{B}_m \succ \bm{B}_n: h(\bm{B}_{m}) \geq h(\bm{B}_{n}) + 1 -\zeta_{mn}\\
+&\forall m,n: \zeta_{mn} \geq 0\\
+\end{split}
+\end{align}
+\noindent
+A bag's score is determined by the scores of its instances.  Different functions for providing a bag score have been investigated, including using the max of instance scores, the mean of  instance scores and the softmax of instance scores.
 
-
-Asif et al. proposed pyLEMMINGS, which implements locally linear MI ranking by learning a large margin discriminant function from bags with corresponding integer rankings  \citep{Asif2017LargeMarginMIRanking}.  While ranking has been successfully applied to text information retrieval, image retrieval \citep{Hu2008MIRanking} and bioinformatics \citep{Asif2017LargeMarginMIRanking}, ranking under the MIL framework is still a relatively unexplored area of research.
+Besides MIRank and multiple-instance ranking, Asif et al. recently proposed pyLEMMINGS, which implements locally linear MI ranking by learning a large margin discriminant function from bags with corresponding integer rankings  \citep{Asif2017LargeMarginMIRanking}.  While ranking has been successfully applied to text information retrieval, image retrieval \citep{Hu2008MIRanking} and bioinformatics \citep{Asif2017LargeMarginMIRanking}, ranking under the MIL framework is still a relatively unexplored area of research.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manifold Learning}
 
