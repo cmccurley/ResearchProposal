@@ -149,8 +149,9 @@ Each round of boosting consists of updating the weak learners according to the i
 
 \subsection{Multiple Instance Ranking}
 
+Another primary task in MIL is \textit{ranking} \citep{Carbonneau2016MILSurvey}.  The ranking problem is different from classification because, instead of providing a binary class label, the objective is to order a set of bags \citep{Bergeron2008MIRanking,Bergeron2012FastBundleMILRanking} or instances \citep{Hu2008MIRanking} according to preference for a particular task.  Ranking is a key task under \textit{Preference Learning}, or learning to predict preferences on a set of alternatives, which are often represented in the form of an order relation \citep{Furnkranz2003RankingSummary}.  The statement that $\bm{x}$ is preferred to $\bm{x}'$ can be simply expressed as an inequality relation $f(\bm{x}) > f(\bm{x}')$, where $\bm{x}$ and $\bm{x}'$ are instances, and $f$ defines a preference function.  For example, given a news story about the Olympics, one might prefer to give it the label ``sports" rather than ``politics" or ``weather".  Alternatively, one might prefer to label one bag or instance as ``positive" over another.  In machine learning, the preference learning problem is often analyzed in two cases: \textit{learning instance preference} and \textit{learning label preference} \citep{Chu2005LearningPreferencesWithGaussianProcesses}.  
 
-\cite{Hu2008MIRanking}, \cite{Bergeron2012FastBundleMILRanking}, \cite{Bergeron2008MIRanking}, \cite{Latham2015MIFeatureRankingThesis} \cite{Asif2017LargeMarginMIRanking} , \cite{Aiolli2004LearningPreferences}, \cite{Chu2005LearningPreferencesWithGaussianProcesses}, \cite{Dekel2004Ranking}, \cite{Furnkranz2003RankingSummary}, 
+ \cite{Asif2017LargeMarginMIRanking} , \cite{Aiolli2004LearningPreferences}, \cite{Chu2005LearningPreferencesWithGaussianProcesses}, \cite{Dekel2004Ranking}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Manifold Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manifold Learning}

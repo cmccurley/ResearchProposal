@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {2.1.4}Multiple Instance Boosting (MIL-Boost)}{31}{subsection.2.1.4}
 \contentsline {paragraph}{Gradient Boosting Overview}{31}{section*.23}
 \contentsline {paragraph}{MIL-Boost}{32}{section*.24}
-\contentsline {subsection}{\numberline {2.1.5}Multiple Instance Ranking}{34}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.5}Multiple Instance Ranking}{33}{subsection.2.1.5}
 \contentsline {section}{\numberline {2.2}Manifold Learning}{34}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Definition and General Notation}{36}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Comparison Table of Manifold Learning Methods}{37}{subsection.2.2.2}
