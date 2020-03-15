@@ -17,7 +17,7 @@
 \contentsline {paragraph}{Maximum Margin:}{27}{section*.18}
 \contentsline {paragraph}{Neural Networks and Deep Learning:}{28}{section*.19}
 \contentsline {paragraph}{Probabilistic Graphical Methods:}{29}{section*.20}
-\contentsline {paragraph}{Dictionary Learning:}{29}{section*.21}
+\contentsline {paragraph}{Dictionary Learning:}{30}{section*.21}
 \contentsline {paragraph}{Ensembles of Classifiers:}{31}{section*.22}
 \contentsline {subsection}{\numberline {2.1.4}Multiple Instance Boosting (MIL-Boost)}{31}{subsection.2.1.4}
 \contentsline {paragraph}{Gradient Boosting Overview}{31}{section*.23}
