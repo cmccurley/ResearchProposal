@@ -70,8 +70,8 @@
 \BOOKMARK [2][-]{subsection.4.0.3}{4.0.3 Feature Extraction}{subsection.4.0.1}% 70
 \BOOKMARK [3][-]{subsubsection.4.0.3.1}{4.0.3.1 HOG Features}{subsection.4.0.3}% 71
 \BOOKMARK [3][-]{subsubsection.4.0.3.2}{4.0.3.2 CNN Features}{subsection.4.0.3}% 72
-\BOOKMARK [2][-]{subsection.4.0.4}{4.0.4 Supervised Laplacian Eigenmaps \(S-LE\)}{subsection.4.0.1}% 73
-\BOOKMARK [2][-]{subsection.4.0.5}{4.0.5 Supervised Enhanced Isomap \(SE-Isomap\)}{subsection.4.0.1}% 74
+\BOOKMARK [2][-]{subsection.4.0.4}{4.0.4 Algorithm Parameters}{subsection.4.0.1}% 73
+\BOOKMARK [2][-]{subsection.4.0.5}{4.0.5 Training and Testing Procedures}{subsection.4.0.1}% 74
 \BOOKMARK [2][-]{subsection.4.0.6}{4.0.6 Evaluation Metrics}{subsection.4.0.1}% 75
 \BOOKMARK [2][-]{subsection.4.0.7}{4.0.7 Future Experiments}{subsection.4.0.1}% 76
 \BOOKMARK [3][-]{subsubsection.4.0.7.1}{4.0.7.1 Synthetic Data}{subsection.4.0.7}% 77

@@ -1,4 +1,4 @@
-\begin{thebibliography}{125}
+\begin{thebibliography}{128}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -215,12 +215,29 @@ M.~Cook, A.~Zare, and D.~K.~C. Ho.
   pages 9823 -- 9823 -- 9, Apr. 2016.
 \newblock \doi{10.1117/12.2223349}.
 
+\bibitem[Dalal and Triggs(2005)]{Dalal2005HOG}
+Navneet Dalal and Bill Triggs.
+\newblock Histograms of oriented gradients for human detection.
+\newblock In \emph{Proceedings of the 2005 IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition (CVPR’05) - Volume 1 - Volume 01},
+  CVPR ’05, page 886–893, USA, 2005. IEEE Computer Society.
+\newblock ISBN 0769523722.
+\newblock \doi{10.1109/CVPR.2005.177}.
+\newblock URL \url{https://doi.org/10.1109/CVPR.2005.177}.
+
 \bibitem[Dekel et~al.(2004)Dekel, Singer, and Manning]{Dekel2004Ranking}
 Ofer Dekel, Yoram Singer, and Christopher~D Manning.
 \newblock Log-linear models for label ranking.
 \newblock In S.~Thrun, L.~K. Saul, and B.~Sch\"{o}lkopf, editors,
   \emph{Advances in Neural Information Processing Systems 16}, pages 497--504.
   MIT Press, 2004.
+
+\bibitem[Deng et~al.(2009)Deng, Dong, Socher, Li, Li, and
+  Fei-Fei]{Deng2009ImageNet}
+Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li~Fei-Fei.
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock In \emph{2009 IEEE conference on computer vision and pattern
+  recognition}, pages 248--255. Ieee, 2009.
 
 \bibitem[Deselaers and Ferrari(2010)]{Deselaers2010MICRF}
 Thomas Deselaers and Vittorio Ferrari.
@@ -332,6 +349,12 @@ H.~{Hajimirsadeghi} and G.~{Mori}.
   Intelligence}, 39\penalty0 (9):\penalty0 1839--1852, Sep. 2017.
 \newblock ISSN 0162-8828.
 \newblock \doi{10.1109/TPAMI.2016.2613865}.
+
+\bibitem[He et~al.(2015)He, Zhang, Ren, and Sun]{He2015ResNet}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock \emph{CoRR}, abs/1512.03385, 2015.
+\newblock URL \url{http://arxiv.org/abs/1512.03385}.
 
 \bibitem[Hong et~al.(2019)Hong, Yokoya, Ge, Chanussot, and
   Zhu]{Hong2019LearnableManifoldAlignment}

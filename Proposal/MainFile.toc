@@ -104,13 +104,13 @@
 \contentsline {subsection}{\numberline {4.0.2}Description of Data}{83}{subsection.4.0.2}
 \contentsline {subsection}{\numberline {4.0.3}Feature Extraction}{85}{subsection.4.0.3}
 \contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{85}{subsubsection.4.0.3.1}
-\contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{85}{subsubsection.4.0.3.2}
-\contentsline {subsection}{\numberline {4.0.4}Supervised Laplacian Eigenmaps (S-LE)}{85}{subsection.4.0.4}
-\contentsline {subsection}{\numberline {4.0.5}Supervised Enhanced Isomap (SE-Isomap)}{85}{subsection.4.0.5}
-\contentsline {subsection}{\numberline {4.0.6}Evaluation Metrics}{85}{subsection.4.0.6}
-\contentsline {subsection}{\numberline {4.0.7}Future Experiments}{86}{subsection.4.0.7}
-\contentsline {subsubsection}{\numberline {4.0.7.1}Synthetic Data}{86}{subsubsection.4.0.7.1}
-\contentsline {subsubsection}{\numberline {4.0.7.2}Comparison to other methods}{86}{subsubsection.4.0.7.2}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{87}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{88}{chapter.6}
+\contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{86}{subsubsection.4.0.3.2}
+\contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{87}{subsection.4.0.4}
+\contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{87}{subsection.4.0.5}
+\contentsline {subsection}{\numberline {4.0.6}Evaluation Metrics}{87}{subsection.4.0.6}
+\contentsline {subsection}{\numberline {4.0.7}Future Experiments}{87}{subsection.4.0.7}
+\contentsline {subsubsection}{\numberline {4.0.7.1}Synthetic Data}{87}{subsubsection.4.0.7.1}
+\contentsline {subsubsection}{\numberline {4.0.7.2}Comparison to other methods}{87}{subsubsection.4.0.7.2}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{88}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{89}{chapter.6}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 

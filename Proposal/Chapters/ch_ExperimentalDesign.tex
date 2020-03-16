@@ -20,11 +20,11 @@ Initial experimentation was performed for bag-level classification.  In this wor
 \end{center}
 
 \subsection{Feature Extraction}
-Two types of features were explored for high-dimensional bag representation in this work, namely, hand-crafted Histogram of Oriented Gradients (HOG) and features taken from a convolutional neural network (CNN).  
+Two types of features were explored for high-dimensional bag representation in this work, namely, hand-crafted Histogram of Oriented Gradients (HOG) and features pulled from a convolutional neural network (CNN).  
 
 \subsubsection{HOG Features}
 
-Figure \textbf{REFERENCE} demonstrates HOG  features
+\textit{Histogram of Oriented Gradients} (HOG) features are popular object representations in the computer vision literature.  HOG features are essentially descriptors of local object appearance and shape that are characterized by intensity gradients and edge directions \citep{Dalal2005HOG}.  In practice, HOG descriptors are extracted by dividing an image into small spatial windows and accumulating local 1-D histograms of gradient directions or edge orientations over the pixels in the windows.  The combined histogram representations over all the windows form the combined feature vector for the image.  Figure \textbf{REFERENCE} demonstrates the HOG gradient information presented in a target image chip.  It can be observed that the descriptor cues on edge information, which is likely important for the MWIR target detection problem.  HOG descriptors were extracted for each chip in the dataset, thus providing dimensional input \textbf{INPUT NUMBER} features for each bag.  
 
 \begin{center}
 	\begin{figure*}[h]
@@ -36,16 +36,20 @@ Figure \textbf{REFERENCE} demonstrates HOG  features
 \end{center}
 
 \subsubsection{CNN Features}
+As mentioned in Section \ref{sec:mil_deep_learning}, deep learning has recently been explored under the MIL framework.  The primary assumption is that networks can extract useful feature representations using only bag-level label information \citep{Ghaffarzadegan2018MILVAE}.  This is, typically, at the cost of large quantities of data.  However, methods for representation learning with deep learning typically result in high levels of classification accuracy \citep{Bengio2014RepLearningReview}.  Therefore, we tested the dimensionality reduction frameworks with CNN extracted features.  To extract features, we fine-tuned ResNet18 \citep{He2015ResNet} pre-trained on ImageNet \citep{Deng2009ImageNet} in PyTorch for 2000 epochs in mini-batches of 20 chips.  Image chips were input to the network, which was tasked with predicting the corresponding bag-level labels.  After training, the entire dataset was fed through the network and the corresponding convolutional feature maps were extracted before the first max pooling layer in order to provide every pixel a corresponding feature vector.  For bag-level classification, the feature maps were concatenated to create a single high-dimensional representation for each bag.  The features extracted from the CNN were \textbf{INPUT NUMBER} dimensional.
 
-\subsection{Supervised Laplacian Eigenmaps (S-LE)}
+\subsection{Algorithm Parameters}
 parameters
 
-\subsection{Supervised Enhanced Isomap (SE-Isomap)}
-parameters
+\subsection{Training and Testing Procedures}
+
+Training
+
+Out of sample testing
+
 
 \subsection{Evaluation Metrics}
 
-label imprecision
 
 \subsection{Future Experiments}
 
