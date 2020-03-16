@@ -1,4 +1,35 @@
 \chapter{Experimental Design}
 In this chapter, a summary is provided of initial and future experiments using the proposed method for discriminative manifold learning and dimensionality reduction. 
 
-\cite{Wei2016ImageBagGenerators}
+\subsection{Overview}
+Two approaches were compared in terms of classification accuracy for nonlinear discriminative dimensionality reduction with weak labels.  Experiments compared Supervised Laplacian Eigenmaps and Supervised Enhanced Isomap  across three parameters of variation: 1.) dimensionality of the embedding space and 2.) feature representation and 3.) amount of label imprecision.  Previous work has explored linear methods for dimensionality reduction under the multiple instance learning paradigm \citep{Sun2010MIDR, Ping2010MILDRMaxMargin, Kim2010LocalDRMIL}.  However, no MIL methods have employed a nonlinear manifold learning approach.  The objective of this work was to demonstrate proof of concept for discriminative nonlinear dimensionality reduction using weak labels.  To prove this point, tests were conducted to embed image chips abstracted from a real-world remote sensing task of vehicle detection in infrared imagery.  Each chip (bag) was provided a positive label if at least one pixel in the image belonged to a vehicle.  A negative label was provided if the chip contained only background pixels.  The objective was to determine if classification accuracy with a K-nearest neighbor classifier was improved in the embedding space, as compared to the high-dimensional input feature space.  The classification performance of each algorithm was tested across a range of embedding dimensionalities using traditional gradient-based features and convolutional neural network features.  These tests were repeated for increasing amounts of label imprecision.  Experiments are detailed in the following.   
+
+\subsection{Description of Data}
+The DSIAC MS-003-DB Algorithm Development Database \citep{DSIACATR} contains a publicly-available collection of mid-wave infrared MWIR imagery collected by the US Army Night Vision and Electronic Sensors Directorate (NVESD). The system for this collection was the L3 Cincinnati Electronics Night Conqueror MWIR imager. The system used a fixed field of view (FOV) 300mm lens, resulting in a 3.4x2.6 FOV.  Thus, frames consisted of 640x480 pixels  The objective of the data collection was to capture a set of targets at a minimum of 72 unique aspect angles in range steps of 500 meters from 500 to 5000 meters during both day and night.  This was achieved by marking a circle with a diameters of approximately 100 meters at each range.  Vehicle drivers tracked the circle at around 10 mph. Imagery was taken in real-time for one minute using the  MWIR camera at a frame rate of 30 HZ, resulting in approximately 1800 still frames for each target of interest at each range and light scenario.  The collection used in this work consisted of MWIR video segments of three military and civilian vehicle classes, namely, pickup, SUV and BTR70, at ranges of 1000, 1500 and 2000 meters.  To account for sensor noise and lighting variations,  each frame was clipped at 0.5\% and 98\% before applying MAD normalization.
+ 
+Image chip extraction
+
+
+\subsection{Feature Extraction}
+
+\subsubsection{HOG Features}
+
+\subsubsection{CNN Features}
+
+\subsection{Supervised Laplacian Eigenmaps (S-LE)}
+parameters
+
+\subsection{Supervised Enhanced Isomap (SE-Isomap)}
+parameters
+
+\subsection{Evaluation Metrics}
+
+label imprecision
+
+\subsection{Future Experiments}
+
+The work by Wei et al. in \cite{Wei2016ImageBagGenerators} suggested that  for image classification tasks, certain formulations of MIL were better suited than others.  Algorithms such as miGraph, MIBoosting and miFV which assume non-i.i.d samples or take advantage of aggregating properties of bags tend to work better than those which adopt the standard assumption.  The authors of this work recommend miGraph with LBP bag generation or MIBoosting with Single Blob generation for image classification.  Additionally, classification performance tended to increase as the number of instances increased.
+
+\subsubsection{Synthetic Data}
+
+\subsubsection{Comparison to other methods}
