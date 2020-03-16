@@ -103,7 +103,7 @@
 \contentsline {subsection}{\numberline {4.0.1}Overview}{83}{subsection.4.0.1}
 \contentsline {subsection}{\numberline {4.0.2}Description of Data}{83}{subsection.4.0.2}
 \contentsline {subsection}{\numberline {4.0.3}Feature Extraction}{85}{subsection.4.0.3}
-\contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{85}{subsubsection.4.0.3.1}
+\contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{86}{subsubsection.4.0.3.1}
 \contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{86}{subsubsection.4.0.3.2}
 \contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{87}{subsection.4.0.4}
 \contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{87}{subsection.4.0.5}
