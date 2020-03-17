@@ -106,14 +106,13 @@
 \contentsline {subsection}{\numberline {4.0.3}Feature Extraction}{85}{subsection.4.0.3}
 \contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{86}{subsubsection.4.0.3.1}
 \contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{86}{subsubsection.4.0.3.2}
-\contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{87}{subsection.4.0.4}
-\contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{87}{subsection.4.0.5}
-\contentsline {paragraph}{Training}{87}{section*.61}
-\contentsline {paragraph}{Out-of-Sample Testing}{87}{section*.62}
+\contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{88}{subsection.4.0.4}
+\contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{88}{subsection.4.0.5}
+\contentsline {paragraph}{Training}{88}{section*.61}
+\contentsline {paragraph}{Out-of-Sample Testing}{88}{section*.62}
 \contentsline {paragraph}{Evaluation Metrics}{88}{section*.63}
-\contentsline {subsection}{\numberline {4.0.6}Future Experiments}{88}{subsection.4.0.6}
-\contentsline {subsubsection}{\numberline {4.0.6.1}Synthetic Data}{88}{subsubsection.4.0.6.1}
-\contentsline {subsubsection}{\numberline {4.0.6.2}Comparison to other methods}{88}{subsubsection.4.0.6.2}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{89}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{90}{chapter.6}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{90}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{91}{chapter.6}
+\contentsline {subsection}{\numberline {6.0.1}Future Experiments}{91}{subsection.6.0.1}
+\contentsline {subsubsection}{\numberline {6.0.1.1}Comparison to other methods}{91}{subsubsection.6.0.1.1}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 

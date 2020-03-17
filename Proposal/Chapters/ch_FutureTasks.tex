@@ -3,6 +3,12 @@ This chapter provides a table of the planned experiments for the duration of the
 
 These are the things I would still like to investigate, specifically, instance-level classification...
 
+\subsection{Future Experiments}
+
+The work by Wei et al. in \cite{Wei2016ImageBagGenerators} suggested that  for image classification tasks, certain formulations of MIL were better suited than others.  Algorithms such as miGraph, MIBoosting and miFV which assume non-i.i.d samples or take advantage of aggregating properties of bags tend to work better than those which adopt the standard assumption.  The authors of this work recommend miGraph with LBP bag generation or MIBoosting with Single Blob generation for image classification.  Additionally, classification performance tended to increase as the number of instances increased.
+
+\subsubsection{Comparison to other methods}
+
 \begin{table}[H]
 	\caption[List of Research Tasks]{List of research tasks and their corresponding locations in the dissertation document.}
 	\label{tab:future_tasks}

@@ -73,8 +73,7 @@
 \BOOKMARK [3][-]{subsubsection.4.0.3.2}{4.0.3.2 CNN Features}{subsection.4.0.3}% 73
 \BOOKMARK [2][-]{subsection.4.0.4}{4.0.4 Algorithm Parameters}{subsection.4.0.1}% 74
 \BOOKMARK [2][-]{subsection.4.0.5}{4.0.5 Training and Testing Procedures}{subsection.4.0.1}% 75
-\BOOKMARK [2][-]{subsection.4.0.6}{4.0.6 Future Experiments}{subsection.4.0.1}% 76
-\BOOKMARK [3][-]{subsubsection.4.0.6.1}{4.0.6.1 Synthetic Data}{subsection.4.0.6}% 77
-\BOOKMARK [3][-]{subsubsection.4.0.6.2}{4.0.6.2 Comparison to other methods}{subsection.4.0.6}% 78
-\BOOKMARK [0][-]{chapter.5}{5 Preliminary Results}{}% 79
-\BOOKMARK [0][-]{chapter.6}{6 Future Tasks}{}% 80
+\BOOKMARK [0][-]{chapter.5}{5 Preliminary Results}{}% 76
+\BOOKMARK [0][-]{chapter.6}{6 Future Tasks}{}% 77
+\BOOKMARK [1][-]{subsection.6.0.1}{6.0.1 Future Experiments}{chapter.6}% 78
+\BOOKMARK [2][-]{subsubsection.6.0.1.1}{6.0.1.1 Comparison to other methods}{subsection.6.0.1}% 79
