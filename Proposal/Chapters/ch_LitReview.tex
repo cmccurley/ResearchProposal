@@ -147,7 +147,7 @@ Following the idea of gradient boosting, the weight on each training instance is
 
 Each round of boosting consists of updating the weak learners according to the instances they misclassified and updating the strong classifier according to the new weights calculated over the weak learners.  The goal of MIL-Boost is to be able to correctly classify each instance in a test bag as being positive or negative such that the label of the bag is given as the maximum label over all instances in the bag.
 
-\subsection{Multiple Instance Ranking}
+\subsection{Multiple Instance Ranking}\label{sec:MI_Ranking}
 
 Another primary task in MIL is \textit{ranking} \citep{Carbonneau2016MILSurvey}.  The ranking problem is different from classification because, instead of providing a binary class label, the objective is to order a set of bags \citep{Bergeron2008MIRanking,Bergeron2012FastBundleMILRanking} or instances \citep{Hu2008MIRanking} according to preference for a particular task.  Ranking is a key task under \textit{Preference Learning}, or learning to predict preferences on a set of alternatives, which are often represented in the form of an order relation \citep{Furnkranz2003RankingSummary}.  The statement that $\bm{x}$ is preferred to $\bm{x}'$ can be simply expressed as an inequality relation $f(\bm{x}) > f(\bm{x}')$, where $\bm{x}$ and $\bm{x}'$ are instances, and $f$ defines a preference function.  For example, given a news story about the Olympics, one might prefer to give it the label ``sports" rather than ``politics" or ``weather".  Alternatively, one might prefer to label one bag or instance as ``positive" over another.  In machine learning, the preference learning problem is often analyzed in two cases: \textit{learning instance preference} and \textit{learning label preference} \citep{Chu2005LearningPreferencesWithGaussianProcesses}.  Under the scenario of learning instance preferences, the training set consists of a set of pairwise preferences between instances.  The objective is to learn the underlying ordering from the set of pairwise distances (such as ordering bags from the ``most positive" to ``least positive").  Alternatively, the goal of label preference learning is to order a pre-defined set of labels for each individual instance (such as ordering the preference of ``positive" or ``negative" on each individual bag or instance) \citep{Dekel2004Ranking,Aiolli2004LearningPreferences}.   
 
@@ -907,7 +907,7 @@ An alternative approach for discriminative dimensionality reduction with weak la
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Metric Embedding %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Metric Embedding} \label{sec:MetricEmedding}
 
-The concepts of ``near" and ``far" are very powerful and useful utilities in everyday life.  They classify the relationship between two ``primitives" as being similar or dissimilar, as well as the degree of compatibility \citep{Thorstensen2009ManifoldThesis}. As an example, a medical doctor might consider a machine learning researcher and a software engineer as being similar (near), because they both perform research for computer applications.  However, the same researcher and engineer would likely consider their jobs as being very disparate (far) based on the details of their work.  In order to capture this abstraction of distance, a \textit{metric space} is defined as a mathematical construction  of this vague generality.
+The concepts of ``near" and ``far" are very powerful and useful utilities in everyday life.  They classify the relationship between two ``primitives" as being similar or dissimilar, as well as the degree of compatibility \citep{Thorstensen2009ManifoldThesis}. As an example, a medical doctor might consider a machine learning researcher and a software engineer as being similar (near), because they both perform research for computer applications.  However, the same researcher and engineer would likely consider their jobs as being very disparate (far) based on the details of their work.  In order to capture this abstraction of distance in a mathematical construct, a \textit{metric space} is defined.
 
  \theoremstyle{definition}
  \begin{definition}{Metric Space}
@@ -923,14 +923,7 @@ The concepts of ``near" and ``far" are very powerful and useful utilities in eve
 \noindent
 The non-negativity rule states that the metric evaluated on two instances must have a positive value or be equal to zero.  From the Identity rule, we can see that the metric may only be defined as zero if the two instances being evaluated are exactly the same (thus the dissimilarity is zero).  The Symmetry rule states that a metric evaluated between two instances must be the same regardless of ordering.  Finally, the Triangle Inequality says, intuitively, that the direct distance between two instances $\bm{x}$ and $\bm{z}$ is smaller than the distance between $\bm{x}$ and $\bm{y}$ plus the distance between $\bm{y}$ and $\bm{z}$.  Both sides of the inequality will be equal if and only if $\bm{y}$ lies on the path between $\bm{x}$ and $\bm{z}$ on which the metric is defined.  \newline
 The goal of \textit{metric embedding learning} it to learn a function $f_{\theta}(\bm{x}):\mathbb{R}^{D} \rightarrow \mathbb{R}^{d}$ which maps semantically similar points from the data input feature space of $\mathbb{R}^{D}$ onto \textit{metrically close} points in $\mathbb{R}^{d}$.  Similarly, $f_{\theta}$ should map semantically different points in $\mathbb{R}^{D}$ onto metrically distant points in $\mathbb{R}^{d}$.  The function $f_{\theta}$ is parameterized by $\theta$ and can be anything ranging from a linear transformation to a complex non-linear mapping as in the case of deep artificial neural networks \citep{Hermans2017DefenseTripletLoss}.  Let $\mathcal{D}(\bm{x},\bm{ y}): \mathbb{R}^{d} \times \mathbb{R}^{d} \rightarrow \mathbb{R}$ be a metric function measuring similarity or dissimilarity in the embedded space.  For succinctness, $\mathcal{D}_{i,j} = \mathcal{D}(f_{\theta}(\bm{x_{i}}),f_{\theta}(\bm{x_{j}}))$
-defines the dissimilarity between samples $\bm{x}_{i}$ and $\bm{x}_{j}$, after being embedded.
-
-\subsubsection{Metric Learning}
-Thorstensen thesis, Raducanu S-LE
-
-\subsubsection{Preference Learning}
-Choquet integral
-Can we use to preference learning to discern instances which are likely to be positive and negative, then use these rankings for embedding?
+defines the dissimilarity between samples $\bm{x}_{i}$ and $\bm{x}_{j}$, after being embedded.  It should be noted that, unlike \textit{metric learning} where the objective is to learn an appropriate metric to measure dissimilarity between samples in opposing classes, metric embedding attempts to learn a transformation function such that samples in the embedding space adhere to a pre-defined measure of similarity \citep{Hermans2017DefenseTripletLoss}.  Metric embedding is often realized through weakly-supervised learning, where instead of labels, the data is accompanied with sets of preferences.
 
 	\subsection{Ranking Loss}
 	
@@ -966,7 +959,16 @@ Can we use to preference learning to discern instances which are likely to be po
 	\subsection{Weakly Supervised Dimensionality Reduction with Metric Embedding}
 	Xu et al. proposed a weakly supervised dimensionality reduction approach based on the large-margin principle in which the angle between preference pairs is consistent while the distance between examples in preference pairs is maximized \citep{Xu2014LargeMarginWeaklySupervisedDR}.
 	
+	\subsubsection{M3DNet}
+	
+	
+	\subsubsection{Metric Learning}
+	Thorstensen thesis, Raducanu S-LE
+	
+	\subsubsection{Preference Learning}
+	Choquet integral
+	Can we use to preference learning to discern instances which are likely to be positive and negative, then use these rankings for embedding?
 
-
+	Metric embedding is often realized through weakly-supervised learning, where instead of labels, the data is accompanied with sets of preferences. While this embedding could, conceptually be easy to implement at the bag level, enforcing instance embeddings is difficult due to the uncertainty on the labels.  However, one could (theoretically) use instance ranking as discussed in Section \ref{sec:MI_Ranking} to provide estimated preference sets on the instances for use in embedding.
 
 

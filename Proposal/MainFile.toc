@@ -86,8 +86,6 @@
 \contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{76}{subsection.2.3.6}
 \contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{77}{subsection.2.3.7}
 \contentsline {section}{\numberline {2.4}Metric Embedding}{79}{section.2.4}
-\contentsline {subsubsection}{\numberline {2.4.0.1}Metric Learning}{80}{subsubsection.2.4.0.1}
-\contentsline {subsubsection}{\numberline {2.4.0.2}Preference Learning}{80}{subsubsection.2.4.0.2}
 \contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{80}{subsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.1.1}Pairwise Loss}{80}{subsubsection.2.4.1.1}
 \contentsline {subsubsection}{\numberline {2.4.1.2}Contrastive Loss}{80}{subsubsection.2.4.1.2}
@@ -96,6 +94,9 @@
 \contentsline {subsubsection}{\numberline {2.4.1.5}FaceNet}{80}{subsubsection.2.4.1.5}
 \contentsline {subsubsection}{\numberline {2.4.1.6}Siamese Neural Networks}{81}{subsubsection.2.4.1.6}
 \contentsline {subsection}{\numberline {2.4.2}Weakly Supervised Dimensionality Reduction with Metric Embedding}{81}{subsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2.1}M3DNet}{81}{subsubsection.2.4.2.1}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Metric Learning}{81}{subsubsection.2.4.2.2}
+\contentsline {subsubsection}{\numberline {2.4.2.3}Preference Learning}{81}{subsubsection.2.4.2.3}
 \contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{82}{chapter.3}
 \contentsline {section}{\numberline {3.1}Nonlinear Manifold Learning for Bag-Level Classification}{82}{section.3.1}
 \contentsline {section}{\numberline {3.2}Nonlinear Manifold Learning for Instance-Level Classification}{82}{section.3.2}
@@ -107,10 +108,12 @@
 \contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{86}{subsubsection.4.0.3.2}
 \contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{87}{subsection.4.0.4}
 \contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{87}{subsection.4.0.5}
-\contentsline {subsection}{\numberline {4.0.6}Evaluation Metrics}{87}{subsection.4.0.6}
-\contentsline {subsection}{\numberline {4.0.7}Future Experiments}{87}{subsection.4.0.7}
-\contentsline {subsubsection}{\numberline {4.0.7.1}Synthetic Data}{87}{subsubsection.4.0.7.1}
-\contentsline {subsubsection}{\numberline {4.0.7.2}Comparison to other methods}{87}{subsubsection.4.0.7.2}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{88}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{89}{chapter.6}
+\contentsline {paragraph}{Training}{87}{section*.61}
+\contentsline {paragraph}{Out-of-Sample Testing}{87}{section*.62}
+\contentsline {paragraph}{Evaluation Metrics}{88}{section*.63}
+\contentsline {subsection}{\numberline {4.0.6}Future Experiments}{88}{subsection.4.0.6}
+\contentsline {subsubsection}{\numberline {4.0.6.1}Synthetic Data}{88}{subsubsection.4.0.6.1}
+\contentsline {subsubsection}{\numberline {4.0.6.2}Comparison to other methods}{88}{subsubsection.4.0.6.2}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{89}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{90}{chapter.6}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 

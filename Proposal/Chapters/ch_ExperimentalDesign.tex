@@ -48,16 +48,24 @@ Two types of features were explored for high-dimensional bag representation in t
 As mentioned in Section \ref{sec:mil_deep_learning}, deep learning has recently been explored under the MIL framework.  The primary assumption is that networks can extract useful feature representations using only bag-level label information \citep{Ghaffarzadegan2018MILVAE}.  This is, typically, at the cost of large quantities of data.  However, methods for representation learning with deep learning typically result in high levels of classification accuracy \citep{Bengio2014RepLearningReview}.  Therefore, we tested the dimensionality reduction frameworks with CNN extracted features.  To extract features, we fine-tuned ResNet18 \citep{He2015ResNet} pre-trained on ImageNet \citep{Deng2009ImageNet} in PyTorch for 2000 epochs in mini-batches of 20 chips.  Image chips were input to the network, which was tasked with predicting the corresponding bag-level labels.  After training, the entire dataset was fed through the network and the corresponding convolutional feature maps were extracted before the first max-pooling layer in order to provide every pixel a corresponding feature vector.  For bag-level classification, the feature maps were concatenated to create a single high-dimensional representation for each bag.  The features extracted from the CNN were \textbf{INPUT NUMBER} dimensional.
 
 \subsection{Algorithm Parameters}
-parameters
+Algorithm hyper-parameters were selected by 5-fold cross validation.  It was found that for S-LE, 
+
+The parameters of SE-Isomap were set at
+
+A K-NN classifier was trained for each test scenario with a fixed $k=3$ for simplicity.  
 
 \subsection{Training and Testing Procedures}
 
-Training
+\paragraph{Training}
+Training for manifold embedding was inhibited by the size of the dataset.  Thus, to make training more manageable, the data was split into 5 folds.   
 
-Out of sample testing
+
+\paragraph{Out-of-Sample Testing}
+A known difficulty with nonlinear manifold learning methods is the embedding of \textit{out-of-sample} datapoints.  These points are samples that were not included in the training  dataset.  While methods have been developed to perform this embedding which consider class-label information of the training data or learn the embedding function through the universal function approximation abilities of a neural network \cite{Vural2016OutOfSampleSupManifoldLearning,Mendoza2016ELMOutOfSample}, this work adopts a simple linear reconstruction method for out of sample embedding.  Essentially, a low-dimensional coordinate for a test point is found as a linear combination of the low-dimensional representations of its $k=5$ nearest neighbors in the input feature space.  A bias term is also added to improve reconstruction ability.  
 
 
-\subsection{Evaluation Metrics}
+\paragraph{Evaluation Metrics}
+Two metrics were used to evaluate algorithmic performance.  The first is simply the total classification accuracy, or the number of correctly labeled bags divided by the total number of bags.  The second is the \textit{Receiver-Operating Characteristic Curve} (ROC).  A ROC curve is a tool used in binary classification, where the x-axis shows the false-positive rate for detection and the y-axis shows the true-positive rate.  True positive rate (TPR) is the measure of true positives over the number of true positive plus false negatives, and false positive rate (FPR) is the number  of false negatives over the number of false negatives plus the number of true positives, or one minus TPR.  A perfect ROC curve would be a vertical line, where 100\% of true positive bags or instances are detected with zero false alarms.
 
 
 \subsection{Future Experiments}

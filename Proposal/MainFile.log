@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  16 MAR 2020 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  17 MAR 2020 10:18
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -617,7 +617,7 @@ Package hyperref Warning: bookmark level for unknown extrachapter defaults to 0
 \openout2 = `Chapters/abbreviations.aux'.
 
  (Chapters/abbreviations.tex
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 []|\OT1/cmss/m/n/12 Multi-Instance Di-men-sion-al-ity re-duc-tion by Learn-ing 
 a mAx-i-mum Bag
  []
@@ -1230,12 +1230,7 @@ Underfull \hbox (badness 10000) detected at line 921
 [][][]
  []
 
-[79]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 928.
-
-[80]) [81]
+[79] [80]) [81]
 \openout2 = `Chapters/ch_TechApproach.aux'.
 
  (Chapters/ch_TechApproach.tex
@@ -1284,7 +1279,7 @@ File: example-image-a.png Graphic file (type png)
 <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 41.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
- [86]) [87]
+ [86] [87]) [88]
 \openout2 = `Chapters/ch_PreliminaryWork.aux'.
 
  (Chapters/ch_PreliminaryWork.tex
@@ -1295,7 +1290,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [88
+) [89
 
 
 
@@ -1330,26 +1325,26 @@ Underfull \hbox (badness 10000) detected at line 18
 Underfull \vbox (badness 10000) detected at line 21
  []
 
-) [89
+) [90
 
 
 
 ] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [90
-
-
-]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
+ [91
+
+
+]
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [91]
+ [92]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1365,7 +1360,7 @@ Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [92]
+ [93]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1375,32 +1370,32 @@ Missing character: There is no “ in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
 
-[93] [94]
+[94] [95]
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [95]
+ [96]
 Missing character: There is no â in font cmssi12!
 Missing character: There is no € in font cmssi12!
 Missing character: There is no “ in font cmssi12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [96] [97]
+ [97] [98]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [98] [99]
+ [99] [100]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [100]
+ [101]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [101] [102]
+ [102] [103]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1413,10 +1408,9 @@ Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
-) (Chapters/bio.tex)
+ [104]) (Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
-
-[103]
+[105]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (MainFile.aux (Chapters/acknowledgements.aux) (Chapters/TOC.aux)
 (Chapters/abbreviations.aux) (Chapters/symbols.aux) (Chapters/abstract.aux)
@@ -1426,7 +1420,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: E9E9ACF8452211547D29BE2DD8C969AE;6909.
+(rerunfilecheck)             Checksum: 0F340553FBEE05C6E96CE237EF5A0262;6904.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1434,13 +1428,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 10066 strings out of 493323
- 162225 string characters out of 3139067
- 248888 words of memory out of 3000000
- 12881 multiletter control sequences out of 15000+200000
+ 10080 strings out of 493323
+ 162614 string characters out of 3139067
+ 249070 words of memory out of 3000000
+ 12888 multiletter control sequences out of 15000+200000
  14233 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,17n,42p,3185b,720s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,17n,42p,3185b,734s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/
@@ -1461,9 +1455,9 @@ ic/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MainFile.pdf (103 pages, 1996583 bytes).
+Output written on MainFile.pdf (105 pages, 2002400 bytes).
 PDF statistics:
- 2032 PDF objects out of 2073 (max. 8388607)
- 462 named destinations out of 1000 (max. 500000)
+ 2054 PDF objects out of 2073 (max. 8388607)
+ 469 named destinations out of 1000 (max. 500000)
  716 words of extra memory for PDF output out of 10000 (max. 10000000)
 
