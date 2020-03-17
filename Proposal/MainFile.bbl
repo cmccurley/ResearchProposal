@@ -1,4 +1,4 @@
-\begin{thebibliography}{131}
+\begin{thebibliography}{132}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -232,6 +232,12 @@ Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li~Fei-Fei.
 \newblock Imagenet: A large-scale hierarchical image database.
 \newblock In \emph{2009 IEEE conference on computer vision and pattern
   recognition}, pages 248--255. Ieee, 2009.
+
+\bibitem[Deng et~al.(2019)Deng, Guo, and
+  Zafeiriou]{Deng2019ArcFaceAngularMarginLoss}
+Jiankang Deng, Jia Guo, and Stefanos Zafeiriou.
+\newblock Arcface: Additive angular margin loss for deep face recognition.
+\newblock \emph{CoRR}, abs/1801.07698, 2019.
 
 \bibitem[Deselaers and Ferrari(2010)]{Deselaers2010MICRF}
 Thomas Deselaers and Vittorio Ferrari.

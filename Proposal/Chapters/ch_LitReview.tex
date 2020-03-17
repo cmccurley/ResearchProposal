@@ -932,11 +932,11 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 	Let $\bm{x} \in \mathcal{X}$ be data with corresponding instance-level labels $l \in \{l_{1}, \dots, \l_{N} \}$.  The superscripts $\bm{x}^{a}, \bm{x}^{p}, \bm{x}^{n}$ are used to denote \textit{anchor}, \textit{positive} and \textit{negative} samples, respectively.  The anchor point is the sample of interest, while the positive is a sample of the same class (or deemed to be similar to the anchor) and the negative sample is a point of a different class (or dissimilar to the anchor).
 	\textit{Contrastive loss} functions take pairs of examples as input and learns and embedding function to predict whether two inputs are from the same class or not.  Specifically, contrastive loss can be written as:
 	\begin{align}
-		\mathcal{L}^{\alpha}_{\text{cont}}(\bm{x}_{m},\bm{x}_{n};f_{\theta}) = \bm{1}\{l_{m}=l_{n} \} \mathcal{D}(f_{\theta}(\bm{x}_{m}),(f_{\theta}(\bm{x}_{n})) + \bm{1}\{l_{m} \neq l_{n} \} \max(0,\alpha - \mathcal{D}(f_{\theta}(\bm{x}_{m}),(f_{\theta}(\bm{x}_{n})))
+		\mathcal{L}^{\alpha}_{\text{cont}}(\bm{x}_{m},\bm{x}_{n};f_{\theta}) = \bm{1}\{l_{m}=l_{n} \} \mathcal{D}(f_{\theta}(\bm{x}_{m}),f_{\theta}(\bm{x}_{n})) + \bm{1}\{l_{m} \neq l_{n} \} \max(0,\alpha - \mathcal{D}(f_{\theta}(\bm{x}_{m}),f_{\theta}(\bm{x}_{n})))
 	\label{eq:contrastive_loss}
 	\end{align}
 	\noindent
-	where $\alpha$ is a margin parameter imposing a distance between different classes to be larger than $\alpha$.  Analyzing Equation \ref{eq:contrastive_loss}, it can be observed that this loss has two unique terms.  If the label of $\bm{x}_{m}$ and $\bm{x}_{n}$ are the same (anchor and positive pair), only the first half of the loss is computed.  This term is simply the dissimilarity between the samples in the embedding space.  Ideally, this term should equate to zero, thus implying the terms are close to each other in the embedding space.  If the labels of the samples are opposing (anchor and negative pair), the second term is computed.  This equates to the maximum value between zero and the difference between the margin constraint and the dissimilarity between the samples.  Thus, if the distance between  the anchor and negative is greater than the margin $\alpha$, the objective is met and the loss equates to zero.  Otherwise, the loss is positive.  Figure \ref{fig:contrastive_loss} demonstrates the idea of contrastive loss.  If given a positive anchor pair, the transformation function should embed the samples closer in the embedding space.  If given a negative pair, the opposite should occur.  It is obvious that with each sample pair the embedding function is only updated in one way (pushing or pulling).  
+	where $\alpha$ is a margin parameter imposing a distance between different classes to be larger than $\alpha$.  Analyzing Equation \ref{eq:contrastive_loss}, it can be observed that this loss has two unique terms.  If the label of $\bm{x}_{m}$ and $\bm{x}_{n}$ are the same (anchor and positive pair), only the first half of the loss is computed.  This term is simply the dissimilarity between the samples in the embedding space.  Ideally, this term should equate to zero, thus implying the terms are close to each other in the embedding space.  If the labels of the samples are opposing (anchor and negative pair), the second term is computed.  This equates to the maximum value between zero and the difference between the margin constraint and the dissimilarity between the samples.  Thus, if the distance between  the anchor and negative is greater than the margin $\alpha$, the objective is met and the loss equates to zero.  Otherwise, the loss is positive.  Figure \ref{fig:contrastive_loss} demonstrates the idea of contrastive loss.  If given a positive anchor pair, the transformation function should embed the samples closer in the embedding space.  If given a negative pair, the opposite should occur.  It is obvious that with each sample pair the embedding function is only updated in one way (pushing or pulling) \citep{Sohn2016NPairLoss,Koch2015SiameseNetworks}.  
 	
 	\begin{center}
 		\begin{figure*}[h]
@@ -946,10 +946,16 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 			\label{fig:contrastive_loss}
 		\end{figure*}
 	\end{center}
-	Definition of Contrastive Loss:
 	
 	
 	\subsubsection{Triplet Loss}
+	Whereas contrastive loss considers pairs of samples, triplet loss jointly optimizes between three samples $\{\bm{x}^{a}, \bm{x}^{p}, \bm{x}^{n}\}$, the anchor, a positive and a negative \citep{Hermans2017DefenseTripletLoss,Schroff2015FaceNet, Deng2019ArcFaceAngularMarginLoss}. The fundamental idea behind triplet loss is that, for an input sample, we desire to shorten the distances between its embedded representation and those of similar examples, while simultaneously enlarging the distances between dissimilar examples \citep{Sohn2016NPairLoss}. Triplet loss can be written as:
+	\begin{align}
+	\mathcal{L}^{\alpha}_{\text{tri}}(\bm{x}^{a},\bm{x}^{p},\bm{x}^{n};f_{\theta}) = \max(0,\mathcal{D}(f_{\theta}(\bm{x}^{a}),f_{\theta}(\bm{x}^{p})) - \mathcal{D}(f_{\theta}(\bm{x}^{a}),f_{\theta}(\bm{x}^{n})) + \alpha )
+	\label{eq:triplet_loss}
+	\end{align}
+	\noindent
+	From Equation \ref{eq:triplet_loss}, it can be observed that the triplet loss is satisfied whenever the distance between the negative and anchor is greater than the distance between the corresponding positive sample and the anchor by a margin $\alpha$.  Whereas contrastive loss simply pushes or pulls, triplet loss does both, simultaneously.  This is depicted visually by Figure \ref{fig:triplet_loss}.
 	
 	\begin{center}
 		\begin{figure*}[h]
@@ -959,16 +965,15 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 			\label{fig:triplet_loss}
 		\end{figure*}
 	\end{center}
+
+	The advantage of this formulation is that, while all points of the same class will eventually form a cluster, they are not required to collapse to a single point; they just need to be close to each other than to any point from a different class \citep{Hermans2017DefenseTripletLoss}.  A major drawback of triplet loss, however, is that as datasets grow larger, the possible number of triplets grows cubically.  This can cause practical issues as many of the triplets will likely already satisfy the margin constraints and will not contribute toward learning.  Therefore, Schroff et al. argue that \textit{hard-mining} is often imperative for the success of triplet-based methods \citep{Schroff2015FaceNet}.   Essentially, three scenarios exists.  \textit{Easy triplets} are triplet sets which already satisfy the margin constraint, thus inducing zero loss.  \textit{Hard triplets} are sets where the negative sample is closer to the anchor than the positive.  The loss is positive (and greater than $\alpha$).  \textit{Semi-hard triplets} are sets where the negative point is more distant to the anchor than the positive, but it is not greater than the margin $\alpha$, so the loss is still positive (but smaller than $\alpha$).  Therefore, careful consideration should be taken in triplet construction to maximize the number of hard and semi-hard triplets shown to the learning algorithm. 
 	
-	Definition of Triplet Loss:
-	
-	The fundamental idea behind triplet loss is that, for an input sample, we desire to shorten the distances between its embedded representation and those of similar examples, while enlarging the distances between dissimilar examples \citep{Sohn2016NPairLoss}.
-	
-	Triplet loss was extended in \citep{Sohn2016NPairLoss} to simultaneously optimize against N negative classes.
+	Alternative approaches such as the ones in \citep{Sohn2016NPairLoss} and \citep{Deng2019ArcFaceAngularMarginLoss} have used modification of contrastive or triplet loss to obtain feature representations which adhere to a desired metric embedding.
 
 		\subsubsection{Large-Margin K-Nearest Neighbors (LMNN)}
 		
 		\subsubsection{Siamese Neural Networks}
+		Contrastive or triplet loss
 		
 		\subsubsection{Triplet  Networks}
 		
@@ -996,9 +1001,6 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 	Thorstensen thesis, Raducanu S-LE
 	
 	\subsubsection{Preference Learning}
-	Choquet integral
-	Can we use to preference learning to discern instances which are likely to be positive and negative, then use these rankings for embedding?
 
-	Metric embedding is often realized through weakly-supervised learning, where instead of labels, the data is accompanied with sets of preferences. While this embedding could, conceptually be easy to implement at the bag level, enforcing instance embeddings is difficult due to the uncertainty on the labels.  However, one could (theoretically) use instance ranking as discussed in Section \ref{sec:MI_Ranking} to provide estimated preference sets on the instances for use in embedding.
 
 

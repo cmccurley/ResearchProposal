@@ -7,6 +7,11 @@ These are the things I would still like to investigate, specifically, instance-l
 
 The work by Wei et al. in \cite{Wei2016ImageBagGenerators} suggested that  for image classification tasks, certain formulations of MIL were better suited than others.  Algorithms such as miGraph, MIBoosting and miFV which assume non-i.i.d samples or take advantage of aggregating properties of bags tend to work better than those which adopt the standard assumption.  The authors of this work recommend miGraph with LBP bag generation or MIBoosting with Single Blob generation for image classification.  Additionally, classification performance tended to increase as the number of instances increased.
 
+Choquet integral
+Can we use to preference learning to discern instances which are likely to be positive and negative, then use these rankings for embedding?
+
+Metric embedding is often realized through weakly-supervised learning, where instead of labels, the data is accompanied with sets of preferences. While this embedding could, conceptually be easy to implement at the bag level, enforcing instance embeddings is difficult due to the uncertainty on the labels.  However, one could (theoretically) use instance ranking as discussed in Section \ref{sec:MI_Ranking} to provide estimated preference sets on the instances for use in embedding.
+
 \subsubsection{Comparison to other methods}
 
 \begin{table}[H]
