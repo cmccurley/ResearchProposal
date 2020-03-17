@@ -1,4 +1,4 @@
-\begin{thebibliography}{130}
+\begin{thebibliography}{131}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -411,6 +411,11 @@ Balázs Kegl, Donald Wunsch, and Andrei Zinovyev.
   Reduction, LNCSE 58}.
 \newblock 01 2008.
 \newblock ISBN 978-3-540-73750-6.
+
+\bibitem[Koch(2015)]{Koch2015SiameseNetworks}
+Gregory~R. Koch.
+\newblock Siamese neural networks for one-shot image recognition.
+\newblock 2015.
 
 \bibitem[Kohonen(1990)]{Kohonen1990SOM}
 T.~Kohonen.

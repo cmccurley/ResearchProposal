@@ -926,14 +926,34 @@ The goal of \textit{metric embedding learning} it to learn a function $f_{\theta
 defines the dissimilarity between samples $\bm{x}_{i}$ and $\bm{x}_{j}$, after being embedded.  It should be noted that, unlike \textit{metric learning} where the objective is to learn an appropriate metric to measure dissimilarity between samples in opposing classes, metric embedding attempts to learn a transformation function such that samples in the embedding space adhere to a pre-defined measure of similarity \citep{Hermans2017DefenseTripletLoss}.  Metric embedding is often realized through weakly-supervised learning, where instead of labels, the data is accompanied with sets of preferences.
 
 	\subsection{Ranking Loss}
+	Unlike other loss function such as mean-squared error or cross-entropy, whose objective is to directly compare labels, values or sets of values assigned to a given input, the objective of \textit{ranking loss} (also called \textit{margin loss}) functions is to measure relative distances between sets of inputs.  To use a ranking loss in a learning scenario, sets of inputs (usually two or three) are embedded through a transformation function into a defined metric space.  A metric is used to measure similarity (often Euclidean distance), and the transformation function is updated such that points which have a higher semantic similarity label are embedded more closely, and points which are dissimilar are pushed further apart, according to the metric.  In this framework, the actual values of the embedded features is ignored.  Instead, only the distances between them matter.  While ranking losses have been developed which consider many datapoints at a time \citep{Sohn2016NPairLoss}, the most popular ranking loss functions in the literature are based on \textit{contrastive} \citep{Koch2015SiameseNetworks} and \textit{triplet} \citep{Schroff2015FaceNet} losses.
 	
-	\subsubsection{Pairwise Loss}
+	
+
 	
 	\subsubsection{Contrastive Loss}
+	
+	\begin{center}
+		\begin{figure*}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{example-image-a}
+			\caption[Pairwise Loss]{}
+			\label{fig:contrastive_loss}
+		\end{figure*}
+	\end{center}
 	Definition of Contrastive Loss:
 	
 	
 	\subsubsection{Triplet Loss}
+	
+	\begin{center}
+		\begin{figure*}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{example-image-a}
+			\caption[Triplet Loss]{}
+			\label{fig:triplet_loss}
+		\end{figure*}
+	\end{center}
 	
 	Definition of Triplet Loss:
 	
@@ -941,7 +961,10 @@ defines the dissimilarity between samples $\bm{x}_{i}$ and $\bm{x}_{j}$, after b
 
 		\subsubsection{Large-Margin K-Nearest Neighbors (LMNN)}
 		
-		\subsubsection{FaceNet}
+		\subsubsection{Siamese Neural Networks}
+		
+		\subsubsection{Triplet  Networks}
+		
 		
 		FaceNet is a convolutional neural network which learns a mapping from face images to a compact Euclidean space where distances directly correspond to a measure of face similarity \citep{Schroff2015FaceNet}. 
 		
@@ -954,7 +977,7 @@ defines the dissimilarity between samples $\bm{x}_{i}$ and $\bm{x}_{j}$, after b
 		\end{align}
 		
 		
-		\subsubsection{Siamese Neural Networks}
+		
 		
 	\subsection{Weakly Supervised Dimensionality Reduction with Metric Embedding}
 	Xu et al. proposed a weakly supervised dimensionality reduction approach based on the large-margin principle in which the angle between preference pairs is consistent while the distance between examples in preference pairs is maximized \citep{Xu2014LargeMarginWeaklySupervisedDR}.
