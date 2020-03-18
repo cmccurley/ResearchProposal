@@ -934,7 +934,9 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 	Let $\bm{x} \in \mathcal{X}$ be data with corresponding instance-level labels $l \in \{l_{1}, \dots, \l_{N} \}$.  The superscripts $\bm{x}^{a}, \bm{x}^{p}, \bm{x}^{n}$ are used to denote \textit{anchor}, \textit{positive} and \textit{negative} samples, respectively.  The anchor point is the sample of interest, while the positive is a sample of the same class (or deemed to be similar to the anchor) and the negative sample is a point of a different class (or dissimilar to the anchor).
 	\textit{Contrastive loss} functions take pairs of examples as input and learns and embedding function to predict whether two inputs are from the same class or not.  Specifically, contrastive loss can be written as:
 	\begin{align}
-		\mathcal{L}^{\alpha}_{\text{cont}}(\bm{x}_{m},\bm{x}_{n};f_{\theta}) = \bm{1}\{l_{m}=l_{n} \} \mathcal{D}(f_{\theta}(\bm{x}_{m}),f_{\theta}(\bm{x}_{n})) + \bm{1}\{l_{m} \neq l_{n} \} \max(0,\alpha - \mathcal{D}(f_{\theta}(\bm{x}_{m}),f_{\theta}(\bm{x}_{n})))
+		\begin{split}
+		\mathcal{L}^{\alpha}_{\text{cont}}(\bm{x}_{m},\bm{x}_{n};f_{\theta}) = &\bm{1}\{l_{m}=l_{n} \} \mathcal{D}(f_{\theta}(\bm{x}_{m}),f_{\theta}(\bm{x}_{n}))\\ + &\bm{1}\{l_{m} \neq l_{n} \} \max(0,\alpha - \mathcal{D}(f_{\theta}(\bm{x}_{m}),f_{\theta}(\bm{x}_{n})))
+		\end{split}
 	\label{eq:contrastive_loss}
 	\end{align}
 	\noindent
