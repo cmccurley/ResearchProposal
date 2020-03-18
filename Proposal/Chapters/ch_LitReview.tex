@@ -968,7 +968,7 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 
 	The advantage of this formulation is that, while all points of the same class will eventually form a cluster, they are not required to collapse to a single point; they just need to be close to each other than to any point from a different class \citep{Hermans2017DefenseTripletLoss}.  A major drawback of triplet loss, however, is that as datasets grow larger, the possible number of triplets grows cubically.  This can cause practical issues as many of the triplets will likely already satisfy the margin constraints and will not contribute toward learning.  Therefore, Schroff et al. argue that \textit{hard-mining} is often imperative for the success of triplet-based methods \citep{Schroff2015FaceNet}.   Essentially, three scenarios exists.  \textit{Easy triplets} are triplet sets which already satisfy the margin constraint, thus inducing zero loss.  \textit{Hard triplets} are sets where the negative sample is closer to the anchor than the positive.  The loss is positive (and greater than $\alpha$).  \textit{Semi-hard triplets} are sets where the negative point is more distant to the anchor than the positive, but it is not greater than the margin $\alpha$, so the loss is still positive (but smaller than $\alpha$).  Therefore, careful consideration should be taken in triplet construction to maximize the number of hard and semi-hard triplets shown to the learning algorithm. 
 	
-	Alternative approaches such as the ones in \citep{Sohn2016NPairLoss} and \citep{Deng2019ArcFaceAngularMarginLoss} have used modification of contrastive or triplet loss to obtain feature representations which adhere to a desired metric embedding.
+	Alternative approaches such as the ones in \citep{Sohn2016NPairLoss}, \citep{Deng2019ArcFaceAngularMarginLoss} and \citep{Xu2014LargeMarginWeaklySupervisedDR} use modifications of contrastive or triplet loss to obtain feature representations which adhere to a desired metric embedding.
 
 		\subsubsection{Large-Margin K-Nearest Neighbors (LMNN)}
 		
@@ -992,15 +992,11 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 		
 		
 	\subsection{Weakly Supervised Dimensionality Reduction with Metric Embedding}
-	Xu et al. proposed a weakly supervised dimensionality reduction approach based on the large-margin principle in which the angle between preference pairs is consistent while the distance between examples in preference pairs is maximized \citep{Xu2014LargeMarginWeaklySupervisedDR}.
+	In the context of multiple instance learning, Xu et al. proposed a \textit{Multi-Instance Metric Learning} (MIMEL) \citep{Xu2011MI_Metric_Learning}.  As mentioned previously, the goal of metric learning is not to enforce distances based of a metric, but the learn the best possible metric which captures class differences.  While metric learning is not addressed in this work, Xu et al. utilized concepts which will likely be applicable, so it is worth mentioning.  For example,
 	
 	\subsubsection{M3DNet}
 	
 	
-	\subsubsection{Metric Learning}
-	Thorstensen thesis, Raducanu S-LE
-	
-	\subsubsection{Preference Learning}
 
 
 
