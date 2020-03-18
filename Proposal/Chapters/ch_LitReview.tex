@@ -682,6 +682,8 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 
 \subsection{NCA}
 
+\subsubsection{M3DNet}
+
 \section{Weakly Supervised Manifold Learning and Dimensionality Reduction} \label{sec:weakly_sup_dim_reduction}
 Although the specific feature vectors being used in remote sensing applications can be very high-dimensional, the underlying structure of a given dataset set is usually governed by only a few variables. Either implicitly or explicitly, most learning algorithms exploit this underlying structure to make learning and inference possible.
 If it is available, relevant information for a specific task can generally be incorporated to provide supervision and improve the performance of unsupervised methods.  Supervised methods for nonlinear dimensionality reduction assume that the samples lie on a manifold parameterized by multiple latent factors.  However, different from traditional manifold learning (where the goal is to preserve the relationships between samples), these methods find the most discriminative low-dimensional representations for classification tasks \citep{Wu2015MILImageManifoldThesis}.  The optimal embedding uses class label information to  minimize distances between nearby points with the same class label while separating samples of different classes.  Although supervised manifold learning often outperforms unsupervised methods for classification tasks, this learning cannot be done directly in  MIL because of the uncertainty on the labels \citep{Carbonneau2016MILSurvey}.  Moreover, fully-annotated samples are often difficult or impossible to obtain in many remote sensing applications \citep{Zare2016MIACE}.  Even with the successes of manifold learning, most the of the previous work has mainly focused on either fully supervised or unsupervised learning.   Existing work in weakly supervised learning on manifolds has primarily considered the semi-supervised setting \citep{Zhang2008SpectralSemiSupManifoldLearning,Chen2018RobustSemiSupManifoldLearning,Zhang2014SemiSupManLearningFusion,Hong2019LearnableManifoldAlignment,Navaratnam2007JointManifoldSemiSupRegression,Stanley2019ManAlignmentFeatureCorrespondence,Tuia2015KernelManifoldAlignment,Wang2010MultiscaleManAlignment,Wang2011HeteroDomainAdaptationManAlignment}.  Methods in this category usually incorporate partially provided image labels and propagate the labels over the manifold approximated by the neighborhood graph on the images.  In a broad sense, however, different situations of weak supervision (specifically, Multiple Instance  Learning), have not been well studied \citep{Wu2015MILImageManifoldThesis}.  The existing MIL manifold learning in the literature can be broken into two paradigms: LDA-based approaches and sparse, orthogonal matrix-based techniques \citep{Zhu2018MIDRSparsity}. Thus, all existing approaches are linear, meaning they may not work well if the underlying bag manifold exhibits curvature.  Alternative weakly-supervised dimensionality reduction approaches have been proposed, however, they do not adhere to the constraints of MIL.  The current literature for weakly supervised dimensionality reduction is reviewed in the following sections, beginning with reviews of MIL DR approaches, namely: MIDR, MidLABS, CLFDA, MIDA and MI-FEAR.  Approaches using alternative definitions of weak learning are addressed at the end of the section.
@@ -990,11 +992,12 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 		
 		
 		
-		
-	\subsection{Weakly Supervised Dimensionality Reduction with Metric Embedding}
-	In the context of multiple instance learning, Xu et al. proposed a \textit{Multi-Instance Metric Learning} (MIMEL) \citep{Xu2011MI_Metric_Learning}.  As mentioned previously, the goal of metric learning is not to enforce distances based of a metric, but the learn the best possible metric which captures class differences.  While metric learning is not addressed in this work, Xu et al. utilized concepts which will likely be applicable, so it is worth mentioning.  For example,
 	
-	\subsubsection{M3DNet}
+		
+%	\subsection{Multiple Instance Dimensionality Reduction with Metric Embedding}
+%	In the context of multiple instance learning, Xu et al. proposed a \textit{Multi-Instance Metric Learning} (MIMEL) \citep{Xu2011MI_Metric_Learning}.  As mentioned previously, the goal of metric learning (synonymous with some approaches  to manifold learning) is not to enforce distances based off a metric, but to learn the best possible metric which captures class differences.  While metric learning is not addressed in this work, Xu et al. utilized concepts which will likely be applicable, so it is worth mentioning.  For example, when learning the appropriate dissimilarity metric, a constraint was placed on bags such that bags of different classes should be separated by a margin in the embedding space.  Additionally, a weighting scheme was provided to propose ``key" instance in the positive bags.  This was based on a maximum likelihood estimation of negative instances.  
+	
+
 	
 	
 

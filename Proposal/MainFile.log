@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  17 MAR 2020 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  17 MAR 2020 20:32
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -588,11 +588,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-] [4])
+])
 \tf@toc=\write4
 \openout4 = `MainFile.toc'.
 
- [5]
+ [4]
 
 Package hyperref Warning: bookmark level for unknown extrachapter defaults to 0
 .
@@ -601,7 +601,7 @@ Package hyperref Warning: bookmark level for unknown extrachapter defaults to 0
 \tf@lot=\write5
 \openout5 = `MainFile.lot'.
 
- [6
+ [5
 
 
 
@@ -609,7 +609,7 @@ Package hyperref Warning: bookmark level for unknown extrachapter defaults to 0
 \tf@lof=\write6
 \openout6 = `MainFile.lof'.
 
- [7
+ [6
 
 
 
@@ -622,15 +622,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
 a mAx-i-mum Bag
  []
 
-[8
+[7
 
 
 
 
-]) [9]
+]) [8]
 \openout2 = `Chapters/symbols.aux'.
 
- (Chapters/symbols.tex) [10
+ (Chapters/symbols.tex) [9
 
 
 
@@ -649,15 +649,15 @@ CHAPTER 1.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-[11
+[10
 
 
 
 
 
-] [12]
+] [11]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_bbox".jpg, id=542, 255.95625pt x 202.356pt>
+_bbox".jpg, id=523, 255.95625pt x 202.356pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_bbox".jpg Graphic file (type jpg)
 
@@ -680,7 +680,7 @@ und-ing boxes (blue). Red dots
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/weak
-_labels".jpg, id=543, 485.4135pt x 396.88275pt>
+_labels".jpg, id=524, 485.4135pt x 396.88275pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /weak_labels".jpg Graphic file (type jpg)
 
@@ -706,7 +706,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/targ
-et_img".jpg, id=544, 111.41624pt x 69.861pt>
+et_img".jpg, id=525, 111.41624pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /target_img".jpg Graphic file (type jpg)
 
@@ -717,7 +717,7 @@ ages/""introduction/target_img".jpg used on input line 37.
 (pdftex.def)             Requested size: 138.31111pt x 86.72377pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/bg_i
-mg".jpg, id=545, 110.21175pt x 69.861pt>
+mg".jpg, id=526, 110.21175pt x 69.861pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /bg_img".jpg Graphic file (type jpg)
 
@@ -747,13 +747,13 @@ e within the im-age, while im-age (b)
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 54.
 
-[13 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/wea
-k_bbox.jpg>] [14 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/int
+[12 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/wea
+k_bbox.jpg>] [13 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/int
 roduction/weak_labels.jpg> <C:/Users/Conma/Documents/ResearchProposal/Proposal/
 Images/introduction/target_img.jpg> <C:/Users/Conma/Documents/ResearchProposal/
-Proposal/Images/introduction/bg_img.jpg>] [15] [16]
+Proposal/Images/introduction/bg_img.jpg>] [14] [15]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/swis
-s_roll_3d_view_2".png, id=647, 462.528pt x 344.0052pt>
+s_roll_3d_view_2".png, id=628, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /swiss_roll_3d_view_2".png Graphic file (type png)
 
@@ -769,7 +769,7 @@ Overfull \hbox (8.42258pt too wide) in paragraph at lines 75--76
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/swis
-s_roll_2d".png, id=649, 462.528pt x 344.0052pt>
+s_roll_2d".png, id=630, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /swiss_roll_2d".png Graphic file (type png)
 
@@ -795,9 +795,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--86
 cord-ing to the geodesic path around
  []
 
-[17]
+[16]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_sep".png, id=660, 462.528pt x 344.0052pt>
+_surface_sep".png, id=641, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_sep".png Graphic file (type png)
 
@@ -808,7 +808,7 @@ ages/""introduction/quad_surface_sep".png used on input line 95.
 (pdftex.def)             Requested size: 213.77469pt x 158.99377pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep".png, id=661, 462.528pt x 344.0052pt>
+_surface_non_sep".png, id=642, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep".png Graphic file (type png)
 
@@ -829,7 +829,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 93--106
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_lin_sep_le_1d".png, id=662, 194.18pt x 143.81pt>
+_surface_lin_sep_le_1d".png, id=643, 194.18pt x 143.81pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_lin_sep_le_1d".png Graphic file (type png)
 
@@ -845,7 +845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--111
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_le_1d".png, id=663, 194.18pt x 144.54pt>
+_surface_non_sep_le_1d".png, id=644, 194.18pt x 144.54pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_le_1d".png Graphic file (type png)
 
@@ -872,7 +872,7 @@ ces us-ing Lapla-cian Eigen-maps with a
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_sep_bags".png, id=666, 462.528pt x 344.0052pt>
+_surface_sep_bags".png, id=647, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_sep_bags".png Graphic file (type png)
 
@@ -898,7 +898,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--131
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_bags".png, id=667, 462.528pt x 344.0052pt>
+_surface_non_sep_bags".png, id=648, 462.528pt x 344.0052pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_bags".png Graphic file (type png)
 
@@ -929,7 +929,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 128--141
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_lin_sep_sle_1d".png, id=668, 193.45pt x 143.81pt>
+_surface_lin_sep_sle_1d".png, id=649, 193.45pt x 143.81pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_lin_sep_sle_1d".png Graphic file (type png)
 
@@ -950,7 +950,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--146
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction/quad
-_surface_non_sep_sle_1d".png, id=669, 193.45pt x 144.54pt>
+_surface_non_sep_sle_1d".png, id=650, 193.45pt x 144.54pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""introduction
 /quad_surface_non_sep_sle_1d".png Graphic file (type png)
 
@@ -974,14 +974,14 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 143--156
  [][]  [] 
  []
 
-[18 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/swi
+[17 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/introduction/swi
 ss_roll_3d_view_2.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Imag
-es/introduction/swiss_roll_2d.png>] [19 <C:/Users/Conma/Documents/ResearchPropo
+es/introduction/swiss_roll_2d.png>] [18 <C:/Users/Conma/Documents/ResearchPropo
 sal/Proposal/Images/introduction/quad_surface_sep.png> <C:/Users/Conma/Document
 s/ResearchProposal/Proposal/Images/introduction/quad_surface_non_sep.png> <C:/U
 sers/Conma/Documents/ResearchProposal/Proposal/Images/introduction/quad_surface
 _lin_sep_le_1d.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/
-introduction/quad_surface_non_sep_le_1d.png>] [20 <C:/Users/Conma/Documents/Res
+introduction/quad_surface_non_sep_le_1d.png>] [19 <C:/Users/Conma/Documents/Res
 earchProposal/Proposal/Images/introduction/quad_surface_sep_bags.png> <C:/Users
 /Conma/Documents/ResearchProposal/Proposal/Images/introduction/quad_surface_non
 _sep_bags.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/intro
@@ -1001,7 +1001,7 @@ Underfull \hbox (badness 10000) detected at line 167
 [][][]
  []
 
-) [21]
+) [20]
 \openout2 = `Chapters/ch_LitReview.aux'.
 
  (Chapters/ch_LitReview.tex
@@ -1012,18 +1012,18 @@ CHAPTER 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-[22
+[21
 
 
 
-] <example-image-a.png, id=739, 401.5pt x 301.125pt>
+] <example-image-a.png, id=720, 401.5pt x 301.125pt>
 File: example-image-a.png Graphic file (type png)
 
 <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 19.
 (pdftex.def)             Requested size: 281.40286pt x 211.06633pt.
- [23 <C:/Users/Conma/AppData/Roaming/MiKTeX/2.9/tex/latex/mwe/example-image-a.p
-ng>] [24]
+ [22 <C:/Users/Conma/AppData/Roaming/MiKTeX/2.9/tex/latex/mwe/example-image-a.p
+ng>] [23]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 40.
@@ -1032,22 +1032,22 @@ Package pdftex.def Info: example-image-a.png used on input line 40.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25] [26] [27] [28] [29] [30] [31] [32] [33]
+[24] [25] [26] [27] [28] [29] [30] [31] [32]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 129.
- [34] [35] [36] [37]
+ [33] [34] [35] [36]
 File: example-image-a.png Graphic file (type png)
 
 <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 196.
 (pdftex.def)             Requested size: 281.40286pt x 211.06633pt.
- [38] [39] [40] [41]
+ [37] [38] [39] [40]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 251.
 (pdftex.def)             Requested size: 281.40286pt x 211.06633pt.
 
-[42]
+[41]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 272.
@@ -1056,7 +1056,7 @@ Package pdftex.def Info: example-image-a.png used on input line 272.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[43] [44] [45] [46] [47]
+[42] [43] [44] [45] [46]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 358.
@@ -1065,7 +1065,7 @@ Package pdftex.def Info: example-image-a.png used on input line 358.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[48]
+[47]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 377.
@@ -1074,24 +1074,24 @@ Package pdftex.def Info: example-image-a.png used on input line 377.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[49] [50] [51] [52] [53]
+[48] [49] [50] [51] [52]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 450.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
- [54]
+ [53]
 Overfull \hbox (8.66458pt too wide) in paragraph at lines 460--462
  []$\OML/cmm/b/it/12 $\OT1/cmss/bx/n/12 -Neighborhood Graph[] \OT1/cmss/m/n/12
  . An-other method for graph con-struc-tion is to use $\OML/cmm/m/it/12 $\OT1/
 cmss/m/n/12 -neighborhoods 
  []
 
-[55]
+[54]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png used on input line 468.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
- [56]
+ [55]
 Underfull \hbox (badness 10000) detected at line 481
 [][][]
  []
@@ -1106,8 +1106,8 @@ Underfull \hbox (badness 10000) detected at line 489
 [][][]
  []
 
-[57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71]
-Underfull \hbox (badness 3049) in paragraph at lines 812--813
+[56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70]
+Underfull \hbox (badness 3049) in paragraph at lines 814--815
 []\OT1/cmss/m/n/12 Multiple-instance dataset $\OMS/cmss/m/n/12 f\OML/cmm/b/it/1
 2 B[]\OML/cmm/m/it/12 ; [] ; \OML/cmm/b/it/12 B[]\OMS/cmss/m/n/12 g$\OT1/cmss/m
 /n/12 , $\OMS/cmss/m/n/12 f\OML/cmm/m/it/12 L[]; [] ; L[]\OMS/cmss/m/n/12 g$\OT
@@ -1116,111 +1116,101 @@ L/cmm/m/it/12 ; \OT1/cmr/m/n/12 +1\OMS/cmss/m/n/12 g$\OT1/cmss/m/n/12 , Ini-tia
 l-ized
  []
 
-[72] [73] [74]
+[71] [72] [73]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <12> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 874.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 876.
 
-[75]
-Underfull \hbox (badness 10000) in paragraph at lines 890--890
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 892--892
 []|\OT1/cmss/m/n/12 Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 890--891
+Underfull \hbox (badness 10000) in paragraph at lines 892--893
 []|\OT1/cmss/m/n/12 Classification
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--892
+Underfull \hbox (badness 10000) in paragraph at lines 894--894
 []|\OT1/cmss/m/n/12 Finds a sparse, or-thog-o-nal lin-ear
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--892
+Underfull \hbox (badness 10000) in paragraph at lines 894--894
 \OT1/cmss/m/n/12 pro-jec-tion ma-trix op-ti-mized for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--892
+Underfull \hbox (badness 10000) in paragraph at lines 894--894
 []|\OT1/cmss/m/n/12 Linear,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--892
+Underfull \hbox (badness 10000) in paragraph at lines 894--894
 \OT1/cmss/m/n/12 or-thog-o-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 893--893
+Underfull \hbox (badness 10000) in paragraph at lines 895--895
 []|\OT1/cmss/m/n/12 Finds lin-ear pro-jec-tion vec-tor us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 893--893
+Underfull \hbox (badness 10000) in paragraph at lines 895--895
 \OT1/cmss/m/n/12 LDA de-fined from bag-similarity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 []|\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 \OT1/cmss/m/n/12 us-ing LDA de-fined from bag rep-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--895
+Underfull \hbox (badness 10000) in paragraph at lines 897--897
 []|\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion ma-trix
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--895
+Underfull \hbox (badness 10000) in paragraph at lines 897--897
 \OT1/cmss/m/n/12 us-ing lo-cal dis-crim-i-nant anal-y-sis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--895
+Underfull \hbox (badness 10000) in paragraph at lines 897--897
 \OT1/cmss/m/n/12 de-fined from in-stance scat-ter.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--895
+Underfull \hbox (badness 10000) in paragraph at lines 897--897
 \OT1/cmss/m/n/12 In-stance la-bels are pro-vided as bag
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 896--896
+Underfull \hbox (badness 10000) in paragraph at lines 898--898
 []|\OT1/cmss/m/n/12 Incrementally leaves out fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 896--896
+Underfull \hbox (badness 10000) in paragraph at lines 898--898
 \OT1/cmss/m/n/12 and eval-u-ates per-for-mance loss to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 896--896
+Underfull \hbox (badness 10000) in paragraph at lines 898--898
 []|\OT1/cmss/m/n/12 Feature
  []
 
 
-Underfull \vbox (badness 10000) detected at line 898
+Underfull \vbox (badness 10000) detected at line 900
  []
 
-[76] [77] [78]
-Underfull \hbox (badness 10000) detected at line 918
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 919
-[][][]
- []
-
-
+[75] [76] [77]
 Underfull \hbox (badness 10000) detected at line 920
 [][][]
  []
@@ -1230,29 +1220,39 @@ Underfull \hbox (badness 10000) detected at line 921
 [][][]
  []
 
+
+Underfull \hbox (badness 10000) detected at line 922
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 923
+[][][]
+ []
+
+[78]
+
+LaTeX Warning: Command \l invalid in math mode on input line 934.
+
 [79]
-
-LaTeX Warning: Command \l invalid in math mode on input line 932.
-
-[80]
-Overfull \hbox (7.51561pt too wide) in paragraph at lines 937--937
+Overfull \hbox (7.51561pt too wide) in paragraph at lines 939--939
 []  
  []
 
 File: example-image-a.png Graphic file (type png)
 <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 944.
+Package pdftex.def Info: example-image-a.png used on input line 946.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[81]
+[80]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 963.
+Package pdftex.def Info: example-image-a.png used on input line 965.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
- [82] [83]) [84]
+ [81] [82]) [83]
 \openout2 = `Chapters/ch_TechApproach.aux'.
 
  (Chapters/ch_TechApproach.tex
@@ -1263,7 +1263,7 @@ CHAPTER 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [85
+) [84
 
 
 
@@ -1282,13 +1282,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4.
 
-[86
+[85
 
 
 
-] [87]
+] [86]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_p1".png, id=1754, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_p1".png, id=1734, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_p1".png Graphic file (type png)
 
@@ -1300,7 +1300,7 @@ e 16.
 (pdftex.def)             Requested size: 202.3502pt x 202.35622pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_n0".png, id=1755, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_n0".png, id=1735, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_n0".png Graphic file (type png)
 
@@ -1317,7 +1317,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 14--24
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_p_2".png, id=1756, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_p_2".png, id=1736, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_p_2".png Graphic file (type png)
 
@@ -1329,7 +1329,7 @@ ages/""data_chips/ratio1/cegr01923_0001_0_patch_p_2".png used on input line 27.
 (pdftex.def)             Requested size: 187.89977pt x 187.90244pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_n_1".png, id=1757, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_n_1".png, id=1737, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_n_1".png Graphic file (type png)
 
@@ -1364,7 +1364,7 @@ The im-age con-tain-ing the truck would
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio0
-/scope01".png, id=1758, 216.81pt x 216.3282pt>
+/scope01".png, id=1738, 216.81pt x 216.3282pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio0/scope01".png Graphic file (type png)
 
@@ -1380,7 +1380,7 @@ Overfull \hbox (18.65695pt too wide) in paragraph at lines 43--44
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_p2".png, id=1759, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_p2".png, id=1739, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_p2".png Graphic file (type png)
 
@@ -1397,7 +1397,7 @@ Overfull \hbox (18.28865pt too wide) in paragraph at lines 48--49
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio3
-/cegr01923_0001_550_patch_scope_p5".png, id=1760, 578.16pt x 578.16pt>
+/cegr01923_0001_550_patch_scope_p5".png, id=1740, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio3/cegr01923_0001_550_patch_scope_p5".png Graphic file (type png)
 
@@ -1430,14 +1430,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--57
 se size 51x121 and the right im-age is
  []
 
-[88 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/data_chips/ratio
+[87 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/data_chips/ratio
 1/cegr01923_0001_0_patch_scope_p1.png> <C:/Users/Conma/Documents/ResearchPropos
 al/Proposal/Images/data_chips/ratio1/cegr01923_0001_0_patch_scope_n0.png> <C:/U
 sers/Conma/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr019
 23_0001_0_patch_p_2.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
 ages/data_chips/ratio1/cegr01923_0001_0_patch_n_1.png>]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/hog_tr
-iplets_target_anchor".png, id=1772, 326.29366pt x 230.83253pt>
+iplets_target_anchor".png, id=1752, 326.29366pt x 230.83253pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/h
 og_triplets_target_anchor".png Graphic file (type png)
 
@@ -1473,12 +1473,12 @@ ol-umn demon-strate edge di-rec-tion
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[89 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/data_chips/ratio
+[88 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/data_chips/ratio
 0/scope01.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/data_
 chips/ratio1/cegr01923_0001_0_patch_scope_p2.png> <C:/Users/Conma/Documents/Res
 earchProposal/Proposal/Images/data_chips/ratio3/cegr01923_0001_550_patch_scope_
-p5.png>] [90 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/data_ch
-ips/hog_triplets_target_anchor.png>] [91]) [92]
+p5.png>] [89 <C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/data_ch
+ips/hog_triplets_target_anchor.png>] [90]) [91]
 \openout2 = `Chapters/ch_PreliminaryWork.aux'.
 
 
@@ -1490,7 +1490,7 @@ CHAPTER 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 1.
 
-) [93
+) [92
 
 
 
@@ -1533,11 +1533,11 @@ Underfull \hbox (badness 10000) detected at line 29
 Underfull \vbox (badness 10000) detected at line 32
  []
 
-) [94
+) [93
 
 
 
-] [95] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl
+] [94] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
 Missing character: There is no â in font cmss12!
@@ -1546,13 +1546,13 @@ Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [96
+ [95
 
 
 ]
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [97]
+ [96]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1569,7 +1569,7 @@ Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
 
-[98]
+[97]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1578,32 +1578,32 @@ Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no © in font cmss12!
- [99] [100]
+ [98] [99]
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
- [101]
+ [100]
 Missing character: There is no â in font cmssi12!
 Missing character: There is no € in font cmssi12!
 Missing character: There is no “ in font cmssi12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [102] [103]
+ [101] [102]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [104] [105]
+ [103] [104]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [106]
+ [105]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [107] [108]
+ [106] [107]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1616,10 +1616,10 @@ Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [109])
+ [108])
 (Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [110]
+ [109]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (MainFile.aux (Chapters/acknowledgements.aux)
 (Chapters/TOC.aux) (Chapters/abbreviations.aux) (Chapters/symbols.aux)
@@ -1629,58 +1629,46 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 (Chapters/ch_FutureTasks.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
+Package rerunfilecheck Info: File `MainFile.out' has not changed.
+(rerunfilecheck)             Checksum: 61E351DF9533AD1DED3D1037B6593F6E;6431.
 
-
-Package rerunfilecheck Warning: File `MainFile.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MainFile.out':
-(rerunfilecheck)             Before: CCDC77DBF761910FD8B6E9B9BF36E1BB;6733
-(rerunfilecheck)             After:  C64C439904002E039777803616BDC5F9;6553.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 10145 strings out of 493323
- 167247 string characters out of 3139067
- 249353 words of memory out of 3000000
- 12928 multiletter control sequences out of 15000+200000
+ 10138 strings out of 493323
+ 167119 string characters out of 3139067
+ 249352 words of memory out of 3000000
+ 12925 multiletter control sequences out of 15000+200000
  14233 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,17n,42p,3185b,736s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsubsection.2.4.2.3} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.4.2.2} has been referenced but does
- not exist, replaced by a fixed one
-
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MainFile.pdf (110 pages, 3700627 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+ib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib
+8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on MainFile.pdf (109 pages, 3697362 bytes).
 PDF statistics:
- 2123 PDF objects out of 2487 (max. 8388607)
- 478 named destinations out of 1000 (max. 500000)
- 740 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2102 PDF objects out of 2487 (max. 8388607)
+ 474 named destinations out of 1000 (max. 500000)
+ 716 words of extra memory for PDF output out of 10000 (max. 10000000)
 
