@@ -17,17 +17,48 @@ Metric embedding is often realized through weakly-supervised learning, where ins
 \begin{table}[H]
 	\caption[List of Research Tasks]{List of research tasks and their corresponding locations in the dissertation document.}
 	\label{tab:future_tasks}
-	\begin{longtable}{ |p{6cm}|p{4cm}|p{4cm}|  } 
+	\begin{longtable}{ |p{10cm}|p{4cm}|  } 
 		\hline
-		\multicolumn{3}{|c|}{\textbf{Research Tasks}} \\
+		\multicolumn{2}{|c|}{\textbf{Research Tasks}} \\
 		\hline
 		\hline
-		\textbf{Tasks} & \textbf{Location in Thesis} & \textbf{Approximate Date of Completion}\\
+		\textbf{Tasks} & \textbf{Approximate Date of Completion}\\
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Multiple Instance Manifold Learning}} \\
 		\hline
 		\begin{enumerate}
-			\item Entry action
-			\item next steps
-		\end{enumerate} & text & text\\
+%			\setcounter{enumi}{2}
+			\item Nonlinear DR method
+			\item Method for selecting positive instances
+			\begin{enumerate}
+				\item Clustering (refer to Bocinsky2019Thesis)
+				\item Diverse Density-based
+				\item Maximum Likelihood/ KDE of negative instances
+			\end{enumerate}
+		\end{enumerate} & text\\
 		\hline
+		\multicolumn{2}{|l|}{\textbf{Multiple Instance Metric Embedding}} \\
+		\hline
+		\begin{enumerate}
+			%			\setcounter{enumi}{2}
+			\item Contrastive Siamese Network
+			\item Triplet Siamese Network
+			\item How to construct pairs/triplets for bags and instances (rely on previous work) 
+		\end{enumerate} & text\\
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Comparison to SOA}} \\
+		\hline
+		\begin{enumerate}
+%			\setcounter{enumi}{2}
+			\item Code SOA MI dimensionality reduction methods, namely: MIDR, MidLABS, MIDA and MI-FEAR
+			\item Compare to SOA MI dimensionality reduction methods in terms of bag-level and instance-level classification performance (with $k$-NN and SVM), optimal embedding dimensionality and computational complexity.
+			\item  Datasets: DSIAC, Gulfport, LFW, instance-level MIL dataset
+		\end{enumerate} & text\\
+		\hline 
 	\end{longtable}
 \end{table}
+
+%\begin{enumerate}
+%	\item Entry action
+%	\item next steps
+%\end{enumerate} & text\\

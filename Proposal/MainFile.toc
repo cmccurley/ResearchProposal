@@ -114,5 +114,5 @@
 \contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{96}{chapter.5}
 \contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{97}{chapter.6}
 \contentsline {subsection}{\numberline {6.0.1}Future Experiments}{97}{subsection.6.0.1}
-\contentsline {subsubsection}{\numberline {6.0.1.1}Comparison to other methods}{98}{subsubsection.6.0.1.1}
+\contentsline {subsubsection}{\numberline {6.0.1.1}Comparison to other methods}{99}{subsubsection.6.0.1.1}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 
