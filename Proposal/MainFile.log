@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  19 MAR 2020 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  19 MAR 2020 18:42
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -1106,7 +1106,11 @@ Underfull \hbox (badness 10000) detected at line 489
 [][][]
  []
 
-[57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71]
+[57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[69] [70] [71] [72]
 Underfull \hbox (badness 3049) in paragraph at lines 814--815
 []\OT1/cmss/m/n/12 Multiple-instance dataset $\OMS/cmss/m/n/12 f\OML/cmm/b/it/1
 2 B[]\OML/cmm/m/it/12 ; [] ; \OML/cmm/b/it/12 B[]\OMS/cmss/m/n/12 g$\OT1/cmss/m
@@ -1116,101 +1120,111 @@ L/cmm/m/it/12 ; \OT1/cmr/m/n/12 +1\OMS/cmss/m/n/12 g$\OT1/cmss/m/n/12 , Ini-tia
 l-ized
  []
 
-[72] [73] [74]
+[73]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[74]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <12> not available
 (Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 876.
 
 [75]
-Underfull \hbox (badness 10000) in paragraph at lines 892--892
+Underfull \hbox (badness 10000) in paragraph at lines 891--891
 []|\OT1/cmss/m/n/12 Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--893
+Underfull \hbox (badness 10000) in paragraph at lines 891--892
 []|\OT1/cmss/m/n/12 Classification
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
 []|\OT1/cmss/m/n/12 Finds a sparse, or-thog-o-nal lin-ear
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
 \OT1/cmss/m/n/12 pro-jec-tion ma-trix op-ti-mized for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
 []|\OT1/cmss/m/n/12 Linear,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
 \OT1/cmss/m/n/12 or-thog-o-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--895
+Underfull \hbox (badness 10000) in paragraph at lines 894--894
 []|\OT1/cmss/m/n/12 Finds lin-ear pro-jec-tion vec-tor us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--895
+Underfull \hbox (badness 10000) in paragraph at lines 894--894
 \OT1/cmss/m/n/12 LDA de-fined from bag-similarity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 896--896
+Underfull \hbox (badness 10000) in paragraph at lines 895--895
 []|\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 896--896
+Underfull \hbox (badness 10000) in paragraph at lines 895--895
 \OT1/cmss/m/n/12 us-ing LDA de-fined from bag rep-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 897--897
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 []|\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion ma-trix
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 897--897
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 \OT1/cmss/m/n/12 us-ing lo-cal dis-crim-i-nant anal-y-sis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 897--897
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 \OT1/cmss/m/n/12 de-fined from in-stance scat-ter.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 897--897
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 \OT1/cmss/m/n/12 In-stance la-bels are pro-vided as bag
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 898--898
+Underfull \hbox (badness 10000) in paragraph at lines 897--897
 []|\OT1/cmss/m/n/12 Incrementally leaves out fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 898--898
+Underfull \hbox (badness 10000) in paragraph at lines 897--897
 \OT1/cmss/m/n/12 and eval-u-ates per-for-mance loss to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 898--898
+Underfull \hbox (badness 10000) in paragraph at lines 897--897
 []|\OT1/cmss/m/n/12 Feature
  []
 
-
-Underfull \vbox (badness 10000) detected at line 900
+[76] [77] [78]
+Underfull \hbox (badness 10000) detected at line 918
+[][][]
  []
 
-[76] [77] [78]
+
+Underfull \hbox (badness 10000) detected at line 919
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 920
 [][][]
  []
@@ -1220,24 +1234,14 @@ Underfull \hbox (badness 10000) detected at line 921
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 922
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 923
-[][][]
- []
-
 [79]
 
-LaTeX Warning: Command \l invalid in math mode on input line 934.
+LaTeX Warning: Command \l invalid in math mode on input line 932.
 
 [80]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 948.
+Package pdftex.def Info: example-image-a.png used on input line 946.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
 
@@ -1246,40 +1250,40 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [81]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 967.
+Package pdftex.def Info: example-image-a.png used on input line 965.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
  [82] [83]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 998.
+Package pdftex.def Info: example-image-a.png used on input line 996.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
  [84]
 File: example-image-a.png Graphic file (type png)
 
 <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 1012.
+Package pdftex.def Info: example-image-a.png used on input line 1010.
 (pdftex.def)             Requested size: 269.8184pt x 202.35622pt.
 
-Overfull \hbox (35.3184pt too wide) in paragraph at lines 1012--1013
+Overfull \hbox (35.3184pt too wide) in paragraph at lines 1010--1011
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1011
 []\OT1/cmss/m/n/10.95 (a) |Siamese net-work struc-tured from con-trastive
  []
 
 File: example-image-a.png Graphic file (type png)
 <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 1020.
+Package pdftex.def Info: example-image-a.png used on input line 1018.
 (pdftex.def)             Requested size: 269.8184pt x 202.35622pt.
 
-Overfull \hbox (35.3184pt too wide) in paragraph at lines 1020--1021
+Overfull \hbox (35.3184pt too wide) in paragraph at lines 1018--1019
  [][] 
  []
 
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1010--1024
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1008--1022
  []  [] 
  []
 
@@ -1322,7 +1326,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 ] [91]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_p1".png, id=1831, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_p1".png, id=1830, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_p1".png Graphic file (type png)
 
@@ -1334,7 +1338,7 @@ e 16.
 (pdftex.def)             Requested size: 202.3502pt x 202.35622pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_n0".png, id=1832, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_n0".png, id=1831, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_n0".png Graphic file (type png)
 
@@ -1351,7 +1355,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 14--24
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_p_2".png, id=1833, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_p_2".png, id=1832, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_p_2".png Graphic file (type png)
 
@@ -1363,7 +1367,7 @@ ages/""data_chips/ratio1/cegr01923_0001_0_patch_p_2".png used on input line 27.
 (pdftex.def)             Requested size: 187.89977pt x 187.90244pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_n_1".png, id=1834, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_n_1".png, id=1833, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_n_1".png Graphic file (type png)
 
@@ -1398,7 +1402,7 @@ The im-age con-tain-ing the truck would
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio0
-/scope01".png, id=1835, 216.81pt x 216.3282pt>
+/scope01".png, id=1834, 216.81pt x 216.3282pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio0/scope01".png Graphic file (type png)
 
@@ -1414,7 +1418,7 @@ Overfull \hbox (18.65695pt too wide) in paragraph at lines 43--44
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_p2".png, id=1836, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_p2".png, id=1835, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_p2".png Graphic file (type png)
 
@@ -1431,7 +1435,7 @@ Overfull \hbox (18.28865pt too wide) in paragraph at lines 48--49
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio3
-/cegr01923_0001_550_patch_scope_p5".png, id=1837, 578.16pt x 578.16pt>
+/cegr01923_0001_550_patch_scope_p5".png, id=1836, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio3/cegr01923_0001_550_patch_scope_p5".png Graphic file (type png)
 
@@ -1471,7 +1475,7 @@ sers/Conma/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr019
 23_0001_0_patch_p_2.png> <C:/Users/Conma/Documents/ResearchProposal/Proposal/Im
 ages/data_chips/ratio1/cegr01923_0001_0_patch_n_1.png>]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/hog_tr
-iplets_target_anchor".png, id=1849, 326.29366pt x 230.83253pt>
+iplets_target_anchor".png, id=1848, 326.29366pt x 230.83253pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/h
 og_triplets_target_anchor".png Graphic file (type png)
 
@@ -1645,35 +1649,35 @@ Underfull \hbox (badness 10000) detected at line 48
  []
 
 
-Underfull \hbox (badness 10000) detected at line 51
+Underfull \hbox (badness 10000) detected at line 49
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) detected at line 52
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 []\OT1/cmss/m/n/12 Repeat ex-per-i-ments in [][]1[][] for instance-level clas-s
 i-fi-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
 []|\OT1/cmss/m/n/12 Develop dis-crim-i-na-tive MI met-ric em-bed-ding ap-proach
  for
  []
 
 
-Underfull \hbox (badness 10000) detected at line 59
+Underfull \hbox (badness 10000) detected at line 60
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 []\OT1/cmss/m/n/12 Investigate met-ric em-bed-ding ap-proach with
- []
-
-
-Underfull \hbox (badness 10000) detected at line 61
-[][][]
  []
 
 
@@ -1687,7 +1691,7 @@ Underfull \hbox (badness 10000) detected at line 63
  []
 
 
-Underfull \hbox (badness 10000) detected at line 65
+Underfull \hbox (badness 10000) detected at line 64
 [][][]
  []
 
@@ -1697,18 +1701,13 @@ Underfull \hbox (badness 10000) detected at line 66
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-[]\OT1/cmss/m/n/12 Investigate meth-ods for con-struct-ing pairs/triplets
- []
-
-
-Underfull \hbox (badness 10000) detected at line 74
+Underfull \hbox (badness 10000) detected at line 67
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-[]\OT1/cmss/m/n/12 Code SOA MI di-men-sion-al-ity re-duc-tion meth-ods,
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+[]\OT1/cmss/m/n/12 Investigate meth-ods for con-struct-ing pairs/triplets
  []
 
 
@@ -1718,23 +1717,12 @@ Underfull \hbox (badness 10000) detected at line 75
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
-[]\OT1/cmss/m/n/12 Compare to SOA MI di-men-sion-al-ity re-duc-tion
+[]\OT1/cmss/m/n/12 Code SOA MI di-men-sion-al-ity re-duc-tion meth-ods,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
-\OT1/cmss/m/n/12 meth-ods in terms of bag-level and instance-level
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-\OT1/cmss/m/n/12 clas-si-fi-ca-tion per-for-mance (with $\OML/cmm/m/it/12 k$\OT
-1/cmss/m/n/12 -NN and SVM),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-\OT1/cmss/m/n/12 op-ti-mal em-bed-ding di-men-sion-al-ity and com-pu-ta-
+\OT1/cmss/m/n/12 namely: MIDR, Mid-LABS, MIDA, CLFDA and
  []
 
 
@@ -1744,6 +1732,32 @@ Underfull \hbox (badness 10000) detected at line 76
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
+[]\OT1/cmss/m/n/12 Compare to SOA MI di-men-sion-al-ity re-duc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\OT1/cmss/m/n/12 meth-ods in terms of bag-level and instance-level
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\OT1/cmss/m/n/12 clas-si-fi-ca-tion per-for-mance (with $\OML/cmm/m/it/12 k$\OT
+1/cmss/m/n/12 -NN and SVM),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\OT1/cmss/m/n/12 op-ti-mal em-bed-ding di-men-sion-al-ity and com-pu-ta-
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 77
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 []\OT1/cmss/m/n/12 Investigate per-for-mance on dif-fer-ent datasets:
  []
 
@@ -1871,10 +1885,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 10207 strings out of 493323
- 168395 string characters out of 3139067
- 250346 words of memory out of 3000000
- 12956 multiletter control sequences out of 15000+200000
+ 10206 strings out of 493323
+ 168377 string characters out of 3139067
+ 251340 words of memory out of 3000000
+ 12955 multiletter control sequences out of 15000+200000
  14233 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,17n,51p,3185b,741s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1899,7 +1913,7 @@ ts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MainFile.pdf (115 pages, 3727611 bytes).
+Output written on MainFile.pdf (115 pages, 3727692 bytes).
 PDF statistics:
  2228 PDF objects out of 2487 (max. 8388607)
  512 named destinations out of 1000 (max. 500000)

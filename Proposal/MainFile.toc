@@ -81,9 +81,9 @@
 \contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{66}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}MIDR}{68}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}MidLABS}{70}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}MIDA}{71}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}CLFDA}{72}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{74}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.3}MIDA}{72}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}CLFDA}{73}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{75}{subsection.2.3.5}
 \contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{76}{subsection.2.3.6}
 \contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{77}{subsection.2.3.7}
 \contentsline {section}{\numberline {2.4}Metric Embedding}{79}{section.2.4}
@@ -109,9 +109,9 @@
 \contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{93}{subsubsection.4.0.3.2}
 \contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{95}{subsection.4.0.4}
 \contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{95}{subsection.4.0.5}
-\contentsline {paragraph}{Training}{95}{section*.65}
-\contentsline {paragraph}{Out-of-Sample Testing}{95}{section*.66}
-\contentsline {paragraph}{Evaluation Metrics}{95}{section*.67}
+\contentsline {paragraph}{Training}{95}{section*.64}
+\contentsline {paragraph}{Out-of-Sample Testing}{95}{section*.65}
+\contentsline {paragraph}{Evaluation Metrics}{95}{section*.66}
 \contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{97}{chapter.5}
 \contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{98}{chapter.6}
 \contentsline {subsection}{\numberline {6.0.1}Overview of Tasks:}{98}{subsection.6.0.1}

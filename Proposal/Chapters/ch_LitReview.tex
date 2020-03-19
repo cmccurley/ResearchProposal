@@ -726,7 +726,7 @@ is the softmax approximation over $n$ of $\max (P_{k,1}(\bm{\bm{W}},\bm{\beta}),
 \noindent
 Pseudo-code for MIDR is provided in Algorithm \ref{alg:MIDR}.
 
-\begin{algorithm}
+\begin{algorithm}[h!]
 	\caption{MIDR}
 	\label{alg:MIDR}
 	\begin{algorithmic}[1]
@@ -772,7 +772,7 @@ In order to take structural information into account, the customized bag distanc
 \noindent
 where $\bm{x}_{ia}$ is the $a^{th}$ instance in the $i^{th}$ bag, $n_i$ is the total number of instances in the $i^{th}$ bag, $\bm{e}_{ic}$ is the $c^{th}$ edge in the $i^{th}$ bag and $m_{i}$ is the total number of edges in the $i^{th}$ bag.  This bag distance measurement represents each bag by as an $\epsilon$-graph, where each instance is treated as a node.  An edge exists between two  nodes  if the Euclidean distance between them is lower than a threshold, $\epsilon$. \citep{Latham2015MIFeatureRankingThesis}.  This measurement compares the closeness of bags by summing over all pairs of instances between the bags. Pseudo-code for MidLABS is provided in Algorithm \ref{alg:MidLABS}.
 
-\begin{algorithm}
+\begin{algorithm}[H]
 	\caption{MidLABS}
 	\label{alg:MidLABS}
 	\begin{algorithmic}[1]
@@ -794,7 +794,7 @@ where $\bm{x}_{ia}$ is the $a^{th}$ instance in the $i^{th}$ bag, $n_i$ is the t
 \subsection{MIDA}
 In 2014, Chia et al. introduced Multiple-Instance Discriminant Analysis (MIDA) \citep{Chai2014MIDA}.  MIDA has the same objective as MidLABS, which is to discover a linear projection basis which separates bags in the embedding space.  Both MIDA and MidLABS  can be considered as MI extensions of LDA. However, the way these algorithms construct their scatter matrices is very different.  While MidLABS constructs its  scatter matrices at the bag level by directly evaluating the scattering amongst bags, MIDA  uses instance-level information to formulate the within-class and between-class scatter.  In other words, MIDA selects a prototype for each bag and utilizes the selected instances as bag representatives for constructing the scatter.  The mean of all negative instances is used as the negative class prototype. The difficulty with this approach is the ambiguity on which instances are truly positive.  The other major difference between MidLABS and MIDA is that MIDA does not consider structural information of data when formulating the scatter matrices. To select candidate positive prototypes, MIDA initializes a set by selecting the most-likely positive instances as those with the lowest density in a Gaussian likelihood estimated by all instances in the negative bags.  An iterative optimization procedure is applied which trades-off between candidate positive instance selection and learning the projection weights into the latent space which maximizes the separation between bags with different labels and minimizes the distances between bags with the same label.  Pseudo-code for MIDA  is provided in Algorithms \ref{alg:MIDA_init} and \ref{alg:MIDA_opt}.
 
-\begin{algorithm}
+\begin{algorithm}[h!]
 	\caption{Initialization of MIDA}
 	\label{alg:MIDA_init}
 	\begin{algorithmic}[1]
@@ -807,7 +807,7 @@ In 2014, Chia et al. introduced Multiple-Instance Discriminant Analysis (MIDA) \
 \end{algorithm}
 
 
-\begin{algorithm}
+\begin{algorithm}[h!]
 	\caption{Projection vector calculation process of MIDA}
 	\label{alg:MIDA_opt}
 	\begin{algorithmic}[1]
@@ -828,7 +828,7 @@ In 2014, Chia et al. introduced Multiple-Instance Discriminant Analysis (MIDA) \
 \subsection{CLFDA} \label{sec:CLFDA}
 Finally, Citation Local Fisher Linear Discriminant Analysis (CLFDA) \citep{Kim2010LocalDRMIL} incorporates citation and reference information into local Fisher Discriminant Analysis, thus it can also be treated as a MI extension to LDA.  Contrary to the previously-mentioned approaches, CLFDA operates at the instance-level, attempting to find a subspace where positive and negative instances are maximally-separable \citep{Latham2015MIFeatureRankingThesis}.  CLFDA can be viewed as complimentary to MIDA \citep{Chai2014MIDA}.  Whereas, MIDA tries to seek true positive instances in positive bags, CLFDA attempts to detect incorrectly labeled instances (false positive) in positive bags.  CLFDA pre-labels all instances with the label of their bag  $l_{kn} = L_{k}, \forall n = 1,\dots,n_{k}$, then utilizes neighborhood information to detect false positive instances.  In other words, it uses the assumption that if an instance in a positive bag is close to many points in the negative bags, it is likely also negative.  CLFDA defines \textit{references} simply as the nearest neighbors to $\bm{x}_{n}$, while $citers$ are defined as the samples which have $\bm{x}_{n}$ in their $C$-nearest neighbors, or $citers(\bm{x}_{n}) = \{ \bm{x}_{m}| \bm{x}_{n} \in CNN(\bm{x}_{m}), m=1, \dots, N \}$.   The steps of CLFDA are to 1.) construct a $\max(R,C)$-NN graph, where the $\max(R,C)$-NN graph is a $K$-NN graph with $K=\max(R,C)$.  This is used to detect false positives and re-label them as negative.  If the ratio of instances from negative bags versus instances from positive bags in the references and citers of $\bm{x}_n$ exceeds a threshold $\tau$, then $\bm{x}_{n}$ is given a negative label. This is only done for instances from positive bags, as the SMI assumptions states that all instances in negative bags should be negative. 2.) Construct scatter matrices using the provided positive and negative instances. 3.) Find projection weights which simultaneously maximize the distances between positive and negative bags and minimizes the distances between bags with the same class labels using \textit{Local Fisher Discriminant Analysis} (LFDA).  LFDA is a version of LDA  designed to address multi-modal data distributions.  The primary difference between LDA and LFDA is that when maximizing and minimizing the between-class and within-class scatter matrices, respectively, the scatter contribution of a single instance pair is weighted by the locality of the pair.  This prevents instances from different clusters sharing the same label from being forced into  the same space.  This also allows multiple dimensions to be analyzed in the embedding space, whereas LDA is limited to a single dimension for binary classification.  Pseudo-code for CLFDA is given in Algorithm \ref{alg:CLFDA} \citep{Latham2015MIFeatureRankingThesis}.  A potential downside of CLFDA, however, is that it has been shown that pre-labeling all instances in positive bags as positive often leads to poor results, especially when there are large numbers of negative instances in the positive bags \citep{Chai2014MIDA}.
 
-\begin{algorithm}
+\begin{algorithm}[h!]
 	\caption{CLFDA}
 	\label{alg:CLFDA}
 	\begin{algorithmic}[1]
@@ -860,7 +860,7 @@ As previously mentioned, all existing MIL dimensionality reduction approaches in
 \subsection{MI-FEAR}
 While the previously mentioned approaches were based on feature extraction,  multiple instance dimensionality reduction has also been investigated under the feature selection paradigm.  Specifically, Latham used feature ranking to determine the most important features for instance-level classification \citep{Latham2015MIFeatureRankingThesis}.  Feature ranking considers each feature independently according to a scoring function, thus revealing properties of the individual features by which they may be compared and ranked.  The challenge of learning a good feature ranking under an instance-space metric is that the instance labels are not available under the MIL framework.  \textit{Multiple-Instance Feature Ranking} (MI-FEAR) assumes one-sided noise by giving every instance the label of its corresponding bag.  This essentially transforms the weakly-supervised problem into a supervised one.  Pseudo-code for MI-FEAR is provided in Algorithm \ref{alg:MIFEAR}.
 
-\begin{algorithm}
+\begin{algorithm}[h!]
 	\caption{MI-FEAR}
 	\label{alg:MIFEAR}
 	\begin{algorithmic}[1]
@@ -882,10 +882,9 @@ Each feature $\theta$, is given a score based on the performance of a learned hy
 \subsection{Comparison Table of MI Dimensionality Reduction Methods}
 Table \ref{tab:MIDRComparison} shows a comparison between the multiple instance dimensionality reduction methods reviewed in Section \ref{sec:weakly_sup_dim_reduction}.
 
-\begin{table}[H]
-\caption{Summary of multiple instance dimensionality reduction approches.}
-\label{tab:MIDRComparison}
 \begin{longtable}{ |p{2cm}|p{6cm}|p{2cm}|p{3cm}|  } 
+	\caption{Summary of multiple instance dimensionality reduction approaches.}
+	\label{tab:MIDRComparison}\\
 	\hline
 	\multicolumn{4}{|c|}{\textbf{Multiple Instance Dimensionality Reduction}} \\
 	\hline
@@ -898,10 +897,9 @@ Table \ref{tab:MIDRComparison} shows a comparison between the multiple instance 
 	MI-FEAR &  Incrementally leaves out feature and evaluates performance loss to provide feature score  & Feature selection & instance-level\\
 	\hline
 \end{longtable}
-\end{table}
 
 \subsection{General Weak Supervision}
-Alternative approaches to weakly supervised dimensionality reduction that do not follow the MIL framework have also been proposed.  For example, Wu studied weakly supervised manifold learning for manifold factorization using image-level labels, where the labels were the variation of interest.  The primary idea was to use weak labels to find image pairs that should be more similar after removing unwanted image variation.  Wu used an alignment method constrained by Hessian regularization to learn a manifold regression, such that new test images would be projected smoothly into a space near neighboring input images \citep{Wu2015MILImageManifoldThesis}.  Gaur et al. used weakly supervised manifold learning to perform dense semantic object correspondence \citep{Gaur2017MILSemanticObjectCorrespondence}. The objective of the semantic object correspondence problem is to compute dense association maps for a pair of images such that the same object parts get matched, even for very differently appearing object instances. The goal of Gaur's work was to learn a manifold sucht that features belonging to the same semantic object parts were projected closer to each other on the manifold. This was achieved by re-purposing deep convolutional features from a classification network, where the labels were weak segmentations of object parts.  These features were then projected onto a manifold using LDA. \textit{Hierarchical Agglomerative Clustering} (HAC) was performed in the embedding space and the labels were refined with respect to geodesic distance on the manifold.  This method was inspired by the \textit{manifold assumption}, which states that similar objects (even though disparate in the input feature space), should share an intrinsic manifold.  In this way, feature embeddings are learned by an optimization process which is rewarded for projecting features closer on the manifold if they have low feature-space dissimilarity.  Additionally, the optimization penalizes feature clusters whose geometric structure is inconsistent with the observed geometric structures of object parts.  
+Alternative approaches to weakly supervised dimensionality reduction that do not follow the MIL framework have also been proposed.  For example, Wu studied weakly supervised manifold learning for manifold factorization using image-level labels, where the labels were the variation of interest.  The primary idea was to use weak labels to find image pairs that should be more similar after removing unwanted image variation.  Wu used an alignment method constrained by Hessian regularization to learn a manifold regression, such that new test images would be projected smoothly into a space near neighboring input images \citep{Wu2015MILImageManifoldThesis}.  Gaur et al. used weakly supervised manifold learning to perform dense semantic object correspondence \citep{Gaur2017MILSemanticObjectCorrespondence}. The objective of the semantic object correspondence problem is to compute dense association maps for a pair of images such that the same object parts get matched, even for very differently appearing object instances. The goal of Gaur's work was to learn a manifold such that features belonging to the same semantic object parts were projected closer to each other on the manifold. This was achieved by re-purposing deep convolutional features from a classification network, where the labels were weak segmentations of object parts.  These features were then projected onto a manifold using LDA. \textit{Hierarchical Agglomerative Clustering} (HAC) was performed in the embedding space and the labels were refined with respect to geodesic distance on the manifold.  This method was inspired by the \textit{manifold assumption}, which states that similar objects (even though disparate in the input feature space), should share an intrinsic manifold.  In this way, feature embeddings are learned by an optimization process which is rewarded for projecting features closer on the manifold if they have low feature-space dissimilarity.  Additionally, the optimization penalizes feature clusters whose geometric structure is inconsistent with the observed geometric structures of object parts.  
 
 An alternative approach for discriminative dimensionality reduction with weak labels is through the application of metric embedding, which is discussed in detail in Section \ref{sec:MetricEmedding}.  While they can be fully supervised, metric embedding techniques often consider groups of samples (usually two or three), jointly, to learn an embedding function.  Under this type of weak supervision, only a notion of semantic similarity is needed,  as compared to direct class labels. 
 
