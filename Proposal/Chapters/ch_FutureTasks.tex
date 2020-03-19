@@ -1,64 +1,80 @@
 \chapter{Future Tasks}
-This chapter provides a table of the planned experiments for the duration of the work proposed.
+This chapter provides a summary and table of the planned tasks and experiments for the duration of the work proposed.
 
-These are the things I would still like to investigate, specifically, instance-level classification...
+\subsection{Overview of Tasks:}
+This proposal calls for the investigation of manifold learning and dimensionality reduction methods which promote class discriminability and are simultaneously capable of addressing groundtruth imprecision.  Two approaches will be explored during this work: Weakly-Supervised  Manifold Learning and Weakly-Supervised  Metric Embedding. In both areas of investigation, label uncertainty will adhere to the constraints of Multiple Instance Learning.  Individual tasks fall under the following categories: 1.) Multiple Instance  Manifold  Learning, 2.) Multiple Instance Metric Embedding and 3.) Comparison to the literature.  General tasks and estimated dates of completion are listed in Section \ref{sec:task_table}.
 
-\subsection{Future Experiments}
+\subsection{Tasks and Approximate Dates of Completion:} \label{sec:task_table}
 
-The work by Wei et al. in \cite{Wei2016ImageBagGenerators} suggested that  for image classification tasks, certain formulations of MIL were better suited than others.  Algorithms such as miGraph, MIBoosting and miFV which assume non-i.i.d samples or take advantage of aggregating properties of bags tend to work better than those which adopt the standard assumption.  The authors of this work recommend miGraph with LBP bag generation or MIBoosting with Single Blob generation for image classification.  Additionally, classification performance tended to increase as the number of instances increased.
 
-Choquet integral
-Can we use to preference learning to discern instances which are likely to be positive and negative, then use these rankings for embedding?
+\begin{longtable}{|p{10cm}|p{4cm}|} 
+	\caption[List of Research Tasks]{List of research tasks and their corresponding estimated dates for completion.}
+	\label{tab:future_tasks}\\
+	\hline \multicolumn{1}{|p{10cm}|}{\textbf{Tasks}} & \multicolumn{1}{p{4cm}|}{\textbf{Approximate Date of Completion}} \\ \hline
+	\endfirsthead
+	\multicolumn{2}{c}%
+	{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+	\hline \multicolumn{1}{|p{10cm}|}{\textbf{Tasks}} &  \multicolumn{1}{p{4cm}|}{\textbf{Approximate Date of Completion}}
+	\\
+	\hline
+	\endhead
+	\hline \multicolumn{2}{|r|}{{Continued on next page}} \\ \hline
+	\endfoot
+	\hline \hline
+	\endlastfoot
 
-Metric embedding is often realized through weakly-supervised learning, where instead of labels, the data is accompanied with sets of preferences. While this embedding could, conceptually be easy to implement at the bag level, enforcing instance embeddings is difficult due to the uncertainty on the labels.  However, one could (theoretically) use instance ranking as discussed in Section \ref{sec:MI_Ranking} to provide estimated preference sets on the instances for use in embedding.
 
-\subsubsection{Comparison to other methods}
-
-\begin{table}[H]
-	\caption[List of Research Tasks]{List of research tasks and their corresponding locations in the dissertation document.}
-	\label{tab:future_tasks}
-	\begin{longtable}{ |p{10cm}|p{4cm}|  } 
-		\hline
-		\multicolumn{2}{|c|}{\textbf{Research Tasks}} \\
-		\hline
-		\hline
-		\textbf{Tasks} & \textbf{Approximate Date of Completion}\\
-		\hline
-		\multicolumn{2}{|l|}{\textbf{Multiple Instance Manifold Learning}} \\
-		\hline
-		\begin{enumerate}
+	\multicolumn{2}{|l|}{\textbf{Multiple Instance Manifold Learning}} \\
+	\hline
+	Develop discriminative MI manifold learning approach for bag and instance-level classification. 
+	\begin{enumerate}
 %			\setcounter{enumi}{2}
-			\item Nonlinear DR method
-			\item Method for selecting positive instances
+		\item Supervised Nonlinear DR method for bag-level classification \label{item:supervisedDR_bag_level}
+		\begin{enumerate}
+			\item Compare S-LE and SE-Isomap  with $k$-NN
 			\begin{enumerate}
-				\item Clustering (refer to Bocinsky2019Thesis)
-				\item Diverse Density-based
-				\item Maximum Likelihood/ KDE of negative instances
+				\item Evaluate over a range of embedding dimensions
+				\item Evaluate over varying levels of label uncertainty
+				\item Compare performance on hand-crafted and CNN-based features
 			\end{enumerate}
-		\end{enumerate} & text\\
-		\hline
-		\multicolumn{2}{|l|}{\textbf{Multiple Instance Metric Embedding}} \\
-		\hline
+		\end{enumerate}
+		
+		\item Investigate methods for selecting positive instances for instance-level  embedding/classification
 		\begin{enumerate}
-			%			\setcounter{enumi}{2}
-			\item Contrastive Siamese Network
-			\item Triplet Siamese Network
-			\item How to construct pairs/triplets for bags and instances (rely on previous work) 
-		\end{enumerate} & text\\
-		\hline
-		\multicolumn{2}{|l|}{\textbf{Comparison to SOA}} \\
-		\hline
+			\item Clustering
+			\item Diverse Density-based
+			\item Maximum Likelihood/ KDE of negative instances
+			\item Give instances bag-level labels and refine
+			\item Citation $k$-NN
+		\end{enumerate}
+	
+		\item Repeat experiments in \ref{item:supervisedDR_bag_level} for instance-level classification
+	\end{enumerate} & date\\
+	\hline
+	\multicolumn{2}{|l|}{\textbf{Multiple Instance Metric Embedding}} \\
+	\hline
+	Develop discriminative MI metric embedding approach for bag and instance-level classification. 
+	\begin{enumerate}
+		%			\setcounter{enumi}{2}
+		\item Investigate metric embedding approach with Siamese networks.
 		\begin{enumerate}
-%			\setcounter{enumi}{2}
-			\item Code SOA MI dimensionality reduction methods, namely: MIDR, MidLABS, MIDA and MI-FEAR
-			\item Compare to SOA MI dimensionality reduction methods in terms of bag-level and instance-level classification performance (with $k$-NN and SVM), optimal embedding dimensionality and computational complexity.
-			\item  Datasets: DSIAC, Gulfport, LFW, instance-level MIL dataset
-		\end{enumerate} & text\\
-		\hline 
-	\end{longtable}
-\end{table}
+			\item Contrastive loss
+			\item Triplet loss
+			\item Investigate architectures/ training times
+		\end{enumerate}
+		\item Compare performance for both loss functions
+		\item Investigate methods for constructing pairs/triplets for bags and instances 
+	\end{enumerate} & text\\
+	\hline
+	\multicolumn{2}{|l|}{\textbf{Comparison to SOA}} \\
+	\hline
+	Compare proposed methods to state of the art.
+	\begin{enumerate}
+		%			\setcounter{enumi}{2}
+		\item Code SOA MI dimensionality reduction methods, namely: MIDR, MidLABS, MIDA and MI-FEAR
+		\item Compare to SOA MI dimensionality reduction methods in terms of bag-level and instance-level classification performance (with $k$-NN and SVM), optimal embedding dimensionality and computational complexity.
+		\item  Investigate performance on different datasets: DSIAC, Gulfport, LFW, instance-level MIL dataset
+	\end{enumerate} & date\\
 
-%\begin{enumerate}
-%	\item Entry action
-%	\item next steps
-%\end{enumerate} & text\\
+\end{longtable}
+
