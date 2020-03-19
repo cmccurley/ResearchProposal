@@ -976,9 +976,31 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 
 		\subsection{Large-Margin K-Nearest Neighbors (LMNN)}
 		
-		Weinberger and Saul \citep{Weinberger2009LMNN} explored the topic of ranking loss with the explicit goal of performing $k$-nearest neighbor classification in the learned embedding  space \citep{Hermans2017DefenseTripletLoss}.
+		Weinberger and Saul \citep{Weinberger2009LMNN} explored the topic of ranking loss with the explicit goal of performing $k$-nearest neighbor classification in the learned embedding space \citep{Hermans2017DefenseTripletLoss}.  This approach is based on the \textit{Large Margin Nearest Neighbor loss} for optimizing $f_{\theta}$, defined as:
+		\begin{align}
+			\mathcal{L}_{\text{LMNN}}(\theta) = (1-\mu)\mathcal{L}_{\text{pull}}(\theta) + \mu \mathcal{L}_{\text{push}}(\theta)
+		\end{align}
+		\noindent
+		which is comprised of a \textit{pull}-term that pulls data points toward its \textit{target neighbors}, or its nearest neighbors from the same class, and a \textit{push}-term that pushes data points from a different class.  The term $\mu$ is a trade-off parameter used to control the priority of pushing or pulling. The loss terms are defined as:
+		\begin{align} \label{eq:lmnn_pull}
+			\mathcal{L}_{\text{pull}}(\theta) =  \sum_{m,n}\eta_{mn} \mathcal{D}(f_{\theta}(\bm{x}_{m}),f_{\theta}(\bm{x}_{n}))
+		\end{align}
+		\begin{align} \label{eq:lmnn_push}
+		\mathcal{L}_{\text{push}}(\theta) = \sum_{m,n,o}\eta_{mn}(1-l_{m,o}) \max(0,\mathcal{D}(f_{\theta}(\bm{x}_{m}),f_{\theta}(\bm{x}_{n})) - \mathcal{D}(f_{\theta}(\bm{x}_{m}),f_{\theta}(\bm{x}_{o})) + \alpha )
+		\end{align}
+		\noindent
+		where  $\eta_{mn} \in \{0,1\}$ is a binary indicator variable used to express whether input $\bm{x}_{n}$ is a target neighbor of input $\bm{x}_{m}$ and $\alpha$ is a margin enforcing distance between the classes.  Analyzing Equations \ref{eq:lmnn_pull} and \ref{eq:lmnn_push}, it can be observed that the pull term only penalizes large distances between inputs and target neighbors ($k$-nearest neighbors with the same class label).  The push term, however, is comparable to the triplet loss, which enforces that the dissimilarities between the anchor sample $\bm{x}_{m}$ and \textit{all negative samples} is greater than the dissimilarities between the anchor and its corresponding target neighbors by at least a margin $\alpha$.  Figure \ref{fig:lmnn} demonstrates the pushing and pulling idea captured by LMNN.  In the rest of the algorithm, a matrix $\bm{M}$ is learned which captures an appropriate Mahalanobis metric to measure the dissimilarity between samples, optimized for the LMNN loss.  
 		
-		\citep{Hermans2017DefenseTripletLoss,Weinberger2009LMNN}
+		
+		\begin{center}
+			\begin{figure*}[h]
+				\centering
+				\includegraphics[width=0.5\textwidth]{example-image-a}
+				\caption[Large Margin $k$-NN]{}
+				\label{fig:lmnn}
+			\end{figure*}
+		\end{center}
+		
 		
 		\subsection{Siamese Neural Networks}
 		
@@ -1002,7 +1024,7 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 			\label{fig:siamese_networks}%
 		\end{figure*}
 		
-		\subsection{Triplet Networks}
+		\subsection{FaceNet}
 		
 		
 		FaceNet is a convolutional neural network which learns a mapping from face images to a compact Euclidean space where distances directly correspond to a measure of face similarity \citep{Schroff2015FaceNet}.  The method is based on learning a Euclidean embedding per image using a deep convolutional neural network.  Once each sample has been embedded through the network,  facial recognition can be achieved through the use of a simple $k$-NN classifier.  FaceNet  directly trains its outputs to be a compact 128-dimensional embedding  using a triplet-based loss function based on LMNN. FaceNet is based on a Inception network architecture and  optimizes a triplet loss formulated as:
