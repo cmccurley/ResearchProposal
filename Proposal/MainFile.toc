@@ -92,27 +92,27 @@
 \contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{81}{subsubsection.2.4.1.2}
 \contentsline {subsection}{\numberline {2.4.2}Large-Margin K-Nearest Neighbors (LMNN)}{83}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{85}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}FaceNet}{85}{subsection.2.4.4}
-\contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{87}{chapter.3}
-\contentsline {section}{\numberline {3.1}Nonlinear Manifold Learning for Bag-Level Classification}{87}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}S-LE Algorithm Description}{87}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}SE-Isomap Algorithm Description}{87}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Nonlinear Manifold Learning for Instance-Level Classification}{87}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Diverse-Density/ Traditional Manifold Learning Based}{87}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Ranking-Loss Based}{87}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{88}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Overview}{88}{subsection.4.0.1}
-\contentsline {subsection}{\numberline {4.0.2}Description of Data}{88}{subsection.4.0.2}
-\contentsline {subsection}{\numberline {4.0.3}Feature Extraction}{90}{subsection.4.0.3}
-\contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{91}{subsubsection.4.0.3.1}
-\contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{91}{subsubsection.4.0.3.2}
-\contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{93}{subsection.4.0.4}
-\contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{93}{subsection.4.0.5}
-\contentsline {paragraph}{Training}{93}{section*.65}
-\contentsline {paragraph}{Out-of-Sample Testing}{93}{section*.66}
-\contentsline {paragraph}{Evaluation Metrics}{93}{section*.67}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{95}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{96}{chapter.6}
-\contentsline {subsection}{\numberline {6.0.1}Future Experiments}{96}{subsection.6.0.1}
-\contentsline {subsubsection}{\numberline {6.0.1.1}Comparison to other methods}{97}{subsubsection.6.0.1.1}
+\contentsline {subsection}{\numberline {2.4.4}FaceNet}{87}{subsection.2.4.4}
+\contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{88}{chapter.3}
+\contentsline {section}{\numberline {3.1}Nonlinear Manifold Learning for Bag-Level Classification}{88}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}S-LE Algorithm Description}{88}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}SE-Isomap Algorithm Description}{88}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Nonlinear Manifold Learning for Instance-Level Classification}{88}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Diverse-Density/ Traditional Manifold Learning Based}{88}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Ranking-Loss Based}{88}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{89}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}Overview}{89}{subsection.4.0.1}
+\contentsline {subsection}{\numberline {4.0.2}Description of Data}{89}{subsection.4.0.2}
+\contentsline {subsection}{\numberline {4.0.3}Feature Extraction}{91}{subsection.4.0.3}
+\contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{92}{subsubsection.4.0.3.1}
+\contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{92}{subsubsection.4.0.3.2}
+\contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{94}{subsection.4.0.4}
+\contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{94}{subsection.4.0.5}
+\contentsline {paragraph}{Training}{94}{section*.65}
+\contentsline {paragraph}{Out-of-Sample Testing}{94}{section*.66}
+\contentsline {paragraph}{Evaluation Metrics}{94}{section*.67}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{96}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{97}{chapter.6}
+\contentsline {subsection}{\numberline {6.0.1}Future Experiments}{97}{subsection.6.0.1}
+\contentsline {subsubsection}{\numberline {6.0.1.1}Comparison to other methods}{98}{subsubsection.6.0.1.1}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 

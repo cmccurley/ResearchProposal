@@ -1,4 +1,4 @@
-\begin{thebibliography}{135}
+\begin{thebibliography}{137}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -118,6 +118,16 @@ J.~Bocinsky, C.~H. McCurley, D.~Shats, and A.~Zare.
   Obscured Targets XXIV, 110120N}, volume 11012 of \emph{Proc.SPIE}, May 2019.
 \newblock \doi{10.1117/12.2519463}.
 
+\bibitem[Bromley et~al.(1993)Bromley, Guyon, LeCun, S\"{a}ckinger, and
+  Shah]{Bromley1993SiameseNetworks}
+Jane Bromley, Isabelle Guyon, Yann LeCun, Eduard S\"{a}ckinger, and Roopak
+  Shah.
+\newblock Signature verification using a “siamese” time delay neural
+  network.
+\newblock In \emph{Proceedings of the 6th International Conference on Neural
+  Information Processing Systems}, NIPS’93, page 737–744, San Francisco,
+  CA, USA, 1993. Morgan Kaufmann Publishers Inc.
+
 \bibitem[Cao et~al.(2016)Cao, Luo, Chen, Yihan, Wang, Wang, and
   Ji]{Cao2016VehicleDetectionMIL}
 L.~Cao, F.~Luo, L.~Chen, S.~Yihan, H.~Wang, C.~Wang, and R.~Ji.
@@ -167,6 +177,12 @@ M.~Chen, J.~Wang, X.~Li, and X.~Sun.
 \newblock \emph{Mathematical Problems in Engineering}, 2018:\penalty0 1--8, 02
   2018.
 \newblock \doi{10.1155/2018/2382803}.
+
+\bibitem[Chen et~al.(2020)Chen, Kornblith, Norouzi, and
+  Hinton]{Chen2020ContrastiveLearning}
+Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton.
+\newblock A simple framework for contrastive learning of visual
+  representations, 2020.
 
 \bibitem[Cheplygina et~al.(2019)Cheplygina, Bruijne, and
   Pluim]{Cheplygina2019MILSurvey}

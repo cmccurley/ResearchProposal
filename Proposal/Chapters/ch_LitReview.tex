@@ -1003,26 +1003,37 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 		
 		
 		\subsection{Siamese Neural Networks}
+		\textit{Siamese Neural Networks} are a unique neural architecture proposed by Bromley et al. used to rank similarity between inputs \citep{Bromley1993SiameseNetworks}.  Essentially, Siamese networks use a base architecture to perform feature encoding.  This base network is replicated to form twin networks which share parameters \citep{Koch2015SiameseNetworks,Koch2015SiameseNetworksThesis}. The two networks are tied at the output, where a distance metric is used to compare the embeddings of the inputs to each twin.  Figure \ref{fig:siamese_networks_conrastive} demonstrates this idea.  The base network can be any architecture (i.e. fully-connected, convolutional, recurrent) so  long as it produces a fixed-sized embedding vector at its output.  A common implementation is to embed sample pairs using a contrastive loss function \citep{Koch2015SiameseNetworks}.  In this scenario, pairs of samples (anchor and positive or anchor and negative) are passed into the twin networks.  An embedded representation is produced for each sample, and a dissimilarity metric (typically $L_{2}$ or $L_{1}$ norm) is applied to compare the samples.  Thus, the actual values of the features do not matter, and only the relative distance between them in the embedding space is compared.  Following the idea of contrastive loss, pairs with the same label should be embedded close to each other, while contrasting pairs should be mapped further apart in the embedding space.  While Siamese networks are traditionally applied as twins, they can be extended to take any number of inputs.  Another common implementation is a \textit{Siamese Triplet network} \citep{Hoffer2015DeepMetricLearning}.  As the name suggests, the base neural architecture is duplicated not once, but twice to form three networks with shared weights.  Triplet loss is used to update the network parameters.  As demonstrated by Figure \ref{fig:siamese_networks_triplet}, the network takes a triplet set of samples as input and an embedded representation is produced for each sample (through the same transformation because the weights are shared).  A metric function then compares the dissimilarities between the anchor and positive samples, as well as the anchor and negative.  A comparator is applied at the output to compute the triplet loss between the embedded representations.  The idea is that samples from the same class or with high semantic similarity should have a lower dissimilarity in the embedding space than samples  from opposing classes.
 		
-		\citep{Koch2015SiameseNetworks,Koch2015SiameseNetworksThesis}
-		Contrastive or triplet loss
 		
-		\begin{figure*}[t!]
+		\begin{figure*}[h!]
 			\hfill
 			\begin{subfigure}[t]{0.5\textwidth}
 				\includegraphics[height=2.8in]{example-image-a}
+				\caption{Siamese network structured from contrastive loss.}
+				\label{fig:siamese_networks_conrastive}
 			\end{subfigure}%
 			\centering
 			~ 
 			\begin{subfigure}[t]{0.5\textwidth}
 				\centering
 				\includegraphics[height=2.8in]{example-image-a}
+				\caption{Siamese network structured from triplet loss.}
+				\label{fig:siamese_networks_triplet}
 			\end{subfigure}
-			
-			
+		
 			\caption[Siamese Neural Networks]{ }
 			\label{fig:siamese_networks}%
 		\end{figure*}
+	
+	
+		The embeddings produced by Siamese networks have  been shown to be powerful representations for discrimination tasks \citep{Chen2020ContrastiveLearning, Schroff2015FaceNet, Koch2015SiameseNetworks}.  In test, pairs or sets of images are passed through the contrastive network to simultaneously produce embeddings.  The pairing with the lowest dissimilarity would assign the class label to the test point.  For example, if classifying a test point into one of ten classes, ten pairs could be passed through the network (the test sample and a representative from each class), and the label of the test point would be assigned as the label of the representative from the best-ranking pair.   Alternatively, after all training samples are embedded through the triplet network, an alternative classification scheme such as $k$-NN or a SVM could be trained on the embedded representations.  Testing would simply consist of embedding a test sample through the network and using the test procedure of the external learner.
+		
+		
+		Chen et al. noted a few interesting observations regarding Siamese networks \citep{Chen2020ContrastiveLearning}. First, data augmentation is often necessary when training Siamese networks to avoid overfitting.  Second, representations often benefit from normalization. Finally, contrastive learning benefits from larger batch sizes and longer training times than its supervised counterpart.
+		
+		Despite the nuances mentioned, Siamese networks have been applied  successfully to applications in object recognition \citep{Hoffer2015DeepMetricLearning}, one-shot learning \citep{Koch2015SiameseNetworks}, visual representation learning \citep{Chen2020ContrastiveLearning} and image retrieval \citep{Hoffer2015DeepMetricLearning}.
+		
 		
 		\subsection{FaceNet}
 		
