@@ -976,21 +976,42 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 
 		\subsection{Large-Margin K-Nearest Neighbors (LMNN)}
 		
+		Weinberger and Saul \citep{Weinberger2009LMNN} explored the topic of ranking loss with the explicit goal of performing $k$-nearest neighbor classification in the learned embedding  space \citep{Hermans2017DefenseTripletLoss}.
+		
+		\citep{Hermans2017DefenseTripletLoss,Weinberger2009LMNN}
+		
 		\subsection{Siamese Neural Networks}
+		
+		\citep{Koch2015SiameseNetworks,Koch2015SiameseNetworksThesis}
 		Contrastive or triplet loss
+		
+		\begin{figure*}[t!]
+			\hfill
+			\begin{subfigure}[t]{0.5\textwidth}
+				\includegraphics[height=2.8in]{example-image-a}
+			\end{subfigure}%
+			\centering
+			~ 
+			\begin{subfigure}[t]{0.5\textwidth}
+				\centering
+				\includegraphics[height=2.8in]{example-image-a}
+			\end{subfigure}
+			
+			
+			\caption[Siamese Neural Networks]{ }
+			\label{fig:siamese_networks}%
+		\end{figure*}
 		
 		\subsection{Triplet Networks}
 		
 		
-		FaceNet is a convolutional neural network which learns a mapping from face images to a compact Euclidean space where distances directly correspond to a measure of face similarity \citep{Schroff2015FaceNet}. 
-		
+		FaceNet is a convolutional neural network which learns a mapping from face images to a compact Euclidean space where distances directly correspond to a measure of face similarity \citep{Schroff2015FaceNet}.  The method is based on learning a Euclidean embedding per image using a deep convolutional neural network.  Once each sample has been embedded through the network,  facial recognition can be achieved through the use of a simple $k$-NN classifier.  FaceNet  directly trains its outputs to be a compact 128-dimensional embedding  using a triplet-based loss function based on LMNN. FaceNet is based on a Inception network architecture and  optimizes a triplet loss formulated as:
 		\begin{align}
-			||f(x^{a}_{i}) - f(x^{p}_{i})||^{2}_{2} + \alpha < ||f(x^{a}_{i}) - f(x^{n}_{i})||^{2}_{2}, \quad \forall (f(x^{a}_{i}),f(x^{p}_{i}),f(x^{n}_{i})) \in \mathcal{T}
+		\mathcal{L} = ||f(x^{a}_{i}) - f(x^{p}_{i})||^{2}_{2} -||f(x^{a}_{i}) - f(x^{n}_{i})||^{2}_{2} + \alpha, \quad \forall (f(x^{a}_{i}),f(x^{p}_{i}),f(x^{n}_{i})) \in \mathcal{T}
 		\end{align} 
-	
-		\begin{align}
-			\mathcal{L} = ||f(x^{a}_{i}) - f(x^{p}_{i})||^{2}_{2} -||f(x^{a}_{i}) - f(x^{n}_{i})||^{2}_{2} + \alpha
-		\end{align}
+		where $\alpha$ is the margin enforced between positive and negative pairs and $\mathcal{T}$ is the set of all possible triplets in the training set.  The idea is that the triplet loss does not only promote similar faces to be close to each other in the embedding space, but also enforces a margin between every other face in the dataset.  To address the hard-mining problem,  triplets can be mined online out of mini-batches.  This provides a trade-off between speed and utility toward training.  FaceNet is currently SOA for the facial recognition problem, and in response, similar networks have been explored in a variety of applications, including: metric learning, image classification and image retrieval \citep{Hoffer2015DeepMetricLearning}.
+		
+		
 		
 		
 		

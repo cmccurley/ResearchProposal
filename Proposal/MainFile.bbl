@@ -1,4 +1,4 @@
-\begin{thebibliography}{132}
+\begin{thebibliography}{135}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -363,6 +363,14 @@ Alexander Hermans, Lucas Beyer, and Bastian Leibe.
 \newblock \emph{CoRR}, abs/1703.07737, 2017.
 \newblock URL \url{http://arxiv.org/abs/1703.07737}.
 
+\bibitem[Hoffer and Ailon(2015)]{Hoffer2015DeepMetricLearning}
+Elad Hoffer and Nir Ailon.
+\newblock Deep metric learning using triplet network.
+\newblock \emph{Lecture Notes in Computer Science}, page 84–92, 2015.
+\newblock ISSN 1611-3349.
+\newblock \doi{10.1007/978-3-319-24261-3_7}.
+\newblock URL \url{http://dx.doi.org/10.1007/978-3-319-24261-3_7}.
+
 \bibitem[Hong et~al.(2019)Hong, Yokoya, Ge, Chanussot, and
   Zhu]{Hong2019LearnableManifoldAlignment}
 D.~Hong, N.~Yokoya, N.~Ge, J.~Chanussot, and X.~X. Zhu.
@@ -418,10 +426,16 @@ Balázs Kegl, Donald Wunsch, and Andrei Zinovyev.
 \newblock 01 2008.
 \newblock ISBN 978-3-540-73750-6.
 
-\bibitem[Koch(2015)]{Koch2015SiameseNetworks}
+\bibitem[Koch(2015{\natexlab{a}})]{Koch2015SiameseNetworksThesis}
+Gregory Koch.
+\newblock \emph{Siamese Neural Networks for One-Shot Image Recognition}.
+\newblock PhD thesis, University of Toronto, Toronto, Canada,
+  2015{\natexlab{a}}.
+
+\bibitem[Koch(2015{\natexlab{b}})]{Koch2015SiameseNetworks}
 Gregory~R. Koch.
 \newblock Siamese neural networks for one-shot image recognition.
-\newblock 2015.
+\newblock 2015{\natexlab{b}}.
 
 \bibitem[Kohonen(1990)]{Kohonen1990SOM}
 T.~Kohonen.
@@ -836,6 +850,13 @@ Xiu-Shen Wei and Zhi-Hua Zhou.
 David Weinberger.
 \newblock Ai outside in: Machine learning's triangle of error.
 \newblock URL \url{https://accelerate.withgoogle.com/stories/ai-outside}.
+
+\bibitem[Weinberger and Saul(2009)]{Weinberger2009LMNN}
+Kilian~Q. Weinberger and Lawrence~K. Saul.
+\newblock Distance metric learning for large margin nearest neighbor
+  classification.
+\newblock \emph{J. Mach. Learn. Res.}, 10:\penalty0 207–244, June 2009.
+\newblock ISSN 1532-4435.
 
 \bibitem[Witten and Tibshirani(2011)]{Witten2011SuperMDS}
 Daniela~M. Witten and Robert Tibshirani.
