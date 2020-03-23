@@ -81,8 +81,26 @@ Many feature learning approaches in the literature use supervised learning to ob
 \subsection{Manifold Learning}
 I will continue to explore the use of S-LE and SE-Isomap for use in instance-level classification.  However, in order to use these methods for optimal instance embedding, notion of which instances are positive and negative is needed.  To explore instance  embedding, I will first implement DD as a method to select positive and negative prototypes which can be used to optimize the embeddings.  Following, I will investigate incorporating a MI boosting or ranking procedure to iteratively adapt the samples which are selected as positive and negative.  An iterative approach to training will be used which alternates between instance selection and providing the optimal embeddings for instance-level classification.
 
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{example-image-a}
+		\caption[Proposed Manifold Learning]{Image showing the mapping of instances from bags to a manifold, where the instances are well-separated  on the manifold.}
+		\label{fig:proposed_manifold_learning}
+	\end{figure*}
+\end{center}
+
 \subsection{Metric Embedding}
 Metric embedding is often realized through weakly-supervised learning, where instead of labels, the data is accompanied with sets of preferences \citep{Hermans2017DefenseTripletLoss,Koch2015SiameseNetworks,Schroff2015FaceNet}. While this embedding is straightforward to implement at the bag level, enforcing instance embeddings is difficult due to the uncertainty on the labels.  However, one could (potentially) use instance ranking as discussed in Section \ref{sec:MI_Ranking} to provide estimated preference sets on the instances for use in embedding.  In the proposed work, I will investigate MI ranking/preference learning as a way to discriminate between positive and negative instances.  Specifically, Siamese networks or ranking SVMs will be trained with contrastive and triplet loss in order to learn low-dimensional features that promote class separation in the embedding space.  Bag-level information will be utilized to ensure similarity between instances in negative bags, while enforcing dissimilarity between the instances in positive bags and negative bags.  Given a test bag, the algorithm should be able to project negative instances close to other negative instances and far from positive instances in the embedding space (and vice versa) or correctly rank instances as being more likely to be positive or negative.
+
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{example-image-a}
+		\caption[Proposed Metric Embedding]{Image to show how instances are ranked and are easily separable in a learned metric space.}
+		\label{fig:proposed_metric_embedding}
+	\end{figure*}
+\end{center}
 
 \subsection{Out-of-Sample Testing}
 Preliminary work used simple linear reconstructions of  samples' input space neighbors to embed out-of-sample points for testing.  However, this approach is likely sub-optimal as it does not utilize training class label information for a non-linear embedding.  For this reason, out-of-sample embedding approaches will be explored to project test points into the embedded space.  Specifically, I will explore the use of neural networks to learn nonlinear mapping functions between the input and embedding spaces.  I will also explore  approaches in the literature that consider class information of the training data, such as the technique in \citep{Vural2016OutOfSampleSupManifoldLearning}. 
