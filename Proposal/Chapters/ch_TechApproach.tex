@@ -5,7 +5,9 @@ In this chapter, we present the proposed method for discriminative dimensionalit
 In order to show potential for the proposed work to advance SOA in the literature, initial experiments were conducted to demonstrate proof of concept for nonlinear dimensionality reduction for bag-level classification.  Specifically, two algorithms were evaluated across a range of test parameters.  While Supervised Laplacian Eigenmaps (S-LE) and Supervised Enhanced Isomap (SE-Isomap) were reviewed in sections \ref{sec:Laplacian_Eigenmaps} and \ref{sec:Isomap}, respectively, pseudo-code for the algorithms using Multiple Instance data is provided below.  
 
 \subsection{S-LE Algorithm Description}
-\begin{algorithm}[H]
+The objective of S-LE \citep{Raducanu2012SupervisedNonlinearDimReduction} is to find low-dimensional representations $\bm{Z}$ of data $\bm{X}$, which promotes class separability in the embedding space.  Essentially, within-class and between class affinity matrices are defined by the nearest neighbors all of samples in the dataset.  An objective is defined using the graph Laplacians  which trades off between pulling samples of the same class close and pushing away samples of different classes.   A detailed discussion of S-LE is given in Section \ref{sec:Laplacian_Eigenmaps} and pseudo-code is provided in Algorithm \ref{alg:SLE}.
+
+\begin{algorithm}[h!]
 	\caption{S-LE}
 	\label{alg:SLE}
 	\begin{algorithmic}[1]
@@ -34,33 +36,44 @@ In order to show potential for the proposed work to advance SOA in the literatur
 \end{algorithm}
 
 \subsection{SE-Isomap Algorithm Description}
-\begin{algorithm}[H]
+SE-Isomap \citep{Ribeiro2008SupervisedIsomap}, as discussed in Section \ref{sec:Isomap}, uses a specialized measure of similarity which considers class information in order to project samples of the same class closer and points in different classes away from each other in the embedding space. SE-Isomap first computes an affinity matrix between all pairs of samples in the dataset.  Samples from the same class have a higher affinity than samples in different classes, as controlled by the parameter $\alpha$.  After computing the affinity matrix, the shortest path distance matrix is constructed using Floyd's or Dijkstra's algorithms, and multidimensional  scaling is applied to find the low-dimensional data representations $\bm{Z}$ of input data $\bm{X}$. Psuedo-code for both SE-Isomap and MDS are provided in Algorithms \ref{alg:SE_Isomap} and \ref{alg:MDS}, respectively.
+
+\begin{algorithm}[h!]
 	\caption{SE-Isomap}
-	\label{alg:SEIsomap}
+	\label{alg:SE_Isomap}
 	\begin{algorithmic}[1]
-		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$, parameters $C,R,\tau$}
-		\Ensure {Projection matrix $\bm{W}$}
-		\State {$\bm{X} \gets$ instances in $\bm{B}$}
-		\State {$G \gets \max(R,C)$-nearest neighbor graph of $\bm{X}$}
-		\For {$n = 1 \to N$}   
-		\State {$R_{n} \gets R$-nearest references of instance $\bm{x}_{n}$}
-		\State {$C_{n} \gets C$-nearest citers of instance $\bm{x}_{n}$}
-		\State {$N_{n}^{-} \gets $-number of instances from negative bags in  $R_{n} + C_{n}$}
-		\State {$N_{n}^{+} \gets $-number of instances from positive bags in  $R_{n} + C_{n}$}
-		\If {$\frac{N_{n}^{-}}{N_{n}^{+}} \geq \tau$ or $\bm{x}_{n}$ is from a negative bag}
-		\State {instance label $l_{n} \gets -1$}
+		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$, parameters $k, \beta,\alpha, d$}
+		\Ensure {Low-dimensional data representations $\bm{Z}$}
+		\State {$\bm{X} \gets$ vector representations of bags in $\bm{B}$}
+		\For {$m,n \in N$}
+		\If {$\bm{x}_{n}$ in $k$-NN of $\bm{x}_{m}$ and $L_{m} = L_{n}$}
+		\State{$\bm{W}(\bm{x}_{m},\bm{x}_{n}) \gets \sqrt{1 - \exp{\frac{-||(\bm{x}_{m},\bm{x}_{n}||^{2}}{\beta}}}$}
+		\ElsIf {$\bm{x}_{n}$ in $k$-NN of $\bm{x}_{m}$ and $L_{m} \neq L_{n}$}
+		\State{$\bm{W}(\bm{x}_{m},\bm{x}_{n}) \gets \sqrt{ \exp{\frac{||(\bm{x}_{m},\bm{x}_{n}||^{2}}{\beta}}} - \alpha$}
 		\Else
-		\State {$l_{n} \gets +1$}
+		\State{$\bm{W}(\bm{x}_{m},\bm{x}_{n}) \gets 0$}
 		\EndIf
-		\EndFor             
-		\State{$\bm{A}^{b} \gets$ between-class affinity matrix}
-		\State{$\bm{A}^{w} \gets$ within-class affinity matrix}
-		\State{Between-class scatter matrix $\bm{S}_{b} = \frac{1}{2}\sum_{m,n=1}^{N}\bm{A}_{mn}^{b}(\bm{x}_{m}-\bm{x}_{n})(\bm{x}_{m}-\bm{x}_{n})^{T}$}
-		\State{Within-class scatter matrix $\bm{S}_{w} = \frac{1}{2}\sum_{m,n=1}^{N}\bm{A}_{mn}^{w}(\bm{x}_{m}-\bm{x}_{n})(\bm{x}_{m}-\bm{x}_{n})^{T}$}
-		\State {$\bm{W} \in \mathbb{R}^{D \times d} \gets$ top $d$ eigenvectors of $\frac{\bm{w}^{T}\bm{S}_{b}\bm{w}}{\bm{w}^{T}\bm{S}_{w}\bm{w}}$}
+		\EndFor
+		\State {$\bm{D} \gets $ squares of the shortest distances between all points using Dijkstra's or Floyd's algorithm on $\bm{W}$}
+		\State {$\bm{Z} \in \mathbb{R}^{N \times d} \gets $ $\textsc{MDS}(\bm{D})$}         
 	\end{algorithmic}
 \end{algorithm}
+
+\begin{algorithm}[H]
+	\caption{MDS}
+	\label{alg:MDS}
+	\begin{algorithmic}[1]
+		\Require {Distance matrix $\bm{D} \in \mathbb{R}^{N \times N}$, embedding space dimensionality $d$}
+		\Ensure {Low-dimensional data representations $\bm{Z}$}
+		\State {Calculate  $\bm{K}= -\frac{1}{2}\bm{H}\bm{D}\bm{H}$, where $\bm{H}= \mathbb{I}_{N} - \frac{1}{N}\bm{e}\bm{e}^{T}$ is the centering matrix} 
+		\State {Compute eigenvectors and eigenvalues $\bm{K}v = \lambda v$} 
+		\State {$\bm{V}',\bm{\Lambda}' \gets $ $\textsc{SortDecreasing}(\bm{V},\bm{\Lambda})$}
+		\State {$\bm{Z} \in \mathbb{R}^{N \times d} \gets \bm{V}'\bm{\Lambda}^{'\frac{1}{2}}$}     
+	\end{algorithmic}
+\end{algorithm}
+
 \section{Nonlinear Manifold Learning for Instance-Level Classification}
+While preliminary experiments used S-LE and SE-Isomap to embed data for bag-level classification, this work proposes the development of  non-linear dimensionality reduction techniques that promote instance-level classification.
 
 \subsection{Instance Selection}
 
@@ -75,4 +88,23 @@ Can we use to preference learning to discern instances which are likely to be po
 
 Metric embedding is often realized through weakly-supervised learning, where instead of labels, the data is accompanied with sets of preferences. While this embedding could, conceptually be easy to implement at the bag level, enforcing instance embeddings is difficult due to the uncertainty on the labels.  However, one could (theoretically) use instance ranking as discussed in Section \ref{sec:MI_Ranking} to provide estimated preference sets on the instances for use in embedding.
 
-\section{Datasets Dataset Table - Name, Summary, Justification/Use in proposed work}
+\section{Datasets}
+In this section, a table is given to provide a summary of the datasets proposed to test the developed approaches.  The table provides a brief summary of the datasets as well as their intended uses in testing.
+
+\begin{longtable}{ |p{4cm}|p{6cm}|p{4cm}|  } 
+	\caption{Summary of datasets.}
+	\label{tab:Datasets}\\
+	\hline
+	\multicolumn{3}{|c|}{\textbf{Datasets}} \\
+	\hline
+	\textbf{Dataset} & \textbf{Summary} & \textbf{Justification/Use}\\
+	\hline
+	DSIAC MS-0003-DB   &  Publicly available MWIR videos of military vehicles. & Test classification at both the bag and instance level.   \\
+	\hline
+	MUUFL Gulfport &  Hyperspectral, LiDAR and GPS data of scenes taken over University of Mississippi Gulfport. & Test classification at the bag-level.   \\
+	\hline
+	LFW Faces in the Wild & Images of 5749 different faces labeled at the  image level. & Classification and ranking. \\
+	\hline
+	PASCAL VOC  & 2913 RGB images labeled at the pixel-level. & Test instance-level classification. \\
+	\hline
+\end{longtable}

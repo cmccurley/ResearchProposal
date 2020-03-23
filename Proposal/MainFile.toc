@@ -96,25 +96,25 @@
 \contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{88}{chapter.3}
 \contentsline {section}{\numberline {3.1}Nonlinear Manifold Learning for Bag-Level Classification}{88}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}S-LE Algorithm Description}{89}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}SE-Isomap Algorithm Description}{90}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}SE-Isomap Algorithm Description}{89}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Nonlinear Manifold Learning for Instance-Level Classification}{91}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Instance Selection}{91}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Traditional Manifold Learning Based}{91}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Ranking-Loss Based}{91}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Datasets Dataset Table - Name, Summary, Justification/Use in proposed work}{91}{section.3.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{92}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Overview}{92}{subsection.4.0.1}
-\contentsline {subsection}{\numberline {4.0.2}Description of Data}{92}{subsection.4.0.2}
-\contentsline {subsection}{\numberline {4.0.3}Feature Extraction}{95}{subsection.4.0.3}
-\contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{95}{subsubsection.4.0.3.1}
-\contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{96}{subsubsection.4.0.3.2}
-\contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{97}{subsection.4.0.4}
-\contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{97}{subsection.4.0.5}
-\contentsline {paragraph}{Training}{97}{section*.64}
-\contentsline {paragraph}{Out-of-Sample Testing}{97}{section*.65}
-\contentsline {paragraph}{Evaluation Metrics}{98}{section*.66}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{99}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{100}{chapter.6}
-\contentsline {subsection}{\numberline {6.0.1}Overview of Tasks:}{100}{subsection.6.0.1}
-\contentsline {subsection}{\numberline {6.0.2}Tasks and Approximate Dates of Completion:}{100}{subsection.6.0.2}
+\contentsline {section}{\numberline {3.3}Datasets}{91}{section.3.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{93}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}Overview}{93}{subsection.4.0.1}
+\contentsline {subsection}{\numberline {4.0.2}Description of Data}{93}{subsection.4.0.2}
+\contentsline {subsection}{\numberline {4.0.3}Feature Extraction}{96}{subsection.4.0.3}
+\contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{96}{subsubsection.4.0.3.1}
+\contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{97}{subsubsection.4.0.3.2}
+\contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{98}{subsection.4.0.4}
+\contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{98}{subsection.4.0.5}
+\contentsline {paragraph}{Training}{98}{section*.64}
+\contentsline {paragraph}{Out-of-Sample Testing}{98}{section*.65}
+\contentsline {paragraph}{Evaluation Metrics}{99}{section*.66}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{100}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{101}{chapter.6}
+\contentsline {subsection}{\numberline {6.0.1}Overview of Tasks:}{101}{subsection.6.0.1}
+\contentsline {subsection}{\numberline {6.0.2}Tasks and Approximate Dates of Completion:}{101}{subsection.6.0.2}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 
