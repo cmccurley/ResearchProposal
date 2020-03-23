@@ -1,16 +1,70 @@
 \chapter{Technical Approach}
-In this chapter, we present the proposed method for discriminative dimensionality reduction using weakly-supervised learning. In the current state of the literature, few methods have been developed which address the problem of dimensionality reduction and manifold learning using weak labels under the multiple-instance learning framework.  Among the proposed methods, none address the possibility of nonlinearity in the underlying manifold representing bags or instances. To this end, this proposal presents a plan of research to fill this gap in the literature.  Specifically, we aim to provide a generalized framework for nonlinear dimensionality reduction under the multiple instance learning paradigm which promotes instance-level discriminability in the latent embedding space.  This proposal only considers the binary classification problem, which is motivated by target detection in remote  sensing. The approaches developed in this work will be directly compared to state-of-the-art approaches in the literature.  The remainder of this chapter is divided into two sections.  In the first section, we describe the initial work in investigating the efficacy of strictly supervised, nonlinear manifold learning methods for bag-level classification.  In the second section, we present the proposed approach for instance-level classification.
+In this chapter, we present the proposed method for discriminative dimensionality reduction using weakly-supervised learning. In the current state of the literature, few methods have been developed which address the problem of dimensionality reduction and manifold learning using weak labels under the multiple-instance learning framework.  Among the proposed methods, none address the possibility of nonlinearity in the underlying manifold representing bags or instances. To this end, this proposal presents a plan of research to fill this gap in the literature.  Specifically, we aim to provide a generalized framework for nonlinear dimensionality reduction under the multiple instance learning paradigm which promotes instance-level discriminability in the latent embedding space.  This proposal only considers the binary classification problem, which is motivated by target detection in remote  sensing. The approaches developed in this work will be directly compared to state-of-the-art approaches in the literature.  The remainder of this chapter is divided into three sections.  In the first section, we describe the initial work in investigating the efficacy of strictly supervised, nonlinear manifold learning methods for bag-level classification.  In the second section, we present the proposed approach for instance-level classification.  Finally, the third section presents the proposed datasets for applying and testing the developed approaches. 
 
 \section{Nonlinear Manifold Learning for Bag-Level Classification}
+In order to show potential for the proposed work to advance SOA in the literature, initial experiments were conducted to demonstrate proof of concept for nonlinear dimensionality reduction for bag-level classification.  Specifically, two algorithms were evaluated across a range of test parameters.  While Supervised Laplacian Eigenmaps (S-LE) and Supervised Enhanced Isomap (SE-Isomap) were reviewed in sections \ref{sec:Laplacian_Eigenmaps} and \ref{sec:Isomap}, respectively, pseudo-code for the algorithms using Multiple Instance data is provided below.  
 
 \subsection{S-LE Algorithm Description}
+\begin{algorithm}[H]
+	\caption{S-LE}
+	\label{alg:SLE}
+	\begin{algorithmic}[1]
+		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$, parameters $k, \beta,\gamma, d$}
+		\Ensure {Low-dimensional data representations $\bm{Z}$}
+		\State {$\bm{X} \gets$ vector representations of bags in $\bm{B}$}
+		\For {$m,n \in N$}
+		\If {$\bm{x}_{n}$ in $k$-NN of $\bm{x}_{m}$ and $L_{m} = L_{n}$}
+		\State{$\bm{W}_{w,mn} \gets \exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right)$}
+		\State{$\bm{W}_{b,mn} \gets 0$}
+		\ElsIf {$\bm{x}_{n}$ in $k$-NN of $\bm{x}_{m}$ and $L_{m} \neq L_{n}$}
+		\State{$\bm{W}_{w,mn} \gets 0$}
+		\State{$\bm{W}_{b,mn} \gets 1$}
+		\Else
+		\State{$\bm{W}_{w,mn} \gets 0$}
+		\State{$\bm{W}_{b,mn} \gets 0$}
+		\EndIf
+		\EndFor
+		\State {Compute affinity matrix $\bm{W} \gets \bm{W}_{w} + \bm{W}_{b} $} 
+		\State {Compute graph Laplacians $\bm{L}_{w} \gets \bm{D}_{w} - \bm{W}_{w}$, $\bm{L}_{b} \gets \bm{D}_{b} - \bm{W}_{b}$} 
+		\State {Define $\bm{B} \gets \gamma \bm{L}_{b} + (1-\gamma)\bm{W}_{w}$}  
+		\State {Solve the eigenvector problem $\bm{B}\bm{v} = \lambda \bm{D}_{w}\bm{v}$}
+		\State {Sort eigenvectors $\bm{v}$ and eigenvalues $\lambda$ in decreasing order}
+		\State{$\bm{Z} \in \mathbb{R}^{N \times d} \gets $ top $d$ eigenvectors }        
+	\end{algorithmic}
+\end{algorithm}
 
 \subsection{SE-Isomap Algorithm Description}
-
-
+\begin{algorithm}[H]
+	\caption{SE-Isomap}
+	\label{alg:SEIsomap}
+	\begin{algorithmic}[1]
+		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$, parameters $C,R,\tau$}
+		\Ensure {Projection matrix $\bm{W}$}
+		\State {$\bm{X} \gets$ instances in $\bm{B}$}
+		\State {$G \gets \max(R,C)$-nearest neighbor graph of $\bm{X}$}
+		\For {$n = 1 \to N$}   
+		\State {$R_{n} \gets R$-nearest references of instance $\bm{x}_{n}$}
+		\State {$C_{n} \gets C$-nearest citers of instance $\bm{x}_{n}$}
+		\State {$N_{n}^{-} \gets $-number of instances from negative bags in  $R_{n} + C_{n}$}
+		\State {$N_{n}^{+} \gets $-number of instances from positive bags in  $R_{n} + C_{n}$}
+		\If {$\frac{N_{n}^{-}}{N_{n}^{+}} \geq \tau$ or $\bm{x}_{n}$ is from a negative bag}
+		\State {instance label $l_{n} \gets -1$}
+		\Else
+		\State {$l_{n} \gets +1$}
+		\EndIf
+		\EndFor             
+		\State{$\bm{A}^{b} \gets$ between-class affinity matrix}
+		\State{$\bm{A}^{w} \gets$ within-class affinity matrix}
+		\State{Between-class scatter matrix $\bm{S}_{b} = \frac{1}{2}\sum_{m,n=1}^{N}\bm{A}_{mn}^{b}(\bm{x}_{m}-\bm{x}_{n})(\bm{x}_{m}-\bm{x}_{n})^{T}$}
+		\State{Within-class scatter matrix $\bm{S}_{w} = \frac{1}{2}\sum_{m,n=1}^{N}\bm{A}_{mn}^{w}(\bm{x}_{m}-\bm{x}_{n})(\bm{x}_{m}-\bm{x}_{n})^{T}$}
+		\State {$\bm{W} \in \mathbb{R}^{D \times d} \gets$ top $d$ eigenvectors of $\frac{\bm{w}^{T}\bm{S}_{b}\bm{w}}{\bm{w}^{T}\bm{S}_{w}\bm{w}}$}
+	\end{algorithmic}
+\end{algorithm}
 \section{Nonlinear Manifold Learning for Instance-Level Classification}
 
-\subsection{Diverse-Density/ Traditional Manifold Learning Based}
+\subsection{Instance Selection}
+
+\subsection{Traditional Manifold Learning Based}
 
 \subsection{Ranking-Loss Based}
 
@@ -21,4 +75,4 @@ Can we use to preference learning to discern instances which are likely to be po
 
 Metric embedding is often realized through weakly-supervised learning, where instead of labels, the data is accompanied with sets of preferences. While this embedding could, conceptually be easy to implement at the bag level, enforcing instance embeddings is difficult due to the uncertainty on the labels.  However, one could (theoretically) use instance ranking as discussed in Section \ref{sec:MI_Ranking} to provide estimated preference sets on the instances for use in embedding.
 
-\subsection{Dataset Table - Name, Summary, Justification/Use in proposed work}
+\section{Datasets Dataset Table - Name, Summary, Justification/Use in proposed work}

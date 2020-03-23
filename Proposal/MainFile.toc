@@ -95,25 +95,26 @@
 \contentsline {subsection}{\numberline {2.4.4}FaceNet}{87}{subsection.2.4.4}
 \contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{88}{chapter.3}
 \contentsline {section}{\numberline {3.1}Nonlinear Manifold Learning for Bag-Level Classification}{88}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}S-LE Algorithm Description}{88}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}SE-Isomap Algorithm Description}{88}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Nonlinear Manifold Learning for Instance-Level Classification}{88}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Diverse-Density/ Traditional Manifold Learning Based}{88}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Ranking-Loss Based}{88}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Dataset Table - Name, Summary, Justification/Use in proposed work}{89}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{90}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Overview}{90}{subsection.4.0.1}
-\contentsline {subsection}{\numberline {4.0.2}Description of Data}{90}{subsection.4.0.2}
-\contentsline {subsection}{\numberline {4.0.3}Feature Extraction}{92}{subsection.4.0.3}
-\contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{93}{subsubsection.4.0.3.1}
-\contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{93}{subsubsection.4.0.3.2}
-\contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{95}{subsection.4.0.4}
-\contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{95}{subsection.4.0.5}
-\contentsline {paragraph}{Training}{95}{section*.64}
-\contentsline {paragraph}{Out-of-Sample Testing}{95}{section*.65}
-\contentsline {paragraph}{Evaluation Metrics}{95}{section*.66}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{97}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{98}{chapter.6}
-\contentsline {subsection}{\numberline {6.0.1}Overview of Tasks:}{98}{subsection.6.0.1}
-\contentsline {subsection}{\numberline {6.0.2}Tasks and Approximate Dates of Completion:}{98}{subsection.6.0.2}
+\contentsline {subsection}{\numberline {3.1.1}S-LE Algorithm Description}{89}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}SE-Isomap Algorithm Description}{90}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Nonlinear Manifold Learning for Instance-Level Classification}{91}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Instance Selection}{91}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Traditional Manifold Learning Based}{91}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Ranking-Loss Based}{91}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Datasets Dataset Table - Name, Summary, Justification/Use in proposed work}{91}{section.3.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{92}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}Overview}{92}{subsection.4.0.1}
+\contentsline {subsection}{\numberline {4.0.2}Description of Data}{92}{subsection.4.0.2}
+\contentsline {subsection}{\numberline {4.0.3}Feature Extraction}{95}{subsection.4.0.3}
+\contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{95}{subsubsection.4.0.3.1}
+\contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{96}{subsubsection.4.0.3.2}
+\contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{97}{subsection.4.0.4}
+\contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{97}{subsection.4.0.5}
+\contentsline {paragraph}{Training}{97}{section*.64}
+\contentsline {paragraph}{Out-of-Sample Testing}{97}{section*.65}
+\contentsline {paragraph}{Evaluation Metrics}{98}{section*.66}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{99}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{100}{chapter.6}
+\contentsline {subsection}{\numberline {6.0.1}Overview of Tasks:}{100}{subsection.6.0.1}
+\contentsline {subsection}{\numberline {6.0.2}Tasks and Approximate Dates of Completion:}{100}{subsection.6.0.2}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 

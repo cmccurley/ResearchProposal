@@ -473,7 +473,7 @@ The ultimate goal of manifold learning is to uncover an underlying low-dimension
 
 \subsubsection{General Graph Embedding Framework}
 
-\subsubsection{Isomap}
+\subsubsection{Isomap} \label{sec:Isomap}
 \paragraph{Traditional Isomap}
 While MDS has proven to be successful in a variety of applications, it suffers from the fact that is solely aims to retain pairwise Euclidean distances and does not consider the distributions of neighboring samples.  This implies that MDS is not able to capture the geometry of high-dimensional data which lies on or near to a curved manifold, such as the Swiss roll dataset \citep{VanDerMaaten2009DRReview,Chao2019RecentAdvancesSupervisedDimRed}. Isometric Feature Mapping (Isomap) \citep{Tenenbaum2000Isomap} is a technique which resolves this problem by attempting to preserve pairwise geodesic distances between datapoints.  Isomap can be considered as a generalization of classical MDS in which the pairwise distance matrix is replaced by a matrix of pairwise geodesic distances approximated by distances in the graph \citep{Thorstensen2009ManifoldThesis}.  The classic, unsupervised algorithm consists of a few steps:
 
@@ -505,7 +505,7 @@ Li and Guo proposed Supervised Isomap with Explicit mapping (SE-Isomap) in \cite
 
 \subsubsection{Locally Linear Embedding (LLE)}
 
-\subsubsection{Laplacian Eigenmaps (LE)}
+\subsubsection{Laplacian Eigenmaps (LE)} \label{sec:Laplacian_Eigenmaps}
 \paragraph{Classical LE}
 Similar to LLE, Laplacian Eigenmaps, or \textit{Spectral Embedding}, is a nonlinear dimensionality reduction technique which aims to preserve local structure of data \citep{Raducanu2012SupervisedNonlinearDimReduction,VanDerMaaten2009DRReview}.  Using \textit{spectral graph theory}, LE computes low-dimensional representations of data in which the dissimilarities between datapoints and their neighbors (according to an affinity measure) are minimized.  The name \textit{Laplacian Eigenmaps} is derived by the use of Laplacian regularization in the optimization procedure \citep{Thorstensen2009ManifoldThesis}. Given a set of $N$ samples $\bm{X} = \{\bm{x}_n\}^{N}_{n=1} \subset \mathbb{R}^{D}$, the first step of LE is to define a \textit{neighborhood graph on the samples}.  This graph, also called an \textit{affinity} or \textit{adjacency} matrix can be constructed in a variety of ways, such as $K$-nearest neighbor, $\epsilon$-ball, full mesh, or by weighting each edge $\bm{x}_m \sim \bm{x}_n$ by a symmetric affinity function $W_{mn} = K(\bm{x}_m;\bm{x}_n)$, typically a radial basis or heat kernel:
 \begin{align}
