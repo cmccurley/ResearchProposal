@@ -42,10 +42,17 @@ I was expecting a `,' or a `}'---line 2845 of file BibFiles/references.bib
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
 --line 3317 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 3381 of file BibFiles/references.bib
+ :  
+ :  year = {2001}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--empty booktitle in Aiolli2004LearningPreferences
 Warning--empty booktitle in Babenko2008MIBoosting
 Warning--empty booktitle in Babenko2011MILManifoldBags
 Warning--empty journal in Bishop1998GTM
+Warning--empty year in Breiman2001StatisitcalModeling
+Warning--empty year in Breiman2001StatisitcalModeling
 Warning--empty year in MUUFLScoringCode
 Warning--empty booktitle in Hu2008MIRanking
 Warning--empty publisher in Kegl2008PrincipalManifoldsTextbook
@@ -61,4 +68,4 @@ Warning--empty title in Xu2011MI_Metric_Learning
 Warning--empty booktitle in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
-(There were 5 error messages)
+(There were 6 error messages)

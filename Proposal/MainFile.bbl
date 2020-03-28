@@ -1,4 +1,4 @@
-\begin{thebibliography}{137}
+\begin{thebibliography}{140}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,13 @@ Jaume Amores.
 \newblock \emph{Artificial Intelligence}, 201:\penalty0 81 -- 105, 2013.
 \newblock ISSN 0004-3702.
 \newblock \doi{https://doi.org/10.1016/j.artint.2013.06.003}.
+
+\bibitem[Anderson et~al.(2013)Anderson, Belkin, Goyal, Rademacher, and
+  Voss]{Anderson2014BlessingDimensionalityGaussianMixtures}
+Joseph Anderson, Mikhail Belkin, Navin Goyal, Luis Rademacher, and James Voss.
+\newblock The more, the merrier: the blessing of dimensionality for learning
+  large gaussian mixtures.
+\newblock \emph{Journal of Machine Learning Research}, 35, 11 2013.
 
 \bibitem[Asif et~al.(2017)Asif, Abbasi, Munir, Ben-Hur, and ul~Amir
   Afsar~Minhas]{Asif2017LargeMarginMIRanking}
@@ -117,6 +124,11 @@ J.~Bocinsky, C.~H. McCurley, D.~Shats, and A.~Zare.
 \newblock In \emph{Detection and Sensing of Mines, Explosive Objects, and
   Obscured Targets XXIV, 110120N}, volume 11012 of \emph{Proc.SPIE}, May 2019.
 \newblock \doi{10.1117/12.2519463}.
+
+\bibitem[Breiman()]{Breiman2001StatisitcalModeling}
+Leo Breiman.
+\newblock Statistical modeling: The two cultures.
+\newblock \emph{Statistical Science}, 16\penalty0 (3):\penalty0 199 -- 231.
 
 \bibitem[Bromley et~al.(1993)Bromley, Guyon, LeCun, S\"{a}ckinger, and
   Shah]{Bromley1993SiameseNetworks}
@@ -356,6 +368,15 @@ T.~Glenn, A.~Zare, P.~Gader, and D.~Dranishnikov.
 \newblock Bullwinkle: Scoring code for sub-pixel targets.
 \newblock URL \url{https://github.com/GatorSense/MUUFLGulfport/}.
 
+\bibitem[Gorban and Tyukin(2018)]{Gorban2019BlessingofDimensionality}
+A.~N. Gorban and I.~Y. Tyukin.
+\newblock Blessing of dimensionality: mathematical foundations of the
+  statistical physics of data.
+\newblock \emph{Philosophical Transactions of the Royal Society A:
+  Mathematical, Physical and Engineering Sciences}, 376\penalty0
+  (2118):\penalty0 20170237, 2018.
+\newblock \doi{10.1098/rsta.2017.0237}.
+
 \bibitem[{Hajimirsadeghi} and
   {Mori}(2017)]{Hajimirsadeghi2017MIClassificationMarkovNetworks}
 H.~{Hajimirsadeghi} and G.~{Mori}.
@@ -410,6 +431,14 @@ Gary~B. Huang, Manu Ramesh, Tamara Berg, and Erik Learned-Miller.
   in unconstrained environments.
 \newblock Technical Report 07-49, University of Massachusetts, Amherst, October
   2007.
+
+\bibitem[Huang et~al.(2019)Huang, Emam, Goldblum, Fowl, Terry, Huang, and
+  Goldstein]{Huang2019UnderstandingGeneralization}
+W.~Ronny Huang, Zeyad Emam, Micah Goldblum, Liam Fowl, Justin~K. Terry, Furong
+  Huang, and Tom Goldstein.
+\newblock Understanding generalization through visualizations.
+\newblock \emph{CoRR}, abs/1906.03291, 2019.
+\newblock URL \url{http://arxiv.org/abs/1906.03291}.
 
 \bibitem[Ilse et~al.(2018)Ilse, Tomczak, and
   Welling]{Ilse2018AttentionBasedDeepMIL}
@@ -851,16 +880,6 @@ Andrew~R Webb and David Lowe.
 \newblock \emph{Neural Networks}, 3\penalty0 (4):\penalty0 367 -- 375, 1990.
 \newblock ISSN 0893-6080.
 \newblock \doi{https://doi.org/10.1016/0893-6080(90)90019-H}.
-
-\bibitem[Wei and Zhou(2016)]{Wei2016ImageBagGenerators}
-Xiu-Shen Wei and Zhi-Hua Zhou.
-\newblock An empirical study on image bag generators for multi-instance
-  learning.
-\newblock \emph{Mach. Learn.}, 105\penalty0 (2):\penalty0 155–198, November
-  2016.
-\newblock ISSN 0885-6125.
-\newblock \doi{10.1007/s10994-016-5560-1}.
-\newblock URL \url{https://doi.org/10.1007/s10994-016-5560-1}.
 
 \bibitem[Weinberger()]{WeinbergerFalseAlarms}
 David Weinberger.
