@@ -26,7 +26,7 @@ This proposal calls for the investigation of manifold learning and dimensionalit
 
 	\multicolumn{2}{|l|}{\textbf{Multiple Instance Manifold Learning}} \\
 	\hline
-	Develop discriminative MI manifold learning approach for bag and instance-level classification. 
+	Develop discriminative MI manifold learning approach for bag and instance-level classification.  (\textbf{Completed})
 	\begin{enumerate}
 %			\setcounter{enumi}{2}
 		\item Supervised Nonlinear DR method for bag-level classification \label{item:supervisedDR_bag_level}
@@ -41,7 +41,7 @@ This proposal calls for the investigation of manifold learning and dimensionalit
 	
 		\item Explore methods for out-of-sample embedding
 		\begin{enumerate}
-			\item Linear Reconstruction
+			\item Linear Reconstruction  (\textbf{Completed})
 			\item Neural Networks
 			\item Methods that consider class information of training data
 		\end{enumerate}
@@ -74,16 +74,6 @@ This proposal calls for the investigation of manifold learning and dimensionalit
 		\item Investigate methods for constructing pairs/triplets from both bags and instances 
 	\end{enumerate} & \newline \vspace{1.1cm} 2021-03 \newline \vspace{3.1cm} 2021-05 \newline \vspace{0.1cm} 2021-06\\
 	\hline
-	\multicolumn{2}{|l|}{\textbf{Comparison to SOA}} \\
-	\hline
-	Compare proposed methods to state of the art.
-	\begin{enumerate}
-		%			\setcounter{enumi}{2}
-		\item Code SOA MI dimensionality reduction methods, namely: MIDR, MidLABS, MIDA, CLFDA and MI-FEAR
-		\item Compare to SOA MI dimensionality reduction methods in terms of bag-level and instance-level classification performance (with $k$-NN and SVM), optimal embedding dimensionality and computational complexity.
-		\item  Investigate performance on different datasets: DSIAC, Gulfport, LFW, instance-level MIL dataset
-	\end{enumerate} & \newline \vspace{0.2cm} 2021-09 \newline \vspace{1.2cm} 2021-11 \newline \vspace{2.1cm} 2022-01 \\
-
 	\multicolumn{2}{|l|}{\textbf{Departmental Requirements}} \\
 	\hline
 	Status Meeting & 2021-04\\
@@ -94,5 +84,36 @@ This proposal calls for the investigation of manifold learning and dimensionalit
 	\hline
 	Final Dissertation Submission & 2022-03-12\\
 
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|p{10cm}|p{4cm}|} 
+	\hline \multicolumn{1}{|p{10cm}|}{\textbf{Tasks}} & \multicolumn{1}{p{4cm}|}{\textbf{Approximate Date of Completion}} \\ \hline
+	\endfirsthead
+	\multicolumn{2}{c}%
+	{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+	\hline \multicolumn{1}{|p{10cm}|}{\textbf{Tasks}} &  \multicolumn{1}{p{4cm}|}{\textbf{Approximate Date of Completion}}
+	\\
+	\hline
+	\endhead
+	\hline \multicolumn{2}{|r|}{{Continued on next page}} \\ \hline
+	\endfoot
+	\hline \hline
+	\endlastfoot
+	
+	\hline
+	\multicolumn{2}{|l|}{\textbf{Comparison to SOA}} \\
+	\hline
+	Compare proposed methods to state of the art.
+	\begin{enumerate}
+		%			\setcounter{enumi}{2}
+		\item Code SOA MI dimensionality reduction methods, namely: MIDR, MidLABS, MIDA, CLFDA and MI-FEAR
+		\item Compare to SOA MI dimensionality reduction methods in terms of bag-level and instance-level classification performance (with $k$-NN, SVM and feed-forward neural network), optimal embedding dimensionality and computational complexity.
+		\item  Investigate performance on different datasets: DSIAC, Gulfport, LFW, instance-level MIL dataset
+	\end{enumerate} & \newline \vspace{0.2cm} 2021-09 \newline \vspace{1.2cm} 2021-11 \newline \vspace{2.1cm} 2022-01 \\
+	
 \end{longtable}
 

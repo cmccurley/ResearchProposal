@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  29 MAR 2020 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  31 MAR 2020 16:29
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -1824,66 +1824,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 []\OT1/cmss/m/n/12 Investigate meth-ods for con-struct-ing pairs/triplets
  []
 
-
-Underfull \hbox (badness 10000) detected at line 82
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-[]\OT1/cmss/m/n/12 Code SOA MI di-men-sion-al-ity re-duc-tion meth-ods,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-\OT1/cmss/m/n/12 namely: MIDR, Mid-LABS, MIDA, CLFDA and
- []
-
-
-Underfull \hbox (badness 10000) detected at line 83
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-[]\OT1/cmss/m/n/12 Compare to SOA MI di-men-sion-al-ity re-duc-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-\OT1/cmss/m/n/12 meth-ods in terms of bag-level and instance-level
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-\OT1/cmss/m/n/12 clas-si-fi-ca-tion per-for-mance (with $\OML/cmm/m/it/12 k$\OT
-1/cmss/m/n/12 -NN and SVM),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-\OT1/cmss/m/n/12 op-ti-mal em-bed-ding di-men-sion-al-ity and com-pu-ta-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 84
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-[]\OT1/cmss/m/n/12 Investigate per-for-mance on dif-fer-ent datasets:
- []
-
 [104
 
 
 
-] [105] [106]) [107] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl
+] [105]
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+[]|\OT1/cmss/bx/n/12 Approximate Date
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[]|\OT1/cmss/bx/n/12 Approximate Date
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 113
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+[]\OT1/cmss/m/n/12 Code SOA MI di-men-sion-al-ity re-duc-tion meth-ods,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+\OT1/cmss/m/n/12 namely: MIDR, Mid-LABS, MIDA, CLFDA and
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 114
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+[]\OT1/cmss/m/n/12 Compare to SOA MI di-men-sion-al-ity re-duc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+\OT1/cmss/m/n/12 meth-ods in terms of bag-level and instance-level
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+\OT1/cmss/m/n/12 clas-si-fi-ca-tion per-for-mance (with $\OML/cmm/m/it/12 k$\OT
+1/cmss/m/n/12 -NN, SVM and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+\OT1/cmss/m/n/12 feed-forward neu-ral net-work), op-ti-mal em-bed-ding
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 115
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+[]\OT1/cmss/m/n/12 Investigate per-for-mance on dif-fer-ent datasets:
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 118
+ []
+
+[106]) [107] (Chapters/apA.tex) (Chapters/apB.tex) (MainFile.bbl
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¡ in font cmss12!
-
-[108
+ [108
 
 
 ]
@@ -1914,7 +1927,8 @@ Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
- [110]
+
+[110]
 Missing character: There is no â in font cmssi12!
 Missing character: There is no € in font cmssi12!
 Missing character: There is no ™ in font cmssi12!
@@ -1961,8 +1975,7 @@ Missing character: There is no “ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
-
-[120] [121]
+ [120] [121]
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no ™ in font cmss12!
@@ -1975,13 +1988,14 @@ Missing character: There is no ™ in font cmss12!
 Missing character: There is no â in font cmss12!
 Missing character: There is no € in font cmss12!
 Missing character: There is no “ in font cmss12!
-) (Chapters/bio.tex)
+)
+(Chapters/bio.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
  [122]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
- (MainFile.aux
-(Chapters/acknowledgements.aux) (Chapters/TOC.aux) (Chapters/abbreviations.aux)
-(Chapters/symbols.aux) (Chapters/abstract.aux) (Chapters/ch_Introduction.aux)
+ (MainFile.aux (Chapters/acknowledgements.aux)
+(Chapters/TOC.aux) (Chapters/abbreviations.aux) (Chapters/symbols.aux)
+(Chapters/abstract.aux) (Chapters/ch_Introduction.aux)
 (Chapters/ch_LitReview.aux) (Chapters/ch_TechApproach.aux)
 (Chapters/ch_ExperimentalDesign.aux) (Chapters/ch_PreliminaryWork.aux)
 (Chapters/ch_FutureTasks.aux))
@@ -1996,10 +2010,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 10250 strings out of 493323
- 169364 string characters out of 3139067
- 257987 words of memory out of 3000000
- 12977 multiletter control sequences out of 15000+200000
+ 10252 strings out of 493323
+ 169378 string characters out of 3139067
+ 254023 words of memory out of 3000000
+ 12978 multiletter control sequences out of 15000+200000
  14233 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,17n,51p,3207b,745s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2024,9 +2038,9 @@ ts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MainFile.pdf (122 pages, 3754181 bytes).
+Output written on MainFile.pdf (122 pages, 3754610 bytes).
 PDF statistics:
- 2325 PDF objects out of 2487 (max. 8388607)
- 534 named destinations out of 1000 (max. 500000)
+ 2327 PDF objects out of 2487 (max. 8388607)
+ 535 named destinations out of 1000 (max. 500000)
  772 words of extra memory for PDF output out of 10000 (max. 10000000)
 
