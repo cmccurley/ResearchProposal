@@ -1,4 +1,4 @@
-\begin{thebibliography}{140}
+\begin{thebibliography}{141}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -24,6 +24,13 @@ Joseph Anderson, Mikhail Belkin, Navin Goyal, Luis Rademacher, and James Voss.
 \newblock The more, the merrier: the blessing of dimensionality for learning
   large gaussian mixtures.
 \newblock \emph{Journal of Machine Learning Research}, 35, 11 2013.
+
+\bibitem[Andrews et~al.(2002)Andrews, Tsochantaridis, and
+  Hofmann]{Andrews2011MISVM}
+Stuart Andrews, Ioannis Tsochantaridis, and Thomas Hofmann.
+\newblock Support vector machines for multiple-instance learning.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  15:\penalty0 561--568, 01 2002.
 
 \bibitem[Asif et~al.(2017)Asif, Abbasi, Munir, Ben-Hur, and ul~Amir
   Afsar~Minhas]{Asif2017LargeMarginMIRanking}

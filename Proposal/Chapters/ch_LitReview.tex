@@ -69,7 +69,7 @@ Two alternative distance-based MIL classifiers are MIGraph and miGraph \citep{Zh
 
 
 \paragraph{Maximum Margin:}
-The concept of weakly-supervised maximum margin learning has been explored under a variety of techniques, the primary being \textit{Support Vector Machines} (SVM) and \textit{Metric Embedding}, which will be discussed in Section \ref{sec:MetricEmedding}.  Andrews et al. proposed two SVM methods under the MIL framework, namely, mi-SVM and MI-SVM, for instance-level and bag-level classification,  respectively \citep{Carbonneau2016MILSurvey,Du2017Thesis,Jiao2017Thesis}.  The goal of a SVM is to train a classifier to maximize the margin between a small subset of training examples (called \textit{support vectors}) and the decision hyper-plane \citep{Murphy2012}.  Both MIL SVM methods follow a similar procedure to EM-DD.  In MI-SVM, each positive bag is represented by a single instance which is considered to be the ``most positive instance" in the bag. Optimization alternates between learning a decision boundary with SVM and selecting the positive bag representatives given the new classifier. In contrast, mi-SVM considers all points in the positive bags while learning the decision boundary.  Every point in the positive bags is provided a positive label.  The instance labels are refined iteratively under the constraint of the standard MIL assumption, that at least one instance from each positive bag must lie on the positive side of the decision hyper-plane \citep{Cao2016VehicleDetectionMIL}.  MissSVM is a semi-supervised max-margin approach which considers the instances in positive bags as unlabeled, and enforces a constraint that at least one of them is positive \citep{Zhou2007MissSVM}.  DD-SVM  and \textit{Multiple-Instance Learning via Embedded Instance Selection} (MILES) are both embedding-space methods which convert MIL into a standard supervised problem \citep{Chen2006MILES}.  DD-SVM trains an SVM in a feature space constructed from a mapping defined by the local maximizers and minimizers of the DD function.  MILES maps each bag into a feature space defined by the instances in the training bags via an instance similarity measure. A 1-norm SVM is applied to simultaneously select the important features and construct classifiers \citep{RuizMunoz2015MILBirdsongClassification}. Additionally, Xiao et al. developed an ensemble method in which the base classifier enforces a margin between optimal hyper-spheres while enclosing at least one instance from each positive bag inside the ball \citep{Xiao2017SphereMIL}. 
+The concept of weakly-supervised maximum margin learning has been explored under a variety of techniques, the primary being \textit{Support Vector Machines} (SVM) and \textit{Metric Embedding}, which will be discussed in Section \ref{sec:MetricEmedding}.  Andrews et al. proposed two SVM methods under the MIL framework, namely, mi-SVM and MI-SVM, for instance-level and bag-level classification,  respectively \citep{Andrews2011MISVM,Carbonneau2016MILSurvey,Du2017Thesis,Jiao2017Thesis}.  The goal of a SVM is to train a classifier to maximize the margin between a small subset of training examples (called \textit{support vectors}) and the decision hyper-plane \citep{Murphy2012}.  Both MIL SVM methods follow a similar procedure to EM-DD.  In MI-SVM, each positive bag is represented by a single instance which is considered to be the ``most positive instance" in the bag. Optimization alternates between learning a decision boundary with SVM and selecting the positive bag representatives given the new classifier. In contrast, mi-SVM considers all points in the positive bags while learning the decision boundary.  Every point in the positive bags is provided a positive label.  The instance labels are refined iteratively under the constraint of the standard MIL assumption, that at least one instance from each positive bag must lie on the positive side of the decision hyper-plane \citep{Cao2016VehicleDetectionMIL}.  MissSVM is a semi-supervised max-margin approach which considers the instances in positive bags as unlabeled, and enforces a constraint that at least one of them is positive \citep{Zhou2007MissSVM}.  DD-SVM  and \textit{Multiple-Instance Learning via Embedded Instance Selection} (MILES) are both embedding-space methods which convert MIL into a standard supervised problem \citep{Chen2006MILES}.  DD-SVM trains an SVM in a feature space constructed from a mapping defined by the local maximizers and minimizers of the DD function.  MILES maps each bag into a feature space defined by the instances in the training bags via an instance similarity measure. A 1-norm SVM is applied to simultaneously select the important features and construct classifiers \citep{RuizMunoz2015MILBirdsongClassification}. Additionally, Xiao et al. developed an ensemble method in which the base classifier enforces a margin between optimal hyper-spheres while enclosing at least one instance from each positive bag inside the ball \citep{Xiao2017SphereMIL}. 
 
 
 \paragraph{Neural Networks and Deep Learning:} \label{sec:mil_deep_learning}
@@ -206,11 +206,63 @@ This dissertation focuses on investigating the use of manifold learning to incre
 \subsection{Definition and General Notation}
 Most studies perform classification or regression after applying unsupervised dimensionality reduction.  However, it has been shown that there are advantages of learning the low-dimensional representations and classification/regression models simultaneously \citep{Chao2019RecentAdvancesSupervisedDimRed,Rish2008SupDimRedGLM}.  Considering classification as the main goal of dimensionality reduction, this section provides a summary of the current literature in the area. \newline
 
-Given a data matrix $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]\in \mathbb{R}^{D \times N}$ where $N$ is the total number of samples and $D$ is the dimensionality of the input feature space, general dimensionality reduction seeks to find a representation $\bm{Z} \in \mathbb{R}^{d \times N}$ with $d \ll D$ that enhances the between-class separation while preserving the intrinsic geometric structure of the data\citep{Vural2018StudySupervisedManifoldLearning}.  In other words, it is assumed that the data lie on a smooth manifold $\mathcal{X}$, which is the image of some parameter domain $\mathcal{Z} \subset \mathbb{R}^{d}$ under a smooth mapping $\Psi : \mathcal{Z} \rightarrow \mathbb{R}^{D}$.  The goal of manifold learning is to discover an inverse mapping to the low-dimensional pre-image coordinates $\bm{z}_n \in \bm{z}$ corresponding to points $\bm{x}_n \in \bm{X}$.  The data matrices $\bm{X} = [\bm{x}^{T}_{1}, \dots, \bm{x}^{T}_{N}]$ and $\bm{Z} = [\bm{z}^{T}_{1}, \dots, \bm{z}^{T}_{N}]$ are of size $N \times D$ and $N \times d$, respectively.  Since these low-dimensional data representations are unknown, they are often referred to as \textit{latent} vectors and the span in $\mathbb{R}^d$ is sometimes called the \textit{latent feature space} or \textit{latent space} for brevity \citep{Murphy2012}. The primary difference between traditional, unsupervised manifold learning and supervised approaches is that, in supervised manifold learning, data matrix $\bm{X} $ is accompanied with a corresponding label vector $\bm{l} = [l_1, \dots, l_N]$ indicating the corresponding class labels of each sample in $\bm{X}$. \newline
+Given a data matrix $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]\in \mathbb{R}^{N \times D}$ where $N$ is the total number of samples and $D$ is the dimensionality of the input feature space, general dimensionality reduction seeks to find a representation $\bm{Z} \in \mathbb{R}^{N \times d}$ with $d \ll D$ that enhances the between-class separation while preserving the intrinsic geometric structure of the data\citep{Vural2018StudySupervisedManifoldLearning}.  In other words, it is assumed that the data lie on a smooth manifold $\mathcal{X}$, which is the image of some parameter domain $\mathcal{Z} \subset \mathbb{R}^{d}$ under a smooth mapping $\Psi : \mathcal{Z} \rightarrow \mathbb{R}^{D}$.  The goal of manifold learning is to discover an inverse mapping to the low-dimensional pre-image coordinates $\bm{z}_n \in \bm{z}$ corresponding to points $\bm{x}_n \in \bm{X}$.  The data matrices $\bm{X} = [\bm{x}^{T}_{1}, \dots, \bm{x}^{T}_{N}]$ and $\bm{Z} = [\bm{z}^{T}_{1}, \dots, \bm{z}^{T}_{N}]$ are of size $N \times D$ and $N \times d$, respectively.  Since these low-dimensional data representations are unknown, they are often referred to as \textit{latent} vectors and the span in $\mathbb{R}^d$ is sometimes called the \textit{latent feature space} or \textit{latent space} for brevity \citep{Murphy2012}. The primary difference between traditional, unsupervised manifold learning and supervised approaches is that, in supervised manifold learning, data matrix $\bm{X} $ is accompanied with a corresponding label vector $\bm{l} = [l_1, \dots, l_N]$ indicating the corresponding class labels of each sample in $\bm{X}$. \newline
 
 Manifold learning methods can be subdivided into a wide taxonomy of approaches, with \textit{linear} and \textit{nonlinear} at the root. Nonlinear approaches can be further divided into purely global methods and approaches that capture global structure solely from local information.  We begin with a review of popular linear manifold learning techniques before moving into the realm of nonlinear approaches. Base, unsupervised methods are reviewed along with corresponding supervised and semi-supervised adaptations. 
 
 \subsection{Comparison Table of Manifold Learning Methods}
+
+\begin{longtable}{ |p{2cm}|p{6cm}| } 
+	\caption{Overview of unsupervised manifold learning methods and their properties.}
+	\label{tab:Manifold_Learning_Comparison_Table}\\
+	\hline
+	\multicolumn{2}{|c|}{\textbf{Overview of Unsupervised Manifold Learning}} \\
+	\hline
+	\textbf{Method} & \textbf{Strategy}\\
+	\hline
+	PCA   & ~  \\
+	\hline
+	MDS  & ~   \\
+	\hline
+	LDA  & ~   \\
+	\hline
+	NMF   & ~  \\
+	\hline
+	LPP  & ~   \\
+	\hline
+	Isomap  & ~   \\
+	\hline
+	Sammon Mapping  & ~  \\
+	\hline
+	LLE  & ~   \\
+	\hline
+	Laplacian Eigenmaps  & ~   \\
+	\hline
+	Hessian Eigenmaps  & ~  \\
+	\hline
+	MVU  & ~   \\
+	\hline
+	FA  & ~   \\
+	\hline
+	PPCA  & ~   \\
+	\hline
+	GTM  & ~  \\
+	\hline
+	SOM  & ~   \\
+	\hline
+	GNG  & ~   \\
+	\hline
+	Elastic Nets  & ~   \\
+	\hline
+	Autoencoders  & ~   \\
+	\hline
+	SNE  & ~   \\
+	\hline
+	UMAP  & ~   \\
+	\hline
+	NCA  & ~   \\
+	\hline
+\end{longtable}
 \subsection{Geneology Image of Manifold Learning Methods from van der Maaten 2009, page  2}
 
 \subsection{Linear Manifold Learning}
@@ -891,9 +943,13 @@ Table \ref{tab:MIDRComparison} shows a comparison between the multiple instance 
 	\textbf{Method} & \textbf{Summary} & \textbf{Reduction Method} & \textbf{Classification Level}\\
 	\hline
 	MIDR   & Finds a sparse, orthogonal linear projection matrix optimized for bag-level logistic regression   &Linear, orthogonal projection  &  bag-level\\
+	\hline
 	MidLABS&  Finds linear projection vector using LDA defined from bag-similarity kernel  & LDA   & bag-level\\
+	\hline
 	MIDA &Learns linear projection vector using LDA defined from bag representative vectors & LDA &  instance-level\\
+	\hline
 	CLFDA  &Learns linear projection matrix using local discriminant analysis defined from instance scatter.  Instance labels are provided as bag labels and refined. & LFDA &  instance-level\\
+	\hline
 	MI-FEAR &  Incrementally leaves out feature and evaluates performance loss to provide feature score  & Feature selection & instance-level\\
 	\hline
 \end{longtable}

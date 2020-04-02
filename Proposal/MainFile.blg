@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: MainFile.aux
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: MainFile.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: Chapters/acknowledgements.aux
 A level-1 auxiliary file: Chapters/TOC.aux
@@ -35,14 +37,14 @@ I'm skipping whatever remains of this entry
 I'm skipping whatever remains of this entry
 Warning--entry type for "Tu2019MILGraphNN" isn't style-file defined
 --line 1826 of file BibFiles/references.bib
-I was expecting a `,' or a `}'---line 2845 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 2855 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 3317 of file BibFiles/references.bib
-I was expecting a `,' or a `}'---line 3381 of file BibFiles/references.bib
+--line 3327 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 3391 of file BibFiles/references.bib
  :  
  :  year = {2001}
 (Error may have been on previous line)
@@ -68,4 +70,45 @@ Warning--empty title in Xu2011MI_Metric_Learning
 Warning--empty booktitle in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
+You've used 141 entries,
+            2773 wiz_defined-function locations,
+            1635 strings with 37922 characters,
+and the built_in function-call counts, 73067 in all, are:
+= -- 6793
+> -- 4195
+< -- 109
++ -- 1406
+- -- 1264
+* -- 5939
+:= -- 11049
+add.period$ -- 580
+call.type$ -- 141
+change.case$ -- 821
+chr.to.int$ -- 140
+cite$ -- 303
+duplicate$ -- 3396
+empty$ -- 5666
+format.name$ -- 1483
+if$ -- 15707
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 124
+newline$ -- 845
+num.names$ -- 586
+pop$ -- 1559
+preamble$ -- 1
+purify$ -- 690
+quote$ -- 0
+skip$ -- 2735
+stack$ -- 0
+substring$ -- 2528
+swap$ -- 686
+text.length$ -- 49
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1531
+warning$ -- 21
+while$ -- 584
+width$ -- 0
+write$ -- 2133
 (There were 6 error messages)
