@@ -1,4 +1,4 @@
-\begin{thebibliography}{141}
+\begin{thebibliography}{142}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -784,6 +784,14 @@ N.~Thorstensen.
   processing}.
 \newblock PhD thesis, Ecole Nationale des Ponts et Chaussees, Paris, France,
   Nov. 2009.
+
+\bibitem[Tipping and Bishop(1999)]{Tipping1999PPCA}
+M.~E. Tipping and C.~Bishop.
+\newblock Probabilistic principal component analysis.
+\newblock \emph{Journal of the Royal Statistical Society, Series B},
+  21\penalty0 (3):\penalty0 611--622, January 1999.
+\newblock URL
+  \url{https://www.microsoft.com/en-us/research/publication/probabilistic-principal-component-analysis/}.
 
 \bibitem[Tsang and Kwok(2007)]{Tsang2007ManifoldRegularization}
 I.~W. Tsang and J.~T. Kwok.

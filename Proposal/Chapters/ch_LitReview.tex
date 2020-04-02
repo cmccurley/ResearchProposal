@@ -210,43 +210,59 @@ Given a data matrix $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]\in \mathbb{R}^{N \time
 
 Manifold learning methods can be subdivided into a wide taxonomy of approaches, with \textit{linear} and \textit{nonlinear} at the root. Nonlinear approaches can be further divided into purely global methods and approaches that capture global structure solely from local information.  We begin with a review of popular linear manifold learning techniques before moving into the realm of nonlinear approaches. Base, unsupervised methods are reviewed along with corresponding supervised and semi-supervised adaptations. 
 
-\subsection{Comparison Table of Manifold Learning Methods}
+\subsection{Overview of Unsupervised Manifold Learning Methods}
 
-\begin{longtable}{ |p{2cm}|p{6cm}| } 
+\begin{longtable}{ |p{0.3\textwidth}|p{0.6\textwidth}| } 
 	\caption{Overview of unsupervised manifold learning methods and their properties.}
 	\label{tab:Manifold_Learning_Comparison_Table}\\
 	\hline
 	\multicolumn{2}{|c|}{\textbf{Overview of Unsupervised Manifold Learning}} \\
 	\hline
+	\multicolumn{2}{|c|}{\textbf{Linear}} \\
+	\hline
 	\textbf{Method} & \textbf{Strategy}\\
 	\hline
-	PCA   & ~  \\
+	PCA   & Preserves variance of data, global structure \\
 	\hline
-	MDS  & ~   \\
+	MDS  & Preserves pairwise distances, global structure  \\
 	\hline
-	LDA  & ~   \\
+	LDA  & Minimizes within-class distance and maximizes between-class distance, global structure  \\
 	\hline
 	NMF   & ~  \\
 	\hline
 	LPP  & ~   \\
 	\hline
-	Isomap  & ~   \\
+	\multicolumn{2}{|c|}{\textbf{Nonlinear}} \\
+	\hline
+	\textbf{Method} & \textbf{Strategy}\\
+	\hline
+	Isomap  & Preserves geodesic distances, global structure   \\
 	\hline
 	Sammon Mapping  & ~  \\
 	\hline
-	LLE  & ~   \\
+	LLE  & Preserves local neighborhoods, local structure   \\
 	\hline
-	Laplacian Eigenmaps  & ~   \\
+	Laplacian Eigenmaps  & Preserves local neighborhoods, local structure   \\
 	\hline
 	Hessian Eigenmaps  & ~  \\
 	\hline
+	Diffusion Maps  & ~  \\
+	\hline
 	MVU  & ~   \\
+	\hline
+	\multicolumn{2}{|c|}{\textbf{Probabilistic}} \\
+	\hline
+	\textbf{Method} & \textbf{Strategy}\\
 	\hline
 	FA  & ~   \\
 	\hline
 	PPCA  & ~   \\
 	\hline
 	GTM  & ~  \\
+	\hline
+	\multicolumn{2}{|c}{\textbf{Neural Networks}} \\
+	\hline
+	\textbf{Method} & \textbf{Strategy}\\
 	\hline
 	SOM  & ~   \\
 	\hline
@@ -263,7 +279,6 @@ Manifold learning methods can be subdivided into a wide taxonomy of approaches, 
 	NCA  & ~   \\
 	\hline
 \end{longtable}
-\subsection{Geneology Image of Manifold Learning Methods from van der Maaten 2009, page  2}
 
 \subsection{Linear Manifold Learning}
 A review of linear manifold learning approaches is provided.  Linear approaches are advantageous over nonlinear because they allow for out-of-sample extensions.  In other words, linear transformation matrices are learned which can be easily applied on data not included in the training set.  However, linear approaches are limited in their abilities to capture irregular data surfaces \citep{Kegl2008PrincipalManifoldsTextbook}.  Principal Component Analysis (PCA), Multi-dimensional Scaling (MDS) and Fisher's Linear Discriminant Analysis (LDA) are reviewed.  General approaches are discussed and supervised as well as nonlinear extensions are elaborated. Special focus is given to (LDA), as it is the only inherently supervised technique out of the included approaches.
@@ -289,16 +304,11 @@ where $\bm{Z}$ is a $N \times d$ matrix with the $\bm{z}_{n}$ in its rows and $|
 \end{align} 
 
 \noindent
-As noted by Murphy \citep{Murphy2012}, the optimal solution is obtained by setting $\hat{\bm{W}} = \bm{U}_{d}$, where $\bm{U}_{d}$ contains the eigenvectors corresponding to the $d$ largest eigenvalues of the mean-subtracted, empirical data covariance matrix, $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}(\bm{x}_{n}-\hat{\bm{\mu}})(\bm{x}_{n}-\hat{\bm{\mu}})^{T}$, where $\hat{\bm{\mu}}$ is the empirical data mean.  Therefore, the low-dimensional encoding of the data is given by $\bm{z}_n = \hat{\bm{W}}^{T}\bm{x}_n$, which is the orthogonal, linear projection of the data onto the column space spanned by the eigenvectors of the $d$ largest eigenvalues of the empirical data covariance.  Alternatively, 
-
-
-Assumes Gaussian distributions
-Typically, the data is standardized before applying PCA, as it can be misled by directions in which the variance is high simply because of the measurement scale.
+As noted by Murphy \citep{Murphy2012}, the optimal solution is obtained by setting $\hat{\bm{W}} = \bm{U}_{d}$, where $\bm{U}_{d}$ contains the eigenvectors corresponding to the $d$ largest eigenvalues of the mean-subtracted, empirical data covariance matrix, $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}(\bm{x}_{n}-\hat{\bm{\mu}})(\bm{x}_{n}-\hat{\bm{\mu}})^{T}$, where $\hat{\bm{\mu}}$ is the empirical data mean.  Therefore, the low-dimensional encoding of the data is given by $\bm{z}_n = \hat{\bm{W}}^{T}\bm{x}_n$, which is the orthogonal, linear projection of the data onto the column space spanned by the eigenvectors of the $d$ largest eigenvalues of the empirical data covariance.  
 
 The example shown in figure \ref{fig:pca_eg} demonstrates the projection of 2-dimensional data onto the first principal axis.  As can be seen from the figure, the first principal axis corresponds to the direction of maximal variance of the data.  PCA from the viewpoint of variance maximization is often called the \textit{analysis view} of PCA \citep{Murphy2012}.
-
 \begin{center}
-	\begin{figure*}[h]
+	\begin{figure*}[t]
 		\centering
 		\includegraphics[width=0.6\textwidth]{example-image-a}
 		\caption[PCA example.]{Placeholder for PCA projection example.}
@@ -306,10 +316,9 @@ The example shown in figure \ref{fig:pca_eg} demonstrates the projection of 2-di
 	\end{figure*}
 \end{center}
 
+PCA has been successfully applied to a large  number of domains such as face recognition, coin classification and seismic series analysis \citep{VanDerMaaten2009DRReview}. It's success is partially because of its convenience of use.  Embedding out-of-sample points with PCA is simple since the transformation is just a rotation and scaling. However PCA suffers from a few drawbacks.  First, the dimensionality of the covariance matrix is proportional to the dimensionality of the data points.  As a result, the computation of the eigenvectors may be infeasible or untrustworthy (singularity) for high-dimensional data.  Additionally, PCA focuses mainly on preserving large pairwise distances between data samples instead of retaining local relationships, which may be important in certain applications.  PCA also assumes Gaussian distributed data, which is unlikely in real-world applications. Finally, PCA is sensitive to feature magnitude. It is typical to standardized data before applying PCA as it can be misled by directions in which the variance is high simply because of the measurement scale.
 
-PCA has been successfully applied to a large  number of domains such as face recognition, coin classification and seismic series analysis \citep{VanDerMaaten2009DRReview}. However PCA suffers from a few drawbacks.  First, the dimensionality of the covariance matrix is proportional to the dimensionality of the data points.  As a result, the computation of the eigenvectors may be infeasible or untrustworthy (singularity) for high-dimensional data.  Additionally, PCA focuses mainly on preserving large pairwise distances between data samples instead of retaining local relationships, which may be important in certain applications \textbf{SHOW SWISS ROLL EXAMPLE AGAIN?}.
-
-Many extensions and alternative viewpoints have been made to PCA, such as creating a nonlinear version, a supervised version and looking at it as a factor analysis problem \textbf{CITE}.  A few adaptations to PCA are discussed in later sections.
+Many extensions and alternative viewpoints have been made to PCA, including a nonlinear version \citep{Scholkopf1999KPCA}, a supervised version and looking at it as a factor analysis problem \citep{Tipping1999PPCA}.  A few adaptations to PCA are discussed in later sections.
 
 
 
