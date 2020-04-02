@@ -15,33 +15,33 @@
 \BOOKMARK [2][-]{subsection.2.1.5}{2.1.5 Multiple Instance Ranking}{section.2.1}% 15
 \BOOKMARK [1][-]{section.2.2}{2.2 Manifold Learning}{chapter.2}% 16
 \BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Definition and General Notation}{section.2.2}% 17
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Overview of Unsupervised Manifold Learning Methods}{section.2.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Linear Manifold Learning}{section.2.2}% 19
-\BOOKMARK [3][-]{subsubsection.2.2.3.1}{2.2.3.1 Principal Component Analysis \(PCA\)}{subsection.2.2.3}% 20
-\BOOKMARK [3][-]{subsubsection.2.2.3.2}{2.2.3.2 Multi-Dimensional Scaling \(MDS\)}{subsection.2.2.3}% 21
-\BOOKMARK [3][-]{subsubsection.2.2.3.3}{2.2.3.3 Non-negative Matrix Factorization \(NMF\)}{subsection.2.2.3}% 22
-\BOOKMARK [3][-]{subsubsection.2.2.3.4}{2.2.3.4 Fisher's Linear Discriminant Analysis \(LDA\)}{subsection.2.2.3}% 23
-\BOOKMARK [3][-]{subsubsection.2.2.3.5}{2.2.3.5 Locality Preserving Projection \(LPP\)}{subsection.2.2.3}% 24
-\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Nonlinear Manifold Learning}{section.2.2}% 25
-\BOOKMARK [3][-]{subsubsection.2.2.4.1}{2.2.4.1 Kernelization}{subsection.2.2.4}% 26
-\BOOKMARK [3][-]{subsubsection.2.2.4.2}{2.2.4.2 Graph-based Methods}{subsection.2.2.4}% 27
-\BOOKMARK [3][-]{subsubsection.2.2.4.3}{2.2.4.3 General Graph Embedding Framework}{subsection.2.2.4}% 28
-\BOOKMARK [3][-]{subsubsection.2.2.4.4}{2.2.4.4 Isomap}{subsection.2.2.4}% 29
-\BOOKMARK [3][-]{subsubsection.2.2.4.5}{2.2.4.5 Locally Linear Embedding \(LLE\)}{subsection.2.2.4}% 30
-\BOOKMARK [3][-]{subsubsection.2.2.4.6}{2.2.4.6 Laplacian Eigenmaps \(LE\)}{subsection.2.2.4}% 31
-\BOOKMARK [3][-]{subsubsection.2.2.4.7}{2.2.4.7 Hessian Eigenmaps}{subsection.2.2.4}% 32
-\BOOKMARK [3][-]{subsubsection.2.2.4.8}{2.2.4.8 Diffusion Maps}{subsection.2.2.4}% 33
-\BOOKMARK [3][-]{subsubsection.2.2.4.9}{2.2.4.9 Sammon Mapping}{subsection.2.2.4}% 34
-\BOOKMARK [3][-]{subsubsection.2.2.4.10}{2.2.4.10 Maximum Variance Unfolding \(MVU\)}{subsection.2.2.4}% 35
-\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 Latent Variable Models}{section.2.2}% 36
-\BOOKMARK [3][-]{subsubsection.2.2.5.1}{2.2.5.1 General Latent Variable Model \(GLVM\)}{subsection.2.2.5}% 37
-\BOOKMARK [3][-]{subsubsection.2.2.5.2}{2.2.5.2 Generative Topographic Mapping \(GTM\)}{subsection.2.2.5}% 38
-\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Competitive Hebbian Learning}{section.2.2}% 39
-\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Deep Learning}{section.2.2}% 40
-\BOOKMARK [2][-]{subsection.2.2.8}{2.2.8 UMAP}{section.2.2}% 41
-\BOOKMARK [2][-]{subsection.2.2.9}{2.2.9 Stochastic Neighbor Embedding \(SNE and t-SNE\)}{section.2.2}% 42
-\BOOKMARK [2][-]{subsection.2.2.10}{2.2.10 NCA}{section.2.2}% 43
-\BOOKMARK [3][-]{subsubsection.2.2.10.1}{2.2.10.1 M3DNet}{subsection.2.2.10}% 44
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Linear Manifold Learning}{section.2.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.2.2.1}{2.2.2.1 Principal Component Analysis \(PCA\)}{subsection.2.2.2}% 19
+\BOOKMARK [3][-]{subsubsection.2.2.2.2}{2.2.2.2 Multi-Dimensional Scaling \(MDS\)}{subsection.2.2.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.2.3}{2.2.2.3 Non-negative Matrix Factorization \(NMF\)}{subsection.2.2.2}% 21
+\BOOKMARK [3][-]{subsubsection.2.2.2.4}{2.2.2.4 Fisher's Linear Discriminant Analysis \(LDA\)}{subsection.2.2.2}% 22
+\BOOKMARK [3][-]{subsubsection.2.2.2.5}{2.2.2.5 Locality Preserving Projection \(LPP\)}{subsection.2.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Nonlinear Manifold Learning}{section.2.2}% 24
+\BOOKMARK [3][-]{subsubsection.2.2.3.1}{2.2.3.1 Kernelization}{subsection.2.2.3}% 25
+\BOOKMARK [3][-]{subsubsection.2.2.3.2}{2.2.3.2 Graph-based Methods}{subsection.2.2.3}% 26
+\BOOKMARK [3][-]{subsubsection.2.2.3.3}{2.2.3.3 General Graph Embedding Framework}{subsection.2.2.3}% 27
+\BOOKMARK [3][-]{subsubsection.2.2.3.4}{2.2.3.4 Isomap}{subsection.2.2.3}% 28
+\BOOKMARK [3][-]{subsubsection.2.2.3.5}{2.2.3.5 Locally Linear Embedding \(LLE\)}{subsection.2.2.3}% 29
+\BOOKMARK [3][-]{subsubsection.2.2.3.6}{2.2.3.6 Laplacian Eigenmaps \(LE\)}{subsection.2.2.3}% 30
+\BOOKMARK [3][-]{subsubsection.2.2.3.7}{2.2.3.7 Hessian Eigenmaps}{subsection.2.2.3}% 31
+\BOOKMARK [3][-]{subsubsection.2.2.3.8}{2.2.3.8 Diffusion Maps}{subsection.2.2.3}% 32
+\BOOKMARK [3][-]{subsubsection.2.2.3.9}{2.2.3.9 Sammon Mapping}{subsection.2.2.3}% 33
+\BOOKMARK [3][-]{subsubsection.2.2.3.10}{2.2.3.10 Maximum Variance Unfolding \(MVU\)}{subsection.2.2.3}% 34
+\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Latent Variable Models}{section.2.2}% 35
+\BOOKMARK [3][-]{subsubsection.2.2.4.1}{2.2.4.1 General Latent Variable Model \(GLVM\)}{subsection.2.2.4}% 36
+\BOOKMARK [3][-]{subsubsection.2.2.4.2}{2.2.4.2 Generative Topographic Mapping \(GTM\)}{subsection.2.2.4}% 37
+\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 Competitive Hebbian Learning}{section.2.2}% 38
+\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Deep Learning}{section.2.2}% 39
+\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 UMAP}{section.2.2}% 40
+\BOOKMARK [2][-]{subsection.2.2.8}{2.2.8 Stochastic Neighbor Embedding \(SNE and t-SNE\)}{section.2.2}% 41
+\BOOKMARK [2][-]{subsection.2.2.9}{2.2.9 NCA}{section.2.2}% 42
+\BOOKMARK [3][-]{subsubsection.2.2.9.1}{2.2.9.1 M3DNet}{subsection.2.2.9}% 43
+\BOOKMARK [2][-]{subsection.2.2.10}{2.2.10 Overview of Unsupervised Manifold Learning Methods}{section.2.2}% 44
 \BOOKMARK [1][-]{section.2.3}{2.3 Weakly Supervised Manifold Learning and Dimensionality Reduction}{chapter.2}% 45
 \BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 MIDR}{section.2.3}% 46
 \BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 MidLABS}{section.2.3}% 47

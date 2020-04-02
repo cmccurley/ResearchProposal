@@ -210,79 +210,12 @@ Given a data matrix $\bm{X} = [\bm{x}_1, \dots, \bm{x}_N]\in \mathbb{R}^{N \time
 
 Manifold learning methods can be subdivided into a wide taxonomy of approaches, with \textit{linear} and \textit{nonlinear} at the root. Nonlinear approaches can be further divided into purely global methods and approaches that capture global structure solely from local information.  We begin with a review of popular linear manifold learning techniques before moving into the realm of nonlinear approaches. Base, unsupervised methods are reviewed along with corresponding supervised and semi-supervised adaptations. 
 
-\subsection{Overview of Unsupervised Manifold Learning Methods}
-
-\begin{longtable}{ |p{0.3\textwidth}|p{0.6\textwidth}| } 
-	\caption{Overview of unsupervised manifold learning methods and their properties.}
-	\label{tab:Manifold_Learning_Comparison_Table}\\
-	\hline
-	\multicolumn{2}{|c|}{\textbf{Overview of Unsupervised Manifold Learning}} \\
-	\hline
-	\multicolumn{2}{|c|}{\textbf{Linear}} \\
-	\hline
-	\textbf{Method} & \textbf{Strategy}\\
-	\hline
-	PCA   & Preserves variance of data, global structure \\
-	\hline
-	MDS  & Preserves pairwise distances, global structure  \\
-	\hline
-	LDA  & Minimizes within-class distance and maximizes between-class distance, global structure  \\
-	\hline
-	NMF   & ~  \\
-	\hline
-	LPP  & ~   \\
-	\hline
-	\multicolumn{2}{|c|}{\textbf{Nonlinear}} \\
-	\hline
-	\textbf{Method} & \textbf{Strategy}\\
-	\hline
-	Isomap  & Preserves geodesic distances, global structure   \\
-	\hline
-	Sammon Mapping  & ~  \\
-	\hline
-	LLE  & Preserves local neighborhoods, local structure   \\
-	\hline
-	Laplacian Eigenmaps  & Preserves local neighborhoods, local structure   \\
-	\hline
-	Hessian Eigenmaps  & ~  \\
-	\hline
-	Diffusion Maps  & ~  \\
-	\hline
-	MVU  & ~   \\
-	\hline
-	\multicolumn{2}{|c|}{\textbf{Probabilistic}} \\
-	\hline
-	\textbf{Method} & \textbf{Strategy}\\
-	\hline
-	FA  & ~   \\
-	\hline
-	PPCA  & ~   \\
-	\hline
-	GTM  & ~  \\
-	\hline
-	\multicolumn{2}{|c}{\textbf{Neural Networks}} \\
-	\hline
-	\textbf{Method} & \textbf{Strategy}\\
-	\hline
-	SOM  & ~   \\
-	\hline
-	GNG  & ~   \\
-	\hline
-	Elastic Nets  & ~   \\
-	\hline
-	Autoencoders  & ~   \\
-	\hline
-	SNE  & ~   \\
-	\hline
-	UMAP  & ~   \\
-	\hline
-	NCA  & ~   \\
-	\hline
-\end{longtable}
-
 \subsection{Linear Manifold Learning}
 A review of linear manifold learning approaches is provided.  Linear approaches are advantageous over nonlinear because they allow for out-of-sample extensions.  In other words, linear transformation matrices are learned which can be easily applied on data not included in the training set.  However, linear approaches are limited in their abilities to capture irregular data surfaces \citep{Kegl2008PrincipalManifoldsTextbook}.  Principal Component Analysis (PCA), Multi-dimensional Scaling (MDS) and Fisher's Linear Discriminant Analysis (LDA) are reviewed.  General approaches are discussed and supervised as well as nonlinear extensions are elaborated. Special focus is given to (LDA), as it is the only inherently supervised technique out of the included approaches.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PCA  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Principal Component Analysis (PCA)} \label{sec:PCA}
 
 \paragraph{Unsupervised PCA}
@@ -321,8 +254,9 @@ PCA has been successfully applied to a large  number of domains such as face rec
 Many extensions and alternative viewpoints have been made to PCA, including a nonlinear version \citep{Scholkopf1999KPCA}, a supervised version and looking at it as a factor analysis problem \citep{Tipping1999PPCA}.  A few adaptations to PCA are discussed in later sections.
 
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  MDS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Multi-Dimensional Scaling (MDS)} 
 
 \paragraph{Unsupervised MDS} \label{sec:MDS}
@@ -382,12 +316,19 @@ This objective has two terms.  The first is the traditional metric MDS \textit{s
 
 A least square regression was applied to estimate the embedding function for out-of-sample  test points.  SMDS was successfully applied to tasks in data visualization, bipartite ranking and classification of prostate data and USPS handwritten digits.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  NMF  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Non-negative Matrix Factorization (NMF)}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LDA  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Fisher's Linear Discriminant Analysis (LDA)} \label{sec:LDA}
 
 \paragraph{Classical LDA}
-\textit{Linear Discriminant Analysis} (LDA) is a popular method for supervised, linear dimensionality reduction.  LDA currently forms the basis for Multiple Instance Learning dimensionality reduction methods exhibited in the literature \citep{Sun2010MIDR,Chai2014MIDA,Zhu2018MIDRSparsity,Xu2011MI_Metric_Learning}. Whereas PCA tries to project data into a space which maximizes variance, LDA considers class label information and tries to find a transformation which both maximizes between-class (inter-class) dissimilarity and minimizes between-class (intra-class) compactness \citep{Yan2007GeneralGraphEmbeddingFramework,Chao2019RecentAdvancesSupervisedDimRed, Sun2010MIDR, Murphy2012}.   This is done by maximizing the ratio between the inter-class $\bm{S}_{b}$ and intra-class $\bm{S}_{w}$ scatter matrices, defined as:
+\textit{Linear Discriminant Analysis} (LDA) is a popular method for supervised, linear dimensionality reduction.  LDA currently forms the basis for Multiple Instance Learning dimensionality reduction methods exhibited in the literature \citep{Sun2010MIDR,Chai2014MIDA,Zhu2018MIDRSparsity,Xu2011MI_Metric_Learning}. Whereas PCA tries to project data into a space which maximizes variance, LDA considers class label information and tries to find a transformation which both maximizes between-class (inter-class) dissimilarity and minimizes within-class (intra-class) scatter \citep{Yan2007GeneralGraphEmbeddingFramework,Chao2019RecentAdvancesSupervisedDimRed, Sun2010MIDR, Murphy2012}.   This is done by maximizing the ratio between the inter-class $\bm{S}_{b}$ and intra-class $\bm{S}_{w}$ scatter matrices, defined as:
 \begin{align}
 	\bm{S}_{w} = \sum_{k=1}^{K}\bm{S}_{k}
 \end{align}
@@ -422,8 +363,11 @@ where $\hat{\bm{\mu}_{1}}$ and $\hat{\bm{\mu}_{2}}$ are the empirical means for 
 	\end{figure*}
 \end{center}
 
-Although LDA is the basis for large number of discriminative dimensionality reduction approaches, it does not guarantee class separation in the embedding space.  For example, LDA projects data into a space of at most $(K-1)$ dimensions, however, more features may be necessary for adequate class discrimination.  Additionally, LDA is a parametric method which assumes unimodal Gaussian likelihoods.  This implies that it may not be able to preserve complex data structure.  Finally, LDA will fail if the discriminatory information is contained in the variance of the data instead of the mean.  Despite these pitfalls, LDA  has been successfully applied to object detection and recognition tasks \citep{Wang2016OrthogonalLDA}  Many variations of LDA have been developed, such as Non-parametric LDA \citep{Fukunaga1983NonparametricLDA}, Orthonormal LDA \citep{Wang2016OrthogonalLDA}, Generalized LDA \citep{Baudat2000GeneralizedDiscriminantAnalysis} and Multilayer Perceptrons \citep{Webb1990MLPLDA}.  Additionally, LDA serves as the foundation for all of the Multiple Instance Learning dimensionality reduction approaches in the current literature \citep{Sun2010MIDR,Chai2014MIDA,Zhu2018MIDRSparsity}.
+Although LDA is the basis for large number of discriminative dimensionality reduction approaches, it does not guarantee class separation in the embedding space.  For example, LDA projects data into a space of at most $(K-1)$ dimensions, however, more features may be necessary for adequate class discrimination.  Additionally, LDA is a parametric method which assumes unimodal Gaussian likelihoods.  This implies that it may not be able to preserve complex data structure.  Finally, LDA will fail if the discriminatory information is contained in the variance of the data instead of the mean.  Despite these pitfalls, LDA  has been successfully applied to object detection and recognition tasks \citep{Wang2016OrthogonalLDA}  Many variations of LDA have been developed, such as Non-parametric LDA \citep{Fukunaga1983NonparametricLDA}, Orthonormal LDA \citep{Wang2016OrthogonalLDA}, Generalized LDA \citep{Baudat2000GeneralizedDiscriminantAnalysis} and Multilayer Perceptrons \citep{Webb1990MLPLDA}.  Additionally, LDA serves as the foundation for many of the Multiple Instance Learning dimensionality reduction approaches in the current literature \citep{Sun2010MIDR,Chai2014MIDA,Zhu2018MIDRSparsity}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LPP  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Locality Preserving Projection (LPP)}
 
 
@@ -441,6 +385,10 @@ Linear methods such as PCA and MDS are convenient for projecting out-of-sample t
 	\end{figure*}
 \end{center}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Kernels  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Kernelization}
 Although each of the manifold learning techniques previously discussed are inherently linear, nonlinear adaptations have been made.  One easily extendable approach is to utilize kernel functions as means to provide nonlinearity in the embeddings. 
 
@@ -480,17 +428,101 @@ As derived by Murphy and Liu et al. \citep{Murphy2012,Liu2010KernelAdaptiveFilte
 meaning that the entries of the kernel matrix can be defined by the inner product of some feature vectors that are implicitly defined by the eigenvectors $\bm{U}$.  If the kernel is Mercer, then there exists a function $\phi$ which maps $\bm{x} \in \mathcal{X}$ to $\mathbb{R}^{D}$ such that Equation \ref{eq:kernel_inner_product} holds.  Additionally, $\phi$ depends on the eigenfunctions of $\kappa$, meaning that $D$ is a potentially infinite dimensional space.
 Additionally, instead of representing feature vectors in terms of kernels $\phi(\bm{x}) = [\kappa(\bm{x},\bm{x}_{1}), \dots, \kappa(\bm{x},\bm{x}_{N})]$, algorithms can instead work with the input feature vectors $\bm{x}$ by replacing all inner products $<\bm{x},\bm{x}'>$ with a call to the kernel function $\kappa(\bm{x},\bm{x}')$.  This is called the \textit{kernel trick}, and it turns out that many algorithms can be kernelized in this way.
 
-Kernel functions play an important role in the dimensionality reduction literature for both applying nonlinearity to inherently linear problems and in defining similarity measures for graph-based manifold learning methods.  The kernelization of three traditionally linear manifold learning methods, namely: PCA, MDS and LDA, is briefly described in the following.
+Kernel functions play an important role in the dimensionality reduction literature for both applying nonlinearity to inherently linear problems and in defining similarity measures for graph-based manifold learning methods.  Specifically, nonlinear adaptations of the inherently-linear PCA \citep{Scholkopf1999KPCA}, MDS \citep{Webb2002KMDS} and LDA \citep{Ghojogh2019KDATutorial} algorithms have been formulated. The kernelization of PCA is briefly described in the following. 
 
 \paragraph{Kernel PCA}
-Section \ref{sec:PCA} showed how PCA could be used to compute linear low-dimensional embeddings of data.  This process involved finding the eigenvectors of the empirical data covariance matrix $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}\hat{\bm{x}}_{n}\hat{\bm{x}}_{n}^{T} = \frac{1}{N}\hat{\bm{X}}^{T}\hat{\bm{X}}$, where $\hat{\bm{x}}_{n} = \bm{x}_{n} - \hat{\bm{\mu}}$ is the mean subtracted feature vector.  However, PCA can also be computed by finding the eigenvectors of the inner product matrix $\bm{X}\bm{X}^{T}$ \citep{Murphy2012,Wang2014KPCAReview}.  This allows the production of nonlinear embeddings by taking advantage of the kernel trick.  This approach is known as Kernel PCA \citep{Scholkopf1999KPCA}. 
+Section \ref{sec:PCA} showed how PCA could be used to compute linear low-dimensional embeddings of data.  This process involved finding the eigenvectors of the empirical data covariance matrix $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}\hat{\bm{x}}_{n}\hat{\bm{x}}_{n}^{T} = \frac{1}{N}\hat{\bm{X}}^{T}\hat{\bm{X}}$, where $\hat{\bm{x}}_{n} = \bm{x}_{n} - \hat{\bm{\mu}}$ is the mean subtracted feature vector.  However, PCA can also be computed by finding the eigenvectors of the inner product matrix $\bm{X}\bm{X}^{T}$ \citep{Murphy2012,Wang2014KPCAReview}.  This interpretation allows the production of nonlinear embeddings by taking advantage of the kernel trick.  This approach is known as \textit{Kernel PCA} (KPCA) \citep{Scholkopf1999KPCA}.  Assuming the data is mapped to a new feature space in $\mathbb{R}^{M}$ by a nonlinear transformation $\phi(\bm{x})$, PCA could be performed in the new feature space.  However, this computation can be extremely costly and inefficient.  Instead, kernel methods can be used to simply the computation.  Following the derivation defined in \citep{Wang2014KPCAReview}, first assume that the data in the new feature space has zero mean:
+\begin{align}
+	\frac{1}{N} \sum_{n=1}^{N}\phi(\bm{x}_{n}) = 0	
+\end{align}
 
-\paragraph{Kernel MDS}
-\citep{Webb2002KMDS}
+\noindent
+The covariance matrix of the projected features is a $M \times M$ matrix 
+\begin{align} 
+	\label{eq:kernel_covariance}
+	\bm{S}_{\phi} =  \sum_{n=1}^{N}\phi(\bm{x}_{n})\phi(\bm{x}_{n})^{T}
+\end{align}
+\noindent
+The eigenvectors $\bm{V}$ and eigenvalues $\lambda$ for $\bm{S}_{\phi}$ satisfy
+\begin{align} 
+	\label{eq:kernel_eigenvectors}
+	\bm{S}_{\phi}\bm{v}_{k} = \lambda_{k} \bm{v}_{k}, \quad \forall k = 1, \dots, M
+\end{align}
+\noindent
+From Equations \ref{eq:kernel_covariance} and \ref{eq:kernel_eigenvectors}, we have 
+\begin{align}
+	\label{eq:kernel_equivalent_system}
+	\frac{1}{N} \sum_{n=1}^{N}\phi(\bm{x}_{n})\phi(\bm{x}_{n})^{T}\bm{v}_{k} = \lambda_{k} \bm{v}_{k}
+\end{align}
+\noindent
+which can be re-written as
+\begin{align}
+	\label{eq:kernel_eigenvectors_and_weights}
+	\bm{v}_{k} = \sum_{n=1}^{N}\alpha_{kn}\phi(\bm{x}_{n})
+\end{align}
+\noindent
+Substituting Equation \ref{eq:kernel_eigenvectors_and_weights} into Equation \ref{eq:kernel_equivalent_system}, gives 
+\begin{align}
+	\frac{1}{N} \sum_{n=1}^{N}\phi(\bm{x}_{n})\phi(\bm{x}_{n})^{T}\sum_{n=1}^{N}\alpha_{kn}\phi(\bm{x}_{n}) = \lambda_{k} \sum_{n=1}^{N}\alpha_{kn}\phi(\bm{x}_{n})
+\end{align}
+\noindent
+A $N \times N$ matrix $\bm{K}$ can be defined by 
+\begin{align}
+	\bm{K}_{mn} = \kappa(\bm{x}_{m},\bm{x}_{n}) = \phi(\bm{x}_{m})^{T}\phi(\bm{x}_{n})
+\end{align}
+\noindent
+which simplifies the problem to 
+\begin{align}
+	\bm{K}^{2}\bm{\alpha}_{k} = N \lambda_{k}\bm{K} \bm{\alpha}_{k}
+\end{align}
+\noindent
+where $\bm{\alpha}_{k}$ is a column vector with entries $\alpha_{k1}, \dots, \alpha_{kN}$.  Each $\bm{\alpha}_{k}$ can be found by solving the eigenvalue problem 
+\begin{align}
+	\bm{K}\bm{\alpha}_{k} = N \lambda_{k}\bm{\alpha}_{k}
+\end{align}
+\noindent
+Then the projection of a test point $\bm{x}$ onto the $k^{th}$ principal component can be found by
+\begin{align}
+	z_{k}(\bm{x}) = \phi(\bm{x})^{T}\bm{v}_{k} = \sum_{n=1}^{N} \alpha_{kn}\kappa(\bm{x}_{n},\bm{x})
+\end{align}
+\noindent
+This formulation assumes that the projected data has zero mean.  However, this is not generally the case and the mean cannot simply be subtracted in the projected space \citep{Murphy2012}.  Therefore, KPCA can be performed on the centered Gram matrix, defined by
+\begin{align}
+	\tilde{\bm{K}} = \bm{H}\bm{K}\bm{H}
+\end{align}
+\noindent
+where
+\begin{align}
+	\bm{H}= \mathbb{I}_{N} - \frac{1}{N}\bm{e}\bm{e}^{T}
+\end{align}
+\noindent
+is the $N \times N$ centering matrix.  Pseudo-code for KPCA is given in Algorithm \ref{alg:KPCA}.
 
-\paragraph{Kernel FDA (KDA)}
-\citep{Ghojogh2019KDATutorial}
 
+\begin{algorithm}[h!]
+	\caption{KPCA}
+	\label{alg:KPCA}
+	\begin{algorithmic}[1]
+		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\bm{L} = \{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$, evaluation metric $\mathcal{L}$, learning algorithm $\mathcal{A}$, dimensionality of reduced-dimensional space $d$}
+		\Ensure {Embedding coordinates $\bm{Z} \in \mathbb{R}^{N \times d}$}
+		\State {$\bm{X}, \bm{Y}^{\gamma} \gets $ supervised dataset of bag-labeled instances using $(\bm{B}, \bm{L})$}
+		\State {$V \gets $ [ ]}
+		\For {feature $\theta_{i}$ in feature set $\Theta$}   
+		\State {$\bm{X}^{\theta} \gets \bm{X}$ with all features, excluding $\theta_{i}$}
+		\State {$h_{\theta} \gets $ output of $\mathcal{A}$ when trained on input $(\bm{X}^{\theta}, \bm{Y}^{\gamma})$}
+		\State {$V[i] \gets$ performance of $h_{\theta}$ on input $(\bm{X}^{\theta}, \bm{Y}^{\gamma})$ according to $\mathcal{L}, \theta_{i}$}
+		\EndFor             
+		\State {$V \gets$ $\textsc{SortDecreasing}(V)$}
+	\end{algorithmic}
+\end{algorithm}
+\noindent
+
+Whereas linear PCA is limited to $d<D$ components, KPCA can use up to $N$ components.  Using a nonlinear feature embedding function along with the kernel trick provides for an elegant solution for capturing global nonlinear data structure.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Graphs  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Graph-based Methods}
 Nonlinear dimensionality reduction methods typically rely on the use of computational graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  \textit{Spectral graph theory} focuses on constructing, analyzing and manipulating graphs.  It has proved useful for object representation, graph visualization, spectral clustering, dimensionality reduction and numerous other applications in chemistry, physics, signal processing and computer science \citep{Shuman2013SignalProcessingGraphs, Bengoetxea2002ThesisGraphMatching}.   An overview of computational graphs as well as prominent methods for graph construction in manifold learning are presented. Additionally, geodesic distance approximation from pairwise distances is reviewed.
 
@@ -534,6 +566,10 @@ The ultimate goal of manifold learning is to uncover an underlying low-dimension
 
 \subsubsection{General Graph Embedding Framework}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ISOMAP  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Isomap} \label{sec:Isomap}
 \paragraph{Traditional Isomap}
 While MDS has proven to be successful in a variety of applications, it suffers from the fact that is solely aims to retain pairwise Euclidean distances and does not consider the distributions of neighboring samples.  This implies that MDS is not able to capture the geometry of high-dimensional data which lies on or near to a curved manifold, such as the Swiss roll dataset \citep{VanDerMaaten2009DRReview,Chao2019RecentAdvancesSupervisedDimRed}. Isometric Feature Mapping (Isomap) \citep{Tenenbaum2000Isomap} is a technique which resolves this problem by attempting to preserve pairwise geodesic distances between datapoints.  Isomap can be considered as a generalization of classical MDS in which the pairwise distance matrix is replaced by a matrix of pairwise geodesic distances approximated by distances in the graph \citep{Thorstensen2009ManifoldThesis}.  The classic, unsupervised algorithm consists of a few steps:
@@ -564,8 +600,15 @@ where $\mathcal{D}(\bm{x}_{m},\bm{x}_{n})$ denotes the distance measure between 
 
 Li and Guo proposed Supervised Isomap with Explicit mapping (SE-Isomap) in \citep{Li2006SupervisedIsomap}.  SE-Isomap enforces discriminability on the matrix of geodesic distances, as compared to the Euclidean distance matrix used in the aforementioned approaches, to learn an explicit mapping to the low-dimensional embedding space.  Finally, Zhang et al. \citep{Zhang2018IsomapMultiManifold} developed a semi-supervised Isomap to utilize both labeled and unlabeled data points in training.  This method aims at minimizing pairwise distances of within-class samples in the same manifold while maximizing the distances over different manifolds.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LLE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Locally Linear Embedding (LLE)}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Laplacian Eigenmaps (LE)} \label{sec:Laplacian_Eigenmaps}
 \paragraph{Classical LE}
 Similar to LLE, Laplacian Eigenmaps, or \textit{Spectral Embedding}, is a nonlinear dimensionality reduction technique which aims to preserve local structure of data \citep{Raducanu2012SupervisedNonlinearDimReduction,VanDerMaaten2009DRReview}.  Using \textit{spectral graph theory}, LE computes low-dimensional representations of data in which the dissimilarities between datapoints and their neighbors (according to an affinity measure) are minimized.  The name \textit{Laplacian Eigenmaps} is derived by the use of Laplacian regularization in the optimization procedure \citep{Thorstensen2009ManifoldThesis}. Given a set of $N$ samples $\bm{X} = \{\bm{x}_n\}^{N}_{n=1} \subset \mathbb{R}^{D}$, the first step of LE is to define a \textit{neighborhood graph on the samples}.  This graph, also called an \textit{affinity} or \textit{adjacency} matrix can be constructed in a variety of ways, such as $K$-nearest neighbor, $\epsilon$-ball, full mesh, or by weighting each edge $\bm{x}_m \sim \bm{x}_n$ by a symmetric affinity function $W_{mn} = K(\bm{x}_m;\bm{x}_n)$, typically a radial basis or heat kernel:
@@ -669,6 +712,9 @@ Apart from S-LE, other methods have been explored to integrate label information
 
 The special feature exhibited by all Laplacian Eigenmap methods is the use of laplacian regularization, which enforces properties such as smoothness and provides a level of resistance toward the influences of outliers.  This useful feature has been applied in a variety of supervised and semi-supervised tasks, such as hyperspectral and synthetic aperture radar remote sensing classification \citep{Ratle2010ManRegHSI, Ren2017ManRegSAR}, classification of synthetic data \citep{Tsang2007ManifoldRegularization}, zero-shot learning \citep{Meng2018ManRegZeroShot} and reinforcement learning \citep{Li2015ManRegReinforcementLearning}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Hessian LE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Hessian Eigenmaps}
 
 \subsubsection{Diffusion Maps}
@@ -745,6 +791,81 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 
 \subsubsection{M3DNet}
 
+\subsection{Overview of Unsupervised Manifold Learning Methods}
+
+\begin{longtable}{ |p{0.3\textwidth}|p{0.6\textwidth}| } 
+	\caption{Overview of unsupervised manifold learning methods and their properties.}
+	\label{tab:Manifold_Learning_Comparison_Table}\\
+	\hline
+	\multicolumn{2}{|c|}{\textbf{Overview of Unsupervised Manifold Learning}} \\
+	\hline
+	\multicolumn{2}{|c|}{\textbf{Linear}} \\
+	\hline
+	\textbf{Method} & \textbf{Strategy}\\
+	\hline
+	PCA   & Preserves variance of data, global structure \\
+	\hline
+	MDS  & Preserves pairwise distances, global structure  \\
+	\hline
+	LDA  & Minimizes within-class distance and maximizes between-class distance, global structure  \\
+	\hline
+	NMF   & ~  \\
+	\hline
+	LPP  & ~   \\
+	\hline
+	\multicolumn{2}{|c|}{\textbf{Nonlinear}} \\
+	\hline
+	\textbf{Method} & \textbf{Strategy}\\
+	\hline
+	Isomap  & Preserves geodesic distances, global structure   \\
+	\hline
+	Sammon Mapping  & ~  \\
+	\hline
+	LLE  & Preserves local neighborhoods, local structure   \\
+	\hline
+	Laplacian Eigenmaps  & Preserves local neighborhoods, local structure   \\
+	\hline
+	Hessian Eigenmaps  & ~  \\
+	\hline
+	Diffusion Maps  & ~  \\
+	\hline
+	LTSA  & ~  \\
+	\hline
+	MVU  & ~   \\
+	\hline
+	\multicolumn{2}{|c|}{\textbf{Probabilistic}} \\
+	\hline
+	\textbf{Method} & \textbf{Strategy}\\
+	\hline
+	FA  & ~   \\
+	\hline
+	PPCA  & ~   \\
+	\hline
+	GTM  & ~  \\
+	\hline
+	\multicolumn{2}{|c}{\textbf{Neural Networks}} \\
+	\hline
+	\textbf{Method} & \textbf{Strategy}\\
+	\hline
+	SOM  & ~   \\
+	\hline
+	GNG  & ~   \\
+	\hline
+	Elastic Nets  & ~   \\
+	\hline
+	Autoencoders  & ~   \\
+	\hline
+	SNE  & ~   \\
+	\hline
+	UMAP  & ~   \\
+	\hline
+	NCA  & ~   \\
+	\hline
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Weakly Supervised Manifold Learning  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Weakly Supervised Manifold Learning and Dimensionality Reduction} \label{sec:weakly_sup_dim_reduction}
 Although the specific feature vectors being used in remote sensing applications can be very high-dimensional, the underlying structure of a given dataset set is usually governed by only a few variables. Either implicitly or explicitly, most learning algorithms exploit this underlying structure to make learning and inference possible.
 If it is available, relevant information for a specific task can generally be incorporated to provide supervision and improve the performance of unsupervised methods.  Supervised methods for nonlinear dimensionality reduction assume that the samples lie on a manifold parameterized by multiple latent factors.  However, different from traditional manifold learning (where the goal is to preserve the relationships between samples), these methods find the most discriminative low-dimensional representations for classification tasks \citep{Wu2015MILImageManifoldThesis}.  The optimal embedding uses class label information to  minimize distances between nearby points with the same class label while separating samples of different classes.  Although supervised manifold learning often outperforms unsupervised methods for classification tasks, this learning cannot be done directly in  MIL because of the uncertainty on the labels \citep{Carbonneau2016MILSurvey}.  Moreover, fully-annotated samples are often difficult or impossible to obtain in many remote sensing applications \citep{Zare2016MIACE}.  Even with the successes of manifold learning, most the of the previous work has mainly focused on either fully supervised or unsupervised learning.   Existing work in weakly supervised learning on manifolds has primarily considered the semi-supervised setting \citep{Zhang2008SpectralSemiSupManifoldLearning,Chen2018RobustSemiSupManifoldLearning,Zhang2014SemiSupManLearningFusion,Hong2019LearnableManifoldAlignment,Navaratnam2007JointManifoldSemiSupRegression,Stanley2019ManAlignmentFeatureCorrespondence,Tuia2015KernelManifoldAlignment,Wang2010MultiscaleManAlignment,Wang2011HeteroDomainAdaptationManAlignment}.  Methods in this category usually incorporate partially provided image labels and propagate the labels over the manifold approximated by the neighborhood graph on the images.  In a broad sense, however, different situations of weak supervision (specifically, Multiple Instance  Learning), have not been well studied \citep{Wu2015MILImageManifoldThesis}.  The existing MIL manifold learning in the literature can be broken into two paradigms: LDA-based approaches and sparse, orthogonal matrix-based techniques \citep{Zhu2018MIDRSparsity}. Thus, all existing approaches are linear, meaning they may not work well if the underlying bag manifold exhibits curvature.  Alternative weakly-supervised dimensionality reduction approaches have been proposed, however, they do not adhere to the constraints of MIL.  The current literature for weakly supervised dimensionality reduction is reviewed in the following sections, beginning with reviews of MIL DR approaches, namely: MIDR, MidLABS, CLFDA, MIDA and MI-FEAR.  Approaches using alternative definitions of weak learning are addressed at the end of the section.

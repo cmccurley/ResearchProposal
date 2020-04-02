@@ -7,18 +7,18 @@
 \contentsline {figure}{\numberline {{2-1}}{\ignorespaces Multiple instance learning bags.}}{24}{figure.caption.13}
 \contentsline {figure}{\numberline {{2-2}}{\ignorespaces MIL classification space paradigm.}}{27}{figure.caption.14}
 \contentsline {figure}{\numberline {{2-3}}{\ignorespaces Example pose data manifold.}}{39}{figure.caption.25}
-\contentsline {figure}{\numberline {{2-4}}{\ignorespaces PCA example.}}{44}{figure.caption.27}
-\contentsline {figure}{\numberline {{2-5}}{\ignorespaces Example of MDS distance preservation.}}{46}{figure.caption.29}
-\contentsline {figure}{\numberline {{2-6}}{\ignorespaces LDA example.}}{51}{figure.caption.32}
-\contentsline {figure}{\numberline {{2-7}}{\ignorespaces Example of a nonlinear manifold.}}{52}{figure.caption.33}
-\contentsline {figure}{\numberline {{2-8}}{\ignorespaces Examples of graphs.}}{56}{figure.caption.39}
-\contentsline {figure}{\numberline {{2-9}}{\ignorespaces Demonstration of geodesic distance}}{58}{figure.caption.43}
-\contentsline {figure}{\numberline {{2-10}}{\ignorespaces Pairwise Loss}}{84}{figure.caption.57}
-\contentsline {figure}{\numberline {{2-11}}{\ignorespaces Triplet Loss}}{85}{figure.caption.58}
-\contentsline {figure}{\numberline {{2-12}}{\ignorespaces Large Margin $k$-NN}}{87}{figure.caption.59}
-\contentsline {figure}{\numberline {{2-13}}{\ignorespaces Siamese Neural Networks}}{88}{figure.caption.60}
-\contentsline {figure}{\numberline {{3-1}}{\ignorespaces Proposed manifold learning}}{97}{figure.caption.61}
-\contentsline {figure}{\numberline {{3-2}}{\ignorespaces Proposed metric embedding}}{98}{figure.caption.62}
-\contentsline {figure}{\numberline {{4-1}}{\ignorespaces Image chip extraction}}{103}{figure.caption.63}
-\contentsline {figure}{\numberline {{4-2}}{\ignorespaces Image chip uncertainty}}{104}{figure.caption.64}
-\contentsline {figure}{\numberline {{4-3}}{\ignorespaces HOG features}}{105}{figure.caption.65}
+\contentsline {figure}{\numberline {{2-4}}{\ignorespaces PCA example.}}{43}{figure.caption.27}
+\contentsline {figure}{\numberline {{2-5}}{\ignorespaces Example of MDS distance preservation.}}{44}{figure.caption.29}
+\contentsline {figure}{\numberline {{2-6}}{\ignorespaces LDA example.}}{49}{figure.caption.32}
+\contentsline {figure}{\numberline {{2-7}}{\ignorespaces Example of a nonlinear manifold.}}{50}{figure.caption.33}
+\contentsline {figure}{\numberline {{2-8}}{\ignorespaces Examples of graphs.}}{57}{figure.caption.37}
+\contentsline {figure}{\numberline {{2-9}}{\ignorespaces Demonstration of geodesic distance}}{59}{figure.caption.41}
+\contentsline {figure}{\numberline {{2-10}}{\ignorespaces Pairwise Loss}}{86}{figure.caption.55}
+\contentsline {figure}{\numberline {{2-11}}{\ignorespaces Triplet Loss}}{87}{figure.caption.56}
+\contentsline {figure}{\numberline {{2-12}}{\ignorespaces Large Margin $k$-NN}}{89}{figure.caption.57}
+\contentsline {figure}{\numberline {{2-13}}{\ignorespaces Siamese Neural Networks}}{90}{figure.caption.58}
+\contentsline {figure}{\numberline {{3-1}}{\ignorespaces Proposed manifold learning}}{98}{figure.caption.59}
+\contentsline {figure}{\numberline {{3-2}}{\ignorespaces Proposed metric embedding}}{99}{figure.caption.60}
+\contentsline {figure}{\numberline {{4-1}}{\ignorespaces Image chip extraction}}{104}{figure.caption.61}
+\contentsline {figure}{\numberline {{4-2}}{\ignorespaces Image chip uncertainty}}{105}{figure.caption.62}
+\contentsline {figure}{\numberline {{4-3}}{\ignorespaces HOG features}}{106}{figure.caption.63}
