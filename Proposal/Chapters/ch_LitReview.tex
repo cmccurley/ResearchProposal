@@ -503,21 +503,22 @@ is the $N \times N$ centering matrix.  Pseudo-code for KPCA is given in Algorith
 	\caption{KPCA}
 	\label{alg:KPCA}
 	\begin{algorithmic}[1]
-		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\bm{L} = \{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$, evaluation metric $\mathcal{L}$, learning algorithm $\mathcal{A}$, dimensionality of reduced-dimensional space $d$}
-		\Ensure {Embedding coordinates $\bm{Z} \in \mathbb{R}^{N \times d}$}
-		\State {$\bm{X}, \bm{Y}^{\gamma} \gets $ supervised dataset of bag-labeled instances using $(\bm{B}, \bm{L})$}
-		\State {$V \gets $ [ ]}
-		\For {feature $\theta_{i}$ in feature set $\Theta$}   
-		\State {$\bm{X}^{\theta} \gets \bm{X}$ with all features, excluding $\theta_{i}$}
-		\State {$h_{\theta} \gets $ output of $\mathcal{A}$ when trained on input $(\bm{X}^{\theta}, \bm{Y}^{\gamma})$}
-		\State {$V[i] \gets$ performance of $h_{\theta}$ on input $(\bm{X}^{\theta}, \bm{Y}^{\gamma})$ according to $\mathcal{L}, \theta_{i}$}
-		\EndFor             
-		\State {$V \gets$ $\textsc{SortDecreasing}(V)$}
+		\Require {Gram matrix of training data $\bm{K} \in \mathbb{R}^{N \times N}$, Gram matrix augmented with test data $\bm{K}_{*} \in \mathbb{R}^{N_{*} \times N}$, dimensionality of latent space $d$}
+		\Ensure {Embedded data coordinates $\bm{Z} \in \mathbb{R}^{N \times d}$}
+		\State {$\bm{H} \gets \mathbb{I}_{N} - \frac{1}{N}\bm{e}\bm{e}^{T}$}   
+		\State {$\tilde{\bm{K}} \gets \bm{H}\bm{K}\bm{H}$}   
+		\State {$[\bm{U},\bm{\Lambda}] \gets \textsc{eig}(\tilde{\bm{K}})$}     
+		\For{$n \in N$}
+		\State{$\bm{v}_{n} \gets \bm{u}_{n}/\sqrt{\lambda_{n}}$}
+		\EndFor
+		\State {$\bm{H}_{*} \gets \frac{1}{N_{*}}\bm{e}_{*}\bm{e}^{T}$}
+		\State {$\tilde{\bm{K}}_{*} \gets \bm{K}_{*} - \bm{H}_{*}\bm{K}_{*} - \bm{K}_{*}\bm{H}_{*} + \bm{H}_{*}\bm{K}_{*}\bm{H}_{*}$}  
+		\State {$\bm{Z} \gets \tilde{\bm{K}}_{*}\bm{V}_{1:d}$}
 	\end{algorithmic}
 \end{algorithm}
 \noindent
 
-Whereas linear PCA is limited to $d<D$ components, KPCA can use up to $N$ components.  Using a nonlinear feature embedding function along with the kernel trick provides for an elegant solution for capturing global nonlinear data structure.
+Whereas linear PCA is limited to $d<D$ components, KPCA can use up to $N$ components.  Using a nonlinear feature embedding function along with the kernel trick provides for an elegant solution for capturing global nonlinear data structure.  As can be seen in Algorithm \ref{alg:KPCA}, embedding out-of-sample test points is done by appending rows to the Gram matrix, where new entries are defined between the test points and training data points, but not between test points and other test points.  Embedded data coordinates are computed by multiplying the augmented Gram matrix with the top $d$ scaled eigenvectors of the training Gram matrix.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

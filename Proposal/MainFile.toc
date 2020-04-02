@@ -41,7 +41,7 @@
 \contentsline {paragraph}{Kernel PCA}{53}{section*.35}
 \contentsline {subsubsection}{\numberline {2.2.3.2}Graph-based Methods}{55}{subsubsection.2.2.3.2}
 \contentsline {paragraph}{Terminology}{55}{section*.36}
-\contentsline {paragraph}{$\bm {K}$-Nearest Neighbor Graph}{56}{section*.38}
+\contentsline {paragraph}{$\bm {K}$-Nearest Neighbor Graph}{57}{section*.38}
 \contentsline {paragraph}{$\bm {\epsilon }$-Neighborhood Graph}{57}{section*.39}
 \contentsline {paragraph}{Geodesic Distance Approximation}{58}{section*.40}
 \contentsline {subsubsection}{\numberline {2.2.3.3}General Graph Embedding Framework}{59}{subsubsection.2.2.3.3}
