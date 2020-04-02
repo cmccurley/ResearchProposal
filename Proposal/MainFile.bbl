@@ -1,4 +1,4 @@
-\begin{thebibliography}{142}
+\begin{thebibliography}{143}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -690,6 +690,12 @@ Jos{\'e}~Francisco Ruiz-Mu{\~n}oz, Mauricio Orozco-Alzate, and Germ{\'a}n
 \newblock In \emph{2010 IEEE International Workshop on Machine Learning for
   Signal Processing}, pages 13--18, Aug 2010.
 \newblock \doi{10.1109/MLSP.2010.5589175}.
+
+\bibitem[{Sammon}(1969)]{Sammon1966SammonMapping}
+J.~W. {Sammon}.
+\newblock A nonlinear mapping for data structure analysis.
+\newblock \emph{IEEE Transactions on Computers}, C-18\penalty0 (5):\penalty0
+  401--409, 1969.
 
 \bibitem[Sch\"{o}lkopf et~al.(1999)Sch\"{o}lkopf, Smola, and
   M\"{u}ller]{Scholkopf1999KPCA}

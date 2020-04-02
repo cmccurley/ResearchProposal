@@ -721,6 +721,17 @@ The special feature exhibited by all Laplacian Eigenmap methods is the use of la
 \subsubsection{Diffusion Maps}
 
 \subsubsection{Sammon Mapping} \label{sec:sammon_mapping}
+Classical scaling, a convex technique for multidimensional scaling, was introduced in Section \ref{sec:MDS}.  As discussed, a pitfall of MDS is that it focuses on retaining global pairwise distances as opposed to local distances, which are typically much more important for capturing the geometry of the data \citep{VanDerMaaten2009DRReview}.  Several MDS variants have been proposed to address this weakness.  A popular variant is \textit{Sammon Mapping} \citep{Sammon1966SammonMapping}.
+
+The classical scaling cost function looks to minimize the difference between the pairwise distance matrices of input data and their corresponding low-dimensional representations.  This cost puts emphasis on retaining the global data structure.  Sammon mapping adapts the classical scaling cost function by weighting the contribution of each sample pair $(\bm{x}_{m},\bm{x}_{n})$ by the inverse of their pairwise distances in the high-dimensional input space $\mathcal{D}(\bm{x}_{m},\bm{x}_{n})$.  In this way, the objective becomes
+\begin{align}
+	J(\bm{X},\bm{Z}) = \frac{1}{\sum_{m,n}\mathcal{D}(\bm{x}_{m},\bm{x}_{n})}\sum_{m \neq n} \frac{(\mathcal{D}(\bm{x}_{m},\bm{x}_{n}) - \mathcal{D}(\bm{z}_{m},\bm{z}_{n}))^{2}}{\mathcal{D}(\bm{x}_{m},\bm{x}_{n})}
+\end{align}
+\noindent
+where $\mathcal{D}(\bm{x}_{m},\bm{x}_{n})$ denotes the Euclidean distance between high-dimensional input samples $\bm{x}_{m}$ and $\bm{x}_{n}$, $\mathcal{D}(\bm{z}_{m},\bm{z}_{n})$ is the Euclidean distance between low-dimensional data coordinates $\bm{z}_{m}$ and $\bm{z}_{n}$ and the constant in the front is added to simplify the gradient of the objective.  This cost function gives more weight to preserving distances between samples that are close in the input space.   Minimization of the Sammon objective function is typically performed with gradient descent or a pseudo-Newton method \citep{Sorzano2014DRReview}.
+
+A weakness (and strength) of Sammon mapping is that it will give much more importance to retaining a very small distance, say $10^{-5}$, as compared to  $10^{-4}$.  Despite this, Sammon mapping has been successfully applied to visualization tasks and has reported on applications using gene data and geospatial information \citep{VanDerMaaten2009DRReview}.
+
 
 \subsubsection{Maximum Variance Unfolding (MVU)}
 
