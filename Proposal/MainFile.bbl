@@ -1,4 +1,4 @@
-\begin{thebibliography}{143}
+\begin{thebibliography}{145}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -530,6 +530,11 @@ Shaohua Li, Yong Liu, Xiuchao Sui, Cheng Chen, Gabriel Tjio, Daniel Shu~Wei
 \newblock \doi{10.1007/978-3-030-32251-9_58}.
 \newblock URL \url{http://dx.doi.org/10.1007/978-3-030-32251-9_58}.
 
+\bibitem[Li et~al.(2009)Li, Shi, Shi, and Zhong]{Li2009SupManifoldLearning}
+Z.~Li, W.~Shi, X.~Shi, and Z.~Zhong.
+\newblock A supervised manifold learning method.
+\newblock \emph{Comput. Sci. Inf. Syst.}, 6:\penalty0 205--215, 12 2009.
+
 \bibitem[Liu et~al.(2010)Liu, Principe, and
   Haykin]{Liu2010KernelAdaptiveFiltering}
 Weifeng Liu, Jose~C. Principe, and Simon Haykin.
@@ -675,6 +680,14 @@ I.~Rish, G.~Grabarnik, G.~A. Cecchi, F.~Pereira, and G.~J. Gordon.
   linear models.
 \newblock pages 832--839, 01 2008.
 \newblock \doi{10.1145/1390156.1390261}.
+
+\bibitem[Roweis and Saul(2000)]{Roweis2000LLE}
+S.~T. Roweis and L.~K. Saul.
+\newblock Nonlinear dimensionality reduction by locally linear embedding.
+\newblock \emph{Science}, 290\penalty0 (5500):\penalty0 2323--2326, 2000.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.290.5500.2323}.
+\newblock URL \url{https://science.sciencemag.org/content/290/5500/2323}.
 
 \bibitem[Ruiz-Mu{\~n}oz et~al.(2015)Ruiz-Mu{\~n}oz, Orozco-Alzate, and
   Castellanos-Dom{\'i}nguez]{RuizMunoz2015MILBirdsongClassification}

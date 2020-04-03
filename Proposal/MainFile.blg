@@ -70,45 +70,45 @@ Warning--empty title in Xu2011MI_Metric_Learning
 Warning--empty booktitle in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
-You've used 143 entries,
+You've used 145 entries,
             2773 wiz_defined-function locations,
-            1650 strings with 38298 characters,
-and the built_in function-call counts, 73910 in all, are:
-= -- 6872
-> -- 4226
-< -- 111
-+ -- 1417
-- -- 1273
-* -- 6007
-:= -- 11177
-add.period$ -- 587
-call.type$ -- 143
-change.case$ -- 830
-chr.to.int$ -- 142
-cite$ -- 307
-duplicate$ -- 3436
-empty$ -- 5746
-format.name$ -- 1496
-if$ -- 15888
+            1663 strings with 38662 characters,
+and the built_in function-call counts, 74978 in all, are:
+= -- 6976
+> -- 4286
+< -- 112
++ -- 1437
+- -- 1291
+* -- 6104
+:= -- 11342
+add.period$ -- 596
+call.type$ -- 145
+change.case$ -- 842
+chr.to.int$ -- 144
+cite$ -- 311
+duplicate$ -- 3477
+empty$ -- 5828
+format.name$ -- 1518
+if$ -- 16109
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 126
-newline$ -- 856
-num.names$ -- 594
-pop$ -- 1573
+missing$ -- 128
+newline$ -- 869
+num.names$ -- 602
+pop$ -- 1590
 preamble$ -- 1
-purify$ -- 697
+purify$ -- 707
 quote$ -- 0
-skip$ -- 2763
+skip$ -- 2794
 stack$ -- 0
-substring$ -- 2574
-swap$ -- 689
+substring$ -- 2634
+swap$ -- 692
 text.length$ -- 49
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1553
+type$ -- 1575
 warning$ -- 21
-while$ -- 592
+while$ -- 602
 width$ -- 0
-write$ -- 2161
+write$ -- 2193
 (There were 6 error messages)

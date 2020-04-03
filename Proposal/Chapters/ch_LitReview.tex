@@ -605,6 +605,25 @@ Li and Guo proposed Supervised Isomap with Explicit mapping (SE-Isomap) in \cite
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LLE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Locally Linear Embedding (LLE)}
+\textit{Locally Linear Embedding} (LLE) was first introduced by Roweis and Saul \citep{Roweis2000LLE} and it is, along with Isomap, a foundational graph-based approach for nonlinear manifold learning.  Whereas Isomap attempts to preserve global pairwise distances, LLE attempts to preserve solely local properties of the data \citep{VanDerMaaten2009DRReview}.  Since LLE looks solely at local neighborhoods around samples, it is much less sensitive to short-circuiting than Isomap.  Furthermore, the preservation of local properties allows the algorithm to effectively embed non-convex manifolds.  Essentially, LLE looks to represent each data sample as a linear combination of its $k$-nearest neighbors.  This fits a hyperplane through every datapoint and it's nearest neighbors, thus assuming the intrinsic manifold is locally linear.  The local linearity assumption implies that the reconstruction weights $\bm{w}_{n}$ of high-dimensional sample $\bm{x}_{n}$ are invariant to transformations such as translation, rotation and scaling.  Therefore, it is assumed that the same reconstruction weights $\bm{w}_{n}$ that can be used to represent $\bm{x}_{n}$ in the high-dimensional space will also reconstruct it's low-dimensional representation $\bm{z}_{n}$ from its corresponding neighbors in the low-dimensional space \citep{Roweis2000LLE, Sorzano2014DRReview, Chao2019RecentAdvancesSupervisedDimRed}.  Therefore, low-dimensional data representations $\bm{Z}$ are found by minimizing the objective
+\begin{align} \label{eq:LLE_objective}
+	J(\bm{W},\bm{Z}) = \sum_{n=1}^{N} \left | \left | \bm{z}_{n} - \sum_{k=1}^{K}w_{nk}\bm{z}_{k} \right | \right |^{2} \quad s.t. \quad \frac{1}{N}\bm{Z}^{T}\bm{Z}=\bm{I}_{d}
+\end{align} 
+\noindent
+The constraint on the covariance of the embedded data representations is included to avoid the trivial solution $\bm{Z} = \bm{0}$.  Solving for the low-dimensional data representations is done in three steps \citep{Thorstensen2009ManifoldThesis}.  First, a $k$-nearest neighborhood graph $G$ is constructed from the high-dimensional data $\bm{X}$.  Next, the reconstruction weight vector $\bm{w}_{n}$ that best represents each point  $\bm{x}_{n}$ as a linear combination of its $k$-nearest neighbors is found by optimizing the problem
+\begin{align}
+	\min_{\bm{W}}\sum_{n=1}^{N} \left | \left | \bm{x}_{n} - \sum_{k=1}^{K}w_{nk}\bm{x}_{k} \right | \right |^{2} \quad s.t. \quad \sum_{k=1}^{K}w_{nk} =1
+\end{align}
+\noindent
+Finally, the low-dimensional embedding coordinates are found by minimizing the quadratic error function for $\bm{Z}$ according to Equation \ref{eq:LLE_objective}.
+
+
+  \citep{Chao2019RecentAdvancesSupervisedDimRed}, \citep{Li2009SupManifoldLearning}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LTSA  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Local Tangent Space Alignment (LTSA)}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -798,6 +817,11 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 \subsection{UMAP}
 
 \subsection{Stochastic Neighbor Embedding (SNE and t-SNE)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Manifold Charting  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Manifold Charting}
 
 \subsection{NCA}
 
