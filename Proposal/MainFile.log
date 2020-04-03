@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  3 APR 2020 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  3 APR 2020 16:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1101,8 +1101,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 852--853
 []|\OT1/cmss/m/n/12 Minimizes within-class dis-tance and max-i-mizes between-
  []
 
-[73] [74] [75] [76] [77] [78] [79] [80] [81]
-Underfull \hbox (badness 3049) in paragraph at lines 1040--1041
+
+Underfull \hbox (badness 10000) in paragraph at lines 854--855
+[]|\OT1/cmss/m/n/12 Decomposes data into low-dimensional co-or-di-nates and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 856--857
+[]|\OT1/cmss/m/n/12 Linear vari-ant of LLE, pre-serves lo-cal neigh-bor-hoods,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
+[]|\OT1/cmss/m/n/12 Linear vari-ant of LE, pre-serves lo-cal neigh-bor-hoods, l
+o-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 866--867
+[]|\OT1/cmss/m/n/12 Preserves pair-wise dis-tances. More em-pha-sis is placed o
+n
+ []
+
+[73] [74] [75] [76] [77]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[78] [79] [80] [81]
+Underfull \hbox (badness 3049) in paragraph at lines 1042--1043
 []\OT1/cmss/m/n/12 Multiple-instance dataset $\OMS/cmss/m/n/12 f\OML/cmm/b/it/1
 2 B[]\OML/cmm/m/it/12 ; [] ; \OML/cmm/b/it/12 B[]\OMS/cmss/m/n/12 g$\OT1/cmss/m
 /n/12 , $\OMS/cmss/m/n/12 f\OML/cmm/m/it/12 L[]; [] ; L[]\OMS/cmss/m/n/12 g$\OT
@@ -1116,101 +1142,91 @@ ial-ized
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [83] [84]
-Underfull \hbox (badness 10000) in paragraph at lines 1117--1117
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1119
 []|\OT1/cmss/bx/n/12 Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1117--1118
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1120
 []|\OT1/cmss/bx/n/12 Classification
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1119--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
 []|\OT1/cmss/m/n/12 Finds a sparse, or-thog-o-nal lin-ear
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1119--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
 \OT1/cmss/m/n/12 pro-jec-tion ma-trix op-ti-mized for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1119--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
 []|\OT1/cmss/m/n/12 Linear,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1119--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
 \OT1/cmss/m/n/12 or-thog-o-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
+Underfull \hbox (badness 10000) in paragraph at lines 1123--1123
 []|\OT1/cmss/m/n/12 Finds lin-ear pro-jec-tion vec-tor us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
+Underfull \hbox (badness 10000) in paragraph at lines 1123--1123
 \OT1/cmss/m/n/12 LDA de-fined from bag-similarity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1123
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1125
 []|\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1123
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1125
 \OT1/cmss/m/n/12 us-ing LDA de-fined from bag rep-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1125--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1127--1127
 []|\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion ma-trix
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1125--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1127--1127
 \OT1/cmss/m/n/12 us-ing lo-cal dis-crim-i-nant anal-y-sis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1125--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1127--1127
 \OT1/cmss/m/n/12 de-fined from in-stance scat-ter.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1125--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1127--1127
 \OT1/cmss/m/n/12 In-stance la-bels are pro-vided as bag
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1127--1127
+Underfull \hbox (badness 10000) in paragraph at lines 1129--1129
 []|\OT1/cmss/m/n/12 Incrementally leaves out fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1127--1127
+Underfull \hbox (badness 10000) in paragraph at lines 1129--1129
 \OT1/cmss/m/n/12 and eval-u-ates per-for-mance loss to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1127--1127
+Underfull \hbox (badness 10000) in paragraph at lines 1129--1129
 []|\OT1/cmss/m/n/12 Feature
  []
 
 [85] [86] [87]
-Underfull \hbox (badness 10000) detected at line 1148
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1149
-[][][]
- []
-
-
 Underfull \hbox (badness 10000) detected at line 1150
 [][][]
  []
@@ -1220,14 +1236,24 @@ Underfull \hbox (badness 10000) detected at line 1151
 [][][]
  []
 
+
+Underfull \hbox (badness 10000) detected at line 1152
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1153
+[][][]
+ []
+
 [88]
 
-LaTeX Warning: Command \l invalid in math mode on input line 1162.
+LaTeX Warning: Command \l invalid in math mode on input line 1164.
 
 [89]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 1176.
+Package pdftex.def Info: example-image-a.pdf  used on input line 1178.
 (pdftex.def)             Requested size: 234.5pt x 175.88126pt.
 
 
@@ -1236,39 +1262,39 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [90]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 1195.
+Package pdftex.def Info: example-image-a.pdf  used on input line 1197.
 (pdftex.def)             Requested size: 234.5pt x 175.88126pt.
  [91] [92]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 1226.
+Package pdftex.def Info: example-image-a.pdf  used on input line 1228.
 (pdftex.def)             Requested size: 234.5pt x 175.88126pt.
  [93]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 1240.
+Package pdftex.def Info: example-image-a.pdf  used on input line 1242.
 (pdftex.def)             Requested size: 269.81596pt x 202.35622pt.
 
-Overfull \hbox (35.31596pt too wide) in paragraph at lines 1240--1241
+Overfull \hbox (35.31596pt too wide) in paragraph at lines 1242--1243
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1241--1241
+Underfull \hbox (badness 10000) in paragraph at lines 1243--1243
 []\OT1/cmss/m/n/10.95 (a) |Siamese net-work struc-tured from con-trastive
  []
 
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 1248.
+Package pdftex.def Info: example-image-a.pdf  used on input line 1250.
 (pdftex.def)             Requested size: 269.81596pt x 202.35622pt.
 
-Overfull \hbox (35.31596pt too wide) in paragraph at lines 1248--1249
+Overfull \hbox (35.31596pt too wide) in paragraph at lines 1250--1251
  [][] 
  []
 
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1238--1252
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1240--1254
  []  [] 
  []
 
@@ -2070,7 +2096,7 @@ t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 s17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on MainFile.pdf (133 pages, 3526974 bytes).
+Output written on MainFile.pdf (133 pages, 3527093 bytes).
 PDF statistics:
  2548 PDF objects out of 2984 (max. 8388607)
  2324 compressed objects within 24 object streams

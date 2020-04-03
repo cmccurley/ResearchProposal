@@ -851,11 +851,11 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 	\hline
 	LDA  & Minimizes within-class distance and maximizes between-class distance, global structure  \\
 	\hline
-	NMF   & ~  \\
+	NMF   & Decomposes data into low-dimensional coordinates and basis vectors, minimizes approximation error.  \\
 	\hline
-	NPP  & ~   \\
+	NPP  & Linear variant of LLE, preserves local neighborhoods, local structure   \\
 	\hline
-	LPP  & ~   \\
+	LPP  & Linear variant of LE, preserves local neighborhoods, local structure   \\
 	\hline
 	\multicolumn{2}{|c|}{\textbf{Nonlinear}} \\
 	\hline
@@ -863,7 +863,7 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 	\hline
 	Isomap  & Preserves geodesic distances, global structure   \\
 	\hline
-	Sammon Mapping  & ~  \\
+	Sammon Mapping  & Preserves pairwise distances.  More emphasis is placed on samples that are close in the input space.  \\
 	\hline
 	LLE  & Preserves local neighborhoods, local structure   \\
 	\hline
@@ -887,7 +887,7 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 	\hline
 	GTM  & ~  \\
 	\hline
-	\multicolumn{2}{|c}{\textbf{Neural Networks}} \\
+	\multicolumn{2}{|c|}{\textbf{Neural Networks}} \\
 	\hline
 	\textbf{Method} & \textbf{Strategy}\\
 	\hline
@@ -904,6 +904,8 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 	UMAP  & ~   \\
 	\hline
 	NCA  & ~   \\
+	\hline
+	Manifold Charting  & ~   \\
 	\hline
 \end{longtable}
 
