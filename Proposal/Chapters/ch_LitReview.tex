@@ -365,13 +365,6 @@ where $\hat{\bm{\mu}_{1}}$ and $\hat{\bm{\mu}_{2}}$ are the empirical means for 
 
 Although LDA is the basis for large number of discriminative dimensionality reduction approaches, it does not guarantee class separation in the embedding space.  For example, LDA projects data into a space of at most $(K-1)$ dimensions, however, more features may be necessary for adequate class discrimination.  Additionally, LDA is a parametric method which assumes unimodal Gaussian likelihoods.  This implies that it may not be able to preserve complex data structure.  Finally, LDA will fail if the discriminatory information is contained in the variance of the data instead of the mean.  Despite these pitfalls, LDA  has been successfully applied to object detection and recognition tasks \citep{Wang2016OrthogonalLDA}  Many variations of LDA have been developed, such as Non-parametric LDA \citep{Fukunaga1983NonparametricLDA}, Orthonormal LDA \citep{Wang2016OrthogonalLDA}, Generalized LDA \citep{Baudat2000GeneralizedDiscriminantAnalysis} and Multilayer Perceptrons \citep{Webb1990MLPLDA}.  Additionally, LDA serves as the foundation for many of the Multiple Instance Learning dimensionality reduction approaches in the current literature \citep{Sun2010MIDR,Chai2014MIDA,Zhu2018MIDRSparsity}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LPP  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Locality Preserving Projection (LPP)}
-
-
-
 \subsection{Nonlinear Manifold Learning}
 
 Linear methods such as PCA and MDS are convenient for projecting out-of-sample test points into the embedding space.  However, they are unable to capture the structure of data that are sampled from nonlinear manifolds \citep{Kegl2008PrincipalManifoldsTextbook}. This section will discuss a variety of nonlinear dimensionality reduction and manifold learning approaches.  All methods reviewed assume the data is distributed along a $d$-dimensional sub-manifold $\mathcal{X}$ embedded in $\mathbb{R}^{D}$.
@@ -607,18 +600,17 @@ Li and Guo proposed Supervised Isomap with Explicit mapping (SE-Isomap) in \cite
 \subsubsection{Locally Linear Embedding (LLE)}
 \textit{Locally Linear Embedding} (LLE) was first introduced by Roweis and Saul \citep{Roweis2000LLE} and it is, along with Isomap, a foundational graph-based approach for nonlinear manifold learning.  Whereas Isomap attempts to preserve global pairwise distances, LLE attempts to preserve solely local properties of the data \citep{VanDerMaaten2009DRReview}.  Since LLE looks solely at local neighborhoods around samples, it is much less sensitive to short-circuiting than Isomap.  Furthermore, the preservation of local properties allows the algorithm to effectively embed non-convex manifolds.  Essentially, LLE looks to represent each data sample as a linear combination of its $k$-nearest neighbors.  This fits a hyperplane through every datapoint and it's nearest neighbors, thus assuming the intrinsic manifold is locally linear.  The local linearity assumption implies that the reconstruction weights $\bm{w}_{n}$ of high-dimensional sample $\bm{x}_{n}$ are invariant to transformations such as translation, rotation and scaling.  Therefore, it is assumed that the same reconstruction weights $\bm{w}_{n}$ that can be used to represent $\bm{x}_{n}$ in the high-dimensional space will also reconstruct it's low-dimensional representation $\bm{z}_{n}$ from its corresponding neighbors in the low-dimensional space \citep{Roweis2000LLE, Sorzano2014DRReview, Chao2019RecentAdvancesSupervisedDimRed}.  Therefore, low-dimensional data representations $\bm{Z}$ are found by minimizing the objective
 \begin{align} \label{eq:LLE_objective}
-	J(\bm{W},\bm{Z}) = \sum_{n=1}^{N} \left | \left | \bm{z}_{n} - \sum_{k=1}^{K}w_{nk}\bm{z}_{k} \right | \right |^{2} \quad s.t. \quad \frac{1}{N}\bm{Z}^{T}\bm{Z}=\bm{I}_{d}
+	J(\bm{W},\bm{Z}) = \sum_{n=1}^{N} \left | \left | \bm{z}_{n} - \sum_{k=1}^{K}w_{nk}\bm{z}_{k} \right | \right |^{2} \quad s.t. \quad \frac{1}{N}\bm{Z}^{T}\bm{Z}=\bm{\mathbb{I}}_{d}
 \end{align} 
 \noindent
 The constraint on the covariance of the embedded data representations is included to avoid the trivial solution $\bm{Z} = \bm{0}$.  Solving for the low-dimensional data representations is done in three steps \citep{Thorstensen2009ManifoldThesis}.  First, a $k$-nearest neighborhood graph $G$ is constructed from the high-dimensional data $\bm{X}$.  Next, the reconstruction weight vector $\bm{w}_{n}$ that best represents each point  $\bm{x}_{n}$ as a linear combination of its $k$-nearest neighbors is found by optimizing the problem
-\begin{align}
+\begin{align} \label{eq:LLE_Weight_Equation}
 	\min_{\bm{W}}\sum_{n=1}^{N} \left | \left | \bm{x}_{n} - \sum_{k=1}^{K}w_{nk}\bm{x}_{k} \right | \right |^{2} \quad s.t. \quad \sum_{k=1}^{K}w_{nk} =1
 \end{align}
 \noindent
-Finally, the low-dimensional embedding coordinates are found by minimizing the quadratic error function for $\bm{Z}$ according to Equation \ref{eq:LLE_objective}.
+Optimization of Equation \ref{eq:LLE_Weight_Equation} can be solved directly by using the method of Lagrange Multipliers. Finally, the low-dimensional embedding coordinates are found by minimizing the quadratic error function for $\bm{Z}$ according to Equation \ref{eq:LLE_objective}.  Roweis and Saul \cite{Roweis2000LLE} showed that the coordinates that minimize the objective can be found as the eigenvectors corresponding to the $d$ smallest nonzero eigenvalues of the inner product $(\bm{\mathbb{I}}_{N}-\bm{W})^{T}(\bm{\mathbb{I}}_{N}-\bm{W})$ where $\bm{W}$ is a $N \times N$ sparse matrix whose entries are equal to the corresponding reconstruction weight if $\bm{x}_{m}$ and $\bm{x}_{n}$ are connected in the neighborhood graph and $0$ otherwise.
 
-
-  \citep{Chao2019RecentAdvancesSupervisedDimRed}, \citep{Li2009SupManifoldLearning}
+The popularity of LLE has led to the development of linear variants, namely \textit{Neighborhood Preserving Projections} (NPP) and \textit{Orthogonal Neighborhood Preserving Projections} \citep{Pang2005NPP,Kokiopoulou2007OrthoNPP}, and has been applied successfully to applications in super-resolution and sound localization \citep{VanDerMaaten2009DRReview}.  However, LLE tends to collapse large portions of the data close to each other in the embedding space due to the constraint on the covariance matrix.  This may also result in undesired scalings of the manifold.  Despite these effects, supervised approaches based on LLE have also been developed \citep{Chao2019RecentAdvancesSupervisedDimRed,Li2009SupManifoldLearning}.  Existing approaches can be summarized by the LDA idea, that points in the same class should be embedded more closely to each other while points in opposing classes should be well-separated in the low-dimensional space.  This notion is realized by altering the dissimilarity matrix used to construct the neighborhood graph.   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LTSA  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -846,6 +838,8 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 	LDA  & Minimizes within-class distance and maximizes between-class distance, global structure  \\
 	\hline
 	NMF   & ~  \\
+	\hline
+	NPP  & ~   \\
 	\hline
 	LPP  & ~   \\
 	\hline

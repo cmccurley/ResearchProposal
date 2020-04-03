@@ -1,4 +1,4 @@
-\begin{thebibliography}{145}
+\begin{thebibliography}{147}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -497,6 +497,13 @@ T.~Kohonen.
 \newblock ISSN 0018-9219.
 \newblock \doi{10.1109/5.58325}.
 
+\bibitem[{Kokiopoulou} and {Saad}(2007)]{Kokiopoulou2007OrthoNPP}
+E.~{Kokiopoulou} and Y.~{Saad}.
+\newblock Orthogonal neighborhood preserving projections: A projection-based
+  dimensionality reduction technique.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 29\penalty0 (12):\penalty0 2143--2156, 2007.
+
 \bibitem[Latham(2015)]{Latham2015MIFeatureRankingThesis}
 A.~C. Latham.
 \newblock Multiple-instance feature ranking.
@@ -612,6 +619,14 @@ E.~J. {Palomo} and E.~{Lopez-Rubio}.
   28\penalty0 (9):\penalty0 2000--2009, Sep. 2017.
 \newblock ISSN 2162-237X.
 \newblock \doi{10.1109/TNNLS.2016.2570124}.
+
+\bibitem[Pang et~al.(2005)Pang, Zhang, Liu, Yu, and Li]{Pang2005NPP}
+Yanwei Pang, Lei Zhang, Zhengkai Liu, Nenghai Yu, and Houqiang Li.
+\newblock Neighborhood preserving projections (npp): A novel linear dimension
+  reduction method.
+\newblock In De-Shuang Huang, Xiao-Ping Zhang, and Guang-Bin Huang, editors,
+  \emph{Advances in Intelligent Computing}, pages 117--125, Berlin, Heidelberg,
+  2005. Springer Berlin Heidelberg.
 
 \bibitem[Ping et~al.(2010)Ping, Xu, Kexin, Chi, and
   Furao]{Ping2010MILDRMaxMargin}
