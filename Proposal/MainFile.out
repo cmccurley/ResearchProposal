@@ -18,7 +18,7 @@
 \BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Linear Manifold Learning}{section.2.2}% 18
 \BOOKMARK [3][-]{subsubsection.2.2.2.1}{2.2.2.1 Principal Component Analysis \(PCA\)}{subsection.2.2.2}% 19
 \BOOKMARK [3][-]{subsubsection.2.2.2.2}{2.2.2.2 Multi-Dimensional Scaling \(MDS\)}{subsection.2.2.2}% 20
-\BOOKMARK [3][-]{subsubsection.2.2.2.3}{2.2.2.3 Non-negative Matrix Factorization \(NMF\)}{subsection.2.2.2}% 21
+\BOOKMARK [3][-]{subsubsection.2.2.2.3}{2.2.2.3 Nonnegative Matrix Factorization \(NMF\)}{subsection.2.2.2}% 21
 \BOOKMARK [3][-]{subsubsection.2.2.2.4}{2.2.2.4 Fisher's Linear Discriminant Analysis \(LDA\)}{subsection.2.2.2}% 22
 \BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Nonlinear Manifold Learning}{section.2.2}% 23
 \BOOKMARK [3][-]{subsubsection.2.2.3.1}{2.2.3.1 Kernelization}{subsection.2.2.3}% 24

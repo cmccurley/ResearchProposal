@@ -1,4 +1,4 @@
-\begin{thebibliography}{147}
+\begin{thebibliography}{148}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -369,6 +369,10 @@ Benyamin Ghojogh, Fakhri Karray, and Mark Crowley.
 \newblock Fisher and kernel fisher discriminant analysis: Tutorial.
 \newblock \emph{CoRR}, abs/1906.09436, 2019.
 \newblock URL \url{https://arxiv.org/abs/1906.09436}.
+
+\bibitem[Gillis(2014)]{Gillis2014NMF}
+Nicolas Gillis.
+\newblock The why and how of nonnegative matrix factorization, 2014.
 
 \bibitem[Glenn et~al.()Glenn, Zare, Gader, and Dranishnikov]{MUUFLScoringCode}
 T.~Glenn, A.~Zare, P.~Gader, and D.~Dranishnikov.
