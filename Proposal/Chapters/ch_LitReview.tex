@@ -392,7 +392,7 @@ Linear methods such as PCA and MDS are convenient for projecting out-of-sample t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Kernels  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Kernelization}
+\subsubsection{Kernelization} \label{sec:Kernels}
 Although each of the manifold learning techniques previously discussed are inherently linear, nonlinear adaptations have been made.  One easily extendable approach is to utilize kernel functions as means to provide nonlinearity in the embeddings. 
 
 \paragraph{Kernels} A \textit{kernel function} is a real-valued function of two arguments $\kappa(\bm{x},\bm{x}') \in \mathbb{R}$, for $\bm{x},\bm{x}' \in \mathcal{X}$, which maps vectors from the input feature space to a single value in $\mathbb{R}$.  The function is typically symmetric (i.e.  $\kappa(\bm{x},\bm{x}') =  \kappa(\bm{x}',\bm{x})$) and non-negative (i.e.  $\kappa(\bm{x},\bm{x}') \geq 0$), which implies that it can be interpreted as a measure of similarity \citep{Murphy2012}.  The notion of kernels is very useful in certain applications where data representation is not straightforward, such as representing text documents or molecular structures which can have variable length.  Additionally, this allows algorithms to operate directly on the kernel representations.  This is useful in data-sensitive scenarios where direct access to the data may not be available.
@@ -662,6 +662,11 @@ where $\bm{I}$ is the identity matrix and $\bm{e} = (1, \dots, 1)^{T}$.  The fir
 \noindent
 The column vectors $\bm{v}_{1}, \dots, \bm{v}_{N}$ are the solutions of Equation \ref{eq:trad_le_eig}, ordered to the corresponding eigenvalues, in ascending order, $\lambda_{1} = 0 \leq \lambda_{2} \leq \dots \leq \lambda_{N} $. The embedding of the input samples given by the matrix $\bm{Z}$, is obtained by concatenating the eigenvectors of the $d$ smallest non-zero eigenvalues.  $\bm{Z}$ is a $N \times d$ matrix, where $d < N$ is the dimensionality of the embedded space.  From observation, it is clear that the embedding dimensionality is limited by the number of samples $N$.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Linear LE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Linear LE}
+Because of the representation ability of LE, a linear approach called \textit{Locality Preserving Projections} (LPP) was proposed by He and Niyogi \citep{He2003LPP}.  Similarly to LE, LPP builds a neighborhood graph which incorporates local information of the data.  LPP optimizes a similar objective to LE, however, it is assumed that the low-dimensional data representations come from a linear transformation of the high-dimensional input data.  The primary benefit of LPP over LE is that, while it shares many of the representation properties of LE, it is defined everywhere in the latent space as opposed to just over the training data points.  This allows for simple embeddings of out-of-sample test points.  Moreover, one can perform LPP in the original space or in a reproducing kernel Hilbert space through the use of Mercer kernels as described in Section \ref{sec:Kernels}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Supervised LE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{Supervised LE (S-LE)}
 In order to adopt LE for classification,Raducanu and Dornaika \citep{Raducanu2012SupervisedNonlinearDimReduction} proposed a supervised LE which minimizes the margin between samples with similar class labels and maximizes the margin between samples with opposing class labels.  Supervised LE utilizes discriminative information contained in the class labels when finding the nonlinear embedding (spectral projection). 
 

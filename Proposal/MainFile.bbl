@@ -1,4 +1,4 @@
-\begin{thebibliography}{148}
+\begin{thebibliography}{149}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -403,6 +403,13 @@ Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
 \newblock Deep residual learning for image recognition.
 \newblock \emph{CoRR}, abs/1512.03385, 2015.
 \newblock URL \url{http://arxiv.org/abs/1512.03385}.
+
+\bibitem[He and Niyogi(2003)]{He2003LPP}
+Xiaofei He and Partha Niyogi.
+\newblock Locality preserving projections.
+\newblock In \emph{Proceedings of the 16th International Conference on Neural
+  Information Processing Systems}, NIPS’03, page 153–160, Cambridge, MA,
+  USA, 2003. MIT Press.
 
 \bibitem[Hermans et~al.(2017)Hermans, Beyer, and
   Leibe]{Hermans2017DefenseTripletLoss}
