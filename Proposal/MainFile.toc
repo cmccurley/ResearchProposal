@@ -47,81 +47,81 @@
 \contentsline {paragraph}{Traditional Isomap}{61}{section*.42}
 \contentsline {paragraph}{Supervised Isomap Approaches}{62}{section*.43}
 \contentsline {subsubsection}{\numberline {2.2.3.4}Locally Linear Embedding (LLE)}{63}{subsubsection.2.2.3.4}
-\contentsline {subsubsection}{\numberline {2.2.3.5}Hessian Eigenmaps}{65}{subsubsection.2.2.3.5}
-\contentsline {subsubsection}{\numberline {2.2.3.6}Local Tangent Space Alignment (LTSA)}{65}{subsubsection.2.2.3.6}
-\contentsline {subsubsection}{\numberline {2.2.3.7}Laplacian Eigenmaps (LE)}{65}{subsubsection.2.2.3.7}
+\contentsline {subsubsection}{\numberline {2.2.3.5}Laplacian Eigenmaps (LE)}{65}{subsubsection.2.2.3.5}
 \contentsline {paragraph}{Classical LE}{65}{section*.44}
 \contentsline {paragraph}{Linear LE}{67}{section*.45}
 \contentsline {paragraph}{Supervised LE (S-LE)}{67}{section*.46}
-\contentsline {subsubsection}{\numberline {2.2.3.8}Diffusion Maps}{71}{subsubsection.2.2.3.8}
-\contentsline {subsubsection}{\numberline {2.2.3.9}Sammon Mapping}{71}{subsubsection.2.2.3.9}
-\contentsline {subsubsection}{\numberline {2.2.3.10}Maximum Variance Unfolding (MVU)}{72}{subsubsection.2.2.3.10}
-\contentsline {subsection}{\numberline {2.2.4}Latent Variable Models}{72}{subsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.4.1}General Latent Variable Model (GLVM)}{72}{subsubsection.2.2.4.1}
-\contentsline {paragraph}{Factor Analysis (FA)}{72}{section*.47}
-\contentsline {paragraph}{Probabilistic PCA (PPCA)}{72}{section*.48}
-\contentsline {paragraph}{Supervised PCA}{73}{section*.49}
-\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{73}{section*.50}
-\contentsline {subparagraph}{Discriminative Supervised PCA}{73}{section*.51}
-\contentsline {subsubsection}{\numberline {2.2.4.2}Generative Topographic Mapping (GTM)}{73}{subsubsection.2.2.4.2}
-\contentsline {subsection}{\numberline {2.2.5}Competitive Hebbian Learning}{73}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Principal Curves}{73}{subsection.2.2.6}
-\contentsline {subsection}{\numberline {2.2.7}Deep Learning}{73}{subsection.2.2.7}
-\contentsline {paragraph}{Autoencoders}{73}{section*.52}
-\contentsline {paragraph}{Graph Convolutional Networks}{73}{section*.53}
-\contentsline {paragraph}{M3DNet}{73}{section*.54}
-\contentsline {paragraph}{Paper in Papers channel}{73}{section*.55}
-\contentsline {subsection}{\numberline {2.2.8}UMAP}{74}{subsection.2.2.8}
-\contentsline {subsection}{\numberline {2.2.9}Stochastic Neighbor Embedding (SNE and t-SNE)}{74}{subsection.2.2.9}
-\contentsline {subsubsection}{\numberline {2.2.9.1}Manifold Charting}{74}{subsubsection.2.2.9.1}
-\contentsline {subsection}{\numberline {2.2.10}NCA}{74}{subsection.2.2.10}
-\contentsline {subsubsection}{\numberline {2.2.10.1}M3DNet}{74}{subsubsection.2.2.10.1}
-\contentsline {subsubsection}{\numberline {2.2.10.2}Relations}{74}{subsubsection.2.2.10.2}
-\contentsline {subsubsection}{\numberline {2.2.10.3}Strengths and Weaknesses}{74}{subsubsection.2.2.10.3}
-\contentsline {subsection}{\numberline {2.2.11}Overview of Unsupervised Manifold Learning Methods}{74}{subsection.2.2.11}
-\contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{76}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}MIDR}{77}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}MidLABS}{79}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}MIDA}{81}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}CLFDA}{82}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{84}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{86}{subsection.2.3.6}
-\contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{87}{subsection.2.3.7}
-\contentsline {section}{\numberline {2.4}Metric Embedding}{88}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{89}{subsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Contrastive Loss}{90}{subsubsection.2.4.1.1}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{91}{subsubsection.2.4.1.2}
-\contentsline {subsection}{\numberline {2.4.2}Large-Margin K-Nearest Neighbors (LMNN)}{92}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{93}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}FaceNet}{96}{subsection.2.4.4}
-\contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{97}{chapter.3}
-\contentsline {section}{\numberline {3.1}Preliminary Work}{97}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}S-LE Algorithm Description}{98}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}SE-Isomap Algorithm Description}{98}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Instance-Level Classification}{100}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Future Work}{100}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Instance Selection}{101}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Manifold Learning}{102}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Features}{102}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Metric Embedding}{102}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Out-of-Sample Testing}{103}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Comparison to SOA}{104}{subsection.3.2.6}
-\contentsline {section}{\numberline {3.3}Datasets}{104}{section.3.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{106}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Overview}{106}{subsection.4.0.1}
-\contentsline {subsection}{\numberline {4.0.2}Description of Data}{107}{subsection.4.0.2}
-\contentsline {subsubsection}{\numberline {4.0.2.1}Quadratic Surfaces}{107}{subsubsection.4.0.2.1}
-\contentsline {subsubsection}{\numberline {4.0.2.2}DSIAC MS-003-DB}{107}{subsubsection.4.0.2.2}
-\contentsline {subsection}{\numberline {4.0.3}Feature Extraction}{108}{subsection.4.0.3}
-\contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{108}{subsubsection.4.0.3.1}
-\contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{109}{subsubsection.4.0.3.2}
-\contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{110}{subsection.4.0.4}
-\contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{110}{subsection.4.0.5}
-\contentsline {paragraph}{Training}{110}{section*.65}
-\contentsline {paragraph}{Out-of-Sample Testing}{111}{section*.66}
-\contentsline {paragraph}{Evaluation Metrics}{112}{section*.67}
-\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{113}{chapter.5}
-\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{114}{chapter.6}
-\contentsline {subsection}{\numberline {6.0.1}Overview of Tasks:}{114}{subsection.6.0.1}
-\contentsline {subsection}{\numberline {6.0.2}Tasks and Approximate Dates of Completion:}{114}{subsection.6.0.2}
+\contentsline {subsubsection}{\numberline {2.2.3.6}Hessian LLE}{71}{subsubsection.2.2.3.6}
+\contentsline {subsubsection}{\numberline {2.2.3.7}Local Tangent Space Alignment (LTSA)}{71}{subsubsection.2.2.3.7}
+\contentsline {subsubsection}{\numberline {2.2.3.8}Diffusion Maps}{72}{subsubsection.2.2.3.8}
+\contentsline {subsubsection}{\numberline {2.2.3.9}Sammon Mapping}{72}{subsubsection.2.2.3.9}
+\contentsline {subsubsection}{\numberline {2.2.3.10}Maximum Variance Unfolding (MVU)}{73}{subsubsection.2.2.3.10}
+\contentsline {subsection}{\numberline {2.2.4}Latent Variable Models}{73}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}General Latent Variable Model (GLVM)}{73}{subsubsection.2.2.4.1}
+\contentsline {paragraph}{Factor Analysis (FA)}{73}{section*.47}
+\contentsline {paragraph}{Probabilistic PCA (PPCA)}{73}{section*.48}
+\contentsline {paragraph}{Supervised PCA}{74}{section*.49}
+\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{74}{section*.50}
+\contentsline {subparagraph}{Discriminative Supervised PCA}{74}{section*.51}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Generative Topographic Mapping (GTM)}{74}{subsubsection.2.2.4.2}
+\contentsline {subsection}{\numberline {2.2.5}Competitive Hebbian Learning}{74}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Principal Curves}{74}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Deep Learning}{74}{subsection.2.2.7}
+\contentsline {paragraph}{Autoencoders}{74}{section*.52}
+\contentsline {paragraph}{Graph Convolutional Networks}{74}{section*.53}
+\contentsline {paragraph}{M3DNet}{74}{section*.54}
+\contentsline {paragraph}{Paper in Papers channel}{74}{section*.55}
+\contentsline {subsection}{\numberline {2.2.8}UMAP}{75}{subsection.2.2.8}
+\contentsline {subsection}{\numberline {2.2.9}Stochastic Neighbor Embedding (SNE and t-SNE)}{75}{subsection.2.2.9}
+\contentsline {subsubsection}{\numberline {2.2.9.1}Manifold Charting}{75}{subsubsection.2.2.9.1}
+\contentsline {subsection}{\numberline {2.2.10}NCA}{75}{subsection.2.2.10}
+\contentsline {subsubsection}{\numberline {2.2.10.1}M3DNet}{75}{subsubsection.2.2.10.1}
+\contentsline {subsubsection}{\numberline {2.2.10.2}Relations}{75}{subsubsection.2.2.10.2}
+\contentsline {subsubsection}{\numberline {2.2.10.3}Strengths and Weaknesses}{75}{subsubsection.2.2.10.3}
+\contentsline {subsection}{\numberline {2.2.11}Overview of Unsupervised Manifold Learning Methods}{75}{subsection.2.2.11}
+\contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{77}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}MIDR}{78}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}MidLABS}{80}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}MIDA}{82}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}CLFDA}{83}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{85}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{87}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{88}{subsection.2.3.7}
+\contentsline {section}{\numberline {2.4}Metric Embedding}{89}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{90}{subsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Contrastive Loss}{91}{subsubsection.2.4.1.1}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{92}{subsubsection.2.4.1.2}
+\contentsline {subsection}{\numberline {2.4.2}Large-Margin K-Nearest Neighbors (LMNN)}{93}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{94}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}FaceNet}{97}{subsection.2.4.4}
+\contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{98}{chapter.3}
+\contentsline {section}{\numberline {3.1}Preliminary Work}{98}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}S-LE Algorithm Description}{99}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}SE-Isomap Algorithm Description}{99}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Instance-Level Classification}{101}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Future Work}{101}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Instance Selection}{102}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Manifold Learning}{103}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Features}{103}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Metric Embedding}{103}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Out-of-Sample Testing}{104}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Comparison to SOA}{105}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Datasets}{105}{section.3.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{107}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}Overview}{107}{subsection.4.0.1}
+\contentsline {subsection}{\numberline {4.0.2}Description of Data}{108}{subsection.4.0.2}
+\contentsline {subsubsection}{\numberline {4.0.2.1}Quadratic Surfaces}{108}{subsubsection.4.0.2.1}
+\contentsline {subsubsection}{\numberline {4.0.2.2}DSIAC MS-003-DB}{108}{subsubsection.4.0.2.2}
+\contentsline {subsection}{\numberline {4.0.3}Feature Extraction}{109}{subsection.4.0.3}
+\contentsline {subsubsection}{\numberline {4.0.3.1}HOG Features}{109}{subsubsection.4.0.3.1}
+\contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{110}{subsubsection.4.0.3.2}
+\contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{111}{subsection.4.0.4}
+\contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{111}{subsection.4.0.5}
+\contentsline {paragraph}{Training}{111}{section*.65}
+\contentsline {paragraph}{Out-of-Sample Testing}{112}{section*.66}
+\contentsline {paragraph}{Evaluation Metrics}{113}{section*.67}
+\contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{114}{chapter.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{115}{chapter.6}
+\contentsline {subsection}{\numberline {6.0.1}Overview of Tasks:}{115}{subsection.6.0.1}
+\contentsline {subsection}{\numberline {6.0.2}Tasks and Approximate Dates of Completion:}{115}{subsection.6.0.2}
 \addvspace {10pt}\noindent {APPENDIX} \hfill \par 
