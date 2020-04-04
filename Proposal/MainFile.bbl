@@ -1,4 +1,4 @@
-\begin{thebibliography}{151}
+\begin{thebibliography}{155}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -545,6 +545,11 @@ H.~{Li}, D.~{Liu}, and D.~{Wang}.
 \newblock In \emph{2015 International Joint Conference on Neural Networks
   (IJCNN)}, pages 1--6, July 2015.
 
+\bibitem[Li et~al.(2005)Li, Chen, and Shen]{Li2005SupervisedLTSA}
+Hongyu Li, Wenbin Chen, and I-Fan Shen.
+\newblock Supervised local tangent space alignment for classification.
+\newblock pages 1620--1621, 01 2005.
+
 \bibitem[Li et~al.(2019)Li, Liu, Sui, Chen, Tjio, Ting, and
   Goh]{Li2019CNNMedicalImageClassification}
 Shaohua Li, Yong Liu, Xiuchao Sui, Cheng Chen, Gabriel Tjio, Daniel Shu~Wei
@@ -575,6 +580,13 @@ L.~Livi and A.~Rizzi.
   2013.
 \newblock ISSN 1433-7541.
 \newblock \doi{10.1007/s10044-012-0284-8}.
+
+\bibitem[{Ma} et~al.(2010){Ma}, {Crawford}, and {Tian}]{Ma2010SupervisedLTTSA}
+L.~{Ma}, M.~M. {Crawford}, and J.~W. {Tian}.
+\newblock Generalised supervised local tangent space alignment for
+  hyperspectral image classification.
+\newblock \emph{Electronics Letters}, 46\penalty0 (7):\penalty0 497 --498,
+  April 2010.
 
 \bibitem[Maron and Lozano-P{\'e}rez(1998)]{Maron1998DiverseDensity}
 O.~Maron and T.~Lozano-P{\'e}rez.
@@ -646,6 +658,13 @@ Yanwei Pang, Lei Zhang, Zhengkai Liu, Nenghai Yu, and Houqiang Li.
 \newblock In De-Shuang Huang, Xiao-Ping Zhang, and Guang-Bin Huang, editors,
   \emph{Advances in Intelligent Computing}, pages 117--125, Berlin, Heidelberg,
   2005. Springer Berlin Heidelberg.
+
+\bibitem[{Patwari} and {Hero}(2004)]{Patwari2004HLLESensorNetworks}
+N.~{Patwari} and A.~O. {Hero}.
+\newblock Manifold learning algorithms for localization in wireless sensor
+  networks.
+\newblock In \emph{2004 IEEE International Conference on Acoustics, Speech, and
+  Signal Processing}, volume~3, pages iii--857, May 2004.
 
 \bibitem[Ping et~al.(2010)Ping, Xu, Kexin, Chi, and
   Furao]{Ping2010MILDRMaxMargin}
@@ -1078,6 +1097,18 @@ Q.~Zhang and S.~A. Goldman.
 \newblock In T.~G. Dietterich, S.~Becker, and Z.~Ghahramani, editors,
   \emph{Advances in Neural Information Processing Systems 14}, pages
   1073--1080. MIT Press, 2002.
+
+\bibitem[Zhang et~al.(2007)Zhang, Yang, Zhao, and
+  Ge]{Zhang2007LTSAFaceRecognition}
+Tianhao Zhang, Jie Yang, Deli Zhao, and Xinliang Ge.
+\newblock Linear local tangent space alignment and application to face
+  recognition.
+\newblock \emph{Neurocomputing}, 70\penalty0 (7):\penalty0 1547 -- 1553, 2007.
+\newblock ISSN 0925-2312.
+\newblock \doi{https://doi.org/10.1016/j.neucom.2006.11.007}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0925231206004577}.
+\newblock Advances in Computational Intelligence and Learning.
 
 \bibitem[{Zhang} et~al.(2014){Zhang}, {Zheng}, {Liu}, {Sun}, {Wang}, and
   {Fu}]{Zhang2014SemiSupManLearningFusion}

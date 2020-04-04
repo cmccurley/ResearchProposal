@@ -741,18 +741,29 @@ The special feature exhibited by all Laplacian Eigenmap methods is the use of la
 \begin{align}
 	\mathcal{H}_{mo} = \sum_{n}\sum_{r}((\bm{H}^{n})_{rm}(\bm{H}^{n})_{ro})
 \end{align}
-The symmetric matrix $\mathcal{H}$ gives an estimate of the curvature of the high-dimensional data manifold.  The low-dimensional embedding coordinates $\bm{Z}$ of the input data are given by the eigenvectors of the corresponding $d+1$ smallest eigenvalues of $\mathcal{H}$.
+The symmetric matrix $\mathcal{H}$ gives an estimate of the curvature of the high-dimensional data manifold.  The low-dimensional embedding coordinates $\bm{Z}$ of the input data are given by the eigenvectors of the corresponding $d$ smallest eigenvalues of $\mathcal{H}$.
 
-HLLE shares many of the characteristics of Laplacian Eigenmaps, except that it replaces the manifold Laplacian with the manifold Hessian.  Because of this, HLLE suffers from the same weaknesses as Laplacian Eigenmaps \citep{VanDerMaaten2009DRReview}.
+HLLE shares many of the characteristics of Laplacian Eigenmaps, except that it replaces the manifold Laplacian with the manifold Hessian.  Because of this, HLLE suffers from the same weaknesses as Laplacian Eigenmaps \citep{VanDerMaaten2009DRReview}.  Desipite its weaknesses, HLLE has been applied successfully to sensor localization tasks \citep{Patwari2004HLLESensorNetworks}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LTSA  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Local Tangent Space Alignment (LTSA)}
+\textit{Local Tangent Space Alignment} (LTSA) \citep{Zhang2002LTSA} shares similarities with HLLE in that it describes local properties of high-dimensional data using the local tangent space of each data point \citep{VanDerMaaten2009DRReview}.  The basic idea of LTSA is to use the tangent space in the neighborhood of a data point to represent the local geometry of the data, and then to align the local tangent spaces to construct a global coordinate system for the nonlinear manifold.  In this way, the algorithm consists of two steps: 1.) constructing the principal manifold that is tangential to each data point and 2.) finding the global coordinate system that describes the set of data samples in a low-dimensional space \citep{Zhang2002LTSA}.
 
-\cite{Zhang2002LTSA}, \cite{VanDerMaaten2009DRReview}, \cite{Sorzano2014DRReview}
+Just as with Hessian LLE, LTSA begins by computing $d$-dimensional bases for the local tangent spaces of each of the data points $\bm{x}_{n}$.  This can be done by applying PCA or SVD on the neighbors of each sample.  This provides a linear transformation matrix $\bm{U}_{n}$ from the neighborhood of $\bm{x}_{n}$ to the local tangent space $\Theta_{n}$.  It is assumed that there exists a linear mapping $\bm{M}_{n}$ from the local tangent space coordinates $\bm{\theta}_{n}$ to the low-dimensional representations $\bm{z}_{n}$.  The linear transformation matrix and low-dimensional data representations are found by the following minimization problem \citep{Sorzano2014DRReview}:
+\begin{align}
+	\min_{\bm{M}_{n},\bm{Z}_{n}} \sum_{n=1}^{N} ||\bm{Z}_{n}\bm{H} - \bm{M}_{n}\Theta_{n} ||^{2}_{F}
+\end{align}
+\noindent
+where $\bm{H}$ is a centering matrix.  It was shown in \citep{Zhang2002LTSA} that the low-dimensional embedding coordinates $\bm{Z}$ can be constructed by the eigenvectors corresponding to the $d$ smallest nonzero eigenvalues of an alignment matrix $\bm{B}$.  
 
-\textit{Local Tangent Space Alignment} (LTSA)
+%The elements of the alignment matrix can be found by an iterative summation 
+%\noindent
+%where $I_{n}$ represents the set of indices of the $k$-nearest neighbors of $\bm{x}_{n}$.  The low-dimensional data representations $\bm{Z}$ are found as the eigenvectors corresponding to the $d$ smallest nonzero eigenvalues of the symmetric matrix $\frac{1}{2}(\bm{B} + \bm{B}^{T})$ \citep{VanDerMaaten2009DRReview}.
+
+
+Similar to other sparse spectral manifold learning techniques, the objective function of LTSA is vulnerable to the presence of the trivial solution \citep{VanDerMaaten2009DRReview}.  However, LTSA has been successfully applied to applications in facial recognition \citep{Zhang2007LTSAFaceRecognition} and microarray data \citep{VanDerMaaten2009DRReview}.  Moreover, supervised approaches for LTSA were proposed in \citep{Li2005SupervisedLTSA} and \citep{Ma2010SupervisedLTTSA}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
