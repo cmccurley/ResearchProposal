@@ -47,12 +47,12 @@
 \contentsline {paragraph}{Traditional Isomap}{61}{section*.42}
 \contentsline {paragraph}{Supervised Isomap Approaches}{62}{section*.43}
 \contentsline {subsubsection}{\numberline {2.2.3.4}Locally Linear Embedding (LLE)}{63}{subsubsection.2.2.3.4}
-\contentsline {subsubsection}{\numberline {2.2.3.5}Local Tangent Space Alignment (LTSA)}{65}{subsubsection.2.2.3.5}
-\contentsline {subsubsection}{\numberline {2.2.3.6}Laplacian Eigenmaps (LE)}{65}{subsubsection.2.2.3.6}
+\contentsline {subsubsection}{\numberline {2.2.3.5}Hessian Eigenmaps}{65}{subsubsection.2.2.3.5}
+\contentsline {subsubsection}{\numberline {2.2.3.6}Local Tangent Space Alignment (LTSA)}{65}{subsubsection.2.2.3.6}
+\contentsline {subsubsection}{\numberline {2.2.3.7}Laplacian Eigenmaps (LE)}{65}{subsubsection.2.2.3.7}
 \contentsline {paragraph}{Classical LE}{65}{section*.44}
 \contentsline {paragraph}{Linear LE}{67}{section*.45}
 \contentsline {paragraph}{Supervised LE (S-LE)}{67}{section*.46}
-\contentsline {subsubsection}{\numberline {2.2.3.7}Hessian Eigenmaps}{71}{subsubsection.2.2.3.7}
 \contentsline {subsubsection}{\numberline {2.2.3.8}Diffusion Maps}{71}{subsubsection.2.2.3.8}
 \contentsline {subsubsection}{\numberline {2.2.3.9}Sammon Mapping}{71}{subsubsection.2.2.3.9}
 \contentsline {subsubsection}{\numberline {2.2.3.10}Maximum Variance Unfolding (MVU)}{72}{subsubsection.2.2.3.10}
@@ -65,31 +65,34 @@
 \contentsline {subparagraph}{Discriminative Supervised PCA}{73}{section*.51}
 \contentsline {subsubsection}{\numberline {2.2.4.2}Generative Topographic Mapping (GTM)}{73}{subsubsection.2.2.4.2}
 \contentsline {subsection}{\numberline {2.2.5}Competitive Hebbian Learning}{73}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Deep Learning}{73}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.6}Principal Curves}{73}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Deep Learning}{73}{subsection.2.2.7}
 \contentsline {paragraph}{Autoencoders}{73}{section*.52}
 \contentsline {paragraph}{Graph Convolutional Networks}{73}{section*.53}
 \contentsline {paragraph}{M3DNet}{73}{section*.54}
 \contentsline {paragraph}{Paper in Papers channel}{73}{section*.55}
-\contentsline {subsection}{\numberline {2.2.7}UMAP}{74}{subsection.2.2.7}
-\contentsline {subsection}{\numberline {2.2.8}Stochastic Neighbor Embedding (SNE and t-SNE)}{74}{subsection.2.2.8}
-\contentsline {subsubsection}{\numberline {2.2.8.1}Manifold Charting}{74}{subsubsection.2.2.8.1}
-\contentsline {subsection}{\numberline {2.2.9}NCA}{74}{subsection.2.2.9}
-\contentsline {subsubsection}{\numberline {2.2.9.1}M3DNet}{74}{subsubsection.2.2.9.1}
-\contentsline {subsection}{\numberline {2.2.10}Overview of Unsupervised Manifold Learning Methods}{74}{subsection.2.2.10}
-\contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{75}{section.2.3}
+\contentsline {subsection}{\numberline {2.2.8}UMAP}{74}{subsection.2.2.8}
+\contentsline {subsection}{\numberline {2.2.9}Stochastic Neighbor Embedding (SNE and t-SNE)}{74}{subsection.2.2.9}
+\contentsline {subsubsection}{\numberline {2.2.9.1}Manifold Charting}{74}{subsubsection.2.2.9.1}
+\contentsline {subsection}{\numberline {2.2.10}NCA}{74}{subsection.2.2.10}
+\contentsline {subsubsection}{\numberline {2.2.10.1}M3DNet}{74}{subsubsection.2.2.10.1}
+\contentsline {subsubsection}{\numberline {2.2.10.2}Relations}{74}{subsubsection.2.2.10.2}
+\contentsline {subsubsection}{\numberline {2.2.10.3}Strengths and Weaknesses}{74}{subsubsection.2.2.10.3}
+\contentsline {subsection}{\numberline {2.2.11}Overview of Unsupervised Manifold Learning Methods}{74}{subsection.2.2.11}
+\contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{76}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}MIDR}{77}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}MidLABS}{79}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}MIDA}{81}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}CLFDA}{82}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{84}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{85}{subsection.2.3.6}
-\contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{86}{subsection.2.3.7}
+\contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{86}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{87}{subsection.2.3.7}
 \contentsline {section}{\numberline {2.4}Metric Embedding}{88}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{89}{subsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Contrastive Loss}{89}{subsubsection.2.4.1.1}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{90}{subsubsection.2.4.1.2}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Contrastive Loss}{90}{subsubsection.2.4.1.1}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{91}{subsubsection.2.4.1.2}
 \contentsline {subsection}{\numberline {2.4.2}Large-Margin K-Nearest Neighbors (LMNN)}{92}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{94}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{93}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}FaceNet}{96}{subsection.2.4.4}
 \contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{97}{chapter.3}
 \contentsline {section}{\numberline {3.1}Preliminary Work}{97}{section.3.1}

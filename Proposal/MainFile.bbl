@@ -1,4 +1,4 @@
-\begin{thebibliography}{149}
+\begin{thebibliography}{150}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -1091,6 +1091,12 @@ Yan Zhang, Zhao Zhang, Jie Qin, Li~Zhang, Bing Li, and Fanzhang Li.
 \newblock \doi{https://doi.org/10.1016/j.patcog.2017.09.043}.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/S0031320317303977}.
+
+\bibitem[Zhang and Zha(2002)]{Zhang2002LTSA}
+Zhenyue Zhang and Hongyuan Zha.
+\newblock Principal manifolds and nonlinear dimension reduction via local
+  tangent space alignment.
+\newblock \emph{CoRR}, cs.LG/0212008, 2002.
 
 \bibitem[Zhou and Xu(2007)]{Zhou2007MissSVM}
 Zhi-Hua Zhou and Jun-Ming Xu.

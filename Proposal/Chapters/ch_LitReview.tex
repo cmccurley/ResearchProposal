@@ -528,7 +528,7 @@ Whereas linear PCA is limited to $d<D$ components, KPCA can use up to $N$ compon
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Graphs  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Graph-based Methods}
-Nonlinear dimensionality reduction methods typically rely on the use of computational graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  \textit{Spectral graph theory} focuses on constructing, analyzing and manipulating graphs.  It has proved useful for object representation, graph visualization, spectral clustering, dimensionality reduction and numerous other applications in chemistry, physics, signal processing and computer science \citep{Shuman2013SignalProcessingGraphs, Bengoetxea2002ThesisGraphMatching}.   An overview of computational graphs as well as prominent methods for graph construction in manifold learning are presented. Additionally, geodesic distance approximation from pairwise distances is reviewed.  It should be noted that the work in \citep{Yan2007GeneralGraphEmbeddingFramework} shows how each of the undermentioned graph-based manifold learning approaches can be succinctly described under a general graph-based framework for dimensionality reduction.  It is encouraged that readers turn to that work for additional information on the mathematical relationships between the algorithms, as well as how linearization, kernelization and tensorization are applied in the graph-based setting.
+Nonlinear manifold learning methods typically rely on the use of computational graphs.  These graphs represent data structure pooled from local neighborhoods of samples.  \textit{Spectral graph theory} focuses on constructing, analyzing and manipulating graphs.  It has proved useful for object representation, graph visualization, spectral clustering, dimensionality reduction and numerous other applications in chemistry, physics, signal processing and computer science \citep{Shuman2013SignalProcessingGraphs, Bengoetxea2002ThesisGraphMatching}.   An overview of computational graphs as well as prominent methods for graph construction in manifold learning are presented. Additionally, geodesic distance approximation from pairwise distances is reviewed.  It should be noted that the work in \citep{Yan2007GeneralGraphEmbeddingFramework} shows how each of the undermentioned graph-based manifold learning approaches can be succinctly described under a general graph-based framework for dimensionality reduction.  It is encouraged that readers turn to that work for additional information on the mathematical relationships between the algorithms, as well as how linearization, kernelization and tensorization are applied in the graph-based setting.
 
 \paragraph{Terminology}
 Many dimensionality reduction methods in the literature are interested in analyzing relationships between samples defined on an undirected, weighted graph $G = \{ \mathcal{V}, \mathcal{E}, \bm{W} \}$, which consists of a finite set of \textit{vertices}  $\mathcal{V}$ (also called \textit{nodes} or \textit{points}) with cardinality $\mathcal{V}=N$, a set of \textit{edges} $\mathcal{E} \subset \mathcal{V} \times \mathcal{V} = [\mathcal{V}]^{2}$ (also known as \textit{arcs} or \textit{lines}) and a weighted \textit{adjacency} or \textit{affinity} matrix $\bm{W}$ \citep{Shuman2013SignalProcessingGraphs, Livi2013GraphMatchingProblem, Bengoetxea2002ThesisGraphMatching}.  The the size or \textit{order} of a graph is defined by the number of nodes $|\mathcal{V}|$ and edges $|\mathcal{E}|$.  If two vertices in $G$, say $\bm{u},\bm{v} \in \mathcal{V}$, are connected by an edge $e \in \mathcal{E}$, this is denoted by $e=(\bm{u},\bm{v})$ and the two vertices are said to be \textit{adjacent} or \textit{neighbors}.  When edges do not have a direction, they are coined as undirected.  A graph solely containing this type of connection is termed as an \textit{undirected graph}.  When all edges have directions, meaning $(\bm{u},\bm{v})$ and $(\bm{v},\bm{u})$ are distinguishable, the graph is said to be \textit{directed}.  In the literature, the term \textit{arc} is typically used to denote connections between nodes in directed graphs, while \textit{edge} is used when they are undirected.  The graph-based methods included in this literature review focus on analyzing affinities between data samples in undirected graphs.  Moreover, a \textit{path} between any two nodes in $\bm{u},\bm{u'} \in \mathcal{V}$ is a non-empty sequence of $k$ different vertices $<\bm{v}_{0}, \bm{v}_{1}, \dots, \bm{v}_{k}>$ where $\bm{u}=\bm{v}_{0},\bm{u}'=\bm{v}_{k}$ and $(\bm{v}_{i-1},\bm{v}_{i})\in \mathcal{E}$, $i=1,2,\dots,k$.  Additionally, a graph is said to be \textit{acyclic} if there are no cycles between its edges, regardless of whether it is directed or undirected.  
@@ -622,9 +622,18 @@ Optimization of Equation \ref{eq:LLE_Weight_Equation} can be solved directly by 
 The popularity of LLE has led to the development of linear variants, namely \textit{Neighborhood Preserving Projections} (NPP) and \textit{Orthogonal Neighborhood Preserving Projections} \citep{Pang2005NPP,Kokiopoulou2007OrthoNPP}, and has been applied successfully to applications in super-resolution and sound localization \citep{VanDerMaaten2009DRReview}.  However, LLE tends to collapse large portions of the data close to each other in the embedding space due to the constraint on the covariance matrix.  This may also result in undesired scalings of the manifold.  Despite these effects, supervised approaches based on LLE have also been developed \citep{Chao2019RecentAdvancesSupervisedDimRed,Li2009SupManifoldLearning}.  Existing approaches can be summarized by the LDA idea, that points in the same class should be embedded more closely to each other while points in opposing classes should be well-separated in the low-dimensional space.  This notion is realized by altering the dissimilarity matrix used to construct the neighborhood graph.   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Hessian LE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Hessian Eigenmaps}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LTSA  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Local Tangent Space Alignment (LTSA)}
+
+\cite{Zhang2002LTSA}, \cite{VanDerMaaten2009DRReview}, \cite{Sorzano2014DRReview}
+
+\textit{Local Tangent Space Alignment} (LTSA) 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -738,10 +747,7 @@ Apart from S-LE, other methods have been explored to integrate label information
 
 The special feature exhibited by all Laplacian Eigenmap methods is the use of laplacian regularization, which enforces properties such as smoothness and provides a level of resistance toward the influences of outliers.  This useful feature has been applied in a variety of supervised and semi-supervised tasks, such as hyperspectral and synthetic aperture radar remote sensing classification \citep{Ratle2010ManRegHSI, Ren2017ManRegSAR}, classification of synthetic data \citep{Tsang2007ManifoldRegularization}, zero-shot learning \citep{Meng2018ManRegZeroShot} and reinforcement learning \citep{Li2015ManRegReinforcementLearning}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Hessian LE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Hessian Eigenmaps}
+
 
 \subsubsection{Diffusion Maps}
 
@@ -809,6 +815,8 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 
 \subsection{Competitive Hebbian Learning}
 
+\subsection{Principal Curves}
+
 \subsection{Deep Learning}
 
 \paragraph{Autoencoders}
@@ -832,6 +840,10 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 \subsection{NCA}
 
 \subsubsection{M3DNet}
+
+\subsubsection{Relations}
+
+\subsubsection{Strengths and Weaknesses}
 
 \subsection{Overview of Unsupervised Manifold Learning Methods}
 
