@@ -622,7 +622,23 @@ A weakness (and strength) of Sammon mapping is that it will give much more impor
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  MVU  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Maximum Variance Unfolding (MVU)}
-Section \ref{sec:KPCA} described how Kernel PCA allows PCA to be performed in a features space defined by a kernel function $\kappa$.  However, the choice of kernel function is arbitrary and a chosen kernel may not be optimal for learning the intrinsic structure for a set of data.  To resolve this issue, \textit{Maximum Variance Unfolding} (MVU, formerly known as \textit{Semidefinite Embedding}) attempts to learn an appropriate kernel matrix \citep{Weinberger2004MVU}. 
+Section \ref{sec:KPCA} described how Kernel PCA \citep{Scholkopf1999KPCA,Wang2014KPCAReview} allows PCA to be performed in a feature space defined by a kernel function $\kappa$.  However, the choice of kernel function is arbitrary and may not be optimal for learning the intrinsic structure of a set of data.  To resolve this issue, \textit{Maximum Variance Unfolding} (MVU, formerly known as \textit{Semidefinite Embedding}) attempts to learn an appropriate kernel matrix \citep{Weinberger2004MVU} to be used in conjunction with KPCA.  This is done by defining a neighborhood graph over the data and retaining the pairwise distances through the embedding to a low-dimensional space (as done in Isomap (\ref{sec:Isomap}) \citep{Tenenbaum2000Isomap}).  Unlike Isomap, however, MVU attempts to ``unfold" the data data manifold by maximizing the Euclidean distances between data points under the constraint that the local geometry of the data manifold is unperturbed \citep{VanDerMaaten2009DRReview}.  The optimization can be solved using semidefinite programming.  MVU begins by forming a $k$-nearest neighbor graph $G$.  It then tries to maximize the sum of Euclidean distances between all samples such that the distances inside $G$ are unchanged.  This equates to the to following maximization problem:
+\begin{align}
+	\max_{\bm{Z}} \sum_{m,n} ||\bm{z}_{m} - \bm{z}_{n} ||^{2} \quad s.t. \quad ||\bm{z}_{m} - \bm{z}_{n} ||^{2} = ||\bm{x}_{m} - \bm{x}_{n} ||^{2} \quad \forall (m,n) \in G
+\end{align}
+\noindent
+This objective can be solved through the optimization of a semidefinite programming problem (SDP) for the kernel matrix $\bm{K}$ \citep{Weinberger2004MVU}:
+
+\begin{align}
+	\begin{split}
+		&\max_{\bm{K}} \quad Tr(\bm{K}) \quad s.t.\\
+		&1. \quad \bm{K} \succ 0\\
+		&2. \quad \sum_{m,n} \bm{K}_{m,n}=0\\
+		&3. \quad \bm{K}_{mm} + \bm{K}_{nn} - 2\bm{K}_{mn} = ||\bm{x}_{m} - \bm{x}_{n} ||^{2} \quad \forall (m,n) \in G\\
+	\end{split}
+\end{align}
+\noindent
+with $\bm{K}$ defined as the outer product matrix of the low-dimensional data coordinates $\bm{Z}$.  The solution of the SDP provides a kernel matrix which is used in Kernel PCA.  The low-dimensional embedding coordinates $\bm{Z}$ are found by eigendecomposition of the kernel, as described in Section \ref{sec:KPCA}. 
 
 
 Similarly to Isomap, MVU may suffer from short-circuiting due to optimization constraints which impair successful manifold unfolding.  Despite this weakness, MVU has been applied successfully to applications on microarray data and sensor localization \citep{VanDerMaaten2009DRReview}.
@@ -939,9 +955,9 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 	\hline
 	\textbf{Method} & \textbf{Strategy}\\
 	\hline
-	KPCA  & ~   \\
+	KPCA  & Performs PCA in a feature space defined by a kernel function, preserves variance of data, global structure   \\
 	\hline
-	MVU  & ~   \\
+	MVU  & Learns a kernel function to be used with KPCA that ``unfolds" the manifold, preserves variance of data, global structure  \\
 	\hline
 	Isomap  & Preserves geodesic distances, global structure   \\
 	\hline
