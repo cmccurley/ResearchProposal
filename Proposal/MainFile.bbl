@@ -1,4 +1,4 @@
-\begin{thebibliography}{159}
+\begin{thebibliography}{160}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -57,6 +57,14 @@ G.~Baudat and F.~Anouar.
 \newblock \emph{Neural Computation}, 12\penalty0 (10):\penalty0 2385--2404,
   2000.
 \newblock \doi{10.1162/089976600300014980}.
+
+\bibitem[Belkin and Niyogi(2003)]{Belkin2003LaplacianEigenmaps}
+M.~Belkin and P.~Niyogi.
+\newblock Laplacian eigenmaps for dimensionality reduction and data
+  representation.
+\newblock \emph{Neural Computation}, 15\penalty0 (6):\penalty0 1373--1396,
+  2003.
+\newblock \doi{10.1162/089976603321780317}.
 
 \bibitem[Belkin and Niyogi(2004)]{Belkin2004SemiSupLearningRiemannianManifolds}
 M.~Belkin and P.~Niyogi.

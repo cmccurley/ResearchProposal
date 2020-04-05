@@ -51,7 +51,7 @@
 \contentsline {subsubsection}{\numberline {2.2.3.6}Locally Linear Embedding (LLE)}{66}{subsubsection.2.2.3.6}
 \contentsline {subsubsection}{\numberline {2.2.3.7}Laplacian Eigenmaps (LE)}{67}{subsubsection.2.2.3.7}
 \contentsline {paragraph}{Classical LE}{67}{section*.44}
-\contentsline {paragraph}{Linear LE}{69}{section*.45}
+\contentsline {paragraph}{Linear LE (LPP)}{69}{section*.45}
 \contentsline {paragraph}{Supervised LE (S-LE)}{69}{section*.46}
 \contentsline {subsubsection}{\numberline {2.2.3.8}Hessian LLE}{73}{subsubsection.2.2.3.8}
 \contentsline {subsubsection}{\numberline {2.2.3.9}Local Tangent Space Alignment (LTSA)}{73}{subsubsection.2.2.3.9}

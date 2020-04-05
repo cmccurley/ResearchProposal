@@ -667,7 +667,7 @@ The popularity of LLE has led to the development of linear variantsDonoho2003Hes
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Laplacian Eigenmaps (LE)} \label{sec:Laplacian_Eigenmaps}
 \paragraph{Classical LE}
-Similar to LLE, Laplacian Eigenmaps, or \textit{Spectral Embedding}, is a nonlinear dimensionality reduction technique which aims to preserve local structure of data \citep{Raducanu2012SupervisedNonlinearDimReduction,VanDerMaaten2009DRReview}.  Using \textit{spectral graph theory}, LE computes low-dimensional representations of data in which the dissimilarities between datapoints and their neighbors (according to an affinity measure) are minimized.  The name \textit{Laplacian Eigenmaps} is derived by the use of Laplacian regularization in the optimization procedure \citep{Thorstensen2009ManifoldThesis}. Given a set of $N$ samples $\bm{X} = \{\bm{x}_n\}^{N}_{n=1} \subset \mathbb{R}^{D}$, the first step of LE is to define a \textit{neighborhood graph on the samples}.  This graph, also called an \textit{affinity} or \textit{adjacency} matrix can be constructed in a variety of ways, such as $K$-nearest neighbor, $\epsilon$-ball, full mesh, or by weighting each edge $\bm{x}_m \sim \bm{x}_n$ by a symmetric affinity function $W_{mn} = K(\bm{x}_m;\bm{x}_n)$, typically a radial basis or heat kernel:
+Similar to LLE, Laplacian Eigenmaps, or \textit{Spectral Embedding}, is a nonlinear dimensionality reduction technique which aims to preserve local structure of data \citep{Belkin2003LaplacianEigenmaps, Raducanu2012SupervisedNonlinearDimReduction,VanDerMaaten2009DRReview}.  Using \textit{spectral graph theory}, LE computes low-dimensional representations of data in which the dissimilarities between datapoints and their neighbors (according to an affinity measure) are minimized.  The name \textit{Laplacian Eigenmaps} is derived by the use of Laplacian regularization in the optimization procedure \citep{Thorstensen2009ManifoldThesis}. Given a set of $N$ samples $\bm{X} = \{\bm{x}_n\}^{N}_{n=1} \subset \mathbb{R}^{D}$, the first step of LE is to define a \textit{neighborhood graph on the samples}.  This graph, also called an \textit{affinity} or \textit{adjacency} matrix can be constructed in a variety of ways, such as $K$-nearest neighbor, $\epsilon$-ball, full mesh, or by weighting each edge $\bm{x}_m \sim \bm{x}_n$ by a symmetric affinity function $W_{mn} = K(\bm{x}_m;\bm{x}_n)$, typically a radial basis or heat kernel:
 \begin{align}
 	\bm{W}_{mn}= w_{mn} = \exp \left ( - \frac{|| \bm{x}_m - \bm{x}_n ||^{2}}{\beta}  \right )
 \end{align}
@@ -697,7 +697,7 @@ where $\bm{I}$ is the identity matrix and $\bm{e} = (1, \dots, 1)^{T}$.  The fir
 The column vectors $\bm{v}_{1}, \dots, \bm{v}_{N}$ are the solutions of Equation \ref{eq:trad_le_eig}, ordered to the corresponding eigenvalues, in ascending order, $\lambda_{1} = 0 \leq \lambda_{2} \leq \dots \leq \lambda_{N} $. The embedding of the input samples given by the matrix $\bm{Z}$, is obtained by concatenating the eigenvectors of the $d$ smallest non-zero eigenvalues.  $\bm{Z}$ is a $N \times d$ matrix, where $d < N$ is the dimensionality of the embedded space.  From observation, it is clear that the embedding dimensionality is limited by the number of samples $N$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Linear LE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\paragraph{Linear LE}
+\paragraph{Linear LE (LPP)}
 Because of the representation ability of LE, a linear approach called \textit{Locality Preserving Projections} (LPP) was proposed by He and Niyogi \citep{He2003LPP}.  Similarly to LE, LPP builds a neighborhood graph which incorporates local information of the data.  LPP optimizes a similar objective to LE, however, it is assumed that the low-dimensional data representations come from a linear transformation of the high-dimensional input data.  The primary benefit of LPP over LE is that, while it shares many of the representation properties of LE, it is defined everywhere in the latent space as opposed to just over the training data points.  This allows for simple embeddings of out-of-sample test points.  Moreover, one can perform LPP in the original space or in a reproducing kernel Hilbert space through the use of Mercer kernels as described in Section \ref{sec:Kernels}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Supervised LE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -929,79 +929,79 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 
 \subsection{Overview of Unsupervised Manifold Learning Methods}
 
-\begin{longtable}{ |p{0.3\textwidth}|p{0.6\textwidth}| } 
+\begin{longtable}{ |p{0.25\textwidth}|p{0.6\textwidth}|p{0.08\textwidth}| } 
 	\caption{Overview of unsupervised manifold learning methods and their properties.}
 	\label{tab:Manifold_Learning_Comparison_Table}\\
 	\hline
-	\multicolumn{2}{|c|}{\textbf{Overview of Unsupervised Manifold Learning}} \\
+	\multicolumn{3}{|c|}{\textbf{Overview of Unsupervised Manifold Learning}} \\
 	\hline
-	\multicolumn{2}{|c|}{\textbf{Linear}} \\
+	\multicolumn{3}{|c|}{\textbf{Linear}} \\
 	\hline
-	\textbf{Method} & \textbf{Strategy}\\
+	\textbf{Method} & \textbf{Strategy} & \textbf{Intro.}\\
 	\hline
-	PCA   & Preserves variance of data, global structure \\
+	PCA   & Preserves variance of data, global structure & 1901\\
 	\hline
-	MDS  & Preserves pairwise distances, global structure  \\
+	MDS  & Preserves pairwise distances, global structure  & 1958\\
 	\hline
-	LDA  & Minimizes within-class distance and maximizes between-class distance, global structure  \\
+	LDA  & Minimizes within-class distance and maximizes between-class distance, global structure  & 1936\\
 	\hline
-	NMF   & Decomposes data into low-dimensional coordinates and basis vectors, minimizes approximation error.  \\
+	NMF   & Decomposes data into low-dimensional coordinates and basis vectors, minimizes approximation error.  & ~\\
 	\hline
-	NPP  & Linear variant of LLE, preserves local neighborhoods, local structure   \\
+	NPP  & Linear variant of LLE, preserves local neighborhoods, local structure  & 1994\\
 	\hline
-	LPP  & Linear variant of LE, preserves local neighborhoods, local structure   \\
+	LPP  & Linear variant of LE, preserves local neighborhoods, local structure  & 2003\\
 	\hline
-	\multicolumn{2}{|c|}{\textbf{Nonlinear}} \\
+	\multicolumn{3}{|c|}{\textbf{Nonlinear}} \\
 	\hline
-	\textbf{Method} & \textbf{Strategy}\\
+	\textbf{Method} & \textbf{Strategy} & \textbf{Intro.}\\
 	\hline
-	KPCA  & Performs PCA in a feature space defined by a kernel function, preserves variance of data, global structure   \\
+	KPCA  & Performs PCA in a feature space defined by a kernel function, preserves variance of data, global structure  & 1999 \\
 	\hline
-	MVU  & Learns a kernel function to be used with KPCA that ``unfolds" the manifold, preserves variance of data, global structure  \\
+	MVU  & Learns a kernel function to be used with KPCA that ``unfolds" the manifold, preserves variance of data, global structure  & 2004\\
 	\hline
-	Isomap  & Preserves geodesic distances, global structure   \\
+	Isomap  & Preserves geodesic distances, global structure  & 2000 \\
 	\hline
-	Sammon Mapping  & Preserves pairwise distances.  More emphasis is placed on samples that are close in the input space.  \\
+	Sammon Mapping  & Preserves pairwise distances.  More emphasis is placed on samples that are close in the input space & 1969 \\
 	\hline
-	LLE  & Preserves local neighborhoods, local structure   \\
+	LLE  & Preserves local neighborhoods, local structure  & 2000 \\
 	\hline
-	Laplacian Eigenmaps  & Preserves local neighborhoods, local structure   \\
+	Laplacian Eigenmaps  & Preserves local neighborhoods, local structure  & 2003 \\
 	\hline
-	Hessian LLE  & Minimizes curvature of high-dimensional manifold estimated from local neighborhoods  \\
+	Hessian LLE  & Minimizes curvature of high-dimensional manifold estimated from local neighborhoods & 2003 \\
 	\hline
-	LTSA  &  Learns manifold in local tangent spaces then aligns to form global coordinate system \\
+	LTSA  &  Learns manifold in local tangent spaces then aligns to form global coordinate system & 2002\\
 	\hline
-	Diffusion Maps  & Preserves diffusion distance  \\
+	Diffusion Maps  & Preserves diffusion distance  & 2006\\
 	\hline
-	\multicolumn{2}{|c|}{\textbf{Probabilistic}} \\
+	\multicolumn{3}{|c|}{\textbf{Probabilistic}}\\
 	\hline
-	\textbf{Method} & \textbf{Strategy}\\
+	\textbf{Method} & \textbf{Strategy} & \textbf{Intro.}\\
 	\hline
-	FA  & ~   \\
+	FA  & ~   & ~\\
 	\hline
-	PPCA  & ~   \\
+	PPCA  & ~   & ~\\
 	\hline
-	GTM  & ~  \\
+	GTM  & ~  & ~\\
 	\hline
-	\multicolumn{2}{|c|}{\textbf{Neural Networks}} \\
+	\multicolumn{3}{|c|}{\textbf{Neural Networks}} \\
 	\hline
-	\textbf{Method} & \textbf{Strategy}\\
+	\textbf{Method} & \textbf{Strategy} & \textbf{Intro.}\\
 	\hline
-	SOM  & ~   \\
+	SOM  & ~   & ~\\
 	\hline
-	GNG  & ~   \\
+	GNG  & ~   & ~\\
 	\hline
-	Elastic Nets  & ~   \\
+	Elastic Nets  & ~  & ~ \\
 	\hline
-	Autoencoders  & ~   \\
+	Autoencoders  & ~  & ~ \\
 	\hline
-	SNE  & ~   \\
+	SNE  & ~  & ~ \\
 	\hline
-	UMAP  & ~   \\
+	UMAP  & ~  & ~ \\
 	\hline
-	NCA  & ~   \\
+	NCA  & ~  & ~ \\
 	\hline
-	Manifold Charting  & ~   \\
+	Manifold Charting  & ~  & ~ \\
 	\hline
 \end{longtable}
 
