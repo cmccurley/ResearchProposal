@@ -31,20 +31,20 @@ I was expecting a `,' or a `}'---line 709 of file BibFiles/references.bib
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-"{" immediately follows a field name---line 1706 of file BibFiles/references.bib
+"{" immediately follows a field name---line 1731 of file BibFiles/references.bib
  :  booktitl\part
  :               {title}e={2011 IEEE 11th International Conference on Data Mining},
 I'm skipping whatever remains of this entry
 Warning--entry type for "Tu2019MILGraphNN" isn't style-file defined
---line 1979 of file BibFiles/references.bib
-I was expecting a `,' or a `}'---line 3008 of file BibFiles/references.bib
+--line 2004 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 3033 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 3480 of file BibFiles/references.bib
-I was expecting a `,' or a `}'---line 3544 of file BibFiles/references.bib
+--line 3505 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 3569 of file BibFiles/references.bib
  :  
  :  year = {2001}
 (Error may have been on previous line)
