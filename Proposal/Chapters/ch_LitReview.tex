@@ -433,7 +433,7 @@ Additionally, instead of representing feature vectors in terms of kernels $\phi(
 
 Kernel functions play an important role in the dimensionality reduction literature for both applying nonlinearity to inherently linear problems and in defining similarity measures for graph-based manifold learning methods.  Specifically, nonlinear adaptations of the inherently-linear PCA \citep{Scholkopf1999KPCA}, MDS \citep{Webb2002KMDS} and LDA \citep{Ghojogh2019KDATutorial} algorithms have been formulated. The kernelization of PCA is briefly described in the following. 
 
-\paragraph{Kernel PCA}
+\paragraph{Kernel PCA} \label{sec:KPCA}
 Section \ref{sec:PCA} showed how PCA could be used to compute linear low-dimensional embeddings of data.  This process involved finding the eigenvectors of the empirical data covariance matrix $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}\hat{\bm{x}}_{n}\hat{\bm{x}}_{n}^{T} = \frac{1}{N}\hat{\bm{X}}^{T}\hat{\bm{X}}$, where $\hat{\bm{x}}_{n} = \bm{x}_{n} - \hat{\bm{\mu}}$ is the mean subtracted feature vector.  However, PCA can also be computed by finding the eigenvectors of the inner product matrix $\bm{X}\bm{X}^{T}$ \citep{Murphy2012,Wang2014KPCAReview}.  This interpretation allows the production of nonlinear embeddings by taking advantage of the kernel trick.  This approach is known as \textit{Kernel PCA} (KPCA) \citep{Scholkopf1999KPCA}.  Assuming the data is mapped to a new feature space in $\mathbb{R}^{M}$ by a nonlinear transformation $\phi(\bm{x})$, PCA could be performed in the new feature space.  However, this computation can be extremely costly and inefficient.  Instead, kernel methods can be used to simply the computation.  Following the derivation defined in \citep{Wang2014KPCAReview}, first assume that the data in the new feature space has zero mean:
 \begin{align}
 	\frac{1}{N} \sum_{n=1}^{N}\phi(\bm{x}_{n}) = 0	
@@ -602,6 +602,30 @@ As with most traditional manifold learning methods in the literature, Isomap is 
 where $\mathcal{D}(\bm{x}_{m},\bm{x}_{n})$ denotes the distance measure between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, $\beta$ is used to prevent $\bm{W}(\bm{x}_{m},\bm{x}_{n})$ from increasing too quickly when $\mathcal{D}(\bm{x}_{m},\bm{x}_{n})$ is large and is typically set according to the density of the data, $\alpha$ is a constant in $[0,1]$ which controls the dissimilarity between points in different classes and keeps the graph from becoming disconnected, and $l_{m}$ and $l_{n}$ are the corresponding class labels of samples  $\bm{x}_{m}$ and $\bm{x}_{n}$, respectively.  In Equation \ref{eq:supervised_isomap_dissimilarity}, the dissimilarity between two points is greater than or equal to one if their class labels are different and less than 1 if the points have the same class label.  Therefore, the between-class dissimilarity will always be larger than the within-class, which is an important property for classification tasks.
 
 Li and Guo proposed Supervised Isomap with Explicit mapping (SE-Isomap) in \citep{Li2006SupervisedIsomap}.  SE-Isomap enforces discriminability on the matrix of geodesic distances, as compared to the Euclidean distance matrix used in the aforementioned approaches, to learn an explicit mapping to the low-dimensional embedding space.  Finally, Zhang et al. \citep{Zhang2018IsomapMultiManifold} developed a semi-supervised Isomap to utilize both labeled and unlabeled data points in training.  This method aims at minimizing pairwise distances of within-class samples in the same manifold while maximizing the distances over different manifolds.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Sammon Mapping  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Sammon Mapping} \label{sec:sammon_mapping}
+Classical scaling, a convex technique for multidimensional scaling, was introduced in Section \ref{sec:MDS}.  As discussed, a pitfall of MDS is that it focuses on retaining global pairwise distances as opposed to local distances, which are typically much more important for capturing the geometry of the data \citep{VanDerMaaten2009DRReview}.  Several MDS variants have been proposed to address this weakness.  A popular variant is \textit{Sammon Mapping} \citep{Sammon1966SammonMapping}.
+
+The classical scaling cost function looks to minimize the difference between the pairwise distance matrices of input data and their corresponding low-dimensional representations.  This cost puts emphasis on retaining the global data structure.  Sammon mapping adapts the classical scaling cost function by weighting the contribution of each sample pair $(\bm{x}_{m},\bm{x}_{n})$ by the inverse of their pairwise distances in the high-dimensional input space $\mathcal{D}(\bm{x}_{m},\bm{x}_{n})$.  In this way, the objective becomes
+\begin{align}
+	J(\bm{X},\bm{Z}) = \frac{1}{\sum_{m,n}\mathcal{D}(\bm{x}_{m},\bm{x}_{n})}\sum_{m \neq n} \frac{(\mathcal{D}(\bm{x}_{m},\bm{x}_{n}) - \mathcal{D}(\bm{z}_{m},\bm{z}_{n}))^{2}}{\mathcal{D}(\bm{x}_{m},\bm{x}_{n})}
+\end{align}
+\noindent
+where $\mathcal{D}(\bm{x}_{m},\bm{x}_{n})$ denotes the Euclidean distance between high-dimensional input samples $\bm{x}_{m}$ and $\bm{x}_{n}$, $\mathcal{D}(\bm{z}_{m},\bm{z}_{n})$ is the Euclidean distance between low-dimensional data coordinates $\bm{z}_{m}$ and $\bm{z}_{n}$ and the constant in the front is added to simplify the gradient of the objective.  This cost function gives more weight to preserving distances between samples that are close in the input space.   Minimization of the Sammon objective function is typically performed with gradient descent or a pseudo-Newton method \citep{Sorzano2014DRReview}.
+
+A weakness (and strength) of Sammon mapping is that it will give much more importance to retaining a very small distance, say $10^{-5}$, as compared to  $10^{-4}$.  Despite this, Sammon mapping has been successfully applied to visualization tasks and has reported on applications using gene data and geospatial information \citep{VanDerMaaten2009DRReview}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  MVU  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Maximum Variance Unfolding (MVU)}
+Section \ref{sec:KPCA} described how Kernel PCA allows PCA to be performed in a features space defined by a kernel function $\kappa$.  However, the choice of kernel function is arbitrary and a chosen kernel may not be optimal for learning the intrinsic structure for a set of data.  To resolve this issue, \textit{Maximum Variance Unfolding} (MVU, formerly known as \textit{Semidefinite Embedding}) attempts to learn an appropriate kernel matrix \citep{Weinberger2004MVU}. 
+
+
+Similarly to Isomap, MVU may suffer from short-circuiting due to optimization constraints which impair successful manifold unfolding.  Despite this weakness, MVU has been applied successfully to applications on microarray data and sensor localization \citep{VanDerMaaten2009DRReview}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LLE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -782,7 +806,7 @@ where $\beta$ is the bandwidth of the isotropic function.  By picking an appropr
 	\bm{P}_{mn}^{(1)} = p_{mn}^{(1)} = \frac{w_{mn}}{\sum_{o=1}^{N}w_{mo}}
 \end{align}
 \noindent
-This matrix represents the probability of a transition from one data sample to another in a single time-step.  Taking advantage of the Markov assumption, the forward transition probability matrix for $t$ time-steps $\bm{P}^{(t)}$ is given by $(\bm{P}^{(1)})^{t}$ \citep{Hajek2015RandomProcesses} and a \textit{diffusion distance} can be defined as
+This matrix represents the probability of a transition from one data sample to another in a single time-step. Relating DM to Laplacian Eignemaps, this matrix can also be interpreted as the normalized graph Laplacian matrix \citep{Thorstensen2009ManifoldThesis}. Taking advantage of the Markov assumption, the forward transition probability matrix for $t$ time-steps $\bm{P}^{(t)}$ is given by $(\bm{P}^{(1)})^{t}$ \citep{Hajek2015RandomProcesses} and a \textit{diffusion distance} can be defined as
 \begin{align} \label{eq:Diffusion_Distance}
 	D^{(t)}(\bm{x}_{m}, \bm{x}_{n}) = \sum_{o=1}^{N} || \bm{P}_{mo}^{(t)} - \bm{P}_{on}^{(t)}||^{2}
 \end{align}
@@ -802,23 +826,11 @@ Since the graph is fully-connected, the largest eigenvalue is trivial (i.e. $\la
 Diffusion maps have been successfully applied to tasks in shape matching and gene expression analysis \citep{VanDerMaaten2009DRReview}.
 
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Sammon Mapping  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Latent Variable Models %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Sammon Mapping} \label{sec:sammon_mapping}
-Classical scaling, a convex technique for multidimensional scaling, was introduced in Section \ref{sec:MDS}.  As discussed, a pitfall of MDS is that it focuses on retaining global pairwise distances as opposed to local distances, which are typically much more important for capturing the geometry of the data \citep{VanDerMaaten2009DRReview}.  Several MDS variants have been proposed to address this weakness.  A popular variant is \textit{Sammon Mapping} \citep{Sammon1966SammonMapping}.
-
-The classical scaling cost function looks to minimize the difference between the pairwise distance matrices of input data and their corresponding low-dimensional representations.  This cost puts emphasis on retaining the global data structure.  Sammon mapping adapts the classical scaling cost function by weighting the contribution of each sample pair $(\bm{x}_{m},\bm{x}_{n})$ by the inverse of their pairwise distances in the high-dimensional input space $\mathcal{D}(\bm{x}_{m},\bm{x}_{n})$.  In this way, the objective becomes
-\begin{align}
-	J(\bm{X},\bm{Z}) = \frac{1}{\sum_{m,n}\mathcal{D}(\bm{x}_{m},\bm{x}_{n})}\sum_{m \neq n} \frac{(\mathcal{D}(\bm{x}_{m},\bm{x}_{n}) - \mathcal{D}(\bm{z}_{m},\bm{z}_{n}))^{2}}{\mathcal{D}(\bm{x}_{m},\bm{x}_{n})}
-\end{align}
-\noindent
-where $\mathcal{D}(\bm{x}_{m},\bm{x}_{n})$ denotes the Euclidean distance between high-dimensional input samples $\bm{x}_{m}$ and $\bm{x}_{n}$, $\mathcal{D}(\bm{z}_{m},\bm{z}_{n})$ is the Euclidean distance between low-dimensional data coordinates $\bm{z}_{m}$ and $\bm{z}_{n}$ and the constant in the front is added to simplify the gradient of the objective.  This cost function gives more weight to preserving distances between samples that are close in the input space.   Minimization of the Sammon objective function is typically performed with gradient descent or a pseudo-Newton method \citep{Sorzano2014DRReview}.
-
-A weakness (and strength) of Sammon mapping is that it will give much more importance to retaining a very small distance, say $10^{-5}$, as compared to  $10^{-4}$.  Despite this, Sammon mapping has been successfully applied to visualization tasks and has reported on applications using gene data and geospatial information \citep{VanDerMaaten2009DRReview}.
-
-
-\subsubsection{Maximum Variance Unfolding (MVU)}
 
 \subsection{Latent Variable Models}
 
@@ -927,6 +939,10 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 	\hline
 	\textbf{Method} & \textbf{Strategy}\\
 	\hline
+	KPCA  & ~   \\
+	\hline
+	MVU  & ~   \\
+	\hline
 	Isomap  & Preserves geodesic distances, global structure   \\
 	\hline
 	Sammon Mapping  & Preserves pairwise distances.  More emphasis is placed on samples that are close in the input space.  \\
@@ -939,9 +955,7 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 	\hline
 	LTSA  &  Learns manifold in local tangent spaces then aligns to form global coordinate system \\
 	\hline
-	Diffusion Maps  & ~  \\
-	\hline
-	MVU  & ~   \\
+	Diffusion Maps  & Preserves diffusion distance  \\
 	\hline
 	\multicolumn{2}{|c|}{\textbf{Probabilistic}} \\
 	\hline

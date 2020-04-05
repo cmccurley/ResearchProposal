@@ -46,16 +46,16 @@
 \contentsline {subsubsection}{\numberline {2.2.3.3}Isomap}{61}{subsubsection.2.2.3.3}
 \contentsline {paragraph}{Traditional Isomap}{61}{section*.42}
 \contentsline {paragraph}{Supervised Isomap Approaches}{62}{section*.43}
-\contentsline {subsubsection}{\numberline {2.2.3.4}Locally Linear Embedding (LLE)}{63}{subsubsection.2.2.3.4}
-\contentsline {subsubsection}{\numberline {2.2.3.5}Laplacian Eigenmaps (LE)}{65}{subsubsection.2.2.3.5}
-\contentsline {paragraph}{Classical LE}{65}{section*.44}
-\contentsline {paragraph}{Linear LE}{67}{section*.45}
-\contentsline {paragraph}{Supervised LE (S-LE)}{67}{section*.46}
-\contentsline {subsubsection}{\numberline {2.2.3.6}Hessian LLE}{71}{subsubsection.2.2.3.6}
-\contentsline {subsubsection}{\numberline {2.2.3.7}Local Tangent Space Alignment (LTSA)}{71}{subsubsection.2.2.3.7}
-\contentsline {subsubsection}{\numberline {2.2.3.8}Diffusion Maps}{72}{subsubsection.2.2.3.8}
-\contentsline {subsubsection}{\numberline {2.2.3.9}Sammon Mapping}{74}{subsubsection.2.2.3.9}
-\contentsline {subsubsection}{\numberline {2.2.3.10}Maximum Variance Unfolding (MVU)}{75}{subsubsection.2.2.3.10}
+\contentsline {subsubsection}{\numberline {2.2.3.4}Sammon Mapping}{63}{subsubsection.2.2.3.4}
+\contentsline {subsubsection}{\numberline {2.2.3.5}Maximum Variance Unfolding (MVU)}{64}{subsubsection.2.2.3.5}
+\contentsline {subsubsection}{\numberline {2.2.3.6}Locally Linear Embedding (LLE)}{65}{subsubsection.2.2.3.6}
+\contentsline {subsubsection}{\numberline {2.2.3.7}Laplacian Eigenmaps (LE)}{66}{subsubsection.2.2.3.7}
+\contentsline {paragraph}{Classical LE}{66}{section*.44}
+\contentsline {paragraph}{Linear LE}{68}{section*.45}
+\contentsline {paragraph}{Supervised LE (S-LE)}{68}{section*.46}
+\contentsline {subsubsection}{\numberline {2.2.3.8}Hessian LLE}{72}{subsubsection.2.2.3.8}
+\contentsline {subsubsection}{\numberline {2.2.3.9}Local Tangent Space Alignment (LTSA)}{72}{subsubsection.2.2.3.9}
+\contentsline {subsubsection}{\numberline {2.2.3.10}Diffusion Maps}{73}{subsubsection.2.2.3.10}
 \contentsline {subsection}{\numberline {2.2.4}Latent Variable Models}{75}{subsection.2.2.4}
 \contentsline {subsubsection}{\numberline {2.2.4.1}General Latent Variable Model (GLVM)}{75}{subsubsection.2.2.4.1}
 \contentsline {paragraph}{Factor Analysis (FA)}{75}{section*.47}
@@ -83,17 +83,17 @@
 \contentsline {subsection}{\numberline {2.3.1}MIDR}{80}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}MidLABS}{83}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}MIDA}{85}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}CLFDA}{85}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{87}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.4}CLFDA}{86}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{88}{subsection.2.3.5}
 \contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{89}{subsection.2.3.6}
 \contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{90}{subsection.2.3.7}
-\contentsline {section}{\numberline {2.4}Metric Embedding}{91}{section.2.4}
+\contentsline {section}{\numberline {2.4}Metric Embedding}{92}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{93}{subsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.1.1}Contrastive Loss}{93}{subsubsection.2.4.1.1}
 \contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{94}{subsubsection.2.4.1.2}
 \contentsline {subsection}{\numberline {2.4.2}Large-Margin K-Nearest Neighbors (LMNN)}{96}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{97}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}FaceNet}{99}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{98}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}FaceNet}{100}{subsection.2.4.4}
 \contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{101}{chapter.3}
 \contentsline {section}{\numberline {3.1}Preliminary Work}{101}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}S-LE Algorithm Description}{102}{subsection.3.1.1}

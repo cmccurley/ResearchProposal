@@ -24,13 +24,13 @@
 \BOOKMARK [3][-]{subsubsection.2.2.3.1}{2.2.3.1 Kernelization}{subsection.2.2.3}% 24
 \BOOKMARK [3][-]{subsubsection.2.2.3.2}{2.2.3.2 Graph-based Methods}{subsection.2.2.3}% 25
 \BOOKMARK [3][-]{subsubsection.2.2.3.3}{2.2.3.3 Isomap}{subsection.2.2.3}% 26
-\BOOKMARK [3][-]{subsubsection.2.2.3.4}{2.2.3.4 Locally Linear Embedding \(LLE\)}{subsection.2.2.3}% 27
-\BOOKMARK [3][-]{subsubsection.2.2.3.5}{2.2.3.5 Laplacian Eigenmaps \(LE\)}{subsection.2.2.3}% 28
-\BOOKMARK [3][-]{subsubsection.2.2.3.6}{2.2.3.6 Hessian LLE}{subsection.2.2.3}% 29
-\BOOKMARK [3][-]{subsubsection.2.2.3.7}{2.2.3.7 Local Tangent Space Alignment \(LTSA\)}{subsection.2.2.3}% 30
-\BOOKMARK [3][-]{subsubsection.2.2.3.8}{2.2.3.8 Diffusion Maps}{subsection.2.2.3}% 31
-\BOOKMARK [3][-]{subsubsection.2.2.3.9}{2.2.3.9 Sammon Mapping}{subsection.2.2.3}% 32
-\BOOKMARK [3][-]{subsubsection.2.2.3.10}{2.2.3.10 Maximum Variance Unfolding \(MVU\)}{subsection.2.2.3}% 33
+\BOOKMARK [3][-]{subsubsection.2.2.3.4}{2.2.3.4 Sammon Mapping}{subsection.2.2.3}% 27
+\BOOKMARK [3][-]{subsubsection.2.2.3.5}{2.2.3.5 Maximum Variance Unfolding \(MVU\)}{subsection.2.2.3}% 28
+\BOOKMARK [3][-]{subsubsection.2.2.3.6}{2.2.3.6 Locally Linear Embedding \(LLE\)}{subsection.2.2.3}% 29
+\BOOKMARK [3][-]{subsubsection.2.2.3.7}{2.2.3.7 Laplacian Eigenmaps \(LE\)}{subsection.2.2.3}% 30
+\BOOKMARK [3][-]{subsubsection.2.2.3.8}{2.2.3.8 Hessian LLE}{subsection.2.2.3}% 31
+\BOOKMARK [3][-]{subsubsection.2.2.3.9}{2.2.3.9 Local Tangent Space Alignment \(LTSA\)}{subsection.2.2.3}% 32
+\BOOKMARK [3][-]{subsubsection.2.2.3.10}{2.2.3.10 Diffusion Maps}{subsection.2.2.3}% 33
 \BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Latent Variable Models}{section.2.2}% 34
 \BOOKMARK [3][-]{subsubsection.2.2.4.1}{2.2.4.1 General Latent Variable Model \(GLVM\)}{subsection.2.2.4}% 35
 \BOOKMARK [3][-]{subsubsection.2.2.4.2}{2.2.4.2 Generative Topographic Mapping \(GTM\)}{subsection.2.2.4}% 36
