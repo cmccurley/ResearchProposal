@@ -37,40 +37,40 @@
 \contentsline {subsection}{\numberline {2.2.3}Nonlinear Manifold Learning}{51}{subsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.3.1}Kernelization}{52}{subsubsection.2.2.3.1}
 \contentsline {paragraph}{Kernels}{52}{section*.34}
-\contentsline {paragraph}{Kernel PCA}{54}{section*.35}
-\contentsline {subsubsection}{\numberline {2.2.3.2}Graph-based Methods}{56}{subsubsection.2.2.3.2}
-\contentsline {paragraph}{Terminology}{57}{section*.36}
-\contentsline {paragraph}{$\bm {K}$-Nearest Neighbor Graph}{58}{section*.38}
-\contentsline {paragraph}{$\bm {\epsilon }$-Neighborhood Graph}{59}{section*.39}
-\contentsline {paragraph}{Geodesic Distance Approximation}{59}{section*.40}
-\contentsline {subsubsection}{\numberline {2.2.3.3}Isomap}{61}{subsubsection.2.2.3.3}
-\contentsline {paragraph}{Traditional Isomap}{61}{section*.42}
-\contentsline {paragraph}{Supervised Isomap Approaches}{62}{section*.43}
-\contentsline {subsubsection}{\numberline {2.2.3.4}Sammon Mapping}{63}{subsubsection.2.2.3.4}
-\contentsline {subsubsection}{\numberline {2.2.3.5}Maximum Variance Unfolding (MVU)}{64}{subsubsection.2.2.3.5}
-\contentsline {subsubsection}{\numberline {2.2.3.6}Locally Linear Embedding (LLE)}{66}{subsubsection.2.2.3.6}
-\contentsline {subsubsection}{\numberline {2.2.3.7}Laplacian Eigenmaps (LE)}{67}{subsubsection.2.2.3.7}
-\contentsline {paragraph}{Classical LE}{67}{section*.44}
-\contentsline {paragraph}{Linear LE (LPP)}{69}{section*.45}
-\contentsline {paragraph}{Supervised LE (S-LE)}{69}{section*.46}
-\contentsline {subsubsection}{\numberline {2.2.3.8}Hessian LLE}{73}{subsubsection.2.2.3.8}
-\contentsline {subsubsection}{\numberline {2.2.3.9}Local Tangent Space Alignment (LTSA)}{73}{subsubsection.2.2.3.9}
-\contentsline {subsubsection}{\numberline {2.2.3.10}Diffusion Maps}{74}{subsubsection.2.2.3.10}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Kernel PCA}{54}{subsubsection.2.2.3.2}
+\contentsline {subsubsection}{\numberline {2.2.3.3}Graph-based Methods}{57}{subsubsection.2.2.3.3}
+\contentsline {paragraph}{Terminology}{57}{section*.35}
+\contentsline {paragraph}{$\bm {K}$-Nearest Neighbor Graph}{58}{section*.37}
+\contentsline {paragraph}{$\bm {\epsilon }$-Neighborhood Graph}{59}{section*.38}
+\contentsline {paragraph}{Geodesic Distance Approximation}{60}{section*.39}
+\contentsline {subsubsection}{\numberline {2.2.3.4}Isomap}{60}{subsubsection.2.2.3.4}
+\contentsline {paragraph}{Traditional Isomap}{60}{section*.41}
+\contentsline {paragraph}{Supervised Isomap Approaches}{62}{section*.42}
+\contentsline {subsubsection}{\numberline {2.2.3.5}Sammon Mapping}{64}{subsubsection.2.2.3.5}
+\contentsline {subsubsection}{\numberline {2.2.3.6}Maximum Variance Unfolding (MVU)}{65}{subsubsection.2.2.3.6}
+\contentsline {subsubsection}{\numberline {2.2.3.7}Locally Linear Embedding (LLE)}{66}{subsubsection.2.2.3.7}
+\contentsline {subsubsection}{\numberline {2.2.3.8}Laplacian Eigenmaps (LE)}{67}{subsubsection.2.2.3.8}
+\contentsline {paragraph}{Classical LE}{67}{section*.43}
+\contentsline {paragraph}{Linear LE (LPP)}{69}{section*.44}
+\contentsline {paragraph}{Supervised LE (S-LE)}{69}{section*.45}
+\contentsline {subsubsection}{\numberline {2.2.3.9}Hessian LLE}{73}{subsubsection.2.2.3.9}
+\contentsline {subsubsection}{\numberline {2.2.3.10}Local Tangent Space Alignment (LTSA)}{74}{subsubsection.2.2.3.10}
+\contentsline {subsubsection}{\numberline {2.2.3.11}Diffusion Maps}{75}{subsubsection.2.2.3.11}
 \contentsline {subsection}{\numberline {2.2.4}Latent Variable Models}{76}{subsection.2.2.4}
 \contentsline {subsubsection}{\numberline {2.2.4.1}General Latent Variable Model (GLVM)}{76}{subsubsection.2.2.4.1}
-\contentsline {paragraph}{Factor Analysis (FA)}{76}{section*.47}
-\contentsline {paragraph}{Probabilistic PCA (PPCA)}{76}{section*.48}
-\contentsline {paragraph}{Supervised PCA}{77}{section*.49}
-\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{77}{section*.50}
-\contentsline {subparagraph}{Discriminative Supervised PCA}{78}{section*.51}
+\contentsline {paragraph}{Factor Analysis (FA)}{76}{section*.46}
+\contentsline {paragraph}{Probabilistic PCA (PPCA)}{76}{section*.47}
+\contentsline {paragraph}{Supervised PCA}{77}{section*.48}
+\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{78}{section*.49}
+\contentsline {subparagraph}{Discriminative Supervised PCA}{78}{section*.50}
 \contentsline {subsubsection}{\numberline {2.2.4.2}Generative Topographic Mapping (GTM)}{78}{subsubsection.2.2.4.2}
 \contentsline {subsection}{\numberline {2.2.5}Competitive Hebbian Learning}{78}{subsection.2.2.5}
 \contentsline {subsection}{\numberline {2.2.6}Principal Curves}{78}{subsection.2.2.6}
 \contentsline {subsection}{\numberline {2.2.7}Deep Learning}{78}{subsection.2.2.7}
-\contentsline {paragraph}{Autoencoders}{78}{section*.52}
-\contentsline {paragraph}{Graph Convolutional Networks}{78}{section*.53}
-\contentsline {paragraph}{M3DNet}{78}{section*.54}
-\contentsline {paragraph}{Paper in Papers channel}{78}{section*.55}
+\contentsline {paragraph}{Autoencoders}{78}{section*.51}
+\contentsline {paragraph}{Graph Convolutional Networks}{78}{section*.52}
+\contentsline {paragraph}{M3DNet}{78}{section*.53}
+\contentsline {paragraph}{Paper in Papers channel}{78}{section*.54}
 \contentsline {subsection}{\numberline {2.2.8}UMAP}{78}{subsection.2.2.8}
 \contentsline {subsection}{\numberline {2.2.9}Stochastic Neighbor Embedding (SNE and t-SNE)}{78}{subsection.2.2.9}
 \contentsline {subsubsection}{\numberline {2.2.9.1}Manifold Charting}{78}{subsubsection.2.2.9.1}
@@ -117,9 +117,9 @@
 \contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{114}{subsubsection.4.0.3.2}
 \contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{115}{subsection.4.0.4}
 \contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{115}{subsection.4.0.5}
-\contentsline {paragraph}{Training}{115}{section*.65}
-\contentsline {paragraph}{Out-of-Sample Testing}{116}{section*.66}
-\contentsline {paragraph}{Evaluation Metrics}{117}{section*.67}
+\contentsline {paragraph}{Training}{115}{section*.64}
+\contentsline {paragraph}{Out-of-Sample Testing}{116}{section*.65}
+\contentsline {paragraph}{Evaluation Metrics}{117}{section*.66}
 \contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{118}{chapter.5}
 \contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{119}{chapter.6}
 \contentsline {subsection}{\numberline {6.0.1}Overview of Tasks:}{119}{subsection.6.0.1}

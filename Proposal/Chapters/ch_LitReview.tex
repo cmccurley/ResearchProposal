@@ -433,7 +433,7 @@ Additionally, instead of representing feature vectors in terms of kernels $\phi(
 
 Kernel functions play an important role in the dimensionality reduction literature for both applying nonlinearity to inherently linear problems and in defining similarity measures for graph-based manifold learning methods.  Specifically, nonlinear adaptations of the inherently-linear PCA \citep{Scholkopf1999KPCA}, MDS \citep{Webb2002KMDS} and LDA \citep{Ghojogh2019KDATutorial} algorithms have been formulated. The kernelization of PCA is briefly described in the following. 
 
-\paragraph{Kernel PCA} \label{sec:KPCA}
+\subsubsection{Kernel PCA (KPCA)} \label{sec:KPCA}
 Section \ref{sec:PCA} showed how PCA could be used to compute linear low-dimensional embeddings of data.  This process involved finding the eigenvectors of the empirical data covariance matrix $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}\hat{\bm{x}}_{n}\hat{\bm{x}}_{n}^{T} = \frac{1}{N}\hat{\bm{X}}^{T}\hat{\bm{X}}$, where $\hat{\bm{x}}_{n} = \bm{x}_{n} - \hat{\bm{\mu}}$ is the mean subtracted feature vector.  However, PCA can also be computed by finding the eigenvectors of the inner product matrix $\bm{X}\bm{X}^{T}$ \citep{Murphy2012,Wang2014KPCAReview}.  This interpretation allows the production of nonlinear embeddings by taking advantage of the kernel trick.  This approach is known as \textit{Kernel PCA} (KPCA) \citep{Scholkopf1999KPCA}.  Assuming the data is mapped to a new feature space in $\mathbb{R}^{M}$ by a nonlinear transformation $\phi(\bm{x})$, PCA could be performed in the new feature space.  However, this computation can be extremely costly and inefficient.  Instead, kernel methods can be used to simply the computation.  Following the derivation defined in \citep{Wang2014KPCAReview}, first assume that the data in the new feature space has zero mean:
 \begin{align}
 	\frac{1}{N} \sum_{n=1}^{N}\phi(\bm{x}_{n}) = 0	
@@ -1214,15 +1214,15 @@ Table \ref{tab:MIDRComparison} shows a comparison between the multiple instance 
 	\hline
 	\textbf{Method} & \textbf{Summary} & \textbf{Reduction Method} & \textbf{Classification Level}\\
 	\hline
-	MIDR   & Finds a sparse, orthogonal linear projection matrix optimized for bag-level logistic regression   &Linear, orthogonal projection  &  bag-level\\
+	MIDR \newline (2010)   & Finds a sparse, orthogonal linear projection matrix optimized for bag-level logistic regression   &Linear, orthogonal projection  &  bag-level\\
 	\hline
-	MidLABS&  Finds linear projection vector using LDA defined from bag-similarity kernel  & LDA   & bag-level\\
+	MidLABS \newline (2010) &  Finds linear projection vector using LDA defined from bag-similarity kernel  & LDA   & bag-level\\
 	\hline
-	MIDA &Learns linear projection vector using LDA defined from bag representative vectors & LDA &  instance-level\\
+	MIDA \newline (2014) &Learns linear projection vector using LDA defined from bag representative vectors & LDA &  instance-level\\
 	\hline
-	CLFDA  &Learns linear projection matrix using local discriminant analysis defined from instance scatter.  Instance labels are provided as bag labels and refined. & LFDA &  instance-level\\
+	CLFDA \newline (2010)  &Learns linear projection matrix using local discriminant analysis defined from instance scatter.  Instance labels are provided as bag labels and refined. & LFDA &  instance-level\\
 	\hline
-	MI-FEAR &  Incrementally leaves out feature and evaluates performance loss to provide feature score  & Feature selection & instance-level\\
+	MI-FEAR \newline (2015) &  Incrementally leaves out feature and evaluates performance loss to provide feature score  & Feature selection & instance-level\\
 	\hline
 \end{longtable}
 
