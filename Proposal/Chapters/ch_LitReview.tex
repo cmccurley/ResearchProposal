@@ -768,9 +768,23 @@ Similar to other sparse spectral manifold learning techniques, the objective fun
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Diffusion Maps  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Diffusion Maps}
+The success of ``kernel eigenmap approaches" such as LLE, LE, HLLE and LTSA led to the development of a manifold learning method called \textit{Diffusion Maps} (DM) \citep{Coifman2006DiffusionMaps}.  Diffusion maps is a framework that originates from the field of dynamical systems. DM's are based on defining a Markov random walk on the graph of the data.  By performing a random walk for a number of timesteps, a measure for the proximity of the data points is obtained \citep{VanDerMaaten2009DRReview}. Essentially, a DM embeds data into a lower-dimensional space such that the Euclidean distance between points is approximated by the diffusion distance in the original feature space.
 
+In the diffusion maps framework, a graph of the data is first constructed.  The weights and edges in the graph are computed by a heat-kernel (commonly called \textit{radial-basis function} RBF), which provides a weight matrix $\bm{W}$ with entries
+\begin{align}
+	\bm{W}_{mn} = w_{mn} = \kappa(\bm{x}_{m},\bm{x}_{n}) = \exp \left( - \frac{|| \bm{x}_{m} - \bm{x}_{n} ||^{2}}{\beta} \right)
+\end{align}
+\noindent
+where $\beta$ is the bandwidth of the isotropic function.
+
+The diffusion distance is small if there are many high-probability paths of length $t$ between two samples.  By integrating over all paths through the graph, DM is more robust to short-circuiting and noise perturbation than other approaches, such as the geodesic distance utilized in Isomap \citep{VanDerMaaten2009DRReview,Delaporte2008DiffusionMaps}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Sammon Mapping  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Sammon Mapping} \label{sec:sammon_mapping}
 Classical scaling, a convex technique for multidimensional scaling, was introduced in Section \ref{sec:MDS}.  As discussed, a pitfall of MDS is that it focuses on retaining global pairwise distances as opposed to local distances, which are typically much more important for capturing the geometry of the data \citep{VanDerMaaten2009DRReview}.  Several MDS variants have been proposed to address this weakness.  A popular variant is \textit{Sammon Mapping} \citep{Sammon1966SammonMapping}.
 
@@ -901,11 +915,11 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 	\hline
 	Laplacian Eigenmaps  & Preserves local neighborhoods, local structure   \\
 	\hline
-	Hessian Eigenmaps  & ~  \\
+	Hessian LLE  & Minimizes curvature of high-dimensional manifold estimated from local neighborhoods  \\
+	\hline
+	LTSA  &  Learns manifold in local tangent spaces then aligns to form global coordinate system \\
 	\hline
 	Diffusion Maps  & ~  \\
-	\hline
-	LTSA  & ~  \\
 	\hline
 	MVU  & ~   \\
 	\hline

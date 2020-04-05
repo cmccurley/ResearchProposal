@@ -1,4 +1,4 @@
-\begin{thebibliography}{155}
+\begin{thebibliography}{157}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -230,6 +230,17 @@ Wei Chu and Zoubin Ghahramani.
   Aug 2006.
 \newblock \doi{10.1109/ICICIC.2006.530}.
 
+\bibitem[Coifman and Lafon(2006)]{Coifman2006DiffusionMaps}
+Ronald~R. Coifman and Stéphane Lafon.
+\newblock Diffusion maps.
+\newblock \emph{Applied and Computational Harmonic Analysis}, 21\penalty0
+  (1):\penalty0 5 -- 30, 2006.
+\newblock ISSN 1063-5203.
+\newblock \doi{https://doi.org/10.1016/j.acha.2006.04.006}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S1063520306000546}.
+\newblock Special Issue: Diffusion Maps and Wavelets.
+
 \bibitem[Cook(2015)]{Cook2015Thesis}
 M.~Cook.
 \newblock Task driven extended functions of multiple instances (td-efumi).
@@ -260,6 +271,12 @@ Ofer Dekel, Yoram Singer, and Christopher~D Manning.
 \newblock In S.~Thrun, L.~K. Saul, and B.~Sch\"{o}lkopf, editors,
   \emph{Advances in Neural Information Processing Systems 16}, pages 497--504.
   MIT Press, 2004.
+
+\bibitem[Delaporte et~al.(2008)Delaporte, Herbst, Hereman, and der
+  Walt]{Delaporte2008DiffusionMaps}
+J.~Delaporte, B.~M. Herbst, W.~Hereman, and S.~Van der Walt.
+\newblock An introduction to diffusion maps.
+\newblock 2008.
 
 \bibitem[Deng et~al.(2009)Deng, Dong, Socher, Li, Li, and
   Fei-Fei]{Deng2009ImageNet}

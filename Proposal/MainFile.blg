@@ -31,20 +31,20 @@ I was expecting a `,' or a `}'---line 700 of file BibFiles/references.bib
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-"{" immediately follows a field name---line 1674 of file BibFiles/references.bib
+"{" immediately follows a field name---line 1697 of file BibFiles/references.bib
  :  booktitl\part
  :               {title}e={2011 IEEE 11th International Conference on Data Mining},
 I'm skipping whatever remains of this entry
 Warning--entry type for "Tu2019MILGraphNN" isn't style-file defined
---line 1947 of file BibFiles/references.bib
-I was expecting a `,' or a `}'---line 2976 of file BibFiles/references.bib
+--line 1970 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 2999 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 3448 of file BibFiles/references.bib
-I was expecting a `,' or a `}'---line 3512 of file BibFiles/references.bib
+--line 3471 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 3535 of file BibFiles/references.bib
  :  
  :  year = {2001}
 (Error may have been on previous line)
@@ -55,6 +55,7 @@ Warning--empty booktitle in Babenko2011MILManifoldBags
 Warning--empty journal in Bishop1998GTM
 Warning--empty year in Breiman2001StatisitcalModeling
 Warning--empty year in Breiman2001StatisitcalModeling
+Warning--empty journal in Delaporte2008DiffusionMaps
 Warning--empty year in MUUFLScoringCode
 Warning--empty booktitle in Hu2008MIRanking
 Warning--empty publisher in Kegl2008PrincipalManifoldsTextbook
@@ -71,45 +72,45 @@ Warning--empty title in Xu2011MI_Metric_Learning
 Warning--empty booktitle in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
-You've used 155 entries,
+You've used 157 entries,
             2773 wiz_defined-function locations,
-            1729 strings with 40827 characters,
-and the built_in function-call counts, 80338 in all, are:
-= -- 7480
-> -- 4559
-< -- 123
-+ -- 1528
-- -- 1372
-* -- 6517
-:= -- 12113
-add.period$ -- 632
-call.type$ -- 155
-change.case$ -- 898
-chr.to.int$ -- 154
-cite$ -- 332
-duplicate$ -- 3734
-empty$ -- 6270
-format.name$ -- 1619
-if$ -- 17294
+            1743 strings with 41284 characters,
+and the built_in function-call counts, 81297 in all, are:
+= -- 7570
+> -- 4619
+< -- 124
++ -- 1548
+- -- 1390
+* -- 6598
+:= -- 12266
+add.period$ -- 642
+call.type$ -- 157
+change.case$ -- 910
+chr.to.int$ -- 156
+cite$ -- 337
+duplicate$ -- 3774
+empty$ -- 6340
+format.name$ -- 1641
+if$ -- 17491
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 137
-newline$ -- 923
-num.names$ -- 644
-pop$ -- 1701
+missing$ -- 139
+newline$ -- 937
+num.names$ -- 652
+pop$ -- 1721
 preamble$ -- 1
-purify$ -- 753
+purify$ -- 763
 quote$ -- 0
-skip$ -- 3016
+skip$ -- 3048
 stack$ -- 0
-substring$ -- 2883
-swap$ -- 755
+substring$ -- 2909
+swap$ -- 756
 text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1685
-warning$ -- 22
-while$ -- 646
+type$ -- 1707
+warning$ -- 23
+while$ -- 654
 width$ -- 0
-write$ -- 2335
+write$ -- 2367
 (There were 6 error messages)
