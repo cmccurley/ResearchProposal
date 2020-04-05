@@ -770,16 +770,36 @@ Similar to other sparse spectral manifold learning techniques, the objective fun
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Diffusion Maps  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Diffusion Maps}
-The success of ``kernel eigenmap approaches" such as LLE, LE, HLLE and LTSA led to the development of a manifold learning method called \textit{Diffusion Maps} (DM) \citep{Coifman2006DiffusionMaps}.  Diffusion maps is a framework that originates from the field of dynamical systems. DM's are based on defining a Markov random walk on the graph of the data.  By performing a random walk for a number of timesteps, a measure for the proximity of the data points is obtained \citep{VanDerMaaten2009DRReview}. Essentially, a DM embeds data into a lower-dimensional space such that the Euclidean distance between points is approximated by the diffusion distance in the original feature space.
+The success of ``kernel eigenmap approaches" such as LLE, LE, HLLE and LTSA led to the development of a manifold learning method called \textit{Diffusion Maps} (DM) \citep{Coifman2006DiffusionMaps}.  Diffusion maps is a framework that originates from the field of dynamical systems and is based on defining a Markov random walk on the graph of the data.  By performing a random walk for a number of time-steps, a measure for the proximity of the data points is obtained \citep{VanDerMaaten2009DRReview}. Essentially, a DM embeds data into a lower-dimensional space such that the Euclidean distance between points is approximated by the diffusion distance in the original feature space.
 
-In the diffusion maps framework, a graph of the data is first constructed.  The weights and edges in the graph are computed by a heat-kernel (commonly called \textit{radial-basis function} RBF), which provides a weight matrix $\bm{W}$ with entries
+In the diffusion maps framework, a graph of the data is first constructed which measures the connectivity between all points in the graph.  The \textit{connectivity} of two samples $\bm{x}_{m}$ and $\bm{x}_{n}$ is defined as the probability of transitioning from $\bm{x}_{m}$ to $\bm{x}_{n}$ in one step of the random walk \citep{Hajek2015RandomProcesses}.  The weights and edges in the graph are computed by a heat-kernel (commonly called \textit{radial-basis function} RBF), which provides a weight matrix $\bm{W}$ with entries
 \begin{align}
 	\bm{W}_{mn} = w_{mn} = \kappa(\bm{x}_{m},\bm{x}_{n}) = \exp \left( - \frac{|| \bm{x}_{m} - \bm{x}_{n} ||^{2}}{\beta} \right)
 \end{align}
 \noindent
-where $\beta$ is the bandwidth of the isotropic function.
+where $\beta$ is the bandwidth of the isotropic function.  By picking an appropriate kernel width, this constructs a matrix which measures the similarity within a certain neighborhood around each data point.  Outside of the neighborhood, the function quickly goes to zero.  Since this matrix should define the probabilities of jumping between data points, a sum-to-one constraint is enforced such that the one-step transition probability matrix is defined as
+\begin{align}
+	\bm{P}_{mn}^{(1)} = p_{mn}^{(1)} = \frac{w_{mn}}{\sum_{o=1}^{N}w_{mo}}
+\end{align}
+\noindent
+This matrix represents the probability of a transition from one data sample to another in a single time-step.  Taking advantage of the Markov assumption, the forward transition probability matrix for $t$ time-steps $\bm{P}^{(t)}$ is given by $(\bm{P}^{(1)})^{t}$ \citep{Hajek2015RandomProcesses} and a \textit{diffusion distance} can be defined as
+\begin{align} \label{eq:Diffusion_Distance}
+	D^{(t)}(\bm{x}_{m}, \bm{x}_{n}) = \sum_{o=1}^{N} || \bm{P}_{mo}^{(t)} - \bm{P}_{on}^{(t)}||^{2}
+\end{align}
 
-The diffusion distance is small if there are many high-probability paths of length $t$ between two samples.  By integrating over all paths through the graph, DM is more robust to short-circuiting and noise perturbation than other approaches, such as the geodesic distance utilized in Isomap \citep{VanDerMaaten2009DRReview,Delaporte2008DiffusionMaps}.
+From Equation \ref{eq:Diffusion_Distance}, it can be observed that the diffusion distance is small if there are many high-probability paths of length $t$ between two samples.  By integrating over all paths through the graph, DM is more robust to short-circuiting and noise perturbation than other approaches, such as the geodesic distance utilized in the  Isomap algorithm \citep{VanDerMaaten2009DRReview, Delaporte2008DiffusionMaps, Tenenbaum2000Isomap}.  The objective of a \textit{diffusion map} is then to embed the high-dimensional data coordinates into a lower-dimensional space such that the diffusion distance in the input space becomes Euclidean distance in the embedding space.  It was shown in \citep{Coifman2006DiffusionMaps,Delaporte2008DiffusionMaps} that the low-dimensional data representations $\bm{Z}$ that retain the diffusion distances in the Euclidean embedding space can be formed by the eigenvectors of the $d$ largest, nontrivial eigenvalues of the eigenproblem 
+\begin{align}
+	\bm{P}^{(t)}\bm{v} = \lambda \bm{v}
+\end{align}
+\noindent
+Since the graph is fully-connected, the largest eigenvalue is trivial (i.e. $\lambda_{1} = 1$) and its corresponding eigenvector $\bm{v}_{1}$ is discarded.  Thus, $\bm{Z} \in \mathbb{R}^{N \times d}$ is given by 
+\begin{align}
+	\bm{Z} = \begin{bmatrix}
+		\lambda_{2} \bm{v}_{2}, \lambda_{3} \bm{v}_{3}, \dots, \lambda_{d+1} \bm{v}_{d+1}
+	\end{bmatrix}
+\end{align}
+
+Diffusion maps have been successfully applied to tasks in shape matching and gene expression analysis \citep{VanDerMaaten2009DRReview}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

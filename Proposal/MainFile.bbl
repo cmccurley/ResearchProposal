@@ -1,4 +1,4 @@
-\begin{thebibliography}{157}
+\begin{thebibliography}{158}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -412,6 +412,12 @@ A.~N. Gorban and I.~Y. Tyukin.
   Mathematical, Physical and Engineering Sciences}, 376\penalty0
   (2118):\penalty0 20170237, 2018.
 \newblock \doi{10.1098/rsta.2017.0237}.
+
+\bibitem[Hajek(2015)]{Hajek2015RandomProcesses}
+Bruce Hajek.
+\newblock \emph{Random Processes for Engineers}.
+\newblock Cambridge University Press, 2015.
+\newblock \doi{10.1017/CBO9781316164600}.
 
 \bibitem[{Hajimirsadeghi} and
   {Mori}(2017)]{Hajimirsadeghi2017MIClassificationMarkovNetworks}
