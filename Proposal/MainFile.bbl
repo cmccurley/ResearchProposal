@@ -1,4 +1,4 @@
-\begin{thebibliography}{165}
+\begin{thebibliography}{170}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -220,6 +220,14 @@ V.~Cheplygina, M.~Bruijne, and J.~P.~W. Pluim.
 \newblock ISSN 1361-8415.
 \newblock \doi{https://doi.org/10.1016/j.media.2019.03.009}.
 
+\bibitem[Chiang and Gader(1997)]{Chiang1997HandWrittenWords}
+J.~Chiang and P.~D. Gader.
+\newblock Hybrid fuzzy-neural systems in handwritten word recognition.
+\newblock \emph{IEEE Transactions on Fuzzy Systems}, 5\penalty0 (4):\penalty0
+  497--510, Nov 1997.
+\newblock ISSN 1063-6706.
+\newblock \doi{10.1109/91.649901}.
+
 \bibitem[Chu and
   Ghahramani(2005)]{Chu2005LearningPreferencesWithGaussianProcesses}
 Wei Chu and Zoubin Ghahramani.
@@ -344,6 +352,15 @@ X.~Du and A.~Zare.
 \newblock Technical Report 417, University of Florida, Gainesville, FL, April
   2017.
 \newblock URL \url{http://ufdc.ufl.edu/IR00009711/00001}.
+
+\bibitem[Frigui and Gader(2009)]{Frigui2009LandmineSOM}
+H.~Frigui and P.~Gader.
+\newblock Detection and discrimination of land mines in ground-penetrating
+  radar based on edge histogram descriptors and a possibilistic $k$-nearest
+  neighbor classifier.
+\newblock \emph{IEEE Transactions on Fuzzy Systems}, 17\penalty0 (1), Feb 2009.
+\newblock ISSN 1063-6706.
+\newblock \doi{10.1109/TFUZZ.2008.2005249}.
 
 \bibitem[Fritzke(1994)]{Fritzke1995GrowingNeuralGas}
 B.~Fritzke.
@@ -773,6 +790,15 @@ F.~{Ratle}, G.~{Camps-Valls}, and J.~{Weston}.
 \newblock ISSN 0196-2892.
 \newblock \doi{10.1109/TGRS.2009.2037898}.
 
+\bibitem[Rauber et~al.(2002)Rauber, Merkl, and Dittenbach]{Rauber2002GHSOM}
+A.~Rauber, D.~Merkl, and M.~Dittenbach.
+\newblock The growing hierarchical self-organizing map: exploratory analysis of
+  high-dimensional data.
+\newblock \emph{IEEE Transactions on Neural Networks}, 13\penalty0
+  (6):\penalty0 1331--1341, Nov 2002.
+\newblock ISSN 1045-9227.
+\newblock \doi{10.1109/TNN.2002.804221}.
+
 \bibitem[Redmon and Farhadi(2018)]{Redmon2018YOLOV3}
 Joseph Redmon and Ali Farhadi.
 \newblock Yolov3: An incremental improvement.
@@ -819,6 +845,14 @@ Jos{\'e}~Francisco Ruiz-Mu{\~n}oz, Mauricio Orozco-Alzate, and Germ{\'a}n
 \newblock Multiple instance learning-based birdsong classification using
   unsupervised recording segmentation.
 \newblock In \emph{IJCAI}, 2015.
+
+\bibitem[Rumelhart and Zipser(1985)]{Rumelhart1985CHL}
+D.~E. Rumelhart and D.~Zipser.
+\newblock Feature discovery by competitive learning.
+\newblock \emph{Cognitive Science}, 9\penalty0 (1):\penalty0 75--112, 1985.
+\newblock \doi{10.1207/s15516709cog0901\_5}.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog0901_5}.
 
 \bibitem[{Saehoon Kim} and {Seungjin Choi}(2010)]{Kim2010LocalDRMIL}
 {Saehoon Kim} and {Seungjin Choi}.
@@ -1103,6 +1137,13 @@ S.~{Yan}, D.~{Xu}, B.~{Zhang}, H.~{Zhang}, Q.~{Yang}, and S.~{Lin}.
   dimensionality reduction.
 \newblock \emph{IEEE Transactions on Pattern Analysis and Machine
   Intelligence}, 29\penalty0 (1):\penalty0 40--51, Jan 2007.
+
+\bibitem[Yin(2007)]{Yin2007SOM}
+Hujun Yin.
+\newblock \emph{Learning Nonlinear Principal Manifolds by Self-Organising
+  Maps}, volume~60, pages 68--95.
+\newblock 09 2007.
+\newblock \doi{10.1007/978-3-540-73750-6_3}.
 
 \bibitem[{Yixin Chen} et~al.(2006){Yixin Chen}, {Jinbo Bi}, and
   {Wang}]{Chen2006MILES}

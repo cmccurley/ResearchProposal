@@ -866,7 +866,49 @@ Diffusion maps have been successfully applied to tasks in shape matching and gen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Self-Organizing Map (SOM)}
 
+\textit{Self-Organizing Maps} (SOM) or \textit{Kohonen Networks} \citep{Kohonen1990SOM} are among the most well-known methods for discrete principal manifold estimation \citep{Yin2007SOM,Sorzano2014DRReview}.   SOMs belong to the category of neural networks which use a technique of  \textit{competitive learning} called \textit{self-organization} to learn spatially-organized intrinsic representations of features \citep{Rauber2002GHSOM}.  Self-orgnanizing maps are initialized by a pre-defined set of neurons which are typically arranged in a 2 or 3-dimensional grid.  Each neuron is associated with a set of weights $\bm{w}$ which represent their corresponding locations in the input space.   When presented an input pattern (or \textit{stimulus}), neurons compete among themselves for the representation of the input. Winning neurons strengthen their weights or relationships with this input using and adaption of \textit{Hebb's Rule}, which states that the change to a synaptic weight is proportional to the correlation between the input and its associated output \citep{Rumelhart1985CHL}.  As samples are introduced to the network during training, only a neighborhood of cells give an active response to the current input sample. These neurons are pulled toward the location of the input pattern according to how well they represent the input.  Given enough training iterations, the neurons in the lattice will disperse such that the spatial locations or coordinates of cells in the network correspond to different modes of the input distribution.  In this manner, Kohonen networks are able to utilize simple heuristics to form discrete topological mappings of the input space which represent the principal data manifold \citep{Yin2007SOM}. 
+
+The self-organizing map is also a form of \textit{vector quantization} (VQ).  The purpose of VQ is to approximate a continuous probability density function $p(\bm{x})$ of input vectors $\bm{x}$ using a finite number of codebook vectors, $\bm{m}_i$, $i=1,2,\dots,k$.  After the ``codebook" is chosen, the approximation of $\bm{x}$ involves finding the reference vector, $\bm{m}_c$ closest to $\bm{x}$.  The ``winning" codebook vector for sample $\bm{x}$ satisfies the following:
+\begin{align}
+	|| \bm{x} - \bm{m}_c|| &= \min_{i}|| \bm{x} - \bm{m}_{i} ||
+\end{align}	
+\noindent
+
+The algorithm operates by first initializing a spatial lattice of codebook elements (also called ``units"), where each unit's representative is in $\bm{m}_i \in \mathbb{R}^{D}$ where $D$ is the dimensionality of the input samples $\bm{x}$.  The training process proceeds as follows.  A random sample is selected and presented to the network and each unit determines its activation by computing dissimilarity.	 The unit who's codebook vector provides the smallest dissimilarity is referred to as the \textit{winner}.
+
+\begin{align}
+	c(t) = \argmin_{i} d(\bm{x}(t),\bm{m}_{i}(t))
+\end{align}
+\noindent
+
+Both the winning vector and all vectors within a neighborhood of the winner are updated toward the sample by 
+
+\begin{align}
+	\bm{m}_{i}(t+1) = \bm{m}_{i}(t) + \alpha(t) \cdot h_{ci}(t) \cdot [ \bm{x}(t) - \bm{m}_{i}(t) ] 
+\end{align}
+\noindent
+where $\alpha(t)$ is a learning rate which decreases over time and $h_{ci}(t)$ is a neighborhood function which is typically unimodal and symmetric around the location of the winner which monotonically decreases with increasing distance from the winner.  A radial basis kernel is typically chosen for the neighborhood function as 
+
+\begin{align}
+	h_{ci}(t) = \exp{\left( -\frac{||\bm{r}_{c} - \bm{r}_i ||^{2}}{2 \sigma^{2}(t)} \right)}
+\end{align}
+\noindent
+where the top expression represents the Euclidean distance between units $c$ and $i$ with $\bm{r}_{i}$ representing the 2-D location of unit $i$ in the lattice.  The neighborhood kernel's bandwidth is typically initialized to a value which covers a majority of the input space and decreases over time such that solely the winner is adapted toward the end of the training procedure. \\
+
+\noindent
+The SOM essentially performs density estimation of high-dimensional data and represents it in a 2 or 3-D representation.  At test time, the dissimilarity between each unit in the map and an input sample are computed.  This dissimilarity can be used to effectively detect outliers, thus making the SOM a robust method which can provide confidence values for it's representation abilities. \\
+
+In this paper, the SOM was applied to speech recognition, but made note of previous uses in robotics, control of diffusion processes, optimization problems, adaptive telecommunications, image compression, sentence understanding, and radar classification of sea-ice. \cite{Kohonen1990SOM} \\
+
+The GHSOM has been applied to the areas of finance, computer network traffic analysis, manufacturing and image analysis (Palomo 2017). \cite{Rauber2002GHSOM,Palomo2017GHNG}
+
+Thousands of applications, cross-modal information processing, text and document mining, gene expression data analysis and discovery, novelty detection, robotics and computer animation, prinicpal curve and surface discovery, visualization, \cite{Yin2007SOM}
+
+hand-written word classification \cite{Chiang1997HandWrittenWords} and explosive hazard detection \cite{Frigui2009LandmineSOM}
+
 A supervised adaptation of self-organizing maps has been proposed and is known as \textit{Learning Vector Quantization} (LVQ) \citep{Kohonen1995LVQ}.
+
+
 
 
 
