@@ -1,4 +1,4 @@
-\begin{thebibliography}{170}
+\begin{thebibliography}{174}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -668,6 +668,14 @@ L.~Livi and A.~Rizzi.
 \newblock ISSN 1433-7541.
 \newblock \doi{10.1007/s10044-012-0284-8}.
 
+\bibitem[{Lopez-Rubio} and {Palomo}(2011)]{LopezRubio2011GHPGraphs}
+E.~{Lopez-Rubio} and E.~J. {Palomo}.
+\newblock Growing hierarchical probabilistic self-organizing graphs.
+\newblock \emph{IEEE Transactions on Neural Networks}, 22\penalty0
+  (7):\penalty0 997--1008, July 2011.
+\newblock ISSN 1045-9227.
+\newblock \doi{10.1109/TNN.2011.2138159}.
+
 \bibitem[{Ma} et~al.(2010){Ma}, {Crawford}, and {Tian}]{Ma2010SupervisedLTTSA}
 L.~{Ma}, M.~M. {Crawford}, and J.~W. {Tian}.
 \newblock Generalised supervised local tangent space alignment for
@@ -730,6 +738,15 @@ M.~Nickel and D.~Kiela.
   Information Processing Systems 30}, pages 6338--6347. Curran Associates,
   Inc., 2017.
 
+\bibitem[Palomo and Lopez-Rubio(2016)]{Palomo2016GrowingNeuralForest}
+E.~J. Palomo and E.~Lopez-Rubio.
+\newblock Learning topologies with the growing neural forest.
+\newblock \emph{International Journal of Neural Systems}, 26\penalty0
+  (04):\penalty0 1650019, 2016.
+\newblock \doi{10.1142/S0129065716500192}.
+\newblock URL \url{https://doi.org/10.1142/S0129065716500192}.
+\newblock PMID: 27121995.
+
 \bibitem[{Palomo} and {Lopez-Rubio}(2017)]{Palomo2017GHNG}
 E.~J. {Palomo} and E.~{Lopez-Rubio}.
 \newblock The growing hierarchical neural gas self-organizing neural network.
@@ -752,6 +769,13 @@ N.~{Patwari} and A.~O. {Hero}.
   networks.
 \newblock In \emph{2004 IEEE International Conference on Acoustics, Speech, and
   Signal Processing}, volume~3, pages iii--857, May 2004.
+
+\bibitem[Peña et~al.(2007)Peña, Ashour, and Fyfe]{Pena2007NeuralGasReview}
+Marian Peña, Wesam Ashour, and Colin Fyfe.
+\newblock \emph{Topology-Preserving Mappings for Data Visualisation},
+  volume~58, pages 131--150.
+\newblock 09 2007.
+\newblock \doi{10.1007/978-3-540-73750-6_5}.
 
 \bibitem[Ping et~al.(2010)Ping, Xu, Kexin, Chi, and
   Furao]{Ping2010MILDRMaxMargin}
@@ -921,6 +945,16 @@ J.~S. {Stanley III}, G.~Wolf, and S.~Krishnaswamy.
 \newblock Manifold alignment with feature correspondence.
 \newblock \emph{CoRR}, abs/1810.00386, 2018.
 \newblock URL \url{http://arxiv.org/abs/1810.00386}.
+
+\bibitem[Sun et~al.(2017)Sun, Liu, and Harada]{Sun2016GNGMotionDetection}
+Q.~Sun, H.~Liu, and T.~Harada.
+\newblock Online growing neural gas for anomaly detection in changing
+  surveillance scenes.
+\newblock \emph{Pattern Recognition}, 64:\penalty0 187 -- 201, 2017.
+\newblock ISSN 0031-3203.
+\newblock \doi{https://doi.org/10.1016/j.patcog.2016.09.016}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0031320316302771}.
 
 \bibitem[Sun et~al.(2010)Sun, Ng, and Shou]{Sun2010MIDR}
 Yu-Yin Sun, Michael~K. Ng, and Zhi-Hua Shou.
