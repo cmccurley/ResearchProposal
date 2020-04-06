@@ -1,4 +1,4 @@
-\begin{thebibliography}{160}
+\begin{thebibliography}{165}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -345,6 +345,14 @@ X.~Du and A.~Zare.
   2017.
 \newblock URL \url{http://ufdc.ufl.edu/IR00009711/00001}.
 
+\bibitem[Fritzke(1994)]{Fritzke1995GrowingNeuralGas}
+B.~Fritzke.
+\newblock A growing neural gas network learns topologies.
+\newblock In \emph{Proceedings of the 7th International Conference on Neural
+  Information Processing Systems}, NIPS'94, pages 625--632, Cambridge, MA, USA,
+  1994. MIT Press.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=2998687.2998765}.
+
 \bibitem[{Fukunaga} and {Mantock}(1983)]{Fukunaga1983NonparametricLDA}
 K.~{Fukunaga} and J.~M. {Mantock}.
 \newblock Nonparametric discriminant analysis.
@@ -412,6 +420,13 @@ T.~Glenn, A.~Zare, P.~Gader, and D.~Dranishnikov.
 \newblock Bullwinkle: Scoring code for sub-pixel targets.
 \newblock URL \url{https://github.com/GatorSense/MUUFLGulfport/}.
 
+\bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and
+  Courville]{Goodfellow2016DeepLearning}
+I.~Goodfellow, Y.~Bengio, and A.~Courville.
+\newblock \emph{Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
 \bibitem[Gorban and Tyukin(2018)]{Gorban2019BlessingofDimensionality}
 A.~N. Gorban and I.~Y. Tyukin.
 \newblock Blessing of dimensionality: mathematical foundations of the
@@ -420,6 +435,16 @@ A.~N. Gorban and I.~Y. Tyukin.
   Mathematical, Physical and Engineering Sciences}, 376\penalty0
   (2118):\penalty0 20170237, 2018.
 \newblock \doi{10.1098/rsta.2017.0237}.
+
+\bibitem[Gorban and Zinovyev(2008)]{Gorban2007ElasticMaps}
+A.~N. Gorban and A.~Y. Zinovyev.
+\newblock Elastic maps and nets for approximating principal manifolds and their
+  application to microarray data visualization.
+\newblock In A.~N. Gorban, B.~K{\'e}gl, D.~C. Wunsch, and A.~Y. Zinovyev,
+  editors, \emph{Principal Manifolds for Data Visualization and Dimension
+  Reduction}, pages 96--130, Berlin, Heidelberg, 2008. Springer Berlin
+  Heidelberg.
+\newblock ISBN 978-3-540-73750-6.
 
 \bibitem[Hajek(2015)]{Hajek2015RandomProcesses}
 Bruce Hajek.
@@ -547,12 +572,26 @@ T.~Kohonen.
 \newblock ISSN 0018-9219.
 \newblock \doi{10.1109/5.58325}.
 
+\bibitem[Kohonen(1995)]{Kohonen1995LVQ}
+Teuvo Kohonen.
+\newblock \emph{Learning Vector Quantization}, pages 175--189.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1995.
+
 \bibitem[{Kokiopoulou} and {Saad}(2007)]{Kokiopoulou2007OrthoNPP}
 E.~{Kokiopoulou} and Y.~{Saad}.
 \newblock Orthogonal neighborhood preserving projections: A projection-based
   dimensionality reduction technique.
 \newblock \emph{IEEE Transactions on Pattern Analysis and Machine
   Intelligence}, 29\penalty0 (12):\penalty0 2143--2156, 2007.
+
+\bibitem[Kramer(1991)]{Kramer1991NonlinearPCA}
+Mark~A. Kramer.
+\newblock Nonlinear principal component analysis using autoassociative neural
+  networks.
+\newblock \emph{AIChE Journal}, 37\penalty0 (2):\penalty0 233--243, 1991.
+\newblock \doi{10.1002/aic.690370209}.
+\newblock URL
+  \url{https://aiche.onlinelibrary.wiley.com/doi/abs/10.1002/aic.690370209}.
 
 \bibitem[Latham(2015)]{Latham2015MIFeatureRankingThesis}
 A.~C. Latham.
