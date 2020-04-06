@@ -933,7 +933,7 @@ where $\lambda$ and $\mu$ are the stretching and bending moduli, respectively.  
 	U_{T} = U_{A} + U_{E} + U_{R}
 \end{align}
 \noindent
-Essentially, the first accounts for the fidelity of the data representations, the second term reinforces smoothness of the manifold by favoring similar neighbors and the third term imposes smoothness by stating that a codebook must be similar to the average of its neighboring nodes \citep{Sorzano2014DRReview}.  The position of the nodes $\{\bm{w}_{k}\}$ is given by the \textit{mechanical equilibrium} of the elastic map, or the locations which minimize the total energy $U_{T}$.  In practice, this is typically solved by the Expectation-Maximization algorithm, which guarantees a local minimum of $U_{T}$ \citep{Gorban2007ElasticMaps}.
+Essentially, the first term accounts for the fidelity of the data representations, the second term reinforces smoothness of the manifold by favoring similar neighbors and the third term imposes smoothness by stating that a codebook must be similar to the average of its neighboring nodes \citep{Sorzano2014DRReview}.  The position of the nodes $\{\bm{w}_{k}\}$ is given by the \textit{mechanical equilibrium} of the elastic map, or the locations which minimize the total energy $U_{T}$.  In practice, this is typically solved by the Expectation-Maximization algorithm, which guarantees a local minimum of $U_{T}$ \citep{Gorban2007ElasticMaps}.
 
 Unlike the SOM, but similarly to the GNG, elastic nets can add or delete neurons adaptively.  This allows them to fit very complex manifolds.  The elastic map approach has led to practical applications in data visualization, data recovery, visualization of genetic texts, and recovery of geophysical time series \citep{Gorban2007ElasticMaps}.
 
