@@ -1,6 +1,6 @@
 \chapter{Background}
 
-This chapter provides a literature review of the Multiple Instance Learning framework for learning from weak and ambiguous annotations.  A review is provided on Manifold Learning, including classic approaches, supervised and semi-supervised methods and uses of manifolds for functional regularization. Additionally, this chapter reviews the existing literature on metric embedding, focusing heavily on the utilization of contrastive and triplet-based loss evaluation.  Reviews describe basic terminology and definitions.  Foundational approaches are elaborated and advances are addressed.
+This chapter provides a comprehensive review of literature pertinent to this proposal.  First, a review is given on the Multiple Instance Learning framework for learning from weak and ambiguous annotations.  Notations is given and summaries of methods used in bag and instance-level classification are discussed.  Then, review is provided on Manifold Learning, including classic approaches as well as supervised and semi-supervised methods. Additionally, this chapter reviews the existing literature on metric embedding, focusing heavily on the utilization of contrastive and triplet-based loss evaluation.  Reviews describe basic terminology and definitions.  Foundational approaches are elaborated and advances are addressed.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Multiple Instance Learning %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Multiple Instance Learning}
@@ -257,9 +257,9 @@ Many extensions and alternative viewpoints have been made to PCA, including a no
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  MDS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Multi-Dimensional Scaling (MDS)} 
+\subsubsection{Multi-Dimensional Scaling (MDS)} \label{sec:MDS}
 
-\paragraph{Unsupervised MDS} \label{sec:MDS}
+\paragraph{Unsupervised MDS} 
 Most modern manifold learners have theoretical and algorithmic roots in one of three basic dimensionality reduction techniques: PCA, K-means and \textit{Multidimensional Scaling} (MDS). Whereas PCA looks for linear projection bases which are constructed from the eigenvectors of a data covariance or scatter matrix, MDS tries to find a linear projection that preserves pairwise distances as well as possible. This idea is demonstrated by Figure \ref{fig:mds_example}, where the pairwise distances between samples in the 3-dimensional space are preserved in the 2-dimensional embedding space. While MDS does not construct an embedded manifold explicitly, it holds the status of being the grandfather of ``one-shot" (non-iteratve) manifold learners, such as Isomap and Locally Linear Embedding (LLE), which are discussed later in this literature review \citep{Kegl2008PrincipalManifoldsTextbook}. 
 \begin{center}
 	\begin{figure*}[h]
@@ -319,7 +319,7 @@ A least square regression was applied to estimate the embedding function for out
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  NMF  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Nonnegative Matrix Factorization (NMF)}
+\subsubsection{Nonnegative Matrix Factorization (NMF)} \label{sec:NMF}
 \textit{Nonnegative Matrix Factorization} (NMF) is a tool for linear dimensionality reduction that, given a set of data $\bm{X} \in \mathbb{R}^{N \times D}$, aims to decompose the matrix into a coefficient matrix $\bm{Z} \in \mathbb{R}^{N \times d}$ and basis matrix $\bm{W} \in \mathbb{R}^{d \times D}$ \citep{Gillis2014NMF}.  In this case, the columns of matrix $\bm{W}$ are basis elements and  the columns of matrix $\bm{Z}$  give the coordinates of data samples in the basis $\bm{W}$. Similar to PCA, the goal of NMF is to find a $\bm{Z}$ and $\bm{W}$ such that $\hat{\bm{X}} = \bm{Z}\bm{W}$ approximates the data as close as possible, given that every element must be nonnegative.  This notion is formalized by
 \begin{align}
 	\min_{\bm{Z},\bm{W}} || \bm{X} - \bm{Z}\bm{W} ||^{2}_{F} \quad s.t. \quad \bm{Z} \geq 0, \bm{W} \geq 0
@@ -621,7 +621,7 @@ A weakness (and strength) of Sammon mapping is that it will give much more impor
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  MVU  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Maximum Variance Unfolding (MVU)}
+\subsubsection{Maximum Variance Unfolding (MVU)} \label{sec:MVU}
 Section \ref{sec:KPCA} described how Kernel PCA \citep{Scholkopf1999KPCA,Wang2014KPCAReview} allows PCA to be performed in a feature space defined by a kernel function $\kappa$.  However, the choice of kernel function is arbitrary and may not be optimal for learning the intrinsic structure of a set of data.  To resolve this issue, \textit{Maximum Variance Unfolding} (MVU, formerly known as \textit{Semidefinite Embedding}) attempts to learn an appropriate kernel matrix \citep{Weinberger2004MVU} to be used in conjunction with KPCA.  This is done by defining a neighborhood graph over the data and retaining the pairwise distances through the embedding to a low-dimensional space (as done in Isomap (\ref{sec:Isomap}) \citep{Tenenbaum2000Isomap}).  Unlike Isomap, however, MVU attempts to ``unfold" the data data manifold by maximizing the Euclidean distances between data points under the constraint that the local geometry of the data manifold is unperturbed \citep{VanDerMaaten2009DRReview}.  The optimization can be solved using semidefinite programming.  MVU begins by forming a $k$-nearest neighbor graph $G$.  It then tries to maximize the sum of Euclidean distances between all samples such that the distances inside $G$ are unchanged.  This equates to the to following maximization problem:
 \begin{align}
 	\max_{\bm{Z}} \sum_{m,n} ||\bm{z}_{m} - \bm{z}_{n} ||^{2} \quad s.t. \quad ||\bm{z}_{m} - \bm{z}_{n} ||^{2} = ||\bm{x}_{m} - \bm{x}_{n} ||^{2} \quad \forall (m,n) \in G
@@ -646,7 +646,7 @@ Similarly to Isomap, MVU may suffer from short-circuiting due to optimization co
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LLE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Locally Linear Embedding (LLE)}
+\subsubsection{Locally Linear Embedding (LLE)} \label{sec:LLE}
 \textit{Locally Linear Embedding} (LLE) was first introduced by Roweis and Saul \citep{Roweis2000LLE} and it is, along with Isomap, a foundational graph-based approach for nonlinear manifold learning.  Whereas Isomap attempts to preserve global pairwise distances, LLE attempts to preserve solely local properties of the data \citep{VanDerMaaten2009DRReview}.  Since LLE looks solely at local neighborhoods around samples, it is much less sensitive to short-circuiting than Isomap.  Furthermore, the preservation of local properties allows the algorithm to effectively embed non-convex manifolds.  Essentially, LLE looks to represent each data sample as a linear combination of its $k$-nearest neighbors.  This fits a hyperplane through every datapoint and it's nearest neighbors, thus assuming the intrinsic manifold is locally linear.  The local linearity assumption implies that the reconstruction weights $\bm{w}_{n}$ of high-dimensional sample $\bm{x}_{n}$ are invariant to transformations such as translation, rotation and scaling.  Therefore, it is assumed that the same reconstruction weights $\bm{w}_{n}$ that can be used to represent $\bm{x}_{n}$ in the high-dimensional space will also reconstruct it's low-dimensional representation $\bm{z}_{n}$ from its corresponding neighbors in the low-dimensional space \citep{Roweis2000LLE, Sorzano2014DRReview, Chao2019RecentAdvancesSupervisedDimRed}.  Therefore, low-dimensional data representations $\bm{Z}$ are found by minimizing the objective
 \begin{align} \label{eq:LLE_objective}
 	J(\bm{W},\bm{Z}) = \sum_{n=1}^{N} \left | \left | \bm{z}_{n} - \sum_{k=1}^{K}w_{nk}\bm{z}_{k} \right | \right |^{2} \quad s.t. \quad \frac{1}{N}\bm{Z}^{T}\bm{Z}=\bm{\mathbb{I}}_{d}
@@ -776,7 +776,7 @@ The special feature exhibited by all Laplacian Eigenmap methods is the use of la
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Hessian LE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Hessian LLE}
+\subsubsection{Hessian LLE} \label{sec:Hessian_LLE}
 \textit{Hessian LLE} (HLLE) \citep{Donoho2003HessianEigenmaps} is a variant of LLE that minimizes the curvature of the high-dimensional manifold when embedding it into the low-dimensional space, under the constraint that the intrinsic manifold is locally isometric \citep{VanDerMaaten2009DRReview,Thorstensen2009ManifoldThesis}.  This is achieved by the eigenanalysis of the local Hessian matrix $\mathcal{H}$, which measures the curvature of the manifold around every data point.  HLLE begins by identifying the $k$-nearest neighbors for each sample $\bm{x}_{n}$ using Euclidean distance (local linearity).  Because of the linearity assumption, a $d$-dimensional basis for the local tangent space of each sample can be found by PCA or singular value decomposition (SVD) on each sample's corresponding neighbors.   Then, a local Hessian $\bm{H}^{n}$ of the manifold is estimated at each point $\bm{x}_{n}$ in the local tangent space.  The data Hessian matrix is constructed from the individual estimators derived from the local tangent coordinates and is given as
 \begin{align}
 	\mathcal{H}_{mo} = \sum_{n}\sum_{r}((\bm{H}^{n})_{rm}(\bm{H}^{n})_{ro})
@@ -788,7 +788,7 @@ HLLE shares many of the characteristics of Laplacian Eigenmaps, except that it r
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LTSA  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Local Tangent Space Alignment (LTSA)}
+\subsubsection{Local Tangent Space Alignment (LTSA)} \label{sec:LTSA}
 \textit{Local Tangent Space Alignment} (LTSA) \citep{Zhang2002LTSA} shares similarities with HLLE in that it describes local properties of high-dimensional data using the local tangent space of each data point \citep{VanDerMaaten2009DRReview}.  The basic idea of LTSA is to use the tangent space in the neighborhood of a data point to represent the local geometry of the data, and then to align the local tangent spaces to construct a global coordinate system for the nonlinear manifold.  In this way, the algorithm consists of two steps: 1.) constructing the principal manifold that is tangential to each data point and 2.) finding the global coordinate system that describes the set of data samples in a low-dimensional space \citep{Zhang2002LTSA}.
 
 Just as with Hessian LLE, LTSA begins by computing $d$-dimensional bases for the local tangent spaces of each of the data points $\bm{x}_{n}$.  This can be done by applying PCA or SVD on the neighbors of each sample.  This provides a linear transformation matrix $\bm{U}_{n}$ from the neighborhood of $\bm{x}_{n}$ to the local tangent space $\Theta_{n}$.  It is assumed that there exists a linear mapping $\bm{M}_{n}$ from the local tangent space coordinates $\bm{\theta}_{n}$ to the low-dimensional representations $\bm{z}_{n}$.  The linear transformation matrix and low-dimensional data representations are found by the following minimization problem \citep{Sorzano2014DRReview}:
@@ -809,7 +809,7 @@ Similar to other sparse spectral manifold learning techniques, the objective fun
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Diffusion Maps  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Diffusion Maps}
+\subsubsection{Diffusion Maps} \label{sec:Diffusion_Maps}
 The success of ``kernel eigenmap approaches" such as LLE, LE, HLLE and LTSA led to the development of a manifold learning method called \textit{Diffusion Maps} (DM) \citep{Coifman2006DiffusionMaps}.  Diffusion maps is a framework that originates from the field of dynamical systems and is based on defining a Markov random walk on the graph of the data.  By performing a random walk for a number of time-steps, a measure for the proximity of the data points is obtained \citep{VanDerMaaten2009DRReview}. Essentially, a DM embeds data into a lower-dimensional space such that the Euclidean distance between points is approximated by the diffusion distance in the original feature space.
 
 In the diffusion maps framework, a graph of the data is first constructed which measures the connectivity between all points in the graph.  The \textit{connectivity} of two samples $\bm{x}_{m}$ and $\bm{x}_{n}$ is defined as the probability of transitioning from $\bm{x}_{m}$ to $\bm{x}_{n}$ in one step of the random walk \citep{Hajek2015RandomProcesses}.  The weights and edges in the graph are computed by a heat-kernel (commonly called \textit{radial-basis function} RBF), which provides a weight matrix $\bm{W}$ with entries
@@ -845,21 +845,18 @@ Diffusion maps have been successfully applied to tasks in shape matching and gen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Principal Curves %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Principal Curves, Surfaces and Manifolds}
+\subsection{Principal Curves, Surfaces and Manifolds} \label{sec:Principal_Manifolds}
 \textit{Principal Curves} (PCs) were first proposed in a PhD thesis by Hastie in 1984 and are simply defined as lines or surfaces that pass through the ``middle of a cloud representing a data set" \citep{Kegl2008PrincipalManifoldsTextbook,Gorban2007ElasticMaps}.  In terms of probability distributions, a principal curve satisfies the self-consistency property, which implies that any point on the curve is the average of all data points projected onto it.  In fact, Principal Component Analysis (Section \ref{sec:PCA}) is a special case of PCs where the ``middle structure" of data is assumed as a straight line (or hyper-plane) instead of a curve.  Assuming data with zero mean, PCA looks for a hyper-plane passing through the origin with direction $\bm{w}_{1}$ with a linear mapping function $f(\bm{z}_{n}) = \hat{\bm{x}}_{n} = \bm{w}^{T}_{1}\bm{z}_{n}$ best approximates the data in the mean-square sense \citep{Sorzano2014DRReview, Murphy2012}.  The point $f(\bm{z}_{n})$  is the orthogonal projection onto the line parameterized by $\bm{w}_{1}$.  A new sample can be constructed as $\bm{x}^{'}_{n} = \bm{x}_{n} - f(\bm{z}_{n})$.  The previous procedure is repeated $d-1$ more times to discover the $d$ ``most important" lines for representing the entirety of the dataset.  Dimensionality reduction is achieved by replacing the data $\bm{x}_{n}$ with the corresponding collection of parameters $\bm{z}_{n}$ needed to project the sample onto its principal hyper-planes.  As noted in \citep{Sorzano2014DRReview}, the objective is simply a linear regression on the input data.  However, this process does not have to be restricted to lines (or hyper-planes).  In general, it can be assumed that a given sample $\bm{x}_{n}$ may be approximated by $\bm{x}_{n} = f(\bm{z}_{n}) + \bm{\epsilon}$ where $f(\bm{z}_{n})$ is an arbitrary (but sufficient) nonlinear mapping, and $\bm{\epsilon}$ is a term that captures the approximation error.   One could substitute for a fixed family of curves (parabolic, hyperbolic, exponential, polynomial, etc.).  This is exactly a nonlinear regressor, and several methods based on artificial neural networks have been proposed (Nonlinear PCA \citep{Kramer1991NonlinearPCA}, autoencoder networks \citep{Goodfellow2016DeepLearning}, self-organizing networks \citep{Kohonen1990SOM,Fritzke1995GrowingNeuralGas})  This section will review popular methods for principal manifold estimation, including approaches based on deep-learning, self-organizing maps, neural gases and elastic maps. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Deep Learning  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Deep Learning}
+\subsubsection{Deep Learning} \label{sec:Deep_Learning}
 
-\paragraph{Auto-Associative Models (Autoencoders)}
+\paragraph{Auto-Associative Models (Autoencoders) and Nonlinear PCA} \label{sec:Autoencoders}
 
-\paragraph{Nonlinear PCA}
+\paragraph{Graph Convolutional Networks} \label{sec:Graph_CNN}
 
-\paragraph{Graph Convolutional Networks}
-
-\paragraph{M3DNet}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  SOM  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -873,22 +870,17 @@ The self-organizing map is also a form of \textit{vector quantization} (VQ).  Th
 	|| \bm{x} - \bm{w}_c|| &= \min_{k}|| \bm{x} - \bm{w}_{k} ||
 \end{align}	
 \noindent
-
 The algorithm operates by first initializing a spatial lattice of codebook elements (also called ``units"), where each unit's representative is in $\bm{w}_{k} \in \mathbb{R}^{D}$ where $D$ is the dimensionality of the input samples $\bm{x}$.  The training process proceeds as follows.  A random sample is selected and presented to the network at iteration $t$ and each unit determines its activation by computing dissimilarity (typically Euclidean distance).	 The unit who's codebook vector provides the smallest dissimilarity is referred to as the \textit{winner}.
-
 \begin{align}
 	c(t) = \argmin_{k} \mathcal{D}(\bm{x}(t),\bm{w}_{k}(t))
 \end{align}
 \noindent
-
 Both the winning vector and all vectors within a neighborhood of the winner are updated toward the sample by 
-
 \begin{align}
 	\bm{w}_{k}(t+1) = \bm{w}_{k}(t) + \alpha(t) \cdot h_{ck}(t) \cdot [ \bm{x}(t) - \bm{w}_{k}(t) ] 
 \end{align}
 \noindent
 where $\alpha(t)$ is a learning rate which decreases over time and $h_{ck}(t)$ is a neighborhood function which is typically unimodal and symmetric around the location of the winner which monotonically decreases with increasing distance from the winner.  A radial basis kernel is typically chosen for the neighborhood function as 
-
 \begin{align}
 	h_{ck}(t) = \exp{\left( -\frac{||\bm{w}_{c} - \bm{w}_{k} ||^{2}}{\beta(t)} \right)}
 \end{align}
@@ -902,14 +894,14 @@ Despite the lack of theoretical training guarantees, SOMs have been applied to t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  GNG  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Growing Neural Gas (GNG)}
+\subsubsection{Growing Neural Gas (GNG)} \label{sec:GNG}
 Growing Neural Gas (GNG) networks \citep{Fritzke1995GrowingNeuralGas} are similar to the standard SOM, except that network topology is not fixed \citep{Sorzano2014DRReview}.  This approach is called a ``neural gas" because the codebook vectors are allowed to move around the data space similar to the Brownian motion of gas molecules in a closed container \citep{Pena2007NeuralGasReview}.  The primary difference between GNG and SOM is that the network is allowed to shrink and grow to better fill the data space \citep{Palomo2017GHNG,Palomo2016GrowingNeuralForest}.  The dynamic topology is typically controlled by an edge age-based strategy.  Similarly to the SOM, growing neural gas networks train based on heuristics and have not been proven to converge to an optimal solution.  Additionally, constraints must be put into place to avoid over-fitting the data space.  Despite these nuances, GNGs have proven successful in a variety of tasks.  This is likely because the automatic topology learning exhibited by these networks allows them to learn complex manifolds which may have locally-different intrinsic dimensionality \citep{Kegl2008PrincipalManifoldsTextbook}.  Thus, GNG networks have been applied successfully to tasks in motion detection \citep{Sun2016GNGMotionDetection}, visualization of high-dimensional data, web mining, classification, image deblocking \citep{LopezRubio2011GHPGraphs}, computer vision, robotics, color quantization, clustering in videos \citep{Palomo2017GHNG} and foreground detection \citep{Palomo2016GrowingNeuralForest}.
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Elastic Maps  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Elastic Maps and Nets}
+\subsubsection{Elastic Maps and Nets} \label{sec:Elastic_Maps}
 \textit{Elastic Maps and Nets} \citep{Gorban2007ElasticMaps} (also called \textit{Principal Graphs}) are a mid-way between self-organizing maps (Section \ref{sec:SOM}) and the generative topographic mapping (Section \ref{sec:GTM}).   Essentially, elastic maps represent a mathematical analogy of a set of elastic springs embedded in the data space which is used to approximate a low-dimensional principal manifold \citep{Gorban2007ElasticMaps}.  Just as with the SOM, elastic maps are represented by a set of neurons (nodes), $\bm{w}_{k} \in \mathbb{R}^{D}$, $k=1,2,\dots,K$.  Each sample in the data set is assigned to a class based on its closest neuron 
 \begin{align}
 	C_{k} = \{\bm{x}|\bm{w}_{k} \text{ is the closest codebook vector to } \bm{x} \}
@@ -935,21 +927,21 @@ where $\lambda$ and $\mu$ are the stretching and bending moduli, respectively.  
 \noindent
 Essentially, the first term accounts for the fidelity of the data representations, the second term reinforces smoothness of the manifold by favoring similar neighbors and the third term imposes smoothness by stating that a codebook must be similar to the average of its neighboring nodes \citep{Sorzano2014DRReview}.  The position of the nodes $\{\bm{w}_{k}\}$ is given by the \textit{mechanical equilibrium} of the elastic map, or the locations which minimize the total energy $U_{T}$.  In practice, this is typically solved by the Expectation-Maximization algorithm, which guarantees a local minimum of $U_{T}$ \citep{Gorban2007ElasticMaps}.
 
-Unlike the SOM, but similarly to the GNG, elastic nets can add or delete neurons adaptively.  This allows them to fit very complex manifolds.  The elastic map approach has led to practical applications in data visualization, data recovery, visualization of genetic texts, and recovery of geophysical time series \citep{Gorban2007ElasticMaps}.
+Unlike the SOM, but similarly to the GNG, elastic nets can add or delete neurons adaptively.  This allows them to fit very complex manifolds.  The elastic map approach has led to practical applications in data visualization, data recovery, visualization of genetic texts and recovery of geophysical time series \citep{Gorban2007ElasticMaps}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Latent Variable Models %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Latent Variable Models}
+\subsection{Latent Variable Models} \label{sec:LVM}
 
-\subsubsection{General Latent Variable Model (GLVM)}
+\subsubsection{General Latent Variable Model (GLVM)} \label{sec:GLVM}
 
-\paragraph{Factor Analysis (FA)}
+\paragraph{Factor Analysis (FA)} \label{sec:FA}
 
-\paragraph{Independent Component Analysis (IDA)}
+\paragraph{Independent Component Analysis (IDA)} \label{sec:IDA}
 
-\paragraph{Probabilistic PCA (PPCA)}
+\paragraph{Probabilistic PCA (PPCA)} \label{sec:PPCA}
 PCA can also be analyzed from the viewpoint of factor analysis (FA), which is discussed later in this literature review.  The basic idea, however, is that data observations $\bm{x}_{n} \in \mathbb{R}^{D}$ are realizations of a probability distribution with a prior on the lower-dimensional latent variable $\bm{w}_n \in \mathbb{R}^{d}$.  A typical choice on this model is a Gaussian-Gaussian conjugate prior pair where the mean of the data likelihood is a linear function of the latent inputs.  As an example, the prior over the hidden data representations can be expressed as Gaussian distribution
 
 \begin{align}
@@ -988,33 +980,32 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 \subparagraph{Discriminative Supervised PCA} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Manifold Charting  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Manifold Charting}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  GTM  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Generative Topographic Mapping (GTM)} \label{sec:GTM}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Manifold Charting  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Manifold Charting} \label{sec:Manifold_Charting}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  t-SNE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Stochastic Neighbor Embedding (SNE and t-SNE)}
+\subsection{Stochastic Neighbor Embedding (SNE and t-SNE)} \label{sec:tSNE}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LargeVis  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{LargeVis}
+\subsection{LargeVis} \label{sec:largeVis}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  UMAP  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Uniform Manifold Approximation and Projection (UMAP)}
+\subsection{Uniform Manifold Approximation and Projection (UMAP)} \label{sec:UMAP}
 
 
 
@@ -1023,13 +1014,7 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Discussion}
 
-\subsubsection{Relations}
-
-Most modern manifold learners find their theoretical and algorithmic roots in one of three basic and well-known data analysis techniques: PCA, K-means and MDS \citep{Kegl2008PrincipalManifoldsTextbook}.
-
-\subsubsection{Strengths and Weaknesses}
-
-\subsection{Overview of Unsupervised Manifold Learning Methods}
+\subsubsection{Overview of Unsupervised Manifold Learning Methods}
 
 \begin{longtable}{ |p{0.25\textwidth}|p{0.6\textwidth}|p{0.08\textwidth}| } 
 	\caption{Overview of unsupervised manifold learning methods and their properties.}
@@ -1041,39 +1026,51 @@ Most modern manifold learners find their theoretical and algorithmic roots in on
 	\hline
 	\textbf{Method} & \textbf{Strategy} & \textbf{Intro.}\\
 	\hline
-	PCA   & Preserves variance of data, global structure & 1901\\
+	PCA   & Preserves variance of data, global structure. Section \ref{sec:PCA} & 1901\\
 	\hline
-	MDS  & Preserves pairwise distances, global structure  & 1958\\
+	MDS  & Preserves pairwise distances, global structure. Section \ref{sec:MDS}  & 1958\\
 	\hline
-	LDA  & Minimizes within-class distance and maximizes between-class distance, global structure  & 1936\\
+	LDA  & Minimizes within-class distance and maximizes between-class distance, global structure. Section \ref{sec:LDA}  & 1936\\
 	\hline
-	NMF   & Decomposes data into low-dimensional coordinates and basis vectors, minimizes approximation error.  & 1994\\
+	NMF   & Decomposes data into low-dimensional coordinates and basis vectors, minimizes approximation error. Section \ref{sec:NMF} & 1994\\
 	\hline
-	NPP  & Linear variant of LLE, preserves local neighborhoods, local structure  & 2005\\
+	NPP  & Linear variant of LLE, preserves local neighborhoods, local structure. Section \ref{sec:LLE}  & 2005\\
 	\hline
-	LPP  & Linear variant of LE, preserves local neighborhoods, local structure  & 2003\\
+	LPP  & Linear variant of LE, preserves local neighborhoods, local structure. Section \ref{sec:Laplacian_Eigenmaps}  & 2003\\
 	\hline
 	\multicolumn{3}{|c|}{\textbf{Nonlinear}} \\
 	\hline
 	\textbf{Method} & \textbf{Strategy} & \textbf{Intro.}\\
 	\hline
-	KPCA  & Performs PCA in a feature space defined by a kernel function, preserves variance of data, global structure  & 1999 \\
+	KPCA  & Performs PCA in a feature space defined by a kernel function, preserves variance of data, global structure.  Section \ref{sec:KPCA}  & 1999 \\
 	\hline
-	MVU  & Learns a kernel function to be used with KPCA that ``unfolds" the manifold, preserves variance of data, global structure  & 2004\\
+	MVU  & Learns a kernel function to be used with KPCA that ``unfolds" the manifold, preserves variance of data, global structure. Section \ref{sec:MVU}  & 2004\\
 	\hline
-	Isomap  & Preserves geodesic distances, global structure  & 2000 \\
+	Isomap  & Preserves geodesic distances, global structure.  Section \ref{sec:Isomap}  & 2000 \\
 	\hline
-	Sammon Mapping  & Preserves pairwise distances.  More emphasis is placed on samples that are close in the input space & 1969 \\
+	Sammon Mapping  & Preserves pairwise distances.  More emphasis is placed on samples that are close in the input space.  Section \ref{sec:sammon_mapping} & 1969 \\
 	\hline
-	LLE  & Preserves local neighborhoods, local structure  & 2000 \\
+	LLE  & Preserves local neighborhoods, local structure. Section \ref{sec:LLE}  & 2000 \\
 	\hline
-	Laplacian Eigenmaps  & Preserves local neighborhoods, local structure  & 2003 \\
+	Laplacian Eigenmaps  & Preserves local neighborhoods, local structure.  Section \ref{sec:Laplacian_Eigenmaps}  & 2003 \\
 	\hline
-	Hessian LLE  & Minimizes curvature of high-dimensional manifold estimated from local neighborhoods & 2003 \\
+	Hessian LLE  & Minimizes curvature of high-dimensional manifold estimated from local neighborhoods. Section \ref{sec:Hessian_LLE} & 2003 \\
 	\hline
-	LTSA  &  Learns manifold in local tangent spaces then aligns to form global coordinate system & 2002\\
+	LTSA  &  Learns manifold in local tangent spaces then aligns to form global coordinate system.  Section \ref{sec:LTSA} & 2002\\
 	\hline
-	Diffusion Maps  & Preserves diffusion distance  & 2006\\
+	Diffusion Maps  & Preserves diffusion distance.  Section \ref{sec:Diffusion_Maps}  & 2006\\
+	\hline
+	\multicolumn{3}{|c|}{\textbf{Neural Networks}} \\
+	\hline
+	\textbf{Method} & \textbf{Strategy} & \textbf{Intro.}\\
+	\hline
+	Autoencoders  & Neural network where desired output is the input.  Network decreases in dimensionality then increases to input size.  Effectively performs nonlinear PCA. Section \ref{sec:Autoencoders}  & 1986 \\
+	\hline
+	SOM  & Distributes fixed lattice of neurons to cover input feature space using competitive learning. Section \ref{sec:SOM}   & 1990\\
+	\hline
+	GNG  & Distributes lattice of neurons to cover input feature space using competitive learning. The network is able to add and delete neurons to fill the data space. Section \ref{sec:GNG}& 1994\\
+	\hline
+	Elastic Maps and Nets  &  Uses map of neurons to cover the input feature space. Simulates network of springs and is optimized to the mechanical equilibrium of the system.  Section \ref{sec:Elastic_Maps}  & 2008 \\
 	\hline
 	\multicolumn{3}{|c|}{\textbf{Probabilistic}}\\
 	\hline
@@ -1081,23 +1078,13 @@ Most modern manifold learners find their theoretical and algorithmic roots in on
 	\hline
 	FA  & ~   & ~\\
 	\hline
+	IDA  & ~  & ~\\
+	\hline
 	PPCA  & ~   & ~\\
 	\hline
 	GTM  & ~  & ~\\
 	\hline
 	Manifold Charting  & ~  & ~ \\
-	\hline
-	\multicolumn{3}{|c|}{\textbf{Neural Networks}} \\
-	\hline
-	\textbf{Method} & \textbf{Strategy} & \textbf{Intro.}\\
-	\hline
-	SOM  & ~   & ~\\
-	\hline
-	GNG  & ~   & ~\\
-	\hline
-	Elastic Nets  & ~  & ~ \\
-	\hline
-	Autoencoders  & ~  & ~ \\
 	\hline
 	t-SNE  & ~  & ~ \\
 	\hline
@@ -1107,6 +1094,12 @@ Most modern manifold learners find their theoretical and algorithmic roots in on
 	\hline
 \end{longtable}
 
+\subsubsection{Relations}
+
+Most modern manifold learners find their theoretical and algorithmic roots in one of three basic and well-known data analysis techniques: PCA, K-means and MDS \citep{Kegl2008PrincipalManifoldsTextbook}.
+
+\subsubsection{Strengths and Weaknesses}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Weakly Supervised Manifold Learning  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1114,7 +1107,7 @@ Most modern manifold learners find their theoretical and algorithmic roots in on
 Although the specific feature vectors being used in remote sensing applications can be very high-dimensional, the underlying structure of a given dataset set is usually governed by only a few variables. Either implicitly or explicitly, most learning algorithms exploit this underlying structure to make learning and inference possible.
 If it is available, relevant information for a specific task can generally be incorporated to provide supervision and improve the performance of unsupervised methods.  Supervised methods for nonlinear dimensionality reduction assume that the samples lie on a manifold parameterized by multiple latent factors.  However, different from traditional manifold learning (where the goal is to preserve the relationships between samples), these methods find the most discriminative low-dimensional representations for classification tasks \citep{Wu2015MILImageManifoldThesis}.  The optimal embedding uses class label information to  minimize distances between nearby points with the same class label while separating samples of different classes.  Although supervised manifold learning often outperforms unsupervised methods for classification tasks, this learning cannot be done directly in  MIL because of the uncertainty on the labels \citep{Carbonneau2016MILSurvey}.  Moreover, fully-annotated samples are often difficult or impossible to obtain in many remote sensing applications \citep{Zare2016MIACE}.  Even with the successes of manifold learning, most the of the previous work has mainly focused on either fully supervised or unsupervised learning.   Existing work in weakly supervised learning on manifolds has primarily considered the semi-supervised setting \citep{Zhang2008SpectralSemiSupManifoldLearning,Chen2018RobustSemiSupManifoldLearning,Zhang2014SemiSupManLearningFusion,Hong2019LearnableManifoldAlignment,Navaratnam2007JointManifoldSemiSupRegression,Stanley2019ManAlignmentFeatureCorrespondence,Tuia2015KernelManifoldAlignment,Wang2010MultiscaleManAlignment,Wang2011HeteroDomainAdaptationManAlignment}.  Methods in this category usually incorporate partially provided image labels and propagate the labels over the manifold approximated by the neighborhood graph on the images.  In a broad sense, however, different situations of weak supervision (specifically, Multiple Instance  Learning), have not been well studied \citep{Wu2015MILImageManifoldThesis}.  The existing MIL manifold learning in the literature can be broken into two paradigms: LDA-based approaches and sparse, orthogonal matrix-based techniques \citep{Zhu2018MIDRSparsity}. Thus, all existing approaches are linear, meaning they may not work well if the underlying bag manifold exhibits curvature.  Alternative weakly-supervised dimensionality reduction approaches have been proposed, however, they do not adhere to the constraints of MIL.  The current literature for weakly supervised dimensionality reduction is reviewed in the following sections, beginning with reviews of MIL DR approaches, namely: MIDR, MidLABS, CLFDA, MIDA and MI-FEAR.  Approaches using alternative definitions of weak learning are addressed at the end of the section.
 
-\subsection{MIDR} 
+\subsection{MIDR} \label{sec:MIDR}
 The first true MIL manifold learning experimentation was performed in \citep{Sun2010MIDR} under the orthogonal matrix-based paradigm.  To show the need for MIL-specific methods, Sun et al. showed that Principal Component Analysis (PCA) failed to incorporate bag-level label information and thus provided poor separation between positive and negative bags.  Additionally, traditional Linear Discriminant Analysis (LDA) was used to project bags into a latent space which maximized between-bag separation, while minimizing within-bag dissimilarity.  However, LDA often mixed the latent bag representations due to the uncertainty of negative sample distributions in the positive bags.  These results have been shown many times in the literature \citep{Chao2019RecentAdvancesSupervisedDimRed,Vural2018StudySupervisedManifoldLearning}, so they were to be expected.  However, they motivated the need for specialized manifold learning methods that are directly applicable with MIL.  Therefore, Sun et al. proposed \textit{Multiple Instance Dimensionality Reduction} (MIDR), which optimizes an objective through gradient descent to discover sparse, orthogonal projection vectors in the latent space in conjunction with the Multiple Instance Logistic Regression classifier.  The goal of MIDR is to discover a projection matrix $\bm{W} \in \mathbb{R}^{D \times d}$ which will increase discriminability between positive and negative bags in the latent embedding space.  If given the $k^{th}$ training bag, $\bm{B}_{k} = \{ \bm{x}_{k,1}, \dots, \bm{x}_{k,n_{k}} \}$ with corresponding binary bag-level label $L_k \subset \{0,1\}$, MIDR attempts to find a matrix $\bm{W}$ such that the projection of $\bm{B}_{k} \subset \mathbb{R}^{D}$ by $\bm{W}^{T}\bm{B}_{k} \subset \mathbb{R}^{d}$ increases the separation between positive and negative bags. The intuition is that the probability of the $k^{th}$ bag being positive $\Pr(L_{k}=1|\bm{W}^{T}\bm{B}_{k})$ should be close to one if it is positive and close to zero otherwise.  This can be achieved by minimizing the squared loss between the actual and predicted label of each bag
 \begin{align}
 	\min_{\bm{W}} \sum_{k=1}^{K} (\Pr(L_{k}=1|\bm{W}^{T}\bm{B}_{k}) - L_{k})^{2}
@@ -1170,7 +1163,7 @@ Pseudo-code for MIDR is provided in Algorithm \ref{alg:MIDR}.
 
 In \citep{Sun2010MIDR}, gradient descent was used to optimize the objective.  An alternating optimization scheme was employed that switched between estimating the parameters of the MI Logistic Regression and solving for a new sparse, orthogonal embedding  matrix.  It was found that the newly developed method outperformed unsupervised instance-level dimensionality reduction approaches (applied to bags) for bag-level classification.  MIDR was later revisited by Zhu et al. where the optimization problem was reformulated using the \textit{intertial proximal alternating linearized minimization} (iPALM) method \citep{Zhu2018MIDRSparsity}.  The advantage of \textit{Multiple Instance Augmented Lagrangian Multiplier} (MI-ALM) this approach is that the problem variables can be managed sperately and updated effectively.  Additionally, the global convergence of MIDR was proved. 
 
-\subsection{MidLABS}
+\subsection{MidLABS} \label{sec:MidLABS}
 The other existing approaches for dimensionality reduction with multiple instance learning follow a LDA scheme.  \textit{Multi-Instance Dimensionality reduction by Learning a mAximum Bag margin Subspace} (MidLABS) \citep{Ping2010MILDRMaxMargin} applies LDA to find a projection vector which simultaneously maximizes between-class scattering and minimizes within-class scattering to separate positive and negative bags in the embedding space.  While most MIL approaches assume instances are independently and identically distributed (IID), MidLABS represents each bag as a neighborhood graph in order to take advantage of data structure and jointly constructs  the scatter matrices by evaluating the scattering between bags. MidLABS optimizes the following objective:
 \begin{align}
 \max_{\bm{w}} J(\bm{w})= \max_{\bm{w}} \frac{\bm{w}^{T}(\sum_{L_{i} \neq L_{j}}\bm{K}_{ij})\bm{w}}{\bm{w}^{T}(\sum_{L_{i} = L_{j}}\bm{K}_{ij})\bm{w}}
@@ -1217,7 +1210,7 @@ where $\bm{x}_{ia}$ is the $a^{th}$ instance in the $i^{th}$ bag, $n_i$ is the t
 \end{algorithm}
 
 
-\subsection{MIDA}
+\subsection{MIDA} \label{sec:MIDA}
 In 2014, Chia et al. introduced Multiple-Instance Discriminant Analysis (MIDA) \citep{Chai2014MIDA}.  MIDA has the same objective as MidLABS, which is to discover a linear projection basis which separates bags in the embedding space.  Both MIDA and MidLABS  can be considered as MI extensions of LDA. However, the way these algorithms construct their scatter matrices is very different.  While MidLABS constructs its  scatter matrices at the bag level by directly evaluating the scattering amongst bags, MIDA  uses instance-level information to formulate the within-class and between-class scatter.  In other words, MIDA selects a prototype for each bag and utilizes the selected instances as bag representatives for constructing the scatter.  The mean of all negative instances is used as the negative class prototype. The difficulty with this approach is the ambiguity on which instances are truly positive.  The other major difference between MidLABS and MIDA is that MIDA does not consider structural information of data when formulating the scatter matrices. To select candidate positive prototypes, MIDA initializes a set by selecting the most-likely positive instances as those with the lowest density in a Gaussian likelihood estimated by all instances in the negative bags.  An iterative optimization procedure is applied which trades-off between candidate positive instance selection and learning the projection weights into the latent space which maximizes the separation between bags with different labels and minimizes the distances between bags with the same label.  Pseudo-code for MIDA  is provided in Algorithms \ref{alg:MIDA_init} and \ref{alg:MIDA_opt}.
 
 \begin{algorithm}[h!]
@@ -1283,7 +1276,7 @@ Finally, Citation Local Fisher Linear Discriminant Analysis (CLFDA) \citep{Kim20
 
 As previously mentioned, all existing MIL dimensionality reduction approaches in the literature are solely linear.  However, many modalities exhibit nonlinear variation.  Therefore, nonlinear manifold learning approaches should be developed which operate under the multiple instance learning framework. 
 
-\subsection{MI-FEAR}
+\subsection{MI-FEAR} \label{sec:MIFEAR}
 While the previously mentioned approaches were based on feature extraction,  multiple instance dimensionality reduction has also been investigated under the feature selection paradigm.  Specifically, Latham used feature ranking to determine the most important features for instance-level classification \citep{Latham2015MIFeatureRankingThesis}.  Feature ranking considers each feature independently according to a scoring function, thus revealing properties of the individual features by which they may be compared and ranked.  The challenge of learning a good feature ranking under an instance-space metric is that the instance labels are not available under the MIL framework.  \textit{Multiple-Instance Feature Ranking} (MI-FEAR) assumes one-sided noise by giving every instance the label of its corresponding bag.  This essentially transforms the weakly-supervised problem into a supervised one.  Pseudo-code for MI-FEAR is provided in Algorithm \ref{alg:MIFEAR}.
 
 \begin{algorithm}[h!]
@@ -1316,15 +1309,15 @@ Table \ref{tab:MIDRComparison} shows a comparison between the multiple instance 
 	\hline
 	\textbf{Method} & \textbf{Summary} & \textbf{Reduction Method} & \textbf{Classification Level}\\
 	\hline
-	MIDR \newline (2010)   & Finds a sparse, orthogonal linear projection matrix optimized for bag-level logistic regression   &Linear, orthogonal projection  &  bag-level\\
+	MIDR  \newline (2010)  & Finds a sparse, orthogonal linear projection matrix optimized for bag-level logistic regression.  Section \ref{sec:MIDR}.   &Linear, orthogonal projection  &  bag-level\\
 	\hline
-	MidLABS \newline (2010) &  Finds linear projection vector using LDA defined from bag-similarity kernel  & LDA   & bag-level\\
+	MidLABS \newline (2010) &  Finds linear projection vector using LDA defined from bag-similarity kernel. Section \ref{sec:MidLABS}.  & LDA   & bag-level\\
 	\hline
-	MIDA \newline (2014) &Learns linear projection vector using LDA defined from bag representative vectors & LDA &  instance-level\\
+	MIDA \newline (2014) &Learns linear projection vector using LDA defined from bag representative vectors. Section \ref{sec:MIDA}. & LDA &  instance-level\\
 	\hline
-	CLFDA \newline (2010)  &Learns linear projection matrix using local discriminant analysis defined from instance scatter.  Instance labels are provided as bag labels and refined. & LFDA &  instance-level\\
+	CLFDA \newline (2010)  &Learns linear projection matrix using local discriminant analysis defined from instance scatter.  Instance labels are provided as bag labels and refined. Section \ref{sec:CLFDA}. & LFDA &  instance-level\\
 	\hline
-	MI-FEAR \newline (2015) &  Incrementally leaves out feature and evaluates performance loss to provide feature score  & Feature selection & instance-level\\
+	MI-FEAR \newline (2015) &  Incrementally leaves out feature and evaluates performance loss to provide feature score.  Section \ref{sec:MIFEAR}.  & Feature selection & instance-level\\
 	\hline
 \end{longtable}
 
@@ -1437,7 +1430,7 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 		\begin{figure*}[h!]
 			\hfill
 			\begin{subfigure}[t]{0.5\textwidth}
-				\includegraphics[height=2.8in]{example-image-a}
+				\includegraphics[height=2in]{example-image-a}
 				\caption{Siamese network structured from contrastive loss.}
 				\label{fig:siamese_networks_conrastive}
 			\end{subfigure}%
@@ -1445,7 +1438,7 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 			~ 
 			\begin{subfigure}[t]{0.5\textwidth}
 				\centering
-				\includegraphics[height=2.8in]{example-image-a}
+				\includegraphics[height=2in]{example-image-a}
 				\caption{Siamese network structured from triplet loss.}
 				\label{fig:siamese_networks_triplet}
 			\end{subfigure}
