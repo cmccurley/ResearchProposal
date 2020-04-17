@@ -58,7 +58,7 @@
 \contentsline {subsubsection}{\numberline {2.2.3.11}Diffusion Maps}{75}{subsubsection.2.2.3.11}
 \contentsline {subsection}{\numberline {2.2.4}Principal Curves, Surfaces and Manifolds}{76}{subsection.2.2.4}
 \contentsline {subsubsection}{\numberline {2.2.4.1}Deep Learning}{77}{subsubsection.2.2.4.1}
-\contentsline {paragraph}{Auto-Associative Models (Autoencoders) and Nonlinear PCA}{78}{section*.46}
+\contentsline {paragraph}{Autoencoders and Nonlinear PCA}{78}{section*.46}
 \contentsline {paragraph}{Graph Convolutional Networks}{79}{section*.48}
 \contentsline {subsubsection}{\numberline {2.2.4.2}Self-Organizing Map (SOM)}{80}{subsubsection.2.2.4.2}
 \contentsline {subsubsection}{\numberline {2.2.4.3}Growing Neural Gas (GNG)}{82}{subsubsection.2.2.4.3}
