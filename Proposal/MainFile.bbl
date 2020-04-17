@@ -1,14 +1,37 @@
-\begin{thebibliography}{174}
+\begin{thebibliography}{186}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Liu(2017)]{Liu2017DeepLearningSurvey}
+A survey of deep neural network architectures and their applications.
+\newblock \emph{Neurocomputing}, 234:\penalty0 11 -- 26, 2017.
+\newblock ISSN 0925-2312.
+\newblock \doi{https://doi.org/10.1016/j.neucom.2016.12.038}.
+
+\bibitem[Abiodun et~al.(2018)Abiodun, Jantan, Omolara, Dada, Mohamed, and
+  Arshad]{Abiodun2018DeepLearningSurvey}
+Oludare Abiodun, Aman Jantan, Oludare Omolara, Kemi Dada, Nachaat Mohamed, and
+  Humaira Arshad.
+\newblock State-of-the-art in artificial neural network applications: A survey.
+\newblock \emph{Heliyon}, 4:\penalty0 e00938, 11 2018.
+\newblock \doi{10.1016/j.heliyon.2018.e00938}.
+
 \bibitem[Aiolli and Sperduti(2004)]{Aiolli2004LearningPreferences}
 Fabio Aiolli and Alessandro Sperduti.
 \newblock Learning preferences for multiclass problems.
 \newblock 01 2004.
+
+\bibitem[Alom et~al.(2019)Alom, Taha, Yakopcic, Westberg, Sidike, Nasrin,
+  Hasan, Essen, Awwal, and Asari]{Alom2019DeepLearningSurvey}
+Md.~Zahangir Alom, Tarek Taha, Chris Yakopcic, Stefan Westberg, Paheding
+  Sidike, Mst Nasrin, Mahmudul Hasan, Brian Essen, Abdul Awwal, and Vijayan
+  Asari.
+\newblock A state-of-the-art survey on deep learning theory and architectures.
+\newblock \emph{Electronics}, 8:\penalty0 292, 03 2019.
+\newblock \doi{10.3390/electronics8030292}.
 
 \bibitem[Amores(2013)]{Amores2013MIClassification}
 Jaume Amores.
@@ -196,6 +219,13 @@ B.~Chaudhuri and S.~Parui.
 \newblock \emph{Defence Science Journal}, 45:\penalty0 285--291, 04 1995.
 \newblock \doi{10.14429/dsj.45.4135}.
 
+\bibitem[Chen et~al.(2019)Chen, Xie, Zhang, and Zhai]{Chen2019DeepAutoencoders}
+Junfen Chen, Bojun Xie, Hui Zhang, and Junhai Zhai.
+\newblock \emph{Deep Autoencoders in Pattern Recognition: A Survey}, chapter
+  Chapter 9, pages 229--255.
+\newblock 2019.
+\newblock \doi{10.1142/9789813143180_0009}.
+
 \bibitem[Chen et~al.(2018)Chen, Wang, Li, and
   Sun]{Chen2018RobustSemiSupManifoldLearning}
 M.~Chen, J.~Wang, X.~Li, and X.~Sun.
@@ -314,6 +344,13 @@ Thomas Deselaers and Vittorio Ferrari.
   International Conference on Machine Learning}, ICML’10, page 287–294,
   Madison, WI, USA, 2010. Omnipress.
 \newblock ISBN 9781605589077.
+
+\bibitem[Dhillon and Verma(2019)]{Dhillon2019CNNSurvey}
+Anamika Dhillon and Gyanendra Verma.
+\newblock Convolutional neural network: a review of models, methodologies and
+  applications to object detection.
+\newblock \emph{Progress in Artificial Intelligence}, 12 2019.
+\newblock \doi{10.1007/s13748-019-00203-0}.
 
 \bibitem[Dietterich et~al.(1997)Dietterich, Lathrop, and
   Lozano-Pérez]{Dietterich1996AxisParallelRectangles}
@@ -478,6 +515,11 @@ H.~{Hajimirsadeghi} and G.~{Mori}.
   Intelligence}, 39\penalty0 (9):\penalty0 1839--1852, Sep. 2017.
 \newblock ISSN 0162-8828.
 \newblock \doi{10.1109/TPAMI.2016.2613865}.
+
+\bibitem[Haykin(2009)]{Haykin2009NeuralNetworks}
+S.~S. Haykin.
+\newblock \emph{Neural networks and learning machines}.
+\newblock Pearson Education, Upper Saddle River, NJ, third edition, 2009.
 
 \bibitem[He et~al.(2015)He, Zhang, Ren, and Sun]{He2015ResNet}
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
@@ -784,6 +826,14 @@ Wei Ping, Ye~Xu, Ren Kexin, Chi-Hung Chi, and Shen Furao.
   maximum bag margin subspace.
 \newblock volume~1, 01 2010.
 
+\bibitem[Principe et~al.(1999)Principe, Euliano, and
+  Lefebvre]{Principe1999NeuralAdaptiveSystems}
+Jose~C. Principe, Neil~R. Euliano, and W.~Curt Lefebvre.
+\newblock \emph{Neural and Adaptive Systems: Fundamentals through Simulations
+  with CD-ROM}.
+\newblock John Wiley and Sons, Inc., USA, 1st edition, 1999.
+\newblock ISBN 0471351679.
+
 \bibitem[Quispe et~al.(2016)Quispe, Petitjean, and
   Heutte]{Mendoza2016ELMOutOfSample}
 Arturo~Mendoza Quispe, Caroline Petitjean, and Laurent Heutte.
@@ -854,6 +904,12 @@ I.~Rish, G.~Grabarnik, G.~A. Cecchi, F.~Pereira, and G.~J. Gordon.
 \newblock pages 832--839, 01 2008.
 \newblock \doi{10.1145/1390156.1390261}.
 
+\bibitem[Rojas(1996)]{Rojas1996AssociativeNetworks}
+R.~Rojas.
+\newblock Associative networks.
+\newblock In \emph{Neural Networks - A Systematic Introduction}, chapter~12,
+  pages 311--336. Springer-Verlag, Berlin, New-York, 1st edition, 1996.
+
 \bibitem[Roweis and Saul(2000)]{Roweis2000LLE}
 S.~T. Roweis and L.~K. Saul.
 \newblock Nonlinear dimensionality reduction by locally linear embedding.
@@ -898,12 +954,31 @@ Bernhard Sch\"{o}lkopf, Alexander~J. Smola, and Klaus-Robert M\"{u}ller.
 \newblock MIT Press, Cambridge, MA, USA, 1999.
 \newblock ISBN 0262194163.
 
+\bibitem[Scholz et~al.(2008)Scholz, Fraunholz, and
+  Selbig]{Scholz2008NonlinearPCA}
+Matthias Scholz, Martin Fraunholz, and Joachim Selbig.
+\newblock Nonlinear principal component analysis: Neural network models and
+  applications.
+\newblock In Alexander~N. Gorban, Bal{\'a}zs K{\'e}gl, Donald~C. Wunsch, and
+  Andrei~Y. Zinovyev, editors, \emph{Principal Manifolds for Data Visualization
+  and Dimension Reduction}, pages 44--67, Berlin, Heidelberg, 2008. Springer
+  Berlin Heidelberg.
+
 \bibitem[Schroff et~al.(2015)Schroff, Kalenichenko, and
   Philbin]{Schroff2015FaceNet}
 Florian Schroff, Dmitry Kalenichenko, and James Philbin.
 \newblock Facenet: {A} unified embedding for face recognition and clustering.
 \newblock \emph{CoRR}, abs/1503.03832, 2015.
 \newblock URL \url{http://arxiv.org/abs/1503.03832}.
+
+\bibitem[Shahid et~al.(2019)Shahid, Rappon, and
+  Berta]{Shadid2019DeepLearningHealthCare}
+Nida Shahid, Tim Rappon, and Whitney Berta.
+\newblock Applications of artificial neural networks in health care
+  organizational decision-making: A scoping review.
+\newblock \emph{PLOS ONE}, 14\penalty0 (2):\penalty0 1--22, 02 2019.
+\newblock \doi{10.1371/journal.pone.0212356}.
+\newblock URL \url{https://doi.org/10.1371/journal.pone.0212356}.
 
 \bibitem[{Shuman} et~al.(2013){Shuman}, {Narang}, {Frossard}, {Ortega}, and
   {Vandergheynst}]{Shuman2013SignalProcessingGraphs}
@@ -1011,6 +1086,11 @@ I.~W. Tsang and J.~T. Kwok.
   1401--1408. MIT Press, 2007.
 \newblock URL
   \url{http://papers.nips.cc/paper/3005-large-scale-sparsified-manifold-regularization.pdf}.
+
+\bibitem[Tschannen et~al.(2018)Tschannen, Bachem, and
+  Lucic]{Tschannen2018RecentAdvancesAutoencoder}
+Michael Tschannen, Olivier Bachem, and Mario Lucic.
+\newblock Recent advances in autoencoder-based representation learning, 2018.
 
 \bibitem[Tu et~al.(2019)Tu, Huang, He, and Zhou]{Tu2019MILGraphNN}
 Ming Tu, Jing Huang, Xiaodong He, and Bowen Zhou.
@@ -1185,6 +1265,15 @@ Hujun Yin.
 \newblock Miles: Multiple-instance learning via embedded instance selection.
 \newblock \emph{IEEE Transactions on Pattern Analysis and Machine
   Intelligence}, 28\penalty0 (12):\penalty0 1931--1947, Dec 2006.
+
+\bibitem[Yuan et~al.(2019)Yuan, Zhang, Shi, Xia, and
+  Li]{Yuan2019AutoencoderSurvey}
+F.-N Yuan, L.~Zhang, J.-T Shi, X.~Xia, and G.~Li.
+\newblock Theories and applications of auto-encoder neural networks: A
+  literature survey.
+\newblock \emph{Jisuanji Xuebao/Chinese Journal of Computers}, 42:\penalty0
+  203--230, 01 2019.
+\newblock \doi{10.11897/SP.J.1016.2019.00203}.
 
 \bibitem[{Yuksel} et~al.(2012){Yuksel}, {Bolton}, and
   {Gader}]{Yuksel2015MIHMMLandmine2}

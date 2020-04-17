@@ -852,8 +852,34 @@ Diffusion maps have been successfully applied to tasks in shape matching and gen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Deep Learning  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Deep Learning} \label{sec:Deep_Learning}
+Many natural phenomena behave in a nonlinear way, meaning that the observed data define a curved subspace in the original feature space \citep{Scholz2008NonlinearPCA}.  One method used to model this nonlinearity is to utilize a \textit{deep feedforward network}, also often called \textit{feedforward neural network} or \textit{multilayer perceptron} (MLP) \citep{Goodfellow2016DeepLearning}.  The goal of a feedforward network is to approximate a function $f$ which maps an input $\bm{x}$ to a desired output $\hat{\bm{y}}=f(\bm{x}, \bm{\theta})$.  These models are called ``networks" because they are typically represented as a composition of functions (usually perceptrons). In the standard perceptron model, the output is formed as a weighted combination of the inputs which is then passed through a nonlinear activation function.  Weights on the input signals are adjusted based on an error signal back-propagated through the network.  This model is similar to human neurons, where some input pathways (synapses) are strengthened for particular tasks.  The multilayer perceptron has been proven as a \textit{universal approximator} \citep{Haykin2009NeuralNetworks, Principe1999NeuralAdaptiveSystems}.  This means that (under certain conditions), neural models have the ability to approximate any continuous function.  Thus, feedforward neural networks have shown remarkable performance in countless applications \citep{Liu2017DeepLearningSurvey, Dhillon2019CNNSurvey, Abiodun2018DeepLearningSurvey, Shadid2019DeepLearningHealthCare, Alom2019DeepLearningSurvey, Tschannen2018RecentAdvancesAutoencoder, Yuan2019AutoencoderSurvey, Chen2019DeepAutoencoders}, including manifold learning through use of a special type of neural architecture called an \textit{autoencoder}.
 
 \paragraph{Auto-Associative Models (Autoencoders) and Nonlinear PCA} \label{sec:Autoencoders}
+
+\textit{Autoencoder neural networks} fall into the categorization of neural architectures known as \textit{autoassociative networks} \citep{Rojas1996AssociativeNetworks}.  The goal of an autoencoder is, given an input sample, to produce an exact copy at its output.  Internally, the network has a hidden layer $\bm{h}$ that describes the latent code used to represent the input \citep{Goodfellow2016DeepLearning}.  Essentially, the network has two parts.  The first part represents the \textit{encoder} $\Phi_{encode}:\mathcal{X} \rightarrow \mathcal{Z}$, whereas the second part denotes the inverse function, or \textit{decoder} $\Phi_{decode}:\mathcal{X} \rightarrow \hat{\mathcal{X}}$.  A hidden layer in each part enables the network to perform nonlinear mappings \citep{Scholz2008NonlinearPCA}.  Early investigation of modern autoencoders was performed by LeCun, Bourlard, Kamp, Hinton and Zemel beginning in 1987 \citep{Goodfellow2016DeepLearning, Bengio2014RepLearningReview}.  
+
+
+
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{example-image-a}
+		\caption[Autoencoder neural network]{}
+		\label{fig:autoencoder}
+	\end{figure*}
+\end{center}
+
+Standard Nonlinear PCA (NLPCA) is based on a multiple hidden layer autoencoder  \citep{Scholz2008NonlinearPCA}.
+
+In fact, it has been shown that an autoencoder with only a single hidden layer will learn an equivalent transformation matrix to traditional PCA \citep{Bengio2014RepLearningReview}.
+
+The autoencoder is tasked with learning the identity transform.  In other words, the desired output is the same as the input.  Because of the downsizing through the bottleneck layers, the network loses information through the nullspace of the network and cannot learn an exact identity transformation.  To perform dimensionality reduction, samples are passed through the encoder portion of the network and the low dimensional data representations are provided as the latent outputs $\bm{z}$ at the bottleneck layer.
+
+Autoencoders can be used for anomaly detection in remote sensing, where the model can be trained on background data.  When presented a target sample, the autoencoder should not be able to reconstruct the sample.
+
+Downsides of autoencoders, however, are that they are an unsupervised model and thus do not consider class information when determining the underlying latent features.  Moreover, autoencoders suffer from the same ailments as other neural networks, such as requiring large amounts of data to cope with the extreme parameterization.  Despite this, autoencoders have been applied successfully in countless tasks \citep{Tschannen2018RecentAdvancesAutoencoder, Yuan2019AutoencoderSurvey, Chen2019DeepAutoencoders}, including: feature representation learning, denoising and anomaly detection in remote sensing \citep{Bengio2014RepLearningReview}.
+
+
 
 \paragraph{Graph Convolutional Networks} \label{sec:Graph_CNN}
 

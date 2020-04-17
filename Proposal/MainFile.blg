@@ -13,6 +13,7 @@ A level-1 auxiliary file: Chapters/ch_TechApproach.aux
 A level-1 auxiliary file: Chapters/ch_ExperimentalDesign.aux
 A level-1 auxiliary file: Chapters/ch_PreliminaryWork.aux
 A level-1 auxiliary file: Chapters/ch_FutureTasks.aux
+Reallocated field_info (elt_size=4) to 10208 items from 5000.
 Database file #1: BibFiles/references.bib
 I was expecting a `,' or a `}'---line 53 of file BibFiles/references.bib
  :  
@@ -31,30 +32,33 @@ I was expecting a `,' or a `}'---line 709 of file BibFiles/references.bib
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-"{" immediately follows a field name---line 1783 of file BibFiles/references.bib
+"{" immediately follows a field name---line 1888 of file BibFiles/references.bib
  :  booktitl\part
  :               {title}e={2011 IEEE 11th International Conference on Data Mining},
 I'm skipping whatever remains of this entry
 Warning--entry type for "Tu2019MILGraphNN" isn't style-file defined
---line 2056 of file BibFiles/references.bib
-I was expecting a `,' or a `}'---line 3085 of file BibFiles/references.bib
+--line 2161 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 3190 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 3557 of file BibFiles/references.bib
-I was expecting a `,' or a `}'---line 3621 of file BibFiles/references.bib
+--line 3662 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 3726 of file BibFiles/references.bib
  :  
  :  year = {2001}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in Liu2017DeepLearningSurvey
+Warning--empty author in Liu2017DeepLearningSurvey
 Warning--empty booktitle in Aiolli2004LearningPreferences
 Warning--empty booktitle in Babenko2008MIBoosting
 Warning--empty booktitle in Babenko2011MILManifoldBags
 Warning--empty journal in Bishop1998GTM
 Warning--empty year in Breiman2001StatisitcalModeling
 Warning--empty year in Breiman2001StatisitcalModeling
+Warning--empty publisher in Chen2019DeepAutoencoders
 Warning--empty journal in Delaporte2008DiffusionMaps
 Warning--empty year in MUUFLScoringCode
 Warning--empty booktitle in Hu2008MIRanking
@@ -75,45 +79,45 @@ Warning--empty booktitle in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty publisher in Yin2007SOM
-You've used 174 entries,
+You've used 186 entries,
             2773 wiz_defined-function locations,
-            1867 strings with 44833 characters,
-and the built_in function-call counts, 89487 in all, are:
-= -- 8347
-> -- 4980
-< -- 143
-+ -- 1671
-- -- 1496
-* -- 7249
-:= -- 13503
-add.period$ -- 721
-call.type$ -- 174
-change.case$ -- 990
-chr.to.int$ -- 173
-cite$ -- 374
-duplicate$ -- 4170
-empty$ -- 7045
-format.name$ -- 1778
-if$ -- 19271
+            1952 strings with 47702 characters,
+and the built_in function-call counts, 95806 in all, are:
+= -- 8903
+> -- 5392
+< -- 151
++ -- 1810
+- -- 1623
+* -- 7807
+:= -- 14468
+add.period$ -- 767
+call.type$ -- 186
+change.case$ -- 1067
+chr.to.int$ -- 185
+cite$ -- 402
+duplicate$ -- 4447
+empty$ -- 7524
+format.name$ -- 1918
+if$ -- 20608
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 161
-newline$ -- 1048
-num.names$ -- 722
-pop$ -- 1882
+missing$ -- 175
+newline$ -- 1116
+num.names$ -- 768
+pop$ -- 2038
 preamble$ -- 1
-purify$ -- 831
+purify$ -- 896
 quote$ -- 0
-skip$ -- 3338
+skip$ -- 3548
 stack$ -- 0
-substring$ -- 3268
-swap$ -- 823
-text.length$ -- 61
+substring$ -- 3462
+swap$ -- 867
+text.length$ -- 66
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1869
-warning$ -- 26
-while$ -- 727
+type$ -- 1986
+warning$ -- 29
+while$ -- 775
 width$ -- 0
-write$ -- 2642
+write$ -- 2818
 (There were 6 error messages)
