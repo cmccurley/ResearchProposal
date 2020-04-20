@@ -1,4 +1,4 @@
-\begin{thebibliography}{191}
+\begin{thebibliography}{194}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -171,6 +171,12 @@ J.~Bocinsky, C.~H. McCurley, D.~Shats, and A.~Zare.
   Obscured Targets XXIV, 110120N}, volume 11012 of \emph{Proc.SPIE}, May 2019.
 \newblock \doi{10.1117/12.2519463}.
 
+\bibitem[Brand(2003)]{Brand2003ManifoldCharting}
+Matthew Brand.
+\newblock Charting a manifold.
+\newblock In \emph{Advances in Neural Information Processing Systems 15}, pages
+  961--968. MIT Press, 2003.
+
 \bibitem[Breiman()]{Breiman2001StatisitcalModeling}
 Leo Breiman.
 \newblock Statistical modeling: The two cultures.
@@ -317,6 +323,11 @@ M.~Cook, A.~Zare, and D.~K.~C. Ho.
   Objects, and Obscured Targets XXI, 98230A}, volume 9823 of \emph{Proc. SPIE},
   pages 9823 -- 9823 -- 9, Apr. 2016.
 \newblock \doi{10.1117/12.2223349}.
+
+\bibitem[Dai et~al.(2017)Dai, Wang, Aston, Hua, and
+  Wipf]{Dai2017VariationalAutoencoder}
+B.~Dai, Y.~Wang, J.~Aston, G.~Hua, and D.~Wipf.
+\newblock Hidden talents of the variational autoencoder, 2017.
 
 \bibitem[Dalal and Triggs(2005)]{Dalal2005HOG}
 Navneet Dalal and Bill Triggs.
@@ -659,6 +670,11 @@ E.~{Kokiopoulou} and Y.~{Saad}.
   dimensionality reduction technique.
 \newblock \emph{IEEE Transactions on Pattern Analysis and Machine
   Intelligence}, 29\penalty0 (12):\penalty0 2143--2156, 2007.
+
+\bibitem[Kosiorek et~al.(2019)Kosiorek, Sabour, Teh, and
+  Hinton]{Kosiorek2019StackedCapsuleAutoencoders}
+Adam~R. Kosiorek, Sara Sabour, Yee~Whye Teh, and Geoffrey~E. Hinton.
+\newblock Stacked capsule autoencoders, 2019.
 
 \bibitem[Kramer(1991)]{Kramer1991NonlinearPCA}
 Mark~A. Kramer.
