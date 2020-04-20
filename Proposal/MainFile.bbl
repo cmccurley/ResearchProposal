@@ -1,4 +1,4 @@
-\begin{thebibliography}{187}
+\begin{thebibliography}{191}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -185,6 +185,15 @@ Jane Bromley, Isabelle Guyon, Yann LeCun, Eduard S\"{a}ckinger, and Roopak
 \newblock In \emph{Proceedings of the 6th International Conference on Neural
   Information Processing Systems}, NIPS’93, page 737–744, San Francisco,
   CA, USA, 1993. Morgan Kaufmann Publishers Inc.
+
+\bibitem[{Bronstein} et~al.(2017){Bronstein}, {Bruna}, {LeCun}, {Szlam}, and
+  {Vandergheynst}]{Bronstein2017GeometricDeepLearning}
+M.~M. {Bronstein}, J.~{Bruna}, Y.~{LeCun}, A.~{Szlam}, and P.~{Vandergheynst}.
+\newblock Geometric deep learning: Going beyond euclidean data.
+\newblock \emph{IEEE Signal Processing Magazine}, 34\penalty0 (4):\penalty0
+  18--42, July 2017.
+\newblock ISSN 1053-5888.
+\newblock \doi{10.1109/MSP.2017.2693418}.
 
 \bibitem[Cao et~al.(2016)Cao, Luo, Chen, Yihan, Wang, Wang, and
   Ji]{Cao2016VehicleDetectionMIL}
@@ -703,6 +712,13 @@ Z.~Li, W.~Shi, X.~Shi, and Z.~Zhong.
 \newblock A supervised manifold learning method.
 \newblock \emph{Comput. Sci. Inf. Syst.}, 6:\penalty0 205--215, 12 2009.
 
+\bibitem[Liu et~al.(2018)Liu, Allamanis, Brockschmidt, and
+  Gaunt]{Liu2018ConstrainedGraphVariationalAutoencoders}
+Qi~Liu, Miltiadis Allamanis, Marc Brockschmidt, and Alexander~L. Gaunt.
+\newblock Constrained graph variational autoencoders for molecule design.
+\newblock \emph{CoRR}, abs/1805.09076, 2018.
+\newblock URL \url{http://arxiv.org/abs/1805.09076}.
+
 \bibitem[Liu et~al.(2010)Liu, Principe, and
   Haykin]{Liu2010KernelAdaptiveFiltering}
 Weifeng Liu, Jose~C. Principe, and Simon Haykin.
@@ -804,6 +820,13 @@ E.~J. {Palomo} and E.~{Lopez-Rubio}.
   28\penalty0 (9):\penalty0 2000--2009, Sep. 2017.
 \newblock ISSN 2162-237X.
 \newblock \doi{10.1109/TNNLS.2016.2570124}.
+
+\bibitem[Pan et~al.(2018)Pan, Hu, Long, Jiang, Yao, and
+  Zhang]{Pan2018AdversariallyRegGraphAutoencoder}
+Shirui Pan, Ruiqi Hu, Guodong Long, Jing Jiang, Lina Yao, and Chengqi Zhang.
+\newblock Adversarially regularized graph autoencoder.
+\newblock \emph{CoRR}, abs/1802.04407, 2018.
+\newblock URL \url{http://arxiv.org/abs/1802.04407}.
 
 \bibitem[Pang et~al.(2005)Pang, Zhang, Liu, Yu, and Li]{Pang2005NPP}
 Yanwei Pang, Lei Zhang, Zhengkai Liu, Nenghai Yu, and Houqiang Li.
@@ -1225,6 +1248,13 @@ Hui Wu.
 \newblock \emph{Weakly supervised learning on image manifolds}.
 \newblock PhD thesis, University of North Carolina at Charlotte, Charlotte, NC,
   2015.
+
+\bibitem[Wu et~al.(2019)Wu, Pan, Chen, Long, Zhang, and
+  Yu]{Wu2019SurveyGraphConvolutionalNeuralNetworks}
+Z.~Wu, S.~Pan, F.~Chen, G.~Long, C.~Zhang, and P.~S. Yu.
+\newblock A comprehensive survey on graph neural networks.
+\newblock \emph{CoRR}, abs/1901.00596, 2019.
+\newblock URL \url{http://arxiv.org/abs/1901.00596}.
 
 \bibitem[{X. Geng} et~al.(2005){X. Geng}, {D. Zhan}, and {Z.
   Zhou}]{Geng2005SupNonlinearDimRed}
