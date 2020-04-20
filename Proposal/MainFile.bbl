@@ -859,8 +859,9 @@ N.~{Patwari} and A.~O. {Hero}.
 \newblock In \emph{2004 IEEE International Conference on Acoustics, Speech, and
   Signal Processing}, volume~3, pages iii--857, May 2004.
 
-\bibitem[Peña et~al.(2007)Peña, Ashour, and Fyfe]{Pena2007NeuralGasReview}
-Marian Peña, Wesam Ashour, and Colin Fyfe.
+\bibitem[Pe{\~n}a et~al.(2007)Pe{\~n}a, Ashour, and
+  Fyfe]{Pena2007NeuralGasReview}
+Marian Pe{\~n}a, Wesam Ashour, and Colin Fyfe.
 \newblock \emph{Topology-Preserving Mappings for Data Visualisation},
   volume~58, pages 131--150.
 \newblock 09 2007.

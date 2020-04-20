@@ -1000,17 +1000,33 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  GTM  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Generative Topographic Mapping (GTM)} \label{sec:GTM}
-The \textit{Generative Topographic Mapping} (GTM) is a nonlinear latent variable model proposed by \citep{Bishop1998GTM} as alternative to the self-organizing map.  Specifically, the GTM provides solutions to known deficencies exhibited by SOMs, such as the lack of an objective function, proofs of convergence, theoretical basis for choosing a learning rate parameter and guarantee of topological ordering.  The GTM defines a nonlinear, parametric mapping from a $d$-dimensional latent space to a $D$-dimensional data space $\bm{x} \in \mathbb{R}^{D}$, where typically $d \ll D$ \citep{Pena2007NeuralGasReview}.  A continuous and differentiable function $f(\bm{x;\bm{W}})$ maps every point in the latent space to a point in the data space.  This function can be any arbitrary mapping such as a feedforward neural network.  To learn the parameters, GTM attempts to maximize the negative log-likelihood of the latent coordinates given the high-dimensional data and model parameters.  Assuming a probability distribution $p(\bm{z})$, the GTM derivation begins by assuming each high-dimensional sample $\bm{x}$ is generated from a nonlinear mapping with additive Gaussian noise
+The \textit{Generative Topographic Mapping} (GTM) is a nonlinear latent variable model proposed by \citep{Bishop1998GTM} as alternative to the self-organizing map.  Specifically, the GTM provides solutions to known deficencies exhibited by SOMs, such as the lack of an objective function, proofs of convergence, theoretical basis for choosing a learning rate parameter and guarantee of topological ordering.  The GTM defines a nonlinear, parametric mapping from a $d$-dimensional latent space to a $D$-dimensional data space $\bm{x} \in \mathbb{R}^{D}$, where typically $d \ll D$ \citep{Pena2007NeuralGasReview}.  A continuous and differentiable function $f(\bm{x;\bm{W}})$ maps every point in the latent space to a point in the data space.  This function can be any arbitrary, parametric mapping such as a feedforward neural network.  To learn the parameters, GTM attempts to maximize the negative log-likelihood of the latent coordinates given the high-dimensional data and model parameters.  Assuming a probability distribution $p(\bm{z})$, the GTM derivation begins by assuming each high-dimensional sample $\bm{x}$ is generated from a nonlinear mapping with additive Gaussian noise
 \begin{align}
 	p(\bm{x}|\bm{z},\bm{W},\beta) = \left ( \frac{1}{2 \pi \beta} \right )^{D/2} \exp{\left ( -\frac{1}{2 \beta} ||f(\bm{z};\bm{W}) - \bm{x} ||^{2} \right )}
 \end{align}
 \noindent
-where $\beta$ is the variance of the radially-symmetric Gaussian function centered on $f(\bm{z};\bm{W})$.  The probability over the input data space is obtained by integrating over the latent space by
+where $\beta$ is the variance of the radially-symmetric Gaussian function centered on $f(\bm{z};\bm{W})$.  The density over the input data space is obtained by integrating over the latent space by
 \begin{align}
 		p(\bm{x}|\bm{W},\beta) = \int p(\bm{x}|\bm{z},\bm{W},\beta) p(\bm{z}) d \bm{z}
 \end{align}
+\noindent
+which is inherently intractable.  By defining $p(\bm{z})$ as a set of $K$ equally weighted delta functions on a regular grid, 
+\begin{align}
+	p(\bm{z}) = \frac{1}{K} \sum_{k=1}^{K} \delta (\bm{z} - \bm{z}_{k})
+\end{align}
+\noindent
+the integral turns into a summation
+\begin{align}
+		p(\bm{x}|\bm{W},\beta) = \frac{1}{K} \sum_{k=1}^{K} p(\bm{x} | \bm{z}_{k}, \bm{W}, \beta)
+\end{align}
+which represents the model as a constrained mixture of Gaussians.  The data log-likelihood is given by
+\begin{align} \label{eq:GTM_likelihood}
+	J(\bm{W}, \beta) = \sum_{n=1}^{N} \ln \left( \frac{1}{K} \sum_{k=1}^{K} p(\bm{x} | \bm{z}_{k}, \bm{W}, \beta) \right)
+\end{align}
+\noindent
+Given a set of data $\bm{X} \in \mathbb{R}^{N \times D}$, the log-likelihood function in Equation \ref{eq:GTM_likelihood} can be maximized by the Expectation-Maximization algorithm.
 
-There are two obvious limitations of the GTM.  First, the computational complexity grows exponentially with the assumed intrinsic dimensionality.  As noted by \citep{Pena2007NeuralGasReview}, however, this is typically not an issue if the goal is visualization.  Additionally, poor initialization can lead the algorithm into local optima. 
+There are two obvious limitations of the GTM.  First, the computational complexity grows exponentially with the assumed intrinsic dimensionality.  As noted by \citep{Pena2007NeuralGasReview}, however, this is typically not an issue if the goal is visualization.  Additionally, poor initialization can lead the algorithm into local optima. However, the GTM has been used extensively for visualization tasks, clustering and applications in molecular biology \citep{Bishop1998GTM, Pena2007NeuralGasReview, Sorzano2014DRReview, Kegl2008PrincipalManifoldsTextbook}.  Additionally, successful variations of the GTM have been developed, such as the Topographic Product of Experts, Harmonic Topographic Map, Topographic Neural Gas and Inverse-Weighted K-Means Topology-Preserving Map \citep{Pena2007NeuralGasReview}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
