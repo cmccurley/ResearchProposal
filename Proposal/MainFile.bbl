@@ -1,4 +1,4 @@
-\begin{thebibliography}{186}
+\begin{thebibliography}{187}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -73,6 +73,14 @@ Boris Babenko, Zhuowen Tu, and Serge~J. Belongie.
 Boris Babenko, Nakul Verma, Piotr Dollár, and Serge Belongie.
 \newblock Multiple instance learning with manifold bags.
 \newblock pages 81--88, 01 2011.
+
+\bibitem[Ball et~al.(2017)Ball, Anderson, and Sr.]{Ball2017DLRemoteSensing}
+John~E. Ball, Derek~T. Anderson, and Chee Seng~Chan Sr.
+\newblock {Comprehensive survey of deep learning in remote sensing: theories,
+  tools, and challenges for the community}.
+\newblock \emph{Journal of Applied Remote Sensing}, 11\penalty0 (4):\penalty0 1
+  -- 54, 2017.
+\newblock \doi{10.1117/1.JRS.11.042609}.
 
 \bibitem[Baudat and Anouar(2000)]{Baudat2000GeneralizedDiscriminantAnalysis}
 G.~Baudat and F.~Anouar.

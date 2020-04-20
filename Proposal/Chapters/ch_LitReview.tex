@@ -856,10 +856,7 @@ Many natural phenomena behave in a nonlinear way, meaning that the observed data
 
 \paragraph{Autoencoders and Nonlinear PCA} \label{sec:Autoencoders}
 
-\textit{Autoencoder neural networks} fall into the categorization of neural architectures known as \textit{autoassociative networks} \citep{Rojas1996AssociativeNetworks}.  The goal of an autoencoder is, given an input sample, to produce an exact copy at its output.  Internally, the network has a hidden layer $\bm{h}$ that describes the latent code used to represent the input \citep{Goodfellow2016DeepLearning}.  Essentially, the network has two parts.  The first part represents the \textit{encoder} $\Phi_{encode}:\mathcal{X} \rightarrow \mathcal{Z}$, whereas the second part denotes the inverse function, or \textit{decoder} $\Phi_{decode}:\mathcal{X} \rightarrow \hat{\mathcal{X}}$.  A hidden layer in each part enables the network to perform nonlinear mappings \citep{Scholz2008NonlinearPCA}.  Early investigation of modern autoencoders was performed by LeCun, Bourlard, Kamp, Hinton and Zemel beginning in 1987 \citep{Goodfellow2016DeepLearning, Bengio2014RepLearningReview}.  
-
-
-
+\textit{Autoencoder neural networks} (AE) fall into the category of neural architectures known as \textit{autoassociative networks} \citep{Rojas1996AssociativeNetworks}.  The goal of an autoencoder is, given an input sample, to produce an exact copy at its output.  Internally, the network has a hidden layer $\bm{h}$ that describes the latent code used to represent the input \citep{Goodfellow2016DeepLearning}.  Essentially, the network has two parts.  The first part represents the \textit{encoder} $\Phi_{encode}:\mathcal{X} \rightarrow \mathcal{Z}$, which maps the data sample coordinates $\bm{x} \in \mathbb{R}^{D}$ to the corresponding coordinates $\bm{z}$ in the $d$-dimensional subspace controlled by the architecture of the middle layer (or \textit{bottleneck}).  The second part of the network denotes the inverse function, or \textit{decoder} $\Phi_{decode}:\mathcal{Z} \rightarrow \hat{\mathcal{X}}$.   The job of the decoder is to learn an inverse mapping from $\bm{z}$ to the original data sample.  Thus, $\Phi_{decode}$ approximates the assumed data generation process.  In general,  the AE is constrained either through its architecture or through a sparsity constraint.  A loss function $\mathcal{L}(\bm{x},\hat{\bm{x}})$  measures how closely the AE can reconstruct the output.  A commonly used AE loss is MSE, which penalizes the estimated output from being different from the input, $\mathcal{L}(\bm{x},\hat{\bm{x}}) = ||\bm{x} -  \hat{\bm{x}}||^{2}$ \citep{Ball2017DLRemoteSensing}.  Figure \ref{fig:autoencoder} demonstrates an arbitrary feedforward autoencoder.  The first half of the network projects the input data into a lower-dimensional space which is controlled by the size of the bottleneck layer.  The decoder then attempts to reconstruct the input from the latent code.
 \begin{center}
 	\begin{figure*}[h]
 		\centering
@@ -869,17 +866,11 @@ Many natural phenomena behave in a nonlinear way, meaning that the observed data
 	\end{figure*}
 \end{center}
 
-Standard Nonlinear PCA (NLPCA) is based on a multiple hidden layer autoencoder  \citep{Scholz2008NonlinearPCA}.
-
-In fact, it has been shown that an autoencoder with only a single hidden layer will learn an equivalent transformation matrix to traditional PCA \citep{Bengio2014RepLearningReview}.
-
-The autoencoder is tasked with learning the identity transform.  In other words, the desired output is the same as the input.  Because of the downsizing through the bottleneck layers, the network loses information through the nullspace of the network and cannot learn an exact identity transformation.  To perform dimensionality reduction, samples are passed through the encoder portion of the network and the low dimensional data representations are provided as the latent outputs $\bm{z}$ at the bottleneck layer.
+Early investigation of modern autoencoders was performed by LeCun, Bourlard, Kamp, Hinton and Zemel beginning in 1987 \citep{Goodfellow2016DeepLearning, Bengio2014RepLearningReview}.  Those early works showed that having hidden layers in both the encoder and decoder enables the network to learn a \textit{Nonlinear PCA} (NLPCA) \citep{Scholz2008NonlinearPCA}. Similarly, it has been shown that an autoencoder with only a single hidden layer will learn an equivalent transformation matrix to traditional PCA \citep{Bengio2014RepLearningReview}.
 
 Autoencoders can be used for anomaly detection in remote sensing, where the model can be trained on background data.  When presented a target sample, the autoencoder should not be able to reconstruct the sample.
 
 Downsides of autoencoders, however, are that they are an unsupervised model and thus do not consider class information when determining the underlying latent features.  Moreover, autoencoders suffer from the same ailments as other neural networks, such as requiring large amounts of data to cope with the extreme parameterization.  Despite this, autoencoders have been applied successfully in countless tasks \citep{Tschannen2018RecentAdvancesAutoencoder, Yuan2019AutoencoderSurvey, Chen2019DeepAutoencoders}, including: feature representation learning, denoising and anomaly detection in remote sensing \citep{Bengio2014RepLearningReview}.
-
-
 
 \paragraph{Graph Convolutional Networks} \label{sec:Graph_CNN}
 

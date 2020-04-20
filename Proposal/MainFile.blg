@@ -13,7 +13,7 @@ A level-1 auxiliary file: Chapters/ch_TechApproach.aux
 A level-1 auxiliary file: Chapters/ch_ExperimentalDesign.aux
 A level-1 auxiliary file: Chapters/ch_PreliminaryWork.aux
 A level-1 auxiliary file: Chapters/ch_FutureTasks.aux
-Reallocated field_info (elt_size=4) to 10208 items from 5000.
+Reallocated field_info (elt_size=4) to 10236 items from 5000.
 Database file #1: BibFiles/references.bib
 I was expecting a `,' or a `}'---line 53 of file BibFiles/references.bib
  :  
@@ -32,20 +32,20 @@ I was expecting a `,' or a `}'---line 709 of file BibFiles/references.bib
  :  journal = {Proceedings of the 19th Symposium of the Pattern Recognition Association of South Africa (PRASA 2008)}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-"{" immediately follows a field name---line 1888 of file BibFiles/references.bib
+"{" immediately follows a field name---line 1901 of file BibFiles/references.bib
  :  booktitl\part
  :               {title}e={2011 IEEE 11th International Conference on Data Mining},
 I'm skipping whatever remains of this entry
 Warning--entry type for "Tu2019MILGraphNN" isn't style-file defined
---line 2161 of file BibFiles/references.bib
-I was expecting a `,' or a `}'---line 3190 of file BibFiles/references.bib
+--line 2174 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 3203 of file BibFiles/references.bib
  :  
  :  doi = {10.1117/12.778898},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "MUUFLScoringCode" isn't style-file defined
---line 3662 of file BibFiles/references.bib
-I was expecting a `,' or a `}'---line 3726 of file BibFiles/references.bib
+--line 3675 of file BibFiles/references.bib
+I was expecting a `,' or a `}'---line 3739 of file BibFiles/references.bib
  :  
  :  year = {2001}
 (Error may have been on previous line)
@@ -79,45 +79,45 @@ Warning--empty booktitle in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty publisher in Yin2007SOM
-You've used 186 entries,
+You've used 187 entries,
             2773 wiz_defined-function locations,
-            1952 strings with 47702 characters,
-and the built_in function-call counts, 95806 in all, are:
-= -- 8903
-> -- 5392
+            1960 strings with 47980 characters,
+and the built_in function-call counts, 96317 in all, are:
+= -- 8951
+> -- 5422
 < -- 151
-+ -- 1810
-- -- 1623
-* -- 7807
-:= -- 14468
-add.period$ -- 767
-call.type$ -- 186
-change.case$ -- 1067
-chr.to.int$ -- 185
-cite$ -- 402
-duplicate$ -- 4447
-empty$ -- 7524
-format.name$ -- 1918
-if$ -- 20608
++ -- 1820
+- -- 1632
+* -- 7856
+:= -- 14547
+add.period$ -- 771
+call.type$ -- 187
+change.case$ -- 1073
+chr.to.int$ -- 186
+cite$ -- 404
+duplicate$ -- 4468
+empty$ -- 7564
+format.name$ -- 1928
+if$ -- 20713
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 175
-newline$ -- 1116
-num.names$ -- 768
-pop$ -- 2038
+missing$ -- 176
+newline$ -- 1122
+num.names$ -- 772
+pop$ -- 2047
 preamble$ -- 1
-purify$ -- 896
+purify$ -- 901
 quote$ -- 0
-skip$ -- 3548
+skip$ -- 3563
 stack$ -- 0
-substring$ -- 3462
-swap$ -- 867
+substring$ -- 3486
+swap$ -- 868
 text.length$ -- 66
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1986
+type$ -- 1997
 warning$ -- 29
-while$ -- 775
+while$ -- 780
 width$ -- 0
-write$ -- 2818
+write$ -- 2833
 (There were 6 error messages)
