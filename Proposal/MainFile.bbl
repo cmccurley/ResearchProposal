@@ -1,4 +1,4 @@
-\begin{thebibliography}{194}
+\begin{thebibliography}{197}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -73,6 +73,11 @@ Boris Babenko, Zhuowen Tu, and Serge~J. Belongie.
 Boris Babenko, Nakul Verma, Piotr Dollár, and Serge Belongie.
 \newblock Multiple instance learning with manifold bags.
 \newblock pages 81--88, 01 2011.
+
+\bibitem[Bach and Jordan(2005)]{Bach2005CCA}
+Francis~R. Bach and Michael~I. Jordan.
+\newblock A probabilistic interpretation of canonical correlation analysis.
+\newblock Technical report, 2005.
 
 \bibitem[Ball et~al.(2017)Ball, Anderson, and Sr.]{Ball2017DLRemoteSensing}
 John~E. Ball, Derek~T. Anderson, and Chee Seng~Chan Sr.
@@ -609,6 +614,13 @@ W.~Ronny Huang, Zeyad Emam, Micah Goldblum, Liam Fowl, Justin~K. Terry, Furong
 \newblock \emph{CoRR}, abs/1906.03291, 2019.
 \newblock URL \url{http://arxiv.org/abs/1906.03291}.
 
+\bibitem[Hyvarinen and Oja(2000)]{Hyvarinen2000ICA}
+A.~Hyvarinen and E.~Oja.
+\newblock Independent component analysis: algorithms and applications.
+\newblock \emph{Neural Networks}, 13\penalty0 (4):\penalty0 411 -- 430, 2000.
+\newblock ISSN 0893-6080.
+\newblock \doi{https://doi.org/10.1016/S0893-6080(00)00026-5}.
+
 \bibitem[Ilse et~al.(2018)Ilse, Tomczak, and
   Welling]{Ilse2018AttentionBasedDeepMIL}
 M.~Ilse, Jakub~M. Tomczak, and M.~Welling.
@@ -1103,6 +1115,13 @@ J.~B. Tenenbaum, V.~Silva, and J.~C. Langford.
 \newblock ISSN 0036-8075.
 \newblock \doi{10.1126/science.290.5500.2319}.
 \newblock URL \url{https://science.sciencemag.org/content/290/5500/2319}.
+
+\bibitem[Tharwat(2018)]{Tharwat2018ICATutorial}
+Alaa Tharwat.
+\newblock Independent component analysis: An introduction.
+\newblock \emph{Applied Computing and Informatics}, 2018.
+\newblock ISSN 2210-8327.
+\newblock \doi{https://doi.org/10.1016/j.aci.2018.08.006}.
 
 \bibitem[Theodoridis and Koutroumbas(2008)]{Theodoris2008KPCA}
 S.~Theodoridis and K.~Koutroumbas.

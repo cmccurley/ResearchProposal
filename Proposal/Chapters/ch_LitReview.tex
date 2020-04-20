@@ -223,19 +223,16 @@ Principal Component Analysis (PCA) is arguably the most popular (and best-studie
 \begin{align}
 	J(\bm{W}, \bm{Z}) = \frac{1}{N}\sum_{n=1}^{N} ||\bm{x}_n - \hat{\bm{x}}_n ||^{2}
 \end{align}
-
 \noindent
 where $\hat{\bm{x}}_n = \bm{W}\bm{z}_{n}$, subject to the constraint that $\bm{W}$ is \textit{orthonormal}, or that $\bm{w}_{i}^{T}\bm{w}_{j}=0,\forall i \neq j$ and $\bm{w}_{i}^{T}\bm{w}_{i}=1 $.  This is equivalently written as 
 \begin{align}
 		J(\bm{W}, \bm{Z}) = ||\bm{X} - \bm{W}\bm{Z} ||^{2}_{F}
 \end{align}
-
 \noindent
 where $\bm{Z}$ is a $N \times d$ matrix with the $\bm{z}_{n}$ in its rows and $||\bm{A}||_{F}$ is the \textit{Frobenius norm} of matrix $\bm{A}$, defined by 
 \begin{align}
 	||\bm{A}||_{F} &= \sqrt{\sum_{m=1}^{M}\sum_{n=1}^{N}a^{2}_{mn}} = \sqrt{tr(\bm{A}^{T}\bm{A})} = ||\bm{A}(:)||_{2}
 \end{align} 
-
 \noindent
 As noted by Murphy \citep{Murphy2012}, the optimal solution is obtained by setting $\hat{\bm{W}} = \bm{U}_{d}$, where $\bm{U}_{d}$ contains the eigenvectors corresponding to the $d$ largest eigenvalues of the mean-subtracted, empirical data covariance matrix, $\hat{\bm{S}} = \frac{1}{N}\sum_{n=1}^{N}(\bm{x}_{n}-\hat{\bm{\mu}})(\bm{x}_{n}-\hat{\bm{\mu}})^{T}$, where $\hat{\bm{\mu}}$ is the empirical data mean.  Therefore, the low-dimensional encoding of the data is given by $\bm{z}_n = \hat{\bm{W}}^{T}\bm{x}_n$, which is the orthogonal, linear projection of the data onto the column space spanned by the eigenvectors of the $d$ largest eigenvalues of the empirical data covariance.  
 
@@ -248,11 +245,12 @@ The example shown in figure \ref{fig:pca_eg} demonstrates the projection of 2-di
 		\label{fig:pca_eg}
 	\end{figure*}
 \end{center}
+PCA has been successfully applied to a large  number of domains such as face recognition, coin classification and seismic series analysis \citep{VanDerMaaten2009DRReview}. It's success is partially because of its convenience of use.  Embedding out-of-sample points with PCA is simple since the transformation is just a rotation and scaling. However PCA suffers from a few drawbacks.  First, the dimensionality of the covariance matrix is proportional to the dimensionality of the data points.  As a result, the computation of the eigenvectors may be infeasible or untrustworthy (singular) for high-dimensional data.  Additionally, PCA focuses mainly on preserving large pairwise distances between data samples instead of retaining local relationships, which may be important in certain applications.  PCA also assumes Gaussian distributed data, which is unlikely in real-world applications. Finally, PCA is sensitive to feature magnitude. It is typical to standardized data before applying PCA as it can be misled by directions in which the variance is high simply because of the measurement scale.
 
-PCA has been successfully applied to a large  number of domains such as face recognition, coin classification and seismic series analysis \citep{VanDerMaaten2009DRReview}. It's success is partially because of its convenience of use.  Embedding out-of-sample points with PCA is simple since the transformation is just a rotation and scaling. However PCA suffers from a few drawbacks.  First, the dimensionality of the covariance matrix is proportional to the dimensionality of the data points.  As a result, the computation of the eigenvectors may be infeasible or untrustworthy (singularity) for high-dimensional data.  Additionally, PCA focuses mainly on preserving large pairwise distances between data samples instead of retaining local relationships, which may be important in certain applications.  PCA also assumes Gaussian distributed data, which is unlikely in real-world applications. Finally, PCA is sensitive to feature magnitude. It is typical to standardized data before applying PCA as it can be misled by directions in which the variance is high simply because of the measurement scale.
+Many extensions have been made to PCA, including the development of nonlinear versions (Sections \ref{sec:KPCA}and \ref{sec:Autoencoders}) \citep{Scholkopf1999KPCA, Scholz2008NonlinearPCA} and formulating it as a factor analysis problem (Section \ref{sec:PPCA}) \citep{Tipping1999PPCA}. 
 
-Many extensions and alternative viewpoints have been made to PCA, including a nonlinear version \citep{Scholkopf1999KPCA}, a supervised version and looking at it as a factor analysis problem \citep{Tipping1999PPCA}.  A few adaptations to PCA are discussed in later sections.
-
+\paragraph{Independent and Canoncial Component Analyses}
+It is also worth mentioning two popular approaches closely related to PCA, namely, \textit{Independent Component Analysis} (ICA) and \textit{Canonical Component Analysis} (CCA).  ICA attempts to solve the \textit{blind-source separation problem}, in which the goal is to deconvolve mixed signals into their constituent parts \citep{Murphy2012,Hyvarinen2000ICA,Tharwat2018ICATutorial}. Instead of discovering the directions of maximum variance as done with PCA, ICA attempts to uncover the directions such that the data projected onto these directions have maximum statistical independence.  On the other hand, CCA jointly considers multiple variables (multiple feature spaces) and tries to discover the correlations between them.  CCA looks for directions in each feature space such that the data projected onto the direction found in each space has the maximum possible correlation \citep{Bach2005CCA}.  Thus, CCA can be used to simultaneously reduce the dimensionality of data in multiple feature spaces \citep{Murphy2012}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  MDS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1130,11 +1128,11 @@ Manifold charting has been shown to be more robust to noise than alternative app
 	\hline
 	FA  & ~   & ~\\
 	\hline
-	IDA  & ~  & ~\\
-	\hline
 	PPCA  & ~   & ~\\
 	\hline
-	GTM  & ~  & ~\\
+	GPLVM  & ~  & ~\\
+	\hline
+	GTM  &  Learns a mapping from the latent space to the data space by assuming the data distribution as a constrained mixture of Gaussians.  Probabilistic alternative to the SOM. Section \ref{sec:GTM} & 1998\\
 	\hline
 	Manifold Charting  & Computes mixture of locally linear models on the data then aligns local low-dimensional models to find global coordinates. Section \ref{sec:Manifold_Charting} & 2003 \\
 	\hline
@@ -1151,6 +1149,8 @@ Manifold charting has been shown to be more robust to noise than alternative app
 Most modern manifold learners find their theoretical and algorithmic roots in one of three basic and well-known data analysis techniques: PCA, K-means and MDS \citep{Kegl2008PrincipalManifoldsTextbook}.
 
 \subsubsection{Strengths and Weaknesses}
+
+Are not capable of reliably learning useful, discriminative low-dimensional features from weakly-supervised data.  (Could neglect labels entirely or use bag-level labels.)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Weakly Supervised Manifold Learning  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
