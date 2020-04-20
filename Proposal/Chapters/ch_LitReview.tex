@@ -950,13 +950,9 @@ Unlike the SOM, but similarly to the GNG, elastic nets can add or delete neurons
 \subsection{Latent Variable Models} \label{sec:LVM}
 While many manifold learning and dimensionality reduction models are regarded as defining a projection from a $D$- dimensional feature space into a lower $d$-dimensional space, a latent variable model is defined by a mapping \textit{from} the latent space \textit{into} the high-dimensional data space \citep{Bishop1998GTM}.
 
-\subsubsection{General Latent Variable Model (GLVM)} \label{sec:GLVM}
+\subsubsection{Factor Analysis (FA) and Probabilistic PCA (PPCA)} \label{sec:FA_and_PPCA}
 
-\paragraph{Factor Analysis (FA)} \label{sec:FA}
 
-\paragraph{Independent Component Analysis (IDA)} \label{sec:IDA}
-
-\paragraph{Probabilistic PCA (PPCA)} \label{sec:PPCA}
 PCA can also be analyzed from the viewpoint of factor analysis (FA), which is discussed later in this literature review.  The basic idea, however, is that data observations $\bm{x}_{n} \in \mathbb{R}^{D}$ are realizations of a probability distribution with a prior on the lower-dimensional latent variable $\bm{w}_n \in \mathbb{R}^{d}$.  A typical choice on this model is a Gaussian-Gaussian conjugate prior pair where the mean of the data likelihood is a linear function of the latent inputs.  As an example, the prior over the hidden data representations can be expressed as Gaussian distribution
 
 \begin{align}
@@ -993,6 +989,8 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 \end{align}
 
 \subparagraph{Discriminative Supervised PCA} 
+
+\subsubsection{Gaussian Process Latent Variable Model (GPLVM)} \label{sec:GLVM}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  GTM  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

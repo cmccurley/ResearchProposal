@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  20 APR 2020 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.16)  20 APR 2020 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -661,7 +661,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [12]
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/weak_bbox".JPG,
- id=626, 255.95625pt x 202.356pt>
+ id=631, 255.95625pt x 202.356pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/weak_bbox"
 .JPG Graphic file (type jpg)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/weak_bbox".
@@ -682,7 +682,7 @@ und-ing boxes (blue). Red dots
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/weak_labels".JP
-G, id=627, 485.4135pt x 396.88275pt>
+G, id=632, 485.4135pt x 396.88275pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/weak_label
 s".JPG Graphic file (type jpg)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/weak_labels
@@ -706,7 +706,7 @@ id-wave in-frared cam-era. The
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/target_img".JPG
-, id=628, 111.41624pt x 69.861pt>
+, id=633, 111.41624pt x 69.861pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/target_img
 ".JPG Graphic file (type jpg)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/target_img"
@@ -715,7 +715,7 @@ Package pdftex.def Info: "/media/edrive/ResearchProposal/Proposal/Images/""intr
 oduction/target_img".JPG  used on input line 37.
 (pdftex.def)             Requested size: 138.31111pt x 86.72377pt.
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/bg_img".JPG, id
-=629, 110.21175pt x 69.861pt>
+=634, 110.21175pt x 69.861pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/bg_img".JP
 G Graphic file (type jpg)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/bg_img".JPG
@@ -750,7 +750,7 @@ JPG> </media/edrive/ResearchProposal/Proposal/Images/introduction/target_img.JP
 G> </media/edrive/ResearchProposal/Proposal/Images/introduction/bg_img.JPG>]
 [15] [16]
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/swiss_roll_3d_v
-iew_2".png, id=743, 462.528pt x 344.0052pt>
+iew_2".png, id=748, 462.528pt x 344.0052pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/swiss_roll
 _3d_view_2".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/swiss_roll_
@@ -764,7 +764,7 @@ Overfull \hbox (8.42258pt too wide) in paragraph at lines 75--76
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/swiss_roll_2d".
-png, id=745, 462.528pt x 344.0052pt>
+png, id=750, 462.528pt x 344.0052pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/swiss_roll
 _2d".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/swiss_roll_
@@ -791,7 +791,7 @@ cord-ing to the geodesic path around
 
 [17]
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surface_se
-p".png, id=752, 462.528pt x 344.0052pt>
+p".png, id=757, 462.528pt x 344.0052pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfa
 ce_sep".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfac
@@ -800,7 +800,7 @@ Package pdftex.def Info: "/media/edrive/ResearchProposal/Proposal/Images/""intr
 oduction/quad_surface_sep".png  used on input line 95.
 (pdftex.def)             Requested size: 213.77469pt x 158.99377pt.
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surface_no
-n_sep".png, id=753, 462.528pt x 344.0052pt>
+n_sep".png, id=758, 462.528pt x 344.0052pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfa
 ce_non_sep".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfac
@@ -819,7 +819,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 93--106
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surface_li
-n_sep_le_1d".png, id=754, 194.18pt x 143.81pt>
+n_sep_le_1d".png, id=759, 194.18pt x 143.81pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfa
 ce_lin_sep_le_1d".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfac
@@ -833,7 +833,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--111
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surface_no
-n_sep_le_1d".png, id=755, 194.18pt x 144.54pt>
+n_sep_le_1d".png, id=760, 194.18pt x 144.54pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfa
 ce_non_sep_le_1d".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfac
@@ -861,7 +861,7 @@ ces us-ing Lapla-cian Eigen-maps with a
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surface_se
-p_bags".png, id=758, 462.528pt x 344.0052pt>
+p_bags".png, id=763, 462.528pt x 344.0052pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfa
 ce_sep_bags".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfac
@@ -885,7 +885,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--131
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surface_no
-n_sep_bags".png, id=759, 462.528pt x 344.0052pt>
+n_sep_bags".png, id=764, 462.528pt x 344.0052pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfa
 ce_non_sep_bags".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfac
@@ -914,7 +914,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 128--141
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surface_li
-n_sep_sle_1d".png, id=760, 193.45pt x 143.81pt>
+n_sep_sle_1d".png, id=765, 193.45pt x 143.81pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfa
 ce_lin_sep_sle_1d".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfac
@@ -933,7 +933,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--146
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surface_no
-n_sep_sle_1d".png, id=761, 193.45pt x 144.54pt>
+n_sep_sle_1d".png, id=766, 193.45pt x 144.54pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfa
 ce_non_sep_sle_1d".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""introduction/quad_surfac
@@ -998,7 +998,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ]
-<example-image-a.pdf, id=840, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=845, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 19.
@@ -1027,7 +1027,11 @@ File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 243.
 (pdftex.def)             Requested size: 281.40286pt x 211.05898pt.
- [43] [44]
+ [43]
+
+LaTeX Warning: Reference `sec:PPCA' on page 44 undefined on input line 250.
+
+[44]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 265.
@@ -1106,73 +1110,79 @@ Package pdftex.def Info: example-image-a.pdf  used on input line 861.
 (pdftex.def)             Requested size: 234.5pt x 175.88126pt.
  [79] [80] [81]
 [82] [83] [84] [85] [86] [87] [88]
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1077
 []|\OT1/cmss/m/n/12 Preserves vari-ance of data, global struc-ture. Sec-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1081--1081
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1079
 []|\OT1/cmss/m/n/12 Preserves pair-wise dis-tances, global struc-ture. Sec-tion
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1081
 []|\OT1/cmss/m/n/12 Minimizes within-class dis-tance and max-i-mizes between-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1085--1085
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
 []|\OT1/cmss/m/n/12 Decomposes data into low-dimensional co-or-di-nates and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1085--1085
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
 \OT1/cmss/m/n/12 ba-sis vec-tors, min-i-mizes ap-prox-i-ma-tion er-ror. Sec-tio
 n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1087--1087
+Underfull \hbox (badness 10000) in paragraph at lines 1085--1085
 []|\OT1/cmss/m/n/12 Linear vari-ant of LLE, pre-serves lo-cal neigh-bor-hoods,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1089--1089
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1087
 []|\OT1/cmss/m/n/12 Linear vari-ant of LE, pre-serves lo-cal neigh-bor-hoods, l
 o-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1095
+Underfull \hbox (badness 10000) in paragraph at lines 1093--1093
 []|\OT1/cmss/m/n/12 Performs PCA in a fea-ture space de-fined by a ker-nel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1095
+Underfull \hbox (badness 10000) in paragraph at lines 1093--1093
 \OT1/cmss/m/n/12 func-tion, pre-serves vari-ance of data, global struc-ture.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1097
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1095
 []|\OT1/cmss/m/n/12 Learns a ker-nel func-tion to be used with KPCA that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1097
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1095
 \OT1/cmss/m/n/12 ``un-folds" the man-i-fold, pre-serves vari-ance of data, glob
 al
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1099
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1097
 []|\OT1/cmss/m/n/12 Preserves geodesic dis-tances, global struc-ture. Sec-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
+Underfull \hbox (badness 10000) in paragraph at lines 1099--1099
 []|\OT1/cmss/m/n/12 Preserves pair-wise dis-tances. More em-pha-sis is placed o
 n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
+[]|\OT1/cmss/m/n/12 Preserves lo-cal neigh-bor-hoods, lo-cal struc-ture. Sec-ti
+on
  []
 
 
@@ -1183,98 +1193,92 @@ on
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1105--1105
-[]|\OT1/cmss/m/n/12 Preserves lo-cal neigh-bor-hoods, lo-cal struc-ture. Sec-ti
-on
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
 []|\OT1/cmss/m/n/12 Minimizes cur-va-ture of high-dimensional man-i-fold es-ti-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1109--1109
+Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
 []|\OT1/cmss/m/n/12 Learns man-i-fold in lo-cal tan-gent spaces then aligns to
  []
 
 
-Overfull \hbox (3.17372pt too wide) in alignment at lines 1069--1110
+Overfull \hbox (3.17372pt too wide) in alignment at lines 1067--1108
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1117--1117
+Underfull \hbox (badness 10000) in paragraph at lines 1115--1115
 []|\OT1/cmss/m/n/12 Neural net-work where de-sired out-put is the in-put. Net-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1117--1117
+Underfull \hbox (badness 10000) in paragraph at lines 1115--1115
 \OT1/cmss/m/n/12 work de-creases in di-men-sion-al-ity then in-creases to in-pu
 t
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1119--1119
+Underfull \hbox (badness 10000) in paragraph at lines 1117--1117
 []|\OT1/cmss/m/n/12 Distributes fixed lat-tice of neu-rons to cover in-put fea-
 ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1119
 []|\OT1/cmss/m/n/12 Distributes lat-tice of neu-rons to cover in-put fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1119
 \OT1/cmss/m/n/12 space us-ing com-pet-i-tive learn-ing. The net-work is able to
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1119
 \OT1/cmss/m/n/12 add and delete neu-rons to fill the data space. Sec-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1123
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
 []|\OT1/cmss/m/n/12 Uses map of neu-rons to cover the in-put fea-ture space.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1123
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
 \OT1/cmss/m/n/12 Sim-u-lates net-work of springs and is op-ti-mized to the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1135--1135
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1133
 []|\OT1/cmss/m/n/12 Learns a map-ping from the la-tent space to the data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1135--1135
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1133
 \OT1/cmss/m/n/12 space by as-sum-ing the data dis-tri-bu-tion as a con-strained
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1135--1135
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1133
 \OT1/cmss/m/n/12 mix-ture of Gaus-sians. Prob-a-bilis-tic al-ter-na-tive to the
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1137--1137
+Underfull \hbox (badness 10000) in paragraph at lines 1135--1135
 []|\OT1/cmss/m/n/12 Computes mix-ture of lo-cally lin-ear mod-els on the data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1137--1137
+Underfull \hbox (badness 10000) in paragraph at lines 1135--1135
 \OT1/cmss/m/n/12 then aligns lo-cal low-dimensional mod-els to find global
  []
 
 
-Overfull \hbox (3.17372pt too wide) in alignment at lines 1110--1145
+Overfull \hbox (3.17372pt too wide) in alignment at lines 1108--1143
  [] [] [] 
  []
 
@@ -1283,7 +1287,7 @@ Overfull \hbox (3.17372pt too wide) in alignment at lines 1110--1145
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [95] [96] [97] [98]
-Underfull \hbox (badness 3049) in paragraph at lines 1285--1286
+Underfull \hbox (badness 3049) in paragraph at lines 1283--1284
 []\OT1/cmss/m/n/12 Multiple-instance dataset $\OMS/cmss/m/n/12 f\OML/cmm/b/it/1
 2 B[]\OML/cmm/m/it/12 ; [] ; \OML/cmm/b/it/12 B[]\OMS/cmss/m/n/12 g$\OT1/cmss/m
 /n/12 , $\OMS/cmss/m/n/12 f\OML/cmm/m/it/12 L[]; [] ; L[]\OMS/cmss/m/n/12 g$\OT
@@ -1297,101 +1301,111 @@ ial-ized
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [100] [101]
-Underfull \hbox (badness 10000) in paragraph at lines 1362--1362
+Underfull \hbox (badness 10000) in paragraph at lines 1360--1360
 []|\OT1/cmss/bx/n/12 Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1362--1363
+Underfull \hbox (badness 10000) in paragraph at lines 1360--1361
 []|\OT1/cmss/bx/n/12 Classification
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1362
 []|\OT1/cmss/m/n/12 Finds a sparse, or-thog-o-nal lin-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1362
 \OT1/cmss/m/n/12 ear pro-jec-tion ma-trix op-ti-mized
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1362
 \OT1/cmss/m/n/12 for bag-level lo-gis-tic re-gres-sion.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1362
 []|\OT1/cmss/m/n/12 Linear,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1362
 \OT1/cmss/m/n/12 or-thog-o-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1366--1366
+Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
 []|\OT1/cmss/m/n/12 Finds lin-ear pro-jec-tion vec-tor us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1366--1366
+Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
 \OT1/cmss/m/n/12 LDA de-fined from bag-similarity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1366--1366
 []|\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1366--1366
 \OT1/cmss/m/n/12 us-ing LDA de-fined from bag rep-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1370--1370
+Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
 []|\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion ma-trix
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1370--1370
+Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
 \OT1/cmss/m/n/12 us-ing lo-cal dis-crim-i-nant anal-y-sis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1370--1370
+Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
 \OT1/cmss/m/n/12 de-fined from in-stance scat-ter.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1370--1370
+Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
 \OT1/cmss/m/n/12 In-stance la-bels are pro-vided as bag
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1372--1372
+Underfull \hbox (badness 10000) in paragraph at lines 1370--1370
 []|\OT1/cmss/m/n/12 Incrementally leaves out fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1372--1372
+Underfull \hbox (badness 10000) in paragraph at lines 1370--1370
 \OT1/cmss/m/n/12 and eval-u-ates per-for-mance loss
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1372--1372
+Underfull \hbox (badness 10000) in paragraph at lines 1370--1370
 \OT1/cmss/m/n/12 to pro-vide fea-ture score. Sec-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1372--1372
+Underfull \hbox (badness 10000) in paragraph at lines 1370--1370
 []|\OT1/cmss/m/n/12 Feature
  []
 
 [102] [103] [104]
+Underfull \hbox (badness 10000) detected at line 1391
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1392
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 1393
 [][][]
  []
@@ -1401,24 +1415,14 @@ Underfull \hbox (badness 10000) detected at line 1394
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 1395
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1396
-[][][]
- []
-
 [105]
 
-LaTeX Warning: Command \l invalid in math mode on input line 1407.
+LaTeX Warning: Command \l invalid in math mode on input line 1405.
 
 [106]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 1421.
+Package pdftex.def Info: example-image-a.pdf  used on input line 1419.
 (pdftex.def)             Requested size: 234.5pt x 175.88126pt.
 
 
@@ -1427,29 +1431,29 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [107]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 1440.
+Package pdftex.def Info: example-image-a.pdf  used on input line 1438.
 (pdftex.def)             Requested size: 234.5pt x 175.88126pt.
  [108] [109]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 1471.
+Package pdftex.def Info: example-image-a.pdf  used on input line 1469.
 (pdftex.def)             Requested size: 234.5pt x 175.88126pt.
  [110]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 1485.
+Package pdftex.def Info: example-image-a.pdf  used on input line 1483.
 (pdftex.def)             Requested size: 192.72638pt x 144.54pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1486--1486
+Underfull \hbox (badness 10000) in paragraph at lines 1484--1484
 []\OT1/cmss/m/n/10.95 (a) |Siamese net-work struc-tured from con-trastive
  []
 
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 1493.
+Package pdftex.def Info: example-image-a.pdf  used on input line 1491.
 (pdftex.def)             Requested size: 192.72638pt x 144.54pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1483--1497
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1481--1495
  []  [] 
  []
 
@@ -1631,7 +1635,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 ] [124]
 <"/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr01923_
-0001_0_patch_scope_p1".png, id=2590, 578.16pt x 578.16pt>
+0001_0_patch_scope_p1".png, id=2591, 578.16pt x 578.16pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr0
 1923_0001_0_patch_scope_p1".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr01
@@ -1640,7 +1644,7 @@ Package pdftex.def Info: "/media/edrive/ResearchProposal/Proposal/Images/""data
 _chips/ratio1/cegr01923_0001_0_patch_scope_p1".png  used on input line 20.
 (pdftex.def)             Requested size: 202.3502pt x 202.35622pt.
 <"/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr01923_
-0001_0_patch_scope_n0".png, id=2591, 578.16pt x 578.16pt>
+0001_0_patch_scope_n0".png, id=2592, 578.16pt x 578.16pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr0
 1923_0001_0_patch_scope_n0".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr01
@@ -1654,7 +1658,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 18--28
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr01923_
-0001_0_patch_p_2".png, id=2592, 578.16pt x 578.16pt>
+0001_0_patch_p_2".png, id=2593, 578.16pt x 578.16pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr0
 1923_0001_0_patch_p_2".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr01
@@ -1663,7 +1667,7 @@ Package pdftex.def Info: "/media/edrive/ResearchProposal/Proposal/Images/""data
 _chips/ratio1/cegr01923_0001_0_patch_p_2".png  used on input line 31.
 (pdftex.def)             Requested size: 187.89977pt x 187.90244pt.
 <"/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr01923_
-0001_0_patch_n_1".png, id=2593, 578.16pt x 578.16pt>
+0001_0_patch_n_1".png, id=2594, 578.16pt x 578.16pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr0
 1923_0001_0_patch_n_1".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr01
@@ -1695,7 +1699,7 @@ The im-age con-tain-ing the truck would
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio0/scope01".p
-ng, id=2594, 216.81pt x 216.3282pt>
+ng, id=2595, 216.81pt x 216.3282pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio0/scope
 01".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio0/scope0
@@ -1709,7 +1713,7 @@ Overfull \hbox (18.65695pt too wide) in paragraph at lines 47--48
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr01923_
-0001_0_patch_scope_p2".png, id=2595, 578.16pt x 578.16pt>
+0001_0_patch_scope_p2".png, id=2596, 578.16pt x 578.16pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr0
 1923_0001_0_patch_scope_p2".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio1/cegr01
@@ -1723,7 +1727,7 @@ Overfull \hbox (18.28865pt too wide) in paragraph at lines 52--53
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio3/cegr01923_
-0001_550_patch_scope_p5".png, id=2596, 578.16pt x 578.16pt>
+0001_550_patch_scope_p5".png, id=2597, 578.16pt x 578.16pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio3/cegr0
 1923_0001_550_patch_scope_p5".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/ratio3/cegr01
@@ -1755,7 +1759,7 @@ se size 51x121 and the right im-age is
  []
 
 <"/media/edrive/ResearchProposal/Proposal/Images/""data_chips/hog_triplets_targ
-et_anchor".png, id=2600, 326.29366pt x 230.83253pt>
+et_anchor".png, id=2601, 326.29366pt x 230.83253pt>
 File: "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/hog_triplets
 _target_anchor".png Graphic file (type png)
 <use "/media/edrive/ResearchProposal/Proposal/Images/""data_chips/hog_triplets_
@@ -2208,7 +2212,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: 98CC9F7CE264982D7790B180554E0A8D;7601.
+(rerunfilecheck)             Checksum: A33E3FE3DBD16E1206438B6B27ECAC59;7736.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2219,9 +2223,9 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 10540 strings out of 492982
- 176414 string characters out of 6134895
- 262749 words of memory out of 5000000
+ 10538 strings out of 492982
+ 176425 string characters out of 6134895
+ 262674 words of memory out of 5000000
  13140 multiletter control sequences out of 15000+600000
  14233 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2249,10 +2253,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 s17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on MainFile.pdf (155 pages, 3597625 bytes).
+Output written on MainFile.pdf (155 pages, 3597657 bytes).
 PDF statistics:
- 3088 PDF objects out of 3580 (max. 8388607)
- 2837 compressed objects within 29 object streams
- 676 named destinations out of 1000 (max. 500000)
- 844 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3089 PDF objects out of 3580 (max. 8388607)
+ 2838 compressed objects within 29 object streams
+ 674 named destinations out of 1000 (max. 500000)
+ 852 words of extra memory for PDF output out of 10000 (max. 10000000)
 

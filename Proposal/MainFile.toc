@@ -65,15 +65,13 @@
 \contentsline {subsubsection}{\numberline {2.2.4.3}Growing Neural Gas (GNG)}{83}{subsubsection.2.2.4.3}
 \contentsline {subsubsection}{\numberline {2.2.4.4}Elastic Maps and Nets}{83}{subsubsection.2.2.4.4}
 \contentsline {subsection}{\numberline {2.2.5}Latent Variable Models}{85}{subsection.2.2.5}
-\contentsline {subsubsection}{\numberline {2.2.5.1}General Latent Variable Model (GLVM)}{85}{subsubsection.2.2.5.1}
-\contentsline {paragraph}{Factor Analysis (FA)}{85}{section*.50}
-\contentsline {paragraph}{Independent Component Analysis (IDA)}{85}{section*.51}
-\contentsline {paragraph}{Probabilistic PCA (PPCA)}{85}{section*.52}
-\contentsline {paragraph}{Supervised PCA}{86}{section*.53}
-\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{86}{section*.54}
-\contentsline {subparagraph}{Discriminative Supervised PCA}{87}{section*.55}
-\contentsline {subsubsection}{\numberline {2.2.5.2}Generative Topographic Mapping (GTM)}{87}{subsubsection.2.2.5.2}
-\contentsline {subsubsection}{\numberline {2.2.5.3}Manifold Charting}{88}{subsubsection.2.2.5.3}
+\contentsline {subsubsection}{\numberline {2.2.5.1}Factor Analysis (FA) and Probabilistic PCA (PPCA)}{85}{subsubsection.2.2.5.1}
+\contentsline {paragraph}{Supervised PCA}{86}{section*.50}
+\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{86}{section*.51}
+\contentsline {subparagraph}{Discriminative Supervised PCA}{86}{section*.52}
+\contentsline {subsubsection}{\numberline {2.2.5.2}Gaussian Process Latent Variable Model (GPLVM)}{87}{subsubsection.2.2.5.2}
+\contentsline {subsubsection}{\numberline {2.2.5.3}Generative Topographic Mapping (GTM)}{87}{subsubsection.2.2.5.3}
+\contentsline {subsubsection}{\numberline {2.2.5.4}Manifold Charting}{88}{subsubsection.2.2.5.4}
 \contentsline {subsection}{\numberline {2.2.6}Stochastic Neighbor Embedding (SNE and t-SNE)}{89}{subsection.2.2.6}
 \contentsline {subsection}{\numberline {2.2.7}LargeVis}{89}{subsection.2.2.7}
 \contentsline {subsection}{\numberline {2.2.8}Uniform Manifold Approximation and Projection (UMAP)}{89}{subsection.2.2.8}
@@ -118,9 +116,9 @@
 \contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{126}{subsubsection.4.0.3.2}
 \contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{127}{subsection.4.0.4}
 \contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{128}{subsection.4.0.5}
-\contentsline {paragraph}{Training}{128}{section*.65}
-\contentsline {paragraph}{Out-of-Sample Testing}{128}{section*.66}
-\contentsline {paragraph}{Evaluation Metrics}{129}{section*.67}
+\contentsline {paragraph}{Training}{128}{section*.62}
+\contentsline {paragraph}{Out-of-Sample Testing}{128}{section*.63}
+\contentsline {paragraph}{Evaluation Metrics}{129}{section*.64}
 \contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{130}{chapter.5}
 \contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{131}{chapter.6}
 \contentsline {subsection}{\numberline {6.0.1}Overview of Tasks:}{131}{subsection.6.0.1}
