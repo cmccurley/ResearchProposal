@@ -950,6 +950,7 @@ Unlike the SOM, but similarly to the GNG, elastic nets can add or delete neurons
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Latent Variable Models} \label{sec:LVM}
+While many manifold learning and dimensionality reduction models are regarded as defining a projection from a $D$- dimensional feature space into a lower $d$-dimensional space, a latent variable model is defined by a mapping \textit{from} the latent space \textit{into} the high-dimensional data space \citep{Bishop1998GTM}.
 
 \subsubsection{General Latent Variable Model (GLVM)} \label{sec:GLVM}
 
@@ -999,6 +1000,17 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  GTM  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Generative Topographic Mapping (GTM)} \label{sec:GTM}
+The \textit{Generative Topographic Mapping} (GTM) is a nonlinear latent variable model proposed by \citep{Bishop1998GTM} as alternative to the self-organizing map.  Specifically, the GTM provides solutions to known deficencies exhibited by SOMs, such as the lack of an objective function, proofs of convergence, theoretical basis for choosing a learning rate parameter and guarantee of topological ordering.  The GTM defines a nonlinear, parametric mapping from a $d$-dimensional latent space to a $D$-dimensional data space $\bm{x} \in \mathbb{R}^{D}$, where typically $d \ll D$ \citep{Pena2007NeuralGasReview}.  A continuous and differentiable function $f(\bm{x;\bm{W}})$ maps every point in the latent space to a point in the data space.  This function can be any arbitrary mapping such as a feedforward neural network.  To learn the parameters, GTM attempts to maximize the negative log-likelihood of the latent coordinates given the high-dimensional data and model parameters.  Assuming a probability distribution $p(\bm{z})$, the GTM derivation begins by assuming each high-dimensional sample $\bm{x}$ is generated from a nonlinear mapping with additive Gaussian noise
+\begin{align}
+	p(\bm{x}|\bm{z},\bm{W},\beta) = \left ( \frac{1}{2 \pi \beta} \right )^{D/2} \exp{\left ( -\frac{1}{2 \beta} ||f(\bm{z};\bm{W}) - \bm{x} ||^{2} \right )}
+\end{align}
+\noindent
+where $\beta$ is the variance of the radially-symmetric Gaussian function centered on $f(\bm{z};\bm{W})$.  The probability over the input data space is obtained by integrating over the latent space by
+\begin{align}
+		p(\bm{x}|\bm{W},\beta) = \int p(\bm{x}|\bm{z},\bm{W},\beta) p(\bm{z}) d \bm{z}
+\end{align}
+
+There are two obvious limitations of the GTM.  First, the computational complexity grows exponentially with the assumed intrinsic dimensionality.  As noted by \citep{Pena2007NeuralGasReview}, however, this is typically not an issue if the goal is visualization.  Additionally, poor initialization can lead the algorithm into local optima. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

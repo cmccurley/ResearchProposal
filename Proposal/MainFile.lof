@@ -14,12 +14,12 @@
 \contentsline {figure}{\numberline {{2-8}}{\ignorespaces Examples of graphs.}}{59}{figure.caption.36}
 \contentsline {figure}{\numberline {{2-9}}{\ignorespaces Demonstration of geodesic distance}}{61}{figure.caption.40}
 \contentsline {figure}{\numberline {{2-10}}{\ignorespaces Autoencoder neural network}}{79}{figure.caption.47}
-\contentsline {figure}{\numberline {{2-11}}{\ignorespaces Pairwise Loss}}{106}{figure.caption.55}
-\contentsline {figure}{\numberline {{2-12}}{\ignorespaces Triplet Loss}}{106}{figure.caption.56}
-\contentsline {figure}{\numberline {{2-13}}{\ignorespaces Large Margin $k$-NN}}{108}{figure.caption.57}
-\contentsline {figure}{\numberline {{2-14}}{\ignorespaces Siamese Neural Networks}}{110}{figure.caption.58}
-\contentsline {figure}{\numberline {{3-1}}{\ignorespaces Proposed manifold learning}}{117}{figure.caption.59}
-\contentsline {figure}{\numberline {{3-2}}{\ignorespaces Proposed metric embedding}}{118}{figure.caption.60}
-\contentsline {figure}{\numberline {{4-1}}{\ignorespaces Image chip extraction}}{124}{figure.caption.61}
-\contentsline {figure}{\numberline {{4-2}}{\ignorespaces Image chip uncertainty}}{125}{figure.caption.62}
-\contentsline {figure}{\numberline {{4-3}}{\ignorespaces HOG features}}{126}{figure.caption.63}
+\contentsline {figure}{\numberline {{2-11}}{\ignorespaces Pairwise Loss}}{107}{figure.caption.55}
+\contentsline {figure}{\numberline {{2-12}}{\ignorespaces Triplet Loss}}{107}{figure.caption.56}
+\contentsline {figure}{\numberline {{2-13}}{\ignorespaces Large Margin $k$-NN}}{109}{figure.caption.57}
+\contentsline {figure}{\numberline {{2-14}}{\ignorespaces Siamese Neural Networks}}{111}{figure.caption.58}
+\contentsline {figure}{\numberline {{3-1}}{\ignorespaces Proposed manifold learning}}{118}{figure.caption.59}
+\contentsline {figure}{\numberline {{3-2}}{\ignorespaces Proposed metric embedding}}{119}{figure.caption.60}
+\contentsline {figure}{\numberline {{4-1}}{\ignorespaces Image chip extraction}}{125}{figure.caption.61}
+\contentsline {figure}{\numberline {{4-2}}{\ignorespaces Image chip uncertainty}}{126}{figure.caption.62}
+\contentsline {figure}{\numberline {{4-3}}{\ignorespaces HOG features}}{127}{figure.caption.63}
