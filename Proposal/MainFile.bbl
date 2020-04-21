@@ -1,4 +1,4 @@
-\begin{thebibliography}{197}
+\begin{thebibliography}{200}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -801,6 +801,11 @@ C.~H. McCurley, J.~Bocinsky, and A.~Zare.
   Obscured Targets XXIV, 110120U}, volume 11012 of \emph{Proc.SPIE}, May 2019.
 \newblock \doi{10.1117/12.2519454}.
 
+\bibitem[McInnes et~al.(2018)McInnes, Healy, and Melville]{McInnes2018UMAP}
+Leland McInnes, John Healy, and James Melville.
+\newblock Umap: Uniform manifold approximation and projection for dimension
+  reduction, 2018.
+
 \bibitem[{Meng} and {Zhan}(2018)]{Meng2018ManRegZeroShot}
 M.~{Meng} and X.~{Zhan}.
 \newblock Zero-shot learning via low-rank-representation based manifold
@@ -1107,6 +1112,11 @@ R.~{Talmon}, S.~{Mallat}, H.~{Zaveri}, and R.~R. {Coifman}.
 \newblock ISSN 1053-587X.
 \newblock \doi{10.1109/TSP.2015.2432731}.
 
+\bibitem[Tang et~al.(2016)Tang, Liu, Zhang, and Mei]{Tang2016LargeVis}
+Jian Tang, Jingzhou Liu, Ming Zhang, and Qiaozhu Mei.
+\newblock Visualization large-scale and high-dimensional data.
+\newblock \emph{CoRR}, abs/1602.00370, 2016.
+
 \bibitem[Tenenbaum et~al.(2000)Tenenbaum, Silva, and
   Langford]{Tenenbaum2000Isomap}
 J.~B. Tenenbaum, V.~Silva, and J.~C. Langford.
@@ -1173,6 +1183,11 @@ D.~Tuia and G.~Camps-Valls.
 L.~van~der Maaten, E.~Postma, and H.~Herik.
 \newblock Dimensionality reduction: A comparative review.
 \newblock \emph{Journal of Machine Learning Research - JMLR}, 10, 01 2007.
+
+\bibitem[van~der Maaten and Hinton(2008)]{VanDerMaaten2008tSNE}
+Laurens van~der Maaten and Geoffrey~E. Hinton.
+\newblock Visualizing data using t-sne.
+\newblock 2008.
 
 \bibitem[Vlachos et~al.(2002)Vlachos, Domeniconi, Gunopulos, Kollios, and
   Koudas]{Vlachos2002NonlinearDRClassification}

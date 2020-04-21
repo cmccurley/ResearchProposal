@@ -13,7 +13,7 @@ A level-1 auxiliary file: Chapters/ch_TechApproach.aux
 A level-1 auxiliary file: Chapters/ch_ExperimentalDesign.aux
 A level-1 auxiliary file: Chapters/ch_PreliminaryWork.aux
 A level-1 auxiliary file: Chapters/ch_FutureTasks.aux
-Reallocated field_info (elt_size=4) to 10516 items from 5000.
+Reallocated field_info (elt_size=4) to 10600 items from 5000.
 Database file #1: BibFiles/references.bib
 I was expecting a `,' or a `}'---line 53 of file BibFiles/references.bib
  :  
@@ -71,6 +71,7 @@ Warning--empty booktitle in Ping2010MILDRMaxMargin
 Warning--empty booktitle in Rish2008SupDimRedGLM
 Warning--empty journal in deSilva2002ConformalIsomap
 Warning--empty journal in Tuia2015KernelManifoldAlignment
+Warning--empty booktitle in VanDerMaaten2008tSNE
 Warning--empty journal in Wang2010MultiscaleManAlignment
 Warning--empty booktitle in Webb2002KMDS
 Warning--empty year in WeinbergerFalseAlarms
@@ -80,45 +81,45 @@ Warning--empty booktitle in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty publisher in Yin2007SOM
-You've used 197 entries,
+You've used 200 entries,
             2773 wiz_defined-function locations,
-            2015 strings with 49899 characters,
-and the built_in function-call counts, 101202 in all, are:
-= -- 9381
-> -- 5772
-< -- 156
-+ -- 1938
-- -- 1740
-* -- 8265
-:= -- 15325
-add.period$ -- 809
-call.type$ -- 197
-change.case$ -- 1140
-chr.to.int$ -- 196
-cite$ -- 425
-duplicate$ -- 4667
-empty$ -- 7910
-format.name$ -- 2050
-if$ -- 21723
+            2028 strings with 50319 characters,
+and the built_in function-call counts, 102452 in all, are:
+= -- 9481
+> -- 5862
+< -- 157
++ -- 1968
+- -- 1767
+* -- 8361
+:= -- 15519
+add.period$ -- 817
+call.type$ -- 200
+change.case$ -- 1158
+chr.to.int$ -- 199
+cite$ -- 432
+duplicate$ -- 4725
+empty$ -- 8012
+format.name$ -- 2082
+if$ -- 21983
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 183
-newline$ -- 1179
-num.names$ -- 812
-pop$ -- 2170
+missing$ -- 185
+newline$ -- 1193
+num.names$ -- 824
+pop$ -- 2213
 preamble$ -- 1
-purify$ -- 957
+purify$ -- 972
 quote$ -- 0
-skip$ -- 3737
+skip$ -- 3786
 stack$ -- 0
-substring$ -- 3584
-swap$ -- 888
+substring$ -- 3590
+swap$ -- 891
 text.length$ -- 67
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2107
-warning$ -- 30
-while$ -- 816
+type$ -- 2140
+warning$ -- 31
+while$ -- 825
 width$ -- 0
-write$ -- 2974
+write$ -- 3008
 (There were 6 error messages)

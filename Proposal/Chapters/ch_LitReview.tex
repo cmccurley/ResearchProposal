@@ -1043,7 +1043,29 @@ Manifold charting has been shown to be more robust to noise than alternative app
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  t-SNE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Stochastic Neighbor Embedding (SNE and t-SNE)} \label{sec:tSNE}
+\textit{t-Distributed Stochastic Neighbor Embedding} was proposed by \citep{VanDerMaaten2008tSNE} as an extension to SNE,  which was developed by Hinton and Roweis in 2006.  SNE is intended as a visualization tool for high dimensional datasets.  Essentially, SNE finds low-dimensional data coordinates by defining pairwise probabilities between all samples in the input data space.  It then assumes that the low-dimensional embedding coordinates should be distributed according to the same conditional probabilities.  SNE begins by defining conditional probabilities between all points in the training set which measure their likelihood of being spatial neighbors.  Given a datapoint $\bm{x}_{n}$, the probability of selecting another point $\bm{x}_{m}$ as its neighbor is given as
+\begin{align}
+	p_{m|n} = \frac{\exp(-||\bm{x}_{n} - \bm{x}_{m}  ||^{2}/2 \beta_{n})}{\sum_{o \neq n}\exp(-||\bm{x}_{n} - \bm{x}_{o}  ||^{2}/2 \beta_{n})}
+\end{align}
+\noindent
+where $\beta_{n}$ is the variance of the RBF kernel centered on sample $\bm{x}_{n}$.  Therefore, points in a local neighborhood to sample $\bm{x}_{n}$ will have a higher probability of being selected as a neighbor.  Similarly, the pairwise conditional probabilities between all low-dimensional samples can be defined by
+\begin{align}
+	q_{m|n} = \frac{\exp(-||\bm{z}_{n} - \bm{z}_{m}  ||^{2})}{\sum_{o \neq n}\exp(-||\bm{z}_{n} - \bm{z}_{o}  ||^{2})}
+\end{align}
+\noindent
+The intuition behind this formulation is that, if the low-dimensional coordinates $\bm{z}_{n}$ and $\bm{z}_{m}$ correctly model the similarity between the high-dimensional data points $\bm{x}_{n}$ and $\bm{x}_{m}$, the conditional probabilities $p_{m|n}$ and $q_{m|n}$ will be equal \citep{VanDerMaaten2008tSNE}.  Thus, it is intuitive that the Kullback-Leibler (KL) divergence (which measures the difference between probability densities) would make an appropriate cost function between the high and low-dimensional probabilities.  The objective function of SNE is given by 
+\begin{align}
+	J = \sum_{n=1}^{N}KL(P_{n}||Q_{n})) = \sum_{n=1}^{N}\sum_{m=1}^{N} p_{m|n} \log \frac{p_{m|n}}{q_{m|n}}
+\end{align} 
+\noindent
+where $P_{n}$ denotes the conditional probability distribution over all other high-dimensional datapoints given $\bm{x}_{n}$, and $Q_{n}$ represents the conditional probability distribution over all other low-dimensional embedding coordinates given $\bm{z}_{n}$.  Given that KL divergence is asymmetric, it can be observed that using widely separated points in the embedding space to model points close in the input space accrues a large error.  However, the cost of using nearby points in the embedding space to represent points far in the data space is small.  Therefore, the SNE cost focuses on retaining the local structure of data in the embedding space.  This problem can be optimized using gradient descent.  
 
+A problem with SNE, however, is that due to the curse of dimensionality, points in ``middle distances" get squashed closely together in the low-dimensional embedding space.  This is known as the \textit{crowding problem}, and stems from the fact that in high-dimensional spaces, the surface of the a hypersphere (Guassian distribution) grows much more quickly with its radius as compared to a hypersphere in a low-dimensional space.  T-SNE handles this problem by forcing the optimization to ``spread-out" the medium distance points.
+
+Since the similarity of a sample with itself is not important, $p_{n|n}$ and $q_{n|n}$ are set to zero.
+
+
+Whereas many manifold learning and dimensionality reduction methods in the literature can only capture global or local data structure, t-SNE is effectively able to capture both.  Thus, t-SNE has been applied successfully to 2D and 3D visualization of datasets consisting of millions of samples with hundreds of features \citep{Tang2016LargeVis, McInnes2018UMAP}.  However, t-SNE suffers from a few drawbacks. t-SNE is bottlenecked by the size of the dataset due to the construction of a $k$-NN graph.  Moreover, the efficiency of the graph visualization step deteriorates significantly as the data becomes large.  Finally, the performance of t-SNE is highly dependent on its hyperparameters.  Because of these deficiencies, LargeVis \citep{Tang2016LargeVis} and UMAP \cite{McInnes2018UMAP} were proposed. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LargeVis  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1134,11 +1156,11 @@ Manifold charting has been shown to be more robust to noise than alternative app
 	\hline
 	Manifold Charting  & Computes mixture of locally linear models on the data then aligns local low-dimensional models to find global coordinates. Section \ref{sec:Manifold_Charting} & 2003 \\
 	\hline
-	t-SNE  & ~  & ~ \\
+	t-SNE  & ~  & 2008 \\
 	\hline
-	LargeVis  & ~  & ~ \\
+	LargeVis  & ~  & 2016 \\
 	\hline
-	UMAP  & ~  & ~ \\
+	UMAP  & ~  & 2018 \\
 	\hline
 \end{longtable}
 
