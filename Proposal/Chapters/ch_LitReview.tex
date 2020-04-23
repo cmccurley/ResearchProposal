@@ -1060,13 +1060,12 @@ Since the similarity of a sample with itself is not important, $p_{n|n}$ and $q_
 \noindent
 where $P_{n}$ denotes the conditional probability distribution over all other high-dimensional datapoints given $\bm{x}_{n}$, and $Q_{n}$ represents the conditional probability distribution over all other low-dimensional embedding coordinates given $\bm{z}_{n}$.  Given that the KL divergence is asymmetric, it can be observed that using widely separated points in the embedding space to model points close in the input space accrues a large error.  However, the cost of using nearby points in the embedding space to represent points far in the data space is small.  Therefore, the SNE cost focuses on retaining the local structure of data in the embedding space.  This problem can be optimized using gradient descent.  
 
-A problem with is that, due to the curse of dimensionality, points in ``middle distances" get squashed closely together in the low-dimensional embedding space.  This is known as the \textit{crowding problem}, and stems from the fact that in high-dimensional spaces, the surface of the a hypersphere (Guassian distribution) grows much more quickly with its radius as compared to a hypersphere in a low-dimensional space.  t-SNE handles this problem by forcing the optimization to ``spread-out" the medium distance points.  This is done by tilizing a symmetric KL-divergence and by giving the low-dimensional density a longer tail.  Using a Student t-distribution, the conditional neighbor probabilities of the low-dimensional data coordinates become
-\begin{align}
-	q_{m|n} = \frac{1 + ||\bm{x}_{n} - \bm{x}_{m}  ||^{2})^{-1}}{\sum_{o \neq p}1 + ||\bm{x}_{p} - \bm{x}_{o}  ||^{2})^{-1}}
+A problem with is that, due to the curse of dimensionality, points in ``middle distances" get squashed closely together in the low-dimensional embedding space.  This is known as the \textit{crowding problem}, and stems from the fact that in high-dimensional spaces, the surface of the a hypersphere (Guassian distribution) grows much more quickly with its radius as compared to a hypersphere in a low-dimensional space.  t-SNE handles this problem by forcing the optimization to ``spread-out" the medium distance points.  This is done by utilizing a symmetric KL-divergence and by giving the low-dimensional density a longer tail.  Using a Student t-distribution, the conditional neighbor probabilities of the low-dimensional data coordinates become
+\begin{align} \label{eq:tSNE_low_dim_similarity}
+	q_{m|n} = \frac{(1 + ||\bm{x}_{n} - \bm{x}_{m}  ||^{2})^{-1}}{\sum_{o \neq p}1 + ||\bm{x}_{p} - \bm{x}_{o}  ||^{2})^{-1}}
 \end{align}
 \noindent
 and optimization of the KL-divergence is performed with gradient descent.
-
 
 Whereas many manifold learning and dimensionality reduction methods in the literature can only capture global or local data structure, t-SNE is effectively able to capture both.  Thus, t-SNE has been applied successfully to 2D and 3D visualization of datasets consisting of millions of samples with hundreds of features \citep{Tang2016LargeVis, McInnes2018UMAP}.  However, t-SNE suffers from a few drawbacks. t-SNE is bottlenecked by the size of the dataset due to the construction of a $k$-NN graph.  Moreover, the efficiency of the graph visualization step deteriorates significantly as the data becomes large and the performance of t-SNE is highly dependent on its hyperparameters.  Also, since t-SNE directly optimizes the embeddings, it cannot be applied directly to new data.  t-SNE lead as the SOA data visualization tool for approximately ten years after its inception, but because of its deficiencies, LargeVis \citep{Tang2016LargeVis} and UMAP \cite{McInnes2018UMAP} were eventually proposed. 
 
@@ -1091,17 +1090,56 @@ LargeVis was able to provide 2D and 3D visualizations of millions of data points
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  UMAP  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Uniform Manifold Approximation and Projection (UMAP)} \label{sec:UMAP}
-Similarly to LargeVis, \textit{Uniform Manifold Approximation and Projection} (UMAP) \citep{McInnes2018UMAP} attempts to address the deficiencies exhibit by t-SNE. Specifically, t-SNE has difficulties working with high dimensional data diectly due to memory limitations and can only practically embed data into two or three dimensions \citep{Tang2016LargeVis}. UMAP uses manifold approximation and local fuzzy simplicial set representations to construct a topological representation of the high dimensional data.  The layout of data in the low dimensional space is then optimized to minimize the error between the two topological representations.  While UMAP may appear wildly different from t-SNE at first glance, there are actually few differences which make it more computationally efficient and scalable. 
+Similarly to LargeVis, \textit{Uniform Manifold Approximation and Projection} (UMAP) \citep{McInnes2018UMAP} attempts to address the deficiencies exhibit by t-SNE. Specifically, t-SNE has difficulties working with high dimensional data diectly due to memory limitations and can only practically embed data into two or three dimensions \citep{Tang2016LargeVis}. UMAP uses manifold approximation and local fuzzy simplicial set representations to construct a topological representation of the high dimensional data.  The layout of data in the low dimensional space is then optimized to minimize the error between the two topological representations.  While UMAP may appear wildly different from t-SNE at first glance, there are actually only a few key differences which make it more computationally efficient and scalable. 
 
-As with t-SNE (Section \ref{sec:tSNE}) and LargeVis (Section \ref{sec:LargeVis}), UMAP can be described in two phases.  A weighted nearest neighbor graph is constructed in the first phase while and a mimetic, low-dimensional representation is computed in the second.  The differences between t-SNE, LargeVis and UMAP amount to the specific details on how the neighborhood graphs are constructed and how the low-dimensional embeddings are computed.
+As with t-SNE (Section \ref{sec:tSNE}) and LargeVis (Section \ref{sec:LargeVis}), UMAP can be described in two phases.  A weighted nearest neighbor graph is constructed in the first phase and a mimetic, low-dimensional representation is computed in the second.  The differences between t-SNE, LargeVis and UMAP amount to the specific details on how the neighborhood graphs are constructed and how the low-dimensional embeddings are computed.
 
-t-SNE defines the high-dimensional input probabilities by normalizing RBF kernel similarities, which utilizes Euclidean distance (Equation \ref{eq:SNE_high_dim_data_probs}).  
+t-SNE defines the high-dimensional input probabilities by normalizing and symmetrizing RBF kernel similarities, which utilizes Euclidean distance (Equation \ref{eq:SNE_high_dim_data_probs}).  The symmetrized neighbor probabilities are defined by 
+\begin{align}
+	p_{mn} = \frac{p_{m|n} + p_{n|m}}{2N}
+\end{align}
+\noindent
+The similarities in the low-dimensional embedding space are then defined by a Student t-distribution with a single degree of freedom on the Euclidean distance (Equation \ref{eq:tSNE_low_dim_similarity}).  The objective function of t-SNE is given as the KL-divergence between the high and low-dimensional probability distributions
+\begin{align}
+	J_{t-SNE} = \sum_{m \neq n} p_{mn} \log{\frac{p_{mn}}{q_{mn}}} = \sum_{m \neq n} p_{mn} \log{p_{mn}} - p_{mn} \log{q_{mn}}
+\end{align}
+Because the computation of both $p_{mn}$ and $q_{mn}$ requires calculation over all pairs of training points, different approaches have been suggested to improve efficiency.  LargeVis, for example, considers only the approximate nearest neighbors for each sample and abandons the graph weight normalization.  Instead of KL-divergence, LargeVis maximizes the graph likelihood
+\begin{align} 
+	J_{LV} &= \sum_{m \neq n} p_{mn} \log{w_{mn}} + \gamma \sum_{m \neq n}\log{(1 - w_{mn})}
+\end{align}
+\noindent
+where $p_{mn}$ and $w_{mn}$ are defined as in Barnes-Hut t-SNE.  $\gamma$ is a parameter which controls the repulsion force (second part of the objective) relative to the attractive force (first part).  The first part of this objective resembles the optimizable portion of the KL-divergence used by t-SNE, except with the substitution of $w_{mn}$ for $q_{mn}$.
 
-UMAP In fact, UMAP practically shares the same objective function as t-SNE.  UMAP, however, discards the strict notion of conditional probabilities and instead utilizes fuzzy sets.  
+UMAP's cost function can be described by the cross-entropy between $v$ and $w$
+\begin{align}
+	J_{UMAP} = \sum_{m \neq n} v_{mn} \log{\left( \frac{v_{mn}}{w_{mn}} \right)} + (1 - v_{mn}) \log{\left ( \frac{1 - v_{mn}}{1 - w_{mn}} \right )}
+\end{align}
+\noindent
+which can be rearranged into two constant terms and two optimizable terms
+\begin{align} \label{eq:UMAP_objective}
+	J_{UMAP} = \sum_{m \neq n} v_{mn} \log{v_{mn}} + (1 - v_{mn}) \log{(1 - v_{mn})} - v_{mn} \log{w_{mn}} - (1 - v_{mn}) \log{(1 - w_{mn})}
+\end{align}
+\noindent
+and has a similar form to LargeVis without the $\gamma$ term and the requirement of matrix-wise normalization in the high-dimensional space.  The high-dimensional data similarities $v_{m|n}$ in Equation \ref{eq:UMAP_objective} are the local fuzzy simplicial set memberships based on smoothed nearest neighbor distances
+\begin{align}
+	v_{m|n} = \exp{\left( \frac{-\mathcal{D}(\bm{x}_{m},\bm{x}_{n}) - \rho_{n}}{\beta_{n}} \right)}
+\end{align}
+\noindent
+Just as with LargeVis, $v_{m|n}$ is calculated from only the $k$ approximate nearest neighbors and $v_{m|n}=0$ for all other samples.  $\mathcal{D}(\bm{x}_{m},\bm{x}_{n})$ is an arbitrary distance between high-dimensional samples $\bm{x}_{m}$ and $\bm{x}_{n}$ which is not required to be Euclidean distance.  $\rho_{n}$ is the distance to the nearest neighbor of sample $n$ and $\beta_{n}$ controls the bandwidth of the exponential  distribution.  UMAP leverages ideas of earlier-developed approaches such as Laplacian Eigenmaps (Section \ref{sec:Laplacian_Eigenmaps}) which assume that data on the manifold are uniformly distributed.  While this constraint can easily be enforced in the embedding space, the training sets of remotely sensed data typically do not exhibit uniform distributions.  Because of this, using a fixed metric may leave samples unconnected in the graph.  $\rho_{n}$ plays an important role in that it ensures local connectivity by defining a locally adaptive kernel for each datapoint which allows the metric to vary between each point.
 
-UMAP leverages ideas earlier-developed approaches such as Laplacian Eigenmaps (Section \ref{sec:Laplacian_Eigenmaps}) which assume that data on the manifold are uniformly distributed.  While this constraint can easily be enforced int he embedding space, the training sets of remotely sensed data will most likely not exhibit uniform distribution.  
-
-
+Symmetrization is performed  by the fuzzy set union using the probabilistic t-conorm
+\begin{align}
+	v_{mn} = (v_{m|n} + v_{n|m}) - v_{m|n}v_{n|m}
+\end{align}
+\noindent
+and the low dimensional data similarities are given by 
+\begin{align}
+	w_{mn} = (1 + a||\bm{z}_{m} - \bm{z}_{n} ||^{2b}_{2})^{-1}
+\end{align}
+\noindent
+where $a$ and $b$ are user-defined hyper-parameters.  Setting $a=b=1$ results in the Student t-distribution used by t-SNE.  With all terms defined, the objective function in Equation \ref{eq:UMAP_objective} can be optimized efficiently with stochastic gradient descent.
+  
+Experiments by \citep{McInnes2018UMAP} showed that UMAP was both faster than t-SNE (due to efficient neighbor search and lack of normalization) and was capable of preserving more global data structure.  While the KL-divergence cost used in t-SNE heavily penalizes mapping close points in the high-dimensional space with far points in the low-dimensional space, it is less concerned with mapping points far in the high-dimensional space with samples close in the embedding space.  This reveals that t-SNE places emphasis on locality preservation but does not guarantee that global structure will be retained through the embedding.  UMAP, on the other hand, penalizes for both cases through the use of a cross-entropy cost function.  This effectively allows UMAP to retain (with trade-offs) both local and global data structure. Additionally, whereas t-SNE which uses random initialization, UMAP initializes the low-dimensional data coordinates through the Laplacian Eigenmaps algorithm which assumes uniformity in the embedding space.  Removal of initialization randomness tends to make UMAP embeddings more repeatable.  All in all, UMAP was shown to be competitive with the SOA t-SNE and LargeVis algorithms for data visualization tasks while providing improved speed and flexibility.  UMAP has been used for visualization of data in bioninformatics, materials science and machine learning \citep{McInnes2018UMAP}. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1183,7 +1221,7 @@ UMAP leverages ideas earlier-developed approaches such as Laplacian Eigenmaps (S
 	\hline
 	LargeVis  & Efficiently constructs neighborhood graph weighted by conditional probabilities of being neighbors.  Maximizes the graph likelihood in the embedding space. Preserves local distances. Section \ref{sec:LargeVis} & 2016 \\
 	\hline
-	UMAP  & ~  & 2018 \\
+	UMAP  & Uses fuzzy simplicial sets to define locally adaptive neighborhood graph.  Minimizes the cross-entropy between the high and low-dimensional similarity distributions. Preserves global and local structure.  Section \ref{sec:UMAP}  & 2018 \\
 	\hline
 \end{longtable}
 
