@@ -953,10 +953,13 @@ While many manifold learning and dimensionality reduction models are regarded as
 
 Probabilistic methods provide two possible modeling paradigms for inferring latent variables, directed and undirected graphical models, which differ in their parameterizations of the joint distribution $p(\bm{x}_{n},\bm{z}_{n})$.  The remainder of this section focuses on directed graphical models which follow a particular formulation called \textit{Factor Analysis}. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  FA and PPCA  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Factor Analysis (FA) and Probabilistic PCA (PPCA)} \label{sec:FA_and_PPCA}
 
 \textit{Factor Analysis} (FA) is a special case of a directed latent variable model that assumes the distribution of high-dimensional random variables is induced by a generalized linear mapping of the latent random variables \citep{Murphy2012, Tipping1999PPCA}.  A common assumption is that the high-dimensional data are Gaussian distributed and the the conditional likelihood is given as
-\begin{align}
+\begin{align} \label{eq:FA_likelihood}
 	p(\bm{x}|\bm{z},\bm{\theta}) = \mathcal{N}(\bm{W}\bm{z} + \bm{\mu}, \bm{\Psi})
 \end{align}
 \noindent
@@ -968,24 +971,22 @@ where $\bm{W}$ is a $D \times d$ matrix known as the \textit{factor loading matr
 and the model parameters can be obtained by \textit{maximum likelihood}.
 
 
-PCA can also be analyzed from the viewpoint of factor analysis (FA), which is discussed later in this literature review.  The basic idea, however, is that data observations $\bm{x}_{n} \in \mathbb{R}^{D}$ are realizations of a probability distribution with a prior on the lower-dimensional latent variable $\bm{w}_n \in \mathbb{R}^{d}$.  A typical choice on this model is a Gaussian-Gaussian conjugate prior pair where the mean of the data likelihood is a linear function of the latent inputs.  As an example, the prior over the hidden data representations can be expressed as Gaussian distribution
-
+By assuming $\bm{\Psi} = \beta \mathbb{I}_{D}$, the factor analysis model provides a probabilistic formulation of PCA (PPCA) \citep{Tipping1999PPCA}.  A typical choice on this model is a Gaussian-Gaussian conjugate prior pair where the mean of the data likelihood is a linear function of the latent inputs.  As an example, the prior over the hidden data representations can be expressed as a Gaussian distribution
 \begin{align}
-p(\bm{w}_n) = \mathcal{N}(\bm{w}_n|\bm{\mu}_0, \bm{S}_0)
+p(\bm{z}_n) = \mathcal{N}(\bm{z}_n|\bm{\mu}_0, \bm{S}_0)
 \end{align}
-
 \noindent
-and the data likelihood is denoted as a multivariate Gaussian
+and the data likelihood is provided as a multivariate Gaussian (given in Equation \ref{eq:FA_likelihood}).  Classical PCA assumes the data covariance to be $\bm{\Psi} = \sigma^2\bm{I}$ with $\beta \rightarrow 0$, thus the model is deterministic.  Alternatively, when $\beta > 0$,the projection is no longer orthogonal since it is shrunk toward the prior mean.  The trade-off is that the reconstructions of $\bm{x}_{n}$ will be closer to the data mean.
 
+
+While the typical approach for fitting PCA is to use eigen-decomposition or Singular Value Decomposition (SVD), PPCA can be fit with the Expectation-Maximization (EM) algorithm (which may be more computationally efficient for high-dimensional data \citep{Murphy2012}).  Once the model parameters have been estimated, dimensionality reduction can be performed by applying the inverse mapping
 \begin{align}
-p(\bm{x}_n|\bm{w}_n,\bm{\theta}) = \mathcal{N}(\bm{W}\bm{z}_n + \bm{\mu}, \bm{\Psi})
-\end{align}
-
+	\bm{z}_{n} = \bm{W}^{T}(\bm{x}_{n} - \bm{\mu})
+\end{align} 
 \noindent
-where $\bm{W}$ is a $D \times d$ \textit{factor loading matrix}, and $\bm{\Psi}$ is a $D \times D$ covariance matrix.  The objective of FA is to compute the posterior over the latent factors in hopes that they will reveal something interesting about the data \citep{Murphy2012}.  Classical PCA assumes the data covariance to be $\bm{\Psi} = \sigma^2\bm{I}$ with $\sigma^2 \rightarrow 0$, thus the model is deterministic.  Alternatively, when $\sigma^2 > 0$,the projection is no longer orthogonal since it is shrunk toward the prior mean.  The trade-off is that the reconstructions of $\bm{x}_n$ with be closer to the data mean.
+The projections onto the discovered principal axes, however, may not be optimal in the mean-squared sense because they will not be orthogonal.
 
-
-While the typical approach for fitting PCA is to use the method of eigenvectors of Singular Value Decomposition (SVD), it can also be fit with Expectation-Maximization (EM).  This formulation may be more computationally efficient for high-dimensional data.  By using Gaussian Processes, PPCA may also be extended to learn nonlinear mappings between the input and latent feature spaces \citep{VanDerMaaten2009DRReview}.
+By using Gaussian Processes, PPCA may also be extended to learn nonlinear mappings between the input and latent feature spaces \citep{VanDerMaaten2009DRReview}.
 
 \paragraph{Supervised PCA}
 
@@ -1005,7 +1006,7 @@ Supervision has also been applied to PCA.  Two such examples, Supervised PCA and
 
 \subparagraph{Discriminative Supervised PCA} 
 
-\subsubsection{Gaussian Process Latent Variable Model (GPLVM)} \label{sec:GLVM}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  GTM  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

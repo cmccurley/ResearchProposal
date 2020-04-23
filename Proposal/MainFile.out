@@ -39,55 +39,54 @@
 \BOOKMARK [3][-]{subsubsection.2.2.4.4}{2.2.4.4 Elastic Maps and Nets}{subsection.2.2.4}% 39
 \BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 Probabilistic Latent Variable Models \(LVM\)}{section.2.2}% 40
 \BOOKMARK [3][-]{subsubsection.2.2.5.1}{2.2.5.1 Factor Analysis \(FA\) and Probabilistic PCA \(PPCA\)}{subsection.2.2.5}% 41
-\BOOKMARK [3][-]{subsubsection.2.2.5.2}{2.2.5.2 Gaussian Process Latent Variable Model \(GPLVM\)}{subsection.2.2.5}% 42
-\BOOKMARK [3][-]{subsubsection.2.2.5.3}{2.2.5.3 Generative Topographic Mapping \(GTM\)}{subsection.2.2.5}% 43
-\BOOKMARK [3][-]{subsubsection.2.2.5.4}{2.2.5.4 Manifold Charting}{subsection.2.2.5}% 44
-\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 High-Dimensional Data Visualization}{section.2.2}% 45
-\BOOKMARK [3][-]{subsubsection.2.2.6.1}{2.2.6.1 Stochastic Neighbor Embedding \(SNE and t-SNE\)}{subsection.2.2.6}% 46
-\BOOKMARK [3][-]{subsubsection.2.2.6.2}{2.2.6.2 LargeVis}{subsection.2.2.6}% 47
-\BOOKMARK [3][-]{subsubsection.2.2.6.3}{2.2.6.3 Uniform Manifold Approximation and Projection \(UMAP\)}{subsection.2.2.6}% 48
-\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Discussion}{section.2.2}% 49
-\BOOKMARK [3][-]{subsubsection.2.2.7.1}{2.2.7.1 Overview of Unsupervised Manifold Learning Methods}{subsection.2.2.7}% 50
-\BOOKMARK [3][-]{subsubsection.2.2.7.2}{2.2.7.2 Relations}{subsection.2.2.7}% 51
-\BOOKMARK [3][-]{subsubsection.2.2.7.3}{2.2.7.3 Strengths and Weaknesses}{subsection.2.2.7}% 52
-\BOOKMARK [1][-]{section.2.3}{2.3 Weakly Supervised Manifold Learning and Dimensionality Reduction}{chapter.2}% 53
-\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 MIDR}{section.2.3}% 54
-\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 MidLABS}{section.2.3}% 55
-\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 MIDA}{section.2.3}% 56
-\BOOKMARK [2][-]{subsection.2.3.4}{2.3.4 CLFDA}{section.2.3}% 57
-\BOOKMARK [2][-]{subsection.2.3.5}{2.3.5 MI-FEAR}{section.2.3}% 58
-\BOOKMARK [2][-]{subsection.2.3.6}{2.3.6 Comparison Table of MI Dimensionality Reduction Methods}{section.2.3}% 59
-\BOOKMARK [2][-]{subsection.2.3.7}{2.3.7 General Weak Supervision}{section.2.3}% 60
-\BOOKMARK [1][-]{section.2.4}{2.4 Metric Embedding}{chapter.2}% 61
-\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Ranking Loss}{section.2.4}% 62
-\BOOKMARK [3][-]{subsubsection.2.4.1.1}{2.4.1.1 Contrastive Loss}{subsection.2.4.1}% 63
-\BOOKMARK [3][-]{subsubsection.2.4.1.2}{2.4.1.2 Triplet Loss}{subsection.2.4.1}% 64
-\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Large-Margin K-Nearest Neighbors \(LMNN\)}{section.2.4}% 65
-\BOOKMARK [2][-]{subsection.2.4.3}{2.4.3 Siamese Neural Networks}{section.2.4}% 66
-\BOOKMARK [2][-]{subsection.2.4.4}{2.4.4 FaceNet}{section.2.4}% 67
-\BOOKMARK [0][-]{chapter.3}{3 Technical Approach}{}% 68
-\BOOKMARK [1][-]{section.3.1}{3.1 Preliminary Work}{chapter.3}% 69
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 S-LE Algorithm Description}{section.3.1}% 70
-\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 SE-Isomap Algorithm Description}{section.3.1}% 71
-\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 Instance-Level Classification}{section.3.1}% 72
-\BOOKMARK [1][-]{section.3.2}{3.2 Future Work}{chapter.3}% 73
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Instance Selection}{section.3.2}% 74
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Manifold Learning}{section.3.2}% 75
-\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Metric Embedding}{section.3.2}% 76
-\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Out-of-Sample Testing}{section.3.2}% 77
-\BOOKMARK [2][-]{subsection.3.2.5}{3.2.5 Comparison to SOA}{section.3.2}% 78
-\BOOKMARK [1][-]{section.3.3}{3.3 Datasets}{chapter.3}% 79
-\BOOKMARK [0][-]{chapter.4}{4 Experimental Design}{}% 80
-\BOOKMARK [1][-]{subsection.4.0.1}{4.0.1 Overview}{chapter.4}% 81
-\BOOKMARK [2][-]{subsection.4.0.2}{4.0.2 Description of Data}{subsection.4.0.1}% 82
-\BOOKMARK [3][-]{subsubsection.4.0.2.1}{4.0.2.1 Quadratic Surfaces}{subsection.4.0.2}% 83
-\BOOKMARK [3][-]{subsubsection.4.0.2.2}{4.0.2.2 DSIAC MS-003-DB}{subsection.4.0.2}% 84
-\BOOKMARK [2][-]{subsection.4.0.3}{4.0.3 Feature Extraction}{subsection.4.0.1}% 85
-\BOOKMARK [3][-]{subsubsection.4.0.3.1}{4.0.3.1 HOG Features}{subsection.4.0.3}% 86
-\BOOKMARK [3][-]{subsubsection.4.0.3.2}{4.0.3.2 CNN Features}{subsection.4.0.3}% 87
-\BOOKMARK [2][-]{subsection.4.0.4}{4.0.4 Algorithm Parameters}{subsection.4.0.1}% 88
-\BOOKMARK [2][-]{subsection.4.0.5}{4.0.5 Training and Testing Procedures}{subsection.4.0.1}% 89
-\BOOKMARK [0][-]{chapter.5}{5 Preliminary Results}{}% 90
-\BOOKMARK [0][-]{chapter.6}{6 Future Tasks}{}% 91
-\BOOKMARK [1][-]{subsection.6.0.1}{6.0.1 Overview of Tasks:}{chapter.6}% 92
-\BOOKMARK [2][-]{subsection.6.0.2}{6.0.2 Tasks and Approximate Dates of Completion:}{subsection.6.0.1}% 93
+\BOOKMARK [3][-]{subsubsection.2.2.5.2}{2.2.5.2 Generative Topographic Mapping \(GTM\)}{subsection.2.2.5}% 42
+\BOOKMARK [3][-]{subsubsection.2.2.5.3}{2.2.5.3 Manifold Charting}{subsection.2.2.5}% 43
+\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 High-Dimensional Data Visualization}{section.2.2}% 44
+\BOOKMARK [3][-]{subsubsection.2.2.6.1}{2.2.6.1 Stochastic Neighbor Embedding \(SNE and t-SNE\)}{subsection.2.2.6}% 45
+\BOOKMARK [3][-]{subsubsection.2.2.6.2}{2.2.6.2 LargeVis}{subsection.2.2.6}% 46
+\BOOKMARK [3][-]{subsubsection.2.2.6.3}{2.2.6.3 Uniform Manifold Approximation and Projection \(UMAP\)}{subsection.2.2.6}% 47
+\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Discussion}{section.2.2}% 48
+\BOOKMARK [3][-]{subsubsection.2.2.7.1}{2.2.7.1 Overview of Unsupervised Manifold Learning Methods}{subsection.2.2.7}% 49
+\BOOKMARK [3][-]{subsubsection.2.2.7.2}{2.2.7.2 Relations}{subsection.2.2.7}% 50
+\BOOKMARK [3][-]{subsubsection.2.2.7.3}{2.2.7.3 Strengths and Weaknesses}{subsection.2.2.7}% 51
+\BOOKMARK [1][-]{section.2.3}{2.3 Weakly Supervised Manifold Learning and Dimensionality Reduction}{chapter.2}% 52
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 MIDR}{section.2.3}% 53
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 MidLABS}{section.2.3}% 54
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 MIDA}{section.2.3}% 55
+\BOOKMARK [2][-]{subsection.2.3.4}{2.3.4 CLFDA}{section.2.3}% 56
+\BOOKMARK [2][-]{subsection.2.3.5}{2.3.5 MI-FEAR}{section.2.3}% 57
+\BOOKMARK [2][-]{subsection.2.3.6}{2.3.6 Comparison Table of MI Dimensionality Reduction Methods}{section.2.3}% 58
+\BOOKMARK [2][-]{subsection.2.3.7}{2.3.7 General Weak Supervision}{section.2.3}% 59
+\BOOKMARK [1][-]{section.2.4}{2.4 Metric Embedding}{chapter.2}% 60
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Ranking Loss}{section.2.4}% 61
+\BOOKMARK [3][-]{subsubsection.2.4.1.1}{2.4.1.1 Contrastive Loss}{subsection.2.4.1}% 62
+\BOOKMARK [3][-]{subsubsection.2.4.1.2}{2.4.1.2 Triplet Loss}{subsection.2.4.1}% 63
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Large-Margin K-Nearest Neighbors \(LMNN\)}{section.2.4}% 64
+\BOOKMARK [2][-]{subsection.2.4.3}{2.4.3 Siamese Neural Networks}{section.2.4}% 65
+\BOOKMARK [2][-]{subsection.2.4.4}{2.4.4 FaceNet}{section.2.4}% 66
+\BOOKMARK [0][-]{chapter.3}{3 Technical Approach}{}% 67
+\BOOKMARK [1][-]{section.3.1}{3.1 Preliminary Work}{chapter.3}% 68
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 S-LE Algorithm Description}{section.3.1}% 69
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 SE-Isomap Algorithm Description}{section.3.1}% 70
+\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 Instance-Level Classification}{section.3.1}% 71
+\BOOKMARK [1][-]{section.3.2}{3.2 Future Work}{chapter.3}% 72
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Instance Selection}{section.3.2}% 73
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Manifold Learning}{section.3.2}% 74
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Metric Embedding}{section.3.2}% 75
+\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Out-of-Sample Testing}{section.3.2}% 76
+\BOOKMARK [2][-]{subsection.3.2.5}{3.2.5 Comparison to SOA}{section.3.2}% 77
+\BOOKMARK [1][-]{section.3.3}{3.3 Datasets}{chapter.3}% 78
+\BOOKMARK [0][-]{chapter.4}{4 Experimental Design}{}% 79
+\BOOKMARK [1][-]{subsection.4.0.1}{4.0.1 Overview}{chapter.4}% 80
+\BOOKMARK [2][-]{subsection.4.0.2}{4.0.2 Description of Data}{subsection.4.0.1}% 81
+\BOOKMARK [3][-]{subsubsection.4.0.2.1}{4.0.2.1 Quadratic Surfaces}{subsection.4.0.2}% 82
+\BOOKMARK [3][-]{subsubsection.4.0.2.2}{4.0.2.2 DSIAC MS-003-DB}{subsection.4.0.2}% 83
+\BOOKMARK [2][-]{subsection.4.0.3}{4.0.3 Feature Extraction}{subsection.4.0.1}% 84
+\BOOKMARK [3][-]{subsubsection.4.0.3.1}{4.0.3.1 HOG Features}{subsection.4.0.3}% 85
+\BOOKMARK [3][-]{subsubsection.4.0.3.2}{4.0.3.2 CNN Features}{subsection.4.0.3}% 86
+\BOOKMARK [2][-]{subsection.4.0.4}{4.0.4 Algorithm Parameters}{subsection.4.0.1}% 87
+\BOOKMARK [2][-]{subsection.4.0.5}{4.0.5 Training and Testing Procedures}{subsection.4.0.1}% 88
+\BOOKMARK [0][-]{chapter.5}{5 Preliminary Results}{}% 89
+\BOOKMARK [0][-]{chapter.6}{6 Future Tasks}{}% 90
+\BOOKMARK [1][-]{subsection.6.0.1}{6.0.1 Overview of Tasks:}{chapter.6}% 91
+\BOOKMARK [2][-]{subsection.6.0.2}{6.0.2 Tasks and Approximate Dates of Completion:}{subsection.6.0.1}% 92
