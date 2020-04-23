@@ -79,21 +79,21 @@
 \contentsline {subsubsection}{\numberline {2.2.9.1}Overview of Unsupervised Manifold Learning Methods}{93}{subsubsection.2.2.9.1}
 \contentsline {subsubsection}{\numberline {2.2.9.2}Relations}{96}{subsubsection.2.2.9.2}
 \contentsline {subsubsection}{\numberline {2.2.9.3}Strengths and Weaknesses}{96}{subsubsection.2.2.9.3}
-\contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{96}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}MIDR}{97}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{97}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}MIDR}{98}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}MidLABS}{100}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}MIDA}{101}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}CLFDA}{102}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.3}MIDA}{102}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}CLFDA}{103}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{105}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{106}{subsection.2.3.6}
-\contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{107}{subsection.2.3.7}
-\contentsline {section}{\numberline {2.4}Metric Embedding}{108}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{109}{subsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Contrastive Loss}{110}{subsubsection.2.4.1.1}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{111}{subsubsection.2.4.1.2}
+\contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{107}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{108}{subsection.2.3.7}
+\contentsline {section}{\numberline {2.4}Metric Embedding}{109}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{110}{subsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Contrastive Loss}{111}{subsubsection.2.4.1.1}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{112}{subsubsection.2.4.1.2}
 \contentsline {subsection}{\numberline {2.4.2}Large-Margin K-Nearest Neighbors (LMNN)}{113}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{114}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}FaceNet}{116}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.4}FaceNet}{117}{subsection.2.4.4}
 \contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{118}{chapter.3}
 \contentsline {section}{\numberline {3.1}Preliminary Work}{118}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}S-LE Algorithm Description}{119}{subsection.3.1.1}

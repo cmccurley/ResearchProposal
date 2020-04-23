@@ -1091,6 +1091,16 @@ LargeVis was able to provide 2D and 3D visualizations of millions of data points
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  UMAP  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Uniform Manifold Approximation and Projection (UMAP)} \label{sec:UMAP}
+Similarly to LargeVis, \textit{Uniform Manifold Approximation and Projection} (UMAP) \citep{McInnes2018UMAP} attempts to address the deficiencies exhibit by t-SNE. Specifically, t-SNE has difficulties working with high dimensional data diectly due to memory limitations and can only practically embed data into two or three dimensions \citep{Tang2016LargeVis}. UMAP uses manifold approximation and local fuzzy simplicial set representations to construct a topological representation of the high dimensional data.  The layout of data in the low dimensional space is then optimized to minimize the error between the two topological representations.  While UMAP may appear wildly different from t-SNE at first glance, there are actually few differences which make it more computationally efficient and scalable. 
+
+As with t-SNE (Section \ref{sec:tSNE}) and LargeVis (Section \ref{sec:LargeVis}), UMAP can be described in two phases.  A weighted nearest neighbor graph is constructed in the first phase while and a mimetic, low-dimensional representation is computed in the second.  The differences between t-SNE, LargeVis and UMAP amount to the specific details on how the neighborhood graphs are constructed and how the low-dimensional embeddings are computed.
+
+t-SNE defines the high-dimensional input probabilities by normalizing RBF kernel similarities, which utilizes Euclidean distance (Equation \ref{eq:SNE_high_dim_data_probs}).  
+
+UMAP In fact, UMAP practically shares the same objective function as t-SNE.  UMAP, however, discards the strict notion of conditional probabilities and instead utilizes fuzzy sets.  
+
+UMAP leverages ideas earlier-developed approaches such as Laplacian Eigenmaps (Section \ref{sec:Laplacian_Eigenmaps}) which assume that data on the manifold are uniformly distributed.  While this constraint can easily be enforced int he embedding space, the training sets of remotely sensed data will most likely not exhibit uniform distribution.  
+
 
 
 
