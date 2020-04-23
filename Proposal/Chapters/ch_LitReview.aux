@@ -365,7 +365,7 @@
 \citation{Gorban2007ElasticMaps}
 \citation{Bengio2014RepLearningReview,Murphy2012}
 \citation{Bishop1998GTM}
-\citation{Murphy2012,Tipping1999PPCA}
+\citation{Murphy2012,Tipping1999PPCA,Rish2008SupDimRedGLM,Gonen2013BayesianSupDimRed}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Probabilistic Latent Variable Models (LVM)}{85}{subsection.2.2.5}}
 \newlabel{sec:LVM}{{2.2.5}{85}{Probabilistic Latent Variable Models (LVM)}{subsection.2.2.5}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.5.1}Factor Analysis (FA) and Probabilistic PCA (PPCA)}{85}{subsubsection.2.2.5.1}}
@@ -373,13 +373,11 @@
 \citation{Tipping1999PPCA}
 \citation{Murphy2012}
 \newlabel{eq:FA_likelihood}{{{2-85}}{86}{Factor Analysis (FA) and Probabilistic PCA (PPCA)}{equation.2.2.85}{}}
-\citation{VanDerMaaten2009DRReview}
 \citation{Murphy2012}
+\citation{VanDerMaaten2009DRReview,Lawrence2005PPCAGPLVModels}
+\citation{Gao2011SupGPLVMDimRed}
 \citation{Bishop1998GTM}
 \citation{Pena2007NeuralGasReview}
-\@writefile{toc}{\contentsline {paragraph}{Supervised PCA}{87}{section*.50}}
-\@writefile{toc}{\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{87}{section*.51}}
-\@writefile{toc}{\contentsline {subparagraph}{Discriminative Supervised PCA}{87}{section*.52}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.5.2}Generative Topographic Mapping (GTM)}{87}{subsubsection.2.2.5.2}}
 \newlabel{sec:GTM}{{2.2.5.2}{87}{Generative Topographic Mapping (GTM)}{subsubsection.2.2.5.2}{}}
 \newlabel{eq:GTM_likelihood}{{{2-96}}{88}{Generative Topographic Mapping (GTM)}{equation.2.2.96}{}}
@@ -416,7 +414,9 @@
 \citation{McInnes2018UMAP}
 \citation{McInnes2018UMAP}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.7}Discussion}{97}{subsection.2.2.7}}
+\newlabel{sec:Manifold_Learning_Discussion}{{2.2.7}{97}{Discussion}{subsection.2.2.7}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.7.1}Overview of Unsupervised Manifold Learning Methods}{97}{subsubsection.2.2.7.1}}
+\newlabel{sec:Manifold_Learning_Discussion_Comp_Table}{{2.2.7.1}{97}{Overview of Unsupervised Manifold Learning Methods}{subsubsection.2.2.7.1}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {{2-1}}{\ignorespaces Overview of unsupervised manifold learning methods and their properties.\relax }}{97}{table.2.1}}
 \newlabel{tab:Manifold_Learning_Comparison_Table}{{{2-1}}{97}{Overview of unsupervised manifold learning methods and their properties.\relax }{table.2.1}{}}
 \gdef \LT@iii {\LT@entry 
@@ -431,111 +431,113 @@
 \citation{Wu2015MILImageManifoldThesis}
 \citation{Zhu2018MIDRSparsity}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.7.2}Relations}{100}{subsubsection.2.2.7.2}}
+\newlabel{sec:Manifold_Learning_Discussion_Relations}{{2.2.7.2}{100}{Relations}{subsubsection.2.2.7.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.7.3}Strengths and Weaknesses}{100}{subsubsection.2.2.7.3}}
+\newlabel{sec:Manifold_Learning_Discussion_Comp_Strengths}{{2.2.7.3}{100}{Strengths and Weaknesses}{subsubsection.2.2.7.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{100}{section.2.3}}
 \newlabel{sec:weakly_sup_dim_reduction}{{2.3}{100}{Weakly Supervised Manifold Learning and Dimensionality Reduction}{section.2.3}{}}
 \citation{Sun2010MIDR}
 \citation{Chao2019RecentAdvancesSupervisedDimRed,Vural2018StudySupervisedManifoldLearning}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}MIDR}{101}{subsection.2.3.1}}
-\newlabel{sec:MIDR}{{2.3.1}{101}{MIDR}{subsection.2.3.1}{}}
-\citation{Zhu2018MIDRSparsity}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}MIDR}{102}{subsection.2.3.1}}
+\newlabel{sec:MIDR}{{2.3.1}{102}{MIDR}{subsection.2.3.1}{}}
 \newlabel{eq:MIDR_orig_objective}{{{2-111}}{102}{MIDR}{equation.2.3.111}{}}
-\newlabel{eq:MIDR_instance_objective}{{{2-113}}{102}{MIDR}{equation.2.3.113}{}}
+\citation{Zhu2018MIDRSparsity}
 \citation{Sun2010MIDR}
 \citation{Zhu2018MIDRSparsity}
+\newlabel{eq:MIDR_instance_objective}{{{2-113}}{103}{MIDR}{equation.2.3.113}{}}
 \newlabel{eq:MIDR_objective}{{{2-114}}{103}{MIDR}{equation.2.3.114}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces MIDR\relax }}{103}{algorithm.3}}
-\newlabel{alg:MIDR}{{3}{103}{MIDR\relax }{algorithm.3}{}}
 \citation{Ping2010MILDRMaxMargin}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces MIDR\relax }}{104}{algorithm.3}}
+\newlabel{alg:MIDR}{{3}{104}{MIDR\relax }{algorithm.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}MidLABS}{104}{subsection.2.3.2}}
 \newlabel{sec:MidLABS}{{2.3.2}{104}{MidLABS}{subsection.2.3.2}{}}
 \citation{Latham2015MIFeatureRankingThesis}
 \citation{Chai2014MIDA}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces MidLABS\relax }}{105}{algorithm.4}}
-\newlabel{alg:MidLABS}{{4}{105}{MidLABS\relax }{algorithm.4}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces MidLABS\relax }}{106}{algorithm.4}}
+\newlabel{alg:MidLABS}{{4}{106}{MidLABS\relax }{algorithm.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}MIDA}{106}{subsection.2.3.3}}
+\newlabel{sec:MIDA}{{2.3.3}{106}{MIDA}{subsection.2.3.3}{}}
 \citation{Kim2010LocalDRMIL}
 \citation{Latham2015MIFeatureRankingThesis}
 \citation{Chai2014MIDA}
 \citation{Latham2015MIFeatureRankingThesis}
 \citation{Chai2014MIDA}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}MIDA}{106}{subsection.2.3.3}}
-\newlabel{sec:MIDA}{{2.3.3}{106}{MIDA}{subsection.2.3.3}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Initialization of MIDA\relax }}{106}{algorithm.5}}
-\newlabel{alg:MIDA_init}{{5}{106}{Initialization of MIDA\relax }{algorithm.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}CLFDA}{106}{subsection.2.3.4}}
-\newlabel{sec:CLFDA}{{2.3.4}{106}{CLFDA}{subsection.2.3.4}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Initialization of MIDA\relax }}{107}{algorithm.5}}
+\newlabel{alg:MIDA_init}{{5}{107}{Initialization of MIDA\relax }{algorithm.5}{}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {6}{\ignorespaces Projection vector calculation process of MIDA\relax }}{107}{algorithm.6}}
 \newlabel{alg:MIDA_opt}{{6}{107}{Projection vector calculation process of MIDA\relax }{algorithm.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}CLFDA}{107}{subsection.2.3.4}}
+\newlabel{sec:CLFDA}{{2.3.4}{107}{CLFDA}{subsection.2.3.4}{}}
 \citation{Latham2015MIFeatureRankingThesis}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{108}{subsection.2.3.5}}
-\newlabel{sec:MIFEAR}{{2.3.5}{108}{MI-FEAR}{subsection.2.3.5}{}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {7}{\ignorespaces CLFDA\relax }}{109}{algorithm.7}}
 \newlabel{alg:CLFDA}{{7}{109}{CLFDA\relax }{algorithm.7}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {8}{\ignorespaces MI-FEAR\relax }}{109}{algorithm.8}}
-\newlabel{alg:MIFEAR}{{8}{109}{MI-FEAR\relax }{algorithm.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{109}{subsection.2.3.5}}
+\newlabel{sec:MIFEAR}{{2.3.5}{109}{MI-FEAR}{subsection.2.3.5}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {8}{\ignorespaces MI-FEAR\relax }}{110}{algorithm.8}}
+\newlabel{alg:MIFEAR}{{8}{110}{MI-FEAR\relax }{algorithm.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{110}{subsection.2.3.6}}
 \gdef \LT@iv {\LT@entry 
     {1}{68.9055pt}\LT@entry 
     {1}{182.71652pt}\LT@entry 
     {1}{68.9055pt}\LT@entry 
     {1}{97.35826pt}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{110}{subsection.2.3.6}}
-\@writefile{lot}{\contentsline {table}{\numberline {{2-2}}{\ignorespaces Summary of multiple instance dimensionality reduction approaches.\relax }}{110}{table.2.2}}
-\newlabel{tab:MIDRComparison}{{{2-2}}{110}{Summary of multiple instance dimensionality reduction approaches.\relax }{table.2.2}{}}
 \citation{Wu2015MILImageManifoldThesis}
 \citation{Gaur2017MILSemanticObjectCorrespondence}
+\@writefile{lot}{\contentsline {table}{\numberline {{2-2}}{\ignorespaces Summary of multiple instance dimensionality reduction approaches.\relax }}{111}{table.2.2}}
+\newlabel{tab:MIDRComparison}{{{2-2}}{111}{Summary of multiple instance dimensionality reduction approaches.\relax }{table.2.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{111}{subsection.2.3.7}}
 \citation{Thorstensen2009ManifoldThesis}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Metric Embedding}{112}{section.2.4}}
-\newlabel{sec:MetricEmedding}{{2.4}{112}{Metric Embedding}{section.2.4}{}}
 \citation{Hermans2017DefenseTripletLoss}
 \citation{Hermans2017DefenseTripletLoss}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Metric Embedding}{113}{section.2.4}}
+\newlabel{sec:MetricEmedding}{{2.4}{113}{Metric Embedding}{section.2.4}{}}
 \citation{Sohn2016NPairLoss}
 \citation{Koch2015SiameseNetworks}
 \citation{Schroff2015FaceNet}
-\citation{Sohn2016NPairLoss,Koch2015SiameseNetworks}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{114}{subsection.2.4.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1.1}Contrastive Loss}{114}{subsubsection.2.4.1.1}}
-\newlabel{eq:contrastive_loss}{{{2-122}}{114}{Contrastive Loss}{equation.2.4.122}{}}
+\citation{Sohn2016NPairLoss,Koch2015SiameseNetworks}
 \citation{Hermans2017DefenseTripletLoss,Schroff2015FaceNet,Deng2019ArcFaceAngularMarginLoss}
 \citation{Sohn2016NPairLoss}
-\@writefile{lof}{\contentsline {figure}{\numberline {{2-11}}{\ignorespaces Pairwise Loss}}{115}{figure.caption.53}}
-\newlabel{fig:contrastive_loss}{{{2-11}}{115}{Pairwise Loss}{figure.caption.53}{}}
+\newlabel{eq:contrastive_loss}{{{2-122}}{115}{Contrastive Loss}{equation.2.4.122}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{115}{subsubsection.2.4.1.2}}
 \citation{Hermans2017DefenseTripletLoss}
 \citation{Schroff2015FaceNet}
+\@writefile{lof}{\contentsline {figure}{\numberline {{2-11}}{\ignorespaces Pairwise Loss}}{116}{figure.caption.50}}
+\newlabel{fig:contrastive_loss}{{{2-11}}{116}{Pairwise Loss}{figure.caption.50}{}}
 \newlabel{eq:triplet_loss}{{{2-123}}{116}{Triplet Loss}{equation.2.4.123}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {{2-12}}{\ignorespaces Triplet Loss}}{116}{figure.caption.54}}
-\newlabel{fig:triplet_loss}{{{2-12}}{116}{Triplet Loss}{figure.caption.54}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {{2-12}}{\ignorespaces Triplet Loss}}{116}{figure.caption.51}}
+\newlabel{fig:triplet_loss}{{{2-12}}{116}{Triplet Loss}{figure.caption.51}{}}
 \citation{Sohn2016NPairLoss}
 \citation{Deng2019ArcFaceAngularMarginLoss}
 \citation{Xu2014LargeMarginWeaklySupervisedDR}
 \citation{Weinberger2009LMNN}
 \citation{Hermans2017DefenseTripletLoss}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Large-Margin K-Nearest Neighbors (LMNN)}{117}{subsection.2.4.2}}
-\newlabel{eq:lmnn_pull}{{{2-125}}{117}{Large-Margin K-Nearest Neighbors (LMNN)}{equation.2.4.125}{}}
-\newlabel{eq:lmnn_push}{{{2-126}}{117}{Large-Margin K-Nearest Neighbors (LMNN)}{equation.2.4.126}{}}
 \citation{Bromley1993SiameseNetworks}
 \citation{Koch2015SiameseNetworks,Koch2015SiameseNetworksThesis}
 \citation{Koch2015SiameseNetworks}
 \citation{Hoffer2015DeepMetricLearning}
-\@writefile{lof}{\contentsline {figure}{\numberline {{2-13}}{\ignorespaces Large Margin $k$-NN}}{118}{figure.caption.55}}
-\newlabel{fig:lmnn}{{{2-13}}{118}{Large Margin $k$-NN}{figure.caption.55}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{118}{subsection.2.4.3}}
+\newlabel{eq:lmnn_pull}{{{2-125}}{118}{Large-Margin K-Nearest Neighbors (LMNN)}{equation.2.4.125}{}}
+\newlabel{eq:lmnn_push}{{{2-126}}{118}{Large-Margin K-Nearest Neighbors (LMNN)}{equation.2.4.126}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {{2-13}}{\ignorespaces Large Margin $k$-NN}}{118}{figure.caption.52}}
+\newlabel{fig:lmnn}{{{2-13}}{118}{Large Margin $k$-NN}{figure.caption.52}{}}
 \citation{Chen2020ContrastiveLearning,Schroff2015FaceNet,Koch2015SiameseNetworks}
-\newlabel{fig:siamese_networks_conrastive}{{{2-14}a}{119}{Siamese network structured from contrastive loss.\relax }{figure.caption.56}{}}
-\newlabel{sub@fig:siamese_networks_conrastive}{{a}{119}{Siamese network structured from contrastive loss.\relax }{figure.caption.56}{}}
-\newlabel{fig:siamese_networks_triplet}{{{2-14}b}{119}{Siamese network structured from triplet loss.\relax }{figure.caption.56}{}}
-\newlabel{sub@fig:siamese_networks_triplet}{{b}{119}{Siamese network structured from triplet loss.\relax }{figure.caption.56}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {{2-14}}{\ignorespaces Siamese Neural Networks}}{119}{figure.caption.56}}
-\newlabel{fig:siamese_networks}{{{2-14}}{119}{Siamese Neural Networks}{figure.caption.56}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{119}{subsection.2.4.3}}
 \citation{Chen2020ContrastiveLearning}
 \citation{Hoffer2015DeepMetricLearning}
 \citation{Koch2015SiameseNetworks}
 \citation{Chen2020ContrastiveLearning}
 \citation{Hoffer2015DeepMetricLearning}
 \citation{Schroff2015FaceNet}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}FaceNet}{120}{subsection.2.4.4}}
+\newlabel{fig:siamese_networks_conrastive}{{{2-14}a}{120}{Siamese network structured from contrastive loss.\relax }{figure.caption.53}{}}
+\newlabel{sub@fig:siamese_networks_conrastive}{{a}{120}{Siamese network structured from contrastive loss.\relax }{figure.caption.53}{}}
+\newlabel{fig:siamese_networks_triplet}{{{2-14}b}{120}{Siamese network structured from triplet loss.\relax }{figure.caption.53}{}}
+\newlabel{sub@fig:siamese_networks_triplet}{{b}{120}{Siamese network structured from triplet loss.\relax }{figure.caption.53}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {{2-14}}{\ignorespaces Siamese Neural Networks}}{120}{figure.caption.53}}
+\newlabel{fig:siamese_networks}{{{2-14}}{120}{Siamese Neural Networks}{figure.caption.53}{}}
 \citation{Hoffer2015DeepMetricLearning}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}FaceNet}{121}{subsection.2.4.4}}
 \@setckpt{Chapters/ch_LitReview}{
 \setcounter{page}{122}
 \setcounter{equation}{127}

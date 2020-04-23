@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: MainFile.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: MainFile.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: Chapters/acknowledgements.aux
 A level-1 auxiliary file: Chapters/TOC.aux
@@ -13,7 +11,6 @@ A level-1 auxiliary file: Chapters/ch_TechApproach.aux
 A level-1 auxiliary file: Chapters/ch_ExperimentalDesign.aux
 A level-1 auxiliary file: Chapters/ch_PreliminaryWork.aux
 A level-1 auxiliary file: Chapters/ch_FutureTasks.aux
-Reallocated field_info (elt_size=4) to 10600 items from 5000.
 Database file #1: BibFiles/references.bib
 I was expecting a `,' or a `}'---line 53 of file BibFiles/references.bib
  :  
@@ -81,45 +78,4 @@ Warning--empty booktitle in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty year in Xu2011MI_Metric_Learning
 Warning--empty publisher in Yin2007SOM
-You've used 200 entries,
-            2773 wiz_defined-function locations,
-            2028 strings with 50319 characters,
-and the built_in function-call counts, 102452 in all, are:
-= -- 9481
-> -- 5862
-< -- 157
-+ -- 1968
-- -- 1767
-* -- 8361
-:= -- 15519
-add.period$ -- 817
-call.type$ -- 200
-change.case$ -- 1158
-chr.to.int$ -- 199
-cite$ -- 432
-duplicate$ -- 4725
-empty$ -- 8012
-format.name$ -- 2082
-if$ -- 21983
-int.to.chr$ -- 2
-int.to.str$ -- 1
-missing$ -- 185
-newline$ -- 1193
-num.names$ -- 824
-pop$ -- 2213
-preamble$ -- 1
-purify$ -- 972
-quote$ -- 0
-skip$ -- 3786
-stack$ -- 0
-substring$ -- 3590
-swap$ -- 891
-text.length$ -- 67
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 2140
-warning$ -- 31
-while$ -- 825
-width$ -- 0
-write$ -- 3008
 (There were 6 error messages)

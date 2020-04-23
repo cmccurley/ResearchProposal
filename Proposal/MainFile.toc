@@ -66,9 +66,6 @@
 \contentsline {subsubsection}{\numberline {2.2.4.4}Elastic Maps and Nets}{83}{subsubsection.2.2.4.4}
 \contentsline {subsection}{\numberline {2.2.5}Probabilistic Latent Variable Models (LVM)}{85}{subsection.2.2.5}
 \contentsline {subsubsection}{\numberline {2.2.5.1}Factor Analysis (FA) and Probabilistic PCA (PPCA)}{85}{subsubsection.2.2.5.1}
-\contentsline {paragraph}{Supervised PCA}{87}{section*.50}
-\contentsline {subparagraph}{Supervised PCA (Latent Factor Regression)}{87}{section*.51}
-\contentsline {subparagraph}{Discriminative Supervised PCA}{87}{section*.52}
 \contentsline {subsubsection}{\numberline {2.2.5.2}Generative Topographic Mapping (GTM)}{87}{subsubsection.2.2.5.2}
 \contentsline {subsubsection}{\numberline {2.2.5.3}Manifold Charting}{89}{subsubsection.2.2.5.3}
 \contentsline {subsection}{\numberline {2.2.6}High-Dimensional Data Visualization}{90}{subsection.2.2.6}
@@ -80,20 +77,20 @@
 \contentsline {subsubsection}{\numberline {2.2.7.2}Relations}{100}{subsubsection.2.2.7.2}
 \contentsline {subsubsection}{\numberline {2.2.7.3}Strengths and Weaknesses}{100}{subsubsection.2.2.7.3}
 \contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{100}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}MIDR}{101}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}MIDR}{102}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}MidLABS}{104}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}MIDA}{106}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}CLFDA}{106}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{108}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.4}CLFDA}{107}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{109}{subsection.2.3.5}
 \contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{110}{subsection.2.3.6}
 \contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{111}{subsection.2.3.7}
-\contentsline {section}{\numberline {2.4}Metric Embedding}{112}{section.2.4}
+\contentsline {section}{\numberline {2.4}Metric Embedding}{113}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{114}{subsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.1.1}Contrastive Loss}{114}{subsubsection.2.4.1.1}
 \contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{115}{subsubsection.2.4.1.2}
 \contentsline {subsection}{\numberline {2.4.2}Large-Margin K-Nearest Neighbors (LMNN)}{117}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{118}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}FaceNet}{120}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{119}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}FaceNet}{121}{subsection.2.4.4}
 \contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{122}{chapter.3}
 \contentsline {section}{\numberline {3.1}Preliminary Work}{122}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}S-LE Algorithm Description}{123}{subsection.3.1.1}
@@ -116,9 +113,9 @@
 \contentsline {subsubsection}{\numberline {4.0.3.2}CNN Features}{134}{subsubsection.4.0.3.2}
 \contentsline {subsection}{\numberline {4.0.4}Algorithm Parameters}{135}{subsection.4.0.4}
 \contentsline {subsection}{\numberline {4.0.5}Training and Testing Procedures}{136}{subsection.4.0.5}
-\contentsline {paragraph}{Training}{136}{section*.62}
-\contentsline {paragraph}{Out-of-Sample Testing}{136}{section*.63}
-\contentsline {paragraph}{Evaluation Metrics}{137}{section*.64}
+\contentsline {paragraph}{Training}{136}{section*.59}
+\contentsline {paragraph}{Out-of-Sample Testing}{136}{section*.60}
+\contentsline {paragraph}{Evaluation Metrics}{137}{section*.61}
 \contentsline {chapter}{\numberline {5}\uppercase {Preliminary Results}}{138}{chapter.5}
 \contentsline {chapter}{\numberline {6}\uppercase {Future Tasks}}{139}{chapter.6}
 \contentsline {subsection}{\numberline {6.0.1}Overview of Tasks:}{139}{subsection.6.0.1}

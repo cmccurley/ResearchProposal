@@ -958,7 +958,7 @@ Probabilistic methods provide two possible modeling paradigms for inferring late
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Factor Analysis (FA) and Probabilistic PCA (PPCA)} \label{sec:FA_and_PPCA}
 
-\textit{Factor Analysis} (FA) is a special case of a directed latent variable model that assumes the distribution of high-dimensional random variables is induced by a generalized linear mapping of the latent random variables \citep{Murphy2012, Tipping1999PPCA}.  A common assumption is that the high-dimensional data are Gaussian distributed and the the conditional likelihood is given as
+\textit{Factor Analysis} (FA) is a special case of a directed latent variable model that assumes the distribution of high-dimensional random variables is induced by a generalized linear mapping of the latent random variables \citep{Murphy2012, Tipping1999PPCA, Rish2008SupDimRedGLM, Gonen2013BayesianSupDimRed}.  A common assumption is that the high-dimensional data are Gaussian distributed and the the conditional likelihood is given as
 \begin{align} \label{eq:FA_likelihood}
 	p(\bm{x}|\bm{z},\bm{\theta}) = \mathcal{N}(\bm{W}\bm{z} + \bm{\mu}, \bm{\Psi})
 \end{align}
@@ -986,27 +986,20 @@ While the typical approach for fitting PCA is to use eigen-decomposition or Sing
 \noindent
 The projections onto the discovered principal axes, however, may not be optimal in the mean-squared sense because they will not be orthogonal.
 
-By using Gaussian Processes, PPCA may also be extended to learn nonlinear mappings between the input and latent feature spaces \citep{VanDerMaaten2009DRReview}.
-
-\paragraph{Supervised PCA}
-
-Supervision has also been applied to PCA.  Two such examples, Supervised PCA and Discriminative Supervised PCA, were provided by Murphy in \citep{Murphy2012}.  The two are briefly described. 
-
-\subparagraph{Supervised PCA (Latent Factor Regression)}
-\textit{Supervised PCA} or \textit{Bayesian factor regression} is a model like PCA, except that the target variable (or label), $l_n$ is taken into account when learning the low-dimensional embedding.  For the case of binary classification, the Bayesian model can be decomposed into the following elements:
+\citep{Murphy2012} showed examples on how supervision has been applied to PCA.  \textit{Supervised PCA} or \textit{Bayesian factor regression} is a model like PCA, except that the target variable (or label), $l_n$ is taken into account when learning the low-dimensional embedding.  For the case of binary classification, the Bayesian model can be decomposed into the following elements:
 \begin{align}
-	p(\bm{z}_n) = \mathcal{N}(0,\bm{I}_d)
+	p(\bm{z}_n) = \mathcal{N}(0,\mathbb{I}_d)
 \end{align}
 \begin{align}
 	p(l_n|\bm{z}_n) = \text{Ber}(\text{sigm}(\bm{w}^{T}_{l}\bm{z}_n))
 \end{align}
 \begin{align}
-	p(\bm{x}_n|\bm{z}_n) = \mathcal{N}(\bm{W}_{x}\bm{z}_{n} + \bm{\mu}_{x}, \sigma^{2}\bm{I}_D)
+	p(\bm{x}_n|\bm{z}_n) = \mathcal{N}(\bm{W}_{x}\bm{z}_{n} + \bm{\mu}_{x}, \beta\mathbb{I}_D)
 \end{align}
+\noindent
+where the distribution of a label given a latent sample is defined by a Bernoulli distribution.  By placing weighting terms on the components of the likelihood function, Supervised PCA can become discriminative.  
 
-\subparagraph{Discriminative Supervised PCA} 
-
-
+Moreover, Gaussian Processes (GPs) have been used to learn nonlinear mappings between the input and latent feature spaces \citep{VanDerMaaten2009DRReview, Lawrence2005PPCAGPLVModels}, effectively creating nonlinear PPCA.  A supervised GP latent factor models for dimensionality reduction was proposed by \citep{Gao2011SupGPLVMDimRed}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  GTM  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1165,9 +1158,10 @@ Experiments by \citep{McInnes2018UMAP} showed that UMAP was both faster than t-S
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Discussion  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Discussion}
+\subsection{Discussion} \label{sec:Manifold_Learning_Discussion}
+This section provides discussion on the unsupervised manifold learning methods reviewed.  Specifically, Section \ref{sec:Manifold_Learning_Discussion_Comp_Table} provides a table summarizing each of the aforementioned manifold learning approaches.  Section \ref{sec:Manifold_Learning_Discussion_Relations} discusses relationships between each of the methods while Section \ref{sec:Manifold_Learning_Discussion_Comp_Strengths} elaborates on individual strengths and weaknesses.
 
-\subsubsection{Overview of Unsupervised Manifold Learning Methods}
+\subsubsection{Overview of Unsupervised Manifold Learning Methods} \label{sec:Manifold_Learning_Discussion_Comp_Table}
 
 \begin{longtable}{ |p{0.25\textwidth}|p{0.6\textwidth}|p{0.08\textwidth}| } 
 	\caption{Overview of unsupervised manifold learning methods and their properties.}
@@ -1229,15 +1223,13 @@ Experiments by \citep{McInnes2018UMAP} showed that UMAP was both faster than t-S
 	\hline
 	\textbf{Method} & \textbf{Strategy} & \textbf{Intro.}\\
 	\hline
-	PPCA  & ~   & ~\\
-	\hline
-	GPLVM  & ~  & ~\\
+	PPCA  & Learns parameters of linear mapping from latent space to input space by maximizing data likelihood of a factor analysis model.  Section \ref{sec:FA_and_PPCA} & 1999\\
 	\hline
 	GTM  &  Learns a mapping from the latent space to the data space by assuming the data distribution as a constrained mixture of Gaussians.  Probabilistic alternative to the SOM. Section \ref{sec:GTM} & 1998\\
 	\hline
 	Manifold Charting  & Computes mixture of locally linear models on the data then aligns local low-dimensional models to find global coordinates. Section \ref{sec:Manifold_Charting} & 2003 \\
 	\hline
-	SNE and t-SNE  & Defines pairwise probabilities of samples being neighbors.  Minimizes the KL-divergence between high and low-dimensional data densities. Retains global and local data structure. Section \ref{sec:tSNE} & 2008 \\
+	t-SNE  & Defines pairwise probabilities of samples being neighbors.  Minimizes the KL-divergence between high and low-dimensional data densities. Retains global and local data structure. Section \ref{sec:tSNE} & 2008 \\
 	\hline
 	LargeVis  & Efficiently constructs neighborhood graph weighted by conditional probabilities of being neighbors.  Maximizes the graph likelihood in the embedding space. Preserves local distances. Section \ref{sec:LargeVis} & 2016 \\
 	\hline
@@ -1245,11 +1237,11 @@ Experiments by \citep{McInnes2018UMAP} showed that UMAP was both faster than t-S
 	\hline
 \end{longtable}
 
-\subsubsection{Relations}
+\subsubsection{Relations} \label{sec:Manifold_Learning_Discussion_Relations}
 
 Most modern manifold learners find their theoretical and algorithmic roots in one of three basic and well-known data analysis techniques: PCA, K-means and MDS \citep{Kegl2008PrincipalManifoldsTextbook}.
 
-\subsubsection{Strengths and Weaknesses}
+\subsubsection{Strengths and Weaknesses} \label{sec:Manifold_Learning_Discussion_Comp_Strengths}
 
 Are not capable of reliably learning useful, discriminative low-dimensional features from weakly-supervised data.  (Could neglect labels entirely or use bag-level labels.)
 

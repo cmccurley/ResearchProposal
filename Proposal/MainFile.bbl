@@ -1,4 +1,4 @@
-\begin{thebibliography}{200}
+\begin{thebibliography}{203}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -468,6 +468,16 @@ M.~Gao, A.~Li, R.~Yu, V.~I. Morariu, and L.~S. Davis.
 \newblock \emph{CoRR}, abs/1711.05282, 2017.
 \newblock URL \url{http://arxiv.org/abs/1711.05282}.
 
+\bibitem[{Gao} et~al.(2011){Gao}, {Wang}, {Tao}, and
+  {Li}]{Gao2011SupGPLVMDimRed}
+X.~{Gao}, X.~{Wang}, D.~{Tao}, and X.~{Li}.
+\newblock Supervised gaussian process latent variable model for dimensionality
+  reduction.
+\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part B
+  (Cybernetics)}, 41\penalty0 (2):\penalty0 425--434, April 2011.
+\newblock ISSN 1083-4419.
+\newblock \doi{10.1109/TSMCB.2010.2057422}.
+
 \bibitem[G{\"a}rtner et~al.(2002)G{\"a}rtner, Flach, Kowalczyk, and
   Smola]{Gartner2002MIKernels}
 Thomas G{\"a}rtner, Peter~A. Flach, Adam Kowalczyk, and Alexander~J. Smola.
@@ -506,6 +516,14 @@ Nicolas Gillis.
 T.~Glenn, A.~Zare, P.~Gader, and D.~Dranishnikov.
 \newblock Bullwinkle: Scoring code for sub-pixel targets.
 \newblock URL \url{https://github.com/GatorSense/MUUFLGulfport/}.
+
+\bibitem[{Gönen}(2013)]{Gonen2013BayesianSupDimRed}
+M.~{Gönen}.
+\newblock Bayesian supervised dimensionality reduction.
+\newblock \emph{IEEE Transactions on Cybernetics}, 43\penalty0 (6):\penalty0
+  2179--2189, Dec 2013.
+\newblock ISSN 2168-2267.
+\newblock \doi{10.1109/TCYB.2013.2245321}.
 
 \bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and
   Courville]{Goodfellow2016DeepLearning}
@@ -702,6 +720,14 @@ A.~C. Latham.
 \newblock Multiple-instance feature ranking.
 \newblock Master's thesis, Case Western Reserve University, Cleveland, OH,
   August 2015.
+
+\bibitem[Lawrence(2005)]{Lawrence2005PPCAGPLVModels}
+N.~Lawrence.
+\newblock Probabilistic non-linear principal component analysis with gaussian
+  process latent variable models.
+\newblock \emph{J. Mach. Learn. Res.}, 6:\penalty0 1783--1816, dec 2005.
+\newblock ISSN 1532-4435.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=1046920.1194904}.
 
 \bibitem[Leistner et~al.(2010)Leistner, Saffari, and
   Bischof]{Leistner2010MIForests}
