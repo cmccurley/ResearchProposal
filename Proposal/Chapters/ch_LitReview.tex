@@ -947,10 +947,16 @@ Unlike the SOM, but similarly to the GNG, elastic nets can add or delete neurons
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Latent Variable Models %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Latent Variable Models} \label{sec:LVM}
-While many manifold learning and dimensionality reduction models are regarded as defining a projection from a $D$- dimensional feature space into a lower $d$-dimensional space, a latent variable model is defined by a mapping \textit{from} the latent space \textit{into} the high-dimensional data space \citep{Bishop1998GTM}.
+\subsection{Probabilistic Latent Variable Models (LVM)} \label{sec:LVM}
+The probabilistic interpretation of latent feature learning can be formulated as attempting to discover the generating distribution for the low-dimensional factors of variation (latent random variables) that describe a distribution over the observed, high-dimensional data \citep{Bengio2014RepLearningReview,Murphy2012}.
+While many manifold learning and dimensionality reduction models are regarded as defining a projection from a $D$- dimensional feature space into a lower $d$-dimensional space, a latent variable model is defined by a mapping \textit{from} the latent space \textit{into} the high-dimensional data space \citep{Bishop1998GTM}.  The goal of latent variable models in terms of low-dimensional feature learning is to discover the parameters of an invertible mapping from the latent generating distribution to the high-dimensional data distribution which maximized the likelihood of the data.  
+
+Probabilistic methods provide two possible modeling paradigms for inferring latent variables, directed and undirected graphical models, which differ in their parameterizations of the joint distribution $p(\bm{x}_{n},\bm{z}_{n})$.  The remainder of this section focuses on directed graphical models, and specifically, on a particular formulation called \textit{Factor Analysis}.
 
 \subsubsection{Factor Analysis (FA) and Probabilistic PCA (PPCA)} \label{sec:FA_and_PPCA}
+
+
+Essentially, $p(\bm{x}_{n},\bm{z}_{n})$ defines a probabilistic model over the joint space of the latent variables, $\bm{z}_{n}$, and the observed data $\bm{x}_{n}$.  \textit{Directed latent factor models} separately parameterize the conditional data likelihood $p(\bm{x}_{n}|\bm{z}_{n}, \bm{\theta})$ and the prior $p(\bm{z}_{n})$ to construct the joint distribution, $p(\bm{x}_{n},\bm{z}_{n}) = p(\bm{x}_{n}|\bm{z}_{n}, \bm{\theta})p(\bm{z}_{n})$.
 
 
 PCA can also be analyzed from the viewpoint of factor analysis (FA), which is discussed later in this literature review.  The basic idea, however, is that data observations $\bm{x}_{n} \in \mathbb{R}^{D}$ are realizations of a probability distribution with a prior on the lower-dimensional latent variable $\bm{w}_n \in \mathbb{R}^{d}$.  A typical choice on this model is a Gaussian-Gaussian conjugate prior pair where the mean of the data likelihood is a linear function of the latent inputs.  As an example, the prior over the hidden data representations can be expressed as Gaussian distribution
@@ -1042,7 +1048,11 @@ Manifold charting has been shown to be more robust to noise than alternative app
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  t-SNE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Stochastic Neighbor Embedding (SNE and t-SNE)} \label{sec:tSNE}
+\subsection{High-Dimensional Data Visualization} \label{sec:High_Dim_Data_Visualization}
+While not directly related to classification, it is important for the reader to be aware of the current SOA in manifold learning.  At the time this document was written, much work was being performed in dimensionality reduction for the visualization of extremely large datasets consisting of hundreds (or thousands) of features.   Specifically, the remainder of this section discusses three related, SOA approaches for data visualization.  t-SNE, LargeVis and UMAP are compared in terms of their differences in use of manifold learning for the visualization of large, high-dimensional datasets.
+
+
+\subsubsection{Stochastic Neighbor Embedding (SNE and t-SNE)} \label{sec:tSNE}
 \textit{t-Distributed Stochastic Neighbor Embedding} was proposed by \citep{VanDerMaaten2008tSNE} as an extension to SNE,  which was developed by Hinton and Roweis in 2006.  SNE is intended as a visualization tool for high dimensional datasets.  Essentially, SNE finds low-dimensional data coordinates by defining pairwise probabilities between all samples in the input data space.  It then assumes that the low-dimensional embedding coordinates should be distributed according to the same conditional probabilities.  SNE begins by defining conditional probabilities between all points in the training set which measure their likelihood of being spatial neighbors.  Given a datapoint $\bm{x}_{n}$, the probability of selecting another point $\bm{x}_{m}$ as its neighbor is given as
 \begin{align} \label{eq:SNE_high_dim_data_probs}
 	p_{m|n} = \frac{\exp(-||\bm{x}_{n} - \bm{x}_{m}  ||^{2}/2 \beta_{n})}{\sum_{o \neq p}\exp(-||\bm{x}_{p} - \bm{x}_{o}  ||^{2}/2 \beta_{n})}
@@ -1072,7 +1082,7 @@ Whereas many manifold learning and dimensionality reduction methods in the liter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LargeVis  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{LargeVis} \label{sec:LargeVis}
+\subsubsection{LargeVis} \label{sec:LargeVis}
 \textit{LargeVis} was proposed by \citep{Tang2016LargeVis} for visualizing large-scale and high-dimensional data in a low-dimensional space (typically 2D or 3D).  Specifically, LargeVis addresses the scaling inefficiencies exhibited by t-SNE.  LargeVis handles $k$-NN graph construction by adopting the ``a neighbor of my neighbor is my neighbor" approach.  Essentially, the algorithm builds a few random projection trees to quickly construct a nearest neighbor graph.  Because the resulting graph is likely not very accurate, a search is performed for each node in the graph and neighbors of neighbors are also considered as neighbor candidates.  Weights and edges are provided exactly as done by SNE in Equation \ref{eq:SNE_high_dim_data_probs}. Once a $k$-NN graph is constructed, a probabilistic model is used to discover the low-dimensional embedding coordinates which preserve the similarities of samples in the high-dimensional space. The likelihood of the graph is given by 
 \begin{align} \label{eq:largevis_obj}
 	\begin{split}
@@ -1089,7 +1099,7 @@ LargeVis was able to provide 2D and 3D visualizations of millions of data points
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  UMAP  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Uniform Manifold Approximation and Projection (UMAP)} \label{sec:UMAP}
+\subsubsection{Uniform Manifold Approximation and Projection (UMAP)} \label{sec:UMAP}
 Similarly to LargeVis, \textit{Uniform Manifold Approximation and Projection} (UMAP) \citep{McInnes2018UMAP} attempts to address the deficiencies exhibit by t-SNE. Specifically, t-SNE has difficulties working with high dimensional data diectly due to memory limitations and can only practically embed data into two or three dimensions \citep{Tang2016LargeVis}. UMAP uses manifold approximation and local fuzzy simplicial set representations to construct a topological representation of the high dimensional data.  The layout of data in the low dimensional space is then optimized to minimize the error between the two topological representations.  While UMAP may appear wildly different from t-SNE at first glance, there are actually only a few key differences which make it more computationally efficient and scalable. 
 
 As with t-SNE (Section \ref{sec:tSNE}) and LargeVis (Section \ref{sec:LargeVis}), UMAP can be described in two phases.  A weighted nearest neighbor graph is constructed in the first phase and a mimetic, low-dimensional representation is computed in the second.  The differences between t-SNE, LargeVis and UMAP amount to the specific details on how the neighborhood graphs are constructed and how the low-dimensional embeddings are computed.
