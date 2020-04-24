@@ -1158,13 +1158,13 @@ Experiments by \citep{McInnes2018UMAP} showed that UMAP was both faster than t-S
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Discussion  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Discussion} \label{sec:Manifold_Learning_Discussion}
-This section provides discussion on the unsupervised manifold learning methods reviewed.  Specifically, Section \ref{sec:Manifold_Learning_Discussion_Comp_Table} provides a table summarizing each of the aforementioned manifold learning approaches.  Section \ref{sec:Manifold_Learning_Discussion_Relations} follows and discusses relationships between each of the methods, elaborating on individual strengths and weaknesses.
+\subsection{Summary of Manifold Learning Algorithms} \label{sec:Manifold_Learning_Discussion}
 
-\subsubsection{Overview of Unsupervised Manifold Learning Methods} \label{sec:Manifold_Learning_Discussion_Comp_Table}
+This literature review discusses a myriad of manifold learning techniques rooted in a variety of fundamental approaches.  However, this review barely scratches the surface of proposed techniques.  With such an expansive corpus of methods, it is often difficult to distinguish which approaches are ``best" for any given application.  This is, of course, application dependent and the optimal features for data visualization are likely very different from those for classification.  However, each method reviewed demonstrates a unique approach toward learning which brings its own strengths and weaknesses.  Table \ref{tab:Manifold_Learning_Comparison_Table} provides the fundamental strategies used by the manifold learning algorithms reviewed in this chapter, ranging from classic to SOA approaches.  While manifold learning techniques are inherently unsupervised, this review showed that many supervised and semi-supervised methods have been developed from base algorithms. However, the current state of the literature is greatly lacking in manifold learning and dimensionality reduction approaches designed for classification which can effectively address label uncertainty.  \textit{In fact, none of the methods reviewed in Section \ref{sec:Manifold_Learning} are inherently capable of reliably learning useful, discriminative low-dimensional features from weakly-supervised data.}  Section \ref{sec:weakly_sup_dim_reduction} discusses dimensionality reduction and manifold learning methods designed specifically for discrimination under the weak learning paradigm.
+
 
 \begin{longtable}{ |p{0.25\textwidth}|p{0.6\textwidth}|p{0.08\textwidth}| } 
-	\caption{Overview of unsupervised manifold learning methods and their properties.}
+	\caption{Overview of manifold learning methods and their properties.}
 	\label{tab:Manifold_Learning_Comparison_Table}\\
 	\hline
 	\multicolumn{3}{|c|}{\textbf{Overview of Unsupervised Manifold Learning}} \\
@@ -1237,14 +1237,6 @@ This section provides discussion on the unsupervised manifold learning methods r
 	\hline
 \end{longtable}
 
-\subsubsection{Relations, Strengths and Weaknesses} \label{sec:Manifold_Learning_Discussion_Relations}
-This literature review discusses a myriad of manifold learning techniques rooted in a variety of fundamental approaches.  However, this review barely scratches the surface of proposed techniques.  With such an expansive corpus of methods, it is often difficult to distinguish which approaches are ``best" for any given application.  This is, of course, application dependent and the optimal features for data visualization are likely very different from those for classification.  However, many similarities are shared among the algorithms, including potential strengths and weaknesses.  These are elaborated on in the following.
-
-
-Most modern manifold learners find their theoretical and algorithmic roots in one of three basic and well-known data analysis techniques: PCA, K-means and MDS \citep{Kegl2008PrincipalManifoldsTextbook}.
-
-
-One thing is shared among every method reviewed.  \textit{Specifically, none of the methods reviewed in Section \ref{sec:Manifold_Learning} are inherently capable of reliably learning useful, discriminative low-dimensional features from weakly-supervised data.}  Section \ref{sec:weakly_sup_dim_reduction} discusses dimensionality reduction and manifold learning methods designed specifically for discrimination under the weak learning paradigm.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Weakly Supervised Manifold Learning  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
