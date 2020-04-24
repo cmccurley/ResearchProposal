@@ -73,20 +73,20 @@
 \contentsline {subsubsection}{\numberline {2.2.6.2}LargeVis}{92}{subsubsection.2.2.6.2}
 \contentsline {subsubsection}{\numberline {2.2.6.3}Uniform Manifold Approximation and Projection (UMAP)}{94}{subsubsection.2.2.6.3}
 \contentsline {subsection}{\numberline {2.2.7}Summary of Manifold Learning Algorithms}{97}{subsection.2.2.7}
-\contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{100}{section.2.3}
+\contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{101}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}MIDR}{102}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}MidLABS}{104}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}MIDA}{106}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}CLFDA}{107}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}MI-FEAR}{109}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{110}{subsection.2.3.6}
-\contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{111}{subsection.2.3.7}
+\contentsline {subsection}{\numberline {2.3.6}Comparison Table of MI Dimensionality Reduction Methods}{111}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}General Weak Supervision}{112}{subsection.2.3.7}
 \contentsline {section}{\numberline {2.4}Metric Embedding}{113}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Ranking Loss}{114}{subsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Contrastive Loss}{114}{subsubsection.2.4.1.1}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{115}{subsubsection.2.4.1.2}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Contrastive Loss}{115}{subsubsection.2.4.1.1}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Triplet Loss}{116}{subsubsection.2.4.1.2}
 \contentsline {subsection}{\numberline {2.4.2}Large-Margin K-Nearest Neighbors (LMNN)}{117}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{119}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.3}Siamese Neural Networks}{118}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}FaceNet}{121}{subsection.2.4.4}
 \contentsline {chapter}{\numberline {3}\uppercase {Technical Approach}}{122}{chapter.3}
 \contentsline {section}{\numberline {3.1}Preliminary Work}{122}{section.3.1}
