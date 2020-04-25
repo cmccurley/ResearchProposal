@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  25 APR 2020 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  25 APR 2020 16:47
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -647,7 +647,14 @@ a mAx-i-mum Bag
 ]) [9]
 \openout2 = `Chapters/symbols.aux'.
 
- (Chapters/symbols.tex) [10
+ (Chapters/symbols.tex
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+[]|\OT1/cmss/m/n/12 Citers, or the sam-ples which have in-stance $\OML/cmm/b/it
+/12 x[]$ \OT1/cmss/m/n/12 in their $\OML/cmm/m/it/12 C$\OT1/cmss/m/n/12 -neares
+t neigh-
+ []
+
+) [10
 
 
 
@@ -657,8 +664,7 @@ a mAx-i-mum Bag
  (Chapters/abstract.tex)
 \openout2 = `Chapters/ch_Introduction.aux'.
 
-
-(Chapters/ch_Introduction.tex
+ (Chapters/ch_Introduction.tex
 ***************************
 CHAPTER 1.
 ***************************
@@ -1438,6 +1444,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1450--1450
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1450--1450
+[]|\OT1/cmss/m/n/12 Linear,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 1452--1452
 []|\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion vec-tor
  []
@@ -1445,6 +1456,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1452--1452
 
 Underfull \hbox (badness 10000) in paragraph at lines 1452--1452
 \OT1/cmss/m/n/12 us-ing LDA de-fined from bag rep-re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1452--1452
+[]|\OT1/cmss/m/n/12 Linear,
  []
 
 
@@ -1468,6 +1484,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1454--1454
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1454--1454
+[]|\OT1/cmss/m/n/12 Linear,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 1456--1456
 []|\OT1/cmss/m/n/12 Incrementally leaves out fea-ture
  []
@@ -1484,7 +1505,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1456--1456
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1456--1456
-[]|\OT1/cmss/m/n/12 Feature
+[]|\OT1/cmss/m/n/12 Linear,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1456--1456
+\OT1/cmss/m/n/12 Fea-ture
  []
 
 [111] [112] [113]
@@ -1732,7 +1758,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 ] [133]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_p1".png, id=2658, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_p1".png, id=2665, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_p1".png Graphic file (type png)
 
@@ -1744,7 +1770,7 @@ e 20.
 (pdftex.def)             Requested size: 202.3502pt x 202.35622pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_n0".png, id=2659, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_n0".png, id=2666, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_n0".png Graphic file (type png)
 
@@ -1761,7 +1787,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 18--28
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_p_2".png, id=2660, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_p_2".png, id=2667, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_p_2".png Graphic file (type png)
 
@@ -1773,7 +1799,7 @@ ages/""data_chips/ratio1/cegr01923_0001_0_patch_p_2".png used on input line 31.
 (pdftex.def)             Requested size: 187.89977pt x 187.90244pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_n_1".png, id=2661, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_n_1".png, id=2668, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_n_1".png Graphic file (type png)
 
@@ -1808,7 +1834,7 @@ The im-age con-tain-ing the truck would
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio0
-/scope01".png, id=2662, 216.81pt x 216.3282pt>
+/scope01".png, id=2669, 216.81pt x 216.3282pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio0/scope01".png Graphic file (type png)
 
@@ -1824,7 +1850,7 @@ Overfull \hbox (18.65695pt too wide) in paragraph at lines 47--48
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_p2".png, id=2663, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_p2".png, id=2670, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_p2".png Graphic file (type png)
 
@@ -1841,7 +1867,7 @@ Overfull \hbox (18.28865pt too wide) in paragraph at lines 52--53
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio3
-/cegr01923_0001_550_patch_scope_p5".png, id=2664, 578.16pt x 578.16pt>
+/cegr01923_0001_550_patch_scope_p5".png, id=2671, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio3/cegr01923_0001_550_patch_scope_p5".png Graphic file (type png)
 
@@ -1876,7 +1902,7 @@ se size 51x121 and the right im-age is
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/hog_tr
-iplets_target_anchor".png, id=2668, 326.29366pt x 230.83253pt>
+iplets_target_anchor".png, id=2675, 326.29366pt x 230.83253pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/h
 og_triplets_target_anchor".png Graphic file (type png)
 
@@ -2376,9 +2402,9 @@ ts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MainFile.pdf (165 pages, 3988191 bytes).
+Output written on MainFile.pdf (165 pages, 3989890 bytes).
 PDF statistics:
- 3155 PDF objects out of 3580 (max. 8388607)
+ 3162 PDF objects out of 3580 (max. 8388607)
  700 named destinations out of 1000 (max. 500000)
  828 words of extra memory for PDF output out of 10000 (max. 10000000)
 
