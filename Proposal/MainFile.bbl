@@ -1,4 +1,4 @@
-\begin{thebibliography}{203}
+\begin{thebibliography}{204}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -591,6 +591,12 @@ Alexander Hermans, Lucas Beyer, and Bastian Leibe.
 \newblock In defense of the triplet loss for person re-identification.
 \newblock \emph{CoRR}, abs/1703.07737, 2017.
 \newblock URL \url{http://arxiv.org/abs/1703.07737}.
+
+\bibitem[Hinton and Roweis(2003)]{Hinton2003SNE}
+Geoffrey~E Hinton and Sam~T. Roweis.
+\newblock Stochastic neighbor embedding.
+\newblock In S.~Becker, S.~Thrun, and K.~Obermayer, editors, \emph{Advances in
+  Neural Information Processing Systems 15}, pages 857--864. MIT Press, 2003.
 
 \bibitem[Hoffer and Ailon(2015)]{Hoffer2015DeepMetricLearning}
 Elad Hoffer and Nir Ailon.
