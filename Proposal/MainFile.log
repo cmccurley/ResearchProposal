@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  25 APR 2020 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2019.4.9)  25 APR 2020 14:58
 entering extended mode
 **./MainFile.tex
 (MainFile.tex
@@ -1064,9 +1064,6 @@ File: example-image-a.png Graphic file (type png)
 Package pdftex.def Info: example-image-a.png used on input line 244.
 (pdftex.def)             Requested size: 281.40286pt x 211.06633pt.
  [43]
-
-LaTeX Warning: Reference `sec:PPCA' on page 44 undefined on input line 251.
-
 [44]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
@@ -1076,22 +1073,19 @@ Package pdftex.def Info: example-image-a.png used on input line 266.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[45] [46] [47] [48] [49] [50]
+[45] [46] [47] [48] [49] [50] [51]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 369.
+Package pdftex.def Info: example-image-a.png used on input line 370.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[51] [52]
+ [52]
 File: example-image-a.png Graphic file (type png)
- <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 384.
+
+<use example-image-a.png>
+Package pdftex.def Info: example-image-a.png used on input line 385.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
  [53] [54] [55] [56]
-Underfull \hbox (badness 6842) in paragraph at lines 508--509
+Underfull \hbox (badness 6842) in paragraph at lines 509--510
 []\OT1/cmss/m/n/12 Gram ma-trix of train-ing data $\OML/cmm/b/it/12 K \OMS/cmss
 /m/n/12 2 \U/msb/m/n/12 R[]$\OT1/cmss/m/n/12 , Gram ma-trix aug-mented with tes
 t data
@@ -1099,19 +1093,19 @@ t data
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <12> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 512.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 513.
 
 [57] [58]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 546.
+Package pdftex.def Info: example-image-a.png used on input line 547.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [59]
-Overfull \hbox (8.66458pt too wide) in paragraph at lines 556--558
+Overfull \hbox (8.66458pt too wide) in paragraph at lines 557--559
  []$\OML/cmm/b/it/12 $\OT1/cmss/bx/n/12 -Neighborhood Graph[] \OT1/cmss/m/n/12
  . An-other method for graph con-struc-tion is to use $\OML/cmm/m/it/12 $\OT1/
 cmss/m/n/12 -neighborhoods 
@@ -1120,29 +1114,29 @@ cmss/m/n/12 -neighborhoods
 [60]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 564.
+Package pdftex.def Info: example-image-a.png used on input line 565.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [61]
-Underfull \hbox (badness 10000) detected at line 580
+Underfull \hbox (badness 10000) detected at line 581
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 586
+Underfull \hbox (badness 10000) detected at line 587
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 588
+Underfull \hbox (badness 10000) detected at line 589
 [][][]
  []
 
 [62] [63] [64] [65] [66] [67]
-Overfull \hbox (38.95917pt too wide) in paragraph at lines 661--662
+Overfull \hbox (38.95917pt too wide) in paragraph at lines 662--663
 []\OT1/cmss/m/n/12 The pop-u-lar-ity of LLE has led to the de-vel-op-ment of li
 n-ear vari-ants-Donoho2003HessianEigenmaps, 
  []
@@ -1151,251 +1145,251 @@ n-ear vari-ants-Donoho2003HessianEigenmaps,
 File: example-image-a.png Graphic file (type png)
 
 <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 862.
+Package pdftex.def Info: example-image-a.png used on input line 863.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
  [80] [81] [82] [83] [84] [85]
 Missing character: There is no Ã in font cmss12!
 Missing character: There is no ¶ in font cmss12!
  [86] [87] [88] [89]
 [90] [91] [92] [93] [94] [95] [96] [97]
-Underfull \hbox (badness 10000) in paragraph at lines 1177--1177
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
 []|\OT1/cmss/m/n/12 Preserves vari-ance of data, global struc-ture. Sec-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1179--1179
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
 []|\OT1/cmss/m/n/12 Preserves pair-wise dis-tances, global struc-ture. Sec-tion
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
 []|\OT1/cmss/m/n/12 Minimizes within-class dis-tance and max-i-mizes between-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1183--1183
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1184
 []|\OT1/cmss/m/n/12 Decomposes data into low-dimensional co-or-di-nates and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1183--1183
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1184
 \OT1/cmss/m/n/12 ba-sis vec-tors, min-i-mizes ap-prox-i-ma-tion er-ror. Sec-tio
 n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1186
 []|\OT1/cmss/m/n/12 Linear vari-ant of LLE, pre-serves lo-cal neigh-bor-hoods,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1188
 []|\OT1/cmss/m/n/12 Linear vari-ant of LE, pre-serves lo-cal neigh-bor-hoods, l
 o-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1193--1193
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1194
 []|\OT1/cmss/m/n/12 Performs PCA in a fea-ture space de-fined by a ker-nel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1193--1193
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1194
 \OT1/cmss/m/n/12 func-tion, pre-serves vari-ance of data, global struc-ture.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1195
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1196
 []|\OT1/cmss/m/n/12 Learns a ker-nel func-tion to be used with KPCA that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1195
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1196
 \OT1/cmss/m/n/12 ``un-folds" the man-i-fold, pre-serves vari-ance of data, glob
 al
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1197--1197
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
 []|\OT1/cmss/m/n/12 Preserves geodesic dis-tances, global struc-ture. Sec-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1199--1199
+Underfull \hbox (badness 10000) in paragraph at lines 1200--1200
 []|\OT1/cmss/m/n/12 Preserves pair-wise dis-tances. More em-pha-sis is placed o
 n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1201
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1202
 []|\OT1/cmss/m/n/12 Preserves lo-cal neigh-bor-hoods, lo-cal struc-ture. Sec-ti
 on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1203--1203
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1204
 []|\OT1/cmss/m/n/12 Preserves lo-cal neigh-bor-hoods, lo-cal struc-ture. Sec-ti
 on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1205--1205
+Underfull \hbox (badness 10000) in paragraph at lines 1206--1206
 []|\OT1/cmss/m/n/12 Minimizes cur-va-ture of high-dimensional man-i-fold es-ti-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1207--1207
+Underfull \hbox (badness 10000) in paragraph at lines 1208--1208
 []|\OT1/cmss/m/n/12 Learns man-i-fold in lo-cal tan-gent spaces then aligns to
  []
 
 
-Overfull \hbox (3.17372pt too wide) in alignment at lines 1167--1208
+Overfull \hbox (3.17372pt too wide) in alignment at lines 1168--1209
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1215--1215
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1216
 []|\OT1/cmss/m/n/12 Neural net-work where de-sired out-put is the in-put. Net-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1215--1215
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1216
 \OT1/cmss/m/n/12 work de-creases in di-men-sion-al-ity then in-creases to in-pu
 t
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1217--1217
+Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
 []|\OT1/cmss/m/n/12 Distributes fixed lat-tice of neu-rons to cover in-put fea-
 ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1219--1219
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1220
 []|\OT1/cmss/m/n/12 Distributes lat-tice of neu-rons to cover in-put fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1219--1219
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1220
 \OT1/cmss/m/n/12 space us-ing com-pet-i-tive learn-ing. The net-work is able to
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1219--1219
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1220
 \OT1/cmss/m/n/12 add and delete neu-rons to fill the data space. Sec-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1221--1221
+Underfull \hbox (badness 10000) in paragraph at lines 1222--1222
 []|\OT1/cmss/m/n/12 Uses map of neu-rons to cover the in-put fea-ture space.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1221--1221
+Underfull \hbox (badness 10000) in paragraph at lines 1222--1222
 \OT1/cmss/m/n/12 Sim-u-lates net-work of springs and is op-ti-mized to the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1227--1227
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1228
 []|\OT1/cmss/m/n/12 Learns pa-ram-e-ters of lin-ear map-ping from la-tent space
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1227--1227
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1228
 \OT1/cmss/m/n/12 to in-put space by max-i-miz-ing data like-li-hood of a fac-to
 r
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1229
+Underfull \hbox (badness 10000) in paragraph at lines 1230--1230
 []|\OT1/cmss/m/n/12 Learns a map-ping from the la-tent space to the data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1229
+Underfull \hbox (badness 10000) in paragraph at lines 1230--1230
 \OT1/cmss/m/n/12 space by as-sum-ing the data dis-tri-bu-tion as a con-strained
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1229
+Underfull \hbox (badness 10000) in paragraph at lines 1230--1230
 \OT1/cmss/m/n/12 mix-ture of Gaus-sians. Prob-a-bilis-tic al-ter-na-tive to the
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1231--1231
+Underfull \hbox (badness 10000) in paragraph at lines 1232--1232
 []|\OT1/cmss/m/n/12 Computes mix-ture of lo-cally lin-ear mod-els on the data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1231--1231
+Underfull \hbox (badness 10000) in paragraph at lines 1232--1232
 \OT1/cmss/m/n/12 then aligns lo-cal low-dimensional mod-els to find global
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1235--1235
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1236
 []|\OT1/cmss/m/n/12 Defines pair-wise prob-a-bil-i-ties of sam-ples be-ing neig
 h-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1235--1235
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1236
 \OT1/cmss/m/n/12 bors. Min-i-mizes the KL-divergence be-tween high and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1235--1235
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1236
 \OT1/cmss/m/n/12 low-dimensional data den-si-ties. Re-tains global and lo-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1237--1237
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
 []|\OT1/cmss/m/n/12 Efficiently con-structs neigh-bor-hood graph weighted by
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1237--1237
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
 \OT1/cmss/m/n/12 con-di-tional prob-a-bil-i-ties of be-ing neigh-bors. Max-i-mi
 zes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1237--1237
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
 \OT1/cmss/m/n/12 the graph like-li-hood in the em-bed-ding space. Pre-serves
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1239--1239
+Underfull \hbox (badness 10000) in paragraph at lines 1240--1240
 []|\OT1/cmss/m/n/12 Uses fuzzy sim-pli-cial sets to de-fine lo-cally adap-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1239--1239
+Underfull \hbox (badness 10000) in paragraph at lines 1240--1240
 \OT1/cmss/m/n/12 neigh-bor-hood graph. Min-i-mizes the cross-entropy be-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1239--1239
+Underfull \hbox (badness 10000) in paragraph at lines 1240--1240
 \OT1/cmss/m/n/12 tween the high and low-dimensional sim-i-lar-ity dis-tri-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1239--1239
+Underfull \hbox (badness 10000) in paragraph at lines 1240--1240
 \OT1/cmss/m/n/12 bu-tions. Pre-serves global and lo-cal struc-ture. Sec-tion
  []
 
 
-Overfull \hbox (3.17372pt too wide) in alignment at lines 1208--1241
+Overfull \hbox (3.17372pt too wide) in alignment at lines 1209--1242
  [] [] [] 
  []
 
 [98] [99] [100] [101] [102] [103] [104] [105] [106] [107]
-Underfull \hbox (badness 3049) in paragraph at lines 1374--1375
+Underfull \hbox (badness 3049) in paragraph at lines 1375--1376
 []\OT1/cmss/m/n/12 Multiple-instance dataset $\OMS/cmss/m/n/12 f\OML/cmm/b/it/1
 2 B[]\OML/cmm/m/it/12 ; [] ; \OML/cmm/b/it/12 B[]\OMS/cmss/m/n/12 g$\OT1/cmss/m
 /n/12 , $\OMS/cmss/m/n/12 f\OML/cmm/m/it/12 L[]; [] ; L[]\OMS/cmss/m/n/12 g$\OT
@@ -1405,106 +1399,101 @@ l-ized
  []
 
 [108] [109] [110]
-Underfull \hbox (badness 10000) in paragraph at lines 1451--1451
+Underfull \hbox (badness 10000) in paragraph at lines 1452--1452
 []|\OT1/cmss/bx/n/12 Reduction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1451--1452
+Underfull \hbox (badness 10000) in paragraph at lines 1452--1453
 []|\OT1/cmss/bx/n/12 Classification
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
+Underfull \hbox (badness 10000) in paragraph at lines 1454--1454
 []|\OT1/cmss/m/n/12 Finds a sparse, or-thog-o-nal lin-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
+Underfull \hbox (badness 10000) in paragraph at lines 1454--1454
 \OT1/cmss/m/n/12 ear pro-jec-tion ma-trix op-ti-mized
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
+Underfull \hbox (badness 10000) in paragraph at lines 1454--1454
 \OT1/cmss/m/n/12 for bag-level lo-gis-tic re-gres-sion.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
+Underfull \hbox (badness 10000) in paragraph at lines 1454--1454
 []|\OT1/cmss/m/n/12 Linear,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
+Underfull \hbox (badness 10000) in paragraph at lines 1454--1454
 \OT1/cmss/m/n/12 or-thog-o-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
+Underfull \hbox (badness 10000) in paragraph at lines 1456--1456
 []|\OT1/cmss/m/n/12 Finds lin-ear pro-jec-tion vec-tor us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
+Underfull \hbox (badness 10000) in paragraph at lines 1456--1456
 \OT1/cmss/m/n/12 LDA de-fined from bag-similarity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1457--1457
+Underfull \hbox (badness 10000) in paragraph at lines 1458--1458
 []|\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1457--1457
+Underfull \hbox (badness 10000) in paragraph at lines 1458--1458
 \OT1/cmss/m/n/12 us-ing LDA de-fined from bag rep-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1459--1459
+Underfull \hbox (badness 10000) in paragraph at lines 1460--1460
 []|\OT1/cmss/m/n/12 Learns lin-ear pro-jec-tion ma-trix
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1459--1459
+Underfull \hbox (badness 10000) in paragraph at lines 1460--1460
 \OT1/cmss/m/n/12 us-ing lo-cal dis-crim-i-nant anal-y-sis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1459--1459
+Underfull \hbox (badness 10000) in paragraph at lines 1460--1460
 \OT1/cmss/m/n/12 de-fined from in-stance scat-ter.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1459--1459
+Underfull \hbox (badness 10000) in paragraph at lines 1460--1460
 \OT1/cmss/m/n/12 In-stance la-bels are pro-vided as bag
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1462--1462
 []|\OT1/cmss/m/n/12 Incrementally leaves out fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1462--1462
 \OT1/cmss/m/n/12 and eval-u-ates per-for-mance loss
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1462--1462
 \OT1/cmss/m/n/12 to pro-vide fea-ture score. Sec-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1462--1462
 []|\OT1/cmss/m/n/12 Feature
  []
 
 [111] [112] [113]
-Underfull \hbox (badness 10000) detected at line 1482
-[][][]
- []
-
-
 Underfull \hbox (badness 10000) detected at line 1483
 [][][]
  []
@@ -1519,14 +1508,19 @@ Underfull \hbox (badness 10000) detected at line 1485
 [][][]
  []
 
+
+Underfull \hbox (badness 10000) detected at line 1486
+[][][]
+ []
+
 [114]
 
-LaTeX Warning: Command \l invalid in math mode on input line 1496.
+LaTeX Warning: Command \l invalid in math mode on input line 1497.
 
 [115]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 1510.
+Package pdftex.def Info: example-image-a.png used on input line 1511.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
 
@@ -1535,7 +1529,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [116]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 1529.
+Package pdftex.def Info: example-image-a.png used on input line 1530.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
 
@@ -1544,7 +1538,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [117] [118]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 1560.
+Package pdftex.def Info: example-image-a.png used on input line 1561.
 (pdftex.def)             Requested size: 234.5pt x 175.87943pt.
 
 
@@ -1553,19 +1547,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [119] [120]
 File: example-image-a.png Graphic file (type png)
  <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 1574.
+Package pdftex.def Info: example-image-a.png used on input line 1575.
 (pdftex.def)             Requested size: 192.72392pt x 144.54pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1575--1575
+Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
 []\OT1/cmss/m/n/10.95 (a) |Siamese net-work struc-tured from con-trastive
  []
 
 File: example-image-a.png Graphic file (type png)
 <use example-image-a.png>
-Package pdftex.def Info: example-image-a.png used on input line 1582.
+Package pdftex.def Info: example-image-a.png used on input line 1583.
 (pdftex.def)             Requested size: 192.72392pt x 144.54pt.
 
-Overfull \hbox (7.83325pt too wide) in paragraph at lines 1572--1586
+Overfull \hbox (7.83325pt too wide) in paragraph at lines 1573--1587
  []  [] 
  []
 
@@ -1744,7 +1738,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 ] [133]
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_p1".png, id=2669, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_p1".png, id=2671, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_p1".png Graphic file (type png)
 
@@ -1756,7 +1750,7 @@ e 20.
 (pdftex.def)             Requested size: 202.3502pt x 202.35622pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_n0".png, id=2670, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_n0".png, id=2672, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_n0".png Graphic file (type png)
 
@@ -1773,7 +1767,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 18--28
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_p_2".png, id=2671, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_p_2".png, id=2673, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_p_2".png Graphic file (type png)
 
@@ -1785,7 +1779,7 @@ ages/""data_chips/ratio1/cegr01923_0001_0_patch_p_2".png used on input line 31.
 (pdftex.def)             Requested size: 187.89977pt x 187.90244pt.
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_n_1".png, id=2672, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_n_1".png, id=2674, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_n_1".png Graphic file (type png)
 
@@ -1820,7 +1814,7 @@ The im-age con-tain-ing the truck would
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio0
-/scope01".png, id=2673, 216.81pt x 216.3282pt>
+/scope01".png, id=2675, 216.81pt x 216.3282pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio0/scope01".png Graphic file (type png)
 
@@ -1836,7 +1830,7 @@ Overfull \hbox (18.65695pt too wide) in paragraph at lines 47--48
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio1
-/cegr01923_0001_0_patch_scope_p2".png, id=2674, 578.16pt x 578.16pt>
+/cegr01923_0001_0_patch_scope_p2".png, id=2676, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio1/cegr01923_0001_0_patch_scope_p2".png Graphic file (type png)
 
@@ -1853,7 +1847,7 @@ Overfull \hbox (18.28865pt too wide) in paragraph at lines 52--53
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/ratio3
-/cegr01923_0001_550_patch_scope_p5".png, id=2675, 578.16pt x 578.16pt>
+/cegr01923_0001_550_patch_scope_p5".png, id=2677, 578.16pt x 578.16pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/r
 atio3/cegr01923_0001_550_patch_scope_p5".png Graphic file (type png)
 
@@ -1888,7 +1882,7 @@ se size 51x121 and the right im-age is
 
 
 <"C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/hog_tr
-iplets_target_anchor".png, id=2679, 326.29366pt x 230.83253pt>
+iplets_target_anchor".png, id=2681, 326.29366pt x 230.83253pt>
 File: "C:/Users/Conma/Documents/ResearchProposal/Proposal/Images/""data_chips/h
 og_triplets_target_anchor".png Graphic file (type png)
 
@@ -2361,8 +2355,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
  11067 strings out of 493323
- 184145 string characters out of 3139067
- 277432 words of memory out of 3000000
+ 184147 string characters out of 3139067
+ 277483 words of memory out of 3000000
  13621 multiletter control sequences out of 15000+200000
  14233 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2388,9 +2382,9 @@ ts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MainFile.pdf (165 pages, 3990195 bytes).
+Output written on MainFile.pdf (165 pages, 3990966 bytes).
 PDF statistics:
- 3166 PDF objects out of 3580 (max. 8388607)
+ 3168 PDF objects out of 3580 (max. 8388607)
  699 named destinations out of 1000 (max. 500000)
  828 words of extra memory for PDF output out of 10000 (max. 10000000)
 

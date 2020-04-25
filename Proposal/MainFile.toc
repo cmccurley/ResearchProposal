@@ -35,7 +35,7 @@
 \contentsline {subsubsection}{\numberline {2.2.2.3}Nonnegative Matrix Factorization (NMF)}{49}{subsubsection.2.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.2.4}Fisher's Linear Discriminant Analysis (LDA)}{50}{subsubsection.2.2.2.4}
 \contentsline {paragraph}{Classical LDA}{50}{section*.32}
-\contentsline {subsection}{\numberline {2.2.3}Nonlinear Manifold Learning}{52}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Nonlinear Manifold Learning}{53}{subsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.3.1}Kernelization}{53}{subsubsection.2.2.3.1}
 \contentsline {paragraph}{Kernels}{53}{section*.35}
 \contentsline {subsubsection}{\numberline {2.2.3.2}Kernel PCA (KPCA)}{55}{subsubsection.2.2.3.2}
