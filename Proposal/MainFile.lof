@@ -6,7 +6,7 @@
 \contentsline {figure}{\numberline {{1-6}}{\ignorespaces Supervised embedding of quadratic surfaces}}{21}{figure.caption.12}
 \contentsline {figure}{\numberline {{2-1}}{\ignorespaces Multiple instance learning bags.}}{24}{figure.caption.13}
 \contentsline {figure}{\numberline {{2-2}}{\ignorespaces MIL classification space paradigm.}}{27}{figure.caption.14}
-\contentsline {figure}{\numberline {{2-3}}{\ignorespaces Example pose data manifold.}}{39}{figure.caption.25}
+\contentsline {figure}{\numberline {{2-3}}{\ignorespaces Example pose data manifold.}}{40}{figure.caption.25}
 \contentsline {figure}{\numberline {{2-4}}{\ignorespaces PCA example.}}{43}{figure.caption.27}
 \contentsline {figure}{\numberline {{2-5}}{\ignorespaces Example of MDS distance preservation.}}{45}{figure.caption.30}
 \contentsline {figure}{\numberline {{2-6}}{\ignorespaces LDA example.}}{51}{figure.caption.33}
@@ -18,8 +18,8 @@
 \contentsline {figure}{\numberline {{2-12}}{\ignorespaces Triplet Loss}}{117}{figure.caption.51}
 \contentsline {figure}{\numberline {{2-13}}{\ignorespaces Large Margin $k$-NN}}{119}{figure.caption.52}
 \contentsline {figure}{\numberline {{2-14}}{\ignorespaces Siamese Neural Networks}}{120}{figure.caption.53}
-\contentsline {figure}{\numberline {{3-1}}{\ignorespaces Proposed manifold learning}}{127}{figure.caption.54}
-\contentsline {figure}{\numberline {{3-2}}{\ignorespaces Proposed metric embedding}}{128}{figure.caption.55}
-\contentsline {figure}{\numberline {{4-1}}{\ignorespaces Image chip extraction}}{134}{figure.caption.56}
-\contentsline {figure}{\numberline {{4-2}}{\ignorespaces Image chip uncertainty}}{135}{figure.caption.57}
-\contentsline {figure}{\numberline {{4-3}}{\ignorespaces HOG features}}{136}{figure.caption.58}
+\contentsline {figure}{\numberline {{3-1}}{\ignorespaces Proposed manifold learning}}{128}{figure.caption.54}
+\contentsline {figure}{\numberline {{3-2}}{\ignorespaces Proposed metric embedding}}{129}{figure.caption.55}
+\contentsline {figure}{\numberline {{4-1}}{\ignorespaces Image chip extraction}}{135}{figure.caption.56}
+\contentsline {figure}{\numberline {{4-2}}{\ignorespaces Image chip uncertainty}}{136}{figure.caption.57}
+\contentsline {figure}{\numberline {{4-3}}{\ignorespaces HOG features}}{137}{figure.caption.58}
