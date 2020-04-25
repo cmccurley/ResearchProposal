@@ -8,15 +8,15 @@
 \contentsline {figure}{\numberline {{2-2}}{\ignorespaces MIL classification space paradigm.}}{27}{figure.caption.14}
 \contentsline {figure}{\numberline {{2-3}}{\ignorespaces Example pose data manifold.}}{40}{figure.caption.25}
 \contentsline {figure}{\numberline {{2-4}}{\ignorespaces PCA example.}}{44}{figure.caption.27}
-\contentsline {figure}{\numberline {{2-5}}{\ignorespaces Example of MDS distance preservation.}}{45}{figure.caption.30}
-\contentsline {figure}{\numberline {{2-6}}{\ignorespaces LDA example.}}{51}{figure.caption.33}
+\contentsline {figure}{\numberline {{2-5}}{\ignorespaces Example of MDS distance preservation.}}{46}{figure.caption.30}
+\contentsline {figure}{\numberline {{2-6}}{\ignorespaces LDA example.}}{52}{figure.caption.33}
 \contentsline {figure}{\numberline {{2-7}}{\ignorespaces Example of a nonlinear manifold.}}{53}{figure.caption.34}
-\contentsline {figure}{\numberline {{2-8}}{\ignorespaces Examples of graphs.}}{59}{figure.caption.37}
-\contentsline {figure}{\numberline {{2-9}}{\ignorespaces Demonstration of geodesic distance}}{61}{figure.caption.41}
+\contentsline {figure}{\numberline {{2-8}}{\ignorespaces Examples of graphs.}}{60}{figure.caption.37}
+\contentsline {figure}{\numberline {{2-9}}{\ignorespaces Demonstration of geodesic distance}}{62}{figure.caption.41}
 \contentsline {figure}{\numberline {{2-10}}{\ignorespaces Autoencoder neural network}}{80}{figure.caption.48}
 \contentsline {figure}{\numberline {{2-11}}{\ignorespaces Pairwise Loss}}{117}{figure.caption.50}
-\contentsline {figure}{\numberline {{2-12}}{\ignorespaces Triplet Loss}}{117}{figure.caption.51}
-\contentsline {figure}{\numberline {{2-13}}{\ignorespaces Large Margin $k$-NN}}{119}{figure.caption.52}
+\contentsline {figure}{\numberline {{2-12}}{\ignorespaces Triplet Loss}}{118}{figure.caption.51}
+\contentsline {figure}{\numberline {{2-13}}{\ignorespaces Large Margin $k$-NN}}{120}{figure.caption.52}
 \contentsline {figure}{\numberline {{2-14}}{\ignorespaces Siamese Neural Networks}}{121}{figure.caption.53}
 \contentsline {figure}{\numberline {{3-1}}{\ignorespaces Proposed manifold learning}}{128}{figure.caption.54}
 \contentsline {figure}{\numberline {{3-2}}{\ignorespaces Proposed metric embedding}}{129}{figure.caption.55}
