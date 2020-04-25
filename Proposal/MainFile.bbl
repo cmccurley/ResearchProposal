@@ -1,4 +1,4 @@
-\begin{thebibliography}{204}
+\begin{thebibliography}{205}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -1186,6 +1186,11 @@ M.~E. Tipping and C.~Bishop.
   21\penalty0 (3):\penalty0 611--622, January 1999.
 \newblock URL
   \url{https://www.microsoft.com/en-us/research/publication/probabilistic-principal-component-analysis/}.
+
+\bibitem[Torgerson(1952)]{Torgerson1952MDS}
+W.~S. Torgerson.
+\newblock Multidimensional scaling: I. theory and method.
+\newblock \emph{Psychometrika}, 17:\penalty0 401 -- 419, 1952.
 
 \bibitem[Tsang and Kwok(2007)]{Tsang2007ManifoldRegularization}
 I.~W. Tsang and J.~T. Kwok.

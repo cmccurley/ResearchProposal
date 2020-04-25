@@ -5,72 +5,12 @@ In this chapter, we present the proposed methods for discriminative dimensionali
 In order to show potential for the proposed work to advance SOA in the literature, initial experiments were conducted to demonstrate proof of concept for nonlinear dimensionality reduction on bag and instance-level classification.  Specifically, two algorithms, Supervised Laplacian Eigenmaps (S-LE) \citep{Raducanu2012SupervisedNonlinearDimReduction} and Supervised Enhanced Isomap (SE-Isomap) \citep{Ribeiro2008SupervisedIsomap},  were evaluated across a range of test parameters.  While S-LE and SE-Isomap were reviewed in sections \ref{sec:Laplacian_Eigenmaps} and \ref{sec:Isomap}, respectively, pseudo-code for the algorithms using Multiple Instance data is provided below.  
 
 \subsection{S-LE Algorithm Description}
-The objective of S-LE \citep{Raducanu2012SupervisedNonlinearDimReduction} is to find low-dimensional representations $\bm{Z}$ of data $\bm{X}$, which promote class separability in the embedding space.  Essentially, within-class and between class affinity matrices are defined by the nearest neighbors all of samples in the dataset.  An objective is constructed using graph Laplacians  which trades off between pulling samples of the same class close in the embedding space and pushing away samples of different classes.   A detailed discussion of S-LE is given in Section \ref{sec:Laplacian_Eigenmaps} while pseudo-code is provided in Algorithm \ref{alg:SLE}.
-
-\begin{algorithm}[h!]
-	\caption{S-LE}
-	\label{alg:SLE}
-	\begin{algorithmic}[1]
-		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$, parameters $k, \beta,\gamma, d$}
-		\Ensure {Low-dimensional data representations $\bm{Z}$}
-		\State {$\bm{X} \gets$ vector representations of bags in $\bm{B}$}
-		\For {$m,n \in N$}
-		\If {$\bm{x}_{n}$ in $k$-NN of $\bm{x}_{m}$ and $L_{m} = L_{n}$}
-		\State{$\bm{W}_{w,mn} \gets \exp \left (- \frac{||\bm{x}_{n} - \bm{x}_{m} ||^{2}}{\beta} \right)$}
-		\State{$\bm{W}_{b,mn} \gets 0$}
-		\ElsIf {$\bm{x}_{n}$ in $k$-NN of $\bm{x}_{m}$ and $L_{m} \neq L_{n}$}
-		\State{$\bm{W}_{w,mn} \gets 0$}
-		\State{$\bm{W}_{b,mn} \gets 1$}
-		\Else
-		\State{$\bm{W}_{w,mn} \gets 0$}
-		\State{$\bm{W}_{b,mn} \gets 0$}
-		\EndIf
-		\EndFor
-		\State {Compute affinity matrix $\bm{W} \gets \bm{W}_{w} + \bm{W}_{b} $} 
-		\State {Compute graph Laplacians $\bm{L}_{w} \gets \bm{D}_{w} - \bm{W}_{w}$, $\bm{L}_{b} \gets \bm{D}_{b} - \bm{W}_{b}$} 
-		\State {Define $\bm{B} \gets \gamma \bm{L}_{b} + (1-\gamma)\bm{W}_{w}$}  
-		\State {Solve the eigenvector problem $\bm{B}\bm{v} = \lambda \bm{D}_{w}\bm{v}$}
-		\State {Sort eigenvectors $\bm{v}$ and eigenvalues $\lambda$ in decreasing order}
-		\State{$\bm{Z} \in \mathbb{R}^{N \times d} \gets $ top $d$ eigenvectors }        
-	\end{algorithmic}
-\end{algorithm}
+The objective of S-LE \citep{Raducanu2012SupervisedNonlinearDimReduction} is to find low-dimensional representations $\bm{Z}$ of data $\bm{X}$, which promote class separability in the embedding space.  Essentially, within-class and between class affinity matrices are defined by the nearest neighbors all of samples in the dataset.  An objective is constructed using graph Laplacians  which trades off between pulling samples of the same class close in the embedding space and pushing away samples of different classes.   A detailed discussion of S-LE is given in Section \ref{sec:Laplacian_Eigenmaps}.
 
 \subsection{SE-Isomap Algorithm Description}
-SE-Isomap \citep{Ribeiro2008SupervisedIsomap}, as discussed in Section \ref{sec:Isomap}, uses a specialized measure of similarity which considers class information in order to project samples of the same class closer and points in different classes away from each other in the embedding space. SE-Isomap first computes a distance matrix between all pairs of samples in the dataset.  Samples from the same class have smaller pairwise distances than samples in different classes, as controlled by the parameter $\alpha$.  After computing the distance matrix $\bm{W}$, the shortest path distances between every pair of samples are found using Floyd's or Dijkstra's algorithms, and multidimensional  scaling is applied to find the low-dimensional data representations $\bm{Z}$ of input data $\bm{X}$. Psuedo-code for both SE-Isomap and MDS are provided in Algorithms \ref{alg:SE_Isomap} and \ref{alg:MDS}, respectively.
+SE-Isomap \citep{Ribeiro2008SupervisedIsomap}, as discussed in Section \ref{sec:Isomap}, uses a specialized measure of similarity which considers class information in order to project samples of the same class closer and points in different classes away from each other in the embedding space. SE-Isomap first computes a distance matrix between all pairs of samples in the dataset.  Samples from the same class have smaller pairwise distances than samples in different classes, as controlled by the parameter $\alpha$.  After computing the distance matrix $\bm{W}$, the shortest path distances between every pair of samples are found using Floyd's or Dijkstra's algorithms, and multidimensional  scaling is applied to find the low-dimensional data representations $\bm{Z}$ of input data $\bm{X}$. Descriptions of SE-Isomap and MDS are provided in Sections \ref{sec:Isomap} and \ref{sec:MDS}, respectively.
 
-\begin{algorithm}[h!]
-	\caption{SE-Isomap}
-	\label{alg:SE_Isomap}
-	\begin{algorithmic}[1]
-		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$, parameters $k, \beta,\alpha, d$}
-		\Ensure {Low-dimensional data representations $\bm{Z}$}
-		\State {$\bm{X} \gets$ vector representations of bags in $\bm{B}$}
-		\For {$m,n \in N$}
-		\If {$\bm{x}_{n}$ in $k$-NN of $\bm{x}_{m}$ and $L_{m} = L_{n}$}
-		\State{$\bm{W}(\bm{x}_{m},\bm{x}_{n}) \gets \sqrt{1 - \exp{\frac{-||(\bm{x}_{m},\bm{x}_{n}||^{2}}{\beta}}}$}
-		\ElsIf {$\bm{x}_{n}$ in $k$-NN of $\bm{x}_{m}$ and $L_{m} \neq L_{n}$}
-		\State{$\bm{W}(\bm{x}_{m},\bm{x}_{n}) \gets \sqrt{ \exp{\frac{||(\bm{x}_{m},\bm{x}_{n}||^{2}}{\beta}}} - \alpha$}
-		\Else
-		\State{$\bm{W}(\bm{x}_{m},\bm{x}_{n}) \gets 0$}
-		\EndIf
-		\EndFor
-		\State {$\bm{D} \gets $ squares of the shortest distances between all points using Dijkstra's or Floyd's algorithm on $\bm{W}$}
-		\State {$\bm{Z} \in \mathbb{R}^{N \times d} \gets $ $\textsc{MDS}(\bm{D})$}         
-	\end{algorithmic}
-\end{algorithm}
 
-\begin{algorithm}[H]
-	\caption{MDS}
-	\label{alg:MDS}
-	\begin{algorithmic}[1]
-		\Require {Distance matrix $\bm{D} \in \mathbb{R}^{N \times N}$, embedding space dimensionality $d$}
-		\Ensure {Low-dimensional data representations $\bm{Z}$}
-		\State {Calculate  $\bm{K}= -\frac{1}{2}\bm{H}\bm{D}\bm{H}$, where $\bm{H}= \mathbb{I}_{N} - \frac{1}{N}\bm{e}\bm{e}^{T}$ is the centering matrix} 
-		\State {Compute eigenvectors and eigenvalues $\bm{K}v = \lambda v$} 
-		\State {$\bm{V}',\bm{\Lambda}' \gets $ $\textsc{SortDecreasing}(\bm{V},\bm{\Lambda})$}
-		\State {$\bm{Z} \in \mathbb{R}^{N \times d} \gets \bm{V}'\bm{\Lambda}^{'\frac{1}{2}}$}     
-	\end{algorithmic}
-\end{algorithm}
 
 \subsection{Instance-Level Classification}
 For initial bag-level classification experiments, S-LE and SE-Isomap were applied directly as mentioned.  These methods were initially developed as strictly supervised approaches, where each sample is associated with a binary class label.  Sample-level labels, however, are not available in MIL.  In order to initially investigate nonlinear dimensionality reduction for instance level classification, each instance was given the label of its corresponding bag, as was done in CLFDA and mi-SVM \citep{Kim2010LocalDRMIL,Andrews2011MISVM}, and the instance-level labels were refined through learning.  As is done in CLFDA, learning alternated between label refinement and computing the optimal embedding function.  As mentioned previously, the  label of a bag can be expressed succinctly as the maximum label of its instances, $L_{k} = \max_{n \in N_{k}}l_{n}$, or alternatively, as a set of linear constraints
