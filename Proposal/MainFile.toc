@@ -32,13 +32,13 @@
 \contentsline {subsubsection}{\numberline {2.2.2.2}Multi-Dimensional Scaling (MDS)}{45}{subsubsection.2.2.2.2}
 \contentsline {paragraph}{Unsupervised MDS}{45}{section*.29}
 \contentsline {paragraph}{Supervised MDS}{48}{section*.31}
-\contentsline {subsubsection}{\numberline {2.2.2.3}Nonnegative Matrix Factorization (NMF)}{49}{subsubsection.2.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.2.3}\leavevmode {\color {orange}Nonnegative Matrix Factorization (NMF)}}{49}{subsubsection.2.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.2.4}Fisher's Linear Discriminant Analysis (LDA)}{50}{subsubsection.2.2.2.4}
 \contentsline {paragraph}{Classical LDA}{50}{section*.32}
 \contentsline {subsection}{\numberline {2.2.3}Nonlinear Manifold Learning}{53}{subsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.3.1}Kernelization}{54}{subsubsection.2.2.3.1}
 \contentsline {paragraph}{Kernels}{54}{section*.35}
-\contentsline {subsubsection}{\numberline {2.2.3.2}Kernel PCA (KPCA)}{56}{subsubsection.2.2.3.2}
+\contentsline {subsubsection}{\numberline {2.2.3.2}\leavevmode {\color {orange}Kernel PCA (KPCA)}}{56}{subsubsection.2.2.3.2}
 \contentsline {subsubsection}{\numberline {2.2.3.3}Graph-based Methods}{58}{subsubsection.2.2.3.3}
 \contentsline {paragraph}{Terminology}{59}{section*.36}
 \contentsline {paragraph}{$\bm {K}$-Nearest Neighbor Graph}{60}{section*.38}
@@ -47,32 +47,32 @@
 \contentsline {subsubsection}{\numberline {2.2.3.4}Isomap}{63}{subsubsection.2.2.3.4}
 \contentsline {paragraph}{Traditional Isomap}{63}{section*.42}
 \contentsline {paragraph}{Supervised Isomap Approaches}{64}{section*.43}
-\contentsline {subsubsection}{\numberline {2.2.3.5}Sammon Mapping}{66}{subsubsection.2.2.3.5}
-\contentsline {subsubsection}{\numberline {2.2.3.6}Maximum Variance Unfolding (MVU)}{67}{subsubsection.2.2.3.6}
-\contentsline {subsubsection}{\numberline {2.2.3.7}Locally Linear Embedding (LLE)}{68}{subsubsection.2.2.3.7}
+\contentsline {subsubsection}{\numberline {2.2.3.5}\leavevmode {\color {orange}Sammon Mapping}}{66}{subsubsection.2.2.3.5}
+\contentsline {subsubsection}{\numberline {2.2.3.6}\leavevmode {\color {orange}Maximum Variance Unfolding (MVU)}}{67}{subsubsection.2.2.3.6}
+\contentsline {subsubsection}{\numberline {2.2.3.7}\leavevmode {\color {orange}Locally Linear Embedding (LLE)}}{68}{subsubsection.2.2.3.7}
 \contentsline {subsubsection}{\numberline {2.2.3.8}Laplacian Eigenmaps (LE)}{70}{subsubsection.2.2.3.8}
 \contentsline {paragraph}{Classical LE}{70}{section*.44}
-\contentsline {paragraph}{Linear LE (LPP)}{71}{section*.45}
+\contentsline {paragraph}{\leavevmode {\color {orange}Linear LE (LPP)}}{71}{section*.45}
 \contentsline {paragraph}{Supervised LE (S-LE)}{72}{section*.46}
-\contentsline {subsubsection}{\numberline {2.2.3.9}Hessian LLE}{76}{subsubsection.2.2.3.9}
-\contentsline {subsubsection}{\numberline {2.2.3.10}Local Tangent Space Alignment (LTSA)}{76}{subsubsection.2.2.3.10}
-\contentsline {subsubsection}{\numberline {2.2.3.11}Diffusion Maps}{77}{subsubsection.2.2.3.11}
-\contentsline {subsection}{\numberline {2.2.4}Principal Curves, Surfaces and Manifolds}{79}{subsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.4.1}Deep Learning}{80}{subsubsection.2.2.4.1}
-\contentsline {paragraph}{Autoencoders and Nonlinear PCA}{81}{section*.47}
-\contentsline {paragraph}{Graph Convolutional Networks}{82}{section*.49}
-\contentsline {subsubsection}{\numberline {2.2.4.2}Self-Organizing Map (SOM)}{83}{subsubsection.2.2.4.2}
-\contentsline {subsubsection}{\numberline {2.2.4.3}Growing Neural Gas (GNG)}{85}{subsubsection.2.2.4.3}
-\contentsline {subsubsection}{\numberline {2.2.4.4}Elastic Maps and Nets}{86}{subsubsection.2.2.4.4}
-\contentsline {subsection}{\numberline {2.2.5}Probabilistic Latent Variable Models (LVM)}{88}{subsection.2.2.5}
-\contentsline {subsubsection}{\numberline {2.2.5.1}Factor Analysis (FA) and Probabilistic PCA (PPCA)}{88}{subsubsection.2.2.5.1}
-\contentsline {subsubsection}{\numberline {2.2.5.2}Generative Topographic Mapping (GTM)}{90}{subsubsection.2.2.5.2}
-\contentsline {subsubsection}{\numberline {2.2.5.3}Manifold Charting}{92}{subsubsection.2.2.5.3}
-\contentsline {subsection}{\numberline {2.2.6}High-Dimensional Data Visualization}{93}{subsection.2.2.6}
-\contentsline {subsubsection}{\numberline {2.2.6.1}Stochastic Neighbor Embedding (SNE and t-SNE)}{93}{subsubsection.2.2.6.1}
-\contentsline {subsubsection}{\numberline {2.2.6.2}LargeVis}{95}{subsubsection.2.2.6.2}
-\contentsline {subsubsection}{\numberline {2.2.6.3}Uniform Manifold Approximation and Projection (UMAP)}{96}{subsubsection.2.2.6.3}
-\contentsline {subsection}{\numberline {2.2.7}Summary of Manifold Learning Algorithms}{100}{subsection.2.2.7}
+\contentsline {subsubsection}{\numberline {2.2.3.9}\leavevmode {\color {orange}Hessian LLE}}{76}{subsubsection.2.2.3.9}
+\contentsline {subsubsection}{\numberline {2.2.3.10}\leavevmode {\color {orange}Local Tangent Space Alignment (LTSA)}}{76}{subsubsection.2.2.3.10}
+\contentsline {subsubsection}{\numberline {2.2.3.11}\leavevmode {\color {orange}Diffusion Maps}}{77}{subsubsection.2.2.3.11}
+\contentsline {subsection}{\numberline {2.2.4}\leavevmode {\color {orange}Principal Curves, Surfaces and Manifolds}}{79}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}\leavevmode {\color {orange}Deep Learning}}{80}{subsubsection.2.2.4.1}
+\contentsline {paragraph}{\leavevmode {\color {orange}Autoencoders and Nonlinear PCA}}{81}{section*.47}
+\contentsline {paragraph}{\leavevmode {\color {orange}Graph Convolutional Networks}}{82}{section*.49}
+\contentsline {subsubsection}{\numberline {2.2.4.2}\leavevmode {\color {orange}Self-Organizing Map (SOM)}}{83}{subsubsection.2.2.4.2}
+\contentsline {subsubsection}{\numberline {2.2.4.3}\leavevmode {\color {orange}Growing Neural Gas (GNG)}}{85}{subsubsection.2.2.4.3}
+\contentsline {subsubsection}{\numberline {2.2.4.4}\leavevmode {\color {orange}Elastic Maps and Nets}}{86}{subsubsection.2.2.4.4}
+\contentsline {subsection}{\numberline {2.2.5}\leavevmode {\color {orange}Probabilistic Latent Variable Models (LVM)}}{88}{subsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.5.1}\leavevmode {\color {orange}Factor Analysis (FA) and Probabilistic PCA (PPCA)}}{88}{subsubsection.2.2.5.1}
+\contentsline {subsubsection}{\numberline {2.2.5.2}\leavevmode {\color {orange}Generative Topographic Mapping (GTM)}}{90}{subsubsection.2.2.5.2}
+\contentsline {subsubsection}{\numberline {2.2.5.3}\leavevmode {\color {orange}Manifold Charting}}{92}{subsubsection.2.2.5.3}
+\contentsline {subsection}{\numberline {2.2.6}\leavevmode {\color {orange}High-Dimensional Data Visualization}}{93}{subsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.6.1}\leavevmode {\color {orange}Stochastic Neighbor Embedding (SNE and t-SNE)}}{93}{subsubsection.2.2.6.1}
+\contentsline {subsubsection}{\numberline {2.2.6.2}\leavevmode {\color {orange}LargeVis}}{95}{subsubsection.2.2.6.2}
+\contentsline {subsubsection}{\numberline {2.2.6.3}\leavevmode {\color {orange}Uniform Manifold Approximation and Projection (UMAP)}}{96}{subsubsection.2.2.6.3}
+\contentsline {subsection}{\numberline {2.2.7}\leavevmode {\color {orange}Summary of Manifold Learning Algorithms}}{100}{subsection.2.2.7}
 \contentsline {section}{\numberline {2.3}Weakly Supervised Manifold Learning and Dimensionality Reduction}{103}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}MIDR}{105}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}MidLABS}{107}{subsection.2.3.2}
