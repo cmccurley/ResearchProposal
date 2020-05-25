@@ -517,14 +517,6 @@ T.~Glenn, A.~Zare, P.~Gader, and D.~Dranishnikov.
 \newblock Bullwinkle: Scoring code for sub-pixel targets.
 \newblock URL \url{https://github.com/GatorSense/MUUFLGulfport/}.
 
-\bibitem[{Gönen}(2013)]{Gonen2013BayesianSupDimRed}
-M.~{Gönen}.
-\newblock Bayesian supervised dimensionality reduction.
-\newblock \emph{IEEE Transactions on Cybernetics}, 43\penalty0 (6):\penalty0
-  2179--2189, Dec 2013.
-\newblock ISSN 2168-2267.
-\newblock \doi{10.1109/TCYB.2013.2245321}.
-
 \bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and
   Courville]{Goodfellow2016DeepLearning}
 I.~Goodfellow, Y.~Bengio, and A.~Courville.
@@ -550,6 +542,14 @@ A.~N. Gorban and A.~Y. Zinovyev.
   Reduction}, pages 96--130, Berlin, Heidelberg, 2008. Springer Berlin
   Heidelberg.
 \newblock ISBN 978-3-540-73750-6.
+
+\bibitem[{Gönen}(2013)]{Gonen2013BayesianSupDimRed}
+M.~{Gönen}.
+\newblock Bayesian supervised dimensionality reduction.
+\newblock \emph{IEEE Transactions on Cybernetics}, 43\penalty0 (6):\penalty0
+  2179--2189, Dec 2013.
+\newblock ISSN 2168-2267.
+\newblock \doi{10.1109/TCYB.2013.2245321}.
 
 \bibitem[Hajek(2015)]{Hajek2015RandomProcesses}
 Bruce Hajek.
