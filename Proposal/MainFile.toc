@@ -32,7 +32,7 @@
 \contentsline {subsubsection}{\numberline {2.2.2.2}Multi-Dimensional Scaling (MDS)}{45}{subsubsection.2.2.2.2}%
 \contentsline {paragraph}{Unsupervised MDS}{45}{section*.29}%
 \contentsline {paragraph}{Supervised MDS}{48}{section*.31}%
-\contentsline {subsubsection}{\numberline {2.2.2.3}Nonnegative Matrix Factorization (NMF)}{49}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}Non-negative Matrix Factorization (NMF)}{49}{subsubsection.2.2.2.3}%
 \contentsline {subsubsection}{\numberline {2.2.2.4}Fisher's Linear Discriminant Analysis (LDA)}{50}{subsubsection.2.2.2.4}%
 \contentsline {paragraph}{Classical LDA}{50}{section*.32}%
 \contentsline {subsection}{\numberline {2.2.3}Nonlinear Manifold Learning}{53}{subsection.2.2.3}%
