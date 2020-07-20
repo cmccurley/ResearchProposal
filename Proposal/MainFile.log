@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  20 JUL 2020 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  20 JUL 2020 14:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1129,7 +1129,7 @@ a syn-thetic dataset us-ing prin-ci-pal com-
 
 Underfull \hbox (badness 10000) in paragraph at lines 245--245
 \OT1/cmss/m/n/12 po-nent anal-y-sis. Left) Two-dimensional data, where $\OML/cm
-m/m/it/12 w[]$ \OT1/cmss/m/n/12 and $\OML/cmm/m/it/12 w[]$ \OT1/cmss/m/n/12 cor
+m/b/it/12 w[]$ \OT1/cmss/m/n/12 and $\OML/cmm/b/it/12 w[]$ \OT1/cmss/m/n/12 cor
 -re-spond to the first and
  []
 
@@ -1142,7 +1142,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--245
 
 Underfull \hbox (badness 10000) in paragraph at lines 245--245
 \OT1/cmss/m/n/12 onto the first prin-ci-pal axes. It can be ob-served that $\OM
-L/cmm/m/it/12 w[]$ \OT1/cmss/m/n/12 cor-re-sponds to the di-rec-tion of max-i-
+L/cmm/b/it/12 w[]$ \OT1/cmss/m/n/12 cor-re-sponds to the di-rec-tion of max-i-
  []
 
 [45 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_review/man
@@ -1406,9 +1406,27 @@ er.png>
 Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/lit_revie
 w/manifold/autoencoder.png  used on input line 916.
 (pdftex.def)             Requested size: 469.0pt x 180.97464pt.
- [83 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_review/ma
-nifold/autoencoder.png>] [84] [85] [86] [87] [88] [89] [90] [91] [92]
-[93] [94] [95] [96] [97] [98] [99] [100] [101]
+
+Underfull \hbox (badness 10000) in paragraph at lines 917--917
+[]\OT1/cmss/m/n/12 Figure 2-10: |De-pic-tion of an au-toen-coder neu-ral net-wo
+rk. The ar-chi-tec-ture con-sists of an en-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 917--917
+\OT1/cmss/m/n/12 coder, a la-tent or bot-tle-neck layer, and a de-coder, which 
+is the in-verse trans-for-ma-tion of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 917--917
+\OT1/cmss/m/n/12 en-coder. The out-put of an au-toen-coder should be, as close 
+as pos-si-ble, a re-pro-duc-tion of the
+ []
+
+[83 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_review/man
+ifold/autoencoder.png>] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93]
+[94] [95] [96] [97] [98] [99] [100] [101]
 Underfull \hbox (badness 10000) in paragraph at lines 1231--1231
 []|\OT1/cmss/m/n/12 Preserves vari-ance of data, global struc-ture. Sec-tion
  []
@@ -1807,6 +1825,12 @@ ontrastive_negative.png>
 Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/lit_revie
 w/Metric_Embedding/contrastive_negative.png  used on input line 1567.
 (pdftex.def)             Requested size: 469.0pt x 191.30894pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1568--1568
+[]\OT1/cmss/m/n/12 Figure 2-11: |Con-trastive loss with an an-chor/negative pai
+r. Af-ter em-bed-ding, the sam-ples
+ []
+
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/contr
 astive_positive.png, id=2529, 926.0196pt x 377.7312pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/
@@ -1816,6 +1840,11 @@ ontrastive_positive.png>
 Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/lit_revie
 w/Metric_Embedding/contrastive_positive.png  used on input line 1576.
 (pdftex.def)             Requested size: 469.0pt x 191.30894pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1577--1577
+[]\OT1/cmss/m/n/12 Figure 2-12: |Con-trastive loss with an an-chor/positive pai
+r. Af-ter em-bed-ding, the sam-ples
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1832,6 +1861,11 @@ Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/lit_revie
 w/Metric_Embedding/triplet.png  used on input line 1595.
 (pdftex.def)             Requested size: 469.0pt x 236.88644pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 1596--1596
+[]\OT1/cmss/m/n/12 Figure 2-13: |Em-bed-ding ac-cord-ing to triplet loss. Af-te
+r em-bed-ding, the pos-i-tive ex-am-ple
+ []
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1847,6 +1881,17 @@ mnn.png>
 Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/lit_revie
 w/Metric_Embedding/lmnn.png  used on input line 1629.
 (pdftex.def)             Requested size: 469.0pt x 211.16103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+[]\OT1/cmss/m/n/12 Figure 2-14: |Large Mar-gin $\OML/cmm/m/it/12 k$\OT1/cmss/m/
+n/12 -NN. The goal of LMNN is to dis-cover a met-ric which rep-re-sents
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+\OT1/cmss/m/n/12 neigh-bors of the same class as be-ing closer to the an-chor p
+oints than neigh-bors with dif-fer-ing
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1870,6 +1915,24 @@ iamese_contrastive.png>
 Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/lit_revie
 w/Metric_Embedding/siamese_contrastive.png  used on input line 1644.
 (pdftex.def)             Requested size: 469.0pt x 182.8885pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
+[]\OT1/cmss/m/n/12 Figure 2-15: |Siamese neu-ral net-work struc-tured from con-
+trastive loss. Two iden-ti-cal neu-ral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
+\OT1/cmss/m/n/12 net-works si-mul-ta-ne-ously em-bed an an-chor and pos-i-tive/
+negative sam-ple. Af-ter the shared net-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
+\OT1/cmss/m/n/12 work weights are learned, an-chor/positive pairs should have a
+ lower dis-sim-i-lar-ity score than
+ []
+
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/siame
 se_triplet.png, id=2604, 950.1096pt x 481.3182pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/
@@ -1879,10 +1942,31 @@ iamese_triplet.png>
 Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/lit_revie
 w/Metric_Embedding/siamese_triplet.png  used on input line 1654.
 (pdftex.def)             Requested size: 469.0pt x 237.58858pt.
- [125 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_review/M
-etric_Embedding/siamese_contrastive.png> </Users/cmccurley/Documents/ResearchPr
-oposal/Proposal/Images/lit_review/Metric_Embedding/siamese_triplet.png>] [126])
- [127]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1655--1655
+[]\OT1/cmss/m/n/12 Figure 2-16: |Siamese neu-ral net-work struc-tured from trip
+let loss. Three iden-ti-cal neu-ral net-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1655--1655
+\OT1/cmss/m/n/12 works si-mul-ta-ne-ously em-bed triplets of an-chor, pos-i-tiv
+e and neg-a-tive sam-ples. Af-ter the shared
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1655--1655
+\OT1/cmss/m/n/12 net-work weights are learned, an-chor/positive pairs should ha
+ve a lower dis-sim-i-lar-ity score than
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[125 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_review/Me
+tric_Embedding/siamese_contrastive.png>] [126 </Users/cmccurley/Documents/Resea
+rchProposal/Proposal/Images/lit_review/Metric_Embedding/siamese_triplet.png>])
+[127]
 \openout2 = `Chapters/ch_TechApproach.aux'.
 
  (./Chapters/ch_TechApproach.tex
@@ -1914,8 +1998,8 @@ _approach/bags_to_manifolds.png  used on input line 80.
 (pdftex.def)             Requested size: 469.0pt x 221.36465pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 81--81
-[]\OT1/cmss/m/n/12 Figure 3-1: |Im-age show-ing the map-ping of in-stances from
- bags to a man-i-fold, where the in-
+[]\OT1/cmss/m/n/12 Figure 3-1: |Pro-posed con-cep-tual ap-proach. Us-ing only b
+ag-level in-for-ma-tion, the goal is to
  []
 
 [131 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/technical_app
@@ -1931,8 +2015,20 @@ _approach/bags_to_rank.png  used on input line 92.
 (pdftex.def)             Requested size: 469.0pt x 209.05658pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--93
-[]\OT1/cmss/m/n/12 Figure 3-2: |Im-age to show how in-stances are ranked and ar
-e eas-ily sep-a-ra-ble in a learned met-
+[]\OT1/cmss/m/n/12 Figure 3-2: |Pro-posed in-stance se-lec-tion pro-ce-dure. Us
+-ing only bag-level and pref-er-ence in-for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
+\OT1/cmss/m/n/12 ma-tion, in-stances will be mapped to a rank-ing space which w
+ill sug-gest which points are true
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
+\OT1/cmss/m/n/12 pos-i-tive in-stances. Sam-ples with higher rank-ing scores ar
+e more likely to be true pos-i-tive points
  []
 
 [132 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/technical_app
@@ -2548,7 +2644,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
 Here is how much of TeX's memory you used:
  11707 strings out of 480608
  203546 string characters out of 5903631
- 458566 words of memory out of 5000000
+ 458664 words of memory out of 5000000
  26527 multiletter control sequences out of 15000+600000
  543274 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2579,7 +2675,7 @@ al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local
 exlive/2020/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/202
 0/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
 /2020/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb>
-Output written on MainFile.pdf (168 pages, 7517845 bytes).
+Output written on MainFile.pdf (168 pages, 7519070 bytes).
 PDF statistics:
  3258 PDF objects out of 3580 (max. 8388607)
  2956 compressed objects within 30 object streams

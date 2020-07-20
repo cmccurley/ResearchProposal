@@ -78,7 +78,7 @@ I will continue to explore the use of S-LE and SE-Isomap for use in instance-lev
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{"technical_approach/bags_to_manifolds"}
-		\caption[Proposed manifold learning]{Image showing the mapping of instances from bags to a manifold, where the instances are well-separated  on the manifold.}
+		\caption[Mapping of instances to separable manifolds]{Proposed conceptual approach.  Using only bag-level information, the goal is to map individual instances to manifolds which are well-separated in the embedding feature space.}
 		\label{fig:proposed_manifold_learning}
 	\end{figure*}
 \end{center}
@@ -90,7 +90,7 @@ Metric embedding is often realized through weakly-supervised learning, where ins
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{"technical_approach/bags_to_rank"}
-		\caption[Proposed metric embedding]{Image to show how instances are ranked and are easily separable in a learned metric space.}
+		\caption[Ranking MIL instances]{Proposed instance selection procedure.  Using only bag-level and preference information, instances will be mapped to a ranking space which will suggest which points are true positive instances.  Samples with higher ranking scores are more likely to be true positive points and samples with lower scores are more likely to be negative instances.}
 		\label{fig:proposed_metric_embedding}
 	\end{figure*}
 \end{center}

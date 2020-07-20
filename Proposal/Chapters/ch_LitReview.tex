@@ -242,7 +242,7 @@ The example shown in Figure \ref{fig:pca_eg} demonstrates the projection of 2-di
 	\begin{figure*}[t]
 		\centering
 		\includegraphics[width=1\textwidth]{"lit_review/manifold/pca"}
-		\caption[PCA example.]{Example of dimensionality reduction on a synthetic dataset using principal component analysis.  Left) Two-dimensional data, where $w_{1}$ and $w_{2}$ correspond to the first and second principal axes of the dataset, respectively.  Right) Orthogonal projection of the data onto the first principal axes.  It can be observed that $w_{1}$ corresponds to the direction of maximum variance for the data. }
+		\caption[PCA example.]{Example of dimensionality reduction on a synthetic dataset using principal component analysis.  Left) Two-dimensional data, where $\bm{w}_{1}$ and $\bm{w}_{2}$ correspond to the first and second principal axes of the dataset, respectively.  Right) Orthogonal projection of the data onto the first principal axes.  It can be observed that $\bm{w}_{1}$ corresponds to the direction of maximum variance for the data. }
 		\label{fig:pca_eg}
 	\end{figure*}
 \end{center}
@@ -396,7 +396,7 @@ Linear methods such as PCA and MDS are convenient for projecting out-of-sample t
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{"lit_review/manifold/nonlinear_manifold"}
-		\caption[Example of a nonlinear manifold.]{Example of a nonlinear manifold.  This particular dataset is known as the "Swiss Roll", and it represents a two-dimensional manifold embedded in three dimensions.  Global, linear manifold learning approaches cannot appropriately un-roll the manifold.}
+		\caption[Example of a nonlinear manifold.]{Example of a nonlinear manifold.  This particular dataset is known as the "Swiss Roll", and it represents a two-dimensional manifold embedded in three dimensions.  Global, linear manifold learning approaches cannot appropriately unroll the manifold.}
 		\label{fig:nonlinear_manifold}
 	\end{figure*}
 \end{center}
@@ -914,7 +914,7 @@ Many natural phenomena behave in a nonlinear way, meaning that the observed data
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{"lit_review/manifold/autoencoder"}
-		\caption[Autoencoder neural network]{Autoencoder}
+		\caption[Autoencoder neural network]{Depiction of an autoencoder neural network.  The architecture consists of an encoder, a latent or bottleneck layer, and a decoder, which is the inverse transformation of the encoder.  The output of an autoencoder should be, as close as possible, a reproduction of the input.}
 		\label{fig:autoencoder}
 	\end{figure*}
 \end{center}
@@ -1565,7 +1565,7 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 		\begin{figure*}[h]
 			\centering
 			\includegraphics[width=1\textwidth]{"lit_review/Metric_Embedding/contrastive_negative"}
-			\caption[Pairwise Loss Negative]{Contrastive Loss Negative}
+			\caption[Contrastive loss with anchor/negative pair]{Contrastive loss with an anchor/negative pair.  After embedding, the samples should be metrically farther away than in the input feature space. }
 			\label{fig:contrastive_loss_negative}
 		\end{figure*}
 	\end{center}
@@ -1574,7 +1574,7 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 		\begin{figure*}[h]
 			\centering
 			\includegraphics[width=1\textwidth]{"lit_review/Metric_Embedding/contrastive_positive"}
-			\caption[Pairwise Loss Positive]{Contrastive Loss Positive}
+			\caption[Contrastive loss with anchor/positive pair]{Contrastive loss with an anchor/positive pair.  After embedding, the samples should be metrically closer than they were in the input feature space. }
 			\label{fig:contrastive_loss}
 		\end{figure*}
 	\end{center}
@@ -1593,7 +1593,7 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 		\begin{figure*}[h]
 			\centering
 			\includegraphics[width=1\textwidth]{"lit_review/Metric_Embedding/triplet"}
-			\caption[Triplet Loss]{Triplet Loss}
+			\caption[Triplet loss]{Embedding according to triplet loss.  After embedding, the positive example should be closer to the anchor point than the negative example by a margin.}
 			\label{fig:triplet_loss}
 		\end{figure*}
 	\end{center}
@@ -1627,7 +1627,7 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 			\begin{figure*}[h]
 				\centering
 				\includegraphics[width=1\textwidth]{"lit_review/Metric_Embedding/lmnn"}
-				\caption[Large Margin $k$-NN]{Large Margin $k$-NN}
+				\caption[Large Margin $k$-NN]{Large Margin $k$-NN.  The goal of LMNN is to discover a metric which represents neighbors of the same class as being closer to the anchor points than neighbors with differing class labels, plus a margin.}
 				\label{fig:lmnn}
 			\end{figure*}
 		\end{center}
@@ -1642,7 +1642,7 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 		\begin{figure*}[h]
 			\centering
 			\includegraphics[width=1\textwidth]{"lit_review/Metric_Embedding/siamese_contrastive"}
-			\caption[Siamese Contrastive]{Siamese network structured from contrastive loss.}
+			\caption[Siamese neural network with contrastive]{Siamese neural network structured from contrastive loss.  Two identical neural networks simultaneously embed an anchor and positive/negative sample.  After the shared network weights are learned, anchor/positive pairs should have a lower dissimilarity score than anchor/negative sample pairs.}
 			\label{fig:siamese_contrastive}
 		\end{figure*}
 	\end{center}
@@ -1652,7 +1652,7 @@ defines the dissimilarity between samples $\bm{x}_{m}$ and $\bm{x}_{n}$, after b
 		\begin{figure*}[h]
 			\centering
 			\includegraphics[width=1\textwidth]{"lit_review/Metric_Embedding/siamese_triplet"}
-			\caption[Siamese Triplet]{Siamese network structured triplet loss.}
+			\caption[Siamese neural network with triplet loss]{Siamese neural network structured from triplet loss.  Three identical neural networks simultaneously embed triplets of anchor,  positive and negative samples.  After the shared network weights are learned, anchor/positive pairs should have a lower dissimilarity score than anchor/negative pairs.}
 			\label{fig:siamese_triplet}
 		\end{figure*}
 	\end{center}

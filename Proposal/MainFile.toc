@@ -61,7 +61,7 @@
 \contentsline {subsubsection}{\numberline {2.2.4.1}Deep Learning}{82}{subsubsection.2.2.4.1}%
 \contentsline {paragraph}{Autoencoders and Nonlinear PCA}{82}{section*.47}%
 \contentsline {paragraph}{Graph Convolutional Networks}{84}{section*.49}%
-\contentsline {subsubsection}{\numberline {2.2.4.2}Self-Organizing Map (SOM)}{84}{subsubsection.2.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.2.4.2}Self-Organizing Map (SOM)}{85}{subsubsection.2.2.4.2}%
 \contentsline {subsubsection}{\numberline {2.2.4.3}Growing Neural Gas (GNG)}{87}{subsubsection.2.2.4.3}%
 \contentsline {subsubsection}{\numberline {2.2.4.4}Elastic Maps and Nets}{88}{subsubsection.2.2.4.4}%
 \contentsline {subsection}{\numberline {2.2.5}Probabilistic Latent Variable Models (LVM)}{89}{subsection.2.2.5}%
@@ -97,7 +97,7 @@
 \contentsline {subsection}{\numberline {3.2.1}Instance Selection}{130}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Manifold Learning}{131}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Metric Embedding}{131}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Out-of-Sample Testing}{132}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.4}Out-of-Sample Testing}{133}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Comparison to SOA}{133}{subsection.3.2.5}%
 \contentsline {section}{\numberline {3.3}Datasets}{133}{section.3.3}%
 \contentsline {chapter}{\numberline {4}\uppercase {Experimental Design}}{135}{chapter.4}%
