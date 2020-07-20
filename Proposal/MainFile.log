@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  20 JUL 2020 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  20 JUL 2020 16:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1105,15 +1105,37 @@ Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 130.
  [37] [38]
 [39] [40]
-<example-image-a.pdf, id=1191, 321.2pt x 240.9pt>
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 197.
-(pdftex.def)             Requested size: 281.40286pt x 211.05898pt.
- [41 </usr/local/texlive/2020/texmf-dist/tex/latex/mwe/example-image-a.pdf>] [4
-2] [43] [44]
+<~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/face_manifold
+.png, id=1191, 1126.2075pt x 558.58687pt>
+File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/face_man
+ifold.png Graphic file (type png)
+<use ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/face_mani
+fold.png>
+Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/lit_revie
+w/manifold/face_manifold.png  used on input line 197.
+(pdftex.def)             Requested size: 469.0pt x 232.61894pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
+[]\OT1/cmss/m/n/12 Figure 2-3: |Man-i-fold learn-ing ex-am-ple on a sin-gle cla
+ss of the LFW Faces in the Wild dataset.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
+\OT1/cmss/m/n/12 The im-age shows the em-bed-ding of 1850-dimensional fea-tures
+ into a 2-dimensional space.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
+\OT1/cmss/m/n/12 The sam-ples are dis-tributed ac-cord-ing to the two great-est
+ fac-tors of vari-a-tion in the dataset,
+ []
+
+[41 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_review/man
+ifold/face_manifold.png>] [42] [43] [44]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/pca.png, id=1
-247, 838.332pt x 323.7696pt>
+242, 838.332pt x 323.7696pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/pca.png 
 Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/pca.png>
@@ -1148,7 +1170,7 @@ L/cmm/b/it/12 w[]$ \OT1/cmss/m/n/12 cor-re-sponds to the di-rec-tion of max-i-
 [45 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_review/man
 ifold/pca.png>] [46]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/mds.png, id=1
-293, 788.2248pt x 365.6862pt>
+288, 788.2248pt x 365.6862pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/mds.png 
 Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/mds.png>
@@ -1175,7 +1197,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <12> not available
 
 [49] [50] [51] [52]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/lda.png, id=1
-385, 926.5014pt x 482.2818pt>
+380, 926.5014pt x 482.2818pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/lda.png 
 Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/lda.png>
@@ -1230,7 +1252,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [53] [54 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_revie
 w/manifold/lda.png>]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/nonlinear_man
-ifold.png, id=1420, 461.8053pt x 344.0052pt>
+ifold.png, id=1414, 461.8053pt x 344.0052pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/nonlinea
 r_manifold.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/nonlinear
@@ -1260,7 +1282,7 @@ t data
 
 [59] [60]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/graphs.png, i
-d=1516, 663.4386pt x 290.5254pt>
+d=1511, 663.4386pt x 290.5254pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/graphs.p
 ng Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/graphs.pn
@@ -1320,7 +1342,7 @@ OT1/cmss/m/n/12 -neighborhoods
 [62 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_review/man
 ifold/graphs.png>]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/geodesic_03.p
-ng, id=1545, 866.23625pt x 363.3575pt>
+ng, id=1540, 866.23625pt x 363.3575pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/geodesic
 _03.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/geodesic_
@@ -1398,7 +1420,7 @@ Underfull \hbox (badness 1675) in paragraph at lines 632--633
 [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81]
 [82]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/autoencoder.p
-ng, id=1945, 1350.04375pt x 520.94624pt>
+ng, id=1940, 1350.04375pt x 520.94624pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/autoenco
 der.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/autoencod
@@ -1817,7 +1839,7 @@ LaTeX Warning: Command \l invalid in math mode on input line 1553.
 
 [119]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/contr
-astive_negative.png, id=2528, 926.0196pt x 377.7312pt>
+astive_negative.png, id=2523, 926.0196pt x 377.7312pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/
 contrastive_negative.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/c
@@ -1832,7 +1854,7 @@ r. Af-ter em-bed-ding, the sam-ples
  []
 
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/contr
-astive_positive.png, id=2529, 926.0196pt x 377.7312pt>
+astive_positive.png, id=2524, 926.0196pt x 377.7312pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/
 contrastive_positive.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/c
@@ -1852,7 +1874,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [120 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_review/Me
 tric_Embedding/contrastive_negative.png>]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/tripl
-et.png, id=2546, 946.2552pt x 477.9456pt>
+et.png, id=2541, 946.2552pt x 477.9456pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/
 triplet.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/t
@@ -1873,7 +1895,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 tric_Embedding/contrastive_positive.png>] [122 </Users/cmccurley/Documents/Rese
 archProposal/Proposal/Images/lit_review/Metric_Embedding/triplet.png>]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/lmnn.
-png, id=2579, 730.8906pt x 329.0694pt>
+png, id=2574, 730.8906pt x 329.0694pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/
 lmnn.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/l
@@ -1907,7 +1929,7 @@ n input line 1639.
 [123] [124 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_rev
 iew/Metric_Embedding/lmnn.png>]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/siame
-se_contrastive.png, id=2603, 950.1096pt x 370.5042pt>
+se_contrastive.png, id=2598, 950.1096pt x 370.5042pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/
 siamese_contrastive.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/s
@@ -1934,7 +1956,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
  []
 
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/siame
-se_triplet.png, id=2604, 950.1096pt x 481.3182pt>
+se_triplet.png, id=2599, 950.1096pt x 481.3182pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/
 siamese_triplet.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/Metric_Embedding/s
@@ -1988,7 +2010,7 @@ ut line 21.
 
 [130]
 <~/Documents/ResearchProposal/Proposal/Images/technical_approach/bags_to_manifo
-lds.png, id=2683, 946.2552pt x 446.6286pt>
+lds.png, id=2678, 946.2552pt x 446.6286pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/technical_approach/bags_to_m
 anifolds.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/technical_approach/bags_to_ma
@@ -2005,7 +2027,7 @@ ag-level in-for-ma-tion, the goal is to
 [131 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/technical_app
 roach/bags_to_manifolds.png>]
 <~/Documents/ResearchProposal/Proposal/Images/technical_approach/bags_to_rank.p
-ng, id=2696, 945.7734pt x 421.575pt>
+ng, id=2691, 945.7734pt x 421.575pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/technical_approach/bags_to_r
 ank.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/technical_approach/bags_to_ra
@@ -2153,7 +2175,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 ] [136]
 <~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_0001_
-0_patch_scope_p1.png, id=2746, 578.16pt x 578.16pt>
+0_patch_scope_p1.png, id=2741, 578.16pt x 578.16pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_
 0001_0_patch_scope_p1.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_0
@@ -2162,7 +2184,7 @@ Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/data_chip
 s/ratio1/cegr01923_0001_0_patch_scope_p1.png  used on input line 20.
 (pdftex.def)             Requested size: 202.3502pt x 202.35622pt.
 <~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_0001_
-0_patch_scope_n0.png, id=2747, 578.16pt x 578.16pt>
+0_patch_scope_n0.png, id=2742, 578.16pt x 578.16pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_
 0001_0_patch_scope_n0.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_0
@@ -2176,7 +2198,7 @@ Overfull \hbox (7.83325pt too wide) in paragraph at lines 18--28
  []
 
 <~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_0001_
-0_patch_p_2.png, id=2748, 578.16pt x 578.16pt>
+0_patch_p_2.png, id=2743, 578.16pt x 578.16pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_
 0001_0_patch_p_2.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_0
@@ -2185,7 +2207,7 @@ Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/data_chip
 s/ratio1/cegr01923_0001_0_patch_p_2.png  used on input line 31.
 (pdftex.def)             Requested size: 187.89977pt x 187.90244pt.
 <~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_0001_
-0_patch_n_1.png, id=2749, 578.16pt x 578.16pt>
+0_patch_n_1.png, id=2744, 578.16pt x 578.16pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_
 0001_0_patch_n_1.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_0
@@ -2217,7 +2239,7 @@ The im-age con-tain-ing the truck would
  []
 
 <~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio0/scope01.png, id
-=2750, 216.81pt x 216.3282pt>
+=2745, 216.81pt x 216.3282pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio0/scope01.pn
 g Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio0/scope01.png
@@ -2231,7 +2253,7 @@ Overfull \hbox (18.65695pt too wide) in paragraph at lines 47--48
  []
 
 <~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_0001_
-0_patch_scope_p2.png, id=2751, 578.16pt x 578.16pt>
+0_patch_scope_p2.png, id=2746, 578.16pt x 578.16pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_
 0001_0_patch_scope_p2.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio1/cegr01923_0
@@ -2245,7 +2267,7 @@ Overfull \hbox (18.28865pt too wide) in paragraph at lines 52--53
  []
 
 <~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio3/cegr01923_0001_
-550_patch_scope_p5.png, id=2752, 578.16pt x 578.16pt>
+550_patch_scope_p5.png, id=2747, 578.16pt x 578.16pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio3/cegr01923_
 0001_550_patch_scope_p5.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/data_chips/ratio3/cegr01923_0
@@ -2277,7 +2299,7 @@ se size 51x121 and the right im-age is
  []
 
 <~/Documents/ResearchProposal/Proposal/Images/data_chips/hog_triplets_target_an
-chor.png, id=2756, 326.29366pt x 230.83253pt>
+chor.png, id=2751, 326.29366pt x 230.83253pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/data_chips/hog_triplets_targ
 et_anchor.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/data_chips/hog_triplets_targe
@@ -2642,10 +2664,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 11707 strings out of 480608
- 203546 string characters out of 5903631
- 458664 words of memory out of 5000000
- 26527 multiletter control sequences out of 15000+600000
+ 11709 strings out of 480608
+ 203862 string characters out of 5903631
+ 459671 words of memory out of 5000000
+ 26528 multiletter control sequences out of 15000+600000
  543274 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,17n,53p,3430b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2672,13 +2694,12 @@ cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/lo
 cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local
 /texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb>
-Output written on MainFile.pdf (168 pages, 7519070 bytes).
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb>
+Output written on MainFile.pdf (168 pages, 7761305 bytes).
 PDF statistics:
- 3258 PDF objects out of 3580 (max. 8388607)
- 2956 compressed objects within 30 object streams
+ 3252 PDF objects out of 3580 (max. 8388607)
+ 2950 compressed objects within 30 object streams
  706 named destinations out of 1000 (max. 500000)
  913 words of extra memory for PDF output out of 10000 (max. 10000000)
 
