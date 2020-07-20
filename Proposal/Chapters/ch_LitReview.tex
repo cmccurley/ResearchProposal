@@ -40,7 +40,7 @@ The multiple instance classification problem has been formulated under three par
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=\textwidth]{"lit_review/MIL/space_examples"}
-		\caption[MIL classification space paradigms.]{Illustration of MIL classification under the instance, bag and embedded-space paradigms.  The left column shows the data in the input feature space and the right column shows the data in the  classifier space along with the learned hyperplanes.  Red denotes positive bags/instances while blue represents negative bags/instances.  Single instances in circles denote single-instance representations of bags after being embedded.}
+		\caption[MIL classification space paradigms.]{Illustration of MIL classification under the instance, bag and embedded-space paradigms.  The left column shows data in the input feature space and the right column shows data in the  classifier space along with learned hyperplanes.  Red denotes positive bags/instances while blue represents negative bags/instances.  Single instances in circles denote single-instance representations of bags after being embedded.}
 		\label{fig:mil_classification_space_paradigm}
 	\end{figure*}
 \end{center}
@@ -242,7 +242,7 @@ The example shown in Figure \ref{fig:pca_eg} demonstrates the projection of 2-di
 	\begin{figure*}[t]
 		\centering
 		\includegraphics[width=1\textwidth]{"lit_review/manifold/pca"}
-		\caption[PCA example.]{Placeholder for PCA projection example.}
+		\caption[PCA example.]{Example of dimensionality reduction on a synthetic dataset using principal component analysis.  Left) Two-dimensional data, where $w_{1}$ and $w_{2}$ correspond to the first and second principal axes of the dataset, respectively.  Right) Orthogonal projection of the data onto the first principal axes.  It can be observed that $w_{1}$ corresponds to the direction of maximum variance for the data. }
 		\label{fig:pca_eg}
 	\end{figure*}
 \end{center}
@@ -264,7 +264,7 @@ Most modern manifold learners have theoretical and algorithmic roots in one of t
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{"lit_review/manifold/mds"}
-		\caption[Example of MDS distance preservation.]{Example of MDS distance preservation.}
+		\caption[Example of MDS distance preservation.]{Example of multidimensional scaling on a synthetic dataset.  The coordinates of the two-dimensional data (right) approximately preserve the pairwise distances between samples in the three-dimensional space (left).}
 		\label{fig:mds_example}
 	\end{figure*}
 \end{center}
@@ -381,7 +381,7 @@ where $\hat{\bm{\mu}_{1}}$ and $\hat{\bm{\mu}_{2}}$ are the empirical means for 
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{"lit_review/manifold/lda"}
-		\caption[LDA example.]{LDA example.}
+		\caption[PCA versus LDA]{Example of dimensionality reduction on a synthetic dataset using PCA (left) and LDA (right).  The dataset shown is comprised of two classes, red and blue, respectively.  As shown on the left, PCA projects the data onto the principal axis corresponding to the direction of maximum variance for the dataset.  The classes would not be separable in the one-dimensional projection space found by PCA.  As shown on the right, LDA projects the data onto the hyperplane which both maximizes between-class dissimilarity while minimizing within-class dissimilarity.  For this dataset, the data in the embedding space found by LDA would be linearly separable. }
 		\label{fig:lda_example}
 	\end{figure*}
 \end{center}
@@ -396,7 +396,7 @@ Linear methods such as PCA and MDS are convenient for projecting out-of-sample t
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{"lit_review/manifold/nonlinear_manifold"}
-		\caption[Example of a nonlinear manifold.]{Example of a nonlinear manifold.}
+		\caption[Example of a nonlinear manifold.]{Example of a nonlinear manifold.  This particular dataset is known as the "Swiss Roll", and it represents a two-dimensional manifold embedded in three dimensions.  Global, linear manifold learning approaches cannot appropriately un-roll the manifold.}
 		\label{fig:nonlinear_manifold}
 	\end{figure*}
 \end{center}
@@ -558,7 +558,7 @@ where $\beta$ is the non-negative \textit{bandwidth} of the kernel.  Vertices wi
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=0.9\textwidth]{"lit_review/manifold/graphs"}
-		\caption[Examples of graphs.]{Examples of K-nearest neighbor and $\epsilon$-ball graphs}
+		\caption[Examples of graphs.]{Examples of $k$-nearest neighbor and $\epsilon$ graphs.  The leftmost picture shows two-dimensional, synthetic data.  The center image demonstrates an example of a $k$-nearest neighbor graph with $k=3$.  As can be observed, the instances colored green, orange, and blue, respectively, are each connected only to their three closest neighbors (as denoted by corresponding colored edges) in the data space.  The rightmost image shows an example of an $\epsilon$-ball or $\epsilon$-neighborhood graph.  Edges only exist between samples if they fall within an $\epsilon$ radius (denoted by the red circle) from the query instance.}
 		\label{fig:examples_of_graphs}
 	\end{figure*}
 \end{center}
@@ -576,7 +576,7 @@ The ultimate goal of manifold learning is to uncover an underlying low-dimension
 	\begin{figure*}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{"lit_review/manifold/geodesic_03"}
-		\caption[Demonstration of geodesic distance]{Demonstration of geodesic distance}
+		\caption[Demonstration of geodesic distance]{The left image shows the Euclidean distance between two points, A and B, from the blue and red classes, respectively.  A classifier using Euclidean distance would assume the two points should be assigned the same class label because they are (Euclidean-wise) close in the feature space.  However, the two points actually belong to two disparate classes, each at an opposite end of the manifold.  Instead, the image on the right shows an approximation of the geodesic distance between the samples.  The geodesic distance, which measures the distance through the manifold, would be a more accurate representation of dissimilarity for the two instances.}
 		\label{fig:geodesic_distance}
 	\end{figure*}
 \end{center}

@@ -9,19 +9,19 @@
 \contentsline {figure}{\numberline {{2-3}}{\ignorespaces Example pose data manifold.}}{41}{figure.caption.25}%
 \contentsline {figure}{\numberline {{2-4}}{\ignorespaces PCA example.}}{45}{figure.caption.27}%
 \contentsline {figure}{\numberline {{2-5}}{\ignorespaces Example of MDS distance preservation.}}{47}{figure.caption.30}%
-\contentsline {figure}{\numberline {{2-6}}{\ignorespaces LDA example.}}{54}{figure.caption.33}%
+\contentsline {figure}{\numberline {{2-6}}{\ignorespaces PCA versus LDA}}{54}{figure.caption.33}%
 \contentsline {figure}{\numberline {{2-7}}{\ignorespaces Example of a nonlinear manifold.}}{55}{figure.caption.34}%
-\contentsline {figure}{\numberline {{2-8}}{\ignorespaces Examples of graphs.}}{61}{figure.caption.37}%
-\contentsline {figure}{\numberline {{2-9}}{\ignorespaces Demonstration of geodesic distance}}{63}{figure.caption.41}%
+\contentsline {figure}{\numberline {{2-8}}{\ignorespaces Examples of graphs.}}{62}{figure.caption.37}%
+\contentsline {figure}{\numberline {{2-9}}{\ignorespaces Demonstration of geodesic distance}}{64}{figure.caption.41}%
 \contentsline {figure}{\numberline {{2-10}}{\ignorespaces Autoencoder neural network}}{83}{figure.caption.48}%
 \contentsline {figure}{\numberline {{2-11}}{\ignorespaces Pairwise Loss Negative}}{120}{figure.caption.50}%
-\contentsline {figure}{\numberline {{2-12}}{\ignorespaces Pairwise Loss Positive}}{120}{figure.caption.51}%
-\contentsline {figure}{\numberline {{2-13}}{\ignorespaces Triplet Loss}}{121}{figure.caption.52}%
-\contentsline {figure}{\numberline {{2-14}}{\ignorespaces Large Margin $k$-NN}}{123}{figure.caption.53}%
-\contentsline {figure}{\numberline {{2-15}}{\ignorespaces Siamese Contrastive}}{124}{figure.caption.54}%
+\contentsline {figure}{\numberline {{2-12}}{\ignorespaces Pairwise Loss Positive}}{121}{figure.caption.51}%
+\contentsline {figure}{\numberline {{2-13}}{\ignorespaces Triplet Loss}}{122}{figure.caption.52}%
+\contentsline {figure}{\numberline {{2-14}}{\ignorespaces Large Margin $k$-NN}}{124}{figure.caption.53}%
+\contentsline {figure}{\numberline {{2-15}}{\ignorespaces Siamese Contrastive}}{125}{figure.caption.54}%
 \contentsline {figure}{\numberline {{2-16}}{\ignorespaces Siamese Triplet}}{125}{figure.caption.55}%
-\contentsline {figure}{\numberline {{3-1}}{\ignorespaces Proposed manifold learning}}{130}{figure.caption.56}%
-\contentsline {figure}{\numberline {{3-2}}{\ignorespaces Proposed metric embedding}}{131}{figure.caption.57}%
-\contentsline {figure}{\numberline {{4-1}}{\ignorespaces Image chip extraction}}{137}{figure.caption.58}%
-\contentsline {figure}{\numberline {{4-2}}{\ignorespaces Image chip uncertainty}}{138}{figure.caption.59}%
-\contentsline {figure}{\numberline {{4-3}}{\ignorespaces HOG features}}{139}{figure.caption.60}%
+\contentsline {figure}{\numberline {{3-1}}{\ignorespaces Proposed manifold learning}}{131}{figure.caption.56}%
+\contentsline {figure}{\numberline {{3-2}}{\ignorespaces Proposed metric embedding}}{132}{figure.caption.57}%
+\contentsline {figure}{\numberline {{4-1}}{\ignorespaces Image chip extraction}}{138}{figure.caption.58}%
+\contentsline {figure}{\numberline {{4-2}}{\ignorespaces Image chip uncertainty}}{139}{figure.caption.59}%
+\contentsline {figure}{\numberline {{4-3}}{\ignorespaces HOG features}}{140}{figure.caption.60}%
