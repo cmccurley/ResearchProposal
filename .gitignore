@@ -2,3 +2,4 @@
 *.pptx
 *.pth
 *.pdf
+.DS_Store
