@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  27 JUL 2020 09:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  6 AUG 2020 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -742,21 +742,21 @@ id-wave in-frared cam-era. The
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <~/Documents/ResearchProposal/Proposal/Images/introduction/target_img.png, id=6
-28, 542.025pt x 383.9946pt>
+28, 542.025pt x 383.4325pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/introduction/target_img.png 
 Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/introduction/target_img.png>
 Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/introduct
 ion/target_img.png  used on input line 37.
-(pdftex.def)             Requested size: 153.01482pt x 108.405pt.
+(pdftex.def)             Requested size: 153.23813pt x 108.405pt.
 <~/Documents/ResearchProposal/Proposal/Images/introduction/bg_img.png, id=630, 
-542.025pt x 383.9946pt>
+542.025pt x 383.4325pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/introduction/bg_img.png Grap
 hic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/introduction/bg_img.png>
 Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/introduct
 ion/bg_img.png  used on input line 43.
-(pdftex.def)             Requested size: 153.01482pt x 108.405pt.
+(pdftex.def)             Requested size: 153.23813pt x 108.405pt.
 
 Overfull \hbox (7.83325pt too wide) in paragraph at lines 35--46
  [][]  [] 
@@ -1032,14 +1032,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/MIL/bag_examples.png, 
-id=842, 707.7642pt x 296.307pt>
+id=842, 711.65875pt x 296.10625pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/MIL/bag_examples.
 png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/MIL/bag_examples.p
 ng>
 Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/lit_revie
 w/MIL/bag_examples.png  used on input line 19.
-(pdftex.def)             Requested size: 375.20143pt x 157.07813pt.
+(pdftex.def)             Requested size: 375.20143pt x 156.11324pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--20
 []\OT1/cmss/m/n/12 Figure 2-1: |Il-lus-tra-tion of ex-am-ple bags un-der the mu
@@ -1067,14 +1067,14 @@ e-cause they each con-tain at least
 [25 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_review/MIL
 /bag_examples.png>] [26] [27]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/MIL/space_examples.png
-, id=871, 862.422pt x 540.0978pt>
+, id=871, 862.22125pt x 540.0175pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/MIL/space_example
 s.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/MIL/space_examples
 .png>
 Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/lit_revie
 w/MIL/space_examples.png  used on input line 42.
-(pdftex.def)             Requested size: 469.0pt x 293.71701pt.
+(pdftex.def)             Requested size: 469.0pt x 293.73926pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []\OT1/cmss/m/n/12 Figure 2-2: |Il-lus-tra-tion of MIL clas-si-fi-ca-tion un-de
@@ -1420,14 +1420,14 @@ Underfull \hbox (badness 1675) in paragraph at lines 632--633
 [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81]
 [82]
 <~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/autoencoder.p
-ng, id=1940, 1350.04375pt x 520.94624pt>
+ng, id=1940, 1366.8666pt x 511.1898pt>
 File: ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/autoenco
 der.png Graphic file (type png)
 <use ~/Documents/ResearchProposal/Proposal/Images/lit_review/manifold/autoencod
 er.png>
 Package pdftex.def Info: ~/Documents/ResearchProposal/Proposal/Images/lit_revie
 w/manifold/autoencoder.png  used on input line 916.
-(pdftex.def)             Requested size: 469.0pt x 180.97464pt.
+(pdftex.def)             Requested size: 469.0pt x 175.40125pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 917--917
 []\OT1/cmss/m/n/12 Figure 2-10: |De-pic-tion of an au-toen-coder neu-ral net-wo
@@ -1447,8 +1447,13 @@ as pos-si-ble, a re-pro-duc-tion of the
  []
 
 [83 </Users/cmccurley/Documents/ResearchProposal/Proposal/Images/lit_review/man
-ifold/autoencoder.png>] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93]
-[94] [95] [96] [97] [98] [99] [100] [101]
+ifold/autoencoder.png
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file /Users/cmccurley/Documents/R
+esearchProposal/Proposal/Images/lit_review/manifold/autoencoder.png): large int
+erlaced PNG might cause out of memory (use non-interlaced PNG to fix this)
+>] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97]
+[98] [99] [100] [101]
 Underfull \hbox (badness 10000) in paragraph at lines 1231--1231
 []|\OT1/cmss/m/n/12 Preserves vari-ance of data, global struc-ture. Sec-tion
  []
@@ -2666,7 +2671,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
 Here is how much of TeX's memory you used:
  11709 strings out of 480608
  203862 string characters out of 5903631
- 459671 words of memory out of 5000000
+ 459683 words of memory out of 5000000
  26528 multiletter control sequences out of 15000+600000
  543274 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2696,7 +2701,7 @@ al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local
 /texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
 al/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb>
-Output written on MainFile.pdf (168 pages, 7761305 bytes).
+Output written on MainFile.pdf (168 pages, 7723948 bytes).
 PDF statistics:
  3252 PDF objects out of 3580 (max. 8388607)
  2950 compressed objects within 30 object streams
