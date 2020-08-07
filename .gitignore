@@ -2,4 +2,13 @@
 *.pptx
 *.pth
 *.pdf
-.DS_Store
+*.DS_Store
+*.aux
+*.lof
+*.log
+*.lot
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
