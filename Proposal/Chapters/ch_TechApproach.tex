@@ -1,78 +1,37 @@
 \chapter{Technical Approach}
-In this chapter, we present the proposed methods for discriminative dimensionality reduction using weakly-supervised learning. In the current state of the literature, few methods have been developed which address the problem of dimensionality reduction and manifold learning using weak labels under the multiple-instance learning framework.  Among the proposed methods, none address the possibility of nonlinearity in the underlying manifold representing bags or instances. To this end, this proposal presents a plan of research to fill this gap in the literature.  Specifically, we aim to provide a generalized framework for nonlinear dimensionality reduction under the multiple instance learning paradigm which promotes instance-level discriminability in the latent embedding space.  This proposal only considers the binary classification problem, which is motivated by target detection in remote  sensing. The approaches developed in this work will be directly compared to state-of-the-art approaches in the literature.  The remainder of this chapter is divided into three sections.  In the first section, we describe the initial work in investigating the efficacy of strictly supervised, nonlinear manifold learning methods for bag and instance-level classification.  In the second section, we present high-level summaries of the proposed approaches.  Finally, the third section presents the proposed datasets for applying and testing the methods developed. 
+In this chapter, we present the proposed methods for discriminative dimensionality reduction using weakly-supervised learning. In the current state of the literature, few methods have been developed which address the problem of dimensionality reduction and manifold learning using weak labels under the multiple-instance learning framework.  Among the proposed methods, none address the possibility of nonlinearity in the underlying manifold representing bags or instances. To this end, this proposal presents a plan of research to fill this gap in the literature.  Specifically, we aim to provide a generalized framework for nonlinear dimensionality reduction under the multiple instance learning paradigm which promotes instance-level discriminability in the latent embedding space.  This proposal only considers the binary classification problem, which is motivated by target detection in remote  sensing. The approaches developed in this work will be directly compared to state-of-the-art approaches in the literature.  The remainder of this chapter is divided into three sections.  In Section \ref{sec:instance_class_bag_level_info}, we describe a high-level summary of the proposed work.  In Section \ref{sec:tech_approach_prelim_work}, we present technical details of the initial approaches implement to realize the goals of this proposal.  Finally, Section \ref{sec:tech_approach_future_work} discusses plans for future research. 
 
-\section{Preliminary Work}
-In order to show potential for the proposed work to advance SOA in the literature, initial experiments were conducted to demonstrate proof of concept for nonlinear dimensionality reduction on bag and instance-level classification.  Specifically, two algorithms, Supervised Laplacian Eigenmaps (S-LE) \citep{Raducanu2012SupervisedNonlinearDimReduction} and Supervised Enhanced Isomap (SE-Isomap) \citep{Ribeiro2008SupervisedIsomap},  were evaluated across a range of test parameters.  While S-LE and SE-Isomap were reviewed in sections \ref{sec:Laplacian_Eigenmaps} and \ref{sec:Isomap}, respectively, pseudo-code for the algorithms using Multiple Instance data is provided below.  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Future Work %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Instance Classification from Bag-level Manifold Information} \label{sec:instance_class_bag_level_info}
+Figure \ref{fig:truck_manifold} shows image chips of a civilian vehicle in the DSIAC \citep{DSIACATR} dataset at various aspects.  It can be assumed that each chip was sampled from a stationary distribution governed by only a few latent factors of variation, such as: vehicle aspect, range and illumination. 
+\begin{center}
+	\begin{figure*}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{"technical_approach/truck_manifold"}
+		\caption[Target image variation]{Image chips of a target vehicle in the DSIAC \citep{DSIACATR} dataset.  The chips show the same target at various aspects.}
+		\label{fig:truck_manifold}
+	\end{figure*}
+\end{center}
+\noindent Now consider the two samples shown in Figure \ref{fig:image_chip_bags}.  This data lends itself perfectly to the Multiple Instance Learning framework described in Section \ref{sec:Multiple_Instance_Learning}, where image (a) is considered a \textit{positive bag} since it contains at least one target pixel, and image (b) is a \textit{negative bag} since it is comprised of only non-target \textit{instances} (pixels).  Previous work has shown that discriminative dimensionality reduction can effectively discover that latent factors of variation which separate positive and negative bags \citep{Sun2010MIDR, Ping2010MILDRMaxMargin, Chai2014MIDA, Kim2010LocalDRMIL}.  
 
-\subsection{S-LE Algorithm Description}
-The objective of S-LE \citep{Raducanu2012SupervisedNonlinearDimReduction} is to find low-dimensional representations $\bm{Z}$ of data $\bm{X}$, which promote class separability in the embedding space.  Essentially, within-class and between class affinity matrices are defined by the nearest neighbors all of samples in the dataset.  An objective is constructed using graph Laplacians  which trades off between pulling samples of the same class close in the embedding space and pushing away samples of different classes.   A detailed discussion of S-LE is given in Section \ref{sec:Laplacian_Eigenmaps}.
+\begin{figure*}[h]
+	\centering
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=1.5in]{"introduction/target_img"}
+		\caption{}
+	\end{subfigure}%
+	~ 
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=1.5in]{"introduction/bg_img"}
+		\caption{}
+	\end{subfigure}
+	\caption[Examples of DSIAC bags.]{Example of image-level labels for binary target detection.  Image (a) is denoted to contain pixels belonging to the target class somewhere within the image, while image (b) clearly contains samples solely from the background distribution.}
+	\label{fig:image_chip_bags}%
+\end{figure*}
 
-\subsection{SE-Isomap Algorithm Description}
-SE-Isomap \citep{Ribeiro2008SupervisedIsomap}, as discussed in Section \ref{sec:Isomap}, uses a specialized measure of similarity which considers class information in order to project samples of the same class closer and points in different classes away from each other in the embedding space. SE-Isomap first computes a distance matrix between all pairs of samples in the dataset.  Samples from the same class have smaller pairwise distances than samples in different classes, as controlled by the parameter $\alpha$.  After computing the distance matrix $\bm{W}$, the shortest path distances between every pair of samples are found using Floyd's or Dijkstra's algorithms, and multidimensional  scaling is applied to find the low-dimensional data representations $\bm{Z}$ of input data $\bm{X}$. Descriptions of SE-Isomap and MDS are provided in Sections \ref{sec:Isomap} and \ref{sec:MDS}, respectively.
-
-
-
-\subsection{Instance-Level Classification}
-For initial bag-level classification experiments, S-LE and SE-Isomap were applied directly as mentioned.  These methods were initially developed as strictly supervised approaches, where each sample is associated with a binary class label.  Sample-level labels, however, are not available in MIL.  In order to initially investigate nonlinear dimensionality reduction for instance level classification, each instance was given the label of its corresponding bag, as was done in CLFDA and mi-SVM \citep{Kim2010LocalDRMIL,Andrews2011MISVM}, and the instance-level labels were refined through learning.  As is done in CLFDA, learning alternated between label refinement and computing the optimal embedding function.  As mentioned previously, the  label of a bag can be expressed succinctly as the maximum label of its instances, $L_{k} = \max_{n \in N_{k}}l_{n}$, or alternatively, as a set of linear constraints
-\begin{align}
-	\sum_{n \in N_{k}} \frac{l_{n} + 1}{2} \geq 1, \quad \forall k \ni L_{k} = 1, \quad \text{and} l_{n} = -1, \quad \forall k \ni L_{k} = -1
-\end{align}
-\noindent
-These constraints say that if a bag's label is negative, every instance in the bag should have a negative label.  Alternatively, the fraction in the first term will evaluate to $1$ for an instance label of $+1$ and to $0$ for a label of $-1$.  Therefore, the inequality holds so long as at least one instance is labeled positive.  Nonlinear dimensionality reduction of the instance-level was performed with S-LE and SE-Isomap as shown in Algorithm \ref{alg:instance_imputation}.  Essentially, each instance was initially given the label of its bag.  Learning alternated between label refinement and learning an embedding function which optimized class separation in the embedding space.
-
-%\begin{algorithm}[h!]
-%	\caption{Instance-Level Nonlinear Manifold Embedding}
-%	\label{alg:instance_imputation}
-%	\begin{algorithmic}[1]
-%		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$}
-%		\Ensure {Low-dimensional data representations $\bm{Z} \in \mathbb{R}^{N \times d}$}
-%		\While {Imputed labels change}
-%		\State {Compute low-dimensional data representations $\bm{Z}$ using S-LE or SE-Isomap with imputed instance labels}
-%		\State {\textbf{CLASSIFICATION}}
-%		\For {Every positive bag $\bm{B}_{k}^{+}$}
-%			\If {$\sum_{n \in N_{k}} \frac{l_{n} + 1}{2} == 0$}
-%			
-%			\EndIf
-%		\EndFor
-%		\EndWhile  
-%	\end{algorithmic}
-%\end{algorithm}
-%
-%\begin{algorithm}[h!]
-%	\caption{CLFDA}
-%	\label{alg:CLFDA}
-%	\begin{algorithmic}[1]
-%		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$, parameters $C,R,\tau$}
-%		\Ensure {Projection matrix $\bm{W}$}
-%		\State {$\bm{X} \gets$ instances in $\bm{B}$}
-%		\State {$G \gets \max(R,C)$-nearest neighbor graph of $\bm{X}$}
-%		\For {$n = 1 \to N$}   
-%		\State {$R_{n} \gets R$-nearest references of instance $\bm{x}_{n}$}
-%		\State {$C_{n} \gets C$-nearest citers of instance $\bm{x}_{n}$}
-%		\State {$N_{n}^{-} \gets $-number of instances from negative bags in  $R_{n} + C_{n}$}
-%		\State {$N_{n}^{+} \gets $-number of instances from positive bags in  $R_{n} + C_{n}$}
-%		\If {$\frac{N_{n}^{-}}{N_{n}^{+}} \geq \tau$ or $\bm{x}_{n}$ is from a negative bag}
-%		\State {instance label $l_{n} \gets -1$}
-%		\Else
-%		\State {$l_{n} \gets +1$}
-%		\EndIf
-%		\EndFor             
-%		\State{$\bm{A}^{b} \gets$ between-class affinity matrix}
-%		\State{$\bm{A}^{w} \gets$ within-class affinity matrix}
-%		\State{Between-class scatter matrix $\bm{S}_{b} = \frac{1}{2}\sum_{m,n=1}^{N}\bm{A}_{mn}^{b}(\bm{x}_{m}-\bm{x}_{n})(\bm{x}_{m}-\bm{x}_{n})^{T}$}
-%		\State{Within-class scatter matrix $\bm{S}_{w} = \frac{1}{2}\sum_{m,n=1}^{N}\bm{A}_{mn}^{w}(\bm{x}_{m}-\bm{x}_{n})(\bm{x}_{m}-\bm{x}_{n})^{T}$}
-%		\State {$\bm{W} \in \mathbb{R}^{D \times d} \gets$ top $d$ eigenvectors of $\frac{\bm{w}^{T}\bm{S}_{b}\bm{w}}{\bm{w}^{T}\bm{S}_{w}\bm{w}}$}
-%	\end{algorithmic}
-%\end{algorithm}
-
-\section{Future Work}
-This work proposes the development of non-linear dimensionality reduction techniques that facilitate instance-level classification in the embedding space.  Preliminary experiments used S-LE and SE-Isomap to embed data for bag and instance-level classification.  However, to fully investigate this area, four specific tasks still need to be explored: instance selection, manifold learning, metric embedding and out-of-sample testing.
-
-\subsection{Instance Selection}
-Many feature learning approaches in the literature use supervised learning to obtain discriminative feature representations, or use supervised methods to fine-tune unsupervised  feature extraction.  However, this cannot be done directly in MIL because of the uncertainty on the labels \citep{Carbonneau2016MILSurvey}.  Therefore, in order to adapt supervised nonlinear manifold learning to the MIL framework, techniques must be explored to propose the most-likely positive instances.  While methods for this have been proposed in the literature \citep{Kim2010LocalDRMIL, Maron1998DiverseDensity, Bocinsky2019SPIEMIACEInitialization}, I propose to develop an iterative technique to learn the most-likely positive points through training.  A variety of techniques will be explored for this task, including: Multiple instance boosting, MI ranking/preference learning, maximum-likelihood, Diverse Density and clustering.  
-
-\subsection{Manifold Learning}
-I will continue to explore the use of S-LE and SE-Isomap for use in instance-level classification.  However, in order to use these methods for optimal instance embedding, notion of which instances are positive and negative is needed.  To explore instance  embedding, I will first implement DD as a method to select positive and negative prototypes which can be used to optimize the embeddings.  Following, I will investigate incorporating a MI boosting or ranking procedure to iteratively adapt the samples which are selected as positive and negative.  An iterative approach to training will be used which alternates between instance selection and providing the optimal embeddings for instance-level classification.
+\noindent The underlying hypothesis of this work is that, if bag-level manifolds contain the information to discriminate between positive and negative bags, then they also contain the appropriate information to classify individual instances. Thus, the objective of this work is to investigate methods which exploit bag-level manifolds to perform instance-level classification.  As shown in Figure \ref{fig:proposed_manifold_learning}, the proposed approach will learn embeddings which separate positive and negative instances in the embedding space.
 
 \begin{center}
 	\begin{figure*}[h]
@@ -83,8 +42,41 @@ I will continue to explore the use of S-LE and SE-Isomap for use in instance-lev
 	\end{figure*}
 \end{center}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Current Approach %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Preliminary Work} \label{sec:tech_approach_prelim_work}
+In order to show potential for the proposed work to advance SOA in the literature, initial experiments were conducted to demonstrate the utilitarian aspects of manifold information in bag and instance-level classification.  Specifically, a multiple instance template matching scheme was implemented and tested. 
+
+\subsection{MI-Manifold Template Matching} \label{sec:miace_geo}
+An adaptation of the multiple instance learning algorithm, MI-ACE \citep{Zare2016MIACE}, was implemented where the pairwise geodesic distances between samples were used to select the most-likely target concepts within a set of positive and negative bags.  Following the notation for multiple instance learning defined in Section \ref{sec:Multiple_Instance_Learning}, the generalized objective function for MI-ACE is given by
+\begin{align}
+    \argmax_{\bm{t}} \frac{1}{N^{+}} \sum_{k:L_{k}=1} \mathcal{D}(\bm{x}^{*}_{k},\bm{t}) - \frac{1}{N^{-}} \sum_{k:L_{k}=0} \frac{1}{N^{-}_{k}} \sum_{\bm{x}_{n} \in \bm{B}^{-}_{k}}  \mathcal{D}(\bm{x}_{n},\bm{t})
+\end{align}
+\noindent where $N^{+}$ and $N^{-}$ are the number of positive and negative bags, respectively, $N^{-}_{k}$ is the number of instances in the $k^{th}$ negative bag, and $\bm{x}^{*}_{k}$ is the instance from positive bag $\bm{B}^{+}_{k}$ which is most likely a positive sample given $\bm{t}$. Optimizing the MI-ACE objective returns the target signature $\bm{t}$ (assumed to be a positive instance concept) which maximizes the detection statistic $\mathcal{D}(\cdot,\cdot)$ for the most-likely target instances in each of the positive bags while also minimizing the statistic across all negative instances.  The most likely target signature from each positive bag is determined by 
+\begin{align}
+    \bm{x}^{*}_{k} = \argmax_{\bm{x}_{n} \in \bm{B}^{+}_{k}} \mathcal{D}(\bm{x}_{n},\bm{t})
+\end{align}
+\noindent which implies that $\bm{x}^{*}_{k}$ is the training sample with the maximum detection statistic given a target signature concept, $\bm{t}$.  In order to use manifold information to influence target concept selection, the detection statistic, $\mathcal{D}(\cdot,\cdot)$, was set as a similarity measure derived from the geodesic distances (Section \ref{sec:geodesic_distance}) between samples:
+\begin{align} \label{eq:mi_manifold_template_matching_metric}
+    \mathcal{D} = \frac{1}{1 + \mathcal{D}_{geo}}
+\end{align}
+\noindent which gives samples with smaller dissimilarities detection scores close to $1$, and samples with disparate geodesic distances scores near zero.  The single most-likely positive sample in a training set can be selected greedily by setting it as the instance which obtains the maximum objective score. This sample can be viewed as a \textit{template target signature} which was chosen according to the geodesic distances between instances in the input feature space.
+
+Performing target detection on unseen test samples is simple with the implemented MI-Manifold Template Matching scheme.  Essentially, the geodesic distances of test samples to the estimated target point are approximated as the distances of their closest corresponding training points, or \textit{keypoints}, plus the Euclidean distances to their keypoints.  This approximation of geodesic distance assumes that the keypoints are representative of the data and are sufficiently sampled such that the distances between test points and their closest keypoints are locally Euclidean.  Detection scores in $[0,1]$ are given to the test instances according to Equation \ref{eq:mi_manifold_template_matching_metric}.
+
+The implemented approach is meant to demonstrate the efficacy of incorporating manifold information in instance-level discrimination tasks.  However, the current approach acts only in the input feature space and does not take advantage of the intrinsic dimensionality of the data, nor does it exploit the discriminative power of supervised dimensionality reduction methods.  Thus, plans for further investigation in this area are outlined in Section \ref{sec:tech_approach_future_work}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Future Work %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Future Work} \label{sec:tech_approach_future_work}
+This work proposes the development of non-linear dimensionality reduction techniques that facilitate instance-level classification in the embedding space.  Preliminary experiments used geodesic distance in the input feature space to estimate instance-level classification scores.  However, to fully investigate this area, four specific tasks still need to be explored: instance selection, manifold learning/embedding, metric embedding and out-of-sample testing.
+
+\subsection{Instance Selection}
+Many feature learning approaches in the literature use supervised learning to obtain discriminative feature representations, or use supervised methods to fine-tune unsupervised  feature extraction.  However, this cannot be done directly in MIL because of the uncertainty on the labels \citep{Carbonneau2016MILSurvey}.  Therefore, in order to adapt supervised nonlinear manifold learning to the MIL framework, techniques must be explored to propose the most-likely positive instances.  While methods for this have been suggested in the literature \citep{Kim2010LocalDRMIL, Maron1998DiverseDensity, Bocinsky2019SPIEMIACEInitialization}, I will continue investigating techniques which utilize intrinsic manifold information to inform instance selection.  A variety of techniques will be explored for this task, including: specialized adjacency construction and shortest path estimation, metric embedding and multiple instance ranking.
+
+\subsection{Manifold Learning}
+Strictly supervised, discriminative dimensionality reduction approaches in the literature require precise labels to estimate class manifolds and define appropriate embedding functions.  Preliminary work investigated positive and negative instance proposition using geodesic distance.  The next step is to explore instance embedding and classification using the proposed instances.  I will investigate the use  supervised dimensionality reduction methods such as S-LE and SE-Isomap for instance-level classification.  An iterative approach to training will be used to optimize both the embedded features as well as the selected positive and negative concepts for instance-level classification.
+
 \subsection{Metric Embedding}
-Metric embedding is often realized through weakly-supervised learning, where instead of labels, the data is accompanied with sets of preferences \citep{Hermans2017DefenseTripletLoss,Koch2015SiameseNetworks,Schroff2015FaceNet}. While this embedding is straightforward to implement at the bag level, enforcing instance embeddings is difficult due to the uncertainty on the labels.  However, one could (potentially) use instance ranking as discussed in Section \ref{sec:MI_Ranking} to provide estimated preference sets on the instances for use in embedding.  In the proposed work, I will investigate MI ranking/preference learning as a way to discriminate between positive and negative instances.  Specifically, Siamese networks or ranking SVMs will be trained with contrastive and triplet loss in order to learn low-dimensional features that promote class separation in the embedding space.  Bag-level information will be utilized to ensure similarity between instances in negative bags, while enforcing dissimilarity between the instances in positive bags and negative bags.  Given a test bag, the algorithm should be able to project negative instances close to other negative instances and far from positive instances in the embedding space (and vice versa) or correctly rank instances as being more likely to be positive or negative.
+Metric embedding is often realized through weakly-supervised learning, where instead of labels, the data is accompanied with \textit{preference} information \citep{Hermans2017DefenseTripletLoss,Koch2015SiameseNetworks,Schroff2015FaceNet}. While this embedding is straightforward to implement at the bag level, enforcing instance embeddings is difficult due to the uncertainty on the labels.  However, one could (potentially) use instance ranking (Section \ref{sec:MI_Ranking}) to provide estimated preference sets on the instances for use in embedding.  In the proposed work, I will investigate MI ranking/preference learning as a way to discriminate between positive and negative instances.  Specifically, Siamese networks or ranking SVMs will be trained with contrastive and triplet loss in order to learn low-dimensional features that promote class separation in the embedding space.  Bag-level information will be utilized to ensure similarity between instances in negative bags, while enforcing dissimilarity between the instances in positive bags and negative bags.  Given a test bag, the algorithm should be able to project negative instances close to other negative instances and far from positive instances in the embedding space (and vice versa) or correctly rank instances as being more likely to be positive or negative.
 
 \begin{center}
 	\begin{figure*}[h]
@@ -102,25 +94,23 @@ Preliminary work used simple linear reconstructions of  samples' input space nei
 
 The methods developed through the proposed work will be directly compared to SOA MIL manifold learning and dimensionality reduction methods in the literature.  Specifically, bag-level classification will be compared against MIDR \citep{Sun2010MIDR} and MidLABS \citep{Ping2010MILDRMaxMargin}, which are inherently suited for bag-level classification.  Instance-level classification with be compared against MIDA \citep{Chai2014MIDA}, CLFDA \citep{Kim2010LocalDRMIL} and MI-FEAR \citep{Latham2015MIFeatureRankingThesis}.  Each approach will be evaluated in terms of classification performance with $k$-NN, SVM and a feed-forward neural network on a variety of datasets, including: synthetic manifold learning data, ATR infrared vehicle detection data, hyperspectral target detection data, and people and object classification data.  Classification and detection performance will be evaluated with simple classification accuracy and ROC curves (if the classifier produces a continuous classification score).
 
-\section{Datasets}
-In this section, a table is given to provide a summary of the datasets proposed to test the developed approaches.  The table provides a brief summary of the datasets as well as their intended uses in testing.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+Specifically, two algorithms, Supervised Laplacian Eigenmaps (S-LE) \citep{Raducanu2012SupervisedNonlinearDimReduction} and Supervised Enhanced Isomap (SE-Isomap) \citep{Ribeiro2008SupervisedIsomap},  were evaluated across a range of test parameters.  While S-LE and SE-Isomap were reviewed in sections \ref{sec:Laplacian_Eigenmaps} and \ref{sec:Isomap}, respectively, pseudo-code for the algorithms using Multiple Instance data is provided below.  
 
-\begin{longtable}{ |p{4cm}|p{6cm}|p{4cm}|  } 
-	\caption{Summary of datasets.}
-	\label{tab:Datasets}\\
-	\hline
-	\multicolumn{3}{|c|}{\textbf{Datasets}} \\
-	\hline
-	\textbf{Dataset} & \textbf{Summary} & \textbf{Justification/Use}\\
-	\hline
-	Quadratic Surfaces Synthetic   &  Two sets of synthetic datasets representing 2D quadratic surfaces embedded in 3D.  In one set, two quadratic surfaces are separable in the input space.  In the other scenario, the surfaces intersect, and are thus inherently non-separable.  & Test classification at both the bag and instance level.   \\
-	\hline
-	DSIAC MS-0003-DB   &  Publicly available MWIR videos of military vehicles. & Test classification at both the bag and instance level.   \\
-	\hline
-	MUUFL Gulfport &  Hyperspectral, LiDAR and GPS data of scenes taken over University of Mississippi Gulfport. & Test detection and classification at the bag-level.   \\
-	\hline
-	LFW Faces in the Wild & Images of 5749 different faces labeled at the  image level. & Classification and ranking. \\
-	\hline
-	PASCAL VOC  & 2913 RGB images labeled at the pixel-level. & Test instance-level classification. \\
-	\hline
-\end{longtable}
+\subsection{S-LE Algorithm Description}
+The objective of S-LE \citep{Raducanu2012SupervisedNonlinearDimReduction} is to find low-dimensional representations $\bm{Z}$ of data $\bm{X}$, which promote class separability in the embedding space.  Essentially, within-class and between class affinity matrices are defined by the nearest neighbors all of samples in the dataset.  An objective is constructed using graph Laplacians  which trades off between pulling samples of the same class close in the embedding space and pushing away samples of different classes.   A detailed discussion of S-LE is given in Section \ref{sec:Laplacian_Eigenmaps}.
+
+\subsection{SE-Isomap Algorithm Description}
+SE-Isomap \citep{Ribeiro2008SupervisedIsomap}, as discussed in Section \ref{sec:Isomap}, uses a specialized measure of similarity which considers class information in order to project samples of the same class closer and points in different classes away from each other in the embedding space. SE-Isomap first computes a distance matrix between all pairs of samples in the dataset.  Samples from the same class have smaller pairwise distances than samples in different classes, as controlled by the parameter $\alpha$.  After computing the distance matrix $\bm{W}$, the shortest path distances between every pair of samples are found using Floyd's or Dijkstra's algorithms, and multidimensional  scaling is applied to find the low-dimensional data representations $\bm{Z}$ of input data $\bm{X}$. Descriptions of SE-Isomap and MDS are provided in Sections \ref{sec:Isomap} and \ref{sec:MDS}, respectively.
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+\subsection{Instance-Level Classification}
+For initial bag-level classification experiments, S-LE and SE-Isomap were applied directly as mentioned.  These methods were initially developed as strictly supervised approaches, where each sample is associated with a binary class label.  Sample-level labels, however, are not available in MIL.  In order to initially investigate nonlinear dimensionality reduction for instance level classification, each instance was given the label of its corresponding bag, as was done in CLFDA and mi-SVM \citep{Kim2010LocalDRMIL,Andrews2011MISVM}, and the instance-level labels were refined through learning.  As is done in CLFDA, learning alternated between label refinement and computing the optimal embedding function.  As mentioned previously, the  label of a bag can be expressed succinctly as the maximum label of its instances, $L_{k} = \max_{n \in N_{k}}l_{n}$, or alternatively, as a set of linear constraints
+\begin{align}
+	\sum_{n \in N_{k}} \frac{l_{n} + 1}{2} \geq 1, \quad \forall k \ni L_{k} = 1, \quad \text{and} l_{n} = -1, \quad \forall k \ni L_{k} = -1
+\end{align}
+\noindent
+These constraints say that if a bag's label is negative, every instance in the bag should have a negative label.  Alternatively, the fraction in the first term will evaluate to $1$ for an instance label of $+1$ and to $0$ for a label of $-1$.  Therefore, the inequality holds so long as at least one instance is labeled positive.  Nonlinear dimensionality reduction of the instance-level was performed with S-LE and SE-Isomap as shown in Algorithm \ref{alg:instance_imputation}.  Essentially, each instance was initially given the label of its bag.  Learning alternated between label refinement and learning an embedding function which optimized class separation in the embedding space.
+\end{comment}

@@ -7,14 +7,14 @@ This proposal calls for the investigation of manifold learning and dimensionalit
 \subsection{Tasks and Approximate Dates of Completion:} \label{sec:task_table}
 
 
-\begin{longtable}{|p{10cm}|p{4cm}|} 
+\begin{longtable}{|p{0.75\textwidth}|p{0.25\textwidth}|} 
 	\caption[List of research tasks.]{List of research tasks and their corresponding estimated dates for completion.}
 	\label{tab:future_tasks}\\
-	\hline \multicolumn{1}{|p{10cm}|}{\textbf{Tasks}} & \multicolumn{1}{p{4cm}|}{\textbf{Approximate Date of Completion}} \\ \hline
+	\hline \multicolumn{1}{|p{0.75\textwidth}|}{\textbf{Tasks}} & \multicolumn{1}{p{0.25\textwidth}|}{\textbf{Approximate DoC}} \\ \hline
 	\endfirsthead
 	\multicolumn{2}{c}%
 	{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
-	\hline \multicolumn{1}{|p{10cm}|}{\textbf{Tasks}} &  \multicolumn{1}{p{4cm}|}{\textbf{Approximate Date of Completion}}
+	\hline \multicolumn{1}{|p{0.75\textwidth}|}{\textbf{Tasks}} &  \multicolumn{1}{p{0.25\textwidth}|}{\textbf{Approximate DoC}}
 	\\
 	\hline
 	\endhead
@@ -26,12 +26,12 @@ This proposal calls for the investigation of manifold learning and dimensionalit
 
 	\multicolumn{2}{|l|}{\textbf{Multiple Instance Manifold Learning}} \\
 	\hline
-	Develop discriminative MI manifold learning approach for bag and instance-level classification.  (\textbf{Completed})
+	Develop discriminative MI manifold learning approach for bag and instance-level classification.  
 	\begin{enumerate}
 %			\setcounter{enumi}{2}
-		\item Supervised Nonlinear DR method for bag-level classification \label{item:supervisedDR_bag_level}
+		\item Supervised Nonlinear DR method for bag-level classification (\textbf{Completed}) \label{item:supervisedDR_bag_level}
 		\begin{enumerate}
-			\item Compare S-LE and SE-Isomap  with $k$-NN
+			\item Compare S-LE and SE-Isomap  with $k$-NN (\textbf{Completed})
 			\begin{enumerate}
 				\item Evaluate over a range of embedding dimensions
 				\item Evaluate over varying levels of label uncertainty
@@ -46,43 +46,39 @@ This proposal calls for the investigation of manifold learning and dimensionalit
 			\item Methods that consider class information of training data
 		\end{enumerate}
 		
-		\item Investigate methods for selecting positive instances for instance-level  embedding/classification
-		\begin{enumerate}
-			\item Clustering
-			\item Diverse Density-based
-			\item Maximum Likelihood/ KDE of negative instances
-			\item Citation $k$-NN
-			\item Multiple Instance Boosting
-			\item MI Ranking
-		\end{enumerate}
+		\item Extract instance-level features from hand-crafted methods and CNNs (\textbf{Completed})
+		
+		\item Investigate methods for selecting positive instances using manifold information for instance-level embedding/classification
 	
-		\item Repeat experiments in \ref{item:supervisedDR_bag_level} for instance-level classification
-	\end{enumerate} & \newline \vspace{1cm} 2020-04 \newline \vspace{5.8cm} 2020-05 \newline \vspace{3.1cm} 2020-08 \newline \vspace{6cm} 2020-10\\ 
+		\item Compare positive instance selection approach to traditional MIL classifiers, such as: mi-SVM, MIL-Forest and mi-Net for instance-level classification 
+		
+		\item Develop optimization technique for manifold embedding and instance proposition
+		
+		\item Code SOA MI dimensionality reduction methods, namely: MIDR, MidLABS, MIDA, CLFDA and MI-FEAR
+		
+		\item Compare to SOA MI dimensionality reduction methods in terms of bag-level and instance-level classification performance (with $k$-NN, SVM and feed-forward neural network), optimal embedding dimensionality and computational complexity.
+		
+	\end{enumerate} & \newline \vspace{1cm} 2020-April \newline \vspace{4.8cm} 2020-May \newline \vspace{2.6cm} 2020-August \newline \vspace{0.6cm} 2020-September \newline \vspace{0.6cm} 2020-September \newline \vspace{1cm} 2020-October \newline \vspace{0.6cm} 2020-November\newline \vspace{0.7cm} 2021-January\\ 
 	\hline
 	\multicolumn{2}{|l|}{\textbf{Multiple Instance Metric Embedding}} \\
 	\hline
 	Develop discriminative MI metric embedding approach for bag and instance-level classification. 
 	\begin{enumerate}
 		%			\setcounter{enumi}{2}
-		\item Investigate metric embedding approach with Siamese networks.
-		\begin{enumerate}
-			\item Contrastive loss
-			\item Triplet loss
-			\item Investigate architectures/ training times
-		\end{enumerate}
-		\item Compare performance for both loss functions
-		\item Investigate methods for constructing pairs/triplets from both bags and instances 
-	\end{enumerate} & \newline \vspace{1.1cm} 2021-03 \newline \vspace{3.1cm} 2021-05 \newline \vspace{0.1cm} 2021-06\\
+		\item Investigate MIL metric embedding approach with Siamese networks.
+		\item Investigate methods for constructing pairs/triplets using bag-level information
+		\item Compare bag/instance classification performance against SOA MIL neural network approaches
+	\end{enumerate} & \newline \vspace{1.1cm} 2021-March \newline \vspace{0.6cm} 2021-May \newline \vspace{0.6cm} 2021-July\\
 	\hline
 	\multicolumn{2}{|l|}{\textbf{Departmental Requirements}} \\
 	\hline
-	Status Meeting & 2021-04\\
+	Status Meeting & 2021-April\\
 	\hline
-	Initial Dissertation Submission & 2022-02-01\\
+	Initial Dissertation Submission & 2022-February-01\\
 	\hline
-	Dissertation Defense & 2022-03-01\\
+	Dissertation Defense & 2022-March-01\\
 	\hline
-	Final Dissertation Submission & 2022-03-12\\
+	Final Dissertation Submission & 2022-March-12\\
 
 \end{longtable}
 
@@ -90,30 +86,17 @@ This proposal calls for the investigation of manifold learning and dimensionalit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{longtable}{|p{10cm}|p{4cm}|} 
-	\hline \multicolumn{1}{|p{10cm}|}{\textbf{Tasks}} & \multicolumn{1}{p{4cm}|}{\textbf{Approximate Date of Completion}} \\ \hline
+\begin{longtable}{|p{0.3\textwidth}|p{0.7\textwidth}|} 
+	\caption[List of datasets for future research tasks.]{List of datasets and corresponding future tasks.}
+	\label{tab:future_tasks_datasets}\\
+	\hline \multicolumn{1}{|p{5cm}|}{\textbf{Objective}} & \multicolumn{1}{p{9cm}|}{\textbf{Datasets}} \\ \hline
 	\endfirsthead
-	\multicolumn{2}{c}%
-	{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
-	\hline \multicolumn{1}{|p{10cm}|}{\textbf{Tasks}} &  \multicolumn{1}{p{4cm}|}{\textbf{Approximate Date of Completion}}
-	\\
-	\hline
-	\endhead
-	\hline \multicolumn{2}{|r|}{{Continued on next page}} \\ \hline
-	\endfoot
-	\hline \hline
-	\endlastfoot
-	
-	\hline
-	\multicolumn{2}{|l|}{\textbf{Comparison to SOA}} \\
-	\hline
-	Compare proposed methods to state of the art.
-	\begin{enumerate}
-		%			\setcounter{enumi}{2}
-		\item Code SOA MI dimensionality reduction methods, namely: MIDR, MidLABS, MIDA, CLFDA and MI-FEAR
-		\item Compare to SOA MI dimensionality reduction methods in terms of bag-level and instance-level classification performance (with $k$-NN, SVM and feed-forward neural network), optimal embedding dimensionality and computational complexity.
-		\item  Investigate performance on different datasets: DSIAC, Gulfport, LFW, instance-level MIL dataset
-	\end{enumerate} & \newline \vspace{0.2cm} 2021-09 \newline \vspace{1.2cm} 2021-11 \newline \vspace{2.1cm} 2022-01 \\
-	
+    Manifold Embedding & Binary Swiss Roll Synthetic, Quadratic Surfaces Synthetic, DSIAC \citep{DSIACATR}, Danforth Plant Science Center \\
+    \hline
+    Metric Embedding & LFW \citep{LFW}, Pascal VOC \citep{PASCALVOC}, Binary Swiss Roll Synthetic, Quadratic Surfaces Synthetic \\
+    \hline
+    Instance-level Classification & DSIAC \citep{DSIACATR}, MUUFL Gulfport \citep{MUUFL}, Pascal VOC \citep{PASCALVOC} \\
+    \hline
+
 \end{longtable}
 
