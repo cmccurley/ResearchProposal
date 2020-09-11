@@ -1,2 +1,411 @@
-\chapter{Preliminary Results}
-In this chapter, a summary of results is provided for the initial experiments using the proposed method for discriminative manifold learning and dimensionality reduction. 
+\chapter{Preliminary Results} \label{ch:Results}
+In this chapter, a summary of results is provided for the initial experiments exploring discriminative manifold learning and dimensionality reduction with weak labels. Sections \ref{results:manifold_instance_selection_synthetic} and \ref{results:bag_level_classification} evaluate the use of manifold learning for bag and instance-level classification tasks.  Sections \ref{results:ae_target_detection} through \ref{results:mil_classifier_comparison} follow up with investigation to instance-level classification from bag-derived features.
+
+\begin{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Nonlinear DR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Instance-level Classification and Label Refinement} \label{results:manifold_instance_selection_synthetic}
+
+\begin{figure*}[h!]
+	\begin{subfigure}[t]{0.5\textwidth}
+	    \hspace{-1cm}
+		\includegraphics[height=2.8in]{"results/instance_refinement/quad_surfaces_separable"}
+		\caption{Separable quadratic surfaces \newline without noise}
+	\end{subfigure}%
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\includegraphics[height=2.8in]{"results/instance_refinement/quad_surfaces_separable_w_noise"}
+		\caption{Separable quadratic surfaces with \newline $\epsilon=0.02$ noise}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.5\textwidth}
+	    \hspace{-1cm}
+		\includegraphics[height=2.8in]{"results/instance_refinement/quad_surfaces_nonseparable"}
+		\caption{Non-separable quadratic surfaces \newline without noise}
+	\end{subfigure}%
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\includegraphics[height=2.8in]{"results/instance_refinement/quad_surfaces_nonseparable_w_noise"}
+		\caption{Non-separable quadratic surfaces with \newline $\epsilon=0.02$ noise}
+	\end{subfigure}
+	
+	\caption[Quadratic Surfaces synthetic data]{Quadratic Surfaces synthetic dataset.  The red and blue surfaces in a.) and b.) are separable in the input space while the surfaces in c.) and d.) are not separable in the input feature space. Figures on the left are noiseless while the figures on the right have additional Gaussian noise.}
+	\label{fig:quad_surface_data}%
+\end{figure*}
+
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=\textwidth]{"results/instance_refinement/refinement_random_bags_separable"}
+		\caption[Label refinement on random bags with separable data]{Label refinement with the CLFDA method on randomly created bags from the separable quadratic surfaces dataset.  Each plot shows the predicted class labels (red for target, blue for background) after the refinement for max reference-citer graphs of sizes $3,5,10,100$ and thresholds on the number of negative to positive instances at $0.1,1,10,100$.}
+		\label{fig:label_refinement_random_separable}
+	\end{figure*}
+\end{center}
+
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=\textwidth]{"results/instance_refinement/refinement_random_bags_nonseparable"}
+		\caption[Label refinement on random bags with non-separable data]{Label refinement with the CLFDA method on randomly created bags from the non-separable quadratic surfaces dataset.  Each plot shows the predicted class labels (red for target, blue for background) after the refinement for max reference-citer graphs of sizes $3,5,10,100$ and thresholds on the number of negative to positive instances at $0.1,1,10,100$.}
+		\label{fig:label_refinement_random_nonseparable}
+	\end{figure*}
+\end{center}
+
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=\textwidth]{"results/instance_refinement/refinement_cubic_bags_separable"}
+		\caption[Label refinement on cubic bags with separable data]{Label refinement with the CLFDA method on cubic created bags from the separable quadratic surfaces dataset.  Each plot shows the predicted class labels (red for target, blue for background) after the refinement for max reference-citer graphs of sizes $3,5,10,100$ and thresholds on the number of negative to positive instances at $0.1,1,10,100$.}
+		\label{fig:label_refinement_cubic_separable}
+	\end{figure*}
+\end{center}
+
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=\textwidth]{"results/instance_refinement/refinement_cubic_bags_nonseparable"}
+		\caption[Label refinement on cubic bags with non-separable data]{Label refinement with the CLFDA method on cubic created bags from the non-separable quadratic surfaces dataset.  Each plot shows the predicted class labels (red for target, blue for background) after the refinement for max reference-citer graphs of sizes $3,5,10,100$ and thresholds on the number of negative to positive instances at $0.1,1,10,100$.}
+		\label{fig:label_refinement_cubic_nonseparable}
+	\end{figure*}
+\end{center}
+
+
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=\textwidth]{"results/instance_refinement/isomap_embedding"}
+		\caption[Out-of-sample embedding with Isomap]{Out of sample embedding with traditional and Supervised Enhanced Isomap.  Red and blue samples correspond to target and background training samples, respectively.  Yellow and purple samples represent out-of-sample test points for the the target and background classes, respectively.  The top row shows the out-of-sample embedding with the traditional, unsupervised Isomap algorithm and the bottom row displays the supervised version.  From left to right, the datasets shown are: separable quadratic surfaces, separable quadratic surfaces with noise, non-separable quadratic surfaces and non-separable quadratic surfaces with noise.}
+		\label{fig:isomap_oos_embedding}
+	\end{figure*}
+\end{center}
+
+\begin{longtable}{ |p{6cm}|p{3cm}|p{3cm}|  } 
+	\caption{Label refinement accuracy on quadratic surfaces datasets for $RCNN=5$ and $\tau=0.1$}
+	\label{tab:label_refinement_results}\\
+	\hline
+	\multicolumn{3}{|c|}{\textbf{Label Refinement Accuracy}} \\
+	\hline
+	\textbf{Separable Noiseless} & \textbf{Bag Label} & \textbf{Refined Label}\\
+	\hline
+	Random Separable \newline $RCNN=3$  & 1 & 1\\
+	\hline
+	\textbf{Separable $\epsilon=0.02$} & \textbf{Bag Label} & \textbf{Refined Label}\\
+	\hline
+	\textbf{Non-separable Noiseless} & \textbf{Bag Label} & \textbf{Refined Label}\\
+	\hline
+	Random Separable \newline $RCNN=3$  & 1 & 1\\
+	\hline
+	\textbf{Non-separable $\epsilon=0.02$} & \textbf{Bag Label} & \textbf{Refined Label}\\
+	\hline
+\end{longtable}
+
+
+\begin{longtable}{ |p{4cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|  } 
+	\caption{Label refinement accuracy on quadratic surfaces datasets}
+	\label{tab:label_refinement_results}\\
+	\hline
+	\multicolumn{5}{|c|}{\textbf{Label Refinement Accuracy}} \\
+	\hline
+	\textbf{Dataset and RCNN} & \textbf{$\tau=0.1$} & \textbf{$\tau=1$} & \textbf{$\tau=10$} & \textbf{$\tau=100$}\\
+	\hline
+	Random Separable \newline $RCNN=3$  & 1 & 1 & 1 & 1\\
+	\hline
+	Random Separable \newline $RCNN=5$  & 1 & 1 & 1 & 1\\
+	\hline
+	Random Separable \newline $RCNN=10$  & 1 & 1 & 1 & 1\\
+	\hline
+	Random Separable \newline $RCNN=100$  & 1 & 1 & 1 & 1\\
+	\hline
+    Random Non-separable \newline $RCNN=3$  & 1 & 1 & 1 & 1\\
+	\hline
+	Random Non-separable \newline $RCNN=5$  & 1 & 1 & 1 & 1\\
+	\hline
+	Random Non-separable \newline $RCNN=10$  & 1 & 1 & 1 & 1\\
+	\hline
+	Random Non-separable \newline $RCNN=100$  & 1 & 1 & 1 & 1\\
+	\hline
+	Cubic Separable \newline $RCNN=3$  & 1 & 1 & 1 & 1\\
+	\hline
+	Cubic Separable \newline $RCNN=5$  & 1 & 1 & 1 & 1\\
+	\hline
+	Cubic Separable \newline $RCNN=10$  & 1 & 1 & 1 & 1\\
+	\hline
+	Cubic Separable \newline $RCNN=100$  & 1 & 1 & 1 & 1\\
+	\hline
+    Cubic Non-separable \newline $RCNN=3$  & 1 & 1 & 1 & 1\\
+	\hline
+	Cubic Non-separable \newline $RCNN=5$  & 1 & 1 & 1 & 1\\
+	\hline
+	Cubic Non-separable \newline $RCNN=10$  & 1 & 1 & 1 & 1\\
+	\hline
+	Cubic Non-separable \newline $RCNN=100$  & 1 & 1 & 1 & 1\\
+	\hline
+\end{longtable}
+
+
+
+
+Classification Results table
+\begin{longtable}{ |p{2cm}|p{6cm}|p{2cm}|p{3cm}|  } 
+	\caption{Results of instance-level classification on quadratic surfaces dataset after label refinement}
+	\label{tab:quad_surfaces_instance_level_classification}\\
+	\hline
+	\multicolumn{4}{|c|}{\textbf{Instance Level Classification after label refinement}} \\
+	\hline
+	\textbf{Method} & \textbf{Summary} & \textbf{Reduction Method} & \textbf{Classification Level}\\
+	\hline
+	MIDR  \newline (2010)  & Finds a sparse, orthogonal linear projection matrix optimized for bag-level logistic regression.  Section \ref{sec:MIDR}.   &Linear, orthogonal projection  &  bag-level\\
+	\hline
+	MidLABS \newline (2010) &  Finds linear projection vector using LDA defined from bag-similarity kernel. Section \ref{sec:MidLABS}.  & Linear, LDA   & bag-level\\
+	\hline
+	MIDA \newline (2014) &Learns linear projection vector using LDA defined from bag representative vectors. Section \ref{sec:MIDA}. & Linear, LDA &  instance-level\\
+	\hline
+	CLFDA \newline (2010)  &Learns linear projection matrix using local discriminant analysis defined from instance scatter.  Instance labels are provided as bag labels and refined. Section \ref{sec:CLFDA}. & Linear, LFDA &  instance-level\\
+	\hline
+	MI-FEAR \newline (2015) &  Incrementally leaves out feature and evaluates performance loss to provide feature score.  Section \ref{sec:MIFEAR}.  & Linear, Feature selection & instance-level\\
+	\hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Bag-level Classification and Competency Awareness} \label{results:bag_level_classification}
+TSNE plots,  tables of classification results, algorithm parameters
+
+
+
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{"results/bag_classification_manifold/tsne_ratio_00"}
+		\caption[t-SNE ratio 0]{t-SNE visualization of DSIAC bags formed from canonical bounding boxes.}
+		\label{fig:unet_ae}
+	\end{figure*}
+\end{center}
+
+
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{"results/bag_classification_manifold/tsne_ratio_01"}
+		\caption[t-SNE ratio 1]{t-SNE visualization of DSIAC bags at an imprecision ratio of 1.}
+		\label{fig:unet_ae}
+	\end{figure*}
+\end{center}
+
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{"results/bag_classification_manifold/tsne_ratio_02"}
+		\caption[t-SNE ratio 2]{t-SNE visualization of DSIAC bags at an imprecision ratio of 2.}
+		\label{fig:unet_ae}
+	\end{figure*}
+\end{center}
+
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{"results/bag_classification_manifold/tsne_ratio_03"}
+		\caption[t-SNE ratio 3]{t-SNE visualization of DSIAC bags at an imprecision ratio of 3.}
+		\label{fig:unet_ae}
+	\end{figure*}
+\end{center}
+
+
+Algorithm Parameters
+\begin{longtable}{ |p{2cm}|p{6cm}|p{2cm}|p{3cm}|  } 
+	\caption{Summary of multiple instance dimensionality reduction approaches.}
+	\label{tab:MIDRComparison}\\
+	\hline
+	\multicolumn{4}{|c|}{\textbf{Multiple Instance Dimensionality Reduction}} \\
+	\hline
+	\textbf{Method} & \textbf{Summary} & \textbf{Reduction Method} & \textbf{Classification Level}\\
+	\hline
+	MIDR  \newline (2010)  & Finds a sparse, orthogonal linear projection matrix optimized for bag-level logistic regression.  Section \ref{sec:MIDR}.   &Linear, orthogonal projection  &  bag-level\\
+	\hline
+	MidLABS \newline (2010) &  Finds linear projection vector using LDA defined from bag-similarity kernel. Section \ref{sec:MidLABS}.  & Linear, LDA   & bag-level\\
+	\hline
+	MIDA \newline (2014) &Learns linear projection vector using LDA defined from bag representative vectors. Section \ref{sec:MIDA}. & Linear, LDA &  instance-level\\
+	\hline
+	CLFDA \newline (2010)  &Learns linear projection matrix using local discriminant analysis defined from instance scatter.  Instance labels are provided as bag labels and refined. Section \ref{sec:CLFDA}. & Linear, LFDA &  instance-level\\
+	\hline
+	MI-FEAR \newline (2015) &  Incrementally leaves out feature and evaluates performance loss to provide feature score.  Section \ref{sec:MIFEAR}.  & Linear, Feature selection & instance-level\\
+	\hline
+\end{longtable}
+
+Bag-level classification results
+\begin{longtable}{ |p{2cm}|p{6cm}|p{2cm}|p{3cm}|  } 
+	\caption{Summary of multiple instance dimensionality reduction approaches.}
+	\label{tab:MIDRComparison}\\
+	\hline
+	\multicolumn{4}{|c|}{\textbf{Multiple Instance Dimensionality Reduction}} \\
+	\hline
+	\textbf{Method} & \textbf{Summary} & \textbf{Reduction Method} & \textbf{Classification Level}\\
+	\hline
+	MIDR  \newline (2010)  & Finds a sparse, orthogonal linear projection matrix optimized for bag-level logistic regression.  Section \ref{sec:MIDR}.   &Linear, orthogonal projection  &  bag-level\\
+	\hline
+	MidLABS \newline (2010) &  Finds linear projection vector using LDA defined from bag-similarity kernel. Section \ref{sec:MidLABS}.  & Linear, LDA   & bag-level\\
+	\hline
+	MIDA \newline (2014) &Learns linear projection vector using LDA defined from bag representative vectors. Section \ref{sec:MIDA}. & Linear, LDA &  instance-level\\
+	\hline
+	CLFDA \newline (2010)  &Learns linear projection matrix using local discriminant analysis defined from instance scatter.  Instance labels are provided as bag labels and refined. Section \ref{sec:CLFDA}. & Linear, LFDA &  instance-level\\
+	\hline
+	MI-FEAR \newline (2015) &  Incrementally leaves out feature and evaluates performance loss to provide feature score.  Section \ref{sec:MIFEAR}.  & Linear, Feature selection & instance-level\\
+	\hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Instance Segmentation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Autoencoder Target Detection} \label{results:ae_target_detection}
+Examples of target detection scoremaps
+
+AE Background scoremaps
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=\textwidth]{"results/autoencoder/ae_background"}
+		\caption[Autoencoder background results]{Three background input/output images through an autoencoder trained on background bags.  Left images represent input, while right images demonstrate reconstruction error.  Since the autoencoder model was trained on background images, the output error is generally low.}
+		\label{fig:unet_ae}
+	\end{figure*}
+\end{center}
+
+
+AE target scoremaps
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=\textwidth]{"results/autoencoder/ae_target"}
+		\caption[Autoencoder target results]{Three target input/output images through an autoencoder trained on background bags.  Left images represent input, while right images demonstrate reconstruction error.  Since the autoencoder model was trained on background images, the output error is typically high for areas where a target is present.}
+		\label{fig:unet_ae}
+	\end{figure*}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Multiple Instance Manifold Template Matching} \label{results:mi_manifold_template_matching_synthetic}
+
+
+Concept selection swiss roll
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{"experiments/unet_ae"}
+		\caption[U-Net autoencoder neural network]{A five-layer encoder U-Net convolutional neural network. The skip connections are not used such that the network is a true autoencoder.}
+		\label{fig:unet_ae}
+	\end{figure*}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{CNN Feature Extraction/Selection} \label{results:cnn_forward_feature_selection}
+
+Class activation maps, example features
+
+
+CAMs
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{"experiments/unet_ae"}
+		\caption[U-Net autoencoder neural network]{A five-layer encoder U-Net convolutional neural network. The skip connections are not used such that the network is a true autoencoder.}
+		\label{fig:unet_ae}
+	\end{figure*}
+\end{center}
+
+
+Example features - different layers
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{"experiments/unet_ae"}
+		\caption[U-Net autoencoder neural network]{A five-layer encoder U-Net convolutional neural network. The skip connections are not used such that the network is a true autoencoder.}
+		\label{fig:unet_ae}
+	\end{figure*}
+\end{center}
+
+
+
+Feature selection pAUC scores
+\begin{longtable}{ |p{2cm}|p{6cm}|p{2cm}|p{3cm}|  } 
+	\caption{Summary of multiple instance dimensionality reduction approaches.}
+	\label{tab:MIDRComparison}\\
+	\hline
+	\multicolumn{4}{|c|}{\textbf{Multiple Instance Dimensionality Reduction}} \\
+	\hline
+	\textbf{Method} & \textbf{Summary} & \textbf{Reduction Method} & \textbf{Classification Level}\\
+	\hline
+	MIDR  \newline (2010)  & Finds a sparse, orthogonal linear projection matrix optimized for bag-level logistic regression.  Section \ref{sec:MIDR}.   &Linear, orthogonal projection  &  bag-level\\
+	\hline
+	MidLABS \newline (2010) &  Finds linear projection vector using LDA defined from bag-similarity kernel. Section \ref{sec:MidLABS}.  & Linear, LDA   & bag-level\\
+	\hline
+	MIDA \newline (2014) &Learns linear projection vector using LDA defined from bag representative vectors. Section \ref{sec:MIDA}. & Linear, LDA &  instance-level\\
+	\hline
+	CLFDA \newline (2010)  &Learns linear projection matrix using local discriminant analysis defined from instance scatter.  Instance labels are provided as bag labels and refined. Section \ref{sec:CLFDA}. & Linear, LFDA &  instance-level\\
+	\hline
+	MI-FEAR \newline (2015) &  Incrementally leaves out feature and evaluates performance loss to provide feature score.  Section \ref{sec:MIFEAR}.  & Linear, Feature selection & instance-level\\
+	\hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Comparison to MIL Classifiers} \label{results:mil_classifier_comparison}
+
+Table of pAUC scores and examples of scoremaps
+
+
+\begin{longtable}{ |p{2cm}|p{6cm}|p{2cm}|p{3cm}|  } 
+	\caption{Summary of multiple instance dimensionality reduction approaches.}
+	\label{tab:MIDRComparison}\\
+	\hline
+	\multicolumn{4}{|c|}{\textbf{Multiple Instance Dimensionality Reduction}} \\
+	\hline
+	\textbf{Method} & \textbf{Summary} & \textbf{Reduction Method} & \textbf{Classification Level}\\
+	\hline
+	MIDR  \newline (2010)  & Finds a sparse, orthogonal linear projection matrix optimized for bag-level logistic regression.  Section \ref{sec:MIDR}.   &Linear, orthogonal projection  &  bag-level\\
+	\hline
+	MidLABS \newline (2010) &  Finds linear projection vector using LDA defined from bag-similarity kernel. Section \ref{sec:MidLABS}.  & Linear, LDA   & bag-level\\
+	\hline
+	MIDA \newline (2014) &Learns linear projection vector using LDA defined from bag representative vectors. Section \ref{sec:MIDA}. & Linear, LDA &  instance-level\\
+	\hline
+	CLFDA \newline (2010)  &Learns linear projection matrix using local discriminant analysis defined from instance scatter.  Instance labels are provided as bag labels and refined. Section \ref{sec:CLFDA}. & Linear, LFDA &  instance-level\\
+	\hline
+	MI-FEAR \newline (2015) &  Incrementally leaves out feature and evaluates performance loss to provide feature score.  Section \ref{sec:MIFEAR}.  & Linear, Feature selection & instance-level\\
+	\hline
+\end{longtable}
+
+
+
+Scoremap examples
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{"experiments/unet_ae"}
+		\caption[U-Net autoencoder neural network]{A five-layer encoder U-Net convolutional neural network. The skip connections are not used such that the network is a true autoencoder.}
+		\label{fig:unet_ae}
+	\end{figure*}
+\end{center}
+
+
+\end{comment}
+
+
+
+
+
+
+
+
+
+
+

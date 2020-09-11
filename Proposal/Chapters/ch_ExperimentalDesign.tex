@@ -1,20 +1,34 @@
 \chapter{Experimental Design}
-In this chapter, a summary is provided of initial experiments used to show proof of concept for the proposed methods for discriminative manifold learning and dimensionality reduction. 
+Bag and instance-level classification of weakly supervised data was performed with the proposed approach and compared to alternative multiple instance classification methods.  The objective for the experiments presented in this document was to corroborate or reject the hypothesis that manifold learning/embedding on weakly supervised data should be further investigated.  This chapter provides a summary of initial experiments used to show proof of concept for the proposed methods. 
 
-\subsection{Overview}
-Two approaches were compared in terms of classification accuracy for nonlinear discriminative dimensionality reduction with weak labels.  Experiments compared Supervised Laplacian Eigenmaps and Supervised Enhanced Isomap  across three parameters of variation: 1.) dimensionality of the embedding space and 2.) feature representation and 3.) amount of label imprecision.  Previous work has explored linear methods for dimensionality reduction under the multiple instance learning paradigm \citep{Sun2010MIDR, Ping2010MILDRMaxMargin, Kim2010LocalDRMIL}.  However, no MIL methods have employed a nonlinear manifold learning approach.  The objective of this work was to demonstrate proof of concept for discriminative nonlinear dimensionality reduction using weak labels.  To prove this point, tests were conducted to explore instance level classification on a set of synthetic 2-D quadratic surfaces embedded in 3-D and to embed image chips abstracted from a real-world remote sensing task of vehicle detection in infrared imagery.  Each chip (bag) was provided a positive label if at least one pixel in the image belonged to a vehicle.  A negative label was provided if the chip contained only background pixels.  The objective was to determine if classification accuracy with a K-nearest neighbor classifier was improved in the embedding space, as compared to the high-dimensional input feature space.  The classification performance of each algorithm was tested across a range of embedding dimensionalities using traditional gradient-based features and convolutional neural network features.  These tests were repeated for increasing amounts of label imprecision.  Experiments are detailed in the following.   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Pre-processing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Description of Data}
-
-\subsubsection{Quadratic Surfaces}
-
-\subsubsection{DSIAC MS-003-DB}
-The DSIAC MS-003-DB Algorithm Development Database \citep{DSIACATR} contains a publicly-available collection of mid-wave infrared MWIR imagery collected by the US Army Night Vision and Electronic Sensors Directorate (NVESD). The system for this collection was the L3 Cincinnati Electronics Night Conqueror MWIR imager. The system used a fixed field of view (FOV) 300mm lens, resulting in a 3.4x2.6 FOV.  Thus, frames consisted of 640x480 pixels  The objective of the data collection was to capture a set of targets at a minimum of 72 unique aspect angles in range steps of 500 meters from 500 to 5000 meters during both day and night.  This was achieved by marking a circle with a diameter of approximately 100 meters at each range.  Vehicle drivers tracked the circle at around 10 mph. Imagery was taken in real-time for one minute using the  MWIR camera at a frame rate of 30 HZ, resulting in approximately 1800 still frames for each target of interest at each range and lighting scenario.  The collection used in this work consisted of MWIR video segments of three military and civilian vehicle classes, namely, pickup, SUV and BTR70, at ranges of 1000, 1500 and 2000 meters.  To account for sensor noise and lighting variations,  each frame was clipped at 0.5\% and 98\% before applying MAD normalization.
+\section{Data Preprocessing}
+The DSIAC MS-003-DB Algorithm Development Database \citep{DSIACATR} contains a publicly-available collection of mid-wave infrared MWIR imagery collected by the US Army Night Vision and Electronic Sensors Directorate (NVESD). The system for this collection was the L3 Cincinnati Electronics Night Conqueror MWIR imager. The system used a fixed field of view (FOV) 300mm lens, resulting in a 3.4x2.6 FOV.  Thus, frames consisted of 640x480 pixels.  The objective of the data collection was to capture a set of targets at a minimum of 72 unique aspect angles in range steps of 500 meters from 500 to 5000 meters during both day and night.  This was achieved by marking a circle with a diameter of approximately 100 meters at each range.  Vehicle drivers tracked the circle at around 10 mph. Imagery was taken in real-time for one minute using the  MWIR camera at a frame rate of 30 HZ, resulting in approximately 1800 still frames for each target of interest at each range and lighting scenario.  The collection used in this work consisted of MWIR video segments of three military and civilian vehicle classes, namely, PICKUP, SUV and BTR70, at ranges of 1000, 1500 and 2000 meters during nighttime only.  To account for sensor noise and lighting variations,  each frame was clipped at 0.5\% and 98\% before applying median average deviation (MAD) normalization.
  
-Initial experimentation was performed for bag-level classification.  In this work, bags were represented as image chips extracted from the training frames.  A chip was given a positive label if it contained at least one pixel on target, and a chip was given a negative label if it contained only background pixels.   Figure \ref{fig:chip_extraction} demonstrates the process used for image chip extraction.  The level of imprecision was measured by the amount of non-target pixels contained in a bag.  Essentially, four levels of imprecision were tested.  As seen in Figure \ref{fig:chip_uncertainty}, an uncertainty ratio of 0 denotes that positive bags are constructed from canonical bounding boxes (the tightest possible bounding box on the target), meaning the majority of pixels in the bag lie on target.  This scenario can be considered as supervised learning, and is thus used to provide baseline performance on the dataset. For the remaining levels of label imprecision, chips were extracted in ratios of 51x121 pixels, which corresponds to the largest canonical bounding box present in the dataset across all ranges.  Besides increasing the number of background pixels allowed in each bag, the boxes were  allowed to shift, so long as at least half of the target was contained in the box.  This effectively allowed for potential decrease in the number of pixels on target.  Each chip was up-sampled with bicubic interpolation to 510x720 to maintain consistency amongst the dataset.  To construct the dataset, 10 background chips and 10 chips containing a portion of the target were extracted from every 50th frame in the videos of interest.
+Initial experimentation was performed for bag-level classification.  In this work, bags were represented as image chips extracted from the training frames.  A chip was given a positive label if it contained at least one pixel on target, and a chip was given a negative label if it contained only background pixels.   Figure \ref{fig:chip_extraction} demonstrates the process used for image chip extraction.  The level of imprecision was measured by the amount of non-target pixels contained in a bag.  Essentially, four levels of imprecision were tested.  As seen in Figure \ref{fig:chip_extraction}, an uncertainty ratio of 0 denotes that positive bags are constructed from canonical bounding boxes (the tightest possible bounding box on the target), meaning the majority of pixels in the bag lie on target.  This scenario can be considered as supervised learning, and is thus used to provide baseline performance on the dataset. For the remaining levels of label imprecision, chips were extracted in ratios of 51x121 pixels, which corresponds to the largest canonical bounding box present in the dataset across all ranges.  Besides increasing the number of background pixels allowed in each bag, the boxes were  allowed to shift, so long as at least half of the target was contained in the box.  This effectively allowed for potential decrease in the number of pixels on target.  Each chip was up-sampled with bicubic and nearest neighbor interpolation to a size of  510x720 to maintain consistency amongst the dataset. Figure \ref{fig:preprocessing_pipeline} demonstrates the full preprocessing pipleine for the DSIAC data. To construct the dataset, 10 background chips and 10 chips containing a portion of the target were extracted from every $50^{th}$ frame in the videos of interest.
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=\textwidth]{"experiments/chip_extraction"}
+		\caption[Image chip extraction]{Example image chips for varying ratios of bag imprecision.  The top row shows the regions of the original frame included in the image chips.  Chips sizes are scalars of 51x121.  The bottom row shows the corresponding image chips.  Red denotes the area of the canonical bounding box while blue is labeled as the background class.  As can be seen, the number of non-target pixels in the chips increases as the chip area increases.  Each of the chips are considered as positive bags since they contain at least one pixel on target.}
+		\label{fig:chip_extraction}
+	\end{figure*}
+\end{center}
 
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=\textwidth]{"experiments/data_preprocessing"}
+		\caption[DSIAC preprocessing pipeline]{The DSIAC data preprocessing pipeline.  Input images undergo clipping, normalization and scaling.  Various sized bags are then sampled from the frames and up-sampled to a uniform size.}
+		\label{fig:preprocessing_pipeline}
+	\end{figure*}
+\end{center}
 
-\begin{figure*}[t!]
+\begin{comment}
+\begin{figure*}[h!]
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\includegraphics[height=2.8in]{"data_chips/ratio1/cegr01923_0001_0_patch_scope_p1"}
@@ -41,7 +55,7 @@ Initial experimentation was performed for bag-level classification.  In this wor
 \end{figure*}
 
 
-\begin{figure*}[t!]
+\begin{figure*}[h!]
 	\hfill
 	\begin{subfigure}[t]{0.3\textwidth}
 		\includegraphics[height=2.2in]{"data_chips/ratio0/scope01"}
@@ -61,16 +75,45 @@ Initial experimentation was performed for bag-level classification.  In this wor
 	\caption[Image chip uncertainty]{Proposed positive image chips as denoted by the green and blue boxes.  The left image corresponds to a label uncertainty of 0, which is the canonical bounding box around the target.  The middle represents a random target chip of base size 51x121 and the right image is a proposed chip of label uncertainty 3, or 3 times the base chip.}
 	\label{fig:chip_uncertainty}%
 \end{figure*}
+\end{comment}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Nonlinear DR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Nonlinear Discriminative Dimensionality Reduction and Manifold Learning}
+Two approaches were compared in terms of classification accuracy with nonlinear discriminative dimensionality reduction with weak labels.  Experiments compared Supervised Laplacian Eigenmaps (Section \ref{sec:Laplacian_Eigenmaps}) and Supervised Enhanced Isomap (Section \ref{sec:Isomap})  across three parameters of variation: 1.) dimensionality of the embedding space and 2.) feature representation and 3.) amount of label imprecision.  Previous work has explored linear methods for dimensionality reduction under the multiple instance learning paradigm \citep{Sun2010MIDR, Ping2010MILDRMaxMargin, Kim2010LocalDRMIL}.  However, no MIL methods have employed a nonlinear manifold learning approach.  The objective of this work was to demonstrate proof of concept for discriminative manifold learning with weak labels.  To prove this point, tests were conducted to explore instance level classification on a set of synthetic 2-D quadratic surfaces embedded in 3-D and to embed image chips abstracted from a real-world remote sensing task of vehicle detection in infrared imagery.  Each chip (bag) was provided a positive label if at least one pixel in the image belonged to a vehicle.  A negative label was provided if the chip contained only background pixels.  The objective was to determine if classification accuracy with a K-nearest neighbor classifier was improved in the embedding space, as compared to the high-dimensional input feature space.  The classification performance of each algorithm was tested across a range of embedding dimensionalities using traditional gradient-based features and convolutional neural network features.  These tests were repeated for increasing amounts of label imprecision.  Experiments are detailed in the following.  
 
-\subsection{Feature Extraction}
-Two types of features were explored for high-dimensional bag representation in this work, namely, hand-crafted Histogram of Oriented Gradients (HOG) and features pulled from a convolutional neural network (CNN).  
+\subsection{Instance-level Classification and Label Refinement}
+Instance level classification was explored on the synthetic quadratic surfaces dataset.  This set included four variations: separable and non-separable, as well as separable and non-separable with $\epsilon=0.02$ additive Gaussian noise.   Bags were formed in two ways.  Random bags were generated by randomly sampling up to $40$ instances.  Positive bags were required to contain at least one positive instance while negative bags strictly excluded positive instances.  Cubic bags were developed by uniformly partitioning the 3-dimensional input space into cubes of size $[1 \times 1 \times 15]$.  Cubic bags were given bag-level labels according to the standard MIL assumption. Classification accuracy was evaluated using $k$-NN in the 3-dimensional input space, as well as the embedding spaces after application of LDA, Isomap, Laplacian Eigenmaps, Supervised Laplacian Eigenmaps and Supervised Enhanced Isomap.  Performance was measured as the accuracy between the predicted and true instance-level labels.  Additionally, in order to apply the supervised manifold learning methods, label refinement was first performed on the bags as done in CLFDA (Section \ref{sec:CLFDA}).  The refinement process, which is described in Algorithm \ref{alg:CLFDA_initialization}, was tested for thresholds of $\tau=0.1,1,10,100$ and reference-citer graphs constructed from $3,5,10,100$ neighbors. Refinement performance was measured as the accuracy between the refined and true instance-level labels.
 
-\subsubsection{HOG Features}
+\begin{algorithm}[h!]
+	\caption{CLFDA Label Refinement}
+	\label{alg:CLFDA_initialization}
+	\begin{algorithmic}[1]
+		\Require {Multiple-instance dataset $\bm{B} = \{\bm{B}_{1}, \dots, \bm{B}_{K}\}$, $\{L_{1}, \dots, L_{K} \}$, $L_{k} \in \{-1, +1\}$, parameters $C,R,\tau$}
+		\Ensure {Instance-level labels $l_{1}, \dots, l_{N}$}
+		\State {$\bm{X} \gets$ instances in $\bm{B}$}
+		\State {$G \gets \max(R,C)$-nearest neighbor graph of $\bm{X}$}
+		\For {$n = 1 \to N$}   
+		\State {$R_{n} \gets R$-nearest references of instance $\bm{x}_{n}$}
+		\State {$C_{n} \gets C$-nearest citers of instance $\bm{x}_{n}$}
+		\State {$N_{n}^{-} \gets $-number of instances from negative bags in  $R_{n} + C_{n}$}
+		\State {$N_{n}^{+} \gets $-number of instances from positive bags in  $R_{n} + C_{n}$}
+		\If {$\frac{N_{n}^{-}}{N_{n}^{+}} \geq \tau$ or $\bm{x}_{n}$ is from a negative bag}
+		\State {instance label $l_{n} \gets -1$}
+		\Else
+		\State {$l_{n} \gets +1$}
+		\EndIf
+		\EndFor             
+	\end{algorithmic}
+\end{algorithm}
 
-\textit{Histogram of Oriented Gradients} (HOG) features are popular object representations in the computer vision literature.  HOG features are essentially descriptors of local object appearance and shape that are characterized by intensity gradients and edge directions \citep{Dalal2005HOG}.  In practice, HOG descriptors are extracted by dividing an image into small spatial windows and accumulating local 1-D histograms of gradient directions or edge orientations over the pixels in the windows.  The combined histogram representations over all the windows form the combined feature vector for the image.  Figure \ref{fig:hog_features} demonstrates the HOG gradient information presented in a target and background image chips.  It can be observed that the descriptor cues on edge information, which is likely an important feature for the MWIR target detection problem.  HOG descriptors were extracted for each chip in the dataset, thus providing 11160-dimensional input features for each bag.  
 
+\subsection{Bag-level Feature Extraction} \label{exp:bag_level_feature_extraction}
+Two types of features were explored for high-dimensional bag representation in this work, namely, hand-crafted Histogram of Oriented Gradients (HOG) and features pulled from a convolutional neural network (CNN).  Whereas instance-level classification requires features for each pixel or instance, a single feature vector can represent the entirety of a bag in bag-level classification.
+
+\paragraph{Histogram of Oriented Gradient Features} \textit{Histogram of Oriented Gradients} (HOG) features are popular object representations in the computer vision literature.  HOG features are essentially descriptors of local object appearance and shape that are characterized by intensity gradients and edge directions \citep{Dalal2005HOG}.  In practice, HOG descriptors are extracted by dividing an image into small spatial windows and accumulating local 1-D histograms of gradient directions or edge orientations over the pixels in the windows.  The combined histogram representations over all the windows form the combined feature vector for the image.  Figure \ref{fig:hog_features} demonstrates the HOG gradient information presented in a target and background image chips.  It can be observed that the descriptor cues on edge information, which is likely an important feature for the MWIR target detection problem.  HOG descriptors were extracted for each chip in the dataset, thus providing 11160-dimensional input features for each bag.  
 \begin{center}
 	\begin{figure*}[h]
 		\centering
@@ -79,28 +122,90 @@ Two types of features were explored for high-dimensional bag representation in t
 		\label{fig:hog_features}
 	\end{figure*}
 \end{center}
+\paragraph{CNN Features} \label{exp:bag_level_cnn_feature_extraction} As mentioned in Section \ref{sec:mil_deep_learning}, deep learning has recently been explored under the MIL framework.  The primary assumption is that networks can extract useful feature representations using only bag-level label information \citep{Ghaffarzadegan2018MILVAE}.  This is, typically, at the cost of large quantities of data.  However, methods for representation learning with deep learning typically result in high levels of classification accuracy \citep{Bengio2014RepLearningReview}.  Therefore, we tested the dimensionality reduction frameworks with CNN extracted features.  To extract features, we fine-tuned ResNet18 \citep{He2015ResNet} pre-trained on ImageNet \citep{Deng2009ImageNet} in PyTorch for 2000 epochs in mini-batches of 20 chips.  Image chips were input to the network, which was tasked with predicting the corresponding bag-level labels.  After training, the entire dataset was fed through the network and the corresponding convolutional feature maps were extracted directly before the fully connected layers in order to provide every chip a corresponding 512-dimensional feature vector. It should be noted that, while feature vectors were extracted to represent full image chips directly before the fully connected layers, it is possible to extract features from other parts of the network (to potentially represent each pixel).  Alternative methods for feature extraction from neural networks will be investigated during the scope of the proposed work.
 
-\subsubsection{CNN Features}
-As mentioned in Section \ref{sec:mil_deep_learning}, deep learning has recently been explored under the MIL framework.  The primary assumption is that networks can extract useful feature representations using only bag-level label information \citep{Ghaffarzadegan2018MILVAE}.  This is, typically, at the cost of large quantities of data.  However, methods for representation learning with deep learning typically result in high levels of classification accuracy \citep{Bengio2014RepLearningReview}.  Therefore, we tested the dimensionality reduction frameworks with CNN extracted features.  To extract features, we fine-tuned ResNet18 \citep{He2015ResNet} pre-trained on ImageNet \citep{Deng2009ImageNet} in PyTorch for 2000 epochs in mini-batches of 20 chips.  Image chips were input to the network, which was tasked with predicting the corresponding bag-level labels.  After training, the entire dataset was fed through the network and the corresponding convolutional feature maps were extracted directly before the fully connected layers in order to provide every chip a corresponding 512-dimensional feature vector. It should be noted that, while feature vectors were extracted to represent full image chips directly before the fully connected layers, it is possible to extract features from other parts of the network (to potentially represent each pixel).  Alternative methods for feature extraction from neural networks will be investigated during the scope of the proposed work.
+\subsection{Bag-level Classification and Competency Awareness}
+Bag-level classification was performed using a $k=3$ NN classifier in the input feature space, as well as the embedding spaces found by LDA, Isomap, Laplacian Eigenmaps, Supervised Enhanced Isomap and Supervised Laplacian Eigenmaps. The methods were trained and model-specific parameters were chosen by performance on a validation set.  The training and validation sets contained features representing image chips of targets from 1000 and 2000m.  Classification accuracy of the trained models were evaluated on a hold-out test set which contained targets of the same types, but at a range of 1500m. Performance was measured by bag-level classification accuracy across four levels of bag-imprecision for both bicubic and nearest neighbor interpolation.  Additionally, the embedding dimensionality for the manifold learning methods was varied between $[2,5,10,15,25,50]$.  Algorithm parameters were selected by performance on the validation sets and are included in Chapter \ref{ch:Results}. For the nonlinear methods, a $k$-NN graph was constructed and edge weights were assigned based on a radial basis function kernel. Out-of-sample manifold embedding was performed by representing each test sample as a weighted linear combination of its $5$ nearest neighbors in the input space.   Results of classification performance and the best-performing embedding dimension for each algorithm are included in Section  \ref{results:bag_level_classification}.
 
-\subsection{Algorithm Parameters}
-Algorithm hyper-parameters were selected by 5-fold cross validation.  It was found that for S-LE, 
+Apart from normal bag-level classification, the manifold information learned by the algorithms was tested in terms of \textit{competency awareness}.  Competency awareness (CA) is essentially the ability of an algorithm to identify samples which are not like anything included in the training set.  To test the usefulness of manifolds in CA tasks, a trained Supervised Laplacian Eigenmap model was given points from a similar (but unseen) data class representing a T72 tank, as well as unrelated images of native African animals.  The model was analyzed to determine if it would embed the related data closer to the training points than the irrelevant data.  Results are presented in Section \ref{results:bag_level_classification}.
 
-The parameters of SE-Isomap were set at
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Instance Segmentation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Instance-level Classification}
+The goal of the proposed work is to use bag-level manifold information to inform instance-level classification.  Initial work used various manifold representations to explore this topic.  Specifically, autoencoder neural networks were trained on bags to perform instance-level classification, a multiple instance manifold template matching scheme was implemented and bag-level features from CNNs were extracted for use in multiple instance classification.
 
-A K-NN classifier was trained for each test scenario with a fixed $k=3$ for simplicity.  
+\subsection{Autoencoder Target Detection}
+As discussed in Section \ref{sec:Autoencoders}, autoencoder networks are models which are capable of performing nonlinear dimensionality reduction.  An autoencoder was trained to perform instance-level classification using only bag-label information.  Essentially, the popular U-Net \citep{Ronneberger2015Unet} segmentation network was implemented in PyTorch with $5$ encoding layers.  To make the network a true autoencoder, the skip connections were ignored, as represented by Figure \ref{fig:unet_ae}.  The network was trained on 1400 image chips across all ratios of imprecision for 900 epochs.  An initial learning rate of $\eta=0.001$ was used and the PyTorch implementation of the Adamax optimizer was utilized to perform network parameter updates.  Binary cross-entropy with logits loss between was used as the evaluation measure for the reconstruction ability of the network.  The training set consisted only of background image chips, or negative bags.  The test set contained both target and background chips for a range of 1500 meters.  Pixel-level scoremaps were assigned as the absolute error between the input and output images, truncated below a confidence of $0.25$.  The core idea of this method is that the autoencoder should only learn manifold information for negative instances and should thus assign a large error to target pixels.  Results were qualitatively analyzed and are presented in Section \label{results:ae_target_detection}
+\begin{center}
+	\begin{figure*}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{"experiments/unet_ae"}
+		\caption[U-Net autoencoder neural network]{A five-layer encoder U-Net convolutional neural network. The skip connections are not used such that the network is a true autoencoder.}
+		\label{fig:unet_ae}
+	\end{figure*}
+\end{center}
 
-\subsection{Training and Testing Procedures}
+\subsection{Multiple Instance Manifold Template Matching} \label{sec:forward_feature_selection}
+The implemented manifold template matching scheme was compared with alternative similarity measures for instance-level classification on the Binary Swiss Roll dataset.  The dataset was randomly partitioned into a set of bags where each bag was allowed to contain up to $40$ instances.  Figure \ref{fig:binary_swiss_roll_bags} shows the partitioning of the data into positive and negative bags as well as the instances' true class labels.  
 
-\paragraph{Training}
-The data set for each level of uncertainty was split into training and validation folds, where target chips contained vehicles taken at 1000m and 2000m.   Each algorithm was tested on a hold-out test set where targets were captured at 1500m.  For each level of label imprecision and embedding dimensionality, the nonlinear manifold learning methods were trained in one-shot.  Meaning a manifold was constructed from the entire training set in one pass.  Hyper-parameters were chosen based on validation performance.  
+\begin{figure*}[h!]
+	\begin{subfigure}[t]{0.5\textwidth}
+	    \hspace{-1cm}
+		\includegraphics[height=2.8in]{"experiments/binary_swiss_roll_true"}
+		\caption{Binary Swiss Roll with true instance labels}
+	\end{subfigure}%
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\includegraphics[height=2.8in]{"experiments/binary_swiss_roll_bags"}
+		\caption{Binary Swiss Roll where instances have their bags' labels}
+	\end{subfigure}
+	
+	\caption[Binary Swiss Roll bags]{a.) Binary Swiss Roll where instances are colored by their corresponding true label.  Red denotes the target class while blue represents the background class. b.) Binary Swiss Roll where instances are colored by the label of the bag the are in.  Blue denotes the instances in negative bags, while magenta shows the instances in positive bags.}
+	\label{fig:binary_swiss_roll_bags}%
+\end{figure*}
+
+\noindent
+The multiple instance template selection approach proposed by \citet{Zare2016MIACE} was compared for four different similarity metrics: cosine similarity, inverse Euclidean distance, inverse Mahalanobis distance and inverse geodesic distance (as described in Section \ref{sec:miace_geo}).  The resulting positive instance proposals were qualitatively analyzed.
+
+\subsection{CNN Feature Extraction/Selection}
+In order to apply traditional MIL instance-level classification methods, pixel-level features were needed.  A natural solution was to simply use the gray-scale intensity value at each pixel.  However, for the given dataset, it was known apriori that intensity alone could not be used to discriminate between target and background pixels \citep{Mahalanobis2019DSIACCharacterization, Tanner2019DSIACNeuralNet}.  Thus, experiments were conducted to test the convolutional feature maps learned for bag level classification in Section \ref{exp:bag_level_cnn_feature_extraction} as features for instance-level segmentation.  Forward feature selection was applied on the $1027$ ResNet18 feature maps (including the input image and output values) for three training/validation folds.  At each convolutional layer, the feature maps were upsampled  using bicubic interpolation to the size of the input image  The best-performing convolutional feature set on average according to pAUC was used in the following instance-level classification experiments. 
+
+\subsection{Comparison to MIL Classifiers}
+Multiple instance learning classification methods were compared in terms of instance-level classification accuracy using the features found from Section \ref{sec:forward_feature_selection}.  Specifically, the proposed multiple instance manifold template matching scheme was compared to mi-SVM \citep{Andrews2011MISVM}
+, mi-Net \citep{Ramon2000miNet,Zhou2002miNet}, MIForest \citep{Leistner2010MIForests} and MIL-Boost \citep{Zhang2006MIBoosting}.  Training and evaluation were performed by 3-fold cross-validation where the folds contained images chips of targets at 1000 and 2000 meters across all four levels of imprecision. 
+
+Approximately 30 images chips were hand-segmented at the pixel-level and were used to evaluate target detection performance. Classification performance was measured as the partial area under the curve (pAUC) for a Receiver-Operating Characteristic Curve (ROC) at a threshold of $0.05$ FA/frame.  A ROC curve is a tool used in binary classification, where the x-axis shows the false-positive rate for detection and the y-axis shows the true-positive rate.  True positive rate (TPR) is the measure of true positives over the number of true positive plus false negatives, and false positive rate (FPR) is the number of false negatives over the number of false negatives plus the number of true positives, or one minus TPR.  A perfect ROC curve would be a vertical line, where 100\% of true positive bags or instances are detected with zero false alarms.  Thus, the area under the curve for a perfect classifier would equal one.  Anything less than perfect would obtain a score in $[0,1]$.
+
+\section{Datasets}
+In this section, a table is given to provide a summary of the datasets proposed to test the developed approaches.  The table provides a brief summary of the datasets as well as their intended uses in testing.
+
+\begin{longtable}{ |p{4cm}|p{6cm}|p{4cm}|  } 
+	\caption{Summary of datasets.}
+	\label{tab:Datasets}\\
+	\hline
+	\multicolumn{3}{|c|}{\textbf{Datasets}} \\
+	\hline
+	\textbf{Dataset} & \textbf{Summary} & \textbf{Justification/Use}\\
+	\hline
+	Binary Swiss Roll Synthetic & Classic Swiss Roll dataset where a two-dimensional plane is embedded in three-dimensions. Each half of the two-dimensional intrinsic plane is given a class label. & Test manifold embedding and positive instance selection.\\
+	\hline
+	Quadratic Surfaces Synthetic   &  Two sets of synthetic datasets representing 2D quadratic surfaces embedded in 3D.  In one set, two quadratic surfaces are separable in the input space.  In the other scenario, the surfaces intersect, and are thus inherently non-separable.  & Test classification at both the bag and instance level.   \\
+	\hline
+	Danforth Plant Science Center & Temporal collections of maize root growth for 27 genotypes.   & Test manifold embedding and instance-level classification. \\
+	\hline
+	DSIAC MS-0003-DB \citep{DSIACATR}   &  Publicly available MWIR videos of military vehicles. & Test classification at both the bag and instance level.   \\
+	\hline
+	MUUFL Gulfport \citep{MUUFL} &  Hyperspectral, LiDAR and GPS data of scenes taken over University of Mississippi Gulfport. & Test detection and classification at the bag-level.   \\
+	\hline
+	LFW Faces in the Wild \citep{LFW} & Images of 5749 different faces labeled at the  image level. & Classification and ranking. \\
+	\hline
+	PASCAL VOC \citep{PASCALVOC}  & 2913 RGB images labeled at the pixel-level. & Test instance-level classification. \\
+	\hline
+\end{longtable}
 
 
-\paragraph{Out-of-Sample Testing}
-A known difficulty with nonlinear manifold learning methods is the embedding of \textit{out-of-sample} datapoints.  These points are samples that were not included in the training  dataset.  While methods have been developed to perform this embedding which consider class-label information of the training data or learn the embedding function through the universal function approximation abilities of a neural network \citep{Vural2016OutOfSampleSupManifoldLearning,Mendoza2016ELMOutOfSample}, this work adopts a simple linear reconstruction method for out of sample embedding.  Essentially, a low-dimensional coordinate for a test point is found as a linear combination of the low-dimensional representations of its $k=5$ nearest neighbors in the input feature space.  A bias term is also added to improve reconstruction ability.  
 
 
-\paragraph{Evaluation Metrics}
-Total classification accuracy, or the number of correctly labeled bags divided by the total number of bags, was used to measure the performance of each method during this initial work.   In future investigation, however, \textit{Receiver-Operating Characteristic Curves} (ROC) will be utilized if the classifier produces a classification score.  A ROC curve is a tool used in binary classification, where the x-axis shows the false-positive rate for detection and the y-axis shows the true-positive rate.  True positive rate (TPR) is the measure of true positives over the number of true positive plus false negatives, and false positive rate (FPR) is the number  of false negatives over the number of false negatives plus the number of true positives, or one minus TPR.  A perfect ROC curve would be a vertical line, where 100\% of true positive bags or instances are detected with zero false alarms.
 
 
